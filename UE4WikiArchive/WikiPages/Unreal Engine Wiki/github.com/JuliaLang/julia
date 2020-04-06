@@ -1,0 +1,1727 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-FG+rXqMOivrAjdEQE7tO4BwM1poGmg70hJFTlNSxjX87grtrZ6UnPR8NkzwUHlQEGviu9XuRYeO8zH9YwvZhdg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-146fab5ea30e8afac08dd11013bb4ee0.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-iXrV/b4ypc1nr10b3Giikqff+qAx5osQ0yJRxHRDd8mKFefdMtEZ0Sxs1QysJxuJBayOKThjsuMjynwBJQq0aw==" rel="stylesheet" href="https://github.githubassets.com/assets/site-897ad5fdbe32a5cd67af5d1bdc68a292.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-23DJ0jGXuHq4HnEnOv5yjJ3aD9zHvk4UkkK4Vs7e52NlpTBA9/zI9GMjyZ7MrJmYgiHJ0ZHNKVSFxEC3Pud9UA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-db70c9d23197b87ab81e71273afe728c.css" />
+    
+    
+    
+    
+
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>GitHub - JuliaLang/julia: The Julia Language: A fresh approach to technical computing.</title>
+    <meta name="description" content="The Julia Language: A fresh approach to technical computing. - JuliaLang/julia">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/1644196/ddfc1e00-6638-11e9-9b80-0fe7b9aedd72" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="JuliaLang/julia" /><meta name="twitter:description" content="The Julia Language: A fresh approach to technical computing. - JuliaLang/julia" />
+    <meta property="og:image" content="https://repository-images.githubusercontent.com/1644196/ddfc1e00-6638-11e9-9b80-0fe7b9aedd72" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="JuliaLang/julia" /><meta property="og:url" content="https://github.com/JuliaLang/julia" /><meta property="og:description" content="The Julia Language: A fresh approach to technical computing. - JuliaLang/julia" />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  
+  
+
+  <meta name="request-id" content="ECAF:7692:143E87:1F51A7:5E8473E6" data-pjax-transient="true"/><meta name="html-safe-nonce" content="2f5c4d90450f6cdcc6366c926866fc0da907d10e" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHA6Ly9naXRodWIuY29tL2FkeXByaWNlIiwicmVxdWVzdF9pZCI6IkVDQUY6NzY5MjoxNDNFODc6MUY1MUE3OjVFODQ3M0U2IiwidmlzaXRvcl9pZCI6Ijg0MjgyMDg4ODQyNTAwNDQwNTUiLCJyZWdpb25fZWRnZSI6ImlhZCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="0687fa58ee5c07056abe1eeb4d61e248503a00d1f53801a3eaba61e548e3f326" data-pjax-transient="true"/>
+
+
+
+  <meta name="github-keyboard-shortcuts" content="repository" data-pjax-transient="true" />
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+
+<meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+
+
+    <meta name="enabled-features" content="MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,RELATED_ISSUES">
+
+  <meta http-equiv="x-pjax-version" content="8769db88308fb15007b2d764cf15a630">
+  
+
+      <link href="https://github.com/JuliaLang/julia/commits/master.atom" rel="alternate" title="Recent Commits to julia:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/JuliaLang/julia git https://github.com/JuliaLang/julia.git">
+
+  <meta name="octolytics-dimension-user_id" content="743164" /><meta name="octolytics-dimension-user_login" content="JuliaLang" /><meta name="octolytics-dimension-repository_id" content="1644196" /><meta name="octolytics-dimension-repository_nwo" content="JuliaLang/julia" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="1644196" /><meta name="octolytics-dimension-repository_network_root_nwo" content="JuliaLang/julia" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/JuliaLang/julia" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production min-width-lg">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+      <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+
+    
+    
+
+
+
+        <header class="Header-old header-logged-out  position-relative f4 py-2" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+        <a class="mr-4" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+          <svg height="32" class="octicon octicon-mark-github text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--logged-out d-flex flex-justify-between flex-items-center flex-auto">
+      <div class="d-none">
+        <button class="btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <svg height="24" class="octicon octicon-x text-gray" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+        </button>
+      </div>
+
+        <nav class="mt-0" aria-label="Global">
+          <ul class="d-flex list-style-none">
+              <li class=" mr-3 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap  d-inline-block">
+                    Why GitHub?
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 mt-0  p-4 left-n4 position-absolute">
+                    <a href="/features" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Features">Features <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+                    <ul class="list-style-none f5 pb-3">
+                      <li class="edge-item-fix"><a href="/features/code-review/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code review">Code review</a></li>
+                      <li class="edge-item-fix"><a href="/features/project-management/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Project management">Project management</a></li>
+                      <li class="edge-item-fix"><a href="/features/integrations" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Integrations">Integrations</a></li>
+                      <li class="edge-item-fix"><a href="/features/actions" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Actions">Actions</a></li>
+                      <li class="edge-item-fix"><a href="/features/packages" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Packages">Packages</a></li>
+                      <li class="edge-item-fix"><a href="/features/security" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Security">Security</a></li>
+                      <li class="edge-item-fix"><a href="/features#team-management" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Team management">Team management</a></li>
+                      <li class="edge-item-fix"><a href="/features#hosting" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code hosting">Hosting</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="/customer-stories" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Customer stories">Customer stories <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="/security" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Security">Security <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+              <li class=" mr-3 mr-lg-3">
+                <a href="/enterprise" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Enterprise">Enterprise</a>
+              </li>
+
+              <li class=" mr-3 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap  d-inline-block">
+                    Explore
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-0 mt-0  p-4 left-n4 position-absolute">
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/explore" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Explore">Explore GitHub <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2  border-top pt-3">Learn &amp; contribute</h4>
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/topics" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Topics">Topics</a></li>
+                        <li class="edge-item-fix"><a href="/collections" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Collections">Collections</a></li>
+                      <li class="edge-item-fix"><a href="/trending" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Trending">Trending</a></li>
+                      <li class="edge-item-fix"><a href="https://lab.github.com/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Learning lab">Learning Lab</a></li>
+                      <li class="edge-item-fix"><a href="https://opensource.guide" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Open source guides">Open source guides</a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2  border-top pt-3">Connect with others</h4>
+                    <ul class="list-style-none mb-0">
+                      <li class="edge-item-fix"><a href="https://github.com/events" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Events">Events</a></li>
+                      <li class="edge-item-fix"><a href="https://github.community" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Community forum">Community forum</a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Education">GitHub Education</a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+
+              <li class=" mr-3 mr-lg-3">
+                <a href="/marketplace" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Marketplace">Marketplace</a>
+              </li>
+
+              <li class=" mr-3 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap  d-inline-block">
+                    Pricing
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-relative">
+                       <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-4 mt-0  p-4 left-n4 position-absolute">
+                    <a href="/pricing" class="pb-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Pricing">Plans <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/pricing#feature-comparison" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Compare plans">Compare plans</a></li>
+                      <li class="edge-item-fix"><a href="https://enterprise.github.com/contact" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Contact Sales">Contact Sales</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0  border-top pt-3">
+                      <li class="edge-item-fix"><a href="/nonprofit" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Nonprofits">Nonprofit <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover"  data-ga-click="(Logged out) Header, go to Education">Education <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex flex-items-center px-0 text-center text-left">
+          <div class="d-lg-flex ">
+            <div class="header-search mr-3 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="1644196" data-scoped-search-url="/JuliaLang/julia/search" data-unscoped-search-url="/search" action="/JuliaLang/julia/search" accept-charset="UTF-8" method="get">
+      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search"
+          data-unscoped-placeholder="Search GitHub"
+          data-scoped-placeholder="Search"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations"
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="V/fKot0aOmSA0ypzw5Ze92R0iET64rkoSVleWZqiNXJt0RfsVrL9N87kZrD0PWKB/gj3Y60jMiFZMNlenvsMXQ==" />
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+          </div>
+
+        <a href="/login?return_to=%2FJuliaLang%2Fjulia"
+          class="HeaderMenu-link no-underline mr-3"
+          data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="45734ffee660922d7d4fa1dd67d8ed3ac2b973b3cd163b1a34447a14ff5ca63f"
+          data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">
+          Sign&nbsp;in
+        </a>
+          <a href="/join?source_repo=JuliaLang%2Fjulia"
+            class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1"
+            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="45734ffee660922d7d4fa1dd67d8ed3ac2b973b3cd163b1a34447a14ff5ca63f"
+            data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">
+            Sign&nbsp;up
+          </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+    <div id="js-flash-container">
+
+
+  <template class="js-flash-template">
+    <div class="flash flash-full  js-flash-template-container">
+  <div class="container-lg px-2" >
+    <button class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    
+      <div class="js-flash-template-message"></div>
+
+  </div>
+</div>
+  </template>
+</div>
+
+
+      
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled>
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main id="js-repo-pjax-container" data-pjax-container >
+      
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <div class="pagehead repohead hx_repohead readability-menu bg-gray-light pb-0 pt-3">
+
+    <div class="d-flex container-lg mb-4 px-3">
+
+      <div class="flex-auto min-width-0 width-fit mr-3">
+        <h1 class="public  d-flex flex-wrap flex-items-center break-word float-none ">
+    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author ml-1 flex-self-stretch" itemprop="author">
+    <a class="url fn" rel="author" data-hovercard-type="organization" data-hovercard-url="/orgs/JuliaLang/hovercard" href="/JuliaLang">JuliaLang</a>
+  </span>
+  <span class="path-divider flex-self-stretch">/</span>
+  <strong itemprop="name" class="mr-2 flex-self-stretch">
+    <a data-pjax="#js-repo-pjax-container" href="/JuliaLang/julia">julia</a>
+  </strong>
+  
+</h1>
+
+
+      </div>
+
+      <ul class="pagehead-actions flex-shrink-0 " >
+
+    <li>
+      <details id="funding-links-modal" class="details-reset details-overlay details-overlay-dark d-inline-block float-left" >
+        <summary id="sponsor-button-repo" class="btn btn-sm"
+          title="Sponsor JuliaLang/julia"
+          data-ga-click="Repository, show sponsor modal, action:files#disambiguate; text:Sponsor"
+          >
+          <svg class="octicon octicon-heart text-pink v-align-text-bottom" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.727 3C7.091 3 6.001 4.65 6.001 4.65S4.909 3 3.273 3C1.636 3 0 4.1 0 6.3 0 9.6 6 14 6 14s6-4.4 6-7.7C12 4.1 10.364 3 8.727 3z"/></svg>
+          Sponsor
+        </summary>
+        <details-dialog
+          class="anim-fade-in fast Box Box--overlay d-flex flex-column"
+            src="/JuliaLang/julia/funding_links?fragment=1"
+            preload
+          >
+          <div class="Box-header">
+            <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+              <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+            </button>
+            <h3 class="Box-title">
+              Sponsor JuliaLang/julia
+            </h3>
+          </div>
+          <div class="overflow-auto">
+            <include-fragment
+              >
+              <div class="octocat-spinner my-3" aria-label="Loading..."></div>
+            </include-fragment>
+          </div>
+        </details-dialog>
+      </details>
+    </li>
+
+
+
+  <li>
+    
+  <a class="tooltipped tooltipped-s btn btn-sm btn-with-count" aria-label="You must be signed in to watch a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0dc9f7e56852406648097ee29a1a15e74099a6ac34652f6686727adade88fea4" href="/login?return_to=%2FJuliaLang%2Fjulia">
+    <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+</a>    <a class="social-count" href="/JuliaLang/julia/watchers"
+       aria-label="951 users are watching this repository">
+      951
+    </a>
+
+  </li>
+
+  <li>
+        <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to star a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:1644196,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="10627e5f9ce2f8fcdf764213166c4fe0887e4cbd806ec07d38bc5439f56f121b" href="/login?return_to=%2FJuliaLang%2Fjulia">
+      <svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+      Star
+</a>
+    <a class="social-count js-social-count" href="/JuliaLang/julia/stargazers"
+      aria-label="26070 users starred this repository">
+      26.1k
+    </a>
+
+  </li>
+
+  <li>
+      <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to fork a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:1644196,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="adb5b9ac315e2e58871a7288b137734cf8987d143cb526efb2ece29c066dbb41" href="/login?return_to=%2FJuliaLang%2Fjulia">
+        <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+</a>
+    <a href="/JuliaLang/julia/network/members" class="social-count"
+       aria-label="3816 users forked this repository">
+      3.8k
+    </a>
+  </li>
+</ul>
+
+    </div>
+      
+<nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax clearfix container-lg px-3"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /JuliaLang/julia" href="/JuliaLang/julia">
+      <div class="d-inline"><svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg></div>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /JuliaLang/julia/issues" href="/JuliaLang/julia/issues">
+        <div class="d-inline"><svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></div>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">2,853</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" data-skip-pjax="true" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /JuliaLang/julia/pulls" href="/JuliaLang/julia/pulls">
+      <div class="d-inline"><svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg></div>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">848</span>
+      <meta itemprop="position" content="4">
+</a>  </span>
+
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="position-relative float-left">
+      <a data-hotkey="g w" data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="repo_actions /JuliaLang/julia/actions" href="/JuliaLang/julia/actions">
+        <div class="d-inline"><svg class="octicon octicon-play" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 8A7 7 0 110 8a7 7 0 0114 0zm-8.223 3.482l4.599-3.066a.5.5 0 000-.832L5.777 4.518A.5.5 0 005 4.934v6.132a.5.5 0 00.777.416z"/></svg></div>
+        Actions
+</a>
+    </span>
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /JuliaLang/julia/projects" href="/JuliaLang/julia/projects">
+      <div class="d-inline"><svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg></div>
+      Projects
+      <span class="Counter">8</span>
+</a>
+
+    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy token_scanning code_scanning /JuliaLang/julia/security/advisories" href="/JuliaLang/julia/security/advisories">
+      <div class="d-inline"><svg class="octicon octicon-shield" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 2l7-2 7 2v6.02C14 12.69 8.69 16 7 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L7 1l6 1.75v5.268C13 12.104 8.449 15 7 15c-1.449 0-6-2.896-6-6.982V2.75zm1 .75L7 2v12c-1.207 0-5-2.482-5-5.985V3.5z"/></svg></div>
+      Security
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people /JuliaLang/julia/pulse" href="/JuliaLang/julia/pulse">
+      <div class="d-inline"><svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg></div>
+      Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+
+<div class="container-lg clearfix new-discussion-timeline  px-3">
+  <div class="repository-content ">
+
+    
+    
+    <div class="signup-prompt-bg rounded-1 js-signup-prompt" data-prompt="signup" hidden>
+    <div class="signup-prompt p-4 text-center mb-4 rounded-1">
+      <div class="position-relative">
+        <button type="button" class="position-absolute top-0 right-0 btn-link link-gray js-signup-prompt-button" data-ga-click="(Logged out) Sign up prompt, clicked Dismiss, text:dismiss">
+          Dismiss
+        </button>
+        <h3 class="pt-2">Join GitHub today</h3>
+        <p class="col-6 mx-auto">GitHub is home to over 40 million developers working together to host and review code, manage projects, and build software together.</p>
+        <a class="btn btn-primary" data-ga-click="(Logged out) Sign up prompt, clicked Sign up, text:sign-up" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;files signup prompt&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="72014ec9d4efdc94fcdccc682906f147bce83331c814e101ad3700f7a17d172b" href="/join?source=prompt-code&amp;source_repo=JuliaLang%2Fjulia">Sign up</a>
+      </div>
+    </div>
+  </div>
+
+
+      <div class="">  <div class="f4">
+        <span class="text-gray-dark mr-2" itemprop="about">
+          The Julia Language: A fresh approach to technical computing.
+        </span>
+        <span itemprop="url"><a rel="nofollow" href="https://julialang.org/">https://julialang.org/</a></span>
+  </div>
+</div>
+
+    <div class="repository-topics-container mt-2 mb-3 js-topics-list-container">  <div class="list-topics-container f6">
+      <a class="topic-tag topic-tag-link " href="/topics/julia-language" title="Topic: julia-language" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:julia-language">
+  julia-language
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/programming-language" title="Topic: programming-language" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:programming-language">
+  programming-language
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/scientific-computing" title="Topic: scientific-computing" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:scientific-computing">
+  scientific-computing
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/high-performance-computing" title="Topic: high-performance-computing" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:high-performance-computing">
+  high-performance-computing
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/numerical-computation" title="Topic: numerical-computation" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:numerical-computation">
+  numerical-computation
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/machine-learning" title="Topic: machine-learning" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:machine-learning">
+  machine-learning
+</a>
+
+  </div>
+</div>
+
+
+
+      <div class="overall-summary border-bottom-0 mb-0 rounded-bottom-0">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="/JuliaLang/julia/commits/master">
+            <svg class="octicon octicon-git-commit" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10.86 7c-.45-1.72-2-3-3.86-3-1.86 0-3.41 1.28-3.86 3H0v2h3.14c.45 1.72 2 3 3.86 3 1.86 0 3.41-1.28 3.86-3H14V7h-3.14zM7 10.2c-1.22 0-2.2-.98-2.2-2.2 0-1.22.98-2.2 2.2-2.2 1.22 0 2.2.98 2.2 2.2 0 1.22-.98 2.2-2.2 2.2z"/></svg>
+            <span class="num text-emphasized">
+              46,407
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="/JuliaLang/julia/branches">
+          <svg class="octicon octicon-git-branch" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 00-1-3.72C.88 1 0 1.89 0 3a2 2 0 001 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          <span class="num text-emphasized">
+            853
+          </span>
+          branches
+        </a>
+      </li>
+
+        <li>
+          <a data-pjax href="/JuliaLang/julia/packages" data-ga-click="Repository, packages click, location:repo overview">
+            <svg class="octicon octicon-package" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 00-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"/></svg>
+            <span class="num text-emphasized">
+              0
+            </span>
+            packages
+          </a>
+
+        </li>
+
+      <li>
+        <a href="/JuliaLang/julia/releases">
+          <svg class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 000-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+          <span class="num text-emphasized">
+            89
+          </span>
+          releases
+        </a>
+      </li>
+
+        <li >
+            <include-fragment src="/JuliaLang/julia/contributors_size">
+              <a href="/JuliaLang/julia/graphs/contributors">
+                <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"/></svg>
+                <span class="num text-emphasized"></span>
+                Fetching contributors
+              </a>
+</include-fragment>        </li>
+
+        <li>
+          <a href="/JuliaLang/julia/blob/master/LICENSE.md">
+            <svg class="octicon octicon-law" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+              View license
+          </a>
+        </li>
+    </ul>
+  </div>
+
+    <details class="details-reset">
+      <summary title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
+        <div class="d-flex repository-lang-stats-graph">
+            <span class="language-color" aria-label="Julia 68.7%" style="width:68.7%; background-color:#a270ba;" itemprop="keywords">Julia</span>
+            <span class="language-color" aria-label="C 16.2%" style="width:16.2%; background-color:#555555;" itemprop="keywords">C</span>
+            <span class="language-color" aria-label="C++ 9.7%" style="width:9.7%; background-color:#f34b7d;" itemprop="keywords">C++</span>
+            <span class="language-color" aria-label="Scheme 3.2%" style="width:3.2%; background-color:#1e4aec;" itemprop="keywords">Scheme</span>
+            <span class="language-color" aria-label="Makefile 0.7%" style="width:0.7%; background-color:#427819;" itemprop="keywords">Makefile</span>
+            <span class="language-color" aria-label="LLVM 0.4%" style="width:0.4%; background-color:#185619;" itemprop="keywords">LLVM</span>
+            <span class="language-color" aria-label="Other 1.1%" style="width:1.1%; background-color:#ededed;" itemprop="keywords">Other</span>
+        </div>
+      </summary>
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="/JuliaLang/julia/search?l=julia"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#a270ba;"></span>
+                <span class="lang">Julia</span>
+                <span class="percent">68.7%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/JuliaLang/julia/search?l=c"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#555555;"></span>
+                <span class="lang">C</span>
+                <span class="percent">16.2%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/JuliaLang/julia/search?l=c%2B%2B"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#f34b7d;"></span>
+                <span class="lang">C++</span>
+                <span class="percent">9.7%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/JuliaLang/julia/search?l=scheme"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#1e4aec;"></span>
+                <span class="lang">Scheme</span>
+                <span class="percent">3.2%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/JuliaLang/julia/search?l=makefile"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#427819;"></span>
+                <span class="lang">Makefile</span>
+                <span class="percent">0.7%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/JuliaLang/julia/search?l=llvm"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#185619;"></span>
+                <span class="lang">LLVM</span>
+                <span class="percent">0.4%</span>
+              </a>
+          </li>
+          <li>
+              <span>
+                <span class="color-block language-color" style="background-color:#ededed;"></span>
+                <span class="lang">Other</span>
+                <span class="percent">1.1%</span>
+              </span>
+          </li>
+        </ol>
+      </div>
+    </details>
+
+
+
+
+
+
+<div class="file-navigation in-mid-page mb-2 d-flex flex-items-start">
+  
+<details class="details-reset details-overlay branch-select-menu " id="branch-select-menu">
+  <summary class="btn css-truncate btn-sm"
+           data-hotkey="w"
+           title="Switch branches or tags">
+    <i>Branch:</i>
+    <span class="css-truncate-target" data-menu-button>master</span>
+    <span class="dropdown-caret"></span>
+  </summary>
+
+  <details-menu class="SelectMenu SelectMenu--hasFilter" src="/JuliaLang/julia/refs/master?source_action=disambiguate&amp;source_controller=files" preload>
+    <div class="SelectMenu-modal">
+      <include-fragment class="SelectMenu-loading" aria-label="Menu is loading">
+        <svg class="octicon octicon-octoface anim-pulse" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
+      </include-fragment>
+    </div>
+  </details-menu>
+</details>
+
+
+        <button type="button" class="btn btn-sm disabled tooltipped tooltipped-n new-pull-request-btn ml-2" aria-label="You must be signed in to create a pull request">
+          New pull request
+        </button>
+
+  <div class="breadcrumb flex-auto">
+    
+  </div>
+
+    <div class="BtnGroup ml-2">
+
+      <a class="btn btn-sm empty-icon float-right BtnGroup-item" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:1644196,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a4b8af569cbd5c54ea1cde86b6e50bdc56107b60e6563292518fb29ea299af55" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/JuliaLang/julia/find/master">Find file</a>
+    </div>
+
+
+    <span class="d-flex">
+        
+
+        <details class="get-repo-select-menu js-get-repo-select-menu js-anon-get-repo-select-menu position-relative details-overlay details-reset">
+  <summary class="btn btn-sm ml-2 btn-primary" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;repository_id&quot;:1644196,&quot;target&quot;:&quot;CLONE_OR_DOWNLOAD_BUTTON&quot;,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="3ab2314b0f3767e767f8e59ecb623279fd93fcc273b75c5969127b11d06669bc">
+      Clone or download
+    <span class="dropdown-caret"></span>
+</summary>  <div class="position-relative">
+    <div class="get-repo-modal dropdown-menu dropdown-menu-sw pb-0 js-toggler-container  js-get-repo-modal">
+
+      <div class="get-repo-modal-options">
+          <div class="clone-options https-clone-options">
+
+            <h4 class="mb-1">
+              Clone with HTTPS
+              <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+                <svg class="octicon octicon-question" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/></svg>
+              </a>
+            </h4>
+            <p class="mb-2 get-repo-decription-text">
+              Use Git or checkout with SVN using the web URL.
+            </p>
+
+            <div class="input-group">
+  <input type="text" class="form-control input-monospace input-sm" data-autoselect value="https://github.com/JuliaLang/julia.git" aria-label="Clone this repository at https://github.com/JuliaLang/julia.git" readonly>
+  <div class="input-group-button">
+    <clipboard-copy value="https://github.com/JuliaLang/julia.git" aria-label="Copy to clipboard" class="btn btn-sm" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;COPY_URL&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:1644196,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="8893a51e3fb33c4291fbc8c4449ba81e56321f75b9dd90728413935668ef0161"><svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg></clipboard-copy>
+  </div>
+</div>
+
+          </div>
+
+        <div class="mt-2 d-flex">
+          <a class="btn btn-outline get-repo-btn tooltipped tooltipped-s tooltipped-multiline js-remove-unless-platform js-get-repo" aria-label="Clone JuliaLang/julia to your computer and use it in GitHub Desktop." data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;OPEN_IN_DESKTOP&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:1644196,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="3af1510c5c110b31197f43a18ecbd29fdcb16453268675774d2c1371bf81ff06" data-platforms="windows,mac" href="https://desktop.github.com">Open in Desktop</a>
+
+<a class="flex-1 btn btn-outline get-repo-btn js-anon-download-zip-link" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;DOWNLOAD_ZIP&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:1644196,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="28e5feead8b482ffe74c00f0a3b9e50daa67040de235d24d102006cd0edb218b" data-ga-click="Repository, download zip, location:repo overview" href="/JuliaLang/julia/archive/master.zip">Download ZIP</a>
+
+        </div>
+      </div>
+
+        <div class="js-modal-downloading" hidden>
+          <div class="py-2 px-3">
+            <h4 class="lh-condensed mb-3">Downloading<span class="AnimatedEllipsis"></span></h4>
+            <p class="text-gray">
+              Want to be notified of new releases in
+              <span class="text-bold">JuliaLang/julia</span>?
+            </p>
+          </div>
+          <div class="width-full d-flex">
+            <a rel="nofollow" class="get-repo-btn btn btn-outline" style="width: 50%" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;download popover&quot;,&quot;repository_id&quot;:1644196,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c3cd2572c6ca86aa1f5cdd51d01a88409f6cd19320e6c77039d8f9a76f4a5298" href="/login?return_to=https%3A%2F%2Fgithub.com%2FJuliaLang%2Fjulia">Sign in</a>
+            <a rel="nofollow" class="get-repo-btn btn btn-primary" style="width: 50%" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;download popover&quot;,&quot;repository_id&quot;:1644196,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="df495daf2aae092bc247a2d6d43dbd6dab565bfae130535cee79788939cefa21" href="/join?branch=master&amp;source=download&amp;source_repo=JuliaLang%2Fjulia">Sign up</a>
+          </div>
+        </div>
+
+      <div class="js-modal-download-mac py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="AnimatedEllipsis"></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-windows py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="AnimatedEllipsis"></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-xcode py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Xcode<span class="AnimatedEllipsis"></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://developer.apple.com/xcode/">download Xcode</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-visual-studio py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Visual Studio<span class="AnimatedEllipsis"></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://visualstudio.github.com/">download the GitHub extension for Visual Studio</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+    </div>
+  </div>
+</details>
+
+
+    </span>
+
+</div>
+
+
+
+
+<div class="Box mb-3 Box--condensed">
+  <div class="Box-header Box-header--blue position-relative "
+    style="margin-bottom:-1px;">
+    <h2 class="sr-only">Latest commit</h2>
+    <div class="commit-tease js-details-container Details d-flex rounded-top-1 flex-auto" data-issue-and-pr-hovercards-enabled>
+        
+    
+<div class="AvatarStack flex-self-start ">
+  <div class="AvatarStack-body" aria-label="JeffBezanson">
+        <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/JeffBezanson/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/JeffBezanson">
+          <img height="20" width="20" alt="@JeffBezanson" src="https://avatars2.githubusercontent.com/u/744556?s=60&amp;v=4" class="" />
+</a>  </div>
+</div>
+
+    <div class="flex-auto f6 mr-3">
+      
+      <a href="/JuliaLang/julia/commits?author=JeffBezanson"
+     class="commit-author tooltipped tooltipped-s user-mention"
+     aria-label="View all commits by JeffBezanson">JeffBezanson</a>
+
+
+  
+
+
+        <a data-pjax="true" title="fix struct tail initialization for inline reference allocation (#35291)" class="message text-inherit" href="/JuliaLang/julia/commit/105ed11b305b3208e37cf48f21812ef1e187d6f5">fix struct tail initialization for inline reference allocation (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="589632179" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/35291" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/35291/hovercard" href="https://github.com/JuliaLang/julia/pull/35291">#35291</a><a data-pjax="true" title="fix struct tail initialization for inline reference allocation (#35291)" class="message text-inherit" href="/JuliaLang/julia/commit/105ed11b305b3208e37cf48f21812ef1e187d6f5">)</a>
+
+    </div>
+    <div class="no-wrap d-flex flex-self-start flex-items-baseline">
+        <span class="mr-2 flex-self-center">
+          <include-fragment accept="text/fragment+html" src="/JuliaLang/julia/commit/105ed11b305b3208e37cf48f21812ef1e187d6f5/rollup?direction=w" class="d-inline"></include-fragment>
+        </span>
+      <span class="mr-1">Latest commit</span>
+      <a class="commit-tease-sha mr-1" href="/JuliaLang/julia/commit/105ed11b305b3208e37cf48f21812ef1e187d6f5" data-pjax>
+        105ed11
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2020-03-31T23:23:37Z" class="no-wrap">Apr 1, 2020</relative-time></span>
+    </div>
+    </div>
+  </div>
+  <h2 id="files"  class="sr-only">Files</h2>
+  
+
+
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/JuliaLang/julia/tree/105ed11b305b3208e37cf48f21812ef1e187d6f5">Permalink</a>
+
+    <table class="files js-navigation-container js-active-navigation-container " data-pjax>
+      <thead>
+        <tr>
+          <th><span class="sr-only">Type</span></th>
+          <th><span class="sr-only">Name</span></th>
+          <th><span class="sr-only">Latest commit message</span></th>
+          <th><span class="sr-only">Commit time</span></th>
+        </tr>
+      </thead>
+
+
+      <tbody>
+        <tr class="warning include-fragment-error">
+          <td class="icon"><svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg></td>
+          <td class="content" colspan="3">Failed to load latest commit information.</td>
+        </tr>
+
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title=".devcontainer" id="9e10ae3aa5a8e17f547841627a0e8cf3-3dca1c3eb3b0e60e7e868cee2bbd2eade2e726e9" href="/JuliaLang/julia/tree/master/.devcontainer">.devcontainer</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Add VS Code devcontainer definition (#34957)
+
+* Add devcontainer and dockerfile
+
+* Add VS Code CPP extension
+
+* Use Julia base image for devcontainer
+
+* Add VS Code make task
+
+* Fix typo
+
+* Remove .vscode/tasks.json" class="link-gray" href="/JuliaLang/julia/commit/4d745aa2f670491f3a93a7ed534dad367a7d7b84">Add VS Code devcontainer definition (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="573644073" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/34957" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/34957/hovercard" href="https://github.com/JuliaLang/julia/pull/34957">#34957</a><a data-pjax="true" title="Add VS Code devcontainer definition (#34957)
+
+* Add devcontainer and dockerfile
+
+* Add VS Code CPP extension
+
+* Use Julia base image for devcontainer
+
+* Add VS Code make task
+
+* Fix typo
+
+* Remove .vscode/tasks.json" class="link-gray" href="/JuliaLang/julia/commit/4d745aa2f670491f3a93a7ed534dad367a7d7b84">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-07T14:17:05Z" class="no-wrap">Mar 7, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="base" id="593616de15330c0fb2d55e55410bf994-358b97bd17ec8215574dc497e2ac13b21ce6f29f" href="/JuliaLang/julia/tree/master/base">base</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Merge pull request #35309 from JuliaLang/jb/fix35305
+
+fix #35305, need escaping when printing string macro calls" class="link-gray" href="/JuliaLang/julia/commit/351d7e9a45cda49cd21fa549697fd0f9df06e0dd">Merge pull request</a> <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="590374580" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/35309" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/35309/hovercard" href="https://github.com/JuliaLang/julia/pull/35309">#35309</a> <a data-pjax="true" title="Merge pull request #35309 from JuliaLang/jb/fix35305
+
+fix #35305, need escaping when printing string macro calls" class="link-gray" href="/JuliaLang/julia/commit/351d7e9a45cda49cd21fa549697fd0f9df06e0dd">from JuliaLang/jb/fix35305</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-31T14:58:18Z" class="no-wrap">Mar 31, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="contrib" id="1aca857b55ce1183cb964b343b4fdeb3-f170561dc7c934dc3d861136df12afcf35c41f6b" href="/JuliaLang/julia/tree/master/contrib">contrib</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Improve Windows installer (#35059)
+
+- Allow for the user to select to create desktop icon and start menu group
+- Change default installation folder back without the Julia folder group
+- Install Julia icon directly to startmenu without group structure" class="link-gray" href="/JuliaLang/julia/commit/86ded2a008e70911ed71e32d083009c5c9cf6dbf">Improve Windows installer (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="578259699" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/35059" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/35059/hovercard" href="https://github.com/JuliaLang/julia/pull/35059">#35059</a><a data-pjax="true" title="Improve Windows installer (#35059)
+
+- Allow for the user to select to create desktop icon and start menu group
+- Change default installation folder back without the Julia folder group
+- Install Julia icon directly to startmenu without group structure" class="link-gray" href="/JuliaLang/julia/commit/86ded2a008e70911ed71e32d083009c5c9cf6dbf">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-17T23:12:50Z" class="no-wrap">Mar 17, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="deps" id="44f85496bf6930d196d5904271343563-ccadafa3c085380152a63385a409b2cd8b5bafe9" href="/JuliaLang/julia/tree/master/deps">deps</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="bump utf8proc version, support Unicode 13 (#35282)" class="link-gray" href="/JuliaLang/julia/commit/b6c06dddb199a673a9e62ae14e9eeee6939560a0">bump utf8proc version, support Unicode 13 (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="589481159" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/35282" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/35282/hovercard" href="https://github.com/JuliaLang/julia/pull/35282">#35282</a><a data-pjax="true" title="bump utf8proc version, support Unicode 13 (#35282)" class="link-gray" href="/JuliaLang/julia/commit/b6c06dddb199a673a9e62ae14e9eeee6939560a0">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-30T16:33:28Z" class="no-wrap">Mar 30, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="doc" id="9a09b4dfda82e3e665e31092d1c3ec8d-76f59db5b1967b0d2fc2058cea3b1bc6a4b566da" href="/JuliaLang/julia/tree/master/doc">doc</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Fix manual about propagation of missing values (#35264)" class="link-gray" href="/JuliaLang/julia/commit/e1dc967b15287f13dd87e21f0038db1f2fbf266d">Fix manual about propagation of missing values (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="588381499" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/35264" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/35264/hovercard" href="https://github.com/JuliaLang/julia/pull/35264">#35264</a><a data-pjax="true" title="Fix manual about propagation of missing values (#35264)" class="link-gray" href="/JuliaLang/julia/commit/e1dc967b15287f13dd87e21f0038db1f2fbf266d">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-30T18:03:35Z" class="no-wrap">Mar 30, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="etc" id="e80f17310109447772dca82b45ef35a5-13a14239915c733167fca4f1a3e728f5bcac4212" href="/JuliaLang/julia/tree/master/etc">etc</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="fix write_base_cache to be consistend with the reader byte order (#26569)" class="link-gray" href="/JuliaLang/julia/commit/d88f3be323245c8ba91ed20c8b01957a74e1c229">fix write_base_cache to be consistend with the reader byte order (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="307577465" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/26569" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/26569/hovercard" href="https://github.com/JuliaLang/julia/pull/26569">#26569</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-03-22T16:00:00Z" class="no-wrap">Mar 22, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="src" id="25d902c24283ab8cfbac54dfa101ad31-69721e7dea716ef59e8e74672b3918507bada023" href="/JuliaLang/julia/tree/master/src">src</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="fix struct tail initialization for inline reference allocation (#35291)" class="link-gray" href="/JuliaLang/julia/commit/105ed11b305b3208e37cf48f21812ef1e187d6f5">fix struct tail initialization for inline reference allocation (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="589632179" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/35291" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/35291/hovercard" href="https://github.com/JuliaLang/julia/pull/35291">#35291</a><a data-pjax="true" title="fix struct tail initialization for inline reference allocation (#35291)" class="link-gray" href="/JuliaLang/julia/commit/105ed11b305b3208e37cf48f21812ef1e187d6f5">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-31T23:23:37Z" class="no-wrap">Mar 31, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="stdlib" id="36c721bce7ebb1590e883b974a287477-5a0f52c4289d1f2723c1927cfbe0994dc849080b" href="/JuliaLang/julia/tree/master/stdlib">stdlib</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <span class="issue-keyword tooltipped tooltipped-se" aria-label="This commit closes issue #35295."><a data-pjax="true" title="fix #35295, typo in change to `clipboard` on linux (#35310)" class="link-gray" href="/JuliaLang/julia/commit/33df293a6a46d83bdd3a9caa08b311ef74452d60">fix</a></span> <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="589744446" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/35295" data-hovercard-type="issue" data-hovercard-url="/JuliaLang/julia/issues/35295/hovercard" href="https://github.com/JuliaLang/julia/issues/35295">#35295</a><a data-pjax="true" title="fix #35295, typo in change to `clipboard` on linux (#35310)" class="link-gray" href="/JuliaLang/julia/commit/33df293a6a46d83bdd3a9caa08b311ef74452d60">, typo in change to `clipboard` on linux (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="590389309" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/35310" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/35310/hovercard" href="https://github.com/JuliaLang/julia/pull/35310">#35310</a><a data-pjax="true" title="fix #35295, typo in change to `clipboard` on linux (#35310)" class="link-gray" href="/JuliaLang/julia/commit/33df293a6a46d83bdd3a9caa08b311ef74452d60">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-31T14:54:53Z" class="no-wrap">Mar 31, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="test" id="098f6bcd4621d373cade4e832627b4f6-7c03f16e3f7489601f847d1641b5dcf59835f35c" href="/JuliaLang/julia/tree/master/test">test</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="fix a bug in circular type detection (#35275)" class="link-gray" href="/JuliaLang/julia/commit/3048517900da6294a1007caa95da1caa20943c00">fix a bug in circular type detection (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="589168169" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/35275" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/35275/hovercard" href="https://github.com/JuliaLang/julia/pull/35275">#35275</a><a data-pjax="true" title="fix a bug in circular type detection (#35275)" class="link-gray" href="/JuliaLang/julia/commit/3048517900da6294a1007caa95da1caa20943c00">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-31T20:31:04Z" class="no-wrap">Mar 31, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="ui" id="7d5c009e4eb8bbc78647caeca308e61b-cba20836bcc9d791901e259d1c7c3f3993bb42d7" href="/JuliaLang/julia/tree/master/ui">ui</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="build: minor cleanup of ui/Makefile (#31919)
+
+Adds some prereqs, and makes more use of existing variables to get our
+desired results.
+
+Fixes #31876
+Replaces #31904
+
+Co-Authored-By: Jameson Nash &lt;vtjnash@gmail.com&gt;" class="link-gray" href="/JuliaLang/julia/commit/7ef9e75cb361f7e9285dc0af042c2b7c2ac30bb5">build: minor cleanup of ui/Makefile (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="440204349" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/31919" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/31919/hovercard" href="https://github.com/JuliaLang/julia/pull/31919">#31919</a><a data-pjax="true" title="build: minor cleanup of ui/Makefile (#31919)
+
+Adds some prereqs, and makes more use of existing variables to get our
+desired results.
+
+Fixes #31876
+Replaces #31904
+
+Co-Authored-By: Jameson Nash &lt;vtjnash@gmail.com&gt;" class="link-gray" href="/JuliaLang/julia/commit/7ef9e75cb361f7e9285dc0af042c2b7c2ac30bb5">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-05-06T16:34:48Z" class="no-wrap">May 6, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title=".appveyor.yml" id="11c909939117928998b102a1fff7d363-2e504f175fc0de76aa77a845cd5f419ed635ebfb" href="/JuliaLang/julia/blob/master/.appveyor.yml">.appveyor.yml</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <span class="issue-keyword tooltipped tooltipped-se" aria-label="This commit closes issue #31774."><a data-pjax="true" title="fix #31774, don't run Pkg tests on travis and AV (#32287)" class="link-gray" href="/JuliaLang/julia/commit/64168b70bebf2c0f03c9e4ec43e494d0a4295218">fix</a></span> <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="435248259" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/31774" data-hovercard-type="issue" data-hovercard-url="/JuliaLang/julia/issues/31774/hovercard" href="https://github.com/JuliaLang/julia/issues/31774">#31774</a><a data-pjax="true" title="fix #31774, don't run Pkg tests on travis and AV (#32287)" class="link-gray" href="/JuliaLang/julia/commit/64168b70bebf2c0f03c9e4ec43e494d0a4295218">, don't run Pkg tests on travis and AV (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="454370394" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/32287" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/32287/hovercard" href="https://github.com/JuliaLang/julia/pull/32287">#32287</a><a data-pjax="true" title="fix #31774, don't run Pkg tests on travis and AV (#32287)" class="link-gray" href="/JuliaLang/julia/commit/64168b70bebf2c0f03c9e4ec43e494d0a4295218">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-06-11T10:35:58Z" class="no-wrap">Jun 11, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title=".gitattributes" id="fc723d30b02a4cca7a534518111c1a66-a97c54343210827a8799993f4d1116b7ba3460dd" href="/JuliaLang/julia/blob/master/.gitattributes">.gitattributes</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Disable all git EOL conversions (#32781)
+
+Experiment with treating all files as binary on all platforms (aka only affects Windows).
+
+Closes #30752" class="link-gray" href="/JuliaLang/julia/commit/b547942e4397cf3fdfb2031c5ec6feb40abc2d17">Disable all git EOL conversions (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="476496823" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/32781" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/32781/hovercard" href="https://github.com/JuliaLang/julia/pull/32781">#32781</a><a data-pjax="true" title="Disable all git EOL conversions (#32781)
+
+Experiment with treating all files as binary on all platforms (aka only affects Windows).
+
+Closes #30752" class="link-gray" href="/JuliaLang/julia/commit/b547942e4397cf3fdfb2031c5ec6feb40abc2d17">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-10-15T17:30:13Z" class="no-wrap">Oct 15, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title=".gitignore" id="a084b794bc0759e7a6b77810e01874f2-2da56ff47739e3ced28835b935f0952376b26cb7" href="/JuliaLang/julia/blob/master/.gitignore">.gitignore</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="InteractiveUtils - Added support for PyCharm (#34169)
+
+* Ignoring JetBrains configuration files
+* InteractiveUtils: Added support for PyCharm" class="link-gray" href="/JuliaLang/julia/commit/3c034d085a957418ae9efcab35a4e8cec9e267bb">InteractiveUtils - Added support for PyCharm (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="541216741" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/34169" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/34169/hovercard" href="https://github.com/JuliaLang/julia/pull/34169">#34169</a><a data-pjax="true" title="InteractiveUtils - Added support for PyCharm (#34169)
+
+* Ignoring JetBrains configuration files
+* InteractiveUtils: Added support for PyCharm" class="link-gray" href="/JuliaLang/julia/commit/3c034d085a957418ae9efcab35a4e8cec9e267bb">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-12-20T23:49:08Z" class="no-wrap">Dec 20, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title=".mailmap" id="c9d540715cff3469b65ddd01f614848b-bcb3c842a760526a4e70e8123fc1246856382beb" href="/JuliaLang/julia/blob/master/.mailmap">.mailmap</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Update mailmap" class="link-gray" href="/JuliaLang/julia/commit/d8ff21c69c118e8801e87841a5eb70c0489f4007">Update mailmap</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-05-30T12:53:42Z" class="no-wrap">May 30, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title=".travis.yml" id="354f30a63fb0907d4ad57269548329e3-665cebadce6b1af6548e17c60d4a640d82fd3732" href="/JuliaLang/julia/blob/master/.travis.yml">.travis.yml</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <span class="issue-keyword tooltipped tooltipped-se" aria-label="This commit closes issue #31774."><a data-pjax="true" title="fix #31774, don't run Pkg tests on travis and AV (#32287)" class="link-gray" href="/JuliaLang/julia/commit/64168b70bebf2c0f03c9e4ec43e494d0a4295218">fix</a></span> <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="435248259" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/31774" data-hovercard-type="issue" data-hovercard-url="/JuliaLang/julia/issues/31774/hovercard" href="https://github.com/JuliaLang/julia/issues/31774">#31774</a><a data-pjax="true" title="fix #31774, don't run Pkg tests on travis and AV (#32287)" class="link-gray" href="/JuliaLang/julia/commit/64168b70bebf2c0f03c9e4ec43e494d0a4295218">, don't run Pkg tests on travis and AV (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="454370394" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/32287" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/32287/hovercard" href="https://github.com/JuliaLang/julia/pull/32287">#32287</a><a data-pjax="true" title="fix #31774, don't run Pkg tests on travis and AV (#32287)" class="link-gray" href="/JuliaLang/julia/commit/64168b70bebf2c0f03c9e4ec43e494d0a4295218">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-06-11T10:35:58Z" class="no-wrap">Jun 11, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="CITATION.bib" id="20ecefe92b812a9e3e55a12f43df243b-c5c851db9900125f3a12fe9b24cf5967abffcc7e" href="/JuliaLang/julia/blob/master/CITATION.bib">CITATION.bib</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Add a bib entry file to make it easy to cite Julia. (#31794)
+
+* Add a bib entry file to make it easy to cite Julia.
+
+The plan is to have the same convention in packages, thus making
+it easy to cite Julia and packages." class="link-gray" href="/JuliaLang/julia/commit/62a61870ef4134ec2577b6e63fa2be4e575d397d">Add a bib entry file to make it easy to cite Julia. (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="435769545" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/31794" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/31794/hovercard" href="https://github.com/JuliaLang/julia/pull/31794">#31794</a><a data-pjax="true" title="Add a bib entry file to make it easy to cite Julia. (#31794)
+
+* Add a bib entry file to make it easy to cite Julia.
+
+The plan is to have the same convention in packages, thus making
+it easy to cite Julia and packages." class="link-gray" href="/JuliaLang/julia/commit/62a61870ef4134ec2577b6e63fa2be4e575d397d">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-04-24T19:48:33Z" class="no-wrap">Apr 24, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="CONTRIBUTING.md" id="6a3371457528722a734f3c51d9238c13-23c31694fa43871ccd77a9c835fbb24ec77349f1" href="/JuliaLang/julia/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="delete SemVer section in Contributions.md (#34920)" class="link-gray" href="/JuliaLang/julia/commit/300fec514a4bd4702309d348b0cd2ba5f6d1516a">delete SemVer section in Contributions.md (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="572965209" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/34920" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/34920/hovercard" href="https://github.com/JuliaLang/julia/pull/34920">#34920</a><a data-pjax="true" title="delete SemVer section in Contributions.md (#34920)" class="link-gray" href="/JuliaLang/julia/commit/300fec514a4bd4702309d348b0cd2ba5f6d1516a">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-13T14:47:37Z" class="no-wrap">Mar 13, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="HISTORY.md" id="88dc7475eedf918122374be6d7c2c151-1185848a2a7cd8d0226f83311e334ead359899a2" href="/JuliaLang/julia/blob/master/HISTORY.md">HISTORY.md</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="add compat annotation for map!(f, values(dict)) (from #31223) (#35184)" class="link-gray" href="/JuliaLang/julia/commit/644753491de0d5d933c96e6f1f5876b3c7603cf4">add compat annotation for map!(f, values(dict)) (from</a> <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="416128554" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/31223" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/31223/hovercard" href="https://github.com/JuliaLang/julia/pull/31223">#31223</a><a data-pjax="true" title="add compat annotation for map!(f, values(dict)) (from #31223) (#35184)" class="link-gray" href="/JuliaLang/julia/commit/644753491de0d5d933c96e6f1f5876b3c7603cf4">) (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="585150961" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/35184" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/35184/hovercard" href="https://github.com/JuliaLang/julia/pull/35184">#35184</a><a data-pjax="true" title="add compat annotation for map!(f, values(dict)) (from #31223) (#35184)" class="link-gray" href="/JuliaLang/julia/commit/644753491de0d5d933c96e6f1f5876b3c7603cf4">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-20T21:26:35Z" class="no-wrap">Mar 20, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="LICENSE.md" id="37854d19817c792316d481f5beb93cc7-57b517b89b690a6fac590f41a4148a0a1f53e330" itemprop="license" href="/JuliaLang/julia/blob/master/LICENSE.md">LICENSE.md</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Add cycle count getter for more platforms." class="link-gray" href="/JuliaLang/julia/commit/967ffc97f47436d564103f264c24365054458ca4">Add cycle count getter for more platforms.</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-01-21T13:21:57Z" class="no-wrap">Jan 21, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="Make.inc" id="4a08f0cccf2b3f391a4d1930e99d2ab8-688d462fd71fc1f888cddd19c7cf276771126a92" href="/JuliaLang/julia/blob/master/Make.inc">Make.inc</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Fix `$(PYTHON)` paths for native windows executable or cygwin (#34984)" class="link-gray" href="/JuliaLang/julia/commit/0e8143e1e7d125b74e474d0fbd3a5a5e2d574779">Fix `$(PYTHON)` paths for native windows executable or cygwin (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="574942180" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/34984" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/34984/hovercard" href="https://github.com/JuliaLang/julia/pull/34984">#34984</a><a data-pjax="true" title="Fix `$(PYTHON)` paths for native windows executable or cygwin (#34984)" class="link-gray" href="/JuliaLang/julia/commit/0e8143e1e7d125b74e474d0fbd3a5a5e2d574779">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-04T05:35:55Z" class="no-wrap">Mar 4, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="Makefile" id="b67911656ef5d18c4ae36cb6741b7965-a60ac145bf4a5de805e8f622c53a37f8617ed74d" href="/JuliaLang/julia/blob/master/Makefile">Makefile</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Merge pull request #35112 from JuliaLang/vc/llvm-11-svm
+
+LLVM11 Compatibility" class="link-gray" href="/JuliaLang/julia/commit/4fec34d71e226df54dadb09495754baaddea92dd">Merge pull request</a> <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="581425170" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/35112" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/35112/hovercard" href="https://github.com/JuliaLang/julia/pull/35112">#35112</a> <a data-pjax="true" title="Merge pull request #35112 from JuliaLang/vc/llvm-11-svm
+
+LLVM11 Compatibility" class="link-gray" href="/JuliaLang/julia/commit/4fec34d71e226df54dadb09495754baaddea92dd">from JuliaLang/vc/llvm-11-svm</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-18T13:17:45Z" class="no-wrap">Mar 18, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="NEWS.md" id="8312ad0561ef661716b48d09478362f3-c10dca7ad04ce6f9fda05834d7c387714e934f30" href="/JuliaLang/julia/blob/master/NEWS.md">NEWS.md</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Add rot! to BLAS in stdlib/LinearAlgebra, add generic rotate! and reflect! (#35124)" class="link-gray" href="/JuliaLang/julia/commit/ddf79a84ca565d38fb684e879446f1ce0c387721">Add rot! to BLAS in stdlib/LinearAlgebra, add generic rotate! and ref…</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-03-31T08:45:43Z" class="no-wrap">Mar 31, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="README.md" id="04c6e90faac2675aa89e2176d2eec7d8-bfdc0c4be892dd4aca8b733859cee9d3addcba50" href="/JuliaLang/julia/blob/master/README.md">README.md</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Add README link to learning resources (#34751)" class="link-gray" href="/JuliaLang/julia/commit/d4ac457feb786ae30d3bab5b92a793b20106df55">Add README link to learning resources (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="564717602" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/34751" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/34751/hovercard" href="https://github.com/JuliaLang/julia/pull/34751">#34751</a><a data-pjax="true" title="Add README link to learning resources (#34751)" class="link-gray" href="/JuliaLang/julia/commit/d4ac457feb786ae30d3bab5b92a793b20106df55">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2020-02-24T18:38:45Z" class="no-wrap">Feb 24, 2020</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="VERSION" id="021321e8c168ba3ae39ce3a2e7b3ec87-363acab0bb9dfacf5a067a46e1f1961c96bcd0a0" href="/JuliaLang/julia/blob/master/VERSION">VERSION</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Set master version to 1.5 (#34218)" class="link-gray" href="/JuliaLang/julia/commit/13d1bd4689e2afc12ddf5f48ad22efd13f01782a">Set master version to 1.5 (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="543957396" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/34218" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/34218/hovercard" href="https://github.com/JuliaLang/julia/pull/34218">#34218</a><a data-pjax="true" title="Set master version to 1.5 (#34218)" class="link-gray" href="/JuliaLang/julia/commit/13d1bd4689e2afc12ddf5f48ad22efd13f01782a">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-12-31T18:18:26Z" class="no-wrap">Dec 31, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="sysimage.mk" id="ea348eb1ab72f128989d62f1e300d05b-13b11d00eb62f62c770a598b406ae96e106c8dd3" href="/JuliaLang/julia/blob/master/sysimage.mk">sysimage.mk</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="add Makefile option for bc emission (#34007)" class="link-gray" href="/JuliaLang/julia/commit/193f3e8423264f881653a6822adaa27c04fa6fe5">add Makefile option for bc emission (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="531529452" data-permission-text="Title is private" data-url="https://github.com/JuliaLang/julia/issues/34007" data-hovercard-type="pull_request" data-hovercard-url="/JuliaLang/julia/pull/34007/hovercard" href="https://github.com/JuliaLang/julia/pull/34007">#34007</a><a data-pjax="true" title="add Makefile option for bc emission (#34007)" class="link-gray" href="/JuliaLang/julia/commit/193f3e8423264f881653a6822adaa27c04fa6fe5">)</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-12-03T19:53:38Z" class="no-wrap">Dec 3, 2019</time-ago></span>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+</div>
+
+  <div id="readme" class="Box md js-code-block-container Box--condensed">
+    <div class="Box-header d-flex flex-items-center flex-justify-between ">
+      <h2 class="Box-title pr-3">
+        <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+        README.md
+      </h2>
+    </div>
+        <div class="Popover anim-scale-in js-tagsearch-popover"
+     hidden
+     data-tagsearch-url="/JuliaLang/julia/find-symbols"
+     data-tagsearch-ref="master"
+     data-tagsearch-path="README.md"
+     data-tagsearch-lang="Markdown"
+     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:1644196,&quot;ref&quot;:&quot;master&quot;,&quot;language&quot;:&quot;Markdown&quot;,&quot;originating_url&quot;:&quot;https://github.com/JuliaLang/julia&quot;,&quot;user_id&quot;:null}}"
+     data-hydro-click-hmac="1ac8e14e7d6eba5a0f972267af20bc8506890674111099babeaee386fd4f8b3e">
+  <div class="Popover-message Popover-message--large Popover-message--top-left TagsearchPopover mt-1 mb-4 mx-auto Box box-shadow-large">
+    <div class="TagsearchPopover-content js-tagsearch-popover-content overflow-auto" style="will-change:transform;">
+    </div>
+  </div>
+</div>
+
+      <div class="Box-body p-5">
+        <article class="markdown-body entry-content" itemprop="text"><a name="user-content-logo">
+</a><div align="center"><a name="user-content-logo">
+</a><a href="https://julialang.org/" rel="nofollow">
+<img src="https://camo.githubusercontent.com/6d7260eaa159cfb838b45bf168ff77adecf8b198/68747470733a2f2f6a756c69616c616e672e6f72672f696d616765732f6c6f676f5f68697265732e706e67" alt="Julia Logo" width="210" height="142" data-canonical-src="https://julialang.org/images/logo_hires.png" style="max-width:100%;">
+</a>
+</div>
+<p>Code coverage:
+<a href="https://coveralls.io/r/JuliaLang/julia?branch=master" rel="nofollow"><img src="https://camo.githubusercontent.com/6c19f8bfd330d4298726a46788b7dd210c6bbaee/68747470733a2f2f696d672e736869656c64732e696f2f636f766572616c6c732f6769746875622f4a756c69614c616e672f6a756c69612f6d61737465722e7376673f6c6162656c3d636f766572616c6c73" alt="coveralls" data-canonical-src="https://img.shields.io/coveralls/github/JuliaLang/julia/master.svg?label=coveralls" style="max-width:100%;"></a>
+<a href="https://codecov.io/github/JuliaLang/julia?branch=master" rel="nofollow"><img src="https://camo.githubusercontent.com/4f493f551264b08a932256740895accb8f2f1cf6/68747470733a2f2f696d672e736869656c64732e696f2f636f6465636f762f632f6769746875622f4a756c69614c616e672f6a756c69612f6d61737465722e7376673f6c6162656c3d636f6465636f76" alt="codecov" data-canonical-src="https://img.shields.io/codecov/c/github/JuliaLang/julia/master.svg?label=codecov" style="max-width:100%;"></a></p>
+<p>Documentation:
+<a href="https://docs.julialang.org" rel="nofollow"><img src="https://camo.githubusercontent.com/a8bf08f7e402872de8d8969931a9b179f38d9496/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f63732d76312d626c75652e737667" alt="version 1" data-canonical-src="https://img.shields.io/badge/docs-v1-blue.svg" style="max-width:100%;"></a></p>
+<h2><a id="user-content-the-julia-language" class="anchor" aria-hidden="true" href="#the-julia-language"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The Julia Language</h2>
+<p>Julia is a high-level, high-performance dynamic language for technical
+computing.  The main homepage for Julia can be found at
+<a href="https://julialang.org/" rel="nofollow">julialang.org</a>.  This is the GitHub
+repository of Julia source code, including instructions for compiling
+and installing Julia, below.</p>
+<h2><a id="user-content-resources" class="anchor" aria-hidden="true" href="#resources"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Resources</h2>
+<ul>
+<li><strong>Homepage:</strong> <a href="https://julialang.org" rel="nofollow">https://julialang.org</a></li>
+<li><strong>Binaries:</strong> <a href="https://julialang.org/downloads/" rel="nofollow">https://julialang.org/downloads/</a></li>
+<li><strong>Source code:</strong> <a href="https://github.com/JuliaLang/julia">https://github.com/JuliaLang/julia</a></li>
+<li><strong>Documentation:</strong> <a href="https://docs.julialang.org/" rel="nofollow">https://docs.julialang.org/</a></li>
+<li><strong>Packages:</strong> <a href="https://pkg.julialang.org/" rel="nofollow">https://pkg.julialang.org/</a></li>
+<li><strong>Discussion forum:</strong> <a href="https://discourse.julialang.org" rel="nofollow">https://discourse.julialang.org</a></li>
+<li><strong>Slack:</strong> <a href="https://julialang.slack.com" rel="nofollow">https://julialang.slack.com</a> (get an invite from <a href="https://slackinvite.julialang.org" rel="nofollow">https://slackinvite.julialang.org</a>)</li>
+<li><strong>YouTube:</strong> <a href="https://www.youtube.com/user/JuliaLanguage" rel="nofollow">https://www.youtube.com/user/JuliaLanguage</a></li>
+<li><strong>Code coverage:</strong> <a href="https://coveralls.io/r/JuliaLang/julia" rel="nofollow">https://coveralls.io/r/JuliaLang/julia</a></li>
+</ul>
+<p>New developers may find the notes in
+<a href="https://github.com/JuliaLang/julia/blob/master/CONTRIBUTING.md">CONTRIBUTING</a>
+helpful to start contributing to the Julia codebase.</p>
+<h3><a id="user-content-external-resources" class="anchor" aria-hidden="true" href="#external-resources"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>External Resources</h3>
+<ul>
+<li><a href="https://stackoverflow.com/questions/tagged/julia-lang" rel="nofollow"><strong>StackOverflow</strong></a></li>
+<li><a href="https://twitter.com/JuliaLanguage" rel="nofollow"><strong>Twitter</strong></a></li>
+<li><a href="https://julia.meetup.com/" rel="nofollow"><strong>Meetup</strong></a></li>
+<li><a href="https://julialang.org/learning/" rel="nofollow"><strong>Learning resources</strong></a></li>
+</ul>
+<h2><a id="user-content-binary-installation" class="anchor" aria-hidden="true" href="#binary-installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Binary Installation</h2>
+<p>If you would rather not compile the latest Julia from source,
+platform-specific tarballs with pre-compiled binaries are also
+<a href="https://julialang.org/downloads/" rel="nofollow">available for download</a>. The
+downloads page also provides details on the
+<a href="https://julialang.org/downloads/#support-tiers" rel="nofollow">different tiers of support</a>
+for OS and platform combinations.</p>
+<p>If everything works correctly, you will see a Julia banner and an
+interactive prompt into which you can enter expressions for
+evaluation.  You can read about <a href="https://julialang.org/manual/getting-started" rel="nofollow">getting
+started</a> in the manual.</p>
+<p><strong>Note</strong>: Although some system package managers provide Julia, such
+installations are neither maintained nor endorsed by the Julia
+project. They may be outdated, broken and/or unmaintained. We
+recommend you use the official Julia binaries instead.</p>
+<h2><a id="user-content-building-julia" class="anchor" aria-hidden="true" href="#building-julia"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Building Julia</h2>
+<p>First, make sure you have all the <a href="https://github.com/JuliaLang/julia/blob/master/doc/build/build.md#required-build-tools-and-external-libraries">required
+dependencies</a> installed.
+Then, acquire the source code by cloning the git repository:</p>
+<pre><code>git clone git://github.com/JuliaLang/julia.git
+</code></pre>
+<p>By default you will be building the latest unstable version of
+Julia. However, most users should use the most recent stable version
+of Julia. You can get this version by changing to the Julia directory
+and running:</p>
+<pre><code>git checkout v1.3.0
+</code></pre>
+<p>Now run <code>make</code> to build the <code>julia</code> executable.</p>
+<p>Building Julia requires 2GiB of disk space and approximately 4GiB of virtual memory.</p>
+<p><strong>Note:</strong> The build process will fail badly if any of the build directory's parent directories have spaces or other shell meta-characters such as <code>$</code> or <code>:</code> in their names (this is due to a limitation in GNU make).</p>
+<p>Once it is built, you can run the <code>julia</code> executable after you enter your julia directory and run</p>
+<pre><code>./julia
+</code></pre>
+<p>Your first test of Julia determines whether your build is working
+properly. From the UNIX/Windows command prompt inside the <code>julia</code>
+source directory, type <code>make testall</code>. You should see output that
+lists a series of running tests; if they complete without error, you
+should be in good shape to start using Julia.</p>
+<p>You can read about <a href="https://docs.julialang.org/en/v1/manual/getting-started/" rel="nofollow">getting
+started</a>
+in the manual.</p>
+<p>In case this default build path did not work, detailed build instructions
+are included in the <a href="https://github.com/JuliaLang/julia/blob/master/doc/build">build documentation</a>.</p>
+<h3><a id="user-content-uninstalling-julia" class="anchor" aria-hidden="true" href="#uninstalling-julia"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Uninstalling Julia</h3>
+<p>Julia does not install anything outside the directory it was cloned
+into. Julia can be completely uninstalled by deleting this
+directory. Julia packages are installed in <code>~/.julia</code> by default, and
+can be uninstalled by deleting <code>~/.julia</code>.</p>
+<h2><a id="user-content-source-code-organization" class="anchor" aria-hidden="true" href="#source-code-organization"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Source Code Organization</h2>
+<p>The Julia source code is organized as follows:</p>
+<pre><code>base/          source code for the Base module (part of Julia's standard library)
+stdlib/        source code for other standard library packages
+contrib/       editor support for Julia source, miscellaneous scripts
+deps/          external dependencies
+doc/src/manual source for the user manual
+doc/build      detailed notes for building Julia
+src/           source for Julia language core
+test/          test suites
+ui/            source for various front ends
+usr/           binaries and shared libraries loaded by Julia's standard libraries
+</code></pre>
+<h2><a id="user-content-terminal-editors-and-ides" class="anchor" aria-hidden="true" href="#terminal-editors-and-ides"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Terminal, Editors and IDEs</h2>
+<p>The Julia REPL is quite powerful.  See the section in the manual on
+<a href="https://docs.julialang.org/en/v1/stdlib/REPL/" rel="nofollow">the Julia REPL</a>
+for more details.</p>
+<p>Support for editing Julia is available for many
+<a href="https://github.com/JuliaEditorSupport">widely used editors</a>:
+<a href="https://github.com/JuliaEditorSupport/julia-emacs">Emacs</a>,
+<a href="https://github.com/JuliaEditorSupport/julia-vim">Vim</a>,
+<a href="https://github.com/JuliaEditorSupport/Julia-sublime">Sublime Text</a>, and many
+others.</p>
+<p>Supported IDEs include: <a href="http://junolab.org/" rel="nofollow">Juno</a> (Atom plugin),
+<a href="https://github.com/JuliaEditorSupport/julia-vscode">julia-vscode</a> (VS
+Code plugin), and
+<a href="https://github.com/JuliaEditorSupport/julia-intellij">julia-intellij</a>
+(IntelliJ IDEA plugin). The popular <a href="https://jupyter.org/" rel="nofollow">Jupyter</a>
+notebook interface is available through
+<a href="https://github.com/JuliaLang/IJulia.jl">IJulia</a>.</p>
+</article>
+      </div>
+  </div>
+
+
+
+
+  </div>
+</div>
+
+    </main>
+  </div>
+  
+
+  </div>
+
+        
+<div class="footer container-lg width-full px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2020 GitHub, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" async="async" integrity="sha512-WcQmT2vhcClFVOaaAJV/M+HqsJ2Gq/myvl6F3gCVBxykazXTs+i5fvxncSXwyG1CSfcrqmLFw/R/bmFYzprX2A==" type="application/javascript" id="js-conditional-compat" data-src="https://github.githubassets.com/assets/compat-bootstrap-59c4264f.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-6XBdUZGib4aqdruJTnLMOLpIh0VJsGlgQ7M3vndWJIH6YQNv+zqpo1TbCDzjHJ+YYEm4xkEinaY0VsemDUfi9A==" type="application/javascript" src="https://github.githubassets.com/assets/environment-bootstrap-e9705d51.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-fNcWYAh2sNNjfGtnzXeDPemQsJYesX60BB9k+YlUmuSw+iX+9bVew+TJOO74e0yqqKS3gU570rxTCs+ZBpJCvg==" type="application/javascript" src="https://github.githubassets.com/assets/vendor-7cd71660.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-CcKFBqQZKOCZU5otP6R8GH2k+iJ3zC9r2z2Iakfs/Bo9/ptHy6JIWQN3FPhVuS3CR+Q/CkEOSfg+WJfoq3YMxQ==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-09c28506.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-YJfUzazDr9cv5vQ3uprerx75rOxBtkO8808pBDxH5ZC51jmraibbSP5xgU4Lkq860/f4tyDJ7vmLPuiKptv/0Q==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-6097d4cd.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  </body>
+</html>
+

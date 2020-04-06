@@ -1,0 +1,46 @@
+
+  <div class="border-bottom border-gray-light py-3">
+    <div class="topics-row-container col-9 d-inline-flex flex-wrap flex-items-center f6 my-1">
+      <span class="d-inline-block f5 text-bold no-wrap mr-3">Explore topics</span>
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/language" title="Topic: language" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:language">
+  language
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/ruby" title="Topic: ruby" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:ruby">
+  ruby
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/flask" title="Topic: flask" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:flask">
+  flask
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/django" title="Topic: django" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:django">
+  django
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/machine-learning" title="Topic: machine-learning" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:machine-learning">
+  machine-learning
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/database" title="Topic: database" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:database">
+  database
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/game" title="Topic: game" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:game">
+  game
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/jupyter-notebook" title="Topic: jupyter-notebook" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:jupyter-notebook">
+  jupyter-notebook
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/notebook" title="Topic: notebook" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:notebook">
+  notebook
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/data-science" title="Topic: data-science" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:data-science">
+  data-science
+</a>
+
+    </div>
+  </div>

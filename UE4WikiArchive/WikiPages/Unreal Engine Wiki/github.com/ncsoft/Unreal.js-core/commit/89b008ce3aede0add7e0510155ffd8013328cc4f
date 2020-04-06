@@ -1,0 +1,3407 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-FG+rXqMOivrAjdEQE7tO4BwM1poGmg70hJFTlNSxjX87grtrZ6UnPR8NkzwUHlQEGviu9XuRYeO8zH9YwvZhdg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-146fab5ea30e8afac08dd11013bb4ee0.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-iXrV/b4ypc1nr10b3Giikqff+qAx5osQ0yJRxHRDd8mKFefdMtEZ0Sxs1QysJxuJBayOKThjsuMjynwBJQq0aw==" rel="stylesheet" href="https://github.githubassets.com/assets/site-897ad5fdbe32a5cd67af5d1bdc68a292.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-23DJ0jGXuHq4HnEnOv5yjJ3aD9zHvk4UkkK4Vs7e52NlpTBA9/zI9GMjyZ7MrJmYgiHJ0ZHNKVSFxEC3Pud9UA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-db70c9d23197b87ab81e71273afe728c.css" />
+    
+    
+    
+    
+
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>fix for fname issue · ncsoft/Unreal.js-core@89b008c · GitHub</title>
+    <meta name="description" content="Unreal.js plugin submodule. Contribute to ncsoft/Unreal.js-core development by creating an account on GitHub.">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://avatars2.githubusercontent.com/u/1415901?s=200&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="fix for fname issue · ncsoft/Unreal.js-core@89b008c" /><meta name="twitter:description" content="- detail : https://github.com/ncsoft/Unreal.js/wiki/Access-Property" />
+    <meta property="og:image" content="https://avatars2.githubusercontent.com/u/1415901?s=200&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="fix for fname issue · ncsoft/Unreal.js-core@89b008c" /><meta property="og:url" content="https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f" /><meta property="og:description" content="- detail : https://github.com/ncsoft/Unreal.js/wiki/Access-Property" /><meta property="og:updated_time" content="1522505233" />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  
+  
+
+  <meta name="request-id" content="C7B4:48F0:E82BD:16B13C:5E8401BF" data-pjax-transient="true"/><meta name="html-safe-nonce" content="2f5c4d90450f6cdcc6366c926866fc0da907d10e" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHA6Ly9naXRodWIuY29tL25jc29mdC9VbnJlYWwuanMtZGVtby9jb21taXRzL21hc3RlciIsInJlcXVlc3RfaWQiOiJDN0I0OjQ4RjA6RTgyQkQ6MTZCMTNDOjVFODQwMUJGIiwidmlzaXRvcl9pZCI6Ijg0MjgyMDg4ODQyNTAwNDQwNTUiLCJyZWdpb25fZWRnZSI6ImlhZCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="fe86fd99be44697f616876197aae7878d1775003774e87f04e548221279172e8" data-pjax-transient="true"/>
+
+
+
+  <meta name="github-keyboard-shortcuts" content="repository,commits" data-pjax-transient="true" />
+
+  
+
+  <meta name="selected-link" value="repo_commits" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/commit/show" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+
+<meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+
+
+    <meta name="enabled-features" content="MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,RELATED_ISSUES">
+
+  <meta http-equiv="x-pjax-version" content="8769db88308fb15007b2d764cf15a630">
+  
+
+      <link href="/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f.diff" rel="alternate" type="text/plain+diff" data-pjax-transient="true" />
+  <link href="/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f.patch" rel="alternate" type="text/plain+patch" data-pjax-transient="true" />
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+  <link href="https://github.com/ncsoft/Unreal.js-core/commits/89b008ce3aede0add7e0510155ffd8013328cc4f.atom" rel="alternate" title="Recent Commits to Unreal.js-core:89b008ce3aede0add7e0510155ffd8013328cc4f" type="application/atom+xml">
+      <meta name="robots" content="noindex, nofollow" />
+
+  <meta name="go-import" content="github.com/ncsoft/Unreal.js-core git https://github.com/ncsoft/Unreal.js-core.git">
+
+  <meta name="octolytics-dimension-user_id" content="15726364" /><meta name="octolytics-dimension-user_login" content="ncsoft" /><meta name="octolytics-dimension-repository_id" content="55330991" /><meta name="octolytics-dimension-repository_nwo" content="ncsoft/Unreal.js-core" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="55330991" /><meta name="octolytics-dimension-repository_network_root_nwo" content="ncsoft/Unreal.js-core" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production page-responsive">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+      <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+
+    
+    
+
+
+
+        <header class="Header-old header-logged-out js-details-container Details position-relative f4 py-2" role="banner">
+  <div class="container-lg d-lg-flex flex-items-center p-responsive">
+    <div class="d-flex flex-justify-between flex-items-center">
+        <a class="mr-4" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+          <svg height="32" class="octicon octicon-mark-github text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+
+          <div class="d-lg-none css-truncate css-truncate-target width-fit p-2">
+            
+              <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+    <a class="Header-link" href="/ncsoft">ncsoft</a>
+    /
+    <a class="Header-link" href="/ncsoft/Unreal.js-core">Unreal.js-core</a>
+
+
+          </div>
+
+        <div class="d-flex flex-items-center">
+            <a href="/join?source=header-repo"
+              class="d-inline-block d-lg-none f5 text-white no-underline border border-gray-dark rounded-2 px-2 py-1 mr-3 mr-sm-5"
+              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="deb1c49b718a06008b2f6f8ffc0391970341c16c9336aafef766b629f37c475e"
+              data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">
+              Sign&nbsp;up
+            </a>
+
+          <button class="btn-link d-lg-none mt-1 js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <svg height="24" class="octicon octicon-three-bars text-white" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+          </button>
+        </div>
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--logged-out position-fixed top-0 right-0 bottom-0 height-fit position-lg-relative d-lg-flex flex-justify-between flex-items-center flex-auto">
+      <div class="d-flex d-lg-none flex-justify-end border-bottom bg-gray-light p-3">
+        <button class="btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <svg height="24" class="octicon octicon-x text-gray" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+        </button>
+      </div>
+
+        <nav class="mt-0 px-3 px-lg-0 mb-5 mb-lg-0" aria-label="Global">
+          <ul class="d-lg-flex list-style-none">
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Why GitHub?
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <a href="/features" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Features">Features <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+                    <ul class="list-style-none f5 pb-3">
+                      <li class="edge-item-fix"><a href="/features/code-review/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code review">Code review</a></li>
+                      <li class="edge-item-fix"><a href="/features/project-management/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Project management">Project management</a></li>
+                      <li class="edge-item-fix"><a href="/features/integrations" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Integrations">Integrations</a></li>
+                      <li class="edge-item-fix"><a href="/features/actions" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Actions">Actions</a></li>
+                      <li class="edge-item-fix"><a href="/features/packages" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Packages">Packages</a></li>
+                      <li class="edge-item-fix"><a href="/features/security" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Security">Security</a></li>
+                      <li class="edge-item-fix"><a href="/features#team-management" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Team management">Team management</a></li>
+                      <li class="edge-item-fix"><a href="/features#hosting" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code hosting">Hosting</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="/customer-stories" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Customer stories">Customer stories <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="/security" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Security">Security <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
+                <a href="/enterprise" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Enterprise">Enterprise</a>
+              </li>
+
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Explore
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/explore" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Explore">Explore GitHub <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Learn &amp; contribute</h4>
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/topics" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Topics">Topics</a></li>
+                        <li class="edge-item-fix"><a href="/collections" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Collections">Collections</a></li>
+                      <li class="edge-item-fix"><a href="/trending" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Trending">Trending</a></li>
+                      <li class="edge-item-fix"><a href="https://lab.github.com/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Learning lab">Learning Lab</a></li>
+                      <li class="edge-item-fix"><a href="https://opensource.guide" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Open source guides">Open source guides</a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Connect with others</h4>
+                    <ul class="list-style-none mb-0">
+                      <li class="edge-item-fix"><a href="https://github.com/events" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Events">Events</a></li>
+                      <li class="edge-item-fix"><a href="https://github.community" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Community forum">Community forum</a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Education">GitHub Education</a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+
+              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
+                <a href="/marketplace" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Marketplace">Marketplace</a>
+              </li>
+
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Pricing
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                       <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-4 mt-0 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <a href="/pricing" class="pb-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Pricing">Plans <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/pricing#feature-comparison" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Compare plans">Compare plans</a></li>
+                      <li class="edge-item-fix"><a href="https://enterprise.github.com/contact" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Contact Sales">Contact Sales</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="/nonprofit" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Nonprofits">Nonprofit <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover"  data-ga-click="(Logged out) Header, go to Education">Education <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+          </ul>
+        </nav>
+
+      <div class="d-lg-flex flex-items-center px-3 px-lg-0 text-center text-lg-left">
+          <div class="d-lg-flex mb-3 mb-lg-0">
+            <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="55330991" data-scoped-search-url="/ncsoft/Unreal.js-core/search" data-unscoped-search-url="/search" action="/ncsoft/Unreal.js-core/search" accept-charset="UTF-8" method="get">
+      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search"
+          data-unscoped-placeholder="Search GitHub"
+          data-scoped-placeholder="Search"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations"
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="SbqxzsTm6AygV5QxpJv8sok6WZVPFjiacJ7a0NEXUmRznGyAT04vX+5g2PKTMMDEE0YmshjXs5Ng913X1U5rSw==" />
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+          </div>
+
+        <a href="/login?return_to=%2Fncsoft%2FUnreal.js-core%2Fcommit%2F89b008ce3aede0add7e0510155ffd8013328cc4f"
+          class="HeaderMenu-link no-underline mr-3"
+          data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f76d2e1042140405836fae0d7b47dffbf8542020ad5333c2db7232fd81954ffa"
+          data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">
+          Sign&nbsp;in
+        </a>
+          <a href="/join?source=header-repo&amp;source_repo=ncsoft%2FUnreal.js-core"
+            class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1"
+            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f76d2e1042140405836fae0d7b47dffbf8542020ad5333c2db7232fd81954ffa"
+            data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">
+            Sign&nbsp;up
+          </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+    <div id="js-flash-container">
+
+
+  <template class="js-flash-template">
+    <div class="flash flash-full  js-flash-template-container">
+  <div class="container-lg px-2" >
+    <button class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    
+      <div class="js-flash-template-message"></div>
+
+  </div>
+</div>
+  </template>
+</div>
+
+
+      
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled>
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main id="js-repo-pjax-container" data-pjax-container >
+      
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <div class="pagehead repohead hx_repohead readability-menu bg-gray-light pb-0 pt-0 pt-lg-3">
+
+    <div class="d-flex container-lg mb-4 p-responsive d-none d-lg-flex">
+
+      <div class="flex-auto min-width-0 width-fit mr-3">
+        <h1 class="public  d-flex flex-wrap flex-items-center break-word float-none ">
+    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author ml-1 flex-self-stretch" itemprop="author">
+    <a class="url fn" rel="author" data-hovercard-type="organization" data-hovercard-url="/orgs/ncsoft/hovercard" href="/ncsoft">ncsoft</a>
+  </span>
+  <span class="path-divider flex-self-stretch">/</span>
+  <strong itemprop="name" class="mr-2 flex-self-stretch">
+    <a data-pjax="#js-repo-pjax-container" href="/ncsoft/Unreal.js-core">Unreal.js-core</a>
+  </strong>
+  
+</h1>
+
+
+      </div>
+
+      <ul class="pagehead-actions flex-shrink-0 " >
+
+
+
+
+  <li>
+    
+  <a class="tooltipped tooltipped-s btn btn-sm btn-with-count" aria-label="You must be signed in to watch a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="42c921492297b28d1c83eea7cb51e87e3d1a2122a79deeb18d25e70ce3e57688" href="/login?return_to=%2Fncsoft%2FUnreal.js-core">
+    <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+</a>    <a class="social-count" href="/ncsoft/Unreal.js-core/watchers"
+       aria-label="29 users are watching this repository">
+      29
+    </a>
+
+  </li>
+
+  <li>
+        <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to star a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:55330991,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="5dced29295cd7aa07f9f2cea94a46c8396794db3b971ddf28eb71d5b1a24a161" href="/login?return_to=%2Fncsoft%2FUnreal.js-core">
+      <svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+      Star
+</a>
+    <a class="social-count js-social-count" href="/ncsoft/Unreal.js-core/stargazers"
+      aria-label="170 users starred this repository">
+      170
+    </a>
+
+  </li>
+
+  <li>
+      <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to fork a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:55330991,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="22e89de7f168793ebeb9e7638fb9e4bc1ac7c70dc768e89434ecdd0526af926c" href="/login?return_to=%2Fncsoft%2FUnreal.js-core">
+        <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+</a>
+    <a href="/ncsoft/Unreal.js-core/network/members" class="social-count"
+       aria-label="59 users forked this repository">
+      59
+    </a>
+  </li>
+</ul>
+
+    </div>
+      
+<nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax clearfix container-lg p-responsive d-none d-lg-block"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /ncsoft/Unreal.js-core" href="/ncsoft/Unreal.js-core">
+      <div class="d-inline"><svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg></div>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /ncsoft/Unreal.js-core/issues" href="/ncsoft/Unreal.js-core/issues">
+        <div class="d-inline"><svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></div>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">10</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" data-skip-pjax="true" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /ncsoft/Unreal.js-core/pulls" href="/ncsoft/Unreal.js-core/pulls">
+      <div class="d-inline"><svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg></div>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">1</span>
+      <meta itemprop="position" content="4">
+</a>  </span>
+
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="position-relative float-left">
+      <a data-hotkey="g w" data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="repo_actions /ncsoft/Unreal.js-core/actions" href="/ncsoft/Unreal.js-core/actions">
+        <div class="d-inline"><svg class="octicon octicon-play" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 8A7 7 0 110 8a7 7 0 0114 0zm-8.223 3.482l4.599-3.066a.5.5 0 000-.832L5.777 4.518A.5.5 0 005 4.934v6.132a.5.5 0 00.777.416z"/></svg></div>
+        Actions
+</a>
+    </span>
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /ncsoft/Unreal.js-core/projects" href="/ncsoft/Unreal.js-core/projects">
+      <div class="d-inline"><svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg></div>
+      Projects
+      <span class="Counter">0</span>
+</a>
+
+    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy token_scanning code_scanning /ncsoft/Unreal.js-core/security/advisories" href="/ncsoft/Unreal.js-core/security/advisories">
+      <div class="d-inline"><svg class="octicon octicon-shield" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 2l7-2 7 2v6.02C14 12.69 8.69 16 7 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L7 1l6 1.75v5.268C13 12.104 8.449 15 7 15c-1.449 0-6-2.896-6-6.982V2.75zm1 .75L7 2v12c-1.207 0-5-2.482-5-5.985V3.5z"/></svg></div>
+      Security
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people /ncsoft/Unreal.js-core/pulse" href="/ncsoft/Unreal.js-core/pulse">
+      <div class="d-inline"><svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg></div>
+      Insights
+</a>
+
+</nav>
+
+  <div class="reponav-wrapper reponav-small d-lg-none">
+  <nav class="reponav js-reponav text-center no-wrap"
+       itemscope
+       itemtype="http://schema.org/BreadcrumbList">
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a class="js-selected-navigation-item selected reponav-item" itemprop="url" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /ncsoft/Unreal.js-core" href="/ncsoft/Unreal.js-core">
+        <span itemprop="name">Code</span>
+        <meta itemprop="position" content="1">
+</a>    </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /ncsoft/Unreal.js-core/issues" href="/ncsoft/Unreal.js-core/issues">
+          <span itemprop="name">Issues</span>
+          <span class="Counter">10</span>
+          <meta itemprop="position" content="2">
+</a>      </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /ncsoft/Unreal.js-core/pulls" href="/ncsoft/Unreal.js-core/pulls">
+        <span itemprop="name">Pull requests</span>
+        <span class="Counter">1</span>
+        <meta itemprop="position" content="4">
+</a>    </span>
+
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /ncsoft/Unreal.js-core/projects" href="/ncsoft/Unreal.js-core/projects">
+          <span itemprop="name">Projects</span>
+          <span class="Counter">0</span>
+          <meta itemprop="position" content="5">
+</a>      </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_actions /ncsoft/Unreal.js-core/actions" href="/ncsoft/Unreal.js-core/actions">
+          <span itemprop="name">Actions</span>
+          <meta itemprop="position" content="6">
+</a>      </span>
+
+
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy token_scanning code_scanning /ncsoft/Unreal.js-core/security/advisories" href="/ncsoft/Unreal.js-core/security/advisories">
+        <span itemprop="name">Security</span>
+        <meta itemprop="position" content="8">
+</a>
+      <a class="js-selected-navigation-item reponav-item" data-selected-links="pulse /ncsoft/Unreal.js-core/pulse" href="/ncsoft/Unreal.js-core/pulse">
+        Pulse
+</a>
+
+  </nav>
+</div>
+
+
+  </div>
+
+  
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+<div class="container-lg clearfix new-discussion-timeline  p-responsive">
+  <div class="repository-content ">
+
+    
+    
+  <a href="/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+
+  
+
+  
+<div class="commit full-commit mt-0 px-2 pt-2 ">
+  <a href="/ncsoft/Unreal.js-core/tree/89b008ce3aede0add7e0510155ffd8013328cc4f" class="btn btn-outline float-right" title="Browse the repository at this point in the history" rel="nofollow">Browse files</a>
+
+
+    <p class="commit-title">
+      fix for fname issue
+    </p>
+
+    <div class="commit-desc"><pre>- detail : <a href="https://github.com/ncsoft/Unreal.js/wiki/Access-Property">https://github.com/ncsoft/Unreal.js/wiki/Access-Property</a></pre></div>
+
+  <div class="commit-branches">
+  <include-fragment src="/ncsoft/Unreal.js-core/branch_commits/89b008ce3aede0add7e0510155ffd8013328cc4f">
+    <svg class="octicon octicon-git-branch" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 00-1-3.72C.88 1 0 1.89 0 3a2 2 0 001 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+    <ul class="branches-list">
+      <li class="loading">Loading branch information<span class="AnimatedEllipsis"></span></li>
+    </ul>
+</include-fragment></div>
+
+
+  <div class="commit-meta p-2 d-flex flex-wrap">
+    
+<div class="AvatarStack flex-self-start ">
+  <div class="AvatarStack-body" aria-label="crocuis">
+        <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/crocuis/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/crocuis">
+          <img height="20" width="20" alt="@crocuis" src="https://avatars3.githubusercontent.com/u/1415901?s=60&amp;v=4" class="" />
+</a>  </div>
+</div>
+
+    <div class="flex-self-start no-wrap mr-md-4 mr-0">
+      
+      <a href="/ncsoft/Unreal.js-core/commits?author=crocuis"
+     class="commit-author tooltipped tooltipped-s user-mention"
+     aria-label="View all commits by crocuis">crocuis</a>
+
+
+  committed
+  <relative-time datetime="2018-03-31T14:07:13Z" class="no-wrap">Mar 31, 2018</relative-time>
+
+      <div class="d-none d-md-inline-block">
+        
+
+      </div>
+    </div>
+    <div class="flex-auto no-wrap text-lg-right text-left overflow-x-auto">
+      <span class="sha-block ml-0" data-pjax>
+        1 parent
+          
+          <a class="sha" data-hotkey="p" href="/ncsoft/Unreal.js-core/commit/31d71285adeb77f0a0355ef913e632c67863bad7">31d7128</a>
+      </span>
+      <span class="sha-block">commit <span class="sha user-select-contain">89b008ce3aede0add7e0510155ffd8013328cc4f</span></span>
+    </div>
+  </div>
+</div>
+
+
+
+
+      <a name="diff-stat"></a>
+      <div id="toc" class="details-collapse table-of-contents js-details-container Details">
+  <div class="BtnGroup float-right ml-2" data-ga-load="Diff, view, Viewed Unified Diff">
+  <a class="btn btn-sm BtnGroup-item selected"
+    aria-current="true"
+    href="https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f?diff=unified">
+    Unified
+  </a>
+  <a class="btn btn-sm BtnGroup-item"
+    
+    href="https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f?diff=split">
+    Split
+  </a>
+</div>
+
+
+  <div class="toc-diff-stats">
+    <svg class="octicon octicon-diff" viewBox="0 0 13 16" version="1.1" width="13" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 7h2v1H6v2H5V8H3V7h2V5h1v2zm-3 6h5v-1H3v1zM7.5 2L11 5.5V15c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h6.5zM10 6L7 3H1v12h9V6zM8.5 0H3v1h5l4 4v8h1V4.5L8.5 0z"/></svg>
+    Showing
+    <button type="button" class="btn-link js-details-target" aria-expanded="false">
+      4 changed files
+    </button>
+    with
+    <strong>39 additions</strong>
+    and <strong>35 deletions</strong>.
+  </div>
+
+  <ol class="content collapse js-transitionable">
+    <li>
+      <span class="diffstat float-right">
+          <span class="text-green">
+            +2
+          </span>
+          <span class="text-red">
+            −31
+          </span>
+          <a href="#diff-656f4d049ac1d3988326759ef68a6429" class="tooltipped tooltipped-s" aria-label="33 lines changed">
+            <span class="diffstat-block-deleted"></span><span class="diffstat-block-deleted"></span><span class="diffstat-block-deleted"></span><span class="diffstat-block-deleted"></span><span class="diffstat-block-neutral"></span>
+          </a>
+      </span>
+      <svg title="modified" class="octicon octicon-diff-modified" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zm0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"/></svg>
+      <a href="#diff-656f4d049ac1d3988326759ef68a6429">Source/V8/Private/JavascriptIsolate_Private.cpp</a>
+    </li>
+    <li>
+      <span class="diffstat float-right">
+          <span class="text-green">
+            +30
+          </span>
+          <span class="text-red">
+            −0
+          </span>
+          <a href="#diff-031163a5d91a40fa81d53aa36177d27c" class="tooltipped tooltipped-s" aria-label="30 lines changed">
+            <span class="diffstat-block-added"></span><span class="diffstat-block-added"></span><span class="diffstat-block-added"></span><span class="diffstat-block-added"></span><span class="diffstat-block-added"></span>
+          </a>
+      </span>
+      <svg title="modified" class="octicon octicon-diff-modified" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zm0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"/></svg>
+      <a href="#diff-031163a5d91a40fa81d53aa36177d27c">Source/V8/Private/Translator.cpp</a>
+    </li>
+    <li>
+      <span class="diffstat float-right">
+          <span class="text-green">
+            +2
+          </span>
+          <span class="text-red">
+            −0
+          </span>
+          <a href="#diff-0e4bc6d01f62d42ca6e2a5e8051d21fe" class="tooltipped tooltipped-s" aria-label="2 lines changed">
+            <span class="diffstat-block-added"></span><span class="diffstat-block-added"></span><span class="diffstat-block-neutral"></span><span class="diffstat-block-neutral"></span><span class="diffstat-block-neutral"></span>
+          </a>
+      </span>
+      <svg title="modified" class="octicon octicon-diff-modified" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zm0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"/></svg>
+      <a href="#diff-0e4bc6d01f62d42ca6e2a5e8051d21fe">Source/V8/Private/Translator.h</a>
+    </li>
+    <li>
+      <span class="diffstat float-right">
+          <span class="text-green">
+            +5
+          </span>
+          <span class="text-red">
+            −4
+          </span>
+          <a href="#diff-1c84c2e394abf597920d01b22ecd7945" class="tooltipped tooltipped-s" aria-label="9 lines changed">
+            <span class="diffstat-block-added"></span><span class="diffstat-block-added"></span><span class="diffstat-block-deleted"></span><span class="diffstat-block-deleted"></span><span class="diffstat-block-neutral"></span>
+          </a>
+      </span>
+      <svg title="modified" class="octicon octicon-diff-modified" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zm0 13H1V2h12v12zM4 8c0-1.66 1.34-3 3-3s3 1.34 3 3-1.34 3-3 3-3-1.34-3-3z"/></svg>
+      <a href="#diff-1c84c2e394abf597920d01b22ecd7945">Source/V8/Private/TypingGenerator.h</a>
+    </li>
+  </ol>
+</div>
+
+    <div id="files" class="diff-view ">
+
+  <div class="js-diff-progressive-container">
+    
+<div id="diff-656f4d049ac1d3988326759ef68a6429"
+     class="file js-file js-details-container js-targetable-element Details
+              Details--on open
+             
+             
+             
+             
+             
+              show-inline-notes
+           "
+          data-file-type=".cpp"
+          data-file-deleted="false"
+      >
+  <div class="file-header d-flex flex-md-row flex-column flex-md-items-center file-header--expandable js-file-header "
+    data-path="Source/V8/Private/JavascriptIsolate_Private.cpp"
+    data-short-path="656f4d0"
+    data-anchor="diff-656f4d049ac1d3988326759ef68a6429"
+    data-file-type=".cpp"
+    data-file-deleted="false"
+    >
+    <div class="file-info flex-auto min-width-0 mb-md-0 mb-2">
+      <button type="button" class="btn-octicon js-details-target" aria-label="Toggle diff contents" aria-expanded="true" style="width: 22px;">
+  <svg class="octicon octicon-chevron-down Details-content--hidden" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"/></svg>
+  <svg class="octicon octicon-chevron-right Details-content--shown" viewBox="0 0 8 16" version="1.1" width="8" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/></svg>
+</button>
+
+
+
+        <span class="diffstat tooltipped tooltipped-e" aria-label="33 changes: 2 additions &amp; 31 deletions">33 <span class="diffstat-block-deleted"></span><span class="diffstat-block-deleted"></span><span class="diffstat-block-deleted"></span><span class="diffstat-block-deleted"></span><span class="diffstat-block-neutral"></span></span>
+
+      <a title="Source/V8/Private/JavascriptIsolate_Private.cpp" class="link-gray-dark" href="#diff-656f4d049ac1d3988326759ef68a6429">Source/V8/Private/JavascriptIsolate_Private.cpp</a>
+<clipboard-copy
+  value="Source/V8/Private/JavascriptIsolate_Private.cpp"
+  data-copy-feedback="Copied!"
+  aria-label="Copy"
+  class="js-clipboard-copy zeroclipboard-link text-gray link-hover-blue"
+  >
+  <svg class="octicon octicon-clippy d-inline-block mx-1 js-clipboard-clippy-icon" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg>
+  <svg class="octicon octicon-check js-clipboard-check-icon mx-1 d-inline-block d-none text-green" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+</clipboard-copy>
+
+
+      
+    </div>
+
+    <div class="file-actions pt-0 mb-md-0 mb-2 ml-md-2 flex-shrink-0 flex-md-justify-end">
+      <div class="d-flex flex-justify-end">
+
+
+
+
+
+
+
+
+
+
+
+        <details class="js-file-header-dropdown dropdown details-overlay details-reset pr-2 pl-2">
+          <summary class="height-full">
+            <div class="height-full d-flex flex-items-center link-gray">
+              <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+            </div>
+          </summary>
+          <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark position-absolute f5" style="width:185px; z-index:99; right: -4px;">
+                          <label role="menuitemradio" class="dropdown-item btn-link text-normal d-block pl-5" tabindex="0" aria-checked="true">
+              <span class="position-absolute ml-n3"><svg class="octicon octicon-check" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg></span>
+              <input type="checkbox" checked class="d-none js-toggle-file-notes">
+              Show comments
+            </label>
+
+                        <div role="none" class="dropdown-divider"></div>
+
+                          <a href="/ncsoft/Unreal.js-core/blob/89b008ce3aede0add7e0510155ffd8013328cc4f/Source/V8/Private/JavascriptIsolate_Private.cpp"
+   class="pl-5 dropdown-item btn-link"
+   rel="nofollow"
+   role="menuitem"
+   data-ga-click="View file, click, location:files_changed_dropdown"
+   >
+   View file
+</a>
+
+
+                                <button type="button" disabled role="menuitem" class="pl-5 dropdown-item btn-link" aria-label="You must be signed in and have push access to make changes.">
+      Edit file
+    </button>
+
+
+                              <button type="button" disabled role="menuitem" class="pl-5 dropdown-item btn-link" aria-label="You must be signed in and have push access to delete this file.">
+    Delete file
+  </button>
+
+
+                        <div role="none" class="dropdown-divider"></div>
+
+              
+
+              
+          </details-menu>
+        </details>
+      </div>
+    </div>
+  </div>
+  <div class="js-file-content Details-content--hidden"
+    data-hydro-view="{&quot;event_type&quot;:&quot;pull_request.select_diff_range&quot;,&quot;payload&quot;:{&quot;actor_id&quot;:null,&quot;pull_request_id&quot;:null,&quot;repository_id&quot;:null,&quot;diff_type&quot;:&quot;UNIFIED&quot;,&quot;whitespace_ignored&quot;:false,&quot;originating_url&quot;:&quot;https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f&quot;,&quot;user_id&quot;:null}}" data-hydro-view-hmac="67cdffd1effd9a9b488ba836d619f0d360d0ed06dd8b1fccd09fb0093e95356c">
+        <div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+          <table class="diff-table js-diff-table tab-size  " data-tab-size="8" data-diff-anchor="diff-656f4d049ac1d3988326759ef68a6429" data-paste-markdown-skip>
+
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+          <a href="#diff-656f4d049ac1d3988326759ef68a6429"
+              class="js-expand directional-expander single-expander" title="Expand Up" aria-label="Expand Up"
+              data-url="/ncsoft/Unreal.js-core/blob_excerpt/963aa78fde25a1e9d878a83a1108907fa78d03bf?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=21&amp;left_hunk_size=7&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FJavascriptIsolate_Private.cpp&amp;right=21&amp;right_hunk_size=6"
+              data-left-range="1-20" data-right-range="1-20">
+            <svg class="octicon octicon-fold-up" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z"/></svg>
+          </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -21,7 +21,6 @@ PRAGMA_DISABLE_SHADOW_VARIABLE_WARNINGS</td>
+  </tr>
+
+    <tr data-hunk="c386c034ee02a3631845add3a32af41b">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L21" data-line-number="21"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R21" data-line-number="21"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>JavascriptGeneratedClass_Native.h<span class="pl-pds">&quot;</span></span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="c386c034ee02a3631845add3a32af41b">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L22" data-line-number="22"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R22" data-line-number="22"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>StructMemoryInstance.h<span class="pl-pds">&quot;</span></span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="c386c034ee02a3631845add3a32af41b">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>JavascriptMemoryObject.h<span class="pl-pds">&quot;</span></span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="c386c034ee02a3631845add3a32af41b">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L24" data-line-number="24"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Engine/UserDefinedStruct.h<span class="pl-pds">&quot;</span></span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="c386c034ee02a3631845add3a32af41b">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L25" data-line-number="25"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R24" data-line-number="24"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Ticker.h<span class="pl-pds">&quot;</span></span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="c386c034ee02a3631845add3a32af41b">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L26" data-line-number="26"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R25" data-line-number="25"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>V8PCH.h<span class="pl-pds">&quot;</span></span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="c386c034ee02a3631845add3a32af41b">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L27" data-line-number="27"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R26" data-line-number="26"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>UObjectIterator.h<span class="pl-pds">&quot;</span></span></span></td>
+</tr>
+
+
+
+      <tr class="js-expandable-line" data-position="8">
+    <td class="blob-num blob-num-expandable" colspan="2">
+          <a href="#diff-656f4d049ac1d3988326759ef68a6429"
+                class="js-expand directional-expander" title="Expand Down" aria-label="Expand Down"
+                data-url="/ncsoft/Unreal.js-core/blob_excerpt/963aa78fde25a1e9d878a83a1108907fa78d03bf?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=27&amp;last_right=26&amp;left=95&amp;left_hunk_size=34&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FJavascriptIsolate_Private.cpp&amp;right=94&amp;right_hunk_size=6"
+                data-left-range="28-60" data-right-range="27-59">
+            <svg class="octicon octicon-fold-down" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z"/></svg>
+          </a>
+          <a href="#diff-656f4d049ac1d3988326759ef68a6429"
+              class="js-expand directional-expander" title="Expand Up" aria-label="Expand Up"
+              data-url="/ncsoft/Unreal.js-core/blob_excerpt/963aa78fde25a1e9d878a83a1108907fa78d03bf?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=27&amp;last_right=26&amp;left=95&amp;left_hunk_size=34&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FJavascriptIsolate_Private.cpp&amp;right=94&amp;right_hunk_size=6"
+              data-left-range="61-94" data-right-range="60-93">
+            <svg class="octicon octicon-fold-up" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z"/></svg>
+          </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -95,34 +94,6 @@ void FArrayBufferAccessor::Discard()</td>
+  </tr>
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L95" data-line-number="95"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R94" data-line-number="94"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">	GCurrentContents = <span class="pl-c1">v8::ArrayBuffer::Contents</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L96" data-line-number="96"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R95" data-line-number="95"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L97" data-line-number="97"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R96" data-line-number="96"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L98" data-line-number="98"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">FString <span class="pl-en">PropertyNameToString</span>(UProperty* Property)</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L99" data-line-number="99"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L100" data-line-number="100"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">	<span class="pl-k">auto</span> Struct = Property-&gt;<span class="pl-c1">GetOwnerStruct</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L101" data-line-number="101"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">	<span class="pl-k">auto</span> name = Property-&gt;<span class="pl-c1">GetFName</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L102" data-line-number="102"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">	<span class="pl-k">if</span> (Struct)</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L103" data-line-number="103"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">	{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L104" data-line-number="104"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">		<span class="pl-k">if</span> (<span class="pl-k">auto</span> s = Cast&lt;UUserDefinedStruct&gt;(Struct))</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L105" data-line-number="105"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">		{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L106" data-line-number="106"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">			<span class="pl-k">return</span> s-&gt;<span class="pl-c1">PropertyNameToDisplayName</span>(name);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L107" data-line-number="107"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">		}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L108" data-line-number="108"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">	}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L109" data-line-number="109"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">	<span class="pl-k">return</span> name.<span class="pl-c1">ToString</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L110" data-line-number="110"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L111" data-line-number="111"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-"><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L112" data-line-number="112"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-"><span class="pl-k">bool</span> <span class="pl-en">MatchPropertyName</span>(UProperty* Property, FName NameToMatch)</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L113" data-line-number="113"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L114" data-line-number="114"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">	<span class="pl-k">auto</span> Struct = Property-&gt;<span class="pl-c1">GetOwnerStruct</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L115" data-line-number="115"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">	<span class="pl-k">auto</span> name = Property-&gt;<span class="pl-c1">GetFName</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L116" data-line-number="116"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">	<span class="pl-k">if</span> (Struct)</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L117" data-line-number="117"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">	{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L118" data-line-number="118"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">		<span class="pl-k">if</span> (<span class="pl-k">auto</span> s = Cast&lt;UUserDefinedStruct&gt;(Struct))</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L119" data-line-number="119"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">		{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L120" data-line-number="120"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">			<span class="pl-k">return</span> s-&gt;<span class="pl-c1">PropertyNameToDisplayName</span>(name) == NameToMatch.<span class="pl-c1">ToString</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L121" data-line-number="121"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">		}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L122" data-line-number="122"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">	}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L123" data-line-number="123"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">	<span class="pl-k">return</span> name == NameToMatch;</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L124" data-line-number="124"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L125" data-line-number="125"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-"><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L126" data-line-number="126"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R97" data-line-number="97"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><span class="pl-k">class</span> <span class="pl-en">FJavascriptIsolateImplementation</span> : <span class="pl-k">public</span> <span class="pl-en">FJavascriptIsolate</span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L127" data-line-number="127"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R98" data-line-number="98"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="6aff0ecd86d93007eefb65ca6a2a7932">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L128" data-line-number="128"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R99" data-line-number="99"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><span class="pl-k">public:</span></span></td>
+</tr>
+
+
+
+      <tr class="js-expandable-line" data-position="43">
+    <td class="blob-num blob-num-expandable" colspan="2">
+          <a href="#diff-656f4d049ac1d3988326759ef68a6429"
+                class="js-expand directional-expander" title="Expand Down" aria-label="Expand Down"
+                data-url="/ncsoft/Unreal.js-core/blob_excerpt/963aa78fde25a1e9d878a83a1108907fa78d03bf?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=128&amp;last_right=99&amp;left=1606&amp;left_hunk_size=7&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FJavascriptIsolate_Private.cpp&amp;right=1577&amp;right_hunk_size=7"
+                data-left-range="129-866" data-right-range="100-837">
+            <svg class="octicon octicon-fold-down" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z"/></svg>
+          </a>
+          <a href="#diff-656f4d049ac1d3988326759ef68a6429"
+              class="js-expand directional-expander" title="Expand Up" aria-label="Expand Up"
+              data-url="/ncsoft/Unreal.js-core/blob_excerpt/963aa78fde25a1e9d878a83a1108907fa78d03bf?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=128&amp;last_right=99&amp;left=1606&amp;left_hunk_size=7&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FJavascriptIsolate_Private.cpp&amp;right=1577&amp;right_hunk_size=7"
+              data-left-range="867-1605" data-right-range="838-1576">
+            <svg class="octicon octicon-fold-up" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z"/></svg>
+          </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -1606,7 +1577,7 @@ class FJavascriptIsolateImplementation : public FJavascriptIsolate</td>
+  </tr>
+
+    <tr data-hunk="3652de78e0ddadb34db11859efb90fd9">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1606" data-line-number="1606"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1577" data-line-number="1577"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">		FIsolateHelper <span class="pl-smi">I</span>(isolate_);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="3652de78e0ddadb34db11859efb90fd9">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1607" data-line-number="1607"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1578" data-line-number="1578"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="3652de78e0ddadb34db11859efb90fd9">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1608" data-line-number="1608"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1579" data-line-number="1579"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">		<span class="pl-c"><span class="pl-c">//</span> Property getter</span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="3652de78e0ddadb34db11859efb90fd9">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1609" data-line-number="1609"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">		<span class="pl-k">auto</span> Getter = [](Local&lt;<span class="x x-first x-last">String</span>&gt; property, <span class="pl-k">const</span> PropertyCallbackInfo&lt;Value&gt;&amp; info) {</span></td>
+</tr>
+
+
+
+    <tr data-hunk="3652de78e0ddadb34db11859efb90fd9">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1580" data-line-number="1580"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		<span class="pl-k">auto</span> Getter = [](Local&lt;<span class="x x-first x-last">Name</span>&gt; property, <span class="pl-k">const</span> PropertyCallbackInfo&lt;Value&gt;&amp; info) {</span></td>
+</tr>
+
+
+
+    <tr data-hunk="3652de78e0ddadb34db11859efb90fd9">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1610" data-line-number="1610"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1581" data-line-number="1581"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">			<span class="pl-k">auto</span> isolate = info.<span class="pl-c1">GetIsolate</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="3652de78e0ddadb34db11859efb90fd9">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1611" data-line-number="1611"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1582" data-line-number="1582"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="3652de78e0ddadb34db11859efb90fd9">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1612" data-line-number="1612"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1583" data-line-number="1583"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">			<span class="pl-k">auto</span> data = info.<span class="pl-c1">Data</span>();</span></td>
+</tr>
+
+
+
+      <tr class="js-expandable-line" data-position="52">
+    <td class="blob-num blob-num-expandable" colspan="2">
+        <a href="#diff-656f4d049ac1d3988326759ef68a6429"
+              class="js-expand directional-expander single-expander" title="Expand All" aria-label="Expand All"
+              data-url="/ncsoft/Unreal.js-core/blob_excerpt/963aa78fde25a1e9d878a83a1108907fa78d03bf?diff=unified&amp;in_wiki_context=&amp;last_left=1612&amp;last_right=1583&amp;left=1617&amp;left_hunk_size=7&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FJavascriptIsolate_Private.cpp&amp;right=1588&amp;right_hunk_size=7"
+              data-left-range="1613-1613" data-right-range="1584-1584">
+          <svg class="octicon octicon-unfold" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"/></svg>
+        </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -1617,7 +1588,7 @@ class FJavascriptIsolateImplementation : public FJavascriptIsolate</td>
+  </tr>
+
+    <tr data-hunk="539b0d0b1b57eb5a606f0d13fda0dcd0">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1617" data-line-number="1617"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1588" data-line-number="1588"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">		};</span></td>
+</tr>
+
+
+
+    <tr data-hunk="539b0d0b1b57eb5a606f0d13fda0dcd0">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1618" data-line-number="1618"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1589" data-line-number="1589"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="539b0d0b1b57eb5a606f0d13fda0dcd0">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1619" data-line-number="1619"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1590" data-line-number="1590"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">		<span class="pl-c"><span class="pl-c">//</span> Property setter</span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="539b0d0b1b57eb5a606f0d13fda0dcd0">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1620" data-line-number="1620"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">		<span class="pl-k">auto</span> Setter = [](Local&lt;<span class="x x-first x-last">String</span>&gt; property, Local&lt;Value&gt; value, <span class="pl-k">const</span> PropertyCallbackInfo&lt;<span class="pl-k">void</span>&gt;&amp; info) {</span></td>
+</tr>
+
+
+
+    <tr data-hunk="539b0d0b1b57eb5a606f0d13fda0dcd0">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1591" data-line-number="1591"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		<span class="pl-k">auto</span> Setter = [](Local&lt;<span class="x x-first x-last">Name</span>&gt; property, Local&lt;Value&gt; value, <span class="pl-k">const</span> PropertyCallbackInfo&lt;<span class="pl-k">void</span>&gt;&amp; info) {</span></td>
+</tr>
+
+
+
+    <tr data-hunk="539b0d0b1b57eb5a606f0d13fda0dcd0">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1621" data-line-number="1621"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1592" data-line-number="1592"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">			<span class="pl-k">auto</span> isolate = info.<span class="pl-c1">GetIsolate</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="539b0d0b1b57eb5a606f0d13fda0dcd0">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1622" data-line-number="1622"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1593" data-line-number="1593"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="539b0d0b1b57eb5a606f0d13fda0dcd0">
+    <td id="diff-656f4d049ac1d3988326759ef68a6429L1623" data-line-number="1623"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-656f4d049ac1d3988326759ef68a6429R1594" data-line-number="1594"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">			<span class="pl-k">auto</span> data = info.<span class="pl-c1">Data</span>();</span></td>
+</tr>
+
+
+
+  <tr class="js-expandable-line" data-position="">
+    <td class="blob-num blob-num-expandable" colspan="2">
+          <a href="#diff-656f4d049ac1d3988326759ef68a6429"
+                class="js-expand directional-expander single-expander" title="Expand Down" aria-label="Expand Down"
+                data-url="/ncsoft/Unreal.js-core/blob_excerpt/963aa78fde25a1e9d878a83a1108907fa78d03bf?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=1623&amp;last_right=1594&amp;left=2743&amp;left_hunk_size=&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FJavascriptIsolate_Private.cpp&amp;right=2743&amp;right_hunk_size="
+                data-left-range="1624-2742" data-right-range="1595-2742">
+            <svg class="octicon octicon-fold-down" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z"/></svg>
+          </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk"></td>
+  </tr>
+
+
+          </table>
+        </div>
+
+  </div>
+</div>
+
+    
+<div id="diff-031163a5d91a40fa81d53aa36177d27c"
+     class="file js-file js-details-container js-targetable-element Details
+              Details--on open
+             
+             
+             
+             
+             
+              show-inline-notes
+           "
+          data-file-type=".cpp"
+          data-file-deleted="false"
+      >
+  <div class="file-header d-flex flex-md-row flex-column flex-md-items-center file-header--expandable js-file-header "
+    data-path="Source/V8/Private/Translator.cpp"
+    data-short-path="031163a"
+    data-anchor="diff-031163a5d91a40fa81d53aa36177d27c"
+    data-file-type=".cpp"
+    data-file-deleted="false"
+    >
+    <div class="file-info flex-auto min-width-0 mb-md-0 mb-2">
+      <button type="button" class="btn-octicon js-details-target" aria-label="Toggle diff contents" aria-expanded="true" style="width: 22px;">
+  <svg class="octicon octicon-chevron-down Details-content--hidden" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"/></svg>
+  <svg class="octicon octicon-chevron-right Details-content--shown" viewBox="0 0 8 16" version="1.1" width="8" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/></svg>
+</button>
+
+
+
+        <span class="diffstat tooltipped tooltipped-e" aria-label="30 changes: 30 additions &amp; 0 deletions">30 <span class="diffstat-block-added"></span><span class="diffstat-block-added"></span><span class="diffstat-block-added"></span><span class="diffstat-block-added"></span><span class="diffstat-block-added"></span></span>
+
+      <a title="Source/V8/Private/Translator.cpp" class="link-gray-dark" href="#diff-031163a5d91a40fa81d53aa36177d27c">Source/V8/Private/Translator.cpp</a>
+<clipboard-copy
+  value="Source/V8/Private/Translator.cpp"
+  data-copy-feedback="Copied!"
+  aria-label="Copy"
+  class="js-clipboard-copy zeroclipboard-link text-gray link-hover-blue"
+  >
+  <svg class="octicon octicon-clippy d-inline-block mx-1 js-clipboard-clippy-icon" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg>
+  <svg class="octicon octicon-check js-clipboard-check-icon mx-1 d-inline-block d-none text-green" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+</clipboard-copy>
+
+
+      
+    </div>
+
+    <div class="file-actions pt-0 mb-md-0 mb-2 ml-md-2 flex-shrink-0 flex-md-justify-end">
+      <div class="d-flex flex-justify-end">
+
+
+
+
+
+
+
+
+
+
+
+        <details class="js-file-header-dropdown dropdown details-overlay details-reset pr-2 pl-2">
+          <summary class="height-full">
+            <div class="height-full d-flex flex-items-center link-gray">
+              <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+            </div>
+          </summary>
+          <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark position-absolute f5" style="width:185px; z-index:99; right: -4px;">
+                          <label role="menuitemradio" class="dropdown-item btn-link text-normal d-block pl-5" tabindex="0" aria-checked="true">
+              <span class="position-absolute ml-n3"><svg class="octicon octicon-check" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg></span>
+              <input type="checkbox" checked class="d-none js-toggle-file-notes">
+              Show comments
+            </label>
+
+                        <div role="none" class="dropdown-divider"></div>
+
+                          <a href="/ncsoft/Unreal.js-core/blob/89b008ce3aede0add7e0510155ffd8013328cc4f/Source/V8/Private/Translator.cpp"
+   class="pl-5 dropdown-item btn-link"
+   rel="nofollow"
+   role="menuitem"
+   data-ga-click="View file, click, location:files_changed_dropdown"
+   >
+   View file
+</a>
+
+
+                                <button type="button" disabled role="menuitem" class="pl-5 dropdown-item btn-link" aria-label="You must be signed in and have push access to make changes.">
+      Edit file
+    </button>
+
+
+                              <button type="button" disabled role="menuitem" class="pl-5 dropdown-item btn-link" aria-label="You must be signed in and have push access to delete this file.">
+    Delete file
+  </button>
+
+
+                        <div role="none" class="dropdown-divider"></div>
+
+              
+
+              
+          </details-menu>
+        </details>
+      </div>
+    </div>
+  </div>
+  <div class="js-file-content Details-content--hidden"
+    data-hydro-view="{&quot;event_type&quot;:&quot;pull_request.select_diff_range&quot;,&quot;payload&quot;:{&quot;actor_id&quot;:null,&quot;pull_request_id&quot;:null,&quot;repository_id&quot;:null,&quot;diff_type&quot;:&quot;UNIFIED&quot;,&quot;whitespace_ignored&quot;:false,&quot;originating_url&quot;:&quot;https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f&quot;,&quot;user_id&quot;:null}}" data-hydro-view-hmac="67cdffd1effd9a9b488ba836d619f0d360d0ed06dd8b1fccd09fb0093e95356c">
+        <div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+          <table class="diff-table js-diff-table tab-size  " data-tab-size="8" data-diff-anchor="diff-031163a5d91a40fa81d53aa36177d27c" data-paste-markdown-skip>
+
+                
+      <tr data-position="0">
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cHL1" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cHR1" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -1,4 +1,5 @@</td>
+  </tr>
+
+    <tr data-hunk="54ffc3631c4706e760f9f7c1723ea502">
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cL1" data-line-number="1"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR1" data-line-number="1"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Translator.h<span class="pl-pds">&quot;</span></span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="54ffc3631c4706e760f9f7c1723ea502">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR2" data-line-number="2"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Engine/UserDefinedStruct.h<span class="pl-pds">&quot;</span></span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="54ffc3631c4706e760f9f7c1723ea502">
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cL2" data-line-number="2"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR3" data-line-number="3"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="54ffc3631c4706e760f9f7c1723ea502">
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cL3" data-line-number="3"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR4" data-line-number="4"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><span class="pl-k">namespace</span> <span class="pl-en">v8</span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="54ffc3631c4706e760f9f7c1723ea502">
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cL4" data-line-number="4"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR5" data-line-number="5"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">{</span></td>
+</tr>
+
+
+
+      <tr class="js-expandable-line" data-position="6">
+    <td class="blob-num blob-num-expandable" colspan="2">
+          <a href="#diff-031163a5d91a40fa81d53aa36177d27c"
+                class="js-expand directional-expander" title="Expand Down" aria-label="Expand Down"
+                data-url="/ncsoft/Unreal.js-core/blob_excerpt/eb1090bdb6d32f73b970742ce5f276768e113523?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=4&amp;last_right=5&amp;left=108&amp;left_hunk_size=4&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTranslator.cpp&amp;right=109&amp;right_hunk_size=33"
+                data-left-range="5-55" data-right-range="6-56">
+            <svg class="octicon octicon-fold-down" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z"/></svg>
+          </a>
+          <a href="#diff-031163a5d91a40fa81d53aa36177d27c"
+              class="js-expand directional-expander" title="Expand Up" aria-label="Expand Up"
+              data-url="/ncsoft/Unreal.js-core/blob_excerpt/eb1090bdb6d32f73b970742ce5f276768e113523?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=4&amp;last_right=5&amp;left=108&amp;left_hunk_size=4&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTranslator.cpp&amp;right=109&amp;right_hunk_size=33"
+              data-left-range="56-107" data-right-range="57-108">
+            <svg class="octicon octicon-fold-up" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z"/></svg>
+          </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -108,4 +109,33 @@ namespace v8</td>
+  </tr>
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cL108" data-line-number="108"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR109" data-line-number="109"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cL109" data-line-number="109"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR110" data-line-number="110"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">		<span class="pl-k">return</span> <span class="pl-c1">FString::Join</span>(ArgStrings, <span class="pl-c1">TEXT</span>(<span class="pl-s"><span class="pl-pds">&quot;</span> <span class="pl-pds">&quot;</span></span>));</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cL110" data-line-number="110"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR111" data-line-number="111"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">	}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR112" data-line-number="112"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+"><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR113" data-line-number="113"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">	FString <span class="pl-en">PropertyNameToString</span>(UProperty* Property)</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR114" data-line-number="114"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">	{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR115" data-line-number="115"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		<span class="pl-k">auto</span> Struct = Property-&gt;<span class="pl-c1">GetOwnerStruct</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR116" data-line-number="116"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		<span class="pl-k">auto</span> displayName = Property-&gt;<span class="pl-c1">GetFName</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR117" data-line-number="117"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		<span class="pl-k">auto</span> name = <span class="pl-c1">FName</span>(displayName.<span class="pl-c1">GetComparisonIndex</span>(), displayName.<span class="pl-c1">GetComparisonIndex</span>(), displayName.<span class="pl-c1">GetNumber</span>());</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR118" data-line-number="118"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		<span class="pl-k">if</span> (Struct)</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR119" data-line-number="119"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR120" data-line-number="120"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">			<span class="pl-k">if</span> (<span class="pl-k">auto</span> s = Cast&lt;UUserDefinedStruct&gt;(Struct))</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR121" data-line-number="121"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">			{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR122" data-line-number="122"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">				<span class="pl-k">return</span> s-&gt;<span class="pl-c1">PropertyNameToDisplayName</span>(name);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR123" data-line-number="123"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">			}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR124" data-line-number="124"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR125" data-line-number="125"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		<span class="pl-k">return</span> name.<span class="pl-c1">ToString</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR126" data-line-number="126"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">	}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR127" data-line-number="127"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+"><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR128" data-line-number="128"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">	<span class="pl-k">bool</span> <span class="pl-en">MatchPropertyName</span>(UProperty* Property, FName NameToMatch)</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR129" data-line-number="129"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">	{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR130" data-line-number="130"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		<span class="pl-k">auto</span> Struct = Property-&gt;<span class="pl-c1">GetOwnerStruct</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR131" data-line-number="131"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		<span class="pl-k">auto</span> name = Property-&gt;<span class="pl-c1">GetFName</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR132" data-line-number="132"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		<span class="pl-k">if</span> (Struct)</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR133" data-line-number="133"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR134" data-line-number="134"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">			<span class="pl-k">if</span> (<span class="pl-k">auto</span> s = Cast&lt;UUserDefinedStruct&gt;(Struct))</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR135" data-line-number="135"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">			{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR136" data-line-number="136"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">				<span class="pl-k">return</span> s-&gt;<span class="pl-c1">PropertyNameToDisplayName</span>(name) == NameToMatch.<span class="pl-c1">ToString</span>();</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR137" data-line-number="137"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">			}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR138" data-line-number="138"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR139" data-line-number="139"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">		<span class="pl-k">return</span> name == NameToMatch;</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR140" data-line-number="140"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">	}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b00b244b9653946a9b22b306232d7170">
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cL111" data-line-number="111"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-031163a5d91a40fa81d53aa36177d27cR141" data-line-number="141"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">}</span>
+      <span class="no-nl-marker tooltipped tooltipped-n" aria-label="No newline at end of file">
+        <svg class="octicon octicon-no-newline" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 5v3c0 .55-.45 1-1 1h-3v2L9 8l3-3v2h2V5h2zM8 8c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4zM1.5 9.66L5.66 5.5C5.18 5.19 4.61 5 4 5 2.34 5 1 6.34 1 8c0 .61.19 1.17.5 1.66zM7 8c0-.61-.19-1.17-.5-1.66L2.34 10.5c.48.31 1.05.5 1.66.5 1.66 0 3-1.34 3-3z"/></svg>
+      </span>
+    </td>
+</tr>
+
+
+
+
+
+          </table>
+        </div>
+
+  </div>
+</div>
+
+    
+<div id="diff-0e4bc6d01f62d42ca6e2a5e8051d21fe"
+     class="file js-file js-details-container js-targetable-element Details
+              Details--on open
+             
+             
+             
+             
+             
+              show-inline-notes
+           "
+          data-file-type=".h"
+          data-file-deleted="false"
+      >
+  <div class="file-header d-flex flex-md-row flex-column flex-md-items-center file-header--expandable js-file-header "
+    data-path="Source/V8/Private/Translator.h"
+    data-short-path="0e4bc6d"
+    data-anchor="diff-0e4bc6d01f62d42ca6e2a5e8051d21fe"
+    data-file-type=".h"
+    data-file-deleted="false"
+    >
+    <div class="file-info flex-auto min-width-0 mb-md-0 mb-2">
+      <button type="button" class="btn-octicon js-details-target" aria-label="Toggle diff contents" aria-expanded="true" style="width: 22px;">
+  <svg class="octicon octicon-chevron-down Details-content--hidden" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"/></svg>
+  <svg class="octicon octicon-chevron-right Details-content--shown" viewBox="0 0 8 16" version="1.1" width="8" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/></svg>
+</button>
+
+
+
+        <span class="diffstat tooltipped tooltipped-e" aria-label="2 changes: 2 additions &amp; 0 deletions">2 <span class="diffstat-block-added"></span><span class="diffstat-block-added"></span><span class="diffstat-block-neutral"></span><span class="diffstat-block-neutral"></span><span class="diffstat-block-neutral"></span></span>
+
+      <a title="Source/V8/Private/Translator.h" class="link-gray-dark" href="#diff-0e4bc6d01f62d42ca6e2a5e8051d21fe">Source/V8/Private/Translator.h</a>
+<clipboard-copy
+  value="Source/V8/Private/Translator.h"
+  data-copy-feedback="Copied!"
+  aria-label="Copy"
+  class="js-clipboard-copy zeroclipboard-link text-gray link-hover-blue"
+  >
+  <svg class="octicon octicon-clippy d-inline-block mx-1 js-clipboard-clippy-icon" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg>
+  <svg class="octicon octicon-check js-clipboard-check-icon mx-1 d-inline-block d-none text-green" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+</clipboard-copy>
+
+
+      
+    </div>
+
+    <div class="file-actions pt-0 mb-md-0 mb-2 ml-md-2 flex-shrink-0 flex-md-justify-end">
+      <div class="d-flex flex-justify-end">
+
+
+
+
+
+
+
+
+
+
+
+        <details class="js-file-header-dropdown dropdown details-overlay details-reset pr-2 pl-2">
+          <summary class="height-full">
+            <div class="height-full d-flex flex-items-center link-gray">
+              <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+            </div>
+          </summary>
+          <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark position-absolute f5" style="width:185px; z-index:99; right: -4px;">
+                          <label role="menuitemradio" class="dropdown-item btn-link text-normal d-block pl-5" tabindex="0" aria-checked="true">
+              <span class="position-absolute ml-n3"><svg class="octicon octicon-check" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg></span>
+              <input type="checkbox" checked class="d-none js-toggle-file-notes">
+              Show comments
+            </label>
+
+                        <div role="none" class="dropdown-divider"></div>
+
+                          <a href="/ncsoft/Unreal.js-core/blob/89b008ce3aede0add7e0510155ffd8013328cc4f/Source/V8/Private/Translator.h"
+   class="pl-5 dropdown-item btn-link"
+   rel="nofollow"
+   role="menuitem"
+   data-ga-click="View file, click, location:files_changed_dropdown"
+   >
+   View file
+</a>
+
+
+                                <button type="button" disabled role="menuitem" class="pl-5 dropdown-item btn-link" aria-label="You must be signed in and have push access to make changes.">
+      Edit file
+    </button>
+
+
+                              <button type="button" disabled role="menuitem" class="pl-5 dropdown-item btn-link" aria-label="You must be signed in and have push access to delete this file.">
+    Delete file
+  </button>
+
+
+                        <div role="none" class="dropdown-divider"></div>
+
+              
+
+              
+          </details-menu>
+        </details>
+      </div>
+    </div>
+  </div>
+  <div class="js-file-content Details-content--hidden"
+    data-hydro-view="{&quot;event_type&quot;:&quot;pull_request.select_diff_range&quot;,&quot;payload&quot;:{&quot;actor_id&quot;:null,&quot;pull_request_id&quot;:null,&quot;repository_id&quot;:null,&quot;diff_type&quot;:&quot;UNIFIED&quot;,&quot;whitespace_ignored&quot;:false,&quot;originating_url&quot;:&quot;https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f&quot;,&quot;user_id&quot;:null}}" data-hydro-view-hmac="67cdffd1effd9a9b488ba836d619f0d360d0ed06dd8b1fccd09fb0093e95356c">
+        <div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+          <table class="diff-table js-diff-table tab-size  " data-tab-size="8" data-diff-anchor="diff-0e4bc6d01f62d42ca6e2a5e8051d21fe" data-paste-markdown-skip>
+
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+          <a href="#diff-0e4bc6d01f62d42ca6e2a5e8051d21fe"
+              class="js-expand directional-expander single-expander" title="Expand Up" aria-label="Expand Up"
+              data-url="/ncsoft/Unreal.js-core/blob_excerpt/e55610ebb5d685abef8bd315116328fe7b44c906?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=37&amp;left_hunk_size=4&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTranslator.h&amp;right=37&amp;right_hunk_size=6"
+              data-left-range="1-36" data-right-range="1-36">
+            <svg class="octicon octicon-fold-up" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z"/></svg>
+          </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -37,4 +37,6 @@ namespace v8</td>
+  </tr>
+
+    <tr data-hunk="b5a90e45611fa261a253701eb0562122">
+    <td id="diff-0e4bc6d01f62d42ca6e2a5e8051d21feL37" data-line-number="37"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-0e4bc6d01f62d42ca6e2a5e8051d21feR37" data-line-number="37"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">	UObject* <span class="pl-en">UObjectFromV8</span>(Local&lt;Value&gt; Value);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b5a90e45611fa261a253701eb0562122">
+    <td id="diff-0e4bc6d01f62d42ca6e2a5e8051d21feL38" data-line-number="38"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-0e4bc6d01f62d42ca6e2a5e8051d21feR38" data-line-number="38"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">	uint8* <span class="pl-en">RawMemoryFromV8</span>(Local&lt;Value&gt; Value);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b5a90e45611fa261a253701eb0562122">
+    <td id="diff-0e4bc6d01f62d42ca6e2a5e8051d21feL39" data-line-number="39"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-0e4bc6d01f62d42ca6e2a5e8051d21feR39" data-line-number="39"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">	FString <span class="pl-en">StringFromArgs</span>(<span class="pl-k">const</span> FunctionCallbackInfo&lt;v8::Value&gt;&amp; args, <span class="pl-k">int</span> StartIndex = <span class="pl-c1">0</span>);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b5a90e45611fa261a253701eb0562122">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-0e4bc6d01f62d42ca6e2a5e8051d21feR40" data-line-number="40"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">	FString <span class="pl-en">PropertyNameToString</span>(UProperty* Property);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b5a90e45611fa261a253701eb0562122">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-0e4bc6d01f62d42ca6e2a5e8051d21feR41" data-line-number="41"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">	<span class="pl-k">bool</span> <span class="pl-en">MatchPropertyName</span>(UProperty* Property, FName NameToMatch);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="b5a90e45611fa261a253701eb0562122">
+    <td id="diff-0e4bc6d01f62d42ca6e2a5e8051d21feL40" data-line-number="40"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-0e4bc6d01f62d42ca6e2a5e8051d21feR42" data-line-number="42"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">}</span></td>
+</tr>
+
+
+
+
+
+          </table>
+        </div>
+
+  </div>
+</div>
+
+    
+<div id="diff-1c84c2e394abf597920d01b22ecd7945"
+     class="file js-file js-details-container js-targetable-element Details
+              Details--on open
+             
+             
+             
+             
+             
+              show-inline-notes
+           "
+          data-file-type=".h"
+          data-file-deleted="false"
+      >
+  <div class="file-header d-flex flex-md-row flex-column flex-md-items-center file-header--expandable js-file-header "
+    data-path="Source/V8/Private/TypingGenerator.h"
+    data-short-path="1c84c2e"
+    data-anchor="diff-1c84c2e394abf597920d01b22ecd7945"
+    data-file-type=".h"
+    data-file-deleted="false"
+    >
+    <div class="file-info flex-auto min-width-0 mb-md-0 mb-2">
+      <button type="button" class="btn-octicon js-details-target" aria-label="Toggle diff contents" aria-expanded="true" style="width: 22px;">
+  <svg class="octicon octicon-chevron-down Details-content--hidden" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"/></svg>
+  <svg class="octicon octicon-chevron-right Details-content--shown" viewBox="0 0 8 16" version="1.1" width="8" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/></svg>
+</button>
+
+
+
+        <span class="diffstat tooltipped tooltipped-e" aria-label="9 changes: 5 additions &amp; 4 deletions">9 <span class="diffstat-block-added"></span><span class="diffstat-block-added"></span><span class="diffstat-block-deleted"></span><span class="diffstat-block-deleted"></span><span class="diffstat-block-neutral"></span></span>
+
+      <a title="Source/V8/Private/TypingGenerator.h" class="link-gray-dark" href="#diff-1c84c2e394abf597920d01b22ecd7945">Source/V8/Private/TypingGenerator.h</a>
+<clipboard-copy
+  value="Source/V8/Private/TypingGenerator.h"
+  data-copy-feedback="Copied!"
+  aria-label="Copy"
+  class="js-clipboard-copy zeroclipboard-link text-gray link-hover-blue"
+  >
+  <svg class="octicon octicon-clippy d-inline-block mx-1 js-clipboard-clippy-icon" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg>
+  <svg class="octicon octicon-check js-clipboard-check-icon mx-1 d-inline-block d-none text-green" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+</clipboard-copy>
+
+
+      
+    </div>
+
+    <div class="file-actions pt-0 mb-md-0 mb-2 ml-md-2 flex-shrink-0 flex-md-justify-end">
+      <div class="d-flex flex-justify-end">
+
+
+
+
+
+
+
+
+
+
+
+        <details class="js-file-header-dropdown dropdown details-overlay details-reset pr-2 pl-2">
+          <summary class="height-full">
+            <div class="height-full d-flex flex-items-center link-gray">
+              <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+            </div>
+          </summary>
+          <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark position-absolute f5" style="width:185px; z-index:99; right: -4px;">
+                          <label role="menuitemradio" class="dropdown-item btn-link text-normal d-block pl-5" tabindex="0" aria-checked="true">
+              <span class="position-absolute ml-n3"><svg class="octicon octicon-check" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg></span>
+              <input type="checkbox" checked class="d-none js-toggle-file-notes">
+              Show comments
+            </label>
+
+                        <div role="none" class="dropdown-divider"></div>
+
+                          <a href="/ncsoft/Unreal.js-core/blob/89b008ce3aede0add7e0510155ffd8013328cc4f/Source/V8/Private/TypingGenerator.h"
+   class="pl-5 dropdown-item btn-link"
+   rel="nofollow"
+   role="menuitem"
+   data-ga-click="View file, click, location:files_changed_dropdown"
+   >
+   View file
+</a>
+
+
+                                <button type="button" disabled role="menuitem" class="pl-5 dropdown-item btn-link" aria-label="You must be signed in and have push access to make changes.">
+      Edit file
+    </button>
+
+
+                              <button type="button" disabled role="menuitem" class="pl-5 dropdown-item btn-link" aria-label="You must be signed in and have push access to delete this file.">
+    Delete file
+  </button>
+
+
+                        <div role="none" class="dropdown-divider"></div>
+
+              
+
+              
+          </details-menu>
+        </details>
+      </div>
+    </div>
+  </div>
+  <div class="js-file-content Details-content--hidden"
+    data-hydro-view="{&quot;event_type&quot;:&quot;pull_request.select_diff_range&quot;,&quot;payload&quot;:{&quot;actor_id&quot;:null,&quot;pull_request_id&quot;:null,&quot;repository_id&quot;:null,&quot;diff_type&quot;:&quot;UNIFIED&quot;,&quot;whitespace_ignored&quot;:false,&quot;originating_url&quot;:&quot;https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f&quot;,&quot;user_id&quot;:null}}" data-hydro-view-hmac="67cdffd1effd9a9b488ba836d619f0d360d0ed06dd8b1fccd09fb0093e95356c">
+        <div class="data highlight js-blob-wrapper " style="overflow-x: auto">
+          <table class="diff-table js-diff-table tab-size  " data-tab-size="8" data-diff-anchor="diff-1c84c2e394abf597920d01b22ecd7945" data-paste-markdown-skip>
+
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+          <a href="#diff-1c84c2e394abf597920d01b22ecd7945"
+              class="js-expand directional-expander single-expander" title="Expand Up" aria-label="Expand Up"
+              data-url="/ncsoft/Unreal.js-core/blob_excerpt/c628006d9f7a0e00349d79cf3914e7c415f1a049?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=&amp;last_right=&amp;left=2&amp;left_hunk_size=6&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTypingGenerator.h&amp;right=2&amp;right_hunk_size=7"
+              data-left-range="1-1" data-right-range="1-1">
+            <svg class="octicon octicon-fold-up" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z"/></svg>
+          </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -2,6 +2,7 @@</td>
+  </tr>
+
+    <tr data-hunk="d784481f9e4d1f8b59289132706466a8">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L2" data-line-number="2"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R2" data-line-number="2"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="d784481f9e4d1f8b59289132706466a8">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L3" data-line-number="3"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R3" data-line-number="3"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Config.h<span class="pl-pds">&quot;</span></span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="d784481f9e4d1f8b59289132706466a8">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L4" data-line-number="4"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R4" data-line-number="4"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>FileHelper.h<span class="pl-pds">&quot;</span></span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="d784481f9e4d1f8b59289132706466a8">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R5" data-line-number="5"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Translator.h<span class="pl-pds">&quot;</span></span></span></td>
+</tr>
+
+
+
+    <tr data-hunk="d784481f9e4d1f8b59289132706466a8">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L5" data-line-number="5"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="d784481f9e4d1f8b59289132706466a8">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><span class="pl-k">struct</span> TypingGeneratorBase</span></td>
+</tr>
+
+
+
+    <tr data-hunk="d784481f9e4d1f8b59289132706466a8">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">{</span></td>
+</tr>
+
+
+
+      <tr class="js-expandable-line" data-position="8">
+    <td class="blob-num blob-num-expandable" colspan="2">
+          <a href="#diff-1c84c2e394abf597920d01b22ecd7945"
+                class="js-expand directional-expander" title="Expand Down" aria-label="Expand Down"
+                data-url="/ncsoft/Unreal.js-core/blob_excerpt/c628006d9f7a0e00349d79cf3914e7c415f1a049?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=7&amp;last_right=8&amp;left=163&amp;left_hunk_size=7&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTypingGenerator.h&amp;right=164&amp;right_hunk_size=7"
+                data-left-range="8-84" data-right-range="9-85">
+            <svg class="octicon octicon-fold-down" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z"/></svg>
+          </a>
+          <a href="#diff-1c84c2e394abf597920d01b22ecd7945"
+              class="js-expand directional-expander" title="Expand Up" aria-label="Expand Up"
+              data-url="/ncsoft/Unreal.js-core/blob_excerpt/c628006d9f7a0e00349d79cf3914e7c415f1a049?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=7&amp;last_right=8&amp;left=163&amp;left_hunk_size=7&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTypingGenerator.h&amp;right=164&amp;right_hunk_size=7"
+              data-left-range="85-162" data-right-range="86-163">
+            <svg class="octicon octicon-fold-up" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z"/></svg>
+          </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -163,7 +164,7 @@ struct TokenWriter</td>
+  </tr>
+
+    <tr data-hunk="16abc257c1d990c0b801afe1887527bd">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L163" data-line-number="163"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R164" data-line-number="164"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">		{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="16abc257c1d990c0b801afe1887527bd">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L164" data-line-number="164"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R165" data-line-number="165"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">			<span class="pl-k">auto</span> Prop = *It;</span></td>
+</tr>
+
+
+
+    <tr data-hunk="16abc257c1d990c0b801afe1887527bd">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L165" data-line-number="165"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R166" data-line-number="166"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">			<span class="pl-k">if</span> (!first) <span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>, <span class="pl-pds">&quot;</span></span>);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="16abc257c1d990c0b801afe1887527bd">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L166" data-line-number="166"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">			<span class="pl-c1">push</span>(<span class="pl-c1">FV8Config::Safeify</span>(<span class="x x-first">Prop-&gt;</span><span class="pl-c1 x">GetName</span><span class="x x-last">(</span>)));</span></td>
+</tr>
+
+
+
+    <tr data-hunk="16abc257c1d990c0b801afe1887527bd">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R167" data-line-number="167"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">			<span class="pl-c1">push</span>(<span class="pl-c1">FV8Config::Safeify</span>(<span class="pl-c1 x x-first">PropertyNameToString</span><span class="x x-last">(Prop</span>)));</span></td>
+</tr>
+
+
+
+    <tr data-hunk="16abc257c1d990c0b801afe1887527bd">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L167" data-line-number="167"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R168" data-line-number="168"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">			<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>: <span class="pl-pds">&quot;</span></span>);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="16abc257c1d990c0b801afe1887527bd">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L168" data-line-number="168"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R169" data-line-number="169"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">			<span class="pl-c1">push</span>(Prop);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="16abc257c1d990c0b801afe1887527bd">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L169" data-line-number="169"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R170" data-line-number="170"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">			first = <span class="pl-c1">false</span>;</span></td>
+</tr>
+
+
+
+      <tr class="js-expandable-line" data-position="17">
+    <td class="blob-num blob-num-expandable" colspan="2">
+          <a href="#diff-1c84c2e394abf597920d01b22ecd7945"
+                class="js-expand directional-expander" title="Expand Down" aria-label="Expand Down"
+                data-url="/ncsoft/Unreal.js-core/blob_excerpt/c628006d9f7a0e00349d79cf3914e7c415f1a049?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=169&amp;last_right=170&amp;left=325&amp;left_hunk_size=7&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTypingGenerator.h&amp;right=326&amp;right_hunk_size=7"
+                data-left-range="170-246" data-right-range="171-247">
+            <svg class="octicon octicon-fold-down" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z"/></svg>
+          </a>
+          <a href="#diff-1c84c2e394abf597920d01b22ecd7945"
+              class="js-expand directional-expander" title="Expand Up" aria-label="Expand Up"
+              data-url="/ncsoft/Unreal.js-core/blob_excerpt/c628006d9f7a0e00349d79cf3914e7c415f1a049?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=169&amp;last_right=170&amp;left=325&amp;left_hunk_size=7&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTypingGenerator.h&amp;right=326&amp;right_hunk_size=7"
+              data-left-range="247-324" data-right-range="248-325">
+            <svg class="octicon octicon-fold-up" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z"/></svg>
+          </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -325,7 +326,7 @@ struct TypingGenerator : TypingGeneratorBase</td>
+  </tr>
+
+    <tr data-hunk="4ea56f09ca0b6fa6419e4dcda9f37316">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L325" data-line-number="325"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R326" data-line-number="326"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">		<span class="pl-k">for</span> (TFieldIterator&lt;UProperty&gt; <span class="pl-c1">PropertyIt</span>(source, EFieldIteratorFlags::ExcludeSuper); PropertyIt; ++PropertyIt)</span></td>
+</tr>
+
+
+
+    <tr data-hunk="4ea56f09ca0b6fa6419e4dcda9f37316">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L326" data-line-number="326"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R327" data-line-number="327"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">		{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="4ea56f09ca0b6fa6419e4dcda9f37316">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L327" data-line-number="327"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R328" data-line-number="328"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">			<span class="pl-k">auto</span> Property = *PropertyIt;</span></td>
+</tr>
+
+
+
+    <tr data-hunk="4ea56f09ca0b6fa6419e4dcda9f37316">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L328" data-line-number="328"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">			<span class="pl-k">auto</span> PropertyName = <span class="pl-c1">FV8Config::Safeify</span>(<span class="x x-first">Property-&gt;</span><span class="pl-c1 x">GetName</span><span class="x x-last">(</span>));</span></td>
+</tr>
+
+
+
+    <tr data-hunk="4ea56f09ca0b6fa6419e4dcda9f37316">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R329" data-line-number="329"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">			<span class="pl-k">auto</span> PropertyName = <span class="pl-c1">FV8Config::Safeify</span>(<span class="pl-c1 x x-first">PropertyNameToString</span><span class="x x-last">(Property</span>));</span></td>
+</tr>
+
+
+
+    <tr data-hunk="4ea56f09ca0b6fa6419e4dcda9f37316">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L329" data-line-number="329"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R330" data-line-number="330"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="4ea56f09ca0b6fa6419e4dcda9f37316">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L330" data-line-number="330"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R331" data-line-number="331"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">			w.<span class="pl-c1">tooltip</span>(<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-cce">\t</span><span class="pl-pds">&quot;</span></span>, Property);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="4ea56f09ca0b6fa6419e4dcda9f37316">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L331" data-line-number="331"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R332" data-line-number="332"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+      <tr class="js-expandable-line" data-position="26">
+    <td class="blob-num blob-num-expandable" colspan="2">
+          <a href="#diff-1c84c2e394abf597920d01b22ecd7945"
+                class="js-expand directional-expander" title="Expand Down" aria-label="Expand Down"
+                data-url="/ncsoft/Unreal.js-core/blob_excerpt/c628006d9f7a0e00349d79cf3914e7c415f1a049?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=331&amp;last_right=332&amp;left=362&amp;left_hunk_size=7&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTypingGenerator.h&amp;right=363&amp;right_hunk_size=7"
+                data-left-range="332-345" data-right-range="333-346">
+            <svg class="octicon octicon-fold-down" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z"/></svg>
+          </a>
+          <a href="#diff-1c84c2e394abf597920d01b22ecd7945"
+              class="js-expand directional-expander" title="Expand Up" aria-label="Expand Up"
+              data-url="/ncsoft/Unreal.js-core/blob_excerpt/c628006d9f7a0e00349d79cf3914e7c415f1a049?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=331&amp;last_right=332&amp;left=362&amp;left_hunk_size=7&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTypingGenerator.h&amp;right=363&amp;right_hunk_size=7"
+              data-left-range="346-361" data-right-range="347-362">
+            <svg class="octicon octicon-fold-up" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z"/></svg>
+          </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -362,7 +363,7 @@ struct TypingGenerator : TypingGeneratorBase</td>
+  </tr>
+
+    <tr data-hunk="fcc2b35f3b1bbbc5cecc09baab41897a">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L362" data-line-number="362"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R363" data-line-number="363"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">				}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="fcc2b35f3b1bbbc5cecc09baab41897a">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L363" data-line-number="363"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R364" data-line-number="364"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="fcc2b35f3b1bbbc5cecc09baab41897a">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L364" data-line-number="364"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R365" data-line-number="365"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">				<span class="pl-k">auto</span> Property = *ParamIt;</span></td>
+</tr>
+
+
+
+    <tr data-hunk="fcc2b35f3b1bbbc5cecc09baab41897a">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L365" data-line-number="365"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">				<span class="pl-k">auto</span> PropertyName = <span class="pl-c1">FV8Config::Safeify</span>(<span class="x x-first">Property-&gt;</span><span class="pl-c1 x">GetName</span><span class="x x-last">(</span>));</span></td>
+</tr>
+
+
+
+    <tr data-hunk="fcc2b35f3b1bbbc5cecc09baab41897a">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R366" data-line-number="366"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">				<span class="pl-k">auto</span> PropertyName = <span class="pl-c1">FV8Config::Safeify</span>(<span class="pl-c1 x x-first">PropertyNameToString</span><span class="x x-last">(Property</span>));</span></td>
+</tr>
+
+
+
+    <tr data-hunk="fcc2b35f3b1bbbc5cecc09baab41897a">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L366" data-line-number="366"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R367" data-line-number="367"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+    <tr data-hunk="fcc2b35f3b1bbbc5cecc09baab41897a">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L367" data-line-number="367"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R368" data-line-number="368"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">				w2.<span class="pl-c1">push</span>(PropertyName);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="fcc2b35f3b1bbbc5cecc09baab41897a">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L368" data-line-number="368"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R369" data-line-number="369"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">				<span class="pl-k">if</span> (is_optional)</span></td>
+</tr>
+
+
+
+      <tr class="js-expandable-line" data-position="35">
+    <td class="blob-num blob-num-expandable" colspan="2">
+          <a href="#diff-1c84c2e394abf597920d01b22ecd7945"
+                class="js-expand directional-expander" title="Expand Down" aria-label="Expand Down"
+                data-url="/ncsoft/Unreal.js-core/blob_excerpt/c628006d9f7a0e00349d79cf3914e7c415f1a049?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=368&amp;last_right=369&amp;left=399&amp;left_hunk_size=7&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTypingGenerator.h&amp;right=400&amp;right_hunk_size=7"
+                data-left-range="369-382" data-right-range="370-383">
+            <svg class="octicon octicon-fold-down" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z"/></svg>
+          </a>
+          <a href="#diff-1c84c2e394abf597920d01b22ecd7945"
+              class="js-expand directional-expander" title="Expand Up" aria-label="Expand Up"
+              data-url="/ncsoft/Unreal.js-core/blob_excerpt/c628006d9f7a0e00349d79cf3914e7c415f1a049?diff=unified&amp;direction=up&amp;in_wiki_context=&amp;last_left=368&amp;last_right=369&amp;left=399&amp;left_hunk_size=7&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTypingGenerator.h&amp;right=400&amp;right_hunk_size=7"
+              data-left-range="383-398" data-right-range="384-399">
+            <svg class="octicon octicon-fold-up" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 6L7 3 4 6h2v6h2V6h2zm4 0c0-.55-.45-1-1-1h-2.5l1 1h1l-2 2H9v1h1.5l2 2H9v1h4c.55 0 1-.45 1-1l-2.5-2.5L14 6zM3.5 8H5v1H3.5l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 6c0-.55.45-1 1-1h2.5l-1 1h-1l2 2z"/></svg>
+          </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -399,7 +400,7 @@ struct TypingGenerator : TypingGeneratorBase</td>
+  </tr>
+
+    <tr data-hunk="8e5e7f2865ad783bdfb47be356c18621">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L399" data-line-number="399"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R400" data-line-number="400"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">					}</span></td>
+</tr>
+
+
+
+    <tr data-hunk="8e5e7f2865ad783bdfb47be356c18621">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L400" data-line-number="400"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R401" data-line-number="401"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">					<span class="pl-k">else</span> <span class="pl-k">if</span> ((ParamIt-&gt;<span class="pl-smi">PropertyFlags</span> &amp; (CPF_ConstParm | CPF_OutParm)) == CPF_OutParm)</span></td>
+</tr>
+
+
+
+    <tr data-hunk="8e5e7f2865ad783bdfb47be356c18621">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L401" data-line-number="401"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R402" data-line-number="402"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">					{</span></td>
+</tr>
+
+
+
+    <tr data-hunk="8e5e7f2865ad783bdfb47be356c18621">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L402" data-line-number="402"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="-">						w2.<span class="pl-c1">push</span>(<span class="x x-first">ParamIt-&gt;</span><span class="pl-c1 x">GetName</span><span class="x x-last">(</span>));</span></td>
+</tr>
+
+
+
+    <tr data-hunk="8e5e7f2865ad783bdfb47be356c18621">
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R403" data-line-number="403"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+    <span class='blob-code-inner blob-code-marker' data-code-marker="+">						w2.<span class="pl-c1">push</span>(<span class="pl-c1 x x-first">PropertyNameToString</span><span class="x x-last">(*ParamIt</span>));</span></td>
+</tr>
+
+
+
+    <tr data-hunk="8e5e7f2865ad783bdfb47be356c18621">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L403" data-line-number="403"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R404" data-line-number="404"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">						w2.<span class="pl-c1">push</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>: <span class="pl-pds">&quot;</span></span>);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="8e5e7f2865ad783bdfb47be356c18621">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L404" data-line-number="404"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R405" data-line-number="405"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" ">						w2.<span class="pl-c1">push</span>(*ParamIt);</span></td>
+</tr>
+
+
+
+    <tr data-hunk="8e5e7f2865ad783bdfb47be356c18621">
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945L405" data-line-number="405"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1c84c2e394abf597920d01b22ecd7945R406" data-line-number="406"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+    <span class='blob-code-inner blob-code-marker' data-code-marker=" "><br></span></td>
+</tr>
+
+
+
+  <tr class="js-expandable-line" data-position="">
+    <td class="blob-num blob-num-expandable" colspan="2">
+          <a href="#diff-1c84c2e394abf597920d01b22ecd7945"
+                class="js-expand directional-expander single-expander" title="Expand Down" aria-label="Expand Down"
+                data-url="/ncsoft/Unreal.js-core/blob_excerpt/c628006d9f7a0e00349d79cf3914e7c415f1a049?diff=unified&amp;direction=down&amp;in_wiki_context=&amp;last_left=405&amp;last_right=406&amp;left=632&amp;left_hunk_size=&amp;mode=100644&amp;path=Source%2FV8%2FPrivate%2FTypingGenerator.h&amp;right=632&amp;right_hunk_size="
+                data-left-range="406-631" data-right-range="407-631">
+            <svg class="octicon octicon-fold-down" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 11l3 3 3-3H8V5H6v6H4zm-4 0c0 .55.45 1 1 1h2.5l-1-1h-1l2-2H5V8H3.5l-2-2H5V5H1c-.55 0-1 .45-1 1l2.5 2.5L0 11zm10.5-2H9V8h1.5l2-2H9V5h4c.55 0 1 .45 1 1l-2.5 2.5L14 11c0 .55-.45 1-1 1h-2.5l1-1h1l-2-2z"/></svg>
+          </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk"></td>
+  </tr>
+
+
+          </table>
+        </div>
+
+  </div>
+</div>
+
+  </div>
+
+
+</div>
+
+<button type="button" class="js-toggle-all-file-notes" data-hotkey="i" style="display:none">Toggle all file notes</button>
+
+<svg aria-hidden="true" width="340px" height="84px" viewBox="0 0 340 84" version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  class="diff-placeholder-svg position-absolute bottom-0">
+  <defs>
+    <clippath id="diff-placeholder">
+      <rect x="0" y="0" width="67.0175439" height="11.9298746" rx="2"></rect>
+      <rect x="18.9473684" y="47.7194983" width="100.701754" height="11.9298746" rx="2"></rect>
+      <rect x="0" y="71.930126" width="37.8947368" height="11.9298746" rx="2"></rect>
+      <rect x="127.017544" y="48.0703769" width="53.3333333" height="11.9298746" rx="2"></rect>
+      <rect x="187.719298" y="48.0703769" width="72.9824561" height="11.9298746" rx="2"></rect>
+      <rect x="76.8421053" y="0" width="140.350877" height="11.9298746" rx="2"></rect>
+      <rect x="17.8947368" y="23.8597491" width="140.350877" height="11.9298746" rx="2"></rect>
+      <rect x="166.315789" y="23.8597491" width="173.684211" height="11.9298746" rx="2"></rect>
+    </clippath>
+
+    <linearGradient id="animated-diff-gradient" x1="0" x2="0" y1="0" y2="1" spreadMethod="reflect">
+      <stop offset="0" stop-color="#eee"></stop>
+      <stop offset="0.2" stop-color="#eee"></stop>
+      <stop offset="0.5" stop-color="#ddd"></stop>
+      <stop offset="0.8" stop-color="#eee"></stop>
+      <stop offset="1" stop-color="#eee"></stop>
+      <animateTransform attributeName="y1" values="0%; 100%; 0" dur="1s" repeatCount="3"></animateTransform>
+      <animateTransform attributeName="y2" values="100%; 200%; 0" dur="1s" repeatCount="3"></animateTransform>
+    </linearGradient>
+  </defs>
+</svg>
+
+
+
+  <div id="all_commit_comments" class="js-quote-selection-container" data-quote-markdown=".js-comment-body">
+
+    <div class="mb-1 mb-md-3">
+      
+<div id="partial-visible-comments-header" class="d-flex flex-items-center flex-column-reverse flex-md-row">
+  <h4 class="flex-auto text-md-left text-center">
+    0 comments
+    on commit <code class="commit-sha">89b008c</code>
+  </h4>
+
+  <div class="flex-shrink-0 mb-2 mb-md-0">
+    
+  </div>
+</div>
+
+    </div>
+
+    <div id="comments" class="comment-holder ml-0 pl-0 ml-md-6 pl-md-3">
+      
+
+
+  <!-- Rendered timeline since 2018-03-31 07:07:13 -->
+  <div id="partial-timeline-marker"
+        class="js-timeline-marker js-socket-channel js-updatable-content"
+        data-channel="repo:55330991:commit:89b008ce3aede0add7e0510155ffd8013328cc4f"
+        data-url="/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f/show_partial?partial=commit%2Ftimeline_marker&amp;since=1522505233"
+        data-last-modified="Sat, 31 Mar 2018 14:07:13 GMT">
+
+  </div>
+
+    </div>
+
+    
+
+      Please
+  <a rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;commit comment&quot;,&quot;repository_id&quot;:55330991,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/ncsoft/Unreal.js-core/commit/89b008ce3aede0add7e0510155ffd8013328cc4f&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a284dd84d35dbaf55912b0f199df55ddc53adbed5bd8b26700e1705341e3e0d0" href="/login?return_to=https%3A%2F%2Fgithub.com%2Fncsoft%2FUnreal.js-core%2Fcommit%2F89b008ce3aede0add7e0510155ffd8013328cc4f">sign in</a> to comment.
+
+  </div>
+
+
+
+  </div>
+</div>
+
+    </main>
+  </div>
+  
+
+  </div>
+
+        
+<div class="footer container-lg width-full p-responsive" role="contentinfo">
+  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      <li class="mr-3 mr-lg-0">&copy; 2020 GitHub, Inc.</li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" async="async" integrity="sha512-WcQmT2vhcClFVOaaAJV/M+HqsJ2Gq/myvl6F3gCVBxykazXTs+i5fvxncSXwyG1CSfcrqmLFw/R/bmFYzprX2A==" type="application/javascript" id="js-conditional-compat" data-src="https://github.githubassets.com/assets/compat-bootstrap-59c4264f.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-6XBdUZGib4aqdruJTnLMOLpIh0VJsGlgQ7M3vndWJIH6YQNv+zqpo1TbCDzjHJ+YYEm4xkEinaY0VsemDUfi9A==" type="application/javascript" src="https://github.githubassets.com/assets/environment-bootstrap-e9705d51.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-fNcWYAh2sNNjfGtnzXeDPemQsJYesX60BB9k+YlUmuSw+iX+9bVew+TJOO74e0yqqKS3gU570rxTCs+ZBpJCvg==" type="application/javascript" src="https://github.githubassets.com/assets/vendor-7cd71660.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-CcKFBqQZKOCZU5otP6R8GH2k+iJ3zC9r2z2Iakfs/Bo9/ptHy6JIWQN3FPhVuS3CR+Q/CkEOSfg+WJfoq3YMxQ==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-09c28506.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-YJfUzazDr9cv5vQ3uprerx75rOxBtkO8808pBDxH5ZC51jmraibbSP5xgU4Lkq860/f4tyDJ7vmLPuiKptv/0Q==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-6097d4cd.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  </body>
+</html>
+

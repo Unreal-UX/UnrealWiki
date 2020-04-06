@@ -1,0 +1,3192 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-FG+rXqMOivrAjdEQE7tO4BwM1poGmg70hJFTlNSxjX87grtrZ6UnPR8NkzwUHlQEGviu9XuRYeO8zH9YwvZhdg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-146fab5ea30e8afac08dd11013bb4ee0.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-iXrV/b4ypc1nr10b3Giikqff+qAx5osQ0yJRxHRDd8mKFefdMtEZ0Sxs1QysJxuJBayOKThjsuMjynwBJQq0aw==" rel="stylesheet" href="https://github.githubassets.com/assets/site-897ad5fdbe32a5cd67af5d1bdc68a292.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-23DJ0jGXuHq4HnEnOv5yjJ3aD9zHvk4UkkK4Vs7e52NlpTBA9/zI9GMjyZ7MrJmYgiHJ0ZHNKVSFxEC3Pud9UA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-db70c9d23197b87ab81e71273afe728c.css" />
+    
+    
+    
+    
+
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Appwrite · GitHub</title>
+    <meta name="description" content="End to end backend server for frontend and mobile developers. 👩‍💻👨‍💻 - Appwrite">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://avatars1.githubusercontent.com/u/25003669?s=280&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Appwrite" /><meta name="twitter:description" content="End to end backend server for frontend and mobile developers. 👩‍💻👨‍💻 - Appwrite" />
+    <meta property="og:image" content="https://avatars1.githubusercontent.com/u/25003669?s=280&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="profile" /><meta property="og:title" content="Appwrite" /><meta property="og:url" content="https://github.com/appwrite" /><meta property="og:description" content="End to end backend server for frontend and mobile developers. 👩‍💻👨‍💻 - Appwrite" /><meta property="profile:username" content="appwrite" />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  
+  
+
+  <meta name="request-id" content="EAAD:1A43:26CF19:3B3D4D:5E847307" data-pjax-transient="true"/><meta name="html-safe-nonce" content="2f5c4d90450f6cdcc6366c926866fc0da907d10e" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHA6Ly9naXRodWIuY29tL2xleDExMSIsInJlcXVlc3RfaWQiOiJFQUFEOjFBNDM6MjZDRjE5OjNCM0Q0RDo1RTg0NzMwNyIsInZpc2l0b3JfaWQiOiI4NDI4MjA4ODg0MjUwMDQ0MDU1IiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="d0d3341d71f1015768bc715b2373ab93caead09f0cc074a430d8537729a928df" data-pjax-transient="true"/>
+
+    <meta name="hovercard-subject-tag" content="organization:25003669" data-pjax-transient>
+
+
+  <meta name="github-keyboard-shortcuts" content="" data-pjax-transient="true" />
+
+  
+
+  <meta name="selected-link" value="/appwrite" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" />
+<meta name="analytics-location" content="/&lt;org-login&gt;" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+
+<meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+
+
+    <meta name="enabled-features" content="MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,RELATED_ISSUES">
+
+  <meta http-equiv="x-pjax-version" content="8769db88308fb15007b2d764cf15a630">
+  
+
+
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production page-responsive">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+      <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+
+    
+    
+
+
+
+        <header class="Header-old header-logged-out js-details-container Details position-relative f4 py-2" role="banner">
+  <div class="container-lg d-lg-flex flex-items-center p-responsive">
+    <div class="d-flex flex-justify-between flex-items-center">
+        <a class="mr-4" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+          <svg height="32" class="octicon octicon-mark-github text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+
+          <div class="d-lg-none css-truncate css-truncate-target width-fit p-2">
+            
+          <a class="Header-link" href="/appwrite">appwrite</a>
+
+          </div>
+
+        <div class="d-flex flex-items-center">
+            <a href="/join?source=header"
+              class="d-inline-block d-lg-none f5 text-white no-underline border border-gray-dark rounded-2 px-2 py-1 mr-3 mr-sm-5"
+              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/appwrite&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="723e5b2d8ba2718ee006d10385e5b82bde365e36560cd01faa0eb75e0569903c"
+              data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">
+              Sign&nbsp;up
+            </a>
+
+          <button class="btn-link d-lg-none mt-1 js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <svg height="24" class="octicon octicon-three-bars text-white" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+          </button>
+        </div>
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--logged-out position-fixed top-0 right-0 bottom-0 height-fit position-lg-relative d-lg-flex flex-justify-between flex-items-center flex-auto">
+      <div class="d-flex d-lg-none flex-justify-end border-bottom bg-gray-light p-3">
+        <button class="btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <svg height="24" class="octicon octicon-x text-gray" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+        </button>
+      </div>
+
+        <nav class="mt-0 px-3 px-lg-0 mb-5 mb-lg-0" aria-label="Global">
+          <ul class="d-lg-flex list-style-none">
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Why GitHub?
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <a href="/features" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Features">Features <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+                    <ul class="list-style-none f5 pb-3">
+                      <li class="edge-item-fix"><a href="/features/code-review/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code review">Code review</a></li>
+                      <li class="edge-item-fix"><a href="/features/project-management/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Project management">Project management</a></li>
+                      <li class="edge-item-fix"><a href="/features/integrations" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Integrations">Integrations</a></li>
+                      <li class="edge-item-fix"><a href="/features/actions" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Actions">Actions</a></li>
+                      <li class="edge-item-fix"><a href="/features/packages" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Packages">Packages</a></li>
+                      <li class="edge-item-fix"><a href="/features/security" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Security">Security</a></li>
+                      <li class="edge-item-fix"><a href="/features#team-management" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Team management">Team management</a></li>
+                      <li class="edge-item-fix"><a href="/features#hosting" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code hosting">Hosting</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="/customer-stories" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Customer stories">Customer stories <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="/security" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Security">Security <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
+                <a href="/enterprise" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Enterprise">Enterprise</a>
+              </li>
+
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Explore
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/explore" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Explore">Explore GitHub <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Learn &amp; contribute</h4>
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/topics" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Topics">Topics</a></li>
+                        <li class="edge-item-fix"><a href="/collections" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Collections">Collections</a></li>
+                      <li class="edge-item-fix"><a href="/trending" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Trending">Trending</a></li>
+                      <li class="edge-item-fix"><a href="https://lab.github.com/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Learning lab">Learning Lab</a></li>
+                      <li class="edge-item-fix"><a href="https://opensource.guide" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Open source guides">Open source guides</a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Connect with others</h4>
+                    <ul class="list-style-none mb-0">
+                      <li class="edge-item-fix"><a href="https://github.com/events" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Events">Events</a></li>
+                      <li class="edge-item-fix"><a href="https://github.community" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Community forum">Community forum</a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Education">GitHub Education</a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+
+              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
+                <a href="/marketplace" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Marketplace">Marketplace</a>
+              </li>
+
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Pricing
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                       <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-4 mt-0 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <a href="/pricing" class="pb-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Pricing">Plans <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/pricing#feature-comparison" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Compare plans">Compare plans</a></li>
+                      <li class="edge-item-fix"><a href="https://enterprise.github.com/contact" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Contact Sales">Contact Sales</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="/nonprofit" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Nonprofits">Nonprofit <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover"  data-ga-click="(Logged out) Header, go to Education">Education <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+          </ul>
+        </nav>
+
+      <div class="d-lg-flex flex-items-center px-3 px-lg-0 text-center text-lg-left">
+          <div class="d-lg-flex mb-3 mb-lg-0">
+            <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Organization" data-scope-id="25003669" data-scoped-search-url="/orgs/appwrite/search" data-unscoped-search-url="/search" action="/orgs/appwrite/search" accept-charset="UTF-8" method="get">
+      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search"
+          data-unscoped-placeholder="Search GitHub"
+          data-scoped-placeholder="Search"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations"
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="sAmYEgUBfGsmY8iwG8o173fBQXJDJvcjMOiGdqOTYdWKL0Vcjqm7OGhUhHMsYQmZ7b0+VRTnfCoggQFxp8pY+g==" />
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this organization">
+        In this organization
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this organization">
+        In this organization
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this organization">
+        In this organization
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+          </div>
+
+        <a href="/login?return_to=%2Fappwrite"
+          class="HeaderMenu-link no-underline mr-3"
+          data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/appwrite&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f8ec716e7290a0e6319fa29d6be12fbd112724879e8e88c702929ecb53814b90"
+          data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">
+          Sign&nbsp;in
+        </a>
+          <a href="/join?source=header"
+            class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1"
+            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/appwrite&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f8ec716e7290a0e6319fa29d6be12fbd112724879e8e88c702929ecb53814b90"
+            data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">
+            Sign&nbsp;up
+          </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+    <div id="js-flash-container">
+
+
+  <template class="js-flash-template">
+    <div class="flash flash-full  js-flash-template-container">
+  <div class="container-lg px-2" >
+    <button class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    
+      <div class="js-flash-template-message"></div>
+
+  </div>
+</div>
+  </template>
+</div>
+
+
+    
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled>
+      <main id="js-pjax-container" data-pjax-container>
+        
+
+
+
+
+
+
+
+
+<div itemscope itemtype="http://schema.org/Organization">
+  
+
+
+<header class="pagehead orghead pt-0 pt-lg-3">
+  <div class="reponav-wrapper reponav-small d-lg-none">
+  <nav class="reponav js-reponav text-center no-wrap js-profile-tab-count-container"
+       data-url="/users/appwrite/tab_counts"
+       itemscope
+       itemtype="http://schema.org/BreadcrumbList">
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a class="reponav-item selected" href="/appwrite" itemprop="url">
+        <span itemprop="name">Repositories</span>
+        <span class="Counter js-profile-repository-count"></span>
+        <meta itemprop="position" content="1">
+      </a>
+    </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a class="reponav-item " href="/orgs/appwrite/packages" itemprop="url">
+        <span itemprop="name">Packages</span>
+        <span class="Counter js-profile-package-count"></span>
+        <meta itemprop="position" content="2">
+      </a>
+    </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a class="reponav-item " href="/orgs/appwrite/people" itemprop="url">
+          <span itemprop="name">People</span>
+          <span class="Counter js-profile-member-count"></span>
+          <meta itemprop="position" content="3">
+        </a>
+      </span>
+
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a class="reponav-item " href="/orgs/appwrite/projects" itemprop="url">
+          <span itemprop="name">Projects</span>
+          <span class="Counter js-profile-project-count"></span>
+          <meta itemprop="position" content="5">
+        </a>
+      </span>
+
+
+  </nav>
+</div>
+
+
+  <div class="container-lg mt-4 mt-lg-0 p-responsive clearfix">
+
+
+
+    <div class="TableObject org-header-wrapper mb-4 d-flex flex-items-start flex-md-items-center">
+        <img itemprop="image" class="TableObject-item avatar flex-shrink-0" src="https://avatars0.githubusercontent.com/u/25003669?s=200&amp;v=4" width="100" height="100" alt="@appwrite" />
+      <div class="TableObject-item TableObject-item--primary pb-1 pb-md-0">
+        <div class="d-flex flex-justify-between flex-column flex-md-row">
+          <h1 class="text-gray-dark lh-condensed mb-1 mb-md-2">
+            Appwrite
+          </h1>
+          <div>
+
+          </div>
+        </div>
+
+          <span class="text-gray-light"><div>End to end backend server for frontend and mobile developers. <g-emoji class="g-emoji" alias="woman_technologist" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f469-1f4bb.png">👩‍💻</g-emoji><g-emoji class="g-emoji" alias="man_technologist" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f4bb.png">👨‍💻</g-emoji></div></span>
+
+          <ul class="d-flex mt-3 list-style-none f6 flex-column flex-md-row has-location has-blog has-email">
+              <li style="max-width: 280px" class="mr-md-3 v-align-middle text-gray-dark mb-1 css-truncate css-truncate-target">
+                <svg class="octicon octicon-location flex-shrink-0" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                <span itemprop="location" title="Planet Earth, Milky Way">Planet Earth, Milky Way</span>
+              </li>
+              <li style="max-width: 280px" class="mr-md-3 v-align-middle text-gray-dark mb-1 css-truncate css-truncate-target" >
+                <svg class="octicon octicon-link flex-shrink-0" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg>
+                <a rel="nofollow" itemprop="url" class="text-gray-dark" title="https://appwrite.io" href="https://appwrite.io">https://appwrite.io</a>
+              </li>
+              <li style="max-width: 280px" class="mr-md-3 text-gray-dark mb-1 css-truncate css-truncate-target">
+                <svg class="octicon octicon-mail v-align-middle flex-shrink-0" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"/></svg>
+                <a class="text-gray-dark" itemprop="email" href="mailto:&#x74;&#x65;&#x61;&#x6d;&#x40;&#x61;&#x70;&#x70;&#x77;&#x72;&#x69;&#x74;&#x65;&#x2e;&#x69;&#x6f;">&#x74;&#x65;&#x61;&#x6d;&#x40;&#x61;&#x70;&#x70;&#x77;&#x72;&#x69;&#x74;&#x65;&#x2e;&#x69;&#x6f;</a>
+              </li>
+
+              
+
+  <li class="d-inline-block v-align-middle mt-2 mb-0 mt-md-0 mb-md-1">
+    <details class="dropdown dropdown-signed-commit details-reset details-overlay js-dropdown-details">
+      <summary class="Label Label--outline text-green rounded-1">
+        Verified
+      </summary>
+      <div class="anim-scale-in position-relative" style="z-index: 200;">
+        <div class="dropdown-menu dropdown-menu-s p-3 mt-2 Box box-shadow-large py-0 text-gray-dark text-left">
+          <p>
+            We've verified that the organization <strong>Appwrite</strong> controls the domain:
+          </p>
+          <ul>
+              <li class="mb-1">
+                <svg class="octicon octicon-verified mr-1 text-green" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15.67 7.066l-1.08-1.34a1.5 1.5 0 01-.309-.77l-.19-1.698a1.51 1.51 0 00-1.329-1.33l-1.699-.19c-.3-.03-.56-.159-.78-.329L8.945.33a1.504 1.504 0 00-1.878 0l-1.34 1.08a1.5 1.5 0 01-.77.31l-1.698.19c-.7.08-1.25.63-1.33 1.329l-.19 1.699c-.03.3-.159.56-.329.78L.33 7.055a1.504 1.504 0 000 1.878l1.08 1.34c.17.22.28.48.31.77l.19 1.698c.08.7.63 1.25 1.329 1.33l1.699.19c.3.03.56.159.78.329l1.339 1.08c.55.439 1.329.439 1.878 0l1.34-1.08c.22-.17.48-.28.77-.31l1.698-.19c.7-.08 1.25-.63 1.33-1.329l.19-1.699c.03-.3.159-.56.329-.78l1.08-1.339a1.504 1.504 0 000-1.878zM6.5 12.01L3 8.51l1.5-1.5 2 2 5-5L13 5.56l-6.5 6.45z"/></svg>
+                <strong>appwrite.io</strong>
+              </li>
+          </ul>
+          <div class="pt-2">
+            <a href="https://help.github.com/articles/verifying-your-organization-s-domain/">Learn more about verified organizations</a>
+          </div>
+        </div>
+      </div>
+    </details>
+  </li>
+
+  
+
+
+          </ul>
+      </div>
+    </div>
+
+    <div class="container-lg d-none d-lg-block">
+      
+<nav class="orgnav clearfix js-profile-tab-count-container" data-url="/users/appwrite/tab_counts" aria-label="Organization">
+  <a class="pagehead-tabs-item selected" href="/appwrite">
+    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+    Repositories
+    <span class="Counter js-profile-repository-count"></span>
+  </a>
+
+    <a class="pagehead-tabs-item " href="/orgs/appwrite/packages">
+      <svg class="octicon octicon-package" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 00-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"/></svg>
+      Packages
+      <span class="Counter js-profile-package-count"></span>
+    </a>
+
+    <a class="pagehead-tabs-item " href="/orgs/appwrite/people">
+      <svg class="octicon octicon-person" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 14.002a.998.998 0 01-.998.998H1.001A1 1 0 010 13.999V13c0-2.633 4-4 4-4s.229-.409 0-1c-.841-.62-.944-1.59-1-4 .173-2.413 1.867-3 3-3s2.827.586 3 3c-.056 2.41-.159 3.38-1 4-.229.59 0 1 0 1s4 1.367 4 4v1.002z"/></svg>
+      People
+      <span class="Counter js-profile-member-count"></span>
+    </a>
+
+
+    <a class="pagehead-tabs-item " href="/orgs/appwrite/projects" data-hotkey="g b">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      Projects
+      <span class="Counter js-profile-project-count"></span>
+    </a>
+
+
+
+
+</nav>
+
+    </div>
+  </div>
+</header>
+
+
+  <div class="container-lg p-responsive js-pinned-items-reorder-container clearfix">
+      <div class="signup-prompt-bg rounded-1 js-signup-prompt" data-prompt="signup" hidden>
+    <div class="signup-prompt p-4 text-center mb-4 rounded-1">
+      <div class="position-relative">
+        <button type="button" class="position-absolute top-0 right-0 btn-link link-gray js-signup-prompt-button" data-ga-click="(Logged out) Sign up prompt, clicked Dismiss, text:dismiss">
+          Dismiss
+        </button>
+        <h3 class="pt-2">Grow your team on GitHub</h3>
+        <p class="col-8 mx-auto">GitHub is home to over 40 million developers working together. Join them to grow your own development teams, manage permissions, and collaborate on projects.</p>
+        <a class="btn btn-primary" data-ga-click="(Logged out) Sign up prompt, clicked Sign up, text:sign-up" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;org repos signup prompt&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/appwrite&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="0f4d38d7790bd2f52e25f198590d6fbe8645b03839e03f11ed9134cb2be0372f" href="/join?source=prompt-org-profile">Sign up</a>
+      </div>
+    </div>
+  </div>
+
+
+
+      <div class="d-flex mb-3 flex-wrap">
+        <h2 class="f4 text-normal flex-auto pr-2">
+          Pinned repositories
+          <img src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" width="13" class="spinner pinned-items-spinner js-pinned-items-spinner" alt="">
+          <span class="pinned-items-reorder-error js-pinned-items-reorder-message"
+            role="status" aria-live="polite"
+            data-error-text="Something went wrong."
+            data-success-text="Order updated."></span>
+        </h2>
+      </div>
+
+        
+<ol class="d-flex flex-wrap list-style-none gutter-condensed mb-4 js-pinned-items-reorder-list" >
+      
+<li class="col-12 col-md-6 col-lg-4 mb-3 d-flex flex-content-stretch">
+  <div class="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source  sortable-button-item" >
+    <div class="pinned-item-list-item-content">
+      <div class="d-flex width-full flex-items-center position-relative">
+        <svg class="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+        <a href="/appwrite/appwrite" class="text-bold flex-auto min-width-0 ">
+          <span class="repo" title="appwrite">appwrite</span>
+        </a>
+        
+      </div>
+
+
+      <p class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
+        End-to-end backend server for frontend and mobile developers. <g-emoji class="g-emoji" alias="rocket" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png">🚀</g-emoji>
+      </p>
+
+      <p class="mb-0 f6 text-gray">
+          <span class="d-inline-block mr-3">
+  <span class="repo-language-color" style="background-color: #f1e05a"></span>
+  <span itemprop="programmingLanguage">JavaScript</span>
+</span>
+
+          <a href="/appwrite/appwrite/stargazers" class="pinned-item-meta muted-link ">
+            <svg aria-label="stars" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+            2.4k
+          </a>
+          <a href="/appwrite/appwrite/network/members" class="pinned-item-meta muted-link ">
+            <svg aria-label="forks" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            326
+          </a>
+      </p>
+    </div>
+  </div>
+</li>
+
+
+</ol>
+
+
+      
+<div class="border-bottom border-gray-light mb-3 pb-md-3">
+
+  <div class="d-flex">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-pjax="#org-repositories" data-pjax-preserve-scroll="true" data-autosearch-results-container="org-repositories" class="col-12 col-md-8 mb-4 mb-md-0" role="search" action="/appwrite" accept-charset="UTF-8" method="get">
+      <div class="d-flex flex-column flex-md-row flex-auto">
+        <div class="mb-2 mb-md-0 flex-auto">
+          <input type="search" id="your-repos-filter" name="q"
+                 class="form-control width-full"
+                 placeholder="Find a repository&hellip;"
+                 autocomplete="off"
+                 aria-label="Find a repository&hellip;"
+                 value=""
+                 data-throttled-autosubmit>
+        </div>
+        <div class="d-flex">
+          <details class="details-reset details-overlay select-menu hx_rsm hx_rsm--auto-height mr-1 ml-md-2 d-inline-block select-menu-modal-right">
+            <summary class="btn select-menu-button">
+              <i>Type:</i>
+              <span data-menu-button>
+                All
+              </span>
+            </summary>
+            <details-menu class="select-menu-modal position-absolute right-0" style="z-index: 99;">
+              <div class="select-menu-header text-left">
+                <span class="select-menu-title">Select type</span>
+              </div>
+              <div class="select-menu-list">
+                  <label class="select-menu-item" role="menuitemradio" aria-checked="true" tabindex="0">
+                    <input type="radio" name="type" id="type_" value="" data-autosubmit="true" checked="checked" />
+                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal select-menu-item-text" data-menu-button-text>All</span>
+                  </label>
+                  <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="type" id="type_source" value="source" data-autosubmit="true" />
+                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal select-menu-item-text" data-menu-button-text>Sources</span>
+                  </label>
+                  <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="type" id="type_fork" value="fork" data-autosubmit="true" />
+                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal select-menu-item-text" data-menu-button-text>Forks</span>
+                  </label>
+                  <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="type" id="type_archived" value="archived" data-autosubmit="true" />
+                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal select-menu-item-text" data-menu-button-text>Archived</span>
+                  </label>
+                  <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="type" id="type_mirror" value="mirror" data-autosubmit="true" />
+                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal select-menu-item-text" data-menu-button-text>Mirrors</span>
+                  </label>
+              </div>
+            </details-menu>
+          </details>
+
+            <details class="details-reset details-overlay select-menu hx_rsm d-inline-block select-menu-modal-right">
+              <summary class="btn select-menu-button">
+                <i>Language:</i>
+                <span data-menu-button>
+                  All
+                </span>
+              </summary>
+              <details-menu class="select-menu-modal position-absolute right-0" style="z-index: 99;">
+                <div class="select-menu-header text-left">
+                  <span class="select-menu-title">Select language</span>
+                </div>
+                <div class="select-menu-list">
+                  <label class="select-menu-item" role="menuitemradio" aria-checked="true" tabindex="0">
+                    <input type="radio" name="language" id="language_" value="" data-autosubmit="true" checked="checked" />
+                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal select-menu-item-text" data-menu-button-text>All</span>
+                  </label>
+                    <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                      <input type="radio" name="language" id="language_dart" value="dart" data-autosubmit="true" />
+                      <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                      <span class="text-normal select-menu-item-text" data-menu-button-text>Dart</span>
+                    </label>
+                    <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                      <input type="radio" name="language" id="language_dockerfile" value="dockerfile" data-autosubmit="true" />
+                      <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                      <span class="text-normal select-menu-item-text" data-menu-button-text>Dockerfile</span>
+                    </label>
+                    <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                      <input type="radio" name="language" id="language_go" value="go" data-autosubmit="true" />
+                      <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                      <span class="text-normal select-menu-item-text" data-menu-button-text>Go</span>
+                    </label>
+                    <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                      <input type="radio" name="language" id="language_javascript" value="javascript" data-autosubmit="true" />
+                      <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                      <span class="text-normal select-menu-item-text" data-menu-button-text>JavaScript</span>
+                    </label>
+                    <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                      <input type="radio" name="language" id="language_php" value="php" data-autosubmit="true" />
+                      <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                      <span class="text-normal select-menu-item-text" data-menu-button-text>PHP</span>
+                    </label>
+                    <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                      <input type="radio" name="language" id="language_python" value="python" data-autosubmit="true" />
+                      <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                      <span class="text-normal select-menu-item-text" data-menu-button-text>Python</span>
+                    </label>
+                    <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                      <input type="radio" name="language" id="language_ruby" value="ruby" data-autosubmit="true" />
+                      <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                      <span class="text-normal select-menu-item-text" data-menu-button-text>Ruby</span>
+                    </label>
+                    <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                      <input type="radio" name="language" id="language_shell" value="shell" data-autosubmit="true" />
+                      <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                      <span class="text-normal select-menu-item-text" data-menu-button-text>Shell</span>
+                    </label>
+                    <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                      <input type="radio" name="language" id="language_tsql" value="tsql" data-autosubmit="true" />
+                      <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                      <span class="text-normal select-menu-item-text" data-menu-button-text>TSQL</span>
+                    </label>
+                </div>
+              </details-menu>
+            </details>
+        </div>
+      </div>
+</form>
+    <div class="d-none d-md-flex flex-md-items-center flex-md-justify-end col-md-4">
+
+    </div>
+  </div>
+</div>
+
+
+      <div id="org-repositories" data-pjax-container>
+        
+<div class="col-12 col-md-8 d-md-inline-block">
+  <div class="org-repos repo-list">
+
+      <h2 class="f4 text-normal d-md-none">Repositories</h2>
+
+      <ul>
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/appwrite" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/appwrite/hovercard">
+            appwrite
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            End-to-end backend server for frontend and mobile developers. <g-emoji class="g-emoji" alias="rocket" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png">🚀</g-emoji>
+
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Ajavascript+org%3Aappwrite&amp;type=Repositories" title="Topic: javascript" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:javascript,repository_id:180190854,repository_nwo:appwrite/appwrite,repository_public:true,repository_is_fork:false">
+  javascript
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Adocker+org%3Aappwrite&amp;type=Repositories" title="Topic: docker" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:docker,repository_id:180190854,repository_nwo:appwrite/appwrite,repository_public:true,repository_is_fork:false">
+  docker
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aphp+org%3Aappwrite&amp;type=Repositories" title="Topic: php" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:php,repository_id:180190854,repository_nwo:appwrite/appwrite,repository_public:true,repository_is_fork:false">
+  php
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Abaas+org%3Aappwrite&amp;type=Repositories" title="Topic: baas" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:baas,repository_id:180190854,repository_nwo:appwrite/appwrite,repository_public:true,repository_is_fork:false">
+  baas
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Abackend-as-a-service+org%3Aappwrite&amp;type=Repositories" title="Topic: backend-as-a-service" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:backend-as-a-service,repository_id:180190854,repository_nwo:appwrite/appwrite,repository_public:true,repository_is_fork:false">
+  backend-as-a-service
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite,repository_id:180190854,repository_nwo:appwrite/appwrite,repository_public:true,repository_is_fork:false">
+  appwrite
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-auth+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-auth" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-auth,repository_id:180190854,repository_nwo:appwrite/appwrite,repository_public:true,repository_is_fork:false">
+  appwrite-auth
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        <poll-include-fragment src="/appwrite/appwrite/graphs/participation?h=28&amp;type=sparkline&amp;w=155">
+</poll-include-fragment></div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #f1e05a"></span>
+  <span itemprop="programmingLanguage">JavaScript</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+BSD-3-Clause
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/appwrite/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          326
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/appwrite/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          2,393
+</a>
+
+
+      <a class="no-wrap muted-link " href="/appwrite/appwrite/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        33
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/appwrite/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen">
+          (7 issues need help)
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/appwrite/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        9
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-30T13:30:48Z" class="no-wrap">Mar 30, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/docker-clamav" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/docker-clamav/hovercard">
+            docker-clamav
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            ClamAV docker container with auto database updates
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Adocker+org%3Aappwrite&amp;type=Repositories" title="Topic: docker" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:docker,repository_id:186095810,repository_nwo:appwrite/docker-clamav,repository_public:true,repository_is_fork:false">
+  docker
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aclamav+org%3Aappwrite&amp;type=Repositories" title="Topic: clamav" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:clamav,repository_id:186095810,repository_nwo:appwrite/docker-clamav,repository_public:true,repository_is_fork:false">
+  clamav
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aclamav-antivirus+org%3Aappwrite&amp;type=Repositories" title="Topic: clamav-antivirus" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:clamav-antivirus,repository_id:186095810,repository_nwo:appwrite/docker-clamav,repository_public:true,repository_is_fork:false">
+  clamav-antivirus
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-186095810" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-186095810" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,6 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,1 51,1 54,5 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,5 81,1 84,1 87,2 90,1 93,1 96,1 99,1 102,2 105,3 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,1 153,2 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -10)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-186095810); mask: url(#sparkline-186095810)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #89e051"></span>
+  <span itemprop="programmingLanguage">Shell</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+MIT
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/docker-clamav/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          3
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/docker-clamav/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          3
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/docker-clamav/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/docker-clamav/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-29T21:13:55Z" class="no-wrap">Mar 29, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/sdk-for-go" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/sdk-for-go/hovercard">
+            sdk-for-go
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            [READ-ONLY] Official Appwrite GO SDK
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        <poll-include-fragment src="/appwrite/sdk-for-go/graphs/participation?h=28&amp;type=sparkline&amp;w=155">
+</poll-include-fragment></div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #00ADD8"></span>
+  <span itemprop="programmingLanguage">Go</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+BSD-3-Clause
+</span>
+
+
+        <span class="mr-3 text-gray">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+0
+</span>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-go/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          2
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-go/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-go/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-28T14:55:20Z" class="no-wrap">Mar 28, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/sdk-for-ruby" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/sdk-for-ruby/hovercard">
+            sdk-for-ruby
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            [READ-ONLY] Official Appwrite Ruby SDK
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aruby+org%3Aappwrite&amp;type=Repositories" title="Topic: ruby" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:ruby,repository_id:188027237,repository_nwo:appwrite/sdk-for-ruby,repository_public:true,repository_is_fork:false">
+  ruby
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Abaas+org%3Aappwrite&amp;type=Repositories" title="Topic: baas" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:baas,repository_id:188027237,repository_nwo:appwrite/sdk-for-ruby,repository_public:true,repository_is_fork:false">
+  baas
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite,repository_id:188027237,repository_nwo:appwrite/sdk-for-ruby,repository_public:true,repository_is_fork:false">
+  appwrite
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-auth+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-auth" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-auth,repository_id:188027237,repository_nwo:appwrite/sdk-for-ruby,repository_public:true,repository_is_fork:false">
+  appwrite-auth
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-database+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-database" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-database,repository_id:188027237,repository_nwo:appwrite/sdk-for-ruby,repository_public:true,repository_is_fork:false">
+  appwrite-database
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-storage+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-storage" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-storage,repository_id:188027237,repository_nwo:appwrite/sdk-for-ruby,repository_public:true,repository_is_fork:false">
+  appwrite-storage
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-users+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-users" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-users,repository_id:188027237,repository_nwo:appwrite/sdk-for-ruby,repository_public:true,repository_is_fork:false">
+  appwrite-users
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        <poll-include-fragment src="/appwrite/sdk-for-ruby/graphs/participation?h=28&amp;type=sparkline&amp;w=155">
+</poll-include-fragment></div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #701516"></span>
+  <span itemprop="programmingLanguage">Ruby</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+BSD-3-Clause
+</span>
+
+
+        <span class="mr-3 text-gray">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+0
+</span>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-ruby/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          5
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-ruby/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-ruby/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-28T14:55:10Z" class="no-wrap">Mar 28, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/sdk-for-python" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/sdk-for-python/hovercard">
+            sdk-for-python
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            [READ-ONLY] Official Appwrite Python SDK
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Apython+org%3Aappwrite&amp;type=Repositories" title="Topic: python" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:python,repository_id:187446536,repository_nwo:appwrite/sdk-for-python,repository_public:true,repository_is_fork:false">
+  python
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Abaas+org%3Aappwrite&amp;type=Repositories" title="Topic: baas" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:baas,repository_id:187446536,repository_nwo:appwrite/sdk-for-python,repository_public:true,repository_is_fork:false">
+  baas
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite,repository_id:187446536,repository_nwo:appwrite/sdk-for-python,repository_public:true,repository_is_fork:false">
+  appwrite
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-auth+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-auth" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-auth,repository_id:187446536,repository_nwo:appwrite/sdk-for-python,repository_public:true,repository_is_fork:false">
+  appwrite-auth
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-database+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-database" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-database,repository_id:187446536,repository_nwo:appwrite/sdk-for-python,repository_public:true,repository_is_fork:false">
+  appwrite-database
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-storage+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-storage" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-storage,repository_id:187446536,repository_nwo:appwrite/sdk-for-python,repository_public:true,repository_is_fork:false">
+  appwrite-storage
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-users+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-users" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-users,repository_id:187446536,repository_nwo:appwrite/sdk-for-python,repository_public:true,repository_is_fork:false">
+  appwrite-users
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        <poll-include-fragment src="/appwrite/sdk-for-python/graphs/participation?h=28&amp;type=sparkline&amp;w=155">
+</poll-include-fragment></div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #3572A5"></span>
+  <span itemprop="programmingLanguage">Python</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+BSD-3-Clause
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/sdk-for-python/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          13
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-python/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          12
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-python/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-python/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-28T14:55:00Z" class="no-wrap">Mar 28, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/sdk-for-php" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/sdk-for-php/hovercard">
+            sdk-for-php
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            [READ-ONLY] Official Appwrite PHP SDK
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aphp+org%3Aappwrite&amp;type=Repositories" title="Topic: php" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:php,repository_id:174654263,repository_nwo:appwrite/sdk-for-php,repository_public:true,repository_is_fork:false">
+  php
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Abaas+org%3Aappwrite&amp;type=Repositories" title="Topic: baas" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:baas,repository_id:174654263,repository_nwo:appwrite/sdk-for-php,repository_public:true,repository_is_fork:false">
+  baas
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite,repository_id:174654263,repository_nwo:appwrite/sdk-for-php,repository_public:true,repository_is_fork:false">
+  appwrite
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-auth+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-auth" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-auth,repository_id:174654263,repository_nwo:appwrite/sdk-for-php,repository_public:true,repository_is_fork:false">
+  appwrite-auth
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-database+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-database" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-database,repository_id:174654263,repository_nwo:appwrite/sdk-for-php,repository_public:true,repository_is_fork:false">
+  appwrite-database
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-storage+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-storage" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-storage,repository_id:174654263,repository_nwo:appwrite/sdk-for-php,repository_public:true,repository_is_fork:false">
+  appwrite-storage
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite-users+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite-users" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite-users,repository_id:174654263,repository_nwo:appwrite/sdk-for-php,repository_public:true,repository_is_fork:false">
+  appwrite-users
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-174654263" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-174654263" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,3 3,1 6,1 9,1 12,1 15,1 18,1 21,6 24,1 27,1 30,5 33,1 36,1 39,1 42,1 45,1 48,2 51,1 54,4 57,5 60,8 63,6 66,2 69,3 72,6 75,3 78,6 81,5 84,3 87,6 90,1 93,2 96,1 99,2 102,1 105,1 108,2 111,1 114,2 117,1 120,1 123,1 126,1 129,2 132,1 135,1 138,1 141,1 144,1 147,1 150,3 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -9)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-174654263); mask: url(#sparkline-174654263)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #4F5D95"></span>
+  <span itemprop="programmingLanguage">PHP</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+BSD-3-Clause
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/sdk-for-php/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          1
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-php/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          23
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-php/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-php/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-28T14:54:50Z" class="no-wrap">Mar 28, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/sdk-for-node" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/sdk-for-node/hovercard">
+            sdk-for-node
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            [READ-ONLY] Official Appwrite Node SDK
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-190069719" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-190069719" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,1 18,1 21,1 24,14 27,14 30,1 33,2 36,1 39,1 42,1 45,2 48,1 51,3 54,4 57,8 60,5 63,5 66,1 69,3 72,8 75,2 78,5 81,6 84,6 87,1 90,2 93,1 96,1 99,2 102,1 105,2 108,1 111,2 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,3 153,2 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -6)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-190069719); mask: url(#sparkline-190069719)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #f1e05a"></span>
+  <span itemprop="programmingLanguage">JavaScript</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+BSD-3-Clause
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/sdk-for-node/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          2
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-node/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          14
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-node/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        2
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-node/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-28T14:54:41Z" class="no-wrap">Mar 28, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/sdk-for-dart" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/sdk-for-dart/hovercard">
+            sdk-for-dart
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            [READ-ONLY] Official Appwrite Dart SDK
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        <poll-include-fragment src="/appwrite/sdk-for-dart/graphs/participation?h=28&amp;type=sparkline&amp;w=155">
+</poll-include-fragment></div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #00B4AB"></span>
+  <span itemprop="programmingLanguage">Dart</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+BSD-3-Clause
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/sdk-for-dart/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          1
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-dart/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          14
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-dart/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-dart/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-28T14:54:30Z" class="no-wrap">Mar 28, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/sdk-for-js" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/sdk-for-js/hovercard">
+            sdk-for-js
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            [READ-ONLY] Official Appwrite JS SDK
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Ajavascript+org%3Aappwrite&amp;type=Repositories" title="Topic: javascript" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:javascript,repository_id:174654219,repository_nwo:appwrite/sdk-for-js,repository_public:true,repository_is_fork:false">
+  javascript
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Avuejs+org%3Aappwrite&amp;type=Repositories" title="Topic: vuejs" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:vuejs,repository_id:174654219,repository_nwo:appwrite/sdk-for-js,repository_public:true,repository_is_fork:false">
+  vuejs
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aangular+org%3Aappwrite&amp;type=Repositories" title="Topic: angular" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:angular,repository_id:174654219,repository_nwo:appwrite/sdk-for-js,repository_public:true,repository_is_fork:false">
+  angular
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Atypescript+org%3Aappwrite&amp;type=Repositories" title="Topic: typescript" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:typescript,repository_id:174654219,repository_nwo:appwrite/sdk-for-js,repository_public:true,repository_is_fork:false">
+  typescript
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Ajs+org%3Aappwrite&amp;type=Repositories" title="Topic: js" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:js,repository_id:174654219,repository_nwo:appwrite/sdk-for-js,repository_public:true,repository_is_fork:false">
+  js
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Areactjs+org%3Aappwrite&amp;type=Repositories" title="Topic: reactjs" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:reactjs,repository_id:174654219,repository_nwo:appwrite/sdk-for-js,repository_public:true,repository_is_fork:false">
+  reactjs
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Abaas+org%3Aappwrite&amp;type=Repositories" title="Topic: baas" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:baas,repository_id:174654219,repository_nwo:appwrite/sdk-for-js,repository_public:true,repository_is_fork:false">
+  baas
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-174654219" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-174654219" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,4 3,1 6,1 9,1 12,1 15,1 18,2 21,5 24,1 27,5 30,1 33,1 36,1 39,6 42,1 45,4 48,1 51,3 54,4 57,8 60,5 63,5 66,1 69,3 72,8 75,2 78,5 81,6 84,6 87,1 90,2 93,1 96,1 99,2 102,1 105,2 108,1 111,2 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,3 153,2 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -9)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-174654219); mask: url(#sparkline-174654219)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #f1e05a"></span>
+  <span itemprop="programmingLanguage">JavaScript</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+BSD-3-Clause
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/sdk-for-js/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          5
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-js/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          22
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-js/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-js/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-28T14:54:21Z" class="no-wrap">Mar 28, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/sdk-generator" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/sdk-generator/hovercard">
+            sdk-generator
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            Appwrite PHP library for generating API SDKs for multiple programming languages and platforms
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Anodejs+org%3Aappwrite&amp;type=Repositories" title="Topic: nodejs" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:nodejs,repository_id:188078602,repository_nwo:appwrite/sdk-generator,repository_public:true,repository_is_fork:false">
+  nodejs
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Ajavascript+org%3Aappwrite&amp;type=Repositories" title="Topic: javascript" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:javascript,repository_id:188078602,repository_nwo:appwrite/sdk-generator,repository_public:true,repository_is_fork:false">
+  javascript
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aruby+org%3Aappwrite&amp;type=Repositories" title="Topic: ruby" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:ruby,repository_id:188078602,repository_nwo:appwrite/sdk-generator,repository_public:true,repository_is_fork:false">
+  ruby
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Akotlin+org%3Aappwrite&amp;type=Repositories" title="Topic: kotlin" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:kotlin,repository_id:188078602,repository_nwo:appwrite/sdk-generator,repository_public:true,repository_is_fork:false">
+  kotlin
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Apython+org%3Aappwrite&amp;type=Repositories" title="Topic: python" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:python,repository_id:188078602,repository_nwo:appwrite/sdk-generator,repository_public:true,repository_is_fork:false">
+  python
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Adart+org%3Aappwrite&amp;type=Repositories" title="Topic: dart" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:dart,repository_id:188078602,repository_nwo:appwrite/sdk-generator,repository_public:true,repository_is_fork:false">
+  dart
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aswift+org%3Aappwrite&amp;type=Repositories" title="Topic: swift" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:swift,repository_id:188078602,repository_nwo:appwrite/sdk-generator,repository_public:true,repository_is_fork:false">
+  swift
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-188078602" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-188078602" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1.0 3,1.0 6,1.0 9,1.0 12,1.0 15,1.0 18,1.0 21,12.2 24,1.8 27,17.0 30,3.4 33,1.0 36,1.8 39,3.4 42,1.0 45,1.0 48,1.8 51,1.0 54,1.8 57,3.4 60,3.4 63,1.0 66,1.0 69,14.6 72,17.8 75,1.8 78,7.4 81,17.8 84,29.0 87,3.4 90,2.6 93,5.0 96,1.0 99,9.0 102,1.8 105,1.0 108,7.4 111,2.6 114,10.6 117,1.0 120,1.0 123,1.0 126,1.0 129,16.2 132,1.0 135,5.8 138,5.0 141,1.0 144,2.6 147,1.0 150,1.0 153,8.2 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, 2.0)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-188078602); mask: url(#sparkline-188078602)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #4F5D95"></span>
+  <span itemprop="programmingLanguage">PHP</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+MIT
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/sdk-generator/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          27
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-generator/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          16
+</a>
+
+
+      <a class="no-wrap muted-link " href="/appwrite/sdk-generator/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        12
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-generator/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen">
+          (10 issues need help)
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-generator/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        7
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-28T14:52:28Z" class="no-wrap">Mar 28, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/sdk-for-typescript" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/sdk-for-typescript/hovercard">
+            sdk-for-typescript
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            [READ-ONLY] Official Appwrite TypeScript SDK
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        <poll-include-fragment src="/appwrite/sdk-for-typescript/graphs/participation?h=28&amp;type=sparkline&amp;w=155">
+</poll-include-fragment></div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+
+
+        <span class="mr-3 text-gray">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+0
+</span>
+
+
+        <span class="mr-3 text-gray">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+0
+</span>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-typescript/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/sdk-for-typescript/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-26T15:14:55Z" class="no-wrap">Mar 26, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/docker-mariadb" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/docker-mariadb/hovercard">
+            docker-mariadb
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            MariaDB container with Appwrite server DB schema and tables initialized and ready to use for fresh installations.
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Adocker+org%3Aappwrite&amp;type=Repositories" title="Topic: docker" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:docker,repository_id:199787599,repository_nwo:appwrite/docker-mariadb,repository_public:true,repository_is_fork:false">
+  docker
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Amaria+org%3Aappwrite&amp;type=Repositories" title="Topic: maria" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:maria,repository_id:199787599,repository_nwo:appwrite/docker-mariadb,repository_public:true,repository_is_fork:false">
+  maria
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite,repository_id:199787599,repository_nwo:appwrite/docker-mariadb,repository_public:true,repository_is_fork:false">
+  appwrite
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-199787599" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-199787599" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,1 51,7 54,3 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,4 81,1 84,1 87,2 90,2 93,1 96,1 99,4 102,2 105,1 108,1 111,1 114,3 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,3 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -9)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-199787599); mask: url(#sparkline-199787599)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #ccc"></span>
+  <span itemprop="programmingLanguage">TSQL</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+MIT
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/docker-mariadb/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          7
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/docker-mariadb/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          2
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/docker-mariadb/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/docker-mariadb/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-21T21:05:12Z" class="no-wrap">Mar 21, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/install" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/install/hovercard">
+            install
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            CLI tool for easy installation of a self-hosted Appwrite server
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Adocker+org%3Aappwrite&amp;type=Repositories" title="Topic: docker" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:docker,repository_id:244475229,repository_nwo:appwrite/install,repository_public:true,repository_is_fork:false">
+  docker
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Adocker-compose+org%3Aappwrite&amp;type=Repositories" title="Topic: docker-compose" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:docker-compose,repository_id:244475229,repository_nwo:appwrite/install,repository_public:true,repository_is_fork:false">
+  docker-compose
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite,repository_id:244475229,repository_nwo:appwrite/install,repository_public:true,repository_is_fork:false">
+  appwrite
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-244475229" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-244475229" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,1 51,1 54,1 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,1 81,1 84,1 87,1 90,1 93,1 96,1 99,1 102,1 105,1 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,8 147,1 150,11 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -7)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-244475229); mask: url(#sparkline-244475229)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #4F5D95"></span>
+  <span itemprop="programmingLanguage">PHP</span>
+</span>
+
+
+
+        <span class="mr-3 text-gray">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+0
+</span>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/install/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          1
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/install/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/install/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-19T21:10:38Z" class="no-wrap">Mar 19, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/playground-for-js" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/playground-for-js/hovercard">
+            playground-for-js
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            Simple examples that help you get started with Appwrite + JS (=<g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">❤️</g-emoji>)
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-214762609" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-214762609" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,1 51,1 54,1 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,1 81,1 84,10 87,3 90,3 93,3 96,1 99,1 102,1 105,1 108,1 111,2 114,2 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,6 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -8)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-214762609); mask: url(#sparkline-214762609)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #f1e05a"></span>
+  <span itemprop="programmingLanguage">JavaScript</span>
+</span>
+
+
+
+        <a class=" muted-link mr-3" href="/appwrite/playground-for-js/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          7
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/playground-for-js/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          5
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/playground-for-js/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/playground-for-js/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-19T15:33:15Z" class="no-wrap">Mar 19, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/php-clamav" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/php-clamav/hovercard">
+            php-clamav
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            ClamAV network and pipe client for PHP
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aphp+org%3Aappwrite&amp;type=Repositories" title="Topic: php" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:php,repository_id:186130249,repository_nwo:appwrite/php-clamav,repository_public:true,repository_is_fork:false">
+  php
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aclamav+org%3Aappwrite&amp;type=Repositories" title="Topic: clamav" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:clamav,repository_id:186130249,repository_nwo:appwrite/php-clamav,repository_public:true,repository_is_fork:false">
+  clamav
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aclamav-scanning+org%3Aappwrite&amp;type=Repositories" title="Topic: clamav-scanning" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:clamav-scanning,repository_id:186130249,repository_nwo:appwrite/php-clamav,repository_public:true,repository_is_fork:false">
+  clamav-scanning
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aclamav-client+org%3Aappwrite&amp;type=Repositories" title="Topic: clamav-client" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:clamav-client,repository_id:186130249,repository_nwo:appwrite/php-clamav,repository_public:true,repository_is_fork:false">
+  clamav-client
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aclamav-antivirus+org%3Aappwrite&amp;type=Repositories" title="Topic: clamav-antivirus" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:clamav-antivirus,repository_id:186130249,repository_nwo:appwrite/php-clamav,repository_public:true,repository_is_fork:false">
+  clamav-antivirus
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-186130249" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-186130249" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,14 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,3 51,1 54,1 57,1 60,1 63,1 66,3 69,1 72,1 75,1 78,1 81,1 84,1 87,4 90,1 93,1 96,1 99,1 102,6 105,2 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,2 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -6)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-186130249); mask: url(#sparkline-186130249)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #4F5D95"></span>
+  <span itemprop="programmingLanguage">PHP</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+MIT
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/php-clamav/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          3
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/php-clamav/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          3
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/php-clamav/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/php-clamav/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-02-29T11:35:43Z" class="no-wrap">Feb 29, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/docker-smtp" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/docker-smtp/hovercard">
+            docker-smtp
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            SMTP server docker container for sending emails.
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-201299475" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-201299475" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,1 51,1 54,1 57,7 60,1 63,1 66,1 69,1 72,1 75,1 78,1 81,1 84,1 87,2 90,2 93,1 96,1 99,1 102,2 105,2 108,1 111,1 114,1 117,1 120,1 123,1 126,3 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -9)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-201299475); mask: url(#sparkline-201299475)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #89e051"></span>
+  <span itemprop="programmingLanguage">Shell</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+MIT
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/docker-smtp/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          1
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/docker-smtp/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          4
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/docker-smtp/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/docker-smtp/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-01-16T15:15:16Z" class="no-wrap">Jan 16, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/awesome-appwrite" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/awesome-appwrite/hovercard">
+            awesome-appwrite
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            Carefully curated list of awesome Appwrite resources <g-emoji class="g-emoji" alias="muscle" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4aa.png">💪</g-emoji>
+
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aawesome+org%3Aappwrite&amp;type=Repositories" title="Topic: awesome" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:awesome,repository_id:219004129,repository_nwo:appwrite/awesome-appwrite,repository_public:true,repository_is_fork:false">
+  awesome
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aawesome-list+org%3Aappwrite&amp;type=Repositories" title="Topic: awesome-list" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:awesome-list,repository_id:219004129,repository_nwo:appwrite/awesome-appwrite,repository_public:true,repository_is_fork:false">
+  awesome-list
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aawesome-lists+org%3Aappwrite&amp;type=Repositories" title="Topic: awesome-lists" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:awesome-lists,repository_id:219004129,repository_nwo:appwrite/awesome-appwrite,repository_public:true,repository_is_fork:false">
+  awesome-lists
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite,repository_id:219004129,repository_nwo:appwrite/awesome-appwrite,repository_public:true,repository_is_fork:false">
+  appwrite
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-219004129" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-219004129" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,1 51,1 54,1 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,1 81,1 84,1 87,1 90,26 93,1 96,2 99,1 102,2 105,1 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, 0)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-219004129); mask: url(#sparkline-219004129)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+
+
+        <span class="mr-3 text-gray">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+0
+</span>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/awesome-appwrite/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          7
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/awesome-appwrite/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/awesome-appwrite/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2019-12-01T07:12:50Z" class="no-wrap">Dec 1, 2019</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/docker-resque-ui" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/docker-resque-ui/hovercard">
+            docker-resque-ui
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            Docker container for Resque web UI
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-195641763" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-195641763" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,3 45,1 48,1 51,1 54,1 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,1 81,1 84,5 87,1 90,2 93,1 96,1 99,1 102,3 105,2 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -10)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-195641763); mask: url(#sparkline-195641763)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #384d54"></span>
+  <span itemprop="programmingLanguage">Dockerfile</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+MIT
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/docker-resque-ui/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          3
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/docker-resque-ui/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          5
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/docker-resque-ui/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/docker-resque-ui/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        1
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2019-12-01T07:10:35Z" class="no-wrap">Dec 1, 2019</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/appwrite/docker-telegraf" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/appwrite/docker-telegraf/hovercard">
+            docker-telegraf
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            Telegraf container pre-configured for Appwrite server setup.
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Adocker+org%3Aappwrite&amp;type=Repositories" title="Topic: docker" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:docker,repository_id:200912238,repository_nwo:appwrite/docker-telegraf,repository_public:true,repository_is_fork:false">
+  docker
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Astatsd+org%3Aappwrite&amp;type=Repositories" title="Topic: statsd" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:statsd,repository_id:200912238,repository_nwo:appwrite/docker-telegraf,repository_public:true,repository_is_fork:false">
+  statsd
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Atelegraf+org%3Aappwrite&amp;type=Repositories" title="Topic: telegraf" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:telegraf,repository_id:200912238,repository_nwo:appwrite/docker-telegraf,repository_public:true,repository_is_fork:false">
+  telegraf
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aappwrite+org%3Aappwrite&amp;type=Repositories" title="Topic: appwrite" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:appwrite,repository_id:200912238,repository_nwo:appwrite/docker-telegraf,repository_public:true,repository_is_fork:false">
+  appwrite
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-200912238" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-200912238" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,1 51,1 54,4 57,3 60,1 63,1 66,1 69,1 72,1 75,1 78,1 81,3 84,1 87,1 90,2 93,1 96,1 99,1 102,1 105,2 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -11)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-200912238); mask: url(#sparkline-200912238)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #384d54"></span>
+  <span itemprop="programmingLanguage">Dockerfile</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+MIT
+</span>
+
+
+        <a class=" muted-link mr-3" href="/appwrite/docker-telegraf/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          2
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/appwrite/docker-telegraf/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          2
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/docker-telegraf/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/appwrite/docker-telegraf/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2019-12-01T07:08:59Z" class="no-wrap">Dec 1, 2019</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+      </ul>
+
+    <div class="paginate-container d-none d-md-flex flex-md-justify-center" data-pjax>
+      
+    </div>
+
+    <div class="paginate-container d-md-none mb-5" data-pjax>
+      
+    </div>
+  </div>
+</div>
+
+  <div class="col-12 col-md-4 pl-md-4 float-right js-profile-tab-count-container" data-url="/users/appwrite/tab_counts">
+
+
+    
+    <div class="Box mb-3">
+      <div class="Box-body">
+        <h4 class="f4 mb-2 text-normal">Top languages</h4>
+          <a class="no-wrap text-gray d-inline-block muted-link mt-2"
+             href="/appwrite?language=javascript">
+            <span class="ml-0 mr-2">
+  <span class="repo-language-color" style="background-color: #f1e05a"></span>
+  <span itemprop="programmingLanguage">JavaScript</span>
+</span>
+
+          </a>
+          <a class="no-wrap text-gray d-inline-block muted-link mt-2"
+             href="/appwrite?language=php">
+            <span class="ml-0 mr-2">
+  <span class="repo-language-color" style="background-color: #4F5D95"></span>
+  <span itemprop="programmingLanguage">PHP</span>
+</span>
+
+          </a>
+          <a class="no-wrap text-gray d-inline-block muted-link mt-2"
+             href="/appwrite?language=shell">
+            <span class="ml-0 mr-2">
+  <span class="repo-language-color" style="background-color: #89e051"></span>
+  <span itemprop="programmingLanguage">Shell</span>
+</span>
+
+          </a>
+          <a class="no-wrap text-gray d-inline-block muted-link mt-2"
+             href="/appwrite?language=dockerfile">
+            <span class="ml-0 mr-2">
+  <span class="repo-language-color" style="background-color: #384d54"></span>
+  <span itemprop="programmingLanguage">Dockerfile</span>
+</span>
+
+          </a>
+          <a class="no-wrap text-gray d-inline-block muted-link mt-2"
+             href="/appwrite?language=tsql">
+            <span class="ml-0 mr-2">
+  <span class="repo-language-color" style="background-color: #ccc"></span>
+  <span itemprop="programmingLanguage">TSQL</span>
+</span>
+
+          </a>
+      </div>
+    </div>
+
+    <include-fragment src="/orgs/appwrite/topics/most_used" accept="text/html; fragment">
+      <div class="Box mb-3">
+        <div class="Box-body">
+          <h4 class="f4 mb-2 text-normal">Most used topics</h4>
+          <p>Loading…</p>
+        </div>
+      </div>
+</include-fragment>
+      <div class="Box mb-3">
+        <div class="Box-body">
+          <a class="d-block text-gray-dark" href="/orgs/appwrite/people" data-ga-click="Orgs, go to people, location:profile people module; text:People">
+            <span class="float-right f5 text-gray">
+              <span class="js-profile-member-count"></span>
+              <svg class="octicon octicon-chevron-right" viewBox="0 0 8 16" version="1.1" width="8" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/></svg>
+            </span>
+            <h4 class="f4 text-normal mb-3">People</h4>
+          </a>
+          <div class="clearfix d-flex flex-wrap" style="margin: -1px">
+              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/friederbluemle/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/friederbluemle">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/743291?s=96&amp;v=4" width="48" height="48" alt="@friederbluemle" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/eldadfux/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/eldadfux">
+                <img class="avatar" src="https://avatars3.githubusercontent.com/u/1297371?s=96&amp;v=4" width="48" height="48" alt="@eldadfux" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/lex111/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/lex111">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/4408379?s=96&amp;v=4" width="48" height="48" alt="@lex111" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/Taminoful/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/Taminoful">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/7423905?s=96&amp;v=4" width="48" height="48" alt="@Taminoful" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/asperduti/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/asperduti">
+                <img class="avatar" src="https://avatars0.githubusercontent.com/u/8466918?s=96&amp;v=4" width="48" height="48" alt="@asperduti" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/peter279k/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/peter279k">
+                <img class="avatar" src="https://avatars0.githubusercontent.com/u/9021747?s=96&amp;v=4" width="48" height="48" alt="@peter279k" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/christyjacob4/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/christyjacob4">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/20852629?s=96&amp;v=4" width="48" height="48" alt="@christyjacob4" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/BogDAAAMN/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/BogDAAAMN">
+                <img class="avatar" src="https://avatars3.githubusercontent.com/u/22895284?s=96&amp;v=4" width="48" height="48" alt="@BogDAAAMN" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/sm-raiyyan/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/sm-raiyyan">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/25745396?s=96&amp;v=4" width="48" height="48" alt="@sm-raiyyan" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/helios1101/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/helios1101">
+                <img class="avatar" src="https://avatars3.githubusercontent.com/u/26597930?s=96&amp;v=4" width="48" height="48" alt="@helios1101" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/parshnt/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/parshnt">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/29176704?s=96&amp;v=4" width="48" height="48" alt="@parshnt" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/Doges/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/Doges">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/31023616?s=96&amp;v=4" width="48" height="48" alt="@Doges" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/jessescn/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jessescn">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/33502846?s=96&amp;v=4" width="48" height="48" alt="@jessescn" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/Yash-Garg/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/Yash-Garg">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/33605526?s=96&amp;v=4" width="48" height="48" alt="@Yash-Garg" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/PedroCisnerosSantana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/PedroCisnerosSantana">
+                <img class="avatar" src="https://avatars0.githubusercontent.com/u/37348419?s=96&amp;v=4" width="48" height="48" alt="@PedroCisnerosSantana" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/sakshamtaneja21/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/sakshamtaneja21">
+                <img class="avatar" src="https://avatars1.githubusercontent.com/u/43172716?s=96&amp;v=4" width="48" height="48" alt="@sakshamtaneja21" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/sakkshm/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/sakkshm">
+                <img class="avatar" src="https://avatars3.githubusercontent.com/u/43210805?s=96&amp;v=4" width="48" height="48" alt="@sakkshm" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/Priyanka788/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/Priyanka788">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/51821861?s=96&amp;v=4" width="48" height="48" alt="@Priyanka788" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/DekelKan/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/DekelKan">
+                <img class="avatar" src="https://avatars3.githubusercontent.com/u/52621436?s=96&amp;v=4" width="48" height="48" alt="@DekelKan" />
+</a>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+
+
+  </div>
+
+      </div>
+  </div>
+</div>
+
+      </main>
+  </div>
+
+        
+<div class="footer container-lg width-full p-responsive" role="contentinfo">
+  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      <li class="mr-3 mr-lg-0">&copy; 2020 GitHub, Inc.</li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" async="async" integrity="sha512-WcQmT2vhcClFVOaaAJV/M+HqsJ2Gq/myvl6F3gCVBxykazXTs+i5fvxncSXwyG1CSfcrqmLFw/R/bmFYzprX2A==" type="application/javascript" id="js-conditional-compat" data-src="https://github.githubassets.com/assets/compat-bootstrap-59c4264f.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-6XBdUZGib4aqdruJTnLMOLpIh0VJsGlgQ7M3vndWJIH6YQNv+zqpo1TbCDzjHJ+YYEm4xkEinaY0VsemDUfi9A==" type="application/javascript" src="https://github.githubassets.com/assets/environment-bootstrap-e9705d51.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-fNcWYAh2sNNjfGtnzXeDPemQsJYesX60BB9k+YlUmuSw+iX+9bVew+TJOO74e0yqqKS3gU570rxTCs+ZBpJCvg==" type="application/javascript" src="https://github.githubassets.com/assets/vendor-7cd71660.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-CcKFBqQZKOCZU5otP6R8GH2k+iJ3zC9r2z2Iakfs/Bo9/ptHy6JIWQN3FPhVuS3CR+Q/CkEOSfg+WJfoq3YMxQ==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-09c28506.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-YJfUzazDr9cv5vQ3uprerx75rOxBtkO8808pBDxH5ZC51jmraibbSP5xgU4Lkq860/f4tyDJ7vmLPuiKptv/0Q==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-6097d4cd.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  </body>
+</html>

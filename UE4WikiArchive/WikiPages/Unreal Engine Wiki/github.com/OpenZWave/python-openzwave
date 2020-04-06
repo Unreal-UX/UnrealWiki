@@ -1,0 +1,2018 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-FG+rXqMOivrAjdEQE7tO4BwM1poGmg70hJFTlNSxjX87grtrZ6UnPR8NkzwUHlQEGviu9XuRYeO8zH9YwvZhdg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-146fab5ea30e8afac08dd11013bb4ee0.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-iXrV/b4ypc1nr10b3Giikqff+qAx5osQ0yJRxHRDd8mKFefdMtEZ0Sxs1QysJxuJBayOKThjsuMjynwBJQq0aw==" rel="stylesheet" href="https://github.githubassets.com/assets/site-897ad5fdbe32a5cd67af5d1bdc68a292.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-23DJ0jGXuHq4HnEnOv5yjJ3aD9zHvk4UkkK4Vs7e52NlpTBA9/zI9GMjyZ7MrJmYgiHJ0ZHNKVSFxEC3Pud9UA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-db70c9d23197b87ab81e71273afe728c.css" />
+    
+    
+    
+    
+
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>GitHub - OpenZWave/python-openzwave: Python wrapper for openzwave</title>
+    <meta name="description" content="Python wrapper for openzwave. Contribute to OpenZWave/python-openzwave development by creating an account on GitHub.">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://avatars0.githubusercontent.com/u/7971916?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="OpenZWave/python-openzwave" /><meta name="twitter:description" content="Python wrapper for openzwave. Contribute to OpenZWave/python-openzwave development by creating an account on GitHub." />
+    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/7971916?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="OpenZWave/python-openzwave" /><meta property="og:url" content="https://github.com/OpenZWave/python-openzwave" /><meta property="og:description" content="Python wrapper for openzwave. Contribute to OpenZWave/python-openzwave development by creating an account on GitHub." />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  
+  
+
+  <meta name="request-id" content="F17E:48F0:11CF5A:1BD7DD:5E8411FA" data-pjax-transient="true"/><meta name="html-safe-nonce" content="2f5c4d90450f6cdcc6366c926866fc0da907d10e" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHA6Ly9naXRodWIuY29tL2hvbWUtYXNzaXN0YW50IiwicmVxdWVzdF9pZCI6IkYxN0U6NDhGMDoxMUNGNUE6MUJEN0REOjVFODQxMUZBIiwidmlzaXRvcl9pZCI6Ijg0MjgyMDg4ODQyNTAwNDQwNTUiLCJyZWdpb25fZWRnZSI6ImlhZCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="b864634c801d5f2c4f71203e06835e340e983d4c397a403840b4d64657404631" data-pjax-transient="true"/>
+
+
+
+  <meta name="github-keyboard-shortcuts" content="repository" data-pjax-transient="true" />
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+
+<meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+
+
+    <meta name="enabled-features" content="MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,RELATED_ISSUES">
+
+  <meta http-equiv="x-pjax-version" content="8769db88308fb15007b2d764cf15a630">
+  
+
+      <link href="https://github.com/OpenZWave/python-openzwave/commits/master.atom" rel="alternate" title="Recent Commits to python-openzwave:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/OpenZWave/python-openzwave git https://github.com/OpenZWave/python-openzwave.git">
+
+  <meta name="octolytics-dimension-user_id" content="7971916" /><meta name="octolytics-dimension-user_login" content="OpenZWave" /><meta name="octolytics-dimension-repository_id" content="39337963" /><meta name="octolytics-dimension-repository_nwo" content="OpenZWave/python-openzwave" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="39337963" /><meta name="octolytics-dimension-repository_network_root_nwo" content="OpenZWave/python-openzwave" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/OpenZWave/python-openzwave" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production min-width-lg">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+      <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+
+    
+    
+
+
+
+        <header class="Header-old header-logged-out  position-relative f4 py-2" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+        <a class="mr-4" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+          <svg height="32" class="octicon octicon-mark-github text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--logged-out d-flex flex-justify-between flex-items-center flex-auto">
+      <div class="d-none">
+        <button class="btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <svg height="24" class="octicon octicon-x text-gray" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+        </button>
+      </div>
+
+        <nav class="mt-0" aria-label="Global">
+          <ul class="d-flex list-style-none">
+              <li class=" mr-3 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap  d-inline-block">
+                    Why GitHub?
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 mt-0  p-4 left-n4 position-absolute">
+                    <a href="/features" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Features">Features <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+                    <ul class="list-style-none f5 pb-3">
+                      <li class="edge-item-fix"><a href="/features/code-review/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code review">Code review</a></li>
+                      <li class="edge-item-fix"><a href="/features/project-management/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Project management">Project management</a></li>
+                      <li class="edge-item-fix"><a href="/features/integrations" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Integrations">Integrations</a></li>
+                      <li class="edge-item-fix"><a href="/features/actions" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Actions">Actions</a></li>
+                      <li class="edge-item-fix"><a href="/features/packages" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Packages">Packages</a></li>
+                      <li class="edge-item-fix"><a href="/features/security" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Security">Security</a></li>
+                      <li class="edge-item-fix"><a href="/features#team-management" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Team management">Team management</a></li>
+                      <li class="edge-item-fix"><a href="/features#hosting" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code hosting">Hosting</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="/customer-stories" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Customer stories">Customer stories <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="/security" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Security">Security <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+              <li class=" mr-3 mr-lg-3">
+                <a href="/enterprise" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Enterprise">Enterprise</a>
+              </li>
+
+              <li class=" mr-3 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap  d-inline-block">
+                    Explore
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-0 mt-0  p-4 left-n4 position-absolute">
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/explore" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Explore">Explore GitHub <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2  border-top pt-3">Learn &amp; contribute</h4>
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/topics" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Topics">Topics</a></li>
+                        <li class="edge-item-fix"><a href="/collections" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Collections">Collections</a></li>
+                      <li class="edge-item-fix"><a href="/trending" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Trending">Trending</a></li>
+                      <li class="edge-item-fix"><a href="https://lab.github.com/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Learning lab">Learning Lab</a></li>
+                      <li class="edge-item-fix"><a href="https://opensource.guide" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Open source guides">Open source guides</a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2  border-top pt-3">Connect with others</h4>
+                    <ul class="list-style-none mb-0">
+                      <li class="edge-item-fix"><a href="https://github.com/events" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Events">Events</a></li>
+                      <li class="edge-item-fix"><a href="https://github.community" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Community forum">Community forum</a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Education">GitHub Education</a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+
+              <li class=" mr-3 mr-lg-3">
+                <a href="/marketplace" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Marketplace">Marketplace</a>
+              </li>
+
+              <li class=" mr-3 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap  d-inline-block">
+                    Pricing
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-relative">
+                       <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-4 mt-0  p-4 left-n4 position-absolute">
+                    <a href="/pricing" class="pb-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Pricing">Plans <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/pricing#feature-comparison" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Compare plans">Compare plans</a></li>
+                      <li class="edge-item-fix"><a href="https://enterprise.github.com/contact" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Contact Sales">Contact Sales</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0  border-top pt-3">
+                      <li class="edge-item-fix"><a href="/nonprofit" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Nonprofits">Nonprofit <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover"  data-ga-click="(Logged out) Header, go to Education">Education <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex flex-items-center px-0 text-center text-left">
+          <div class="d-lg-flex ">
+            <div class="header-search mr-3 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="39337963" data-scoped-search-url="/OpenZWave/python-openzwave/search" data-unscoped-search-url="/search" action="/OpenZWave/python-openzwave/search" accept-charset="UTF-8" method="get">
+      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search"
+          data-unscoped-placeholder="Search GitHub"
+          data-scoped-placeholder="Search"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations"
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="eBs4BvVBni7pCfP6oNGJ1LTr5OP4T7f3jvwFEk4GK49CPeVIfulZfac+vzmXerWiLpebxK+OPP6elYIVSl8SoA==" />
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+          </div>
+
+        <a href="/login?return_to=%2FOpenZWave%2Fpython-openzwave"
+          class="HeaderMenu-link no-underline mr-3"
+          data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="5a6b14b08915d4ad363e01a33cf6c3b1c8c0cfa24466faf2f133e67a18cdb791"
+          data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">
+          Sign&nbsp;in
+        </a>
+          <a href="/join?source_repo=OpenZWave%2Fpython-openzwave"
+            class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1"
+            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="5a6b14b08915d4ad363e01a33cf6c3b1c8c0cfa24466faf2f133e67a18cdb791"
+            data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">
+            Sign&nbsp;up
+          </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+    <div id="js-flash-container">
+
+
+  <template class="js-flash-template">
+    <div class="flash flash-full  js-flash-template-container">
+  <div class="container-lg px-2" >
+    <button class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    
+      <div class="js-flash-template-message"></div>
+
+  </div>
+</div>
+  </template>
+</div>
+
+
+      
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled>
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main id="js-repo-pjax-container" data-pjax-container >
+      
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <div class="pagehead repohead hx_repohead readability-menu bg-gray-light pb-0 pt-3">
+
+    <div class="d-flex container-lg mb-4 px-3">
+
+      <div class="flex-auto min-width-0 width-fit mr-3">
+        <h1 class="public  d-flex flex-wrap flex-items-center break-word float-none ">
+    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author ml-1 flex-self-stretch" itemprop="author">
+    <a class="url fn" rel="author" data-hovercard-type="organization" data-hovercard-url="/orgs/OpenZWave/hovercard" href="/OpenZWave">OpenZWave</a>
+  </span>
+  <span class="path-divider flex-self-stretch">/</span>
+  <strong itemprop="name" class="mr-2 flex-self-stretch">
+    <a data-pjax="#js-repo-pjax-container" href="/OpenZWave/python-openzwave">python-openzwave</a>
+  </strong>
+  
+</h1>
+
+
+      </div>
+
+      <ul class="pagehead-actions flex-shrink-0 " >
+
+
+
+
+  <li>
+    
+  <a class="tooltipped tooltipped-s btn btn-sm btn-with-count" aria-label="You must be signed in to watch a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="db3cd8450fdec4af4e2c69986eed0b9ba489529dc35627c8ec7941fbc0f58027" href="/login?return_to=%2FOpenZWave%2Fpython-openzwave">
+    <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+</a>    <a class="social-count" href="/OpenZWave/python-openzwave/watchers"
+       aria-label="42 users are watching this repository">
+      42
+    </a>
+
+  </li>
+
+  <li>
+        <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to star a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:39337963,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="eaf77f0c0be03b1e71b1bf22a696b2617cf1704115dc5fb2ac647801e64a6cb1" href="/login?return_to=%2FOpenZWave%2Fpython-openzwave">
+      <svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+      Star
+</a>
+    <a class="social-count js-social-count" href="/OpenZWave/python-openzwave/stargazers"
+      aria-label="184 users starred this repository">
+      184
+    </a>
+
+  </li>
+
+  <li>
+      <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to fork a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:39337963,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f9c1cd34a7cbcfc24deec8d088a89a14b836f3366756f2e29b57030cdfe893c6" href="/login?return_to=%2FOpenZWave%2Fpython-openzwave">
+        <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+</a>
+    <a href="/OpenZWave/python-openzwave/network/members" class="social-count"
+       aria-label="136 users forked this repository">
+      136
+    </a>
+  </li>
+</ul>
+
+    </div>
+      
+<nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax clearfix container-lg px-3"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /OpenZWave/python-openzwave" href="/OpenZWave/python-openzwave">
+      <div class="d-inline"><svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg></div>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /OpenZWave/python-openzwave/issues" href="/OpenZWave/python-openzwave/issues">
+        <div class="d-inline"><svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></div>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">40</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" data-skip-pjax="true" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /OpenZWave/python-openzwave/pulls" href="/OpenZWave/python-openzwave/pulls">
+      <div class="d-inline"><svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg></div>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">2</span>
+      <meta itemprop="position" content="4">
+</a>  </span>
+
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="position-relative float-left">
+      <a data-hotkey="g w" data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="repo_actions /OpenZWave/python-openzwave/actions" href="/OpenZWave/python-openzwave/actions">
+        <div class="d-inline"><svg class="octicon octicon-play" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 8A7 7 0 110 8a7 7 0 0114 0zm-8.223 3.482l4.599-3.066a.5.5 0 000-.832L5.777 4.518A.5.5 0 005 4.934v6.132a.5.5 0 00.777.416z"/></svg></div>
+        Actions
+</a>
+    </span>
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /OpenZWave/python-openzwave/projects" href="/OpenZWave/python-openzwave/projects">
+      <div class="d-inline"><svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg></div>
+      Projects
+      <span class="Counter">0</span>
+</a>
+
+    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy token_scanning code_scanning /OpenZWave/python-openzwave/security/advisories" href="/OpenZWave/python-openzwave/security/advisories">
+      <div class="d-inline"><svg class="octicon octicon-shield" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 2l7-2 7 2v6.02C14 12.69 8.69 16 7 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L7 1l6 1.75v5.268C13 12.104 8.449 15 7 15c-1.449 0-6-2.896-6-6.982V2.75zm1 .75L7 2v12c-1.207 0-5-2.482-5-5.985V3.5z"/></svg></div>
+      Security
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people /OpenZWave/python-openzwave/pulse" href="/OpenZWave/python-openzwave/pulse">
+      <div class="d-inline"><svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg></div>
+      Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+
+<div class="container-lg clearfix new-discussion-timeline  px-3">
+  <div class="repository-content ">
+
+    
+    
+    <div class="signup-prompt-bg rounded-1 js-signup-prompt" data-prompt="signup" hidden>
+    <div class="signup-prompt p-4 text-center mb-4 rounded-1">
+      <div class="position-relative">
+        <button type="button" class="position-absolute top-0 right-0 btn-link link-gray js-signup-prompt-button" data-ga-click="(Logged out) Sign up prompt, clicked Dismiss, text:dismiss">
+          Dismiss
+        </button>
+        <h3 class="pt-2">Join GitHub today</h3>
+        <p class="col-6 mx-auto">GitHub is home to over 40 million developers working together to host and review code, manage projects, and build software together.</p>
+        <a class="btn btn-primary" data-ga-click="(Logged out) Sign up prompt, clicked Sign up, text:sign-up" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;files signup prompt&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="6a70d9f05288928cecdaacd07f608a5a091300f0ed9b00ff58fefb1fab03e5d1" href="/join?source=prompt-code&amp;source_repo=OpenZWave%2Fpython-openzwave">Sign up</a>
+      </div>
+    </div>
+  </div>
+
+
+      <div class="">  <div class="f4">
+        <span class="text-gray-dark mr-2" itemprop="about">
+          Python wrapper for openzwave
+        </span>
+  </div>
+</div>
+
+    <div class="repository-topics-container mt-2 mb-3 js-topics-list-container">  <div class="list-topics-container f6">
+      <a class="topic-tag topic-tag-link " href="/topics/python" title="Topic: python" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:python">
+  python
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/python-3" title="Topic: python-3" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:python-3">
+  python-3
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/python-2" title="Topic: python-2" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:python-2">
+  python-2
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/zwave" title="Topic: zwave" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:zwave">
+  zwave
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/z-wave" title="Topic: z-wave" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:z-wave">
+  z-wave
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/zwave-network" title="Topic: zwave-network" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:zwave-network">
+  zwave-network
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/openzwave" title="Topic: openzwave" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:openzwave">
+  openzwave
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/ozw" title="Topic: ozw" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:ozw">
+  ozw
+</a>
+
+  </div>
+</div>
+
+
+
+      <div class="overall-summary border-bottom-0 mb-0 rounded-bottom-0">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="/OpenZWave/python-openzwave/commits/master">
+            <svg class="octicon octicon-git-commit" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10.86 7c-.45-1.72-2-3-3.86-3-1.86 0-3.41 1.28-3.86 3H0v2h3.14c.45 1.72 2 3 3.86 3 1.86 0 3.41-1.28 3.86-3H14V7h-3.14zM7 10.2c-1.22 0-2.2-.98-2.2-2.2 0-1.22.98-2.2 2.2-2.2 1.22 0 2.2.98 2.2 2.2 0 1.22-.98 2.2-2.2 2.2z"/></svg>
+            <span class="num text-emphasized">
+              1,428
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="/OpenZWave/python-openzwave/branches">
+          <svg class="octicon octicon-git-branch" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 00-1-3.72C.88 1 0 1.89 0 3a2 2 0 001 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          <span class="num text-emphasized">
+            3
+          </span>
+          branches
+        </a>
+      </li>
+
+        <li>
+          <a data-pjax href="/OpenZWave/python-openzwave/packages" data-ga-click="Repository, packages click, location:repo overview">
+            <svg class="octicon octicon-package" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 00-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"/></svg>
+            <span class="num text-emphasized">
+              0
+            </span>
+            packages
+          </a>
+
+        </li>
+
+      <li>
+        <a href="/OpenZWave/python-openzwave/releases">
+          <svg class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 000-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+          <span class="num text-emphasized">
+            55
+          </span>
+          releases
+        </a>
+      </li>
+
+        <li >
+            <a href="/OpenZWave/python-openzwave/graphs/contributors">
+  <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"/></svg>
+    <span class="num text-emphasized">
+      22
+    </span>
+    contributors
+</a>
+        </li>
+
+        <li>
+          <a href="/OpenZWave/python-openzwave/blob/master/LICENSE.txt">
+            <svg class="octicon octicon-law" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+              View license
+          </a>
+        </li>
+    </ul>
+  </div>
+
+    <details class="details-reset">
+      <summary title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
+        <div class="d-flex repository-lang-stats-graph">
+            <span class="language-color" aria-label="Python 51.9%" style="width:51.9%; background-color:#3572A5;" itemprop="keywords">Python</span>
+            <span class="language-color" aria-label="JavaScript 40.3%" style="width:40.3%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span>
+            <span class="language-color" aria-label="Makefile 2.9%" style="width:2.9%; background-color:#427819;" itemprop="keywords">Makefile</span>
+            <span class="language-color" aria-label="HTML 2.8%" style="width:2.8%; background-color:#e34c26;" itemprop="keywords">HTML</span>
+            <span class="language-color" aria-label="CSS 2.1%" style="width:2.1%; background-color:#563d7c;" itemprop="keywords">CSS</span>
+            <span class="language-color" aria-label="C 0.0%" style="width:0.0%; background-color:#555555;" itemprop="keywords">C</span>
+        </div>
+      </summary>
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="/OpenZWave/python-openzwave/search?l=python"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#3572A5;"></span>
+                <span class="lang">Python</span>
+                <span class="percent">51.9%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/OpenZWave/python-openzwave/search?l=javascript"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#f1e05a;"></span>
+                <span class="lang">JavaScript</span>
+                <span class="percent">40.3%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/OpenZWave/python-openzwave/search?l=makefile"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#427819;"></span>
+                <span class="lang">Makefile</span>
+                <span class="percent">2.9%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/OpenZWave/python-openzwave/search?l=html"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#e34c26;"></span>
+                <span class="lang">HTML</span>
+                <span class="percent">2.8%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/OpenZWave/python-openzwave/search?l=css"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#563d7c;"></span>
+                <span class="lang">CSS</span>
+                <span class="percent">2.1%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/OpenZWave/python-openzwave/search?l=c"  data-ga-click="Repository, language stats search click, location:repo overview">
+                <span class="color-block language-color" style="background-color:#555555;"></span>
+                <span class="lang">C</span>
+                <span class="percent">0.0%</span>
+              </a>
+          </li>
+        </ol>
+      </div>
+    </details>
+
+
+
+
+
+
+<div class="file-navigation in-mid-page mb-2 d-flex flex-items-start">
+  
+<details class="details-reset details-overlay branch-select-menu " id="branch-select-menu">
+  <summary class="btn css-truncate btn-sm"
+           data-hotkey="w"
+           title="Switch branches or tags">
+    <i>Branch:</i>
+    <span class="css-truncate-target" data-menu-button>master</span>
+    <span class="dropdown-caret"></span>
+  </summary>
+
+  <details-menu class="SelectMenu SelectMenu--hasFilter" src="/OpenZWave/python-openzwave/refs/master?source_action=disambiguate&amp;source_controller=files" preload>
+    <div class="SelectMenu-modal">
+      <include-fragment class="SelectMenu-loading" aria-label="Menu is loading">
+        <svg class="octicon octicon-octoface anim-pulse" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
+      </include-fragment>
+    </div>
+  </details-menu>
+</details>
+
+
+        <button type="button" class="btn btn-sm disabled tooltipped tooltipped-n new-pull-request-btn ml-2" aria-label="You must be signed in to create a pull request">
+          New pull request
+        </button>
+
+  <div class="breadcrumb flex-auto">
+    
+  </div>
+
+    <div class="BtnGroup ml-2">
+
+      <a class="btn btn-sm empty-icon float-right BtnGroup-item" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:39337963,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7c464d4165638dabbcae0ea1566a21bc14a8de1b316947d6cfbf67a627681634" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/OpenZWave/python-openzwave/find/master">Find file</a>
+    </div>
+
+
+    <span class="d-flex">
+        
+
+        <details class="get-repo-select-menu js-get-repo-select-menu js-anon-get-repo-select-menu position-relative details-overlay details-reset">
+  <summary class="btn btn-sm ml-2 btn-primary" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;repository_id&quot;:39337963,&quot;target&quot;:&quot;CLONE_OR_DOWNLOAD_BUTTON&quot;,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="5fa1d63dbc6b1cc47e76ec0b6da85fc24814a9a5ee38af5c2bd10b3cb944399d">
+      Clone or download
+    <span class="dropdown-caret"></span>
+</summary>  <div class="position-relative">
+    <div class="get-repo-modal dropdown-menu dropdown-menu-sw pb-0 js-toggler-container  js-get-repo-modal">
+
+      <div class="get-repo-modal-options">
+          <div class="clone-options https-clone-options">
+
+            <h4 class="mb-1">
+              Clone with HTTPS
+              <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+                <svg class="octicon octicon-question" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/></svg>
+              </a>
+            </h4>
+            <p class="mb-2 get-repo-decription-text">
+              Use Git or checkout with SVN using the web URL.
+            </p>
+
+            <div class="input-group">
+  <input type="text" class="form-control input-monospace input-sm" data-autoselect value="https://github.com/OpenZWave/python-openzwave.git" aria-label="Clone this repository at https://github.com/OpenZWave/python-openzwave.git" readonly>
+  <div class="input-group-button">
+    <clipboard-copy value="https://github.com/OpenZWave/python-openzwave.git" aria-label="Copy to clipboard" class="btn btn-sm" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;COPY_URL&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:39337963,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="33785f897e6176c038779028eae4da3860f21f81ba8e77a3972c8b216b6ca449"><svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg></clipboard-copy>
+  </div>
+</div>
+
+          </div>
+
+        <div class="mt-2 d-flex">
+          <a class="btn btn-outline get-repo-btn tooltipped tooltipped-s tooltipped-multiline js-remove-unless-platform js-get-repo" aria-label="Clone OpenZWave/python-openzwave to your computer and use it in GitHub Desktop." data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;OPEN_IN_DESKTOP&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:39337963,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c50d020745d0ba5ad9e9c48e8b20c482f1c7579ea2872cd0970a6fb58510653d" data-platforms="windows,mac" href="https://desktop.github.com">Open in Desktop</a>
+
+<a class="flex-1 btn btn-outline get-repo-btn js-anon-download-zip-link" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;DOWNLOAD_ZIP&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:39337963,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="35e55a24aeb03d89256f3edc0540776f3b5386944e500f89435c6a7aa4ebdbfa" data-ga-click="Repository, download zip, location:repo overview" href="/OpenZWave/python-openzwave/archive/master.zip">Download ZIP</a>
+
+        </div>
+      </div>
+
+        <div class="js-modal-downloading" hidden>
+          <div class="py-2 px-3">
+            <h4 class="lh-condensed mb-3">Downloading<span class="AnimatedEllipsis"></span></h4>
+            <p class="text-gray">
+              Want to be notified of new releases in
+              <span class="text-bold">OpenZWave/python-openzwave</span>?
+            </p>
+          </div>
+          <div class="width-full d-flex">
+            <a rel="nofollow" class="get-repo-btn btn btn-outline" style="width: 50%" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;download popover&quot;,&quot;repository_id&quot;:39337963,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f69806bf3323fd3e51d30ab42d2be71d24e038aa49b460ae529a49a92c84ca42" href="/login?return_to=https%3A%2F%2Fgithub.com%2FOpenZWave%2Fpython-openzwave">Sign in</a>
+            <a rel="nofollow" class="get-repo-btn btn btn-primary" style="width: 50%" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;download popover&quot;,&quot;repository_id&quot;:39337963,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/OpenZWave/python-openzwave&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="87ead15b1e7d846a1e080a5374ce9a0a1f02795b2b1eaf6f97a1b67963fc6463" href="/join?branch=master&amp;source=download&amp;source_repo=OpenZWave%2Fpython-openzwave">Sign up</a>
+          </div>
+        </div>
+
+      <div class="js-modal-download-mac py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="AnimatedEllipsis"></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-windows py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="AnimatedEllipsis"></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-xcode py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Xcode<span class="AnimatedEllipsis"></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://developer.apple.com/xcode/">download Xcode</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-visual-studio py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Visual Studio<span class="AnimatedEllipsis"></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://visualstudio.github.com/">download the GitHub extension for Visual Studio</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+    </div>
+  </div>
+</details>
+
+
+    </span>
+
+</div>
+
+
+
+
+<div class="Box mb-3 Box--condensed">
+  <div class="Box-header Box-header--blue position-relative "
+    style="margin-bottom:-1px;">
+    <h2 class="sr-only">Latest commit</h2>
+    <div class="commit-tease js-details-container Details d-flex rounded-top-1 flex-auto" data-issue-and-pr-hovercards-enabled>
+        
+    
+<div class="AvatarStack flex-self-start ">
+  <div class="AvatarStack-body" aria-label="bibi21000">
+        <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/bibi21000/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/bibi21000">
+          <img height="20" width="20" alt="@bibi21000" src="https://avatars1.githubusercontent.com/u/2250871?s=60&amp;u=95a57f4044c28cf505471c9df8838a4a5e481788&amp;v=4" class="" />
+</a>  </div>
+</div>
+
+    <div class="flex-auto f6 mr-3">
+      
+      <a href="/OpenZWave/python-openzwave/commits?author=bibi21000"
+     class="commit-author tooltipped tooltipped-s user-mention"
+     aria-label="View all commits by bibi21000">bibi21000</a>
+
+
+  
+
+
+        <a data-pjax="true" title="Add new embed package" class="message text-inherit" href="/OpenZWave/python-openzwave/commit/8be4c070294348f3fc268bc1d7ad2c535f352f5a">Add new embed package</a>
+
+    </div>
+    <div class="no-wrap d-flex flex-self-start flex-items-baseline">
+        <span class="mr-2 flex-self-center">
+          <include-fragment accept="text/fragment+html" src="/OpenZWave/python-openzwave/commit/8be4c070294348f3fc268bc1d7ad2c535f352f5a/rollup?direction=w" class="d-inline"></include-fragment>
+        </span>
+      <span class="mr-1">Latest commit</span>
+      <a class="commit-tease-sha mr-1" href="/OpenZWave/python-openzwave/commit/8be4c070294348f3fc268bc1d7ad2c535f352f5a" data-pjax>
+        8be4c07
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2019-03-20T10:04:19Z" class="no-wrap">Mar 20, 2019</relative-time></span>
+    </div>
+    </div>
+  </div>
+  <h2 id="files"  class="sr-only">Files</h2>
+  
+
+
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/OpenZWave/python-openzwave/tree/8be4c070294348f3fc268bc1d7ad2c535f352f5a">Permalink</a>
+
+    <table class="files js-navigation-container js-active-navigation-container " data-pjax>
+      <thead>
+        <tr>
+          <th><span class="sr-only">Type</span></th>
+          <th><span class="sr-only">Name</span></th>
+          <th><span class="sr-only">Latest commit message</span></th>
+          <th><span class="sr-only">Commit time</span></th>
+        </tr>
+      </thead>
+
+
+      <tbody>
+        <tr class="warning include-fragment-error">
+          <td class="icon"><svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg></td>
+          <td class="content" colspan="3">Failed to load latest commit information.</td>
+        </tr>
+
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="archives" id="1a557283e5542468721ccbc770c8b13f-6480777389a7593d74d98705451ee27fe7bf0402" href="/OpenZWave/python-openzwave/tree/master/archives">archives</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Add new embed package" class="link-gray" href="/OpenZWave/python-openzwave/commit/8be4c070294348f3fc268bc1d7ad2c535f352f5a">Add new embed package</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-20T10:04:19Z" class="no-wrap">Mar 20, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="debian" id="6e9552c9bd8e61c8f277c21220160234-2a7a9cee31c3ba4f937103f0537e84b61bc35ce8" href="/OpenZWave/python-openzwave/tree/master/debian">debian</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Update debian version to 0.4.19" class="link-gray" href="/OpenZWave/python-openzwave/commit/8c01fbc826c5d28efa0b184cf5e9a11157fa9b5c">Update debian version to 0.4.19</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-20T09:57:45Z" class="no-wrap">Mar 20, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="docs" id="e3e2a9bfd88566b05001b02a3f51d286-9b29f91b554128e5ccbec3a57e17cbcbf3011396" href="/OpenZWave/python-openzwave/tree/master/docs">docs</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Add dependency to pyserial" class="link-gray" href="/OpenZWave/python-openzwave/commit/0288f62d41d81d5b89ed1737f88f5d9171b714a3">Add dependency to pyserial</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-19T20:45:10Z" class="no-wrap">Mar 19, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="examples" id="bfebe34154a0dfd9fc7b447fc9ed74e9-6b931f66ce08f4e65d9b5777bf9a2f19afdab900" href="/OpenZWave/python-openzwave/tree/master/examples">examples</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Remove unused import from network. Fix #110" class="link-gray" href="/OpenZWave/python-openzwave/commit/d48e35c42dd8ca2bdbc911e422adf606ac886bef">Remove unused import from network.</a> <span class="issue-keyword tooltipped tooltipped-se" aria-label="This commit closes issue #110."><a data-pjax="true" title="Remove unused import from network. Fix #110" class="link-gray" href="/OpenZWave/python-openzwave/commit/d48e35c42dd8ca2bdbc911e422adf606ac886bef">Fix</a></span> <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="279881632" data-permission-text="Title is private" data-url="https://github.com/OpenZWave/python-openzwave/issues/110" data-hovercard-type="issue" data-hovercard-url="/OpenZWave/python-openzwave/issues/110/hovercard" href="https://github.com/OpenZWave/python-openzwave/issues/110">#110</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-01-24T22:57:59Z" class="no-wrap">Jan 24, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="This path skips through empty directories" id="fb2a4ecb939cf48c46da47dce1a8f01e-bf9de803a6d8d22fd33d2ae0f325921c8f5326b0" href="/OpenZWave/python-openzwave/tree/master/src-api/openzwave"><span class="text-gray-light">src-api/</span>openzwave</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Merge pull request #161 from kdschlosser/serial_port_auto_detection
+
+Serial port auto detection" class="link-gray" href="/OpenZWave/python-openzwave/commit/0063b43f7c0d31377b75eef5644f7bc58a687a49">Merge pull request</a> <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="416935589" data-permission-text="Title is private" data-url="https://github.com/OpenZWave/python-openzwave/issues/161" data-hovercard-type="pull_request" data-hovercard-url="/OpenZWave/python-openzwave/pull/161/hovercard" href="https://github.com/OpenZWave/python-openzwave/pull/161">#161</a> <a data-pjax="true" title="Merge pull request #161 from kdschlosser/serial_port_auto_detection
+
+Serial port auto detection" class="link-gray" href="/OpenZWave/python-openzwave/commit/0063b43f7c0d31377b75eef5644f7bc58a687a49">from kdschlosser/serial_port_auto_detection</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-18T21:54:34Z" class="no-wrap">Mar 18, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="This path skips through empty directories" id="0a99d890a102684fe651b518520bf299-611053938e304c82a0d7ef5d9ffddf870afad313" href="/OpenZWave/python-openzwave/tree/master/src-lib/libopenzwave"><span class="text-gray-light">src-lib/</span>libopenzwave</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="COMMAND_CLASS_ZWAVE_PLUS_INFO renamed to COMMAND_CLASS_ZWAVEPLUS_INFO" class="link-gray" href="/OpenZWave/python-openzwave/commit/cdae95f601fef9a935903906eb02e1d9e4f702d1">COMMAND_CLASS_ZWAVE_PLUS_INFO renamed to COMMAND_CLASS_ZWAVEPLUS_INFO</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-10-30T23:41:24Z" class="no-wrap">Oct 30, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="This path skips through empty directories" id="278869d2da1f503623c3b724ea57278c-b15a27c75636e1c9a02bec1e39243b5a45d943e2" href="/OpenZWave/python-openzwave/tree/master/src-manager/pyozwman"><span class="text-gray-light">src-manager/</span>pyozwman</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Replaced unsupported long type with int
+
+The &lt;long&gt; type used in the implementation for python2 has been replaced with &lt;int&gt; for compatibility with both versions of python." class="link-gray" href="/OpenZWave/python-openzwave/commit/806fa3b4ba5217695fabf3d65c4b4ed345e3354f">Replaced unsupported long type with int</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-07-31T11:08:23Z" class="no-wrap">Jul 31, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="This path skips through empty directories" id="06cafb103d7f4db86608ef7e41f21140-59b84e8daf80f6930b268f398018244e65ee7d90" href="/OpenZWave/python-openzwave/tree/master/src-python_openzwave/python_openzwave"><span class="text-gray-light">src-python_openzwave/</span>python_openzwave</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Adds automatic detection of the serial port the zstick is connected on.
+
+This currently only works for Silicon Labs/Sigma Designs chipsets
+I do not know the hardware id&#39;s of any other chipset manufacturers.
+
+It uses pyserial to enumerate the available ports on the OS and then
+checks the hardware ID of the port. pyserial is not listed as a
+requirement as it would be an optional install the program tries to
+import pyserial and if it cannot import it then it will continue
+along it&#39;s way.
+
+the auto detection gets activated if there is no supplied `device` to
+ZWaveOption.
+
+Windows like most operating systems do function the same in terms of a
+path to the serial device. on NIX based systems it is a literal file
+path where as in Windows it is a virtual path (namespace object).
+Unless the user is very familiar with th Windows OS they are not going
+to know to prefix the &quot;COM&quot; port with &quot;\\\\.\\&quot;. I added in the
+prefixing of the &quot;COM&quot; port if it has not been done.
+
+These additions will make it easier for the user to get up and running." class="link-gray" href="/OpenZWave/python-openzwave/commit/3e608495781a2185435ea4c26b90bd31ba361476">Adds automatic detection of the serial port the zstick is connected on.</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-04T18:25:13Z" class="no-wrap">Mar 4, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="src-web" id="5e2f6a21c09982329ccf09c85edbf2a4-94174a467edff27452d0af13858859787993d977" href="/OpenZWave/python-openzwave/tree/master/src-web">src-web</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Merge from python3 PRs" class="link-gray" href="/OpenZWave/python-openzwave/commit/9f0fb25bc1758bc9b07a037d127d17f731fccc8f">Merge from python3 PRs</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2016-04-17T23:00:19Z" class="no-wrap">Apr 17, 2016</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="tests" id="b61a6d542f9036550ba9c401c80f00ef-970c0718cb5832e9bdb919b095f92d18771feda8" href="/OpenZWave/python-openzwave/tree/master/tests">tests</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Fix undefined names" class="link-gray" href="/OpenZWave/python-openzwave/commit/2438d1b821e7cde5367723c8a149455401060d32">Fix undefined names</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-12-29T14:51:13Z" class="no-wrap">Dec 29, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title=".gitignore" id="a084b794bc0759e7a6b77810e01874f2-1bfc589dd95cd0c929537af2e20d39f6da9f7ba2" href="/OpenZWave/python-openzwave/blob/master/.gitignore">.gitignore</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Basic idea of building OpenZwave
+
+This is for a basic idea, I have not tested this code as of yet;" class="link-gray" href="/OpenZWave/python-openzwave/commit/0d58df0d04945198eba126264362babd6629dd09">Basic idea of building OpenZwave</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-08-27T21:54:19Z" class="no-wrap">Aug 27, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title=".gitmodules" id="8903239df476d7401cf9e76af0252622-d4add89f4e02ffc467eb00e800b41517de96cf08" href="/OpenZWave/python-openzwave/blob/master/.gitmodules">.gitmodules</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Fix .gitmodules" class="link-gray" href="/OpenZWave/python-openzwave/commit/84c5843dcbf0bc7621f526c134ac69d98f53eeaa">Fix .gitmodules</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2015-03-18T22:39:46Z" class="no-wrap">Mar 18, 2015</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title=".travis.yml" id="354f30a63fb0907d4ad57269548329e3-0b787937e550a957c8bbdbf85fff503d4a0684c2" href="/OpenZWave/python-openzwave/blob/master/.travis.yml">.travis.yml</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Remove ubuntu arm in travis" class="link-gray" href="/OpenZWave/python-openzwave/commit/9063793524922d01959c88065a7f9ada3019a428">Remove ubuntu arm in travis</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-20T07:43:36Z" class="no-wrap">Mar 20, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="CHANGELOG.txt" id="a0493e27f48b50e18312b9f4508fc29d-1b504fd0eceb713ef42e08b463e58388424cec5b" href="/OpenZWave/python-openzwave/blob/master/CHANGELOG.txt">CHANGELOG.txt</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Auto-commit for new-version" class="link-gray" href="/OpenZWave/python-openzwave/commit/fe706b29d814c66a2636da25c7a124b19d627c7a">Auto-commit for new-version</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-20T09:57:43Z" class="no-wrap">Mar 20, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="COPYRIGHT.txt" id="333ea6639142920a50d487bef1bfb724-83ea5ef6dbdc6ab3ce08c4634b345b43aeb24d4d" itemprop="license" href="/OpenZWave/python-openzwave/blob/master/COPYRIGHT.txt">COPYRIGHT.txt</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Auto-commit for docs" class="link-gray" href="/OpenZWave/python-openzwave/commit/a5422694e89254de5b4d1999759433fe65c83314">Auto-commit for docs</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2015-05-12T18:56:55Z" class="no-wrap">May 12, 2015</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="DEVEL.txt" id="cded939b7da956650b44657477ed3be7-f2d8f06be8f18febca81e041d6d3df15b28fdbbd" href="/OpenZWave/python-openzwave/blob/master/DEVEL.txt">DEVEL.txt</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Auto-commit for new-version" class="link-gray" href="/OpenZWave/python-openzwave/commit/6f23b7b087664de2faefc2e5a23cb00b0e9cb8c3">Auto-commit for new-version</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-06-29T22:32:18Z" class="no-wrap">Jun 29, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="Dockerfile" id="3254677a7917c6c01f55212f86c57fbf-0fa0cc473c5c6c1dd8e5c36f6e240732a14cb361" href="/OpenZWave/python-openzwave/blob/master/Dockerfile">Dockerfile</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Update tests" class="link-gray" href="/OpenZWave/python-openzwave/commit/d8292d23f815d2b9680080851cca9a0312df859e">Update tests</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-01T22:59:44Z" class="no-wrap">Feb 1, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="EXAMPLES.txt" id="36f9f943bc5cb1e7c89e88453cff212a-a219c666124aa6e4d2422979960adb6dc0b7feaa" href="/OpenZWave/python-openzwave/blob/master/EXAMPLES.txt">EXAMPLES.txt</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="get rid of readthedocs" class="link-gray" href="/OpenZWave/python-openzwave/commit/be86a34c9299d2513e3d6c1072e641889b40014f">get rid of readthedocs</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2017-06-15T18:58:20Z" class="no-wrap">Jun 15, 2017</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="INSTALL_ARCH.rst" id="3bc99639ff8f4e91a3003612878c82ae-6a5ff8aa49093c21add266bee98f5dc8616a366a" href="/OpenZWave/python-openzwave/blob/master/INSTALL_ARCH.rst">INSTALL_ARCH.rst</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Auto-commit for new-version" class="link-gray" href="/OpenZWave/python-openzwave/commit/e802e26b8907f1d7d443a11ea6b1a670b79c56ea">Auto-commit for new-version</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-13T23:27:56Z" class="no-wrap">Apr 13, 2017</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="INSTALL_MAC.rst" id="c82834708f45b7cb1031f523f8b89e59-6369ee7f393073a637596d4637d6819729e8be09" href="/OpenZWave/python-openzwave/blob/master/INSTALL_MAC.rst">INSTALL_MAC.rst</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Auto-commit for new-version" class="link-gray" href="/OpenZWave/python-openzwave/commit/e802e26b8907f1d7d443a11ea6b1a670b79c56ea">Auto-commit for new-version</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-13T23:27:56Z" class="no-wrap">Apr 13, 2017</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="INSTALL_REPO.rst" id="db2a2488e759db7514495ab8c14fff26-14145af09fbd47c8b986b5502c1078605edebeb0" href="/OpenZWave/python-openzwave/blob/master/INSTALL_REPO.rst">INSTALL_REPO.rst</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Auto-commit for new-version" class="link-gray" href="/OpenZWave/python-openzwave/commit/e802e26b8907f1d7d443a11ea6b1a670b79c56ea">Auto-commit for new-version</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-13T23:27:56Z" class="no-wrap">Apr 13, 2017</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="INSTALL_WIN.rst" id="3dd6a0ccfcbb9327477c7e79d4045a33-6ced83fcffbca93c79ac4e97530038ca1a361e58" href="/OpenZWave/python-openzwave/blob/master/INSTALL_WIN.rst">INSTALL_WIN.rst</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Auto-commit for new-version" class="link-gray" href="/OpenZWave/python-openzwave/commit/08115a329ec80dba44c87145c2397a9dac64bab5">Auto-commit for new-version</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-09-28T18:33:53Z" class="no-wrap">Sep 28, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="LICENSE.txt" id="61e0bdf7e1b43c5c93d9488b22e04170-83ea5ef6dbdc6ab3ce08c4634b345b43aeb24d4d" itemprop="license" href="/OpenZWave/python-openzwave/blob/master/LICENSE.txt">LICENSE.txt</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Add LICENSE" class="link-gray" href="/OpenZWave/python-openzwave/commit/54d0ae3b6bb25ca55ce4d0bdc45a4df490f141ee">Add LICENSE</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-12T00:32:03Z" class="no-wrap">Apr 12, 2017</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="Makefile" id="b67911656ef5d18c4ae36cb6741b7965-9bb1a49b44e0b523464b8ef1b20fa6b6ab06605f" href="/OpenZWave/python-openzwave/blob/master/Makefile">Makefile</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Add dependency to pyserial" class="link-gray" href="/OpenZWave/python-openzwave/commit/0288f62d41d81d5b89ed1737f88f5d9171b714a3">Add dependency to pyserial</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-19T20:45:10Z" class="no-wrap">Mar 19, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="Makefile.archive" id="96f5c1c53f4bb423c4abe60e051b7bb1-59789fa68bc35a0842bc60361aa64dc8e7972745" href="/OpenZWave/python-openzwave/blob/master/Makefile.archive">Makefile.archive</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="rename developper to developer" class="link-gray" href="/OpenZWave/python-openzwave/commit/8b7024381aad9dadae85db8cba776d6494011cba">rename developper to developer</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2017-05-30T16:08:59Z" class="no-wrap">May 30, 2017</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="README.rst" id="88b99bb28683bd5b7e3a204826ead112-c4ae7c4459e26072ecee8b6b974b77c1dddbe136" href="/OpenZWave/python-openzwave/blob/master/README.rst">README.rst</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Auto-commit for new-version" class="link-gray" href="/OpenZWave/python-openzwave/commit/fe706b29d814c66a2636da25c7a124b19d627c7a">Auto-commit for new-version</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-20T09:57:43Z" class="no-wrap">Mar 20, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="appveyor.yml" id="180360612c6b8c4ed830919bbb4dd459-0dfab8906647a86481482494d4b42965fd7b9729" href="/OpenZWave/python-openzwave/blob/master/appveyor.yml">appveyor.yml</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Add dependency to pyserial" class="link-gray" href="/OpenZWave/python-openzwave/commit/70341fc27b10adb840fbf310fb4e981fb8134711">Add dependency to pyserial</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-19T21:00:14Z" class="no-wrap">Mar 19, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="circle.yml" id="29944324a3cbf9f4bd0162dfe3975d88-a375e57582219468cdd3d1443ac8c358e9fd02a5" href="/OpenZWave/python-openzwave/blob/master/circle.yml">circle.yml</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Updates ci" class="link-gray" href="/OpenZWave/python-openzwave/commit/c601131eda472882ce60816d303a538d305adb2d">Updates ci</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-13T13:29:21Z" class="no-wrap">Apr 13, 2017</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="github_deploy_key.enc" id="b46eff144cab35c454e0abbec738ed22-f3dad52fb30cafdf106c3481b2883714dbce6b33" href="/OpenZWave/python-openzwave/blob/master/github_deploy_key.enc">github_deploy_key.enc</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="add doctor keys" class="link-gray" href="/OpenZWave/python-openzwave/commit/75f096ebfc2f8ec837549dd28faef0ceb2f0e76b">add doctor keys</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2017-06-15T18:34:50Z" class="no-wrap">Jun 15, 2017</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="github_deploy_key_openzwave_python_openzwave.enc" id="8debc2ae63cce041f2a4af9984fe5590-7084b6cbb58ea2305c8dcfba82692ab7857ba4c7" href="/OpenZWave/python-openzwave/blob/master/github_deploy_key_openzwave_python_openzwave.enc">github_deploy_key_openzwave_python_openzwave.enc</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Update travis for docs" class="link-gray" href="/OpenZWave/python-openzwave/commit/745944f5328611618f2b9bbe6b4f2b074d510d5f">Update travis for docs</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-01-24T21:49:25Z" class="no-wrap">Jan 24, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="pyozw_pkgconfig.py" id="d38381b28024d4ce6dc2ca410ad7fff1-6a9f0c861a0e5e494532a5ea432dde8dd47ed3aa" href="/OpenZWave/python-openzwave/blob/master/pyozw_pkgconfig.py">pyozw_pkgconfig.py</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Update git_shared template" class="link-gray" href="/OpenZWave/python-openzwave/commit/9c230c1dccabb1664ef00912847672ddf0af3cd3">Update git_shared template</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-16T18:55:01Z" class="no-wrap">Apr 16, 2017</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="pyozw_progressbar.py" id="a848459fc842e92c18b74e2e9ca098b5-7ea4d0ce405f153926876a7e73683975b39b0fdf" href="/OpenZWave/python-openzwave/blob/master/pyozw_progressbar.py">pyozw_progressbar.py</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Building with VS 2017 only.
+
+This is simply a test to see if it will build properly for all python versions" class="link-gray" href="/OpenZWave/python-openzwave/commit/cc1bd900bd527d80ac65a5940ea02f7a28e5aa54">Building with VS 2017 only.</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-08-29T06:46:46Z" class="no-wrap">Aug 29, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="pyozw_setup.py" id="f0852d8e4108c45207d4a7db83e066a1-b201840f87104f22aa0c5cbf8be026544210f74e" href="/OpenZWave/python-openzwave/blob/master/pyozw_setup.py">pyozw_setup.py</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Add dependency to pyserial" class="link-gray" href="/OpenZWave/python-openzwave/commit/0288f62d41d81d5b89ed1737f88f5d9171b714a3">Add dependency to pyserial</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-19T20:45:10Z" class="no-wrap">Mar 19, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="pyozw_version.py" id="541e947d51da7af6e7e95fe6d3fa96ba-4b4d3e8be7cdde9dc13dc7ebec514a1928f7b7ae" href="/OpenZWave/python-openzwave/blob/master/pyozw_version.py">pyozw_version.py</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Update pyozw_version to 0.4.19" class="link-gray" href="/OpenZWave/python-openzwave/commit/3a2ca5ce6bc67b6fb953f2c4ce9fe7d85c38c99a">Update pyozw_version to 0.4.19</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-20T09:57:43Z" class="no-wrap">Mar 20, 2019</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="pyozw_win.py" id="f5d9aa624e743eaea443bfef4709fbaa-3f052ace6aac7b5d6eb519f46dda77b1d912e30f" href="/OpenZWave/python-openzwave/blob/master/pyozw_win.py">pyozw_win.py</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Merge branch &#39;master&#39; into just_vs2017" class="link-gray" href="/OpenZWave/python-openzwave/commit/da0b1eea5706e5e8d425201bf215b02f31601cfb">Merge branch 'master' into just_vs2017</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-08-29T07:00:18Z" class="no-wrap">Aug 29, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="setup-api.py" id="737e83c02ee1cb4ad21dd9c8c7540f91-040db0419dbda05c1612c51224966dc6e254ef85" href="/OpenZWave/python-openzwave/blob/master/setup-api.py">setup-api.py</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Updates for bdist_wheel" class="link-gray" href="/OpenZWave/python-openzwave/commit/4fc802b7a77fa88dd519d5133a48e8200434dd3a">Updates for bdist_wheel</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-09T23:04:36Z" class="no-wrap">Apr 9, 2017</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="setup-lib.py" id="952b4dd097445d1a98b1b30a859e8c5a-ab9f22a587f20b971986f084fadccf74d3c3e73a" href="/OpenZWave/python-openzwave/blob/master/setup-lib.py">setup-lib.py</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Update setup replace scripts with entry-points" class="link-gray" href="/OpenZWave/python-openzwave/commit/4229ca267d9034487cd7bebc9a4f2588709001cf">Update setup replace scripts with entry-points</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-15T18:05:32Z" class="no-wrap">Feb 15, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="setup-manager.py" id="bbc56c727ea84c87faf28c2f702be24d-5e3403d58fdb2711f2e76cef7d84e814f05f090e" href="/OpenZWave/python-openzwave/blob/master/setup-manager.py">setup-manager.py</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Update setup replace scripts with entry-points" class="link-gray" href="/OpenZWave/python-openzwave/commit/4229ca267d9034487cd7bebc9a4f2588709001cf">Update setup replace scripts with entry-points</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-15T18:05:32Z" class="no-wrap">Feb 15, 2018</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="setup-web.py" id="352f4058ba6de4d6baba6f4fa0ac7485-12d8f86020d8426e17d96080c8a3eab6fa88a872" href="/OpenZWave/python-openzwave/blob/master/setup-web.py">setup-web.py</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Add pyozw_shell and pyozw_check" class="link-gray" href="/OpenZWave/python-openzwave/commit/6e2020bec88c3b33dbf81e6b1e00548cff665a77">Add pyozw_shell and pyozw_check</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-12T21:20:47Z" class="no-wrap">Apr 12, 2017</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="setup.cfg" id="380c6a8ebbbce17d55d50ef17d3cf906-1aebe8ffefd2894a6054d50bdd31fafa5eabc93b" href="/OpenZWave/python-openzwave/blob/master/setup.cfg">setup.cfg</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Last updates before merge" class="link-gray" href="/OpenZWave/python-openzwave/commit/092b10fe18439f7d7bfb0d17a926a9f60b3a195c">Last updates before merge</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2017-04-11T19:26:39Z" class="no-wrap">Apr 11, 2017</time-ago></span>
+            </td>
+          </tr>
+          <tr class="js-navigation-item">
+            <td class="icon">
+              <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+              <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+            </td>
+            <td class="content">
+              <span class="css-truncate css-truncate-target"><a class="js-navigation-open " title="setup.py" id="2eeaed663bd0d25b7e608891384b7298-7d17e584a60b4404d8b11c73768f78dd12aad0de" href="/OpenZWave/python-openzwave/blob/master/setup.py">setup.py</a></span>
+            </td>
+            <td class="message">
+              <span class="css-truncate css-truncate-target">
+                    <a data-pjax="true" title="Update setup replace scripts with entry-points" class="link-gray" href="/OpenZWave/python-openzwave/commit/4229ca267d9034487cd7bebc9a4f2588709001cf">Update setup replace scripts with entry-points</a>
+              </span>
+            </td>
+            <td class="age">
+              <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-15T18:05:32Z" class="no-wrap">Feb 15, 2018</time-ago></span>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+</div>
+
+  <div id="readme" class="Box rst js-code-block-container Box--condensed">
+    <div class="Box-header d-flex flex-items-center flex-justify-between ">
+      <h2 class="Box-title pr-3">
+        <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+        README.rst
+      </h2>
+    </div>
+      <div class="Box-body p-5">
+        <article class="markdown-body entry-content" itemprop="text"><a href="https://travis-ci.org/OpenZWave/python-openzwave" rel="nofollow"><img alt="Travis status" src="https://camo.githubusercontent.com/74f594d4153dddef673e3e5668e2781c84d2559f/68747470733a2f2f7472617669732d63692e6f72672f4f70656e5a576176652f707974686f6e2d6f70656e7a776176652e7376673f6272616e63683d6d6173746572" data-canonical-src="https://travis-ci.org/OpenZWave/python-openzwave.svg?branch=master" style="max-width:100%;"></a>
+<a href="https://circleci.com/gh/OpenZWave/python-openzwave" rel="nofollow"><img alt="Circle status" src="https://camo.githubusercontent.com/ebe3fd1a51596e429041c68b8691193d49021ab1/68747470733a2f2f636972636c6563692e636f6d2f67682f4f70656e5a576176652f707974686f6e2d6f70656e7a776176652e706e673f7374796c653d736869656c64" data-canonical-src="https://circleci.com/gh/OpenZWave/python-openzwave.png?style=shield" style="max-width:100%;"></a>
+<a href="https://ci.appveyor.com/project/bibi21000/python-openzwave" rel="nofollow"><img alt="Appveyor status" src="https://camo.githubusercontent.com/b6aba89aed8d9d560de3f889ed480df429aaffab/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f326f676c387478376f337071706863393f7376673d74727565" data-canonical-src="https://ci.appveyor.com/api/projects/status/2ogl8tx7o3pqphc9?svg=true" style="max-width:100%;"></a>
+<a href="https://pypi.python.org/pypi/python_openzwave" rel="nofollow"><img alt="Pypi format" src="https://camo.githubusercontent.com/c9561202b89a4e67709a31ecafea0749e064fda3/68747470733a2f2f696d672e736869656c64732e696f2f707970692f666f726d61742f707974686f6e5f6f70656e7a776176652e737667" data-canonical-src="https://img.shields.io/pypi/format/python_openzwave.svg" style="max-width:100%;">
+</a>
+<a href="http://openzwave.github.io/python-openzwave/index.html" rel="nofollow"><img alt="Documentation" src="https://camo.githubusercontent.com/4bccf21b2c4f212bb76af66f6f72129e5bdde071/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f63756d656e746174696f6e2d6f6b2d627269676874677265656e2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/Documentation-ok-brightgreen.svg?style=flat" style="max-width:100%;"></a>
+<a name="user-content-python-openzwave"></a>
+<h2><a id="user-content-python-openzwave" class="anchor" aria-hidden="true" href="#python-openzwave"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>python-openzwave</h2>
+<p>python-openzwave is a python wrapper for the openzwave c++ library : <a href="https://github.com/OpenZWave/open-zwave">https://github.com/OpenZWave/open-zwave</a></p>
+<blockquote>
+<ul>
+<li>full manager implementation with options</li>
+<li>an API to map the ZWave network in Python objects</li>
+<li>a command line manager to manage / debug your ZWave network</li>
+<li>a full-event webapp example : flask + socket.io + jquery</li>
+<li>a suite of tests</li>
+<li>many examples</li>
+<li><a href="http://openzwave.github.io/python-openzwave/index.html" rel="nofollow">Full documentation</a></li>
+</ul>
+</blockquote>
+<a name="user-content-python-openzwave-0-4-x-is-here"></a>
+<h3><a id="user-content-python-openzwave-04x-is-here-" class="anchor" aria-hidden="true" href="#python-openzwave-04x-is-here-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>python-openzwave 0.4.x is here !!!</h3>
+<ul>
+<li><p>New installation process via pip</p>
+</li>
+<li><p>First, you need some build tools and libs. On ubuntu, you should use :</p>
+<blockquote>
+<div class="highlight highlight-source-shell"><pre>sudo apt-get install --force-yes -y make libudev-dev g++ libyaml-dev</pre></div>
+</blockquote>
+</li>
+<li><p>Make your virtualenv and activate it :</p>
+<blockquote>
+<div class="highlight highlight-source-shell"><pre>virtualenv --python=python3 venv3
+<span class="pl-c1">source</span> venv3/bin/activate</pre></div>
+</blockquote>
+</li>
+<li><p>Install the default flavor  :</p>
+<blockquote>
+<div class="highlight highlight-source-shell"><pre>(venvX) pip install python_openzwave</pre></div>
+</blockquote>
+</li>
+<li><p>The previous command try to install python_openzwave with the flavor 'shared'.
+If it can't find a precompiled library of openzwave, it will use the flavor 'embed' with sources downloaded from <a href="https://github.com/OpenZWave/python-openzwave/tree/master/archives">https://github.com/OpenZWave/python-openzwave/tree/master/archives</a>.
+You can change this using flavor option.
+There is a bug in the package dependencies and flavors on some systems. You may need to install dependencies manualy :</p>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li><p>on python 2.7 :</p>
+<blockquote>
+<div class="highlight highlight-source-shell"><pre>(venvX) pip install cython wheel six pyserial
+(venvX) pip install <span class="pl-s"><span class="pl-pds">'</span>Louie&gt;=1.1<span class="pl-pds">'</span></span></pre></div>
+</blockquote>
+</li>
+<li><p>on python 3 :</p>
+<blockquote>
+<div class="highlight highlight-source-shell"><pre>(venvX) pip install cython wheel six pyserial
+(venvX) pip install <span class="pl-s"><span class="pl-pds">'</span>PyDispatcher&gt;=2.0.5<span class="pl-pds">'</span></span></pre></div>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>Choose your flavor :</p>
+<blockquote>
+<ul>
+<li>embed : the default one. Download sources from <a href="https://github.com/OpenZWave/python-openzwave/tree/master/archives">https://github.com/OpenZWave/python-openzwave/tree/master/archives</a> and
+build them. Python_openzwave is statically build using a cythonized version of libopenzwave. No need to install cython.</li>
+<li>shared : if you have install openzwave as module manually, you can link python_openzwave to it.</li>
+<li>git : download sources from openzwave github and link statically to it.</li>
+<li>embed_shared : download sources from <a href="https://github.com/OpenZWave/python-openzwave/tree/master/archives">https://github.com/OpenZWave/python-openzwave/tree/master/archives</a>, build and install as module on the system.
+Python_openzwave use it. Need root access to install openzwave libs.</li>
+<li>git_shared : download sources from openzwave github, build and install them as module on the system.
+Python_openzwave use it. Need root access to install openzwave libs.</li>
+<li>ozwdev and ozwdev_shared : use the dev branch of openzwave on github.</li>
+<li>dev : for python_openzwave developers. Look for openzwave sources in a local folder specified by the LOCAL_OPENZWAVE environment variable (defaults to 'openzwave').</li>
+</ul>
+</blockquote>
+</li>
+<li><p>Install it :</p>
+<blockquote>
+<div class="highlight highlight-source-shell"><pre>(venvX) pip install python_openzwave  --no-deps --install-option=<span class="pl-s"><span class="pl-pds">"</span>--flavor=git<span class="pl-pds">"</span></span></pre></div>
+</blockquote>
+</li>
+<li><p>You can update to the last version of openzwave using the git flavor :</p>
+<blockquote>
+<div class="highlight highlight-source-shell"><pre>(venvX) pip uninstall -y python_openzwave
+(venvX) pip install python_openzwave --no-cache-dir --no-deps --install-option=<span class="pl-s"><span class="pl-pds">"</span>--flavor=git<span class="pl-pds">"</span></span></pre></div>
+</blockquote>
+</li>
+<li><p>At last, you can launch pyozw_check to test your installation :</p>
+<blockquote>
+<p>If no usb stick is connected to the machine, launch :</p>
+<blockquote>
+<div class="highlight highlight-source-shell"><pre>(venvX) pyozw_check</pre></div>
+</blockquote>
+<p>If you've one, use it for advanced checks :</p>
+<blockquote>
+<div class="highlight highlight-source-shell"><pre>(venvX) pyozw_check -i -d /dev/ttyUSB0</pre></div>
+<div class="highlight highlight-source-shell"><pre>-------------------------------------------------------------------------------
+Import libs
+Try to import libopenzwave
+Try to import libopenzwave.PyLogLevels
+Try to get options
+Try to get manager
+Try to get python_openzwave version
+0.4.0.27
+Try to get python_openzwave full version
+python-openzwave version 0.4.0.27 (dev / Apr 18 2017 - 23:22:26)
+Try to get openzwave version
+1.4.2501
+Try to get default config path
+/etc/openzwave/
+Try to import openzwave (API)
+-------------------------------------------------------------------------------
+Intialize device /dev/ttyUSB0
+Try to get options
+Try to get manager
+2017-04-12 16:41:29.329 Always, OpenZwave Version 1.4.2497 Starting Up
+Try to add watcher
+...
+2017-04-12 16:44:05.880 Always, <span class="pl-k">***************************************************************************</span>
+2017-04-12 16:44:05.880 Always, <span class="pl-k">*********************</span>  Cumulative Network Statistics  <span class="pl-k">*********************</span>
+2017-04-12 16:44:05.880 Always, <span class="pl-k">***</span> General
+2017-04-12 16:44:05.880 Always, Driver run time: <span class="pl-c1">.</span> <span class="pl-c1">.</span>  <span class="pl-c1">.</span> 0 days, 0 hours, 1 minutes
+2017-04-12 16:44:05.880 Always, Frames processed: <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> 27
+2017-04-12 16:44:05.880 Always, Total messages successfully received: <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> 27
+2017-04-12 16:44:05.880 Always, Total Messages successfully sent: <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> 19
+2017-04-12 16:44:05.880 Always, ACKs received from controller:  <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> 19
+2017-04-12 16:44:05.880 Always, <span class="pl-k">***</span> Errors
+2017-04-12 16:44:05.880 Always, Unsolicited messages received <span class="pl-k">while</span> waiting <span class="pl-k">for</span> ACK:  <span class="pl-c1">.</span> <span class="pl-c1">.</span> 0
+2017-04-12 16:44:05.880 Always, Reads aborted due to timeouts:  <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> 0
+2017-04-12 16:44:05.880 Always, Bad checksum errors:  <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> 0
+2017-04-12 16:44:05.880 Always, CANs received from controller:  <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> 0
+2017-04-12 16:44:05.880 Always, NAKs received from controller:  <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> 0
+2017-04-12 16:44:05.880 Always, Out of frame data flow errors:  <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> 0
+2017-04-12 16:44:05.880 Always, Messages retransmitted: <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> 0
+2017-04-12 16:44:05.880 Always, Messages dropped and not delivered: <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> <span class="pl-c1">.</span> 0
+2017-04-12 16:44:05.880 Always, <span class="pl-k">***************************************************************************</span>
+2017-04-12 16:44:07.887 Info, mgr,     Driver <span class="pl-k">for</span> controller /dev/ttyUSB0 removed
+Try to remove watcher
+Try to destroy manager
+Try to destroy options</pre></div>
+</blockquote>
+<p>You can list the nodes on your network using :</p>
+<blockquote>
+<div class="highlight highlight-source-shell"><pre>(venvX) pyozw_check -l -d /dev/ttyUSB0 -t 60</pre></div>
+<div class="highlight highlight-source-shell"><pre>-------------------------------------------------------------------------------
+Define options <span class="pl-k">for</span> device /dev/ttyUSB0
+Start network
+Wait <span class="pl-k">for</span> network (30s)
+Network is ready
+-------------------------------------------------------------------------------
+Controller capabilities <span class="pl-c1">:</span> {<span class="pl-s"><span class="pl-pds">'</span>primaryController<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>staticUpdateController<span class="pl-pds">'</span></span>}
+Controller node capabilities <span class="pl-c1">:</span> {<span class="pl-s"><span class="pl-pds">'</span>listening<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>primaryController<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>staticUpdateController<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>beaming<span class="pl-pds">'</span></span>}
+Nodes <span class="pl-k">in</span> network <span class="pl-c1">:</span> 4
+Driver statistics <span class="pl-c1">:</span> {<span class="pl-s"><span class="pl-pds">'</span>noack<span class="pl-pds">'</span></span>: 6, <span class="pl-s"><span class="pl-pds">'</span>routedbusy<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>readCnt<span class="pl-pds">'</span></span>: 115, <span class="pl-s"><span class="pl-pds">'</span>ACKWaiting<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>badChecksum<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>broadcastReadCnt<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>NAKCnt<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>broadcastWriteCnt<span class="pl-pds">'</span></span>: 9, <span class="pl-s"><span class="pl-pds">'</span>dropped<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>CANCnt<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>callbacks<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>OOFCnt<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>readAborts<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>badroutes<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>SOFCnt<span class="pl-pds">'</span></span>: 115, <span class="pl-s"><span class="pl-pds">'</span>netbusy<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>writeCnt<span class="pl-pds">'</span></span>: 49, <span class="pl-s"><span class="pl-pds">'</span>nondelivery<span class="pl-pds">'</span></span>: 0, <span class="pl-s"><span class="pl-pds">'</span>ACKCnt<span class="pl-pds">'</span></span>: 49, <span class="pl-s"><span class="pl-pds">'</span>retries<span class="pl-pds">'</span></span>: 0}
+------------------------------------------------------------
+1 - Name <span class="pl-c1">:</span>  ( Location <span class="pl-c1">:</span>  )
+ 1 - Ready <span class="pl-c1">:</span> True / Awake <span class="pl-c1">:</span> True / Failed <span class="pl-c1">:</span> False
+ 1 - Manufacturer <span class="pl-c1">:</span> Aeotec  ( id <span class="pl-c1">:</span> 0x0086 )
+ 1 - Product <span class="pl-c1">:</span> DSA02203 Z-Stick S2 ( id  <span class="pl-c1">:</span> 0x0001 / <span class="pl-c1">type</span> <span class="pl-c1">:</span> 0x0002 )
+ 1 - Version <span class="pl-c1">:</span> 3 / Secured <span class="pl-c1">:</span> False / Zwave+ <span class="pl-c1">:</span> False
+ 1 - Command classes <span class="pl-c1">:</span> {<span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_NO_OPERATION<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_BASIC<span class="pl-pds">'</span></span>}
+ 1 - Capabilities <span class="pl-c1">:</span> {<span class="pl-s"><span class="pl-pds">'</span>staticUpdateController<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>listening<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>primaryController<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>beaming<span class="pl-pds">'</span></span>}
+ 1 - Neigbors <span class="pl-c1">:</span> {4} / Power level <span class="pl-c1">:</span> None
+ 1 - Is sleeping <span class="pl-c1">:</span> False / Can wake-up <span class="pl-c1">:</span> False / Battery level <span class="pl-c1">:</span> None
+
+...
+
+------------------------------------------------------------
+4 - Name <span class="pl-c1">:</span>  ( Location <span class="pl-c1">:</span>  )
+ 4 - Ready <span class="pl-c1">:</span> True / Awake <span class="pl-c1">:</span> True / Failed <span class="pl-c1">:</span> False
+ 4 - Manufacturer <span class="pl-c1">:</span> GreenWave  ( id <span class="pl-c1">:</span> 0x0099 )
+ 4 - Product <span class="pl-c1">:</span> PowerNode 6 port ( id  <span class="pl-c1">:</span> 0x0004 / <span class="pl-c1">type</span> <span class="pl-c1">:</span> 0x0003 )
+ 4 - Version <span class="pl-c1">:</span> 4 / Secured <span class="pl-c1">:</span> False / Zwave+ <span class="pl-c1">:</span> False
+ 4 - Command classes <span class="pl-c1">:</span> {<span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_BASIC<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_CONFIGURATION<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_SWITCH_BINARY<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_VERSION<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_CRC_16_ENCAP<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_MANUFACTURER_SPECIFIC<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_ASSOCIATION<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_MULTI_INSTANCE/CHANNEL<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_METER<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_PROTECTION<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_NO_OPERATION<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>COMMAND_CLASS_SWITCH_ALL<span class="pl-pds">'</span></span>}
+ 4 - Capabilities <span class="pl-c1">:</span> {<span class="pl-s"><span class="pl-pds">'</span>listening<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>routing<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>beaming<span class="pl-pds">'</span></span>}
+ 4 - Neigbors <span class="pl-c1">:</span> {1} / Power level <span class="pl-c1">:</span> None
+ 4 - Is sleeping <span class="pl-c1">:</span> False / Can wake-up <span class="pl-c1">:</span> False / Battery level <span class="pl-c1">:</span> None
+
+ ...</pre></div>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li><p>The old manager is now available via the pyozw_shell command. You need to install module "urwid&gt;=1.1.1" with pip before using it.</p>
+</li>
+<li><p>libopenzwave and openzwave python modules are packaged in the python_openzwave.
+So developers needs to update their install_requires (it works fine with pyozw_manager).
+They can use the following code to update softly :</p>
+<blockquote>
+<div class="highlight highlight-source-python"><pre>pyozw_version<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>0.4.1<span class="pl-pds">'</span></span>
+
+<span class="pl-k">def</span> <span class="pl-en">install_requires</span>():
+    <span class="pl-k">try</span>:
+        <span class="pl-k">import</span> python_openzwave
+        <span class="pl-k">return</span> [<span class="pl-s"><span class="pl-pds">'</span>python_openzwave==<span class="pl-c1">%s</span><span class="pl-pds">'</span></span> <span class="pl-k">%</span> pyozw_version]
+    <span class="pl-k">except</span> <span class="pl-c1">ImportError</span>:
+        <span class="pl-k">pass</span>
+    <span class="pl-k">try</span>:
+        <span class="pl-k">import</span> libopenzwave
+        <span class="pl-k">return</span> [<span class="pl-s"><span class="pl-pds">'</span>openzwave==<span class="pl-c1">%s</span><span class="pl-pds">'</span></span> <span class="pl-k">%</span> pyozw_version]
+    <span class="pl-k">except</span> <span class="pl-c1">ImportError</span>:
+        <span class="pl-k">pass</span>
+    <span class="pl-k">return</span> [<span class="pl-s"><span class="pl-pds">'</span>python_openzwave == <span class="pl-c1">%s</span><span class="pl-pds">'</span></span> <span class="pl-k">%</span> pyozw_version]</pre></div>
+</blockquote>
+</li>
+<li><p>If you already have an 0.3.x version installed, you should update your installation as usual. Don't install it with pip as it can break your installation (maybe not if you don't remove old modules)</p>
+</li>
+<li><p>Support for windows, macosx, ... is not tested. Feel free to report bug and patches. We can try to support these plateforms. Don't have Windows at home so I can't help. Same for mac.</p>
+</li>
+<li><p>Old installation process is deprecated and reserved for python-openzwave-developers and alternatives machines.</p>
+</li>
+<li><p>Please report your successful installations here : <a href="https://github.com/OpenZWave/python-openzwave/issues/73">https://github.com/OpenZWave/python-openzwave/issues/73</a></p>
+</li>
+</ul>
+</blockquote>
+<a name="user-content-support"></a>
+<h3><a id="user-content-support" class="anchor" aria-hidden="true" href="#support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Support</h3>
+<p>You can ask for support on the google group : <a href="http://groups.google.com/d/forum/python-openzwave-discuss" rel="nofollow">http://groups.google.com/d/forum/python-openzwave-discuss</a>.</p>
+<p>Please don't ask for support in github issues or by email.</p>
+<a name="user-content-pull-requests"></a>
+<h3><a id="user-content-pull-requests" class="anchor" aria-hidden="true" href="#pull-requests"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pull requests</h3>
+<p>Please read DEVEL documentation before submitting pull request.
+A lot of project tasks are done automatically or with makefile, so they must be done in a certain place or in a special order.</p>
+
+</article>
+      </div>
+  </div>
+
+
+
+
+  </div>
+</div>
+
+    </main>
+  </div>
+  
+
+  </div>
+
+        
+<div class="footer container-lg width-full px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2020 GitHub, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" async="async" integrity="sha512-WcQmT2vhcClFVOaaAJV/M+HqsJ2Gq/myvl6F3gCVBxykazXTs+i5fvxncSXwyG1CSfcrqmLFw/R/bmFYzprX2A==" type="application/javascript" id="js-conditional-compat" data-src="https://github.githubassets.com/assets/compat-bootstrap-59c4264f.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-6XBdUZGib4aqdruJTnLMOLpIh0VJsGlgQ7M3vndWJIH6YQNv+zqpo1TbCDzjHJ+YYEm4xkEinaY0VsemDUfi9A==" type="application/javascript" src="https://github.githubassets.com/assets/environment-bootstrap-e9705d51.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-fNcWYAh2sNNjfGtnzXeDPemQsJYesX60BB9k+YlUmuSw+iX+9bVew+TJOO74e0yqqKS3gU570rxTCs+ZBpJCvg==" type="application/javascript" src="https://github.githubassets.com/assets/vendor-7cd71660.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-CcKFBqQZKOCZU5otP6R8GH2k+iJ3zC9r2z2Iakfs/Bo9/ptHy6JIWQN3FPhVuS3CR+Q/CkEOSfg+WJfoq3YMxQ==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-09c28506.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-YJfUzazDr9cv5vQ3uprerx75rOxBtkO8808pBDxH5ZC51jmraibbSP5xgU4Lkq860/f4tyDJ7vmLPuiKptv/0Q==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-6097d4cd.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  </body>
+</html>
+

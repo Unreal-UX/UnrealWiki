@@ -1,0 +1,34 @@
+
+  <div class="border-bottom border-gray-light py-3">
+    <div class="topics-row-container col-9 d-inline-flex flex-wrap flex-items-center f6 my-1">
+      <span class="d-inline-block f5 text-bold no-wrap mr-3">Explore topics</span>
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/gesis" title="Topic: gesis" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:gesis">
+  gesis
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/pangeo" title="Topic: pangeo" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:pangeo">
+  pangeo
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/stencila" title="Topic: stencila" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:stencila">
+  stencila
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/jupyter" title="Topic: jupyter" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:jupyter">
+  jupyter
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/repo2docker" title="Topic: repo2docker" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:repo2docker">
+  repo2docker
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/python" title="Topic: python" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:python">
+  python
+</a>
+
+        <a class="topic-tag topic-tag-link f6 my-1" href="/topics/kernel" title="Topic: kernel" data-ga-click="Topic, search results related topics" data-octo-click="topic_click" data-octo-dimensions="topic:kernel">
+  kernel
+</a>
+
+    </div>
+  </div>

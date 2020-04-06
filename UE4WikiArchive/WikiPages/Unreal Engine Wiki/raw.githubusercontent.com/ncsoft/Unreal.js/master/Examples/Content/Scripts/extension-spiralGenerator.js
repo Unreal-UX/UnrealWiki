@@ -569,8 +569,8 @@ module.exports = function () {
     let style = JavascriptUMGLibrary.CreateSlateStyle(StyleSetName)
     style.SetContentRoot( Context.GetDir('EngineContent') + "Editor/Slate" );
 	style.SetCoreContentRoot( Context.GetDir('EngineContent') + "Slate" );    
-    style.AddImageBrush("SpiralGenerator.Purge", style.RootToContentDir("Icons/icon_DevicePowerOff_40x.html"), Icon40x40, {R:1,G:1,B:1,A:1}, 'NoTile', 'FullColor' )
-    style.AddImageBrush("SpiralGenerator.Generate", style.RootToContentDir("Icons/icon_DevicePowerOn_40x.html"), Icon40x40, {R:1,G:1,B:1,A:1}, 'NoTile', 'FullColor' ) 
+    style.AddImageBrush("SpiralGenerator.Purge", style.RootToContentDir("Icons/icon_DevicePowerOff_40x.png"), Icon40x40, {R:1,G:1,B:1,A:1}, 'NoTile', 'FullColor' )
+    style.AddImageBrush("SpiralGenerator.Generate", style.RootToContentDir("Icons/icon_DevicePowerOn_40x.png"), Icon40x40, {R:1,G:1,B:1,A:1}, 'NoTile', 'FullColor' ) 
     style.Register()
 
 	let opts = {

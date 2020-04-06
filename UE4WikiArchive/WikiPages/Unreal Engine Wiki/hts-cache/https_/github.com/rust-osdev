@@ -1,0 +1,2548 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-FG+rXqMOivrAjdEQE7tO4BwM1poGmg70hJFTlNSxjX87grtrZ6UnPR8NkzwUHlQEGviu9XuRYeO8zH9YwvZhdg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-146fab5ea30e8afac08dd11013bb4ee0.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-iXrV/b4ypc1nr10b3Giikqff+qAx5osQ0yJRxHRDd8mKFefdMtEZ0Sxs1QysJxuJBayOKThjsuMjynwBJQq0aw==" rel="stylesheet" href="https://github.githubassets.com/assets/site-897ad5fdbe32a5cd67af5d1bdc68a292.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-23DJ0jGXuHq4HnEnOv5yjJ3aD9zHvk4UkkK4Vs7e52NlpTBA9/zI9GMjyZ7MrJmYgiHJ0ZHNKVSFxEC3Pud9UA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-db70c9d23197b87ab81e71273afe728c.css" />
+    
+    
+    
+    
+
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Rust OSDev · GitHub</title>
+    <meta name="description" content="Operating System Development in Rust. Rust OSDev has 14 repositories available. Follow their code on GitHub.">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://avatars2.githubusercontent.com/u/35896598?s=280&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Rust OSDev" /><meta name="twitter:description" content="Operating System Development in Rust. Rust OSDev has 14 repositories available. Follow their code on GitHub." />
+    <meta property="og:image" content="https://avatars2.githubusercontent.com/u/35896598?s=280&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="profile" /><meta property="og:title" content="Rust OSDev" /><meta property="og:url" content="https://github.com/rust-osdev" /><meta property="og:description" content="Operating System Development in Rust. Rust OSDev has 14 repositories available. Follow their code on GitHub." /><meta property="profile:username" content="rust-osdev" />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  
+  
+
+  <meta name="request-id" content="E12A:5B41:8282F:CE259:5E840720" data-pjax-transient="true"/><meta name="html-safe-nonce" content="2f5c4d90450f6cdcc6366c926866fc0da907d10e" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHA6Ly9naXRodWIuY29tL3BoaWwtb3BwIiwicmVxdWVzdF9pZCI6IkUxMkE6NUI0MTo4MjgyRjpDRTI1OTo1RTg0MDcyMCIsInZpc2l0b3JfaWQiOiI4NDI4MjA4ODg0MjUwMDQ0MDU1IiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="5a3da74ff552a0c9994ba2075b915c8a2ed48cd279e48aab529e44a3bb8bd811" data-pjax-transient="true"/>
+
+    <meta name="hovercard-subject-tag" content="organization:35896598" data-pjax-transient>
+
+
+  <meta name="github-keyboard-shortcuts" content="" data-pjax-transient="true" />
+
+  
+
+  <meta name="selected-link" value="/rust-osdev" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" />
+<meta name="analytics-location" content="/&lt;org-login&gt;" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+
+<meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+
+
+    <meta name="enabled-features" content="MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,RELATED_ISSUES">
+
+  <meta http-equiv="x-pjax-version" content="8769db88308fb15007b2d764cf15a630">
+  
+
+
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production page-responsive">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+      <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+
+    
+    
+
+
+
+        <header class="Header-old header-logged-out js-details-container Details position-relative f4 py-2" role="banner">
+  <div class="container-lg d-lg-flex flex-items-center p-responsive">
+    <div class="d-flex flex-justify-between flex-items-center">
+        <a class="mr-4" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+          <svg height="32" class="octicon octicon-mark-github text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+
+          <div class="d-lg-none css-truncate css-truncate-target width-fit p-2">
+            
+          <a class="Header-link" href="/rust-osdev">rust-osdev</a>
+
+          </div>
+
+        <div class="d-flex flex-items-center">
+            <a href="/join?source=header"
+              class="d-inline-block d-lg-none f5 text-white no-underline border border-gray-dark rounded-2 px-2 py-1 mr-3 mr-sm-5"
+              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/rust-osdev&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="3ac44e17d40e725ac71eaf11d04979fee0da3a0b6957a9d1e53aeca6881be01c"
+              data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">
+              Sign&nbsp;up
+            </a>
+
+          <button class="btn-link d-lg-none mt-1 js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <svg height="24" class="octicon octicon-three-bars text-white" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+          </button>
+        </div>
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--logged-out position-fixed top-0 right-0 bottom-0 height-fit position-lg-relative d-lg-flex flex-justify-between flex-items-center flex-auto">
+      <div class="d-flex d-lg-none flex-justify-end border-bottom bg-gray-light p-3">
+        <button class="btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <svg height="24" class="octicon octicon-x text-gray" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+        </button>
+      </div>
+
+        <nav class="mt-0 px-3 px-lg-0 mb-5 mb-lg-0" aria-label="Global">
+          <ul class="d-lg-flex list-style-none">
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Why GitHub?
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <a href="/features" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Features">Features <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+                    <ul class="list-style-none f5 pb-3">
+                      <li class="edge-item-fix"><a href="/features/code-review/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code review">Code review</a></li>
+                      <li class="edge-item-fix"><a href="/features/project-management/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Project management">Project management</a></li>
+                      <li class="edge-item-fix"><a href="/features/integrations" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Integrations">Integrations</a></li>
+                      <li class="edge-item-fix"><a href="/features/actions" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Actions">Actions</a></li>
+                      <li class="edge-item-fix"><a href="/features/packages" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Packages">Packages</a></li>
+                      <li class="edge-item-fix"><a href="/features/security" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Security">Security</a></li>
+                      <li class="edge-item-fix"><a href="/features#team-management" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Team management">Team management</a></li>
+                      <li class="edge-item-fix"><a href="/features#hosting" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code hosting">Hosting</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="/customer-stories" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Customer stories">Customer stories <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="/security" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Security">Security <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
+                <a href="/enterprise" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Enterprise">Enterprise</a>
+              </li>
+
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Explore
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/explore" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Explore">Explore GitHub <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Learn &amp; contribute</h4>
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/topics" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Topics">Topics</a></li>
+                        <li class="edge-item-fix"><a href="/collections" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Collections">Collections</a></li>
+                      <li class="edge-item-fix"><a href="/trending" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Trending">Trending</a></li>
+                      <li class="edge-item-fix"><a href="https://lab.github.com/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Learning lab">Learning Lab</a></li>
+                      <li class="edge-item-fix"><a href="https://opensource.guide" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Open source guides">Open source guides</a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Connect with others</h4>
+                    <ul class="list-style-none mb-0">
+                      <li class="edge-item-fix"><a href="https://github.com/events" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Events">Events</a></li>
+                      <li class="edge-item-fix"><a href="https://github.community" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Community forum">Community forum</a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Education">GitHub Education</a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+
+              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
+                <a href="/marketplace" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Marketplace">Marketplace</a>
+              </li>
+
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Pricing
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                       <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-4 mt-0 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <a href="/pricing" class="pb-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Pricing">Plans <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/pricing#feature-comparison" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Compare plans">Compare plans</a></li>
+                      <li class="edge-item-fix"><a href="https://enterprise.github.com/contact" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Contact Sales">Contact Sales</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="/nonprofit" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Nonprofits">Nonprofit <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover"  data-ga-click="(Logged out) Header, go to Education">Education <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+          </ul>
+        </nav>
+
+      <div class="d-lg-flex flex-items-center px-3 px-lg-0 text-center text-lg-left">
+          <div class="d-lg-flex mb-3 mb-lg-0">
+            <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Organization" data-scope-id="35896598" data-scoped-search-url="/orgs/rust-osdev/search" data-unscoped-search-url="/search" action="/orgs/rust-osdev/search" accept-charset="UTF-8" method="get">
+      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search"
+          data-unscoped-placeholder="Search GitHub"
+          data-scoped-placeholder="Search"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations"
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="wXzrgwBqCysBib75v7uxdNeN9M++0qsUAp45d3cFRKb7WjbNi8LMeE++8jqIEI0CTfGL6OkTIB0S975wc1x9iQ==" />
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this organization">
+        In this organization
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this organization">
+        In this organization
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this organization">
+        In this organization
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+          </div>
+
+        <a href="/login?return_to=%2Frust-osdev"
+          class="HeaderMenu-link no-underline mr-3"
+          data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/rust-osdev&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f4071d0d5ec7276aa6d758b149d576dec7159c8393f4f68cc6b0c29079097741"
+          data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">
+          Sign&nbsp;in
+        </a>
+          <a href="/join?source=header"
+            class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1"
+            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/rust-osdev&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="f4071d0d5ec7276aa6d758b149d576dec7159c8393f4f68cc6b0c29079097741"
+            data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">
+            Sign&nbsp;up
+          </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+    <div id="js-flash-container">
+
+
+  <template class="js-flash-template">
+    <div class="flash flash-full  js-flash-template-container">
+  <div class="container-lg px-2" >
+    <button class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    
+      <div class="js-flash-template-message"></div>
+
+  </div>
+</div>
+  </template>
+</div>
+
+
+    
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled>
+      <main id="js-pjax-container" data-pjax-container>
+        
+
+
+
+
+
+
+
+
+<div itemscope itemtype="http://schema.org/Organization">
+  
+
+
+<header class="pagehead orghead pt-0 pt-lg-3">
+  <div class="reponav-wrapper reponav-small d-lg-none">
+  <nav class="reponav js-reponav text-center no-wrap js-profile-tab-count-container"
+       data-url="/users/rust-osdev/tab_counts"
+       itemscope
+       itemtype="http://schema.org/BreadcrumbList">
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a class="reponav-item selected" href="/rust-osdev" itemprop="url">
+        <span itemprop="name">Repositories</span>
+        <span class="Counter js-profile-repository-count"></span>
+        <meta itemprop="position" content="1">
+      </a>
+    </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a class="reponav-item " href="/orgs/rust-osdev/packages" itemprop="url">
+        <span itemprop="name">Packages</span>
+        <span class="Counter js-profile-package-count"></span>
+        <meta itemprop="position" content="2">
+      </a>
+    </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a class="reponav-item " href="/orgs/rust-osdev/people" itemprop="url">
+          <span itemprop="name">People</span>
+          <span class="Counter js-profile-member-count"></span>
+          <meta itemprop="position" content="3">
+        </a>
+      </span>
+
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a class="reponav-item " href="/orgs/rust-osdev/projects" itemprop="url">
+          <span itemprop="name">Projects</span>
+          <span class="Counter js-profile-project-count"></span>
+          <meta itemprop="position" content="5">
+        </a>
+      </span>
+
+
+  </nav>
+</div>
+
+
+  <div class="container-lg mt-4 mt-lg-0 p-responsive clearfix">
+
+
+
+    <div class="TableObject org-header-wrapper mb-4 d-flex flex-items-start flex-md-items-center">
+        <img itemprop="image" class="TableObject-item avatar flex-shrink-0" src="https://avatars3.githubusercontent.com/u/35896598?s=200&amp;v=4" width="100" height="100" alt="@rust-osdev" />
+      <div class="TableObject-item TableObject-item--primary pb-1 pb-md-0">
+        <div class="d-flex flex-justify-between flex-column flex-md-row">
+          <h1 class="text-gray-dark lh-condensed mb-1 mb-md-2">
+            Rust OSDev
+          </h1>
+          <div>
+
+          </div>
+        </div>
+
+          <span class="text-gray-light"><div>Operating System Development in Rust</div></span>
+
+      </div>
+    </div>
+
+    <div class="container-lg d-none d-lg-block">
+      
+<nav class="orgnav clearfix js-profile-tab-count-container" data-url="/users/rust-osdev/tab_counts" aria-label="Organization">
+  <a class="pagehead-tabs-item selected" href="/rust-osdev">
+    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+    Repositories
+    <span class="Counter js-profile-repository-count"></span>
+  </a>
+
+    <a class="pagehead-tabs-item " href="/orgs/rust-osdev/packages">
+      <svg class="octicon octicon-package" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 00-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"/></svg>
+      Packages
+      <span class="Counter js-profile-package-count"></span>
+    </a>
+
+    <a class="pagehead-tabs-item " href="/orgs/rust-osdev/people">
+      <svg class="octicon octicon-person" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 14.002a.998.998 0 01-.998.998H1.001A1 1 0 010 13.999V13c0-2.633 4-4 4-4s.229-.409 0-1c-.841-.62-.944-1.59-1-4 .173-2.413 1.867-3 3-3s2.827.586 3 3c-.056 2.41-.159 3.38-1 4-.229.59 0 1 0 1s4 1.367 4 4v1.002z"/></svg>
+      People
+      <span class="Counter js-profile-member-count"></span>
+    </a>
+
+
+    <a class="pagehead-tabs-item " href="/orgs/rust-osdev/projects" data-hotkey="g b">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      Projects
+      <span class="Counter js-profile-project-count"></span>
+    </a>
+
+
+
+
+</nav>
+
+    </div>
+  </div>
+</header>
+
+
+  <div class="container-lg p-responsive js-pinned-items-reorder-container clearfix">
+      <div class="signup-prompt-bg rounded-1 js-signup-prompt" data-prompt="signup" hidden>
+    <div class="signup-prompt p-4 text-center mb-4 rounded-1">
+      <div class="position-relative">
+        <button type="button" class="position-absolute top-0 right-0 btn-link link-gray js-signup-prompt-button" data-ga-click="(Logged out) Sign up prompt, clicked Dismiss, text:dismiss">
+          Dismiss
+        </button>
+        <h3 class="pt-2">Grow your team on GitHub</h3>
+        <p class="col-8 mx-auto">GitHub is home to over 40 million developers working together. Join them to grow your own development teams, manage permissions, and collaborate on projects.</p>
+        <a class="btn btn-primary" data-ga-click="(Logged out) Sign up prompt, clicked Sign up, text:sign-up" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;org repos signup prompt&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/rust-osdev&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="954c0983dec6791cc2e0468b23a3dfc02c2589a492e4fcabc6bfee71f7628715" href="/join?source=prompt-org-profile">Sign up</a>
+      </div>
+    </div>
+  </div>
+
+
+
+      <div class="d-flex mb-3 flex-wrap">
+        <h2 class="f4 text-normal flex-auto pr-2">
+          Pinned repositories
+          <img src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" width="13" class="spinner pinned-items-spinner js-pinned-items-spinner" alt="">
+          <span class="pinned-items-reorder-error js-pinned-items-reorder-message"
+            role="status" aria-live="polite"
+            data-error-text="Something went wrong."
+            data-success-text="Order updated."></span>
+        </h2>
+      </div>
+
+        
+<ol class="d-flex flex-wrap list-style-none gutter-condensed mb-4 js-pinned-items-reorder-list" >
+      
+<li class="col-12 col-md-6 col-lg-4 mb-3 d-flex flex-content-stretch">
+  <div class="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source  sortable-button-item" >
+    <div class="pinned-item-list-item-content">
+      <div class="d-flex width-full flex-items-center position-relative">
+        <svg class="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+        <a href="/rust-osdev/about" class="text-bold flex-auto min-width-0 ">
+          <span class="repo" title="about">about</span>
+        </a>
+        
+      </div>
+
+
+      <p class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
+        About this organization
+      </p>
+
+      <p class="mb-0 f6 text-gray">
+          <a href="/rust-osdev/about/stargazers" class="pinned-item-meta muted-link ">
+            <svg aria-label="stars" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+            43
+          </a>
+          <a href="/rust-osdev/about/network/members" class="pinned-item-meta muted-link ">
+            <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            1
+          </a>
+      </p>
+    </div>
+  </div>
+</li>
+
+
+      
+<li class="col-12 col-md-6 col-lg-4 mb-3 d-flex flex-content-stretch">
+  <div class="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source  sortable-button-item" >
+    <div class="pinned-item-list-item-content">
+      <div class="d-flex width-full flex-items-center position-relative">
+        <svg class="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+        <a href="/rust-osdev/bootloader" class="text-bold flex-auto min-width-0 ">
+          <span class="repo" title="bootloader">bootloader</span>
+        </a>
+        
+      </div>
+
+
+      <p class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
+        An experimental pure-Rust x86 bootloader
+      </p>
+
+      <p class="mb-0 f6 text-gray">
+          <span class="d-inline-block mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+          <a href="/rust-osdev/bootloader/stargazers" class="pinned-item-meta muted-link ">
+            <svg aria-label="stars" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+            296
+          </a>
+          <a href="/rust-osdev/bootloader/network/members" class="pinned-item-meta muted-link ">
+            <svg aria-label="forks" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            55
+          </a>
+      </p>
+    </div>
+  </div>
+</li>
+
+
+      
+<li class="col-12 col-md-6 col-lg-4 mb-3 d-flex flex-content-stretch">
+  <div class="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source  sortable-button-item" >
+    <div class="pinned-item-list-item-content">
+      <div class="d-flex width-full flex-items-center position-relative">
+        <svg class="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+        <a href="/rust-osdev/x86_64" class="text-bold flex-auto min-width-0 ">
+          <span class="repo" title="x86_64">x86_64</span>
+        </a>
+        
+      </div>
+
+
+      <p class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
+        Library to program x86_64 hardware.
+      </p>
+
+      <p class="mb-0 f6 text-gray">
+          <span class="d-inline-block mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+          <a href="/rust-osdev/x86_64/stargazers" class="pinned-item-meta muted-link ">
+            <svg aria-label="stars" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+            214
+          </a>
+          <a href="/rust-osdev/x86_64/network/members" class="pinned-item-meta muted-link ">
+            <svg aria-label="forks" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            51
+          </a>
+      </p>
+    </div>
+  </div>
+</li>
+
+
+      
+<li class="col-12 col-md-6 col-lg-4 mb-3 d-flex flex-content-stretch">
+  <div class="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source  sortable-button-item" >
+    <div class="pinned-item-list-item-content">
+      <div class="d-flex width-full flex-items-center position-relative">
+        <svg class="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+        <a href="/rust-osdev/uefi-rs" class="text-bold flex-auto min-width-0 ">
+          <span class="repo" title="uefi-rs">uefi-rs</span>
+        </a>
+        
+      </div>
+
+
+      <p class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
+        Rust wrapper for UEFI.
+      </p>
+
+      <p class="mb-0 f6 text-gray">
+          <span class="d-inline-block mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+          <a href="/rust-osdev/uefi-rs/stargazers" class="pinned-item-meta muted-link ">
+            <svg aria-label="stars" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+            220
+          </a>
+          <a href="/rust-osdev/uefi-rs/network/members" class="pinned-item-meta muted-link ">
+            <svg aria-label="forks" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            35
+          </a>
+      </p>
+    </div>
+  </div>
+</li>
+
+
+      
+<li class="col-12 col-md-6 col-lg-4 mb-3 d-flex flex-content-stretch">
+  <div class="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source  sortable-button-item" >
+    <div class="pinned-item-list-item-content">
+      <div class="d-flex width-full flex-items-center position-relative">
+        <svg class="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+        <a href="/rust-osdev/acpi" class="text-bold flex-auto min-width-0 ">
+          <span class="repo" title="acpi">acpi</span>
+        </a>
+        
+      </div>
+
+
+      <p class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
+        Rust library for parsing ACPI tables and AML
+      </p>
+
+      <p class="mb-0 f6 text-gray">
+          <span class="d-inline-block mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+          <a href="/rust-osdev/acpi/stargazers" class="pinned-item-meta muted-link ">
+            <svg aria-label="stars" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+            54
+          </a>
+          <a href="/rust-osdev/acpi/network/members" class="pinned-item-meta muted-link ">
+            <svg aria-label="forks" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            14
+          </a>
+      </p>
+    </div>
+  </div>
+</li>
+
+
+      
+<li class="col-12 col-md-6 col-lg-4 mb-3 d-flex flex-content-stretch">
+  <div class="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source  sortable-button-item" >
+    <div class="pinned-item-list-item-content">
+      <div class="d-flex width-full flex-items-center position-relative">
+        <svg class="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+        <a href="/rust-osdev/bootimage" class="text-bold flex-auto min-width-0 ">
+          <span class="repo" title="bootimage">bootimage</span>
+        </a>
+        
+      </div>
+
+
+      <p class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
+        
+      </p>
+
+      <p class="mb-0 f6 text-gray">
+          <span class="d-inline-block mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+          <a href="/rust-osdev/bootimage/stargazers" class="pinned-item-meta muted-link ">
+            <svg aria-label="stars" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+            192
+          </a>
+          <a href="/rust-osdev/bootimage/network/members" class="pinned-item-meta muted-link ">
+            <svg aria-label="forks" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            25
+          </a>
+      </p>
+    </div>
+  </div>
+</li>
+
+
+</ol>
+
+
+      
+<div class="border-bottom border-gray-light mb-3 pb-md-3">
+
+  <div class="d-flex">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-pjax="#org-repositories" data-pjax-preserve-scroll="true" data-autosearch-results-container="org-repositories" class="col-12 col-md-8 mb-4 mb-md-0" role="search" action="/rust-osdev" accept-charset="UTF-8" method="get">
+      <div class="d-flex flex-column flex-md-row flex-auto">
+        <div class="mb-2 mb-md-0 flex-auto">
+          <input type="search" id="your-repos-filter" name="q"
+                 class="form-control width-full"
+                 placeholder="Find a repository&hellip;"
+                 autocomplete="off"
+                 aria-label="Find a repository&hellip;"
+                 value=""
+                 data-throttled-autosubmit>
+        </div>
+        <div class="d-flex">
+          <details class="details-reset details-overlay select-menu hx_rsm hx_rsm--auto-height mr-1 ml-md-2 d-inline-block select-menu-modal-right">
+            <summary class="btn select-menu-button">
+              <i>Type:</i>
+              <span data-menu-button>
+                All
+              </span>
+            </summary>
+            <details-menu class="select-menu-modal position-absolute right-0" style="z-index: 99;">
+              <div class="select-menu-header text-left">
+                <span class="select-menu-title">Select type</span>
+              </div>
+              <div class="select-menu-list">
+                  <label class="select-menu-item" role="menuitemradio" aria-checked="true" tabindex="0">
+                    <input type="radio" name="type" id="type_" value="" data-autosubmit="true" checked="checked" />
+                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal select-menu-item-text" data-menu-button-text>All</span>
+                  </label>
+                  <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="type" id="type_source" value="source" data-autosubmit="true" />
+                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal select-menu-item-text" data-menu-button-text>Sources</span>
+                  </label>
+                  <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="type" id="type_fork" value="fork" data-autosubmit="true" />
+                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal select-menu-item-text" data-menu-button-text>Forks</span>
+                  </label>
+                  <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="type" id="type_archived" value="archived" data-autosubmit="true" />
+                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal select-menu-item-text" data-menu-button-text>Archived</span>
+                  </label>
+                  <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="type" id="type_mirror" value="mirror" data-autosubmit="true" />
+                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal select-menu-item-text" data-menu-button-text>Mirrors</span>
+                  </label>
+              </div>
+            </details-menu>
+          </details>
+
+            <details class="details-reset details-overlay select-menu hx_rsm d-inline-block select-menu-modal-right">
+              <summary class="btn select-menu-button">
+                <i>Language:</i>
+                <span data-menu-button>
+                  All
+                </span>
+              </summary>
+              <details-menu class="select-menu-modal position-absolute right-0" style="z-index: 99;">
+                <div class="select-menu-header text-left">
+                  <span class="select-menu-title">Select language</span>
+                </div>
+                <div class="select-menu-list">
+                  <label class="select-menu-item" role="menuitemradio" aria-checked="true" tabindex="0">
+                    <input type="radio" name="language" id="language_" value="" data-autosubmit="true" checked="checked" />
+                    <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal select-menu-item-text" data-menu-button-text>All</span>
+                  </label>
+                    <label class="select-menu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                      <input type="radio" name="language" id="language_rust" value="rust" data-autosubmit="true" />
+                      <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                      <span class="text-normal select-menu-item-text" data-menu-button-text>Rust</span>
+                    </label>
+                </div>
+              </details-menu>
+            </details>
+        </div>
+      </div>
+</form>
+    <div class="d-none d-md-flex flex-md-items-center flex-md-justify-end col-md-4">
+
+    </div>
+  </div>
+</div>
+
+
+      <div id="org-repositories" data-pjax-container>
+        
+<div class="col-12 col-md-8 d-md-inline-block">
+  <div class="org-repos repo-list">
+
+      <h2 class="f4 text-normal d-md-none">Repositories</h2>
+
+      <ul>
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/vga" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/vga/hovercard">
+            vga
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            Library to program vga hardware.
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-246864075" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-246864075" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1.0 3,1.0 6,1.0 9,1.0 12,1.0 15,1.0 18,1.0 21,1.0 24,1.0 27,1.0 30,1.0 33,1.0 36,1.0 39,1.0 42,1.0 45,1.0 48,1.0 51,1.0 54,1.0 57,1.0 60,1.0 63,1.0 66,1.0 69,1.0 72,1.0 75,1.0 78,1.0 81,1.0 84,1.0 87,1.0 90,1.0 93,1.0 96,1.0 99,1.0 102,1.0 105,1.0 108,1.0 111,1.0 114,1.0 117,1.0 120,1.0 123,1.0 126,1.0 129,1.0 132,1.0 135,1.0 138,1.0 141,1.0 144,1.0 147,29.0 150,17.0 153,5.0 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, 2.0)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-246864075); mask: url(#sparkline-246864075)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+
+        <a class=" muted-link mr-3" href="/rust-osdev/vga/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          2
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/vga/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          2
+</a>
+
+
+      <a class="no-wrap muted-link " href="/rust-osdev/vga/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        2
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/vga/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen">
+          (1 issue needs help)
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/vga/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        1
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-04-01T00:33:12Z" class="no-wrap">Mar 31, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/uefi-rs" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/uefi-rs/hovercard">
+            uefi-rs
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            Rust wrapper for UEFI.
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Arust+org%3Arust-osdev&amp;type=Repositories" title="Topic: rust" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:rust,repository_id:111702516,repository_nwo:rust-osdev/uefi-rs,repository_public:true,repository_is_fork:false">
+  rust
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aosdev+org%3Arust-osdev&amp;type=Repositories" title="Topic: osdev" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:osdev,repository_id:111702516,repository_nwo:rust-osdev/uefi-rs,repository_public:true,repository_is_fork:false">
+  osdev
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Auefi+org%3Arust-osdev&amp;type=Repositories" title="Topic: uefi" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:uefi,repository_id:111702516,repository_nwo:rust-osdev/uefi-rs,repository_public:true,repository_is_fork:false">
+  uefi
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-111702516" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-111702516" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,4 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,5 48,6 51,1 54,2 57,3 60,1 63,1 66,1 69,1 72,18 75,6 78,1 81,1 84,1 87,1 90,2 93,3 96,5 99,1 102,1 105,2 108,1 111,1 114,1 117,5 120,4 123,6 126,1 129,6 132,2 135,1 138,1 141,3 144,7 147,2 150,1 153,4 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -4)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-111702516); mask: url(#sparkline-111702516)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+MPL-2.0
+</span>
+
+
+        <a class=" muted-link mr-3" href="/rust-osdev/uefi-rs/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          35
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/uefi-rs/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          220
+</a>
+
+
+      <a class="no-wrap muted-link " href="/rust-osdev/uefi-rs/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        8
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/uefi-rs/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen">
+          (1 issue needs help)
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/uefi-rs/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        1
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-30T09:41:37Z" class="no-wrap">Mar 30, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/bootloader" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/bootloader/hovercard">
+            bootloader
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            An experimental pure-Rust x86 bootloader
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-117340127" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-117340127" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,8 3,3 6,1 9,7 12,2 15,1 18,1 21,1 24,1 27,1 30,1 33,11 36,1 39,5 42,10 45,8 48,8 51,13 54,6 57,1 60,1 63,1 66,1 69,1 72,10 75,1 78,1 81,10 84,1 87,1 90,1 93,1 96,2 99,4 102,1 105,1 108,1 111,1 114,1 117,1 120,4 123,8 126,1 129,1 132,4 135,1 138,5 141,4 144,5 147,6 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -6)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-117340127); mask: url(#sparkline-117340127)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+
+        <a class=" muted-link mr-3" href="/rust-osdev/bootloader/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          55
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/bootloader/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          296
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/bootloader/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        12
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/bootloader/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        2
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-16T15:49:54Z" class="no-wrap">Mar 16, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/x86_64" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/x86_64/hovercard">
+            x86_64
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            Library to program x86_64 hardware.
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-46576020" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-46576020" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1.0 3,6.6 6,1.0 9,1.0 12,12.2 15,3.8 18,1.0 21,1.0 24,1.0 27,1.9300000000000002 30,5.67 33,1.0 36,4.73 39,1.0 42,10.33 45,12.2 48,1.0 51,1.0 54,1.0 57,3.8 60,2.87 63,1.0 66,1.0 69,1.0 72,1.0 75,1.9300000000000002 78,1.0 81,1.0 84,1.0 87,1.9300000000000002 90,7.53 93,1.0 96,1.0 99,3.8 102,3.8 105,1.0 108,28.07 111,3.8 114,1.0 117,1.0 120,7.53 123,1.0 126,4.73 129,1.0 132,1.0 135,13.13 138,4.73 141,29.0 144,1.0 147,4.73 150,1.0 153,1.0 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, 2.0)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-46576020); mask: url(#sparkline-46576020)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+
+        <a class=" muted-link mr-3" href="/rust-osdev/x86_64/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          51
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/x86_64/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          214
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/x86_64/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        12
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/x86_64/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        7
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-08T13:36:55Z" class="no-wrap">Mar 8, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/multiboot2-elf64" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/multiboot2-elf64/hovercard">
+            multiboot2-elf64
+</a>
+
+</h3>
+
+
+
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-46045664" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-46045664" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,5 15,2 18,4 21,3 24,3 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,3 51,1 54,1 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,1 81,1 84,1 87,1 90,1 93,1 96,1 99,1 102,1 105,1 108,1 111,1 114,1 117,1 120,1 123,3 126,1 129,1 132,2 135,2 138,1 141,3 144,7 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -9)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-46045664); mask: url(#sparkline-46045664)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+
+        <a class=" muted-link mr-3" href="/rust-osdev/multiboot2-elf64/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          39
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/multiboot2-elf64/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          38
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/multiboot2-elf64/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        6
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/multiboot2-elf64/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-03-02T10:28:05Z" class="no-wrap">Mar 2, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/uart_16550" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/uart_16550/hovercard">
+            uart_16550
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            Minimal support for uart_16550 serial output.
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-180991523" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-180991523" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,21 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,2 48,1 51,1 54,1 57,1 60,1 63,1 66,1 69,1 72,2 75,4 78,1 81,1 84,1 87,1 90,1 93,1 96,1 99,1 102,1 105,1 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,4 132,1 135,1 138,9 141,4 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -2)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-180991523); mask: url(#sparkline-180991523)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+MIT
+</span>
+
+
+        <a class=" muted-link mr-3" href="/rust-osdev/uart_16550/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          6
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/uart_16550/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          5
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/uart_16550/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/uart_16550/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-02-25T12:50:22Z" class="no-wrap">Feb 25, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public fork d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/cargo-xbuild" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/cargo-xbuild/hovercard">
+            cargo-xbuild
+</a>
+
+</h3>
+
+
+          <span class="text-gray mb-1 f6">
+            Forked from
+            <a class=" muted-link " href="/japaric/xargo">
+              japaric/xargo
+</a>
+
+</span>
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            Automatically cross-compiles the sysroot crates core, compiler_builtins, and alloc.
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-132279010" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-132279010" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,2 3,3 6,1 9,1 12,1 15,1 18,1 21,3 24,11 27,1 30,7 33,1 36,1 39,1 42,7 45,3 48,1 51,1 54,1 57,1 60,1 63,1 66,2 69,8 72,1 75,1 78,3 81,3 84,1 87,1 90,1 93,1 96,1 99,1 102,1 105,1 108,4 111,6 114,1 117,1 120,1 123,1 126,4 129,1 132,1 135,19 138,27 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, 1)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-132279010); mask: url(#sparkline-132279010)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+
+        <a class=" muted-link mr-3" href="/rust-osdev/cargo-xbuild/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          75
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/cargo-xbuild/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          139
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/cargo-xbuild/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        7
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/cargo-xbuild/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        1
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-02-21T10:04:21Z" class="no-wrap">Feb 21, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/acpi" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/acpi/hovercard">
+            acpi
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            Rust library for parsing ACPI tables and AML
+</p>
+
+
+          <div class="flex-items-center flex-wrap d-inline-flex f6 my-1">
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Arust+org%3Arust-osdev&amp;type=Repositories" title="Topic: rust" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:rust,repository_id:132017931,repository_nwo:rust-osdev/acpi,repository_public:true,repository_is_fork:false">
+  rust
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Akernel+org%3Arust-osdev&amp;type=Repositories" title="Topic: kernel" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:kernel,repository_id:132017931,repository_nwo:rust-osdev/acpi,repository_public:true,repository_is_fork:false">
+  kernel
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aacpi+org%3Arust-osdev&amp;type=Repositories" title="Topic: acpi" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:acpi,repository_id:132017931,repository_nwo:rust-osdev/acpi,repository_public:true,repository_is_fork:false">
+  acpi
+</a>
+
+              <a class="topic-tag topic-tag-link f6 my-1" href="/search?q=topic%3Aaml+org%3Arust-osdev&amp;type=Repositories" title="Topic: aml" data-ga-click="Topic, repository list" data-octo-click="topic_click" data-octo-dimensions="topic:aml,repository_id:132017931,repository_nwo:rust-osdev/acpi,repository_public:true,repository_is_fork:false">
+  aml
+</a>
+
+</div>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-132017931" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-132017931" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,18 9,4 12,8 15,1 18,1 21,1 24,1 27,1 30,1 33,19 36,15 39,2 42,4 45,8 48,5 51,7 54,21 57,2 60,1 63,1 66,1 69,1 72,1 75,1 78,3 81,1 84,1 87,1 90,1 93,1 96,5 99,1 102,4 105,1 108,5 111,2 114,10 117,1 120,1 123,1 126,1 129,7 132,1 135,1 138,6 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -2)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-132017931); mask: url(#sparkline-132017931)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+
+        <a class=" muted-link mr-3" href="/rust-osdev/acpi/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          14
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/acpi/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          54
+</a>
+
+
+      <a class="no-wrap muted-link " href="/rust-osdev/acpi/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        10
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/acpi/issues?q=label%3A%22good+first+issue%22+is%3Aissue+is%3Aopen">
+          (2 issues need help)
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/acpi/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-02-21T01:15:19Z" class="no-wrap">Feb 20, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/spinning_top" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/spinning_top/hovercard">
+            spinning_top
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            A simple spinlock crate based on the abstractions provided by the `lock_api` crate.
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-240006273" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-240006273" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,1 51,1 54,1 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,1 81,1 84,1 87,1 90,1 93,1 96,1 99,1 102,1 105,1 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,12 138,2 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -7)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-240006273); mask: url(#sparkline-240006273)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+
+        <span class="mr-3 text-gray">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+0
+</span>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/spinning_top/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          8
+</a>
+
+
+      <a class="no-wrap muted-link " href="/rust-osdev/spinning_top/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        2
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/spinning_top/issues?q=label%3A%22help+wanted%22+is%3Aissue+is%3Aopen">
+          (1 issue needs help)
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/spinning_top/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2020-02-19T11:07:02Z" class="no-wrap">Feb 19, 2020</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/bootimage" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/bootimage/hovercard">
+            bootimage
+</a>
+
+</h3>
+
+
+
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-118134599" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-118134599" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,29.0 3,12.72 6,2.95 9,1.0 12,1.0 15,1.0 18,1.0 21,2.95 24,2.3 27,3.6 30,1.0 33,1.0 36,1.0 39,1.0 42,1.0 45,6.21 48,1.0 51,1.0 54,3.6 57,1.0 60,1.0 63,1.0 66,1.0 69,1.0 72,1.0 75,1.0 78,1.0 81,1.0 84,1.0 87,1.0 90,2.3 93,1.0 96,1.0 99,2.95 102,1.0 105,1.0 108,1.0 111,1.0 114,1.0 117,1.0 120,1.0 123,1.0 126,1.0 129,1.0 132,1.0 135,1.0 138,1.0 141,1.0 144,1.0 147,1.0 150,1.0 153,1.0 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, 2.0)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-118134599); mask: url(#sparkline-118134599)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+
+        <a class=" muted-link mr-3" href="/rust-osdev/bootimage/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          25
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/bootimage/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          192
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/bootimage/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        2
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/bootimage/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2019-11-20T14:12:46Z" class="no-wrap">Nov 20, 2019</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/about" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/about/hovercard">
+            about
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            About this organization
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-119596927" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-119596927" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,2 48,1 51,1 54,1 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,1 81,1 84,1 87,1 90,1 93,1 96,1 99,1 102,1 105,1 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -12)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-119596927); mask: url(#sparkline-119596927)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+
+
+        <a class=" muted-link mr-3" href="/rust-osdev/about/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          1
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/about/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          43
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/about/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        1
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/about/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2019-07-18T05:51:11Z" class="no-wrap">Jul 18, 2019</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/ansi_rgb" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/ansi_rgb/hovercard">
+            ansi_rgb
+</a>
+
+</h3>
+
+
+
+
+          <p class="break-word text-gray mb-0" itemprop="description">
+            Colorful console text using ANSI escape sequences
+</p>
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-197098416" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-197098416" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,15 48,1 51,1 54,1 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,1 81,1 84,1 87,1 90,1 93,1 96,1 99,1 102,1 105,1 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -5)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-197098416); mask: url(#sparkline-197098416)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+        <span class="mr-3">
+          <svg height="16" class="octicon octicon-law mr-1" mr="1" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+MIT
+</span>
+
+
+        <span class="mr-3 text-gray">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+0
+</span>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/ansi_rgb/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          3
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/ansi_rgb/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/ansi_rgb/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2019-07-18T02:43:23Z" class="no-wrap">Jul 18, 2019</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/x86_64_types" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/x86_64_types/hovercard">
+            x86_64_types
+</a>
+
+</h3>
+
+
+
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-184790616" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-184790616" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,18 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,1 51,1 54,1 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,1 81,1 84,1 87,1 90,1 93,1 96,1 99,1 102,1 105,1 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -4)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-184790616); mask: url(#sparkline-184790616)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+
+        <a class=" muted-link mr-3" href="/rust-osdev/x86_64_types/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          1
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/x86_64_types/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          1
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/x86_64_types/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        0
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/x86_64_types/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2019-05-03T21:56:20Z" class="no-wrap">May 3, 2019</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+          <li class="public source archived d-block py-4 border-bottom" itemprop="owns" itemtype="http://schema.org/Code" itemscope="itemscope">
+  
+    <div class="flex-justify-between d-flex">
+      <div class="flex-auto ">
+        <h3 class="wb-break-all">
+          <a class="d-inline-block" href="/rust-osdev/os_bootinfo" itemprop="name codeRepository" data-hovercard-type="repository" data-hovercard-url="/rust-osdev/os_bootinfo/hovercard">
+            os_bootinfo
+</a>
+
+            <span class="Label Label--outline v-align-middle ml-1 mb-1" title="Label: Archived">
+              Archived
+</span>
+
+</h3>
+
+
+
+
+
+</div>
+
+
+
+      <div class="flex-items-center d-none d-md-flex">
+        
+  <span class="tooltipped tooltipped-s" aria-label="Past year of activity">
+    <svg width="155" height="30">
+      <defs>
+        <linearGradient id="gradient-118954111" x1="0" x2="0" y1="1" y2="0">
+            <stop offset="10%" stop-color="#c6e48b"></stop>
+            <stop offset="33%" stop-color="#7bc96f"></stop>
+            <stop offset="66%" stop-color="#239a3b"></stop>
+            <stop offset="90%" stop-color="#196127"></stop>
+        </linearGradient>
+        <mask id="sparkline-118954111" x="0" y="0" width="155" height="28" >
+          <polyline transform="translate(0, 28) scale(1,-1)"
+                    points="0,1 3,1 6,1 9,1 12,1 15,1 18,1 21,1 24,1 27,1 30,1 33,1 36,1 39,1 42,1 45,1 48,1 51,1 54,1 57,1 60,1 63,1 66,1 69,1 72,1 75,1 78,1 81,1 84,1 87,1 90,1 93,1 96,1 99,1 102,1 105,1 108,1 111,1 114,1 117,1 120,1 123,1 126,1 129,1 132,1 135,1 138,1 141,1 144,1 147,1 150,1 153,1 " fill="transparent" stroke="#8cc665" stroke-width="2">
+        </mask>
+      </defs>
+
+      <g transform="translate(0, -12)">
+        <rect x="0" y="-2" width="155" height="30"
+              style="stroke: none; fill: url(#gradient-118954111); mask: url(#sparkline-118954111)"></rect>
+      </g>
+    </svg>
+  </span>
+</div>
+
+
+</div>
+
+
+
+    <div class="text-gray f6 mt-2">
+
+        <span class="mr-3">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+
+
+        <a class=" muted-link mr-3" href="/rust-osdev/os_bootinfo/network/members">
+          <svg height="16" class="octicon octicon-repo-forked" aria-label="fork" viewBox="0 0 10 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+          4
+</a>
+
+
+        <a class="no-wrap muted-link mr-3" href="/rust-osdev/os_bootinfo/stargazers">
+          <svg height="16" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+          6
+</a>
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/os_bootinfo/issues">
+        <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+
+        1
+</a>
+
+
+
+      <a class="no-wrap muted-link mr-3" href="/rust-osdev/os_bootinfo/pulls">
+        <svg height="16" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+
+        0
+</a>
+
+
+      <span class="no-wrap ">
+          Updated <relative-time datetime="2018-08-16T09:09:55Z" class="no-wrap">Aug 16, 2018</relative-time>
+</span>
+
+
+</div>
+
+</li>
+
+
+      </ul>
+
+    <div class="paginate-container d-none d-md-flex flex-md-justify-center" data-pjax>
+      
+    </div>
+
+    <div class="paginate-container d-md-none mb-5" data-pjax>
+      
+    </div>
+  </div>
+</div>
+
+  <div class="col-12 col-md-4 pl-md-4 float-right js-profile-tab-count-container" data-url="/users/rust-osdev/tab_counts">
+
+
+    
+    <div class="Box mb-3">
+      <div class="Box-body">
+        <h4 class="f4 mb-2 text-normal">Top languages</h4>
+          <a class="no-wrap text-gray d-inline-block muted-link mt-2"
+             href="/rust-osdev?language=rust">
+            <span class="ml-0 mr-2">
+  <span class="repo-language-color" style="background-color: #dea584"></span>
+  <span itemprop="programmingLanguage">Rust</span>
+</span>
+
+          </a>
+      </div>
+    </div>
+
+    <include-fragment src="/orgs/rust-osdev/topics/most_used" accept="text/html; fragment">
+      <div class="Box mb-3">
+        <div class="Box-body">
+          <h4 class="f4 mb-2 text-normal">Most used topics</h4>
+          <p>Loading…</p>
+        </div>
+      </div>
+</include-fragment>
+      <div class="Box mb-3">
+        <div class="Box-body">
+          <a class="d-block text-gray-dark" href="/orgs/rust-osdev/people" data-ga-click="Orgs, go to people, location:profile people module; text:People">
+            <span class="float-right f5 text-gray">
+              <span class="js-profile-member-count"></span>
+              <svg class="octicon octicon-chevron-right" viewBox="0 0 8 16" version="1.1" width="8" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3l5 5z"/></svg>
+            </span>
+            <h4 class="f4 text-normal mb-3">People</h4>
+          </a>
+          <div class="clearfix d-flex flex-wrap" style="margin: -1px">
+              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/levex/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/levex">
+                <img class="avatar" src="https://avatars0.githubusercontent.com/u/849140?s=96&amp;v=4" width="48" height="48" alt="@levex" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/strake/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/strake">
+                <img class="avatar" src="https://avatars3.githubusercontent.com/u/976729?s=96&amp;v=4" width="48" height="48" alt="@strake" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/Sh4d1/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/Sh4d1">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/990310?s=96&amp;v=4" width="48" height="48" alt="@Sh4d1" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/phil-opp/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/phil-opp">
+                <img class="avatar" src="https://avatars1.githubusercontent.com/u/1131315?s=96&amp;v=4" width="48" height="48" alt="@phil-opp" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/HadrienG2/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/HadrienG2">
+                <img class="avatar" src="https://avatars0.githubusercontent.com/u/1305080?s=96&amp;v=4" width="48" height="48" alt="@HadrienG2" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/andre-richter/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/andre-richter">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/4130005?s=96&amp;v=4" width="48" height="48" alt="@andre-richter" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/gegy1000/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/gegy1000">
+                <img class="avatar" src="https://avatars0.githubusercontent.com/u/5172118?s=96&amp;v=4" width="48" height="48" alt="@gegy1000" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/Restioson/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/Restioson">
+                <img class="avatar" src="https://avatars0.githubusercontent.com/u/6688948?s=96&amp;v=4" width="48" height="48" alt="@Restioson" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/RKennedy9064/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/RKennedy9064">
+                <img class="avatar" src="https://avatars0.githubusercontent.com/u/7996786?s=96&amp;v=4" width="48" height="48" alt="@RKennedy9064" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/IsaacWoods/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/IsaacWoods">
+                <img class="avatar" src="https://avatars3.githubusercontent.com/u/10314464?s=96&amp;v=4" width="48" height="48" alt="@IsaacWoods" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/matthew-a-thomas/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/matthew-a-thomas">
+                <img class="avatar" src="https://avatars0.githubusercontent.com/u/14829821?s=96&amp;v=4" width="48" height="48" alt="@matthew-a-thomas" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/mental32/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/mental32">
+                <img class="avatar" src="https://avatars3.githubusercontent.com/u/27660514?s=96&amp;v=4" width="48" height="48" alt="@mental32" />
+</a>              <a class="member-avatar" data-ga-click="Orgs, go to person, location:profile people module; text:username" data-hovercard-type="user" data-hovercard-url="/users/PsiACE/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/PsiACE">
+                <img class="avatar" src="https://avatars2.githubusercontent.com/u/36896360?s=96&amp;v=4" width="48" height="48" alt="@PsiACE" />
+</a>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+
+
+  </div>
+
+      </div>
+  </div>
+</div>
+
+      </main>
+  </div>
+
+        
+<div class="footer container-lg width-full p-responsive" role="contentinfo">
+  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      <li class="mr-3 mr-lg-0">&copy; 2020 GitHub, Inc.</li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" async="async" integrity="sha512-WcQmT2vhcClFVOaaAJV/M+HqsJ2Gq/myvl6F3gCVBxykazXTs+i5fvxncSXwyG1CSfcrqmLFw/R/bmFYzprX2A==" type="application/javascript" id="js-conditional-compat" data-src="https://github.githubassets.com/assets/compat-bootstrap-59c4264f.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-6XBdUZGib4aqdruJTnLMOLpIh0VJsGlgQ7M3vndWJIH6YQNv+zqpo1TbCDzjHJ+YYEm4xkEinaY0VsemDUfi9A==" type="application/javascript" src="https://github.githubassets.com/assets/environment-bootstrap-e9705d51.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-fNcWYAh2sNNjfGtnzXeDPemQsJYesX60BB9k+YlUmuSw+iX+9bVew+TJOO74e0yqqKS3gU570rxTCs+ZBpJCvg==" type="application/javascript" src="https://github.githubassets.com/assets/vendor-7cd71660.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-CcKFBqQZKOCZU5otP6R8GH2k+iJ3zC9r2z2Iakfs/Bo9/ptHy6JIWQN3FPhVuS3CR+Q/CkEOSfg+WJfoq3YMxQ==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-09c28506.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-YJfUzazDr9cv5vQ3uprerx75rOxBtkO8808pBDxH5ZC51jmraibbSP5xgU4Lkq860/f4tyDJ7vmLPuiKptv/0Q==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-6097d4cd.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  </body>
+</html>
