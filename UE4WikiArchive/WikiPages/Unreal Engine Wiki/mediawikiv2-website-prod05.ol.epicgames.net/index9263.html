@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Matinee_Basics:_Creating_Your_First_Matinee_Sequence&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:49:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>View source for Matinee Basics: Creating Your First Matinee Sequence - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Matinee_Basics:_Creating_Your_First_Matinee_Sequence","wgTitle":"Matinee Basics: Creating Your First Matinee Sequence","wgCurRevisionId":197,"wgRevisionId":0,"wgArticleId":98,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Matinee_Basics:_Creating_Your_First_Matinee_Sequence","wgRelevantArticleId":98,"wgRequestId":"c419f7fe6a4cf580e153b9f7","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Matinee_Basics_Creating_Your_First_Matinee_Sequence rootpage-Matinee_Basics_Creating_Your_First_Matinee_Sequence skin-vector action-edit"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b971c4e90a55eae6"><meta name="worker" content="152"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Matinee_Basics:_Creating_Your_First_Matinee_Sequence&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:49:11 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Matinee+Basics%3A+Creating+Your+First+Matinee+Sequence&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Matinee_Basics:_Creating_Your_First_Matinee_Sequence" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Matinee_Basics:_Creating_Your_First_Matinee_Sequence&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Matinee_Basics:_Creating_Your_First_Matinee_Sequence">Read</a></span></li>
+							<li id="ca-viewsource" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Matinee_Basics:_Creating_Your_First_Matinee_Sequence&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Matinee_Basics:_Creating_Your_First_Matinee_Sequence&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">View source for Matinee Basics: Creating Your First Matinee Sequence</h1>
+												<div id="bodyContent" class="mw-body-content">
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=EpicUnrealEngineWiki:Administrators&amp;action=edit&amp;redlink=1" class="new" title="EpicUnrealEngineWiki:Administrators (page does not exist)">Administrators</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">__TOC__
+[[Category:Tutorials]]
+[[Category:Cinematic]]
+[[Category:Matinee]]
+[[Category:Epic Created Content]]
+
+The goal in this tutorial is to teach you some basics about Matinee and its interface.  You’ll learn how to connect and manipulate objects, animate camera paths, and make the sequence visible in-game when you’re finished.  You’ll also learn some specific functions, windows, and keyboard shortcuts along the way.
+
+==Creating a Matinee Actor and Interface Basics==
+
+Create and open a Blank Project in UE4:
+
+Click on the Matinee Icon at the top and select “Add Matinee”.
+
+[[File:AddNewMatinee.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+A warning box will appear letting you know that Undo/Redo data will reset when opening Matinee.  Go ahead and click the “continue” option in the box to close it out.  A Matinee window should open and you’ll see a new Matinee Actor has been added in the level.
+Here is the Matinee object in the viewport:
+
+[[File:MatineeSpriteViewport.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Here is the open Matinee window:
+
+[[File:MatineeWindow.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+There’s a lot to see in Matinee.  It might seem a little intimidating at first, but we can close out a few windows in order to give us a better view.  Click on yellow tabs in the upper left corner of the panes to expose the name of each window.  You’ll find them next to the red arrows below.
+
+[[File:ExposePanel Matinee.jpg|thumb|left|280px]]
+&lt;BR Clear=ALL>
+
+In the interface you’ll notice four open windows:  '''Toolbar''', '''Curve Editor''', '''Track View''', and '''Details'''.  Just like any other part of our slate interface, these windows can be moved and resized within the Matinee window.  Let’s close out the '''Curve Editor''' and the '''Details''' windows as we won’t need these for now.  Hover over the X in each tab and click it to close the window.
+
+[[File:CloseWindows.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+You should now have a clean view that looks like this:
+
+[[File:EmptyMatineeWindow.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Take a close look at the top window called the '''Toolbar'''.
+
+[[File:MatineeToolbar.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+You’ll see several icons here for specific functions, but the only ones you’ll need for this tutorial are the following:
+
+'''Add Key'', '''Play''', '''Stop''', and '''Camera'''.
+
+[[File:Addkey Play Stop Camera.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+So if you look at the '''Tracks View''', you’ll see that it looks similar to a non-linear video editor with time intervals at the bottom.  This is our main timeline for manipulating objects, animating camera motion, triggering effects, etc. across the span of time represented in the Matinee.  Left click in the time intervals area at the bottom.  You’ll see what we call the '''Time Bar jump''' from 0.00 time to where you’ve clicked.  The '''Time Bar''' represents the current position in time to where you’re previewing your Matinee data.
+
+[[File:TimeBar Matinee.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+If you continue holding the left click and drag the mouse left and right, the time bar will scrub along with your mouse.  '''Scrubbing''' allows you to quickly preview a matinee in motion (forward or back) at the speed with which you drag the time bar.  If you click the''' ‘Play’ '''button in the toolbar at the top, it will play the sequence at normal speed (usually 30fps) from where the time bar is positioned to the end of the sequence, or until you click''' ‘Stop’. '''  Clicking Stop twice will rewind the sequence and place the time bar at the start of the Matinee.
+
+We also have keyboard shortcuts set up for these commands.  Just like in a non-linear editor, the keys “'''J – K – L'''” will allow you to play through the timeline forward, backward, and stop or pause.  “'''J'''” plays the sequence backward at normal speed, “'''K'''” will stop / pause the sequence where the time bar currently is in the timeline, and “'''L'''” will play the sequence forward at normal speed.
+
+Now, let’s zoom out to see the time range of this matinee.  You can do that by either scrolling backward on your mouse wheel, or clicking the '''Minus “-“''' key on the keyboard.  '''Plus (+)''' and '''Minus (-)''' are the keyboard shortcuts to zoom in and out, showing more or less of the Matinee length.  After zooming, you’ll notice two red tabs in the lower part of the timeline.
+
+[[File:MatineeLength.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+These represent the length of the Matinee sequence.  At the moment, they are positioned at 0.00 and 5.00 so this Matinee is 5 seconds long.  You can change the length by grabbing the red tab on the far right and dragging it to the length you want your Matinee to be.  For now, let’s keep this at 5 seconds.
+
+==Connecting and Manipulating Objects==
+
+Let’s start adding and hooking up objects in Matinee to animate and manipulate over time.  We will animate the chair objects in this level so you can see how to key frame movement over time.
+
+First click on one of the chair objects and go to the details window.  Just under the Transform values, you’ll see a pull down box called “Mobility”.  Change the setting here from ‘Static’ to ‘Movable’.  This will allow the object to be controlled by the Matinee.  Change this setting for both chairs.
+
+[[File:Set Actor Movable.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Now we’ll connect the chairs to Matinee.  First, click on the Chair object in the editor to make it active.
+
+[[File:Set Chair Active.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Next, go to the Matinee and right click in the dark area just under the Track View tab.  A drop down menu should pop up.  You have a selection of Groups to choose from.  Select “Add new Empty Group”.
+
+[[File:Add Empty Group.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+You will then be asked to name the Group.  Call it Chair_1.  A new Group Track is then created in the Matinee called “Chair_1”.  This group is connected to the selected chair in the map.  Anytime you click on this Group in Matinee, it will select the associated object in Matinee, thus showing you they are connected.
+
+[[File:TrackView.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+To manipulate this object in the level, you will need to add specific tracks to the group.  Let’s add a Movement track to Chair_1.  Right click on the Group in the timeline and a drop down menu will appear with many track types listed.  Select “Add New Movement Track” from the list and you’ll see a Movement Track appear below the group track.
+
+[[File:New Movement Track.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+This is where you will place key frames to animate the movement of the chair object over time in the Matinee.  As you can see, there already is a key frame at 0.00 for this track.  We will use this key frame in a moment, but let’s add one at another time point in the movement track.
+
+[[File:Keyframe 0 Movementtrack.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Move the time bar to about the 3.5 time mark in the timeline, and then make sure the Movement track is active by left clicking on the name “Movement” at the head of the track.  Now, place a key frame in the movement track at the position of the time bar by left clicking the “'''Add Key'''” icon in the toolbar.  You can also do this by pressing “'''Enter'''” on the keyboard.  A key frame will appear at the current position of the time bar.
+
+[[File:KeyFrame Added.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+This key frame contains the positional data of the chair (translation and rotation) where it currently sits in the level.  Now, let’s go back and manipulate the data of the first key frame in the movement track.
+Click on the first key frame in that track at 0.00.  You should notice two things:  1) The key frame will become highlighted, and 2) The time bar should now jump to the position of the selected key frame.  Keep this in mind as anytime you click on a key frame in matinee to make it active, the time bar will always jump to it.  Also take note of the message that has come up in the timeline below.  In red you will see “KEY Movement0”.
+
+[[File:Selecting Keyframe.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+This means that the key frame is selected and its values are editable.  So when a key frame is selected, the time bar is positioned over the key, and “KEY Movement” is showing, you can change the values of that key by manipulating the associated object in the world.  Go to the viewport and change the position of the chair.  Let’s move it out on the Y Axis by making sure the translation widget is active and then dragging it some distance away from the table like this:
+
+[[File:Chair YAxis Move.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+You’ll notice a yellow dotted track has appeared.  This is showing its 3D trajectory from the first key frame to the last one.  It’s the path in which the chair is traveling between the two positions.   Now, add a little rotation to the chair.  Make sure the rotation widget is active and turn the chair on its Z axis.  Again, make sure that the key frame is selected and active:
+
+[[File:Rotate Chair Axis.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Alright, now that you have the two key frames set, click in the Matinee window to make it active and press “'''Play'''” in the toolbar (or K on the keyboard).  You’ll see the chair now slide from the position in the first key frame to the position of the last key frame in the Matinee.  This is the most basic function in Matinee - manipulating the position of an object in the world over time.  Matinee is coordinating this object and whatever else you have added to it over the timeframe set within it.  It’s what makes Matinee a powerful tool not just for cinematics, but gameplay functions including doors, platforms, environment/atmosphere items, etc.
+Now that you’ve done this with the first chair, do the exact same for the second chair in the level.
+Add a Group Track for the chair named Chair_2 and animate it, translating from a point away from the table to a final position at the table, where the chair was located prior to moving it.  You should then see your viewport and matinee looking similar to this below:
+
+[[File:Animate Second Chair.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+[[File:Second Chair Movement Track.jpg|thumb|left|1024px]]
+&lt;BR Clear=ALL>
+
+When you scrub to the end of the Matinee, it should look like this:
+
+[[File:ChairMatinee Scrubbed.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+==Adding Camera Actors to Matinee==
+
+Let’s add a camera to the scene.  Click on the Camera Icon in the Toolbar at the top of the Matinee.  A requester will appear asking you to name the Group.  Call it “Camera_1”. 
+
+[[File:New Camera Add.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+A new Camera Group will appear called “Camera_1” and will already contain a Movement and FOV Track for the camera (we won’t use the FOV track for now).  A Camera Actor will also appear in the level along with a preview screen for the camera’s POV in the viewport.
+
+[[File:New Camera Group.jpg|thumb|left|1024px]]
+&lt;BR Clear=ALL>
+
+[[File:Place Camera Actor.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+The new camera group works the same way as the Chair groups you created.  The best part is that you can manipulate the camera position through the view of the camera lens.  To do that, click on the small camera shaped icon next to the “Camera_1” label in its Group title bar.  This is the “'''Lock View'''” icon and will turn yellow when it’s enabled.
+
+[[File:LockView.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Now you are viewing the Matinee through the lens of that camera.  You can actually do this with any group, but the camera makes best use of this.  Let’s position the camera on the first key frame of its movement track.  Select the key frame at 0.00 to make it editable.  Now go to the viewport and manipulate the view to frame up the table similar to what you see below.  Remember that you are actually moving and positioning the camera through the lens and won’t see it in the viewport.  You ARE the camera at this point.
+
+[[File:You ARE the Camera.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Now let’s add an ending key frame and position for the camera.  Let’s try something a little different.  First, move the time bar to 4.50 seconds on the timeline.  Then, click on the Movement Track in the “Camera_1” group.
+
+[[File:Cam1 Movetrack.jpg|thumb|left|1024px]]
+&lt;BR Clear=ALL>
+
+Go the viewport and position the camera to the final camera position, framing up the table and chairs.
+
+[[File:Final CameraFrame.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Now go back to Matinee and click the Movement Track in the “Camera_1” group.  This now makes that track active and you can add a new key frame at the time bar position.  Click “'''Add Key'''” or '''Enter''' on the keyboard.  A new key frame will appear with the current values of the camera’s position in the viewport.
+
+[[File:Add Key Camera.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Now scrub the time bar in the Matinee and you’ll see the camera motion along with the chairs animating in the scene.  Rewind the sequence to the beginning and select “'''Play'''” to see it play from start to finish.
+
+The camera animation you have done here is the same as what you would use for a camera fly-through in your gameplay level.  You can use as many keys as you need and extend the Matinee out however long you want.  Again, we’re just scratching the surface with what you can do with cameras in Matinee.
+
+==Creating a Director Group and Blueprint Connections==
+
+For the Matinee to be visible in PIE and in game, we need to do two more things.
+We need to create a new Group called a Director Group.  Right click in the black area just below the Camera_1 Group and the menu will appear.  Select the one listed at the bottom - “Add New Director Group”.
+
+[[File:New Director Group.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+A new window appears called '''Director Track View'''.  In it is a new Group called “DirGroup” and it contains one track called the '''Director'''.
+
+[[File:DirectorGroup Added.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+This Group serves the main function of controlling the visual and audio output of your Matinee.  There are options to add fade, slow motion, color scaling, and an audio master track (for controlling the overall volume and pitch of the Matinee sounds).  The most important function of the Director Track is to display which camera group is chosen to be seen at a particular time in the sequence.  This is important once you start creating cinematic scenes involving multiple camera shots and you need to cut from one view to the next.  For now we’re only concerned with one camera shot, so let’s put in a key frame to make that group active.
+
+Click the Lock View icon in the “DirGroup” title bar to lock the editor view to the group.  Move the time bar to 0.00 in the timeline and the Click on the Director track under DirGroup.
+
+Now that the track is active, click “Add Key” or Enter on the keyboard to place a key frame.  A requestor will pop up asking you to which group you want to cut.  Choose “Camera_1” and click '''OK'''.
+
+[[File:Director Camera Select.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+A new key frame will appear with a colored box to the right of it that is labeled “Camera_1 (Shot_0010)”.  This means the Camera_1 group will now be the viewed group all through the duration of the Matinee.  You can add a new key frame at any point after that and cut to another camera if it’s available.  This is how you switch between camera shots or angles during the progression of a Matinee.  We’ll dive more into this during another tutorial.
+
+Your Director Track and entire Matinee should look like this below:
+
+[[File:Director Desired Outcome.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Now, play the Matinee from the beginning.  You’ll see that it plays all the way through while viewing through Camera_1.  You should see the camera motion and the chairs moving all at the same time.
+
+[[File:Matinee Playthrough.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+This is great for previewing in the viewport while working in the Matinee interface, but what about playing it in a game?  Well, we need to add some function to Blueprint in order to make that happen.
+First, go to the main editor window click on the Blueprints Icon.  Select Open Level Blueprint from the drop down menu.
+
+[[File:Open Level Blueprint.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+With the Level Blueprint window open, find the Matinee object in the world and select it.
+
+[[File:Select Matinee Sprite.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Go to the Blueprints window and right-click in the EventGraph area to bring up the actions window.  In the search bar at the top, type in the word “Play”.  You should see a filtered list appear and the word Play highlighted under the Cinematic section.  Click on this selection. 
+
+[[File:Blueprint PlayNode.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+A Play node should appear with the Target Matinee Actor already connected.
+
+[[File:A Wild PlayNode Appears.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+You only need one more node to make this work.  Now right click again in the EventGraph and bring the actions window up again.  In the search bar type “Begin”.   At the bottom of the list under Actions will be a choice called “Event Begin Play”. 
+
+[[File:BeginPlay Event.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Choose this and a new node will appear.
+
+[[File:BeginPlay Appears.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+Connect this Event Begin Play node to the Cinematic Play node and then click the “Compile” icon in the top left of the Blueprint window.
+
+[[File:Connect the nodes.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+You’re now ready to see this trigger in game mode.  Now, just click on the “Play” icon in the main editor window, and you will see your Matinee sequence play from beginning to end in the viewport window.  If Matinee is open, you might get a request to close it before it will let you play.  Click yes, and the editor will proceed with closing Matinee and playing the level in the viewport.
+
+[[File:Play the Movie.jpg|thumb|left|940px]]
+&lt;BR Clear=ALL>
+
+So there is your first Matinee sequence, animating objects and viewing camera shots playing real-time in the editor.  This was just a tutorial to get you going as there is a lot more to learn with this tool.  Be sure to check out the forums and send in any questions you have!
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Matinee_Basics:_Creating_Your_First_Matinee_Sequence" title="Matinee Basics: Creating Your First Matinee Sequence">Matinee Basics: Creating Your First Matinee Sequence</a>.</p>
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Matinee_Basics:_Creating_Your_First_Matinee_Sequence">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Matinee_Basics:_Creating_Your_First_Matinee_Sequence</a>"						</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b48461a8a6519d83"><meta name="worker" content="206"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="https://mediawikiv2-website-prod05.ol.epicgames.net/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":89});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpcVlFA","queueTime":0,"applicationTime":131,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

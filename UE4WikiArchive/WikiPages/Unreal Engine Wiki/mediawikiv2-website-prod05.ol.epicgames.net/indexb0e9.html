@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Entry_Level_Guide_to_UE4_C%2B%2B_RUS&oldid=803 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:14:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>Entry Level Guide to UE4 C++ RUS - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Entry_Level_Guide_to_UE4_C++_RUS","wgTitle":"Entry Level Guide to UE4 C++ RUS","wgCurRevisionId":803,"wgRevisionId":803,"wgArticleId":401,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials","Code","Community Created Content"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Entry_Level_Guide_to_UE4_C++_RUS","wgRelevantArticleId":401,"wgRequestId":"bf782aa1d62908d72fbc99cb","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load9239.css?debug=false&amp;lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Entry_Level_Guide_to_UE4_C_RUS rootpage-Entry_Level_Guide_to_UE4_C_RUS skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-08a23efcd19f60be7"><meta name="worker" content="170"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Entry_Level_Guide_to_UE4_C%2B%2B_RUS&oldid=803 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:14:08 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Entry+Level+Guide+to+UE4+C%2B%2B+RUS&amp;returntoquery=oldid%3D803" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Entry_Level_Guide_to_UE4_C%2B%2B_RUS" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Entry_Level_Guide_to_UE4_C%2B%2B_RUS&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Entry_Level_Guide_to_UE4_C%2B%2B_RUS">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Entry_Level_Guide_to_UE4_C%2B%2B_RUS&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Entry_Level_Guide_to_UE4_C%2B%2B_RUS&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Entry Level Guide to UE4 C++ RUS</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Rating&amp;action=edit&amp;redlink=1" class="new" title="Template:Rating (page does not exist)">Template:Rating</a>
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.9E.D0.B1.D0.B7.D0.BE.D1.80"><span class="tocnumber">1</span> <span class="toctext">Обзор</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A1_.D1.87.D0.B5.D0.B3.D0.BE_.D0.BB.D1.83.D1.87.D1.88.D0.B5_.D0.BD.D0.B0.D1.87.D0.B0.D1.82.D1.8C_.D0.B8.D0.B7.D1.83.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_UE4_C.2B.2B_.3F"><span class="tocnumber">2</span> <span class="toctext">С чего лучше начать изучение UE4 C++ &#160;?</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#ClientMessage"><span class="tocnumber">2.1</span> <span class="toctext">ClientMessage</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#PlayerController_.D0.B2.D1.81.D1.82.D1.80.D0.B5.D1.87.D0.B0.D0.B5.D1.82.D1.81.D1.8F_.D0.BF.D0.BE.D0.B2.D1.81.D1.8E.D0.B4.D1.83"><span class="tocnumber">2.2</span> <span class="toctext">PlayerController встречается повсюду</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.A7.D1.82.D0.BE_.D1.82.D0.B0.D0.BA.D0.BE.D0.B5_.28-.3E.29.2C_.28_.29.2C_.28::.29_.3F"><span class="tocnumber">3</span> <span class="toctext">Что такое (-&gt;), ( ), (::)&#160;?</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#.28-.3E.29_.D0.B8_.28..29"><span class="tocnumber">3.1</span> <span class="toctext">(-&gt;) и (.)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#.D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80"><span class="tocnumber">3.1.1</span> <span class="toctext">Пример</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#.D0.98.D1.82.D0.BE.D0.B3"><span class="tocnumber">3.1.2</span> <span class="toctext">Итог</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="#.D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.28::.29"><span class="tocnumber">3.2</span> <span class="toctext">Использование (::)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#.D0.94.D0.BB.D1.8F_.D1.87.D0.B5.D0.B3.D0.BE_.D1.8D.D1.82.D0.BE.3F"><span class="tocnumber">3.2.1</span> <span class="toctext">Для чего это?</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#.D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80_2"><span class="tocnumber">3.2.2</span> <span class="toctext">Пример</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#.D0.95.D1.81.D0.BB.D0.B8_.D0.B1.D1.8B_.D0.BD.D0.B5_.28::.29"><span class="tocnumber">3.2.3</span> <span class="toctext">Если бы не (::)</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#.D0.98.D1.82.D0.BE.D0.B3_2"><span class="tocnumber">3.2.4</span> <span class="toctext">Итог</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#T"><span class="tocnumber">4</span> <span class="toctext">T</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#.D0.9E.D0.B1.D1.89.D0.B0.D1.8F_.D0.A1.D1.81.D1.8B.D0.BB.D0.BA.D0.B0"><span class="tocnumber">4.1</span> <span class="toctext">Общая Ссылка</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#.D0.9F.D1.80.D0.B5.D1.84.D0.B8.D0.BA.D1.81.D1.8B"><span class="tocnumber">5</span> <span class="toctext">Префиксы</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#EPIC.2C_.D0.9E.D1.84.D0.B8.D1.86.D0.B8.D0.B0.D0.BB.D1.8C.D0.BD.D0.B0.D1.8F_.D0.B4.D0.BE.D0.BA.D1.83.D0.BC.D0.B5.D0.BD.D1.82.D0.B0.D1.86.D0.B8.D1.8F_.D0.BF.D0.BE_.D0.BA.D0.BB.D0.B0.D1.81.D1.81.D0.B0.D0.BC"><span class="tocnumber">5.1</span> <span class="toctext">EPIC, Официальная документация по классам</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#G"><span class="tocnumber">5.2</span> <span class="toctext">G</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="#.D0.A5.D0.BE.D1.80.D0.BE.D1.88.D0.BE.2C_.D1.82.D0.B0.D0.BA_.D1.87.D1.82.D0.BE_.D0.B2_.D0.B4.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B8.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D0.BE.D1.81.D1.82.D0.B8_.D0.BE.D0.B7.D0.BD.D0.B0.D1.87.D0.B0.D0.B5.D1.82_T_.3F"><span class="tocnumber">6</span> <span class="toctext">Хорошо, так что в действительности означает T&#160;?</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#.D0.A3.D0.BA.D0.B0.D0.B7.D0.B0.D1.82.D0.B5.D0.BB.D0.B8"><span class="tocnumber">7</span> <span class="toctext">Указатели</span></a>
+<ul>
+<li class="toclevel-2 tocsection-21"><a href="#.D0.92.D1.81.D0.B5.D0.B3.D0.B4.D0.B0_.D0.BF.D1.80.D0.BE.D0.B2.D0.B5.D1.80.D1.8F.D0.B9.D1.82.D0.B5_.D0.B2.D0.B0.D1.88.D0.B8_.D1.83.D0.BA.D0.B0.D0.B7.D0.B0.D1.82.D0.B5.D0.BB.D0.B8"><span class="tocnumber">7.1</span> <span class="toctext">Всегда проверяйте ваши указатели</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#.D0.A0.D0.B0.D0.B7.D1.8B.D0.BC.D0.B5.D0.BD.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_.D1.83.D0.BA.D0.B0.D0.B7.D0.B0.D1.82.D0.B5.D0.BB.D0.B5.D0.B9_.28.D0.9F.D0.BE.D0.BB.D1.83.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B4.D0.BE.D1.81.D1.82.D1.83.D0.BF.D0.B0.29"><span class="tocnumber">7.2</span> <span class="toctext">Разыменования указателей (Получение доступа)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-23"><a href="#.D0.A0.D0.B0.D0.B7.D1.8B.D0.BC.D0.B5.D0.BD.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_.D1.81_.D0.BF.D0.BE.D0.BC.D0.BE.D1.89.D1.8C.D1.8E_.28.2A.29"><span class="tocnumber">7.2.1</span> <span class="toctext">Разыменования  с помощью (*)</span></a></li>
+<li class="toclevel-3 tocsection-24"><a href="#.D0.A0.D0.B0.D0.B7.D1.8B.D0.BC.D0.B5.D0.BD.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_.D1.81_.D0.BF.D0.BE.D0.BC.D0.BE.D1.89.D1.8C.D1.8E_.28-.3E.29"><span class="tocnumber">7.2.2</span> <span class="toctext">Разыменования  с помощью (-&gt;)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-25"><a href="#.D0.97.D0.B0.D1.87.D0.B5.D0.BC_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D1.82.D1.8C_.D1.83.D0.BA.D0.B0.D0.B7.D0.B0.D1.82.D0.B5.D0.BB.D0.B8.3F"><span class="tocnumber">7.3</span> <span class="toctext">Зачем использовать указатели?</span></a>
+<ul>
+<li class="toclevel-3 tocsection-26"><a href="#.D0.94.D0.BE.D1.81.D1.82.D1.83.D0.BF_.D0.BA_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D0.BC_.D0.B8.D0.B7.D0.B4.D0.B0.D0.BB.D0.B5.D0.BA.D0.B0"><span class="tocnumber">7.3.1</span> <span class="toctext">Доступ к данным издалека</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#.D0.94.D0.BE.D1.81.D1.82.D1.83.D0.BF_.D0.BA_.D0.BE.D0.B3.D1.80.D0.BE.D0.BC.D0.BD.D1.8B.D0.BC_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BC.D0.B0.D0.BC_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85_.D0.B2_.D0.BB.D1.8E.D0.B1.D0.BE.D0.B9_.D0.BC.D0.BE.D0.BC.D0.B5.D0.BD.D1.82"><span class="tocnumber">7.3.2</span> <span class="toctext">Доступ к огромным объемам данных в любой момент</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="#.D0.91.D1.83.D0.B4.D1.8C.D1.82.D0.B5_.D0.B2_.D0.BA.D1.83.D1.80.D1.81.D0.B5_.D0.B8.D0.B7.D0.BC.D0.B5.D0.BD.D0.B5.D0.BD.D0.B8.D0.B9_.D0.B2_.D1.80.D0.B5.D0.B0.D0.BB.D1.8C.D0.BD.D0.BE.D0.BC_.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.B8"><span class="tocnumber">7.3.3</span> <span class="toctext">Будьте в курсе изменений в реальном времени</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-29"><a href="#.D0.9F.D0.B5.D1.80.D0.B5.D0.B4.D0.B0.D1.87.D0.B0_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85_.D0.BF.D0.BE_.D1.81.D1.81.D1.8B.D0.BB.D0.BA.D0.B5"><span class="tocnumber">7.4</span> <span class="toctext">Передача данных по ссылке</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-30"><a href="#.D0.A1.D0.B2.D1.8F.D0.B7.D0.B0.D0.BD.D0.BD.D1.8B.D0.B9_.D1.83.D1.80.D0.BE.D0.BA_.D0.BE.D1.82_Epic"><span class="tocnumber">8</span> <span class="toctext">Связанный урок от Epic</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#.D0.98.D1.82.D0.BE.D0.B3_3"><span class="tocnumber">9</span> <span class="toctext">Итог</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.9E.D0.B1.D0.B7.D0.BE.D1.80">Обзор</span></h2>
+<pre> <i>Автор</i> <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User:Rama" title="User:Rama">Rama</a> (<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User_talk:Rama" title="User talk:Rama">talk</a>)
+ <i>Переводчик</i> <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User:OrcParty&amp;action=edit&amp;redlink=1" class="new" title="User:OrcParty (page does not exist)">OrcParty</a> (<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User_talk:OrcParty&amp;action=edit&amp;redlink=1" class="new" title="User talk:OrcParty (page does not exist)">talk</a>)
+ <i>Редактура</i> <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User:Overdozen&amp;action=edit&amp;redlink=1" class="new" title="User:Overdozen (page does not exist)">Overdozen</a>(<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User_talk:Overdozen&amp;action=edit&amp;redlink=1" class="new" title="User talk:Overdozen (page does not exist)">talk</a>), <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User:Pirog&amp;action=edit&amp;redlink=1" class="new" title="User:Pirog (page does not exist)">Pirog</a> (<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User_talk:Pirog&amp;action=edit&amp;redlink=1" class="new" title="User talk:Pirog (page does not exist)">talk</a>)
+ <b><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Entry_Level_Guide_to_UE4_C%2B%2B" title="Entry Level Guide to UE4 C++">Оригинальная Wiki(Original Wiki)</a></b>
+</pre>
+<p>Уважаемое сообщество!
+</p><p>Эта страница Вики посвящена снижению порога вхождения для новых программистов на C++ .
+</p><p>Если у Вас есть общие вопросы, Вы пытаетесь получить больше комфорта с C++, пожалуйста, задавайте их в дискуссионной вкладке.
+</p><p>Я и, надеюсь, другие смогут ответить на эти вопросы.
+</p>
+<h2><span class="mw-headline" id=".D0.A1_.D1.87.D0.B5.D0.B3.D0.BE_.D0.BB.D1.83.D1.87.D1.88.D0.B5_.D0.BD.D0.B0.D1.87.D0.B0.D1.82.D1.8C_.D0.B8.D0.B7.D1.83.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_UE4_C.2B.2B_.3F">С чего лучше начать изучение UE4 C++ &#160;?</span></h2>
+<p>Лично я рекомендую начать с расширения класса PlayerController, а затем сделать Blueprint из него.
+</p><p>Потом Вы сможете указать свой пользовательский PlayerController в вашем Game Mode Class.
+</p><p>У меня есть урок на эту тему:
+</p><p><b><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Game_Mode,_Linking_to_Player_Controller_Blueprint_in_C%2B%2B" class="mw-redirect" title="Game Mode, Linking to Player Controller Blueprint in C++">Game Mode, Linking to Player Controller Blueprint</a></b>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="ClientMessage">ClientMessage</span></h3>
+<p>Когда Вы изучаете C ++, Вы должны быть в состоянии дать себе обратную связь, о том, что функции работают, алгоритмы получают информацию, и о том что разные части кода на самом деле отрабатываются.
+</p><p><br />
+Вы можете использовать логирование для этого, но также можно использовать ClientMessage!
+</p><p>Мне нравится ClientMessage, потому что  <i> 'всё, что Вы должны сделать, это нажать ~ или другую клавишу, чтобы открыть консоль' </i> и Ваша обратная связь появится тут.
+</p><p>Когда только Вы начинаете, важно иметь обратную связь, чтобы знать, что сделали всё правильно и где части кода
+работают неправильно, или просто не работают вовсе!
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">ClientMessage</span><span class="p">(</span><span class="s">&quot;Да эта функция работает!&quot;</span><span class="p">);</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">ClientMessage</span><span class="p">(</span><span class="s">&quot;Значения переменой: &quot;</span><span class="p">);</span>
+<span class="n">ClientMessage</span><span class="p">(</span><span class="n">FString</span><span class="o">::</span><span class="n">SanitizeFloat</span><span class="p">(</span><span class="n">TheFloat</span><span class="p">));</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">ClientMessage</span><span class="p">(</span><span class="s">&quot;Текущее значения переменной: &quot;</span><span class="p">);</span>
+<span class="n">ClientMessage</span><span class="p">(</span><span class="n">FString</span><span class="o">::</span><span class="n">SanitizeFloat</span><span class="p">(</span><span class="n">TheFloat</span><span class="p">));</span>
+</pre></div>
+<h3><span class="mw-headline" id="PlayerController_.D0.B2.D1.81.D1.82.D1.80.D0.B5.D1.87.D0.B0.D0.B5.D1.82.D1.81.D1.8F_.D0.BF.D0.BE.D0.B2.D1.81.D1.8E.D0.B4.D1.83">PlayerController встречается повсюду</span></h3>
+<p>Фактически в любой игре будет  PlayerController, так что это хорошая точка входа в мир UE4 C++&#160;:)
+</p>
+<h2><span class="mw-headline" id=".D0.A7.D1.82.D0.BE_.D1.82.D0.B0.D0.BA.D0.BE.D0.B5_.28-.3E.29.2C_.28_.29.2C_.28::.29_.3F">Что такое (-&gt;), ( ), (::)&#160;?</span></h2>
+<p><i> Я видел, что в C++ мы используем дефис со стрелкой (-&gt;), а не точку, как в других языках (.). Но я также видел использование двойных двоеточий (::) которые я не понимаю. Вы можете, пожалуйста, объяснить- что делают с помощью этих символов в C++? Какая разница между (-&gt;) и (::)&#160;?</i>
+</p><p><i> Например, UnrealEdEngine.cpp (\UnrealEngine\Engine\Source\Editor\UnrealEd\Private), Вы можете увидеть функции UUnrealEdEngine&#160;::Init в строке 26. Почему эта функция использует двойное двоеточие? И внутри этой функции я вижу Super::Init(InEngineLoop). </i>
+</p><p><i> Я ожидал увидеть Super-&gt;Init(InEngineLoop), но вместо него двойное двоеточие. И внутри этой функции большинство вызовов с помощью двойного двоеточия. Поэтому пожалуйста: объясните разницу между (::) и (-&gt;) и (.)</i>.
+</p>
+<h3><span class="mw-headline" id=".28-.3E.29_.D0.B8_.28..29">(-&gt;) и (.)</span></h3>
+<p>Простым языком:
+</p><p>(-&gt;) означает, что это переменная, указывающая на данные. То есть переменная является ссылкой на контейнер, хранящий данные.
+</p><p>Это означает, что(.) это прямой доступ к реальным данным, в то время как (-&gt;) это косвенная ссылка на данные, которые могут и не существовать на самом деле.
+</p><p>То есть (-&gt;), может указывать на хранилище (контейнер) данных, которого на самом деле не существует.
+</p><p>Таким образом, Вы всегда должны проверять такие переменные!
+</p>
+<h4><span class="mw-headline" id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80">Пример</span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FVector</span><span class="o">*</span> <span class="n">LocationPtr</span><span class="p">;</span>
+<span class="n">FVector</span> <span class="n">Location</span><span class="p">;</span>
+
+<span class="n">Location</span><span class="p">.</span><span class="n">X</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="n">LocationPtr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">Location</span><span class="p">;</span>
+<span class="n">ClientMessage</span><span class="p">(</span><span class="n">FString</span><span class="o">::</span><span class="n">SanitizeFloat</span><span class="p">(</span><span class="n">LocationPtr</span><span class="o">-&gt;</span><span class="n">X</span><span class="p">));</span>
+</pre></div>
+<p>После создания LocationPtr не указывает на хранилище данных, её необходимо связать с фактическими данными.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">LocationPtr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">Location</span><span class="p">;</span>
+</pre></div>
+<p>Переменная Location, напротив, сама является данными и может быть доступна сразу, используя точку (.)
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">Location</span><span class="p">.</span><span class="n">X</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+</pre></div>
+<p>Теперь, когда мы связали LocationPtr, мы можем получить доступ к переменной X с помощью косвенной ссылки (-&gt;)
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">LocationPtr</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+<span class="n">ClientMessage</span><span class="p">(</span><span class="n">FString</span><span class="o">::</span><span class="n">SanitizeFloat</span><span class="p">(</span><span class="n">LocationPtr</span><span class="o">-&gt;</span><span class="n">X</span><span class="p">));</span>
+</pre></div>
+<pre> Значение выведенное на экран "5"
+</pre>
+<h4><span class="mw-headline" id=".D0.98.D1.82.D0.BE.D0.B3">Итог</span></h4>
+<p>Если у Вас есть нормальная переменная нужно использовать (.), Потому что переменная сама по себе- контейнер данных, так что Вы можете получить к нему доступ в любое время.
+</p><p>Когда Вы используете указатель, который является косвенной ссылкой, Вы не можете быть уверены, что указываете на существующие данные, поэтому Вы должны это проверить:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">LocationPtr</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span> <span class="c1">//Переменная не указывала на что-либо</span>
+</pre></div>
+<p><br />
+Если указатель ссылается на фактическую переменную, Вы можете получить к ней доступ, воспользовавшись стрелкой (-&gt;).
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">LocationPtr</span><span class="o">-&gt;</span><span class="n">X</span><span class="p">;</span>
+</pre></div>
+<p><br />
+</p>
+<h3><span class="mw-headline" id=".D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.28::.29">Использование (::)</span></h3>
+<p>(::) говорит о пространстве имён (namespace) / или области видимости функции или переменой.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">UUnrealEdEngine</span><span class="o">::</span><span class="n">Init</span>
+</pre></div>
+<p>Это означает, что функция объявлена в классе UUnrealEdEngine.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">Super</span><span class="o">::</span><span class="n">Init</span><span class="p">(</span><span class="n">InEngineLoop</span><span class="p">).</span>
+</pre></div>
+<p>Так как функция инициализации является виртуальной, Вы можете вызвать версию функции из родительского класса (и Вы должны это сделать!)
+</p><p>Super означает родительский класс UUnrealEdEngine.
+</p>
+<h4><span class="mw-headline" id=".D0.94.D0.BB.D1.8F_.D1.87.D0.B5.D0.B3.D0.BE_.D1.8D.D1.82.D0.BE.3F">Для чего это?</span></h4>
+<p>У Вас есть огромная власть и свобода в C++!
+</p><p>Это, возможно, то, что делает его немного более сложным, для изучения&#160;:)
+</p><p>Вы можете объявить функции и переменные в любом месте в C++, поэтому используются (::) чтобы разграничить области: различные классы могут иметь переменные и функции с тем же именем, но при этом компилятор их будет различать.
+</p>
+<h4><span class="mw-headline" id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80_2">Пример</span></h4>
+<p>Например, у Вас есть классы AMyTree и AMyFlower.
+</p><p>AMyTree хочется иметь функцию GetLocation (), так же как и в AMyFlower.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FVector</span> <span class="nf">GetLocation</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+</pre></div>
+<p>Однако в C ++, Вы работаете на очень низком уровне, что означает, что Вы можете объявить функции и переменные в глобальном пространстве имён.
+</p><p>Если Вы просто объявите переменную или функцию вне класса(class) или структуры(struct) или пространства имен(namespace),
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">static</span> <span class="k">const</span> <span class="n">FVector</span> <span class="n">MyGlobalVector</span> <span class="o">=</span> <span class="n">FVector</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">16</span><span class="p">);</span>
+<span class="n">FORCEINLINE</span> <span class="kt">void</span> <span class="nf">MyVeryGlobalFunction</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="c1">//что то делает</span>
+<span class="p">}</span>
+</pre></div>
+<p>то тогда эти функции и переменные будут объявлены в глобальном пространстве имён и будут вызываться везде, где бы они не использовались.
+</p><p>Это на самом деле очень полезно для <b><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Operator_Overloads_in_UE4_C%2B%2B&amp;action=edit&amp;redlink=1" class="new" title="Operator Overloads in UE4 C++ (page does not exist)"> C++ Operators</a></b>!
+Однако, это вызывает проблемы для AMyTree и AMyFlower, где в обоих классах требуется функция GetLocation ()!
+Если Вы не будете использовать (::), то компилятор не сможет различить GetLocation () для AMyTree  и для AMyFlower при компиляции!
+Используя (::) Вы говорите компилятору: какая версия функции для какого класса.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FVector</span> <span class="n">AMyFlower</span><span class="o">::</span><span class="n">GetLocation</span><span class="p">()</span> <span class="k">const</span>
+<span class="p">{</span>
+	<span class="c1">//один код</span>
+<span class="p">}</span>
+<span class="n">FVector</span> <span class="n">AMyTree</span><span class="o">::</span><span class="n">GetLocation</span><span class="p">()</span> <span class="k">const</span>
+<span class="p">{</span>
+	<span class="c1">//другой код</span>
+<span class="p">}</span>
+</pre></div>
+<h4><span class="mw-headline" id=".D0.95.D1.81.D0.BB.D0.B8_.D0.B1.D1.8B_.D0.BD.D0.B5_.28::.29">Если бы не (::)</span></h4>
+<p>Если у нас не было (::) что бы объявлять области видимости переменных и функций, то каждое название в коде всего проекта должно было бы  быть уникальным. Вы не могли бы использовать функции с одинаковыми именами.
+</p>
+<h4><span class="mw-headline" id=".D0.98.D1.82.D0.BE.D0.B3_2">Итог</span></h4>
+<pre> Воспринимайте (::) как просто ярлык, говорящий Вам- какая функция или переменная принадлежит какому классу.
+</pre>
+<h2><span class="mw-headline" id="T">T</span></h2>
+<p><i> Что значит, Т? В таких случаях как TSharedRef, TWeakPtr, TArray и т.д. "</i>
+</p><p>Не допускайте, чтобы T запутала Вас!
+Воспринимать код с ней немного сложнее, так что постарайтесь игнорировать её для себя в таких ситуациях как этот:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">TArray</span>
+</pre></div>
+<p>..и просто читать следующим образом:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">Array</span>
+</pre></div>
+<p>Буква Т нужна, но это скорее заявление о типе класса- Array.
+Представьте себе: имена классов могут быть разных цветов, Т просто один цвет, или вкус класса в UE4.
+Но, если Вы пытаетесь прочитать код и если Вы не игнорировали ее, то буква Т может помешать пониманию- что делает сам класс. 
+</p>
+<h3><span class="mw-headline" id=".D0.9E.D0.B1.D1.89.D0.B0.D1.8F_.D0.A1.D1.81.D1.8B.D0.BB.D0.BA.D0.B0">Общая Ссылка</span></h3>
+<p>Еще один пример:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">TSharedRef</span>
+</pre></div>
+<p>Читая без T, мы видим  "Общая Ссылка" (SharedRef).
+Игнорируя T, Вы можете читать основной код значительно легче, чтобы получить четкое представление о значениях каждого класса.
+Просто убедитесь, что использовали T, когда Вы попытаетесь работать с классом&#160;:)
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D1.80.D0.B5.D1.84.D0.B8.D0.BA.D1.81.D1.8B">Префиксы</span></h2>
+<p><i>Зачем нужны дополнительные префиксы. Например</i> 
+</p>
+<ul><li>зачем F в FVector и FSourceControlStatePtr</li>
+<li>зачем  T в TSharedRef, TWeakPtr, TArray </li>
+<li>зачем  U в (я думаю это Unreal) UObject, UUnrealEdEngine</li>
+<li>зачем  G в GIsEditor, GSlowTaskOccurred</li>
+<li>и так далее...</li></ul>
+<p>За исключением G, это как цвета или вкусы классов в UE4.
+Каждая буква указывает на то, от какого класса унаследована та или иная сущность.
+</p>
+<h3><span class="mw-headline" id="EPIC.2C_.D0.9E.D1.84.D0.B8.D1.86.D0.B8.D0.B0.D0.BB.D1.8C.D0.BD.D0.B0.D1.8F_.D0.B4.D0.BE.D0.BA.D1.83.D0.BC.D0.B5.D0.BD.D1.82.D0.B0.D1.86.D0.B8.D1.8F_.D0.BF.D0.BE_.D0.BA.D0.BB.D0.B0.D1.81.D1.81.D0.B0.D0.BC">EPIC, Официальная документация по классам</span></h3>
+<p>Epic подробно рассказывает что означают данные префиксы:
+</p><p><a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Classes/index.html">Epic's Class Documentation</a>
+</p>
+<h3><span class="mw-headline" id="G">G</span></h3>
+<p>G означает «глобальный», и это метка показывает Вам, что Вы можете получить доступ к этим переменным в любом месте.
+</p>
+<h2><span class="mw-headline" id=".D0.A5.D0.BE.D1.80.D0.BE.D1.88.D0.BE.2C_.D1.82.D0.B0.D0.BA_.D1.87.D1.82.D0.BE_.D0.B2_.D0.B4.D0.B5.D0.B9.D1.81.D1.82.D0.B2.D0.B8.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D0.BE.D1.81.D1.82.D0.B8_.D0.BE.D0.B7.D0.BD.D0.B0.D1.87.D0.B0.D0.B5.D1.82_T_.3F">Хорошо, так что в действительности означает T&#160;?</span></h2>
+<p>В исходных кодах UE4, все типы данных имеют префикс указывающий на его категорию, например:
+Т используется для обозначения класса шаблона: TSharedRef, TWeakPtr, TArray и т.д.,- это всё шаблонные классы. 
+Префиксы позволяют легко отличать имена классов от имён переменных, поскольку имена переменных обычно не объявляются с префиксами в исходных кодах UE4 (одно исключение к этому правилу- имена логических переменных (bool), они начинаются с 'B').
+</p><p>В общем T даёт Вам понять две вещи:
+</p>
+<ol><li>Вы смотрите на название типа (не имя переменной).
+<ol><li>Этот тип данных является шаблоном класса.</li></ol></li></ol>
+<p>Так же есть и другие префиксы, которые можно найти в исходниках, например, U, A, S, I и F. Вы можете прочитать об их значениях здесь:
+</p><p><a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Programming/Development/CodingStandard/index.html#namingconventions">Epic's Naming Conventions</a>
+</p><p>Да, префикс перед именем типа выглядит несколько некрасиво. <a rel="nofollow" class="external autonumber" href="http://msdn.microsoft.com/en-us/library/aa260976(v=vs.60).aspx">[1]</a> ,но может быть гораздо хуже (Посмотрите 36-строчный фрагмент кода ближе к концу статьи).
+</p><p>В качестве объяснения, шаблонные классы это такие классы, которым можно определить "подтип" к "основному типу". 
+Для TArray, подтип может быть типом данных, которые буду хранится в нём, например:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">FString</span><span class="o">&gt;</span> <span class="n">MyBadVariableName</span><span class="p">;</span>
+</pre></div>
+<p>Это получился контейнер для ряда значений типа FString. Без шаблонных классов, Вам бы пришлось,"просто знать", что на самом деле массив "MyBadVariableName" содержит  переменные типа "FStrings", но благодаря шаблонным классам это знает и компилятор, и это хорошо, так что Вам не придется держать столько вещей в свое голове во время чтения магически-запутанного вуду кода вашего друга.
+</p><p>Вы можете больше прочитать о шаблонных классах здесь:
+</p><p><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Template_(C++)">Template (Wikipedia Article)</a>
+</p>
+<h2><span class="mw-headline" id=".D0.A3.D0.BA.D0.B0.D0.B7.D0.B0.D1.82.D0.B5.D0.BB.D0.B8">Указатели</span></h2>
+<p><i> Указатели (*) и ссылки (&amp;). Я с трудом понимаю как их использовать. Что они такое? Вы можете показать несколько примеров того, как использовать и где использовать и какие преимущества их использования&#160;? </i>
+</p><p>Это, пожалуй, самое главное что надо понять новичкам, чтобы действительно достичь прогресса в C++.
+Если у Вас есть четкое представление об указателях, то Вы должны быть счастливы от программирования в UE4 C++!
+Указатели чрезвычайно-мощные и немного опасные, потому что дают Вам силу, которая у них есть.
+</p>
+<pre> Указатели требуют, чтобы Вы аккуратно кодили. В свою очередь они дают Вам скорость и силу.
+</pre>
+<p>Указатель ссылается на адрес памяти, где хранятся фактические данные.
+Чтобы получить адрес памяти для указателя, нужно использовать (&amp;).
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FVector</span> <span class="n">Location</span> <span class="o">=</span> <span class="n">FVector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9000</span><span class="p">);</span>
+<span class="n">FVector</span><span class="o">*</span> <span class="n">LocationPtr</span><span class="p">;</span> <span class="c1">//LocationPtr в настоящее время указывает на ПУСТОЕ МЕСТО</span>
+
+<span class="n">LocationPtr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">Location</span><span class="p">;</span> <span class="c1">//LocationPtr теперь указывает на адрес памяти по которому хранится переменная &quot;Location&quot;</span>
+</pre></div>
+<h3><span class="mw-headline" id=".D0.92.D1.81.D0.B5.D0.B3.D0.B4.D0.B0_.D0.BF.D1.80.D0.BE.D0.B2.D0.B5.D1.80.D1.8F.D0.B9.D1.82.D0.B5_.D0.B2.D0.B0.D1.88.D0.B8_.D1.83.D0.BA.D0.B0.D0.B7.D0.B0.D1.82.D0.B5.D0.BB.D0.B8">Всегда проверяйте ваши указатели</span></h3>
+<p>Прежде чем пытаться получить доступ к данным, указатели должны быть связаны, Вы всегда должны проверять это:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">check</span><span class="p">(</span><span class="n">LocationPtr</span><span class="p">);</span>
+</pre></div>
+<p>или:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">LocationPtr</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+</pre></div>
+<p>Вы должны делать это, потому что Вы не можете быть уверены, что указатель всё ещё связан с действующим хранилищем данных.
+</p>
+<h3><span class="mw-headline" id=".D0.A0.D0.B0.D0.B7.D1.8B.D0.BC.D0.B5.D0.BD.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_.D1.83.D0.BA.D0.B0.D0.B7.D0.B0.D1.82.D0.B5.D0.BB.D0.B5.D0.B9_.28.D0.9F.D0.BE.D0.BB.D1.83.D1.87.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B4.D0.BE.D1.81.D1.82.D1.83.D0.BF.D0.B0.29">Разыменования указателей (Получение доступа)</span></h3>
+<p>После того как Вы убедились, что указатель действительно связан с достоверными данными, Вы можете разыменовать его, то есть получить к ним доступ.
+</p>
+<h4><span class="mw-headline" id=".D0.A0.D0.B0.D0.B7.D1.8B.D0.BC.D0.B5.D0.BD.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_.D1.81_.D0.BF.D0.BE.D0.BC.D0.BE.D1.89.D1.8C.D1.8E_.28.2A.29">Разыменования  с помощью (*)</span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FVector</span> <span class="n">NewVector</span> <span class="o">=</span> <span class="n">FVector</span><span class="o">::</span><span class="n">ZeroVector</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="n">LocationPtr</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">NewVector</span> <span class="o">=</span> <span class="o">*</span><span class="n">LocationPtr</span><span class="p">;</span> <span class="c1">//Разыменования указателей</span>
+<span class="p">}</span>
+</pre></div>
+<h4><span class="mw-headline" id=".D0.A0.D0.B0.D0.B7.D1.8B.D0.BC.D0.B5.D0.BD.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F_.D1.81_.D0.BF.D0.BE.D0.BC.D0.BE.D1.89.D1.8C.D1.8E_.28-.3E.29">Разыменования  с помощью (-&gt;)</span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">LocationPtr</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">float</span> <span class="n">XValue</span> <span class="o">=</span> <span class="n">LocationPtr</span><span class="o">-&gt;</span><span class="n">X</span><span class="p">;</span>
+</pre></div>
+<h3><span class="mw-headline" id=".D0.97.D0.B0.D1.87.D0.B5.D0.BC_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D1.82.D1.8C_.D1.83.D0.BA.D0.B0.D0.B7.D0.B0.D1.82.D0.B5.D0.BB.D0.B8.3F">Зачем использовать указатели?</span></h3>
+<ul><li> Указатели дают Вам прямой доступ к области памяти, которая может быть далеко-далеко от локального контекста в котором работает ваш код.</li>
+<li> Указатели также дают Вам возможность работать с огромными объёмами данных без создания копии этих данных.</li>
+<li> Указатели дают Вам живую связь, с динамическим обновлением данных, которые всегда будут актуальными, потому что указатель это косвенная ссылка, и её не надо менять, чтобы обновились данные.</li></ul>
+<h4><span class="mw-headline" id=".D0.94.D0.BE.D1.81.D1.82.D1.83.D0.BF_.D0.BA_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D0.BC_.D0.B8.D0.B7.D0.B4.D0.B0.D0.BB.D0.B5.D0.BA.D0.B0">Доступ к данным издалека</span></h4>
+<p>Скажем, у Вас есть персонаж, который является частью подуровня, который является частью мира, который является частью далекой Галактики.
+Чтобы фактически получить доступ к переменной "Броня" этого персонажа, Вам надо пройти через целый ряд гетеров (Gets), как то так:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">GetGalaxy</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetSolarSystem</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetPlanet</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetMainCharacter</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetCurrentArmor</span><span class="p">();</span>
+</pre></div>
+<p>Описанные выше операции являются дорогостоящими и тратят много процессорного времени, также это усложняет чтение кода.
+Код выше, однако, является способом доступа к текущей броне персонажа в далекой-далекой галактике.
+Было бы  не плохо сделать эту сложную операцию извлечения только один раз, и получить своего рода ссылку, своего рода <i> указатель </i> на фактические данные, для быстрого доступа:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FArmorStruct</span><span class="o">*</span> <span class="n">TheArmor</span> <span class="o">=</span> <span class="o">&amp;</span> <span class="n">GetGalaxy</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetSolarSystem</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetPlanet</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetMainCharacter</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetCurrentArmor</span><span class="p">();</span>
+</pre></div>
+<p>Теперь, чтобы получить данные о броне, Вам не придётся писать
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">GetGalaxy</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetSolarSystem</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetPlanet</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetMainCharacter</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetCurrentArmor</span><span class="p">().</span><span class="n">Durability</span><span class="p">;</span>
+<span class="n">GetGalaxy</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetSolarSystem</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetPlanet</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetMainCharacter</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetCurrentArmor</span><span class="p">().</span><span class="n">Color</span><span class="p">;</span>
+<span class="n">GetGalaxy</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetSolarSystem</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetPlanet</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetMainCharacter</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetCurrentArmor</span><span class="p">().</span><span class="n">Size</span><span class="p">;</span>
+</pre></div>
+<p>Такой код является одновременно запутанным и не экономным к процессорному времени, потому что то же самое придется делать и с другим персонажем другой расы в другой галактике.
+</p><p>Вместо этого Вы можете написать:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">//Всегда проверяйте ваши указатели </span>
+<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">TheArmor</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+<span class="n">TheArmor</span><span class="o">-&gt;</span><span class="n">Durability</span><span class="p">;</span>
+<span class="n">TheArmor</span><span class="o">-&gt;</span><span class="n">Color</span><span class="p">;</span>
+<span class="n">TheArmor</span><span class="o">-&gt;</span><span class="n">Size</span><span class="p">;</span>
+</pre></div>
+<p>Видите насколько это легче прочитать?
+Но подождите, это еще не все!
+</p>
+<h4><span class="mw-headline" id=".D0.94.D0.BE.D1.81.D1.82.D1.83.D0.BF_.D0.BA_.D0.BE.D0.B3.D1.80.D0.BE.D0.BC.D0.BD.D1.8B.D0.BC_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BC.D0.B0.D0.BC_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85_.D0.B2_.D0.BB.D1.8E.D0.B1.D0.BE.D0.B9_.D0.BC.D0.BE.D0.BC.D0.B5.D0.BD.D1.82">Доступ к огромным объемам данных в любой момент</span></h4>
+<p>Указатели могут быть связаны со сравнительно-небольшим объемом данных, или с большим или даже с гигантским объемом данных!
+</p>
+<pre> Указатель, связывается с местом в памяти,
+ А фактический объем этой памяти может быть огромным!
+</pre>
+<p>Продолжая приведенный выше пример, можно спросить, "Почему я не могу просто создать копию переменной "Броня"&#160;?"
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FArmorStruct</span> <span class="n">ArmorVar</span> <span class="o">=</span> <span class="n">GetGalaxy</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetSolarSystem</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetPlanet</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetMainCharacter</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetCurrentArmor</span><span class="p">();</span>
+</pre></div>
+<p>Но что, если FArmorStruct содержит гигантское количество данных, и Вы хотите сделать это для 300 персонажей по всей галактике?
+Вы бы стали копировать данные много раз. Но данные уже есть в одном месте памяти.
+Зачем Вам копировать их несколько раз, тем самым дублируя данные?
+Указатели позволяют избежать этого! Вы можете просто указать на одну ячейку в памяти и получать доступ к ней в любое время.
+</p>
+<h4><span class="mw-headline" id=".D0.91.D1.83.D0.B4.D1.8C.D1.82.D0.B5_.D0.B2_.D0.BA.D1.83.D1.80.D1.81.D0.B5_.D0.B8.D0.B7.D0.BC.D0.B5.D0.BD.D0.B5.D0.BD.D0.B8.D0.B9_.D0.B2_.D1.80.D0.B5.D0.B0.D0.BB.D1.8C.D0.BD.D0.BE.D0.BC_.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.B8">Будьте в курсе изменений в реальном времени</span></h4>
+<p>Также как и в приведенном выше случае, когда Вы копировали данные брони, это уже не броня персонажа из другого мира.
+Вы потеряли живую связь с бронёй.
+Так что, если персонаж из другого мира решит изменить цвет брони, Вы не будете знать этого!
+Указатели дают знать Вам актуальные данные, потенциально большие объемы данных, и потребность в получении доступа только один раз.
+</p><p>Итак, еще раз, правильный путь:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FArmorStruct</span><span class="o">*</span> <span class="n">TheArmor</span> <span class="o">=</span> <span class="o">&amp;</span> <span class="n">GetGalaxy</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetSolarSystem</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetPlanet</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetMainCharacter</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetCurrentArmor</span><span class="p">();</span>
+</pre></div>
+<p>Теперь у Вас есть легкий доступ и обновляемая связь с данными, что находятся в далекой-далекой галактике, без необходимости дублировать данные.
+</p>
+<h3><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B5.D0.B4.D0.B0.D1.87.D0.B0_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85_.D0.BF.D0.BE_.D1.81.D1.81.D1.8B.D0.BB.D0.BA.D0.B5">Передача данных по ссылке</span></h3>
+<p>Еще одно применение ссылок для передачи данных в функции.
+Это особенно важно для очень больших объемов данных, которые Вы бы не хотели, копировать в контексте функции!
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">int32</span> <span class="n">AMyClass</span><span class="o">::</span><span class="n">GetArraySize</span><span class="p">(</span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">uint8</span><span class="o">&gt;&amp;</span> <span class="n">MyHugeBinaryArray</span><span class="p">)</span> <span class="k">const</span>
+<span class="p">{</span>
+	<span class="k">return</span> <span class="n">MyHugeBinaryArray</span><span class="p">.</span><span class="n">Num</span><span class="p">();</span> <span class="c1">//ты используешь (.) вместо (-&gt;), потому что проходишь по ссылке</span>
+<span class="p">}</span>
+</pre></div>
+<p>Если Вы не будете использовать ссылки, то будете копировать весь огромный массив, просто чтобы узнать, насколько он большой!
+</p>
+<pre> Проходите по ссылке, где это возможно, вместо передачи указателя. Это гораздо безопаснее&#160;:)
+</pre>
+<h2><span class="mw-headline" id=".D0.A1.D0.B2.D1.8F.D0.B7.D0.B0.D0.BD.D0.BD.D1.8B.D0.B9_.D1.83.D1.80.D0.BE.D0.BA_.D0.BE.D1.82_Epic">Связанный урок от Epic</span></h2>
+<p><b><a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Programming/QuickStart/index.html">Programming Quick Start</a></b>
+</p>
+<h2><span class="mw-headline" id=".D0.98.D1.82.D0.BE.D0.B3_3">Итог</span></h2>
+<p>Не стесняйтесь отправлять новые вопросы на вкладку Обсуждение!
+Я надеюсь, что это поможет Вам преодолеть входной барьер C++ и наслаждаться силой и красотой UE4 C++!
+</p><p>Перевод: <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User:OrcParty&amp;action=edit&amp;redlink=1" class="new" title="User:OrcParty (page does not exist)">OrcParty</a> (<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User_talk:OrcParty&amp;action=edit&amp;redlink=1" class="new" title="User talk:OrcParty (page does not exist)">talk</a>)
+Коррекция перевода и грамматики: <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User:Pirog&amp;action=edit&amp;redlink=1" class="new" title="User:Pirog (page does not exist)">Pirog</a> (<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User_talk:Pirog&amp;action=edit&amp;redlink=1" class="new" title="User talk:Pirog (page does not exist)">talk</a>)
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20200401004740
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.092 seconds
+Real time usage: 1.564 seconds
+Preprocessor visited node count: 395/1000000
+Preprocessor generated node count: 760/1000000
+Post‐expand include size: 20/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.003      1 -total
+100.00%    1.003      1 Template:Rating
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:401-0!canonical and timestamp 20200401004739 and revision id 803
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Entry_Level_Guide_to_UE4_C%2B%2B_RUS&amp;oldid=803">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Entry_Level_Guide_to_UE4_C%2B%2B_RUS&amp;oldid=803</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Code" title="Category:Code">Code</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Community_Created_Content" title="Category:Community Created Content">Community Created Content</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b971c4e90a55eae6"><meta name="worker" content="188"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.092","walltime":"1.564","ppvisitednodes":{"value":395,"limit":1000000},"ppgeneratednodes":{"value":760,"limit":1000000},"postexpandincludesize":{"value":20,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    1.003      1 -total","100.00%    1.003      1 Template:Rating"]},"cachereport":{"timestamp":"20200401004740","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":98});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":145,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

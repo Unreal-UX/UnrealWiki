@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/alex3dbros/ICUVent/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/alex3dbros/ICUVent/commits/master.atom"/>
+  <title>Recent Commits to ICUVent:master</title>
+  <updated>2020-03-30T21:14:56Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5b1d7f5505e555aab2f2c855b1a72dff289776b8</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commit/5b1d7f5505e555aab2f2c855b1a72dff289776b8"/>
+    <title>
+        Updated files to use nema 34 in the design
+    </title>
+    <updated>2020-03-30T21:14:56Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/18497341?s=30&amp;v=4"/>
+    <author>
+      <name>alex3dbros</name>
+      <uri>https://github.com/alex3dbros</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Updated files to use nema 34 in the design&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/76b032b452141612445282b8e8fa52e282df292c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commit/76b032b452141612445282b8e8fa52e282df292c"/>
+    <title>
+        Updated readme, will be using nema 34
+    </title>
+    <updated>2020-03-30T14:51:04Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/18497341?s=30&amp;v=4"/>
+    <author>
+      <name>alex3dbros</name>
+      <uri>https://github.com/alex3dbros</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Updated readme, will be using nema 34&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/573f221e6353e32930a1028e7f29ef9c3376caf7</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commit/573f221e6353e32930a1028e7f29ef9c3376caf7"/>
+    <title>
+        Changed the stepper library to have better control of the stepper
+    </title>
+    <updated>2020-03-30T10:59:49Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/18497341?s=30&amp;v=4"/>
+    <author>
+      <name>alex3dbros</name>
+      <uri>https://github.com/alex3dbros</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Changed the stepper library to have better control of the stepper&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8696332a4f72d68ffacbf86a780dcd8fd5806417</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commit/8696332a4f72d68ffacbf86a780dcd8fd5806417"/>
+    <title>
+        added python interface
+    </title>
+    <updated>2020-03-29T11:55:43Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/18497341?s=30&amp;v=4"/>
+    <author>
+      <name>alex3dbros</name>
+      <uri>https://github.com/alex3dbros</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;added python interface&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a9e030ceacf4a7cab686d539ea34a82045afe985</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commit/a9e030ceacf4a7cab686d539ea34a82045afe985"/>
+    <title>
+        Readme edit
+    </title>
+    <updated>2020-03-27T19:39:40Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/18497341?s=30&amp;v=4"/>
+    <author>
+      <name>alex3dbros</name>
+      <uri>https://github.com/alex3dbros</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Readme edit&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b288bb9ce06aa2c1a6914a7405fa61edeba0d6e2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commit/b288bb9ce06aa2c1a6914a7405fa61edeba0d6e2"/>
+    <title>
+        Added the controller for teensy 3.2
+    </title>
+    <updated>2020-03-27T18:52:12Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/18497341?s=30&amp;v=4"/>
+    <author>
+      <name>alex3dbros</name>
+      <uri>https://github.com/alex3dbros</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Added the controller for teensy 3.2
+
+The new controller support uart (Serial) commands formatted in Json like {&amp;quot;breathsPerMinute&amp;quot;:12, &amp;quot;airVol&amp;quot;:600, &amp;quot;ieRate&amp;quot;:2}
+
+I have also designed a venturi tube that&amp;#39;s going to be used for volume measurement.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/35767c6b67f9b694ba2ea673351c1b2f47cf2fb6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commit/35767c6b67f9b694ba2ea673351c1b2f47cf2fb6"/>
+    <title>
+        Replaced gear belt tensioner with bearings and a screw
+    </title>
+    <updated>2020-03-26T21:57:55Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/18497341?s=30&amp;v=4"/>
+    <author>
+      <name>alex3dbros</name>
+      <uri>https://github.com/alex3dbros</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Replaced gear belt tensioner with bearings and a screw&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c7b39e033fcea393d2c5b8bf9ed7be5d79078023</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commit/c7b39e033fcea393d2c5b8bf9ed7be5d79078023"/>
+    <title>
+        Readme Edit
+    </title>
+    <updated>2020-03-26T21:10:26Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/18497341?s=30&amp;v=4"/>
+    <author>
+      <name>alex3dbros</name>
+      <uri>https://github.com/alex3dbros</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Readme Edit&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ae5cf9df37e0765a0f18a8a0687841c9609f948b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commit/ae5cf9df37e0765a0f18a8a0687841c9609f948b"/>
+    <title>
+        Made the base middle hole larger, it was cumbersome to mount the belt
+    </title>
+    <updated>2020-03-26T21:08:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/18497341?s=30&amp;v=4"/>
+    <author>
+      <name>alex3dbros</name>
+      <uri>https://github.com/alex3dbros</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Made the base middle hole larger, it was cumbersome to mount the belt&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2d1ee39fe34b25c3e842b308c61f89d9e03717a2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commit/2d1ee39fe34b25c3e842b308c61f89d9e03717a2"/>
+    <title>
+        Added STL Files
+    </title>
+    <updated>2020-03-25T16:35:48Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/18497341?s=30&amp;v=4"/>
+    <author>
+      <name>alex3dbros</name>
+      <uri>https://github.com/alex3dbros</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Added STL Files&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2459ab8298c26aad96e78715bf12c91cf27f40db</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commit/2459ab8298c26aad96e78715bf12c91cf27f40db"/>
+    <title>
+        First commit
+    </title>
+    <updated>2020-03-25T15:06:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/18497341?s=30&amp;v=4"/>
+    <author>
+      <name>alex3dbros</name>
+      <uri>https://github.com/alex3dbros</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;First commit
+
+The software is done for debugging more, is not using controls a medic would use for breaths per minute etc.. planning to build a proper user interface&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1d23ee23121e632a289332996b51ce7e9bdfd0b1</id>
+    <link type="text/html" rel="alternate" href="https://github.com/alex3dbros/ICUVent/commit/1d23ee23121e632a289332996b51ce7e9bdfd0b1"/>
+    <title>
+        Initial commit
+    </title>
+    <updated>2020-03-25T13:53:06Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/18497341?s=30&amp;v=4"/>
+    <author>
+      <name>alex3dbros</name>
+      <uri>https://github.com/alex3dbros</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Initial commit&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

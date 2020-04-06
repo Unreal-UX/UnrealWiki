@@ -1,0 +1,24 @@
+diff --git a/Examples/Content/Scripts/helloRactive.js b/Examples/Content/Scripts/helloRactive.js
+index c92d770..cd0c234 100644
+--- a/Examples/Content/Scripts/helloRactive.js
++++ b/Examples/Content/Scripts/helloRactive.js
+@@ -3,6 +3,8 @@
+ let UMG = require('UMG')
+ let instantiator = require('instantiator')
+ let _ = require('lodash')
++let Ractive = require('ractive')
++Context.RunFile('ractive.js')
+ 
+ function GetPC() {
+     return PlayerController.C(GWorld.GetAllActorsOfClass(PlayerController).OutActors[0])
+diff --git a/Examples/Content/Scripts/ractive.js b/Examples/Content/Scripts/ractive.js
+index 7eb5778..93b9825 100644
+--- a/Examples/Content/Scripts/ractive.js
++++ b/Examples/Content/Scripts/ractive.js
+@@ -1,5 +1,5 @@
+ /*
+-active.js v0.7.3
++ractive.js v0.7.3
+ 	Sat Apr 25 2015 13:52:38 GMT-0400 (EDT) - commit da40f81c660ba2f09c45a09a9c20fdd34ee36d80
+ 
+ 	http://ractivejs.org

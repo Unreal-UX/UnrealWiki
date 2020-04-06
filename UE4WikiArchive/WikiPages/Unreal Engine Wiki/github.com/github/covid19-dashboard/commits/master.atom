@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/covid19-dashboard/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/covid19-dashboard/commits/master.atom"/>
+  <title>Recent Commits to covid19-dashboard:master</title>
+  <updated>2020-04-01T00:58:45Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2acb13e17220150b8e47af433c37ab225b3ec57e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/2acb13e17220150b8e47af433c37ab225b3ec57e"/>
+    <title>
+        [bot] refresh notebooks
+    </title>
+    <updated>2020-04-01T00:58:45Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/15368?s=30&amp;v=4"/>
+    <author>
+      <name>github-actions</name>
+      <uri>https://github.com/github-actions</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[bot] refresh notebooks&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c231391dd862f18aa99128c743d80e5781422065</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/c231391dd862f18aa99128c743d80e5781422065"/>
+    <title>
+        [bot] refresh notebooks
+    </title>
+    <updated>2020-03-31T20:32:12Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/15368?s=30&amp;v=4"/>
+    <author>
+      <name>github-actions</name>
+      <uri>https://github.com/github-actions</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[bot] refresh notebooks&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ecbc43cec564b3febe16d9ca57787dfc2feb400d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/ecbc43cec564b3febe16d9ca57787dfc2feb400d"/>
+    <title>
+        [bot] refresh notebooks
+    </title>
+    <updated>2020-03-31T16:45:04Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/15368?s=30&amp;v=4"/>
+    <author>
+      <name>github-actions</name>
+      <uri>https://github.com/github-actions</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[bot] refresh notebooks&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4350a0e420f6a6b47bce550db09fb98bf03fbe75</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/4350a0e420f6a6b47bce550db09fb98bf03fbe75"/>
+    <title>
+        Merge pull request #237 from idlesign/patch-1
+    </title>
+    <updated>2020-03-31T14:52:10Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1483922?s=30&amp;u=32e639cf2398fd1d723f0a728979d24e3996f4de&amp;v=4"/>
+    <author>
+      <name>hamelsmu</name>
+      <uri>https://github.com/hamelsmu</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #237 from idlesign/patch-1
+
+Estimating infected. Add Russia, Belarus, Ukraine&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/199516a2a66fc4617c49c76f4d50be6de0852902</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/199516a2a66fc4617c49c76f4d50be6de0852902"/>
+    <title>
+        Estimating infected. Add Russia, Belarus, Ukraine
+    </title>
+    <updated>2020-03-31T12:58:24Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/145644?s=30&amp;v=4"/>
+    <author>
+      <name>idlesign</name>
+      <uri>https://github.com/idlesign</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Estimating infected. Add Russia, Belarus, Ukraine&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e8494c5b25d149426253544abf213715e234d53f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/e8494c5b25d149426253544abf213715e234d53f"/>
+    <title>
+        [bot] refresh notebooks
+    </title>
+    <updated>2020-03-31T12:52:55Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/15368?s=30&amp;v=4"/>
+    <author>
+      <name>github-actions</name>
+      <uri>https://github.com/github-actions</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[bot] refresh notebooks&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b24fbb6e6c3427f9e854c3196bdb1411588792f3</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/b24fbb6e6c3427f9e854c3196bdb1411588792f3"/>
+    <title>
+        [bot] refresh notebooks
+    </title>
+    <updated>2020-03-31T08:34:43Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/15368?s=30&amp;v=4"/>
+    <author>
+      <name>github-actions</name>
+      <uri>https://github.com/github-actions</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[bot] refresh notebooks&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7ea0ff5f168a9f29bda0c5e77bc6f7f5ad7bdd35</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/7ea0ff5f168a9f29bda0c5e77bc6f7f5ad7bdd35"/>
+    <title>
+        [bot] refresh notebooks
+    </title>
+    <updated>2020-03-31T04:53:48Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/15368?s=30&amp;v=4"/>
+    <author>
+      <name>github-actions</name>
+      <uri>https://github.com/github-actions</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[bot] refresh notebooks&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/679699d95ef3c7824250c21092994e1e0e3fcd5c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/679699d95ef3c7824250c21092994e1e0e3fcd5c"/>
+    <title>
+        Update related.md
+    </title>
+    <updated>2020-03-31T01:06:18Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1483922?s=30&amp;u=32e639cf2398fd1d723f0a728979d24e3996f4de&amp;v=4"/>
+    <author>
+      <name>hamelsmu</name>
+      <uri>https://github.com/hamelsmu</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update related.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/dca7b42a2027b7312faf60fd5eb0eb130264197c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/dca7b42a2027b7312faf60fd5eb0eb130264197c"/>
+    <title>
+        [bot] refresh notebooks
+    </title>
+    <updated>2020-03-31T00:52:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/15368?s=30&amp;v=4"/>
+    <author>
+      <name>github-actions</name>
+      <uri>https://github.com/github-actions</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[bot] refresh notebooks&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/13f44419edcfc47c3f672989f2c075e4abeb1534</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/13f44419edcfc47c3f672989f2c075e4abeb1534"/>
+    <title>
+        Merge pull request #235 from vladpke/master
+    </title>
+    <updated>2020-03-30T21:40:56Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1483922?s=30&amp;u=32e639cf2398fd1d723f0a728979d24e3996f4de&amp;v=4"/>
+    <author>
+      <name>hamelsmu</name>
+      <uri>https://github.com/hamelsmu</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #235 from vladpke/master
+
+Adjusted chart height&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/51e1fe3cb6564897a689a0a3226c0d5860295f04</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/51e1fe3cb6564897a689a0a3226c0d5860295f04"/>
+    <title>
+        [bot] refresh notebooks
+    </title>
+    <updated>2020-03-30T20:48:09Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/15368?s=30&amp;v=4"/>
+    <author>
+      <name>github-actions</name>
+      <uri>https://github.com/github-actions</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[bot] refresh notebooks&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/faafa0757589feff197bff500fff2b77e663ece2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/faafa0757589feff197bff500fff2b77e663ece2"/>
+    <title>
+        Adjusted chart height
+    </title>
+    <updated>2020-03-30T20:22:52Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/1569786?s=30&amp;u=c25be2f84f7e6c1b44e04d6874c8354a2e332de0&amp;v=4"/>
+    <author>
+      <name>vladpke</name>
+      <uri>https://github.com/vladpke</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Adjusted chart height
+
+Adjusted chart height for improved visibility of the larger number of countries today.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b1248a10e92b8656fab79f9132351f8af75ee1de</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/b1248a10e92b8656fab79f9132351f8af75ee1de"/>
+    <title>
+        Merge pull request #234 from vladpke/master
+    </title>
+    <updated>2020-03-30T20:02:39Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1483922?s=30&amp;u=32e639cf2398fd1d723f0a728979d24e3996f4de&amp;v=4"/>
+    <author>
+      <name>hamelsmu</name>
+      <uri>https://github.com/hamelsmu</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #234 from vladpke/master
+
+Updated variables for urls in draft notebook to correct case&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e98fb6273798dc47ff9f280f7d1bbbf46bbcd3b1</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/e98fb6273798dc47ff9f280f7d1bbbf46bbcd3b1"/>
+    <title>
+        Added more distinctive colors to chart
+    </title>
+    <updated>2020-03-30T19:59:56Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/1569786?s=30&amp;u=c25be2f84f7e6c1b44e04d6874c8354a2e332de0&amp;v=4"/>
+    <author>
+      <name>vladpke</name>
+      <uri>https://github.com/vladpke</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Added more distinctive colors to chart&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a8c569b05e316d040c49b3810dd6e1efae8fb06e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/a8c569b05e316d040c49b3810dd6e1efae8fb06e"/>
+    <title>
+        Updated variables for urls to correct case
+    </title>
+    <updated>2020-03-30T19:55:19Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/1569786?s=30&amp;u=c25be2f84f7e6c1b44e04d6874c8354a2e332de0&amp;v=4"/>
+    <author>
+      <name>vladpke</name>
+      <uri>https://github.com/vladpke</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Updated variables for urls to correct case&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/065d1b2b5b1d6dc440568bf9c40e70729470dad1</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/065d1b2b5b1d6dc440568bf9c40e70729470dad1"/>
+    <title>
+        Merge pull request #3 from github/master
+    </title>
+    <updated>2020-03-30T19:50:57Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/1569786?s=30&amp;u=c25be2f84f7e6c1b44e04d6874c8354a2e332de0&amp;v=4"/>
+    <author>
+      <name>vladpke</name>
+      <uri>https://github.com/vladpke</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #3 from github/master
+
+Update from upstream&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9f49bfca1941ecd49f8a38e4b94040aebe0b6209</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/9f49bfca1941ecd49f8a38e4b94040aebe0b6209"/>
+    <title>
+        [bot] refresh notebooks
+    </title>
+    <updated>2020-03-30T16:34:53Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/15368?s=30&amp;v=4"/>
+    <author>
+      <name>github-actions</name>
+      <uri>https://github.com/github-actions</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[bot] refresh notebooks&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6de6c7c95e5d4b2c9a6c50ecae83ef0551e67f4a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/6de6c7c95e5d4b2c9a6c50ecae83ef0551e67f4a"/>
+    <title>
+        [bot] refresh notebooks
+    </title>
+    <updated>2020-03-30T12:55:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/15368?s=30&amp;v=4"/>
+    <author>
+      <name>github-actions</name>
+      <uri>https://github.com/github-actions</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[bot] refresh notebooks&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d20c7b0b38a019e38f0c5aa27593c0b94b656aa6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid19-dashboard/commit/d20c7b0b38a019e38f0c5aa27593c0b94b656aa6"/>
+    <title>
+        [bot] refresh notebooks
+    </title>
+    <updated>2020-03-30T08:38:18Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/15368?s=30&amp;v=4"/>
+    <author>
+      <name>github-actions</name>
+      <uri>https://github.com/github-actions</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[bot] refresh notebooks&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

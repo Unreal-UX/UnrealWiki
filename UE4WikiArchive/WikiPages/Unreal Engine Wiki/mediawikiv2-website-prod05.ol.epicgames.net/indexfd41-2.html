@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Creating_Vector_Fields_(Tutorial)&oldid=281 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:55:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>Creating Vector Fields (Tutorial) - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Creating_Vector_Fields_(Tutorial)","wgTitle":"Creating Vector Fields (Tutorial)","wgCurRevisionId":281,"wgRevisionId":281,"wgArticleId":140,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials","Community Created Content"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Creating_Vector_Fields_(Tutorial)","wgRelevantArticleId":140,"wgRequestId":"887edf2f3e687a4603c7e692","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Creating_Vector_Fields_Tutorial rootpage-Creating_Vector_Fields_Tutorial skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b48461a8a6519d83"><meta name="worker" content="170"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Creating_Vector_Fields_(Tutorial)&oldid=281 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:55:06 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Creating+Vector+Fields+%28Tutorial%29&amp;returntoquery=oldid%3D281" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Creating_Vector_Fields_(Tutorial)" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Creating_Vector_Fields_(Tutorial)&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Creating_Vector_Fields_(Tutorial)">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Creating_Vector_Fields_(Tutorial)&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Creating_Vector_Fields_(Tutorial)&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Creating Vector Fields (Tutorial)</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Authoring_Vector_fields"><span class="tocnumber">2</span> <span class="toctext">Authoring Vector fields</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#VectorayGen"><span class="tocnumber">3</span> <span class="toctext">VectorayGen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Creating_Vector_Fields_with_VectorayGen_and_Using_them_in_UE4"><span class="tocnumber">3.1</span> <span class="toctext">Creating Vector Fields with VectorayGen and Using them in UE4</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Maya_Fluids"><span class="tocnumber">4</span> <span class="toctext">Maya Fluids</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Installing_the_.27UE4_FX.27_Maya_shelf_and_FGA_Export_Script"><span class="tocnumber">4.1</span> <span class="toctext">Installing the 'UE4_FX' Maya shelf and FGA Export Script</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Setting_up_the_Maya_Fluid_Container"><span class="tocnumber">4.2</span> <span class="toctext">Setting up the Maya Fluid Container</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Emitting_Attributes_into_the_Container_and_Simulating"><span class="tocnumber">4.3</span> <span class="toctext">Emitting Attributes into the Container and Simulating</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Exporting_Velocity_Values_From_Maya_Fluid_Containers"><span class="tocnumber">4.4</span> <span class="toctext">Exporting Velocity Values From Maya Fluid Containers</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Importing_an_.FGA_File_into_UE4"><span class="tocnumber">4.5</span> <span class="toctext">Importing an .FGA File into UE4</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Setting_up_a_particle_system_with_a_Local_Vector_Field"><span class="tocnumber">4.6</span> <span class="toctext">Setting up a particle system with a Local Vector Field</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Local_Vector_Field_Module_Parameters"><span class="tocnumber">4.7</span> <span class="toctext">Local Vector Field Module Parameters</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>In UE4, a vector grid is a 3 dimensional grid sub-divided into individual volume pixels, or 'voxels,' with each voxel storing a velocity vector (in x, y and z). This grid is useful because Cascade can treat it as a field which can influence the motion of particles inside of it. It may help to think of a vector field as a volume in space which contains 'wind' that can affect particles which move through it.
+</p><p>Two types of vector fields exist: Local Vector fields, which live inside a particle system, and global vector fields which live in the world and may affect any particle systems located within its bounding box, if those particle system have the Global Vector Field module's Field Scale parameter set higher than 1.
+</p><p>The focus of this document is authoring a local vector field. 
+</p>
+<h2><span class="mw-headline" id="Authoring_Vector_fields">Authoring Vector fields</span></h2>
+<p>There is no way to create vector fields in UE4, however there are a few options that allow you to create them outside of the engine.
+</p>
+<ol><li> VectorayGen - A real time vector field generator made by JangaFX.</li>
+<li> Maya Fluids MEL script</li></ol>
+<p>Both of these options are detailed below.
+</p><p>You may author vector fields any way you like but VectorayGen is a straightforward way to generate vector fields, which are exported in the .FGA file (Fluid Grid ASCII) format. This file is a text table which you can easily edit by hand if needed. 
+</p><p>The other way is to use Maya fluids. To ease this process, we have written a MEL script which only exports velocity data from Maya's fluid containers and stores them as an .FGA file (Fluid Grid ASCII). Once again, this file is a text table which you can easily edit by hand if need be.
+</p><p><br />
+</p>
+<h1><span class="mw-headline" id="VectorayGen">VectorayGen</span></h1>
+<h2><span class="mw-headline" id="Creating_Vector_Fields_with_VectorayGen_and_Using_them_in_UE4">Creating Vector Fields with VectorayGen and Using them in UE4</span></h2>
+<p>If you don't want to edit vector fields with Maya or Blender plugins/scripts, go to <a rel="nofollow" class="external free" href="https://jangafx.com/software-downloads/">https://jangafx.com/software-downloads/</a> and download an evaluation version of VectorayGen. It is a tool built specifically for editing vector fields in real time. No waiting for fluid simulations and it is easy to learn and use.
+</p><p>VectorayGen is immensely powerful with a built in node editor, real time view port, and the ability to simulate millions of particles and vectors. 
+</p><p>&lt;youtube&gt;TGbY0aUVZIM&lt;/youtube&gt;
+</p><p>To see other tutorials for VectorayGen, go here: <a rel="nofollow" class="external free" href="https://jangafx.com/vectoraygen-starter-tutorial-series/">https://jangafx.com/vectoraygen-starter-tutorial-series/</a>
+</p><p><br />
+</p>
+<h1><span class="mw-headline" id="Maya_Fluids">Maya Fluids</span></h1>
+<h2><span class="mw-headline" id="Installing_the_.27UE4_FX.27_Maya_shelf_and_FGA_Export_Script">Installing the 'UE4_FX' Maya shelf and FGA Export Script</span></h2>
+<blockquote>
+<p><b>Note:</b> The Fluid Grid export script contained within this Maya shelf has been tested with Maya 2012 x64.
+</p>
+</blockquote>
+<p>1. In the shelf pane, click the left hand drop down arrow and select <b>Load Shelf..</b>: 
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:516px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:LoadShelf_VF.jpg" class="image"><img alt="LoadShelf VF.jpg" src="https://d26ilriwvtzlb.cloudfront.net/0/01/LoadShelf_VF.jpg" width="514" height="301" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:LoadShelf_VF.jpg" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>2. Inside the file browser, navigate to: <code>[UE4Root]\Engine\Extras\MayaVelocityGridExporter\</code>
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:578px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:LoadShelfWindow_VF.jpg" class="image"><img alt="LoadShelfWindow VF.jpg" src="https://d26ilriwvtzlb.cloudfront.net/8/8c/LoadShelfWindow_VF.jpg" width="576" height="292" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:LoadShelfWindow_VF.jpg" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>3. Once you click open, you will find a new shelf tab entitled <b>UE4_FX</b> which contains a single button. Clicking on this icon will bring up a dialog box along with various FGA export options.
+</p><p>By default the shelf contains a single button using a placeholder icon. A custom icon is located at <code>../UE4/Engine/Extras/FX_tools/Maya2012_x64/UE4_FX_Tools/Prefs/Icons/fgaClean.png</code> if you wish to use it. To install the custom icon, simply copy it to your Maya user preferences directory (e.g., `C:/Users/[User]/Documents/maya/2012-x64/prefs/icon`). 
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:176px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:InstalledFGAShelf_VF.jpg" class="image"><img alt="InstalledFGAShelf VF.jpg" src="https://d26ilriwvtzlb.cloudfront.net/8/80/InstalledFGAShelf_VF.jpg" width="174" height="188" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:InstalledFGAShelf_VF.jpg" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>4. The tools to export Maya fluid containers to UE4's fluid grid format are now installed and ready to use.
+</p>
+<h2><span class="mw-headline" id="Setting_up_the_Maya_Fluid_Container">Setting up the Maya Fluid Container</span></h2>
+<p>Creating vector fields in Maya requires the use of a Fluid container. 
+</p><p>1. Switch to the dynamics major mode and then from the FluidEffects menu, select 'Create 3D Container.' This will drop a Maya fluid container in your perspective viewport. The first thing to do is to select it and then in the Attribute editor, select the 'Keep Voxels Square' checkbox.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:413px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ContainerProperties_VF.png" class="image"><img alt="ContainerProperties VF.png" src="https://d26ilriwvtzlb.cloudfront.net/1/1a/ContainerProperties_VF.png" width="411" height="99" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ContainerProperties_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p>
+<blockquote>
+<p><b>Note:</b> Because UE4's velocity grid cascade module operates on the GPU, Maya fluid containers need to have power-of-2 Resolution values (voxel count), with the maximum voxel count in any one axis being 128.
+</p>
+</blockquote>
+<p>2. Adjust the scale of the fluid container by going in its properties and changing the size setting:
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:362px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:SizeProperty_VF.jpg" class="image"><img alt="SizeProperty VF.jpg" src="https://d26ilriwvtzlb.cloudfront.net/f/f3/SizeProperty_VF.jpg" width="360" height="72" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:SizeProperty_VF.jpg" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>The base resolution now indicates the longest side's resolution, with the other sides resolution being scale proportionally to their relative sizes. Here is an example of a rectangular 16x32x16 grid which adheres to the power of two requirements.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:137px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Grid_VF.png" class="image"><img alt="Grid VF.png" src="https://d26ilriwvtzlb.cloudfront.net/9/92/Grid_VF.png" width="135" height="207" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Grid_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>3. Set all the boundary conditions of the grid to **_None_**; allowing fluid simulation to 'exit' the fluid container.
+</p><p>4. Finally we need to enable the display of velocity vectors so we can see the data we want to export to UE4. In the **Display** section of the fluid container, check the **Velocity Draw** checkbox.
+</p>
+<h2><span class="mw-headline" id="Emitting_Attributes_into_the_Container_and_Simulating">Emitting Attributes into the Container and Simulating</span></h2>
+<p>An emitter must be added to the fluid container in order to emit a variety of attributes which can disturb the grid values. 
+</p><p>1. Select the fluid container and from the Fluid Effects menu, select <b>add/edit contents &gt; Emitter</b>.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:434px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:AddEmitter_VF.png" class="image"><img alt="AddEmitter VF.png" src="https://d26ilriwvtzlb.cloudfront.net/b/be/AddEmitter_VF.png" width="432" height="144" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:AddEmitter_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>2. In the <b>Emiter Fluid Attributes</b>, set <b>Heat/Voxel/Sec</b> to `250`. This means the emitter will be emitting heat into the container. Heat will cause the density to rise.
+</p><p>3. Now select the emitter and scale it wider and move it down towards the base of the container. 
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:179px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ScaleEmitter_VF.png" class="image"><img alt="ScaleEmitter VF.png" src="https://d26ilriwvtzlb.cloudfront.net/e/e0/ScaleEmitter_VF.png" width="177" height="137" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ScaleEmitter_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>4. In order for the container grid to react to dynamic heat contributions, the Maya fluid container <b>Temperature</b> method must be set to <b>Dynamic Grid</b>. This setting is located on the container grid shape.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:290px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:TemperatureProperty_VF.png" class="image"><img alt="TemperatureProperty VF.png" src="https://d26ilriwvtzlb.cloudfront.net/8/8d/TemperatureProperty_VF.png" width="288" height="72" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:TemperatureProperty_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>5. Now play back the timeline to view the simulation. You should get something similar to this. I have also added some noise to the container attributes. You can do this by changing the velocity swirl, noise and turbulence strength and frequency parameters in the 'Contents Details' section of the fluid container.
+</p><p>6. The result should look similar to this:
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:164px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Result_VF.png" class="image"><img alt="Result VF.png" src="https://d26ilriwvtzlb.cloudfront.net/0/09/Result_VF.png" width="162" height="236" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Result_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p>
+<h2><span class="mw-headline" id="Exporting_Velocity_Values_From_Maya_Fluid_Containers">Exporting Velocity Values From Maya Fluid Containers</span></h2>
+<p>In this example, a single frame of the simulation is exported to use as a static velocity field in UE4. 
+</p><p>1. Select your fluid container and click on the FGA icon in the **UE4_FX** shelf. The **UE4 Velocity Grid Exporter** dialog box will appear.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:373px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ExportDialog_VF.png" class="image"><img alt="ExportDialog VF.png" src="https://d26ilriwvtzlb.cloudfront.net/1/10/ExportDialog_VF.png" width="371" height="214" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ExportDialog_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>2. Set the start frame that you like, along with the destination folder. 
+</p><p>3. Hit export and you will see a file on disk. This is the file you will import into UE4.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:218px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:FgaFile_VF.png" class="image"><img alt="FgaFile VF.png" src="https://d26ilriwvtzlb.cloudfront.net/6/64/FgaFile_VF.png" width="216" height="129" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:FgaFile_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p>
+<h2><span class="mw-headline" id="Importing_an_.FGA_File_into_UE4">Importing an .FGA File into UE4</span></h2>
+<p>1. Launch UE4, open the Content Browser. Either click the New button and choose _Import_, or right-click and select _import_ from the contextual menu.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:457px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ImportOption_VF.png" class="image"><img alt="ImportOption VF.png" src="https://d26ilriwvtzlb.cloudfront.net/2/23/ImportOption_VF.png" width="455" height="183" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ImportOption_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>2. In the file browser navigate to the FGA that was saved out earlier. 
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:383px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ImportDialog_VF.png" class="image"><img alt="ImportDialog VF.png" src="https://d26ilriwvtzlb.cloudfront.net/d/d5/ImportDialog_VF.png" width="381" height="239" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ImportDialog_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p>
+<blockquote>
+<p><b>Note:</b> If you have a lot of files in the same directory, you can set the file browser's filter to _Fluid Grid Ascii_.
+</p>
+</blockquote>
+<p>3. In the Content Browser you should now see a _VectorField Static_ asset.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:138px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:VectorFieldAsset_VF.png" class="image"><img alt="VectorFieldAsset VF.png" src="https://d26ilriwvtzlb.cloudfront.net/4/43/VectorFieldAsset_VF.png" width="136" height="138" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:VectorFieldAsset_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p>
+<h2><span class="mw-headline" id="Setting_up_a_particle_system_with_a_Local_Vector_Field">Setting up a particle system with a Local Vector Field</span></h2>
+<p>1. Create a new particle system in the content browser. Once it is created, the Cascade window will appear. 
+</p><p>2. Right-click on the black space above the emitter's module and convert the particle system dataType to <b>GPU Sprites</b>. 
+</p><p>3. Next, add a <b>Cylinder</b> location module with its Height axis set to Y. Increase the Spawn module Rate property to around 50. Then delete the Initial Velocity as the particle motion will come from the local vector field. You should have something similar to this:
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:695px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:CylinderExample_VF.png" class="image"><img alt="CylinderExample VF.png" src="https://d26ilriwvtzlb.cloudfront.net/2/21/CylinderExample_VF.png" width="693" height="431" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:CylinderExample_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>4. Right-click below the existing modules and add a local vector field module to the emitter.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:372px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:LocalVectorFieldModule_VF.png" class="image"><img alt="LocalVectorFieldModule VF.png" src="https://d26ilriwvtzlb.cloudfront.net/e/e2/LocalVectorFieldModule_VF.png" width="370" height="137" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:LocalVectorFieldModule_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>The local vector field module will influence the motion of your particles when they are physically inside the Local vector field module's bounding box.  
+</p><p>5. Assign the vector field asset to the Vector field slot in the Local vector field cascade module. You may want to visualize the vector field velocities in the viewport by selecting the **View &gt; Vector Fields** inside Cascade's main menu.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:498px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:VisualizeVectorFields_VF.png" class="image"><img alt="VisualizeVectorFields VF.png" src="https://d26ilriwvtzlb.cloudfront.net/2/25/VisualizeVectorFields_VF.png" width="496" height="428" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:VisualizeVectorFields_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p>6. In its parameters, scale the Vector Fields's relative scale to 2 2 2 and translate the grid using the vector fields gizmo which appears in the Cascade preview window when the Local vector Field module is selected.
+</p><p>7. You should now see the particles moving in the preview window, driven by the Vector field velocities.
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:693px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Movement_VF.png" class="image"><img alt="Movement VF.png" src="https://d26ilriwvtzlb.cloudfront.net/e/ef/Movement_VF.png" width="691" height="371" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Movement_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p>
+<h2><span class="mw-headline" id="Local_Vector_Field_Module_Parameters">Local Vector Field Module Parameters</span></h2>
+<p>The <b>Local Vector Field</b> cascade module has 2 main parameters:
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:490px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ModuleProperties_VF.png" class="image"><img alt="ModuleProperties VF.png" src="https://d26ilriwvtzlb.cloudfront.net/d/d9/ModuleProperties_VF.png" width="488" height="46" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ModuleProperties_VF.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p><br clear="all" />
+</p><p><b>Intensity</b>: This is the strength of the Local vector field contribution to the particle's motion
+<b>Tightness</b>: How closely the particles will follow the velocities stored in the fluid grid. When set to 0, the vector field behaves as a force which adds it velocities to the particles' current velocities. When set to 1, the vector field velocities replace the particle velocities altogether.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20200401010557
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.128 seconds
+Real time usage: 0.512 seconds
+Preprocessor visited node count: 67/1000000
+Preprocessor generated node count: 92/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:140-0!canonical and timestamp 20200401010556 and revision id 281
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Creating_Vector_Fields_(Tutorial)&amp;oldid=281">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Creating_Vector_Fields_(Tutorial)&amp;oldid=281</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Community_Created_Content" title="Category:Community Created Content">Community Created Content</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0e33288c51e7947d3"><meta name="worker" content="170"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="https://mediawikiv2-website-prod05.ol.epicgames.net/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.128","walltime":"0.512","ppvisitednodes":{"value":67,"limit":1000000},"ppgeneratednodes":{"value":92,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20200401010557","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":96});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":135,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Inventory&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:13:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>View source for C++ Inventory - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"C++_Inventory","wgTitle":"C++ Inventory","wgCurRevisionId":541,"wgRevisionId":0,"wgArticleId":270,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"C++_Inventory","wgRelevantArticleId":270,"wgRequestId":"efbafab3d3d8f1a3ff5640b7","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-C_Inventory rootpage-C_Inventory skin-vector action-edit"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0d0405fab30c4bd94"><meta name="worker" content="134"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Inventory&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:13:01 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=C%2B%2B+Inventory&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Inventory" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:C%2B%2B_Inventory&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Inventory">Read</a></span></li>
+							<li id="ca-viewsource" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Inventory&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Inventory&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">View source for C++ Inventory</h1>
+												<div id="bodyContent" class="mw-body-content">
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=EpicUnrealEngineWiki:Administrators&amp;action=edit&amp;redlink=1" class="new" title="EpicUnrealEngineWiki:Administrators (page does not exist)">Administrators</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">{{Rating|Type=Article|Versions=4.15+}}
+
+== Overview ==
+''Original Author'' [[User:Heite92|Denis "Heite92" Heitkamp]]
+
+This wiki page will show how to implement a simple inventory system with C++ instead of blueprints. The initial work is based on the video tutorial series [https://www.youtube.com/watch?v=BQ6Eu3QM7Lg '''Crafting/Inventory System Tutorial in Unreal Engine'''] by Reuben Ward and [https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gYup-gvJtMsgJqnEB_dGiM4/index.html '''C++ 3rd Person Battery Collector Power Up Game'''] by Lauren Ridge.
+Most games have some sort of inventory system and one or more pickup mechanisms. This tutorial covers the implementation of one inventory and two pickup systems. One of the pickup systems is based on sight. If the player is looking at a pickupable item and if it's in range the player can press a button to pick up the item. The other system doesn't require sight or input. The player automatically picks up everything close to him.
+
+Systems like these are used in many games like Borderlands, Diablo, Skyrim or Witcher 3.
+
+The core features of this system are:
+*Extendible Inventory
+**Weight or slot limit (optional)
+*Extendible Item class
+**Item weight
+*Extendible automatic Pickup class (AutoPickup)
+*Extendible Interactable class
+**Extendible manual Pickup class (ManPickup)
+*A database for every existing item
+*A simple GUI for keyboard and mouse
+It is not necessary to implement both the automatic and the manual '''Pickup''' class, each class works independently.
+This wiki article does not cover controls for gamepads, touchscreens and VR.
+
+The following video shows the system in action.
+
+&lt;youtube>(https://youtu.be/hjhull5Rn5U)&lt;/youtube> 
+
+== Preparation ==
+The Third Person C++ Template is used. It should also work similarly with the First Person Template. The project name used in this tutorial is '''Inventory'''.
+The complete project is availabe on [https://github.com/Heite92/UE4_InventorySystem GitHub].
+
+== Source Code ==
+After creating the project there will be the following C++ classes:
+*'''&lt;project_name>'''
+*'''&lt;project_name>'''Character
+*'''&lt;project_name>'''GameMode
+
+The next step is to add the these C++ classes to the project. That needs to be done with the UE4 Editor.
+
+[[File:CppInventory_newCppClass.png|thumb|none|940px|]]
+
+*'''&lt;project_name>'''Controller derived from APlayerController
+**The player controller will store the inventory
+*'''&lt;project_name>'''GameState derived from AGameStateBase
+**the game state will hold a database for all existing items
+*'''Interactable''' derived from AActor
+**Works as base class for every interactable actor
+*'''InventoryItem''' derived from FTableRowBase
+**It represents picked up items in the player’s inventory
+**It is not possible to pick FTableRowBase as the parent class inside the editor. Pick something else and change it later.
+*'''ManPickup''' derived from AInteractable
+**ManPickup is short for manual pickup. A different name can be used, but the source code has to be refactored. Same applies to the other classes
+*'''AutoPickup''' derived from AActor
+**AutoPickup means automatic pickup
+*'''MoneyAutoPickup''' derived from AAutoPickup
+It is also possible to add a '''MoneyManPickup''' class which derives from '''ManPickup''' for large occurrences of money.
+
+Here is a class diagram for the inventory system.
+
+[[File:CppInventory_inventoryClassDiagram.png|thumb|none|940px|]]
+
+=== Character ===
+First edit '''&lt;project_name>'''Character.h.
+
+''''' InventoryCharacter.h '''''
+
+The character class needs functionality from Engine.h, change
+
+&lt;syntaxhighlight lang="cpp">
+#include "CoreMinimal.h"
+&lt;/syntaxhighlight>
+to
+&lt;syntaxhighlight lang="cpp">
+#include "Engine.h"
+&lt;/syntaxhighlight>
+The next source code is only needed for '''AutoPickups''', it is a collision sphere which is needed to check for overlapping '''AutoPickups'''. Add the code snippet to the character class, directly after the UCameraComponent.
+
+&lt;syntaxhighlight lang="cpp">
+/** Collection sphere */
+UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+class USphereComponent* CollectionSphere;
+&lt;/syntaxhighlight>
+
+The '''Tick''' method is required to collect any pickup. Place it in the public section of the class.
+&lt;syntaxhighlight lang="cpp">
+virtual void Tick(float DeltaTime) override;
+&lt;/syntaxhighlight>
+
+The following methods are needed to collect the pickups. Add the ones needed to the protected section of the character.
+
+Needed to collect '''AutoPickups''':
+&lt;syntaxhighlight lang="cpp">
+/** Function to collect every AutoPickup in range. */
+void CollectAutoPickups();
+&lt;/syntaxhighlight>
+
+Needed to collect '''ManPickups''':
+&lt;syntaxhighlight lang="cpp">
+/** Function to check for the closest Interactable in sight and in range. */
+void CheckForInteractables();
+&lt;/syntaxhighlight>
+
+The next step is to edit the cpp file of the character: 
+
+''''' InventoryCharacter.cpp '''''
+
+Add these includes:
+
+&lt;syntaxhighlight lang="cpp">
+#include "Interactable.h"
+#include "AutoPickup.h"
+#include "InventoryItem.h"
+&lt;/syntaxhighlight>
+Also add an include for the player controller, in this project that is '''InventoryController'''.
+
+&lt;syntaxhighlight lang="cpp">
+#include "InventoryController.h"
+&lt;/syntaxhighlight>
+
+Add the initialization of the collection sphere to the constructor of the character. The sphere is used by the player to pickup '''AutoPickups'''. Every '''AutoPickup''' inside the sphere will be picked up automatically. Alter the '''sphere radius''' if needed.
+&lt;syntaxhighlight lang="cpp">
+// Create the collection sphere
+CollectionSphere = CreateDefaultSubobject&lt;USphereComponent>(TEXT("CollectionSphere"));
+CollectionSphere->SetupAttachment(RootComponent);
+CollectionSphere->SetSphereRadius(200.f);
+&lt;/syntaxhighlight>
+
+Add the methods. They can be placed anywhere in the cpp file after the includes. Beginning with the Tick method.
+
+{{Note|Do not forget to adjust AInventoryCharacter to A'''&lt;project_name>'''Character.}}
+
+&lt;syntaxhighlight lang="cpp">
+void AInventoryCharacter::Tick(float Deltatime)
+{
+	Super::Tick(Deltatime);
+
+	CollectAutoPickups();
+	CheckForInteractables();
+}
+&lt;/syntaxhighlight>
+
+The next method is '''CollectAutoPickups''', it can be skipped if the project does not use '''AutoPickups'''.
+
+&lt;syntaxhighlight lang="cpp">
+void AInventoryCharacter::CollectAutoPickups()
+{
+	// Get all overlapping Actors and store them in an array
+	TArray&lt;AActor*> CollectedActors;
+	CollectionSphere->GetOverlappingActors(CollectedActors);
+
+	AInventoryController* IController = Cast&lt;AInventoryController>(GetController());
+
+	// For each collected Actor
+	for (int32 iCollected = 0; iCollected &lt; CollectedActors.Num(); ++iCollected)
+	{
+		// Cast the actor to AAutoPickup
+		AAutoPickup* const TestPickup = Cast&lt;AAutoPickup>(CollectedActors[iCollected]);
+		// If the cast is successful and the pickup is valid and active 
+		if (TestPickup &amp;&amp; !TestPickup->IsPendingKill())
+		{
+			TestPickup->Collect(IController);
+		}
+	}
+}
+&lt;/syntaxhighlight>
+
+The last method left ist '''CheckForInteractables''', it is only needed to collect '''ManPickups'''. The '''range''' value defines how close a player has to be to pick up the item.
+&lt;syntaxhighlight lang="cpp">
+void AInventoryCharacter::CheckForInteractables()
+{
+	// Create a LineTrace to check for a hit
+	FHitResult HitResult;
+
+	int32 Range = 500;
+	FVector StartTrace = FollowCamera->GetComponentLocation();
+	FVector EndTrace = (FollowCamera->GetForwardVector() * Range) + StartTrace;
+
+	FCollisionQueryParams QueryParams;
+	QueryParams.AddIgnoredActor(this);
+
+	AInventoryController* IController = Cast&lt;AInventoryController>(GetController());
+
+	if (IController)
+	{
+		// Check if something is hit
+		if (GetWorld()->LineTraceSingleByChannel(HitResult, StartTrace, EndTrace, ECC_Visibility, QueryParams))
+		{
+			// Cast the actor to AInteractable
+			AInteractable* Interactable = Cast&lt;AInteractable>(HitResult.GetActor());
+			// If the cast is successful
+			if (Interactable)
+			{
+				IController->CurrentInteractable = Interactable;
+				return;
+			}
+		}
+
+		IController->CurrentInteractable = nullptr;
+	}
+}
+&lt;/syntaxhighlight>
+
+=== Player Controller ===
+The player controller will store the player’s inventory and money.
+
+''''' InventoryController.h '''''
+
+First include the '''Interactable''' and '''InventoryItem''' classes.
+&lt;syntaxhighlight lang="cpp">
+#include "Interactable.h"
+#include "InventoryItem.h"
+&lt;/syntaxhighlight>
+
+The player controller needs some methods and properties. These should be pretty self-explanatory. '''InventorySlotLimit''', '''InventoryWeightLimit''', '''GetInventoryWeight''' and '''Money''' aren't needed for the basic inventory system. Leave them for the additional functionality or remove them from the controller.
+&lt;syntaxhighlight lang="cpp">
+public:
+	AInventoryController();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void ReloadInventory();
+
+	UFUNCTION(BlueprintCallable, Category = "Utils")
+	int32 GetInventoryWeight();
+
+	UFUNCTION(BlueprintCallable, Category = "Utils")
+	bool AddItemToInventoryByID(FName ID);
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	class AInteractable* CurrentInteractable;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	TArray&lt;FInventoryItem> Inventory;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	int32 Money;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 InventorySlotLimit;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 InventoryWeightLimit;
+
+protected:
+	void Interact();
+
+	virtual void SetupInputComponent() override;
+&lt;/syntaxhighlight>
+
+''''' InventoryController.cpp '''''
+
+Include the created game state and character. Do not forget to refactor the filenames to the specific project name.
+&lt;syntaxhighlight lang="cpp">
+#include "InventoryGameState.h"
+#include "InventoryCharacter.h"
+&lt;/syntaxhighlight>
+Also add the definitions of the methods and the constructor to the cpp file.
+
+&lt;syntaxhighlight lang="cpp">
+AInventoryController::AInventoryController() 
+{
+	InventorySlotLimit = 50;
+	InventoryWeightLimit = 500;
+}
+
+int32 AInventoryController::GetInventoryWeight()
+{
+	int32 Weight = 0;
+	for (auto&amp; Item : Inventory)
+	{
+		Weight += Item.Weight;
+	}
+
+	return Weight;
+}
+
+bool AInventoryController::AddItemToInventoryByID(FName ID)
+{
+	AInventoryGameState* GameState = Cast&lt;AInventoryGameState>(GetWorld()->GetGameState());
+	UDataTable* ItemTable = GameState->GetItemDB();
+	FInventoryItem* ItemToAdd = ItemTable->FindRow&lt;FInventoryItem>(ID, "");
+
+	if (ItemToAdd)
+	{
+		// If a Slot- or WeightLimit are not needed remove them in this line
+		if (Inventory.Num() &lt; InventorySlotLimit &amp;&amp; GetInventoryWeight() + ItemToAdd->Weight &lt;= InventoryWeightLimit)
+		{
+			Inventory.Add(*ItemToAdd);
+			ReloadInventory();
+			return true;
+		}
+	}
+	return false;
+}
+
+void AInventoryController::SetupInputComponent()
+{
+	Super::SetupInputComponent();
+
+	InputComponent->BindAction("Interact", IE_Pressed, this, &amp;AInventoryController::Interact);
+}
+
+void AInventoryController::Interact()
+{
+	if (CurrentInteractable)
+	{
+		CurrentInteractable->Interact(this);
+	}
+}
+&lt;/syntaxhighlight>
+
+=== Game State ===
+The game state will hold the database for all existing items.
+
+''''' InventoryGameState.h '''''
+
+CoreMinimal.h does not cover everything needed by the game state class, change
+
+&lt;syntaxhighlight lang="cpp">
+#include "CoreMinimal.h"
+&lt;/syntaxhighlight>
+to
+&lt;syntaxhighlight lang="cpp">
+#include "Engine.h"
+&lt;/syntaxhighlight>
+The next step is to add the '''ItemDB''' as a property to the game state.
+&lt;syntaxhighlight lang="cpp">
+public:
+	AInventoryGameState();
+
+	UDataTable* GetItemDB() const;
+
+protected:
+	UPROPERTY(EditDefaultsOnly)
+	class UDataTable* ItemDB;
+&lt;/syntaxhighlight>
+
+''''' InventoryGameState.cpp '''''
+
+The constructor loads the database and the get method returns it. The '''ItemDB''' can be created after the source code is compiled.
+&lt;syntaxhighlight lang="cpp">
+AInventoryGameState::AInventoryGameState()
+{
+	static ConstructorHelpers::FObjectFinder&lt;UDataTable> BP_ItemDB(TEXT("DataTable'/Game/Data/ItemDB.ItemDB'"));
+	ItemDB = BP_ItemDB.Object;
+}
+
+UDataTable* AInventoryGameState::GetItemDB() const 
+{
+	return ItemDB; 
+}
+&lt;/syntaxhighlight>
+=== Inventory system ===
+Most of the implementation of the inventory system can be copied. AInventoryController has to be changed at a few points to A'''&lt;project_name>'''controller but that is it. Every parameter is exposed to blueprints and even the '''Collect''' and '''Interact''' methods can be overwritten by blueprints if wanted. This enables designers without C++ knowledge to implement functionality.
+==== Interactable ====
+The Interactable class serves as base class for every interactable actor in the game. In this tutorial the only interactable actors are manual pickup items. But it can also be used as base class for interactable chests, Non-player characters(NPCs) and much more.
+
+''''' Interactable.h '''''
+
+&lt;syntaxhighlight lang="cpp">
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "Interactable.generated.h"
+
+UCLASS()
+class INVENTORY_API AInteractable : public AActor
+{
+	GENERATED_BODY()
+
+public:
+	AInteractable();
+
+	UFUNCTION(BlueprintNativeEvent)
+	void Interact(APlayerController* Controller);
+	virtual void Interact_Implementation(APlayerController* Controller);
+
+	UPROPERTY(EditDefaultsOnly)
+	FString Name;
+
+	UPROPERTY(EditDefaultsOnly)
+	FString Action;
+
+	UFUNCTION(BlueprintCallable, Category = "Pickup")
+	FString GetInteractText() const;
+};
+&lt;/syntaxhighlight>
+
+''''' Interactable.cpp '''''
+
+&lt;syntaxhighlight lang="cpp">
+#include "Interactable.h"
+
+AInteractable::AInteractable()
+{
+	Name = "Interactable";
+	Action = "interact";
+}
+
+void AInteractable::Interact_Implementation(APlayerController* Controller)
+{
+	return;
+}
+
+FString AInteractable::GetInteractText() const 
+{
+	return FString::Printf(TEXT("%s: Press F to %s"), *Name, *Action); 
+}
+&lt;/syntaxhighlight>
+
+==== Manual Pickup ====
+The ManPickup class uses '''Interactable''' as base class. It is used to implement items which can be picked up manually by the player. The player has to be in pickup range, has to look directly at the item and he has to press a specific button to pick up the item. The button will be defined in the input section of this tutorial.
+
+''''' ManPickup.h '''''
+
+&lt;syntaxhighlight lang="cpp">
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Interactable.h"
+#include "ManPickup.generated.h"
+
+UCLASS()
+class INVENTORY_API AManPickup : public AInteractable
+{
+	GENERATED_BODY()
+	
+public:
+	AManPickup();
+	
+	void Interact_Implementation(APlayerController* Controller) override;
+
+protected:
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* PickupMesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FName ItemID;
+};
+&lt;/syntaxhighlight>
+
+''''' ManPickup.cpp '''''
+
+&lt;syntaxhighlight lang="cpp">
+#include "ManPickup.h"
+#include "InventoryController.h"
+
+AManPickup::AManPickup()
+{
+	PickupMesh = CreateDefaultSubobject&lt;UStaticMeshComponent>("PickupMesh");
+	RootComponent = Cast&lt;USceneComponent>(PickupMesh);
+
+	ItemID = FName("No ID");
+
+	Super::Name = "Item";
+	Super::Action = "pickup";
+}
+
+void AManPickup::Interact_Implementation(APlayerController* Controller)
+{
+	Super::Interact_Implementation(Controller);
+
+	AInventoryController* IController = Cast&lt;AInventoryController>(Controller);
+	if(IController->AddItemToInventoryByID(ItemID))
+		Destroy();
+}
+&lt;/syntaxhighlight>
+
+==== Automatic Pickup ====
+This class is used to implement items which are picked up automatically when the player is in pickup range to the actors. 
+
+''''' AutoPickup.h '''''
+
+&lt;syntaxhighlight lang="cpp">
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "AutoPickup.generated.h"
+
+UCLASS()
+class INVENTORY_API AAutoPickup : public AActor
+{
+	GENERATED_BODY()
+
+public:
+
+	AAutoPickup();
+
+	UFUNCTION(BlueprintNativeEvent)
+	void Collect(APlayerController* Controller);
+	virtual void Collect_Implementation(APlayerController* Controller);
+
+	FName GetItemID();
+
+protected:
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* PickupMesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FName ItemID;
+};
+&lt;/syntaxhighlight>
+
+''''' AutoPickup.cpp '''''
+
+&lt;syntaxhighlight lang="cpp">
+#include "AutoPickup.h"
+#include "InventoryController.h"
+
+AAutoPickup::AAutoPickup()
+{
+	PickupMesh = CreateDefaultSubobject&lt;UStaticMeshComponent>("PickupMesh");
+	RootComponent = Cast&lt;USceneComponent>(PickupMesh);
+
+	ItemID = FName("No ID");
+}
+
+void AAutoPickup::Collect_Implementation(APlayerController* Controller)
+{
+	AInventoryController* IController = Cast&lt;AInventoryController>(Controller);
+	if(IController->AddItemToInventoryByID(ItemID))
+		Destroy();
+}
+
+FName AAutoPickup::GetItemID()
+{
+	return ItemID;
+}
+&lt;/syntaxhighlight>
+
+==== Money Automatic Pickup ====
+The class MoneyAutoPickup is a special form of '''AutoPickup'''. It overrides the '''Collect''' method and it also adds the attribute '''Value'''. The player’s money is not stored in the inventory. So instead of calling '''AddItemToInventoryByID''', which is done by AutoPickups, the money will be directly added to the money attribute.
+
+''''' MoneyAutoPickup.h '''''
+
+&lt;syntaxhighlight lang="cpp">
+#pragma once
+
+#include "CoreMinimal.h"
+#include "AutoPickup.h"
+#include "MoneyAutoPickup.generated.h"
+
+UCLASS()
+class INVENTORY_API AMoneyAutoPickup : public AAutoPickup
+{
+	GENERATED_BODY()
+	
+public:
+	AMoneyAutoPickup();
+	
+	void Collect_Implementation(APlayerController* Controller) override;
+
+protected:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 Value;
+};
+&lt;/syntaxhighlight>
+
+''''' MoneyAutoPickup.cpp '''''
+
+&lt;syntaxhighlight lang="cpp">
+#include "MoneyAutoPickup.h"
+#include "InventoryController.h"
+
+AMoneyAutoPickup::AMoneyAutoPickup()
+{
+	Super::ItemID = FName("money");
+	Value = 1;
+}
+
+void AMoneyAutoPickup::Collect_Implementation(APlayerController* Controller)
+{
+	AInventoryController* IController = Cast&lt;AInventoryController>(Controller);
+	IController->Money += Value;
+	Destroy();
+}
+&lt;/syntaxhighlight>
+
+==== Inventory Item ====
+This class represents the picked up items in the player’s inventory.
+Depending on the needs a few adjustments can be done. If the '''weight''' attribute is not needed it can ne removed from the inventory item. Also if a rarity system (as seen in World of Warcraft, Borderlands, Diablo...) is wanted a property can be added for that.
+
+''''' InventoryItem.h '''''
+&lt;syntaxhighlight lang="cpp">
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "Engine/DataTable.h"
+#include "InventoryItem.generated.h"
+
+USTRUCT(BlueprintType)
+struct FInventoryItem : public FTableRowBase
+{
+	GENERATED_BODY()
+
+public:
+	FInventoryItem();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FName ItemID;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FText Name;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 Weight;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 Value;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UTexture2D* Thumbnail;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FText Description;
+
+	bool operator==(const FInventoryItem&amp; OtherItem) const
+	{
+		if (ItemID == OtherItem.ItemID)
+			return true;
+		return false;
+	}
+};
+&lt;/syntaxhighlight>
+
+''''' InventoryItem.cpp '''''
+
+&lt;syntaxhighlight lang="cpp">
+#include "InventoryItem.h"
+
+FInventoryItem::FInventoryItem()
+{
+	this->Name = FText::FromString("No Name");
+	this->Weight = 1;
+	this->Value = 1;
+	this->Description = FText::FromString("No Description");
+}
+&lt;/syntaxhighlight>
+
+At this point the project should be compiled. Otherwise it will not be possible to complete all left steps.
+== Input ==
+A few additional keybindings are needed:
+
+*Toggle the inventory
+*Interact with interactables
+*Delete items from the inventory 
+
+Open the project settings with '''Edit -> Project Settings...''' and navigate to '''Engine -> Input'''. There add mappings for '''Interact''', '''OpenInventory''' and '''Remove''' as shown in the picture below.
+
+[[File:CppInventory_input.png|thumb|none|940px|]]
+
+Also it could be useful to add an additional mapping for '''RemoveMouseButton (Right Mouse Button)''' instead of defining the binding inside a blueprint.
+
+{{Note|It would be better to rename '''OpenInventory''' to '''ToggleInventory''' because it is also used to close the inventory.}}
+== Graphical User Interface ==
+=== Interact Text Overlay ===
+Create the folder '''UI''' inside '''Content''' and create a new '''User Interface -> Widget Blueprint'''. Name it '''WB_Ingame'''. The widget is required to show the player the interact text for the current '''Interactable''', something like '''Teapot: Press f to pickup''' for a receivable teapot.
+First switch from '''Designer''' to '''Graph''' and create the function '''GetInteractText'''. 
+
+GetInteractText
+
+[[File:CppInventory_ingameGetInteractText.png|thumb|none|940px|]]
+
+Switch back to the designer and add a static text field to the middle of the screen. Set the text alignment to center and bind the text to '''GetInteractText'''.
+
+[[File:CppInventory_ingameWB.png|thumb|none|940px|]]
+
+Open the level blueprint as seen in the screenshot below.
+
+[[File:CppInventory_openLevelBP.png|thumb|none|940px|]]
+
+Add the following to the level blueprint to show the interact text on the screen.
+
+[[File:CppInventory_levelBP|thumb|none|940px|]]
+
+=== Inventory Slot Tooltip ===
+Create the blueprint '''C_InventorySlot_Tooltip''' in the '''UI''' folder.
+First add a variable to store an inventory item.
+
+[[File:CppInventory_itemVariable.png|thumb|none|940px|]]
+
+The next step is to design the tooltip.
+
+[[File:CppInventory_tooltipDesigner.png|thumb|none|940px|]]
+
+Bind all '''FText''' attributes of the item to the specific fields. To bind other attributes like '''int32''' it is required to create functions. This is the case for '''value''' and '''weight''', which are both '''int32'''.
+
+''''' GetValueText '''''
+
+[[File:CppInventory_tooltipGetValueText.png|thumb|none|940px|]]
+
+''''' GetWeightText '''''
+
+[[File:CppInventory_tooltipGetWeightText.png|thumb|none|940px|]]
+
+The final step is to add the binding to the value and weight field.
+=== Inventory Slot ===
+Create the blueprint '''C_InventorySlot''' in the '''UI''' folder.
+The same variable as used in the tooltip is necessary.
+
+[[File:CppInventory_itemVariable.png|thumb|none|940px|]]
+
+Design the inventory slot and bind the attributes of the inventory item. The design in this tutorial is a minimalistic design by showing only the thumbnail. The thumbnail is stored inside a size box to make sure every thumbnail has the same size.
+
+[[File:CppInventory_inventoryslotThumbnail.png|thumb|none|940px|]]
+
+{{Note|If the '''InventoryItem''' has a rarity attribute it is possible to show the rarity in the tooltip or in the slot.}}
+
+Add the function '''''GetToolTipWidget'''''.
+
+[[File:CppInventory_inventoryslotGetTooltip.png|thumb|none|940px|]]
+
+Also the function has to be bound to the canvas panel.
+
+[[File:CppInventory_inventoryslotCanvas.png|thumb|none|940px|]]
+
+Add the '''''RemoveItemFromInventory''''' function.
+
+[[File:CppInventory_inventoryslotRemoveItemFromInventory.png|thumb|none|940px|]]
+
+Override the function '''OnMouseButtonDown''' with the following blueprint.
+
+[[File:CppInventory_inventoryslotOnMouseButtonDown.png|thumb|none|940px|]]
+
+{{Note|Like mentioned before the '''Right Mouse Button''' binding is defined inside the blueprint. Override it if an additional mapping for '''RemoveMouseButton''' exists.}}
+=== Inventory ===
+Create the widget blueprint '''WB_Inventory'''.
+
+Design the inventory. If it needs to be scrollable the inventory slot container has to be wrapped by a '''ScrollBox'''.
+
+[[File:CppInventory_inventoryDesigner.png|thumb|none|940px|]]
+
+Add the '''''LoadInventoryItems''''' function.
+
+[[File:CppInventory_inventoryLoadInventoryItems.png|thumb|none|940px|]]
+
+'''''GetMoneyText'''''
+
+[[File:CppInventory_inventoryGetMoneyText.png|thumb|none|940px|]]
+
+'''''GetWeightText'''''
+
+[[File:CppInventory_inventoryGetWeightText.png|thumb|none|940px|]]
+
+'''''GetWeightLimitText'''''
+
+[[File:CppInventory_inventoryGetWeightLimitText.png|thumb|none|940px|]]
+
+Assign the bindings in the designer to the '''weight''', '''weight limit''' and '''money field'''.
+
+The last step to finish the inventory is to add functionality to the event graph. On construct the system shows the mouse cursor and sets the input mode to game and UI. On destruct the mouse cursor is hidden and the input mode is set to game only. Also the onclick event on the close button removes the widget from the view.
+
+[[File:CppInventory_inventoryEventGraph.png|thumb|none|940px|]]
+
+== Blueprints ==
+First create the folder '''Content->Blueprints''' to hold the blueprints. Next create blueprints based on the player controller and the game mode. Go to the C++ classes and do a right click on '''&lt;project_name>'''Controller. Select '''Create Blueprint class based on...''' and create BP_'''&lt;project_name>'''Controller in the blueprints folder. Now do the same for '''&lt;project_name>'''GameMode.
+The next step is to go to the project settings. Then go to '''Project->Maps&amp;Modes''' and select the BP_'''&lt;project_name>'''GameMode. Also set the following: 
+*Default Pawn Class = '''&lt;project_name>'''Character
+*Player Controller Class =  BP_'''&lt;project_name>'''Controller
+*Game State Class = '''&lt;project_name>'''GameState
+
+These steps are necessary to tell the game to load the custom game mode, character, player ontroller and game state.
+Now open  BP_'''&lt;project_name>'''Controller in the blueprint editor. First add this variable to the blueprint to store the inventory widget.
+
+[[File:CppInventory_controllerInventoryWidget.png|thumb|none|940px|]]
+
+Then add these blueprints to the event graph:
+
+[[File:CppInventory_controllerToggleInventory.png|thumb|none|940px|]]
+
+[[File:CppInventory_controllerEventGraph.png|thumb|none|940px|]]
+
+== Assets, Pickups and Database ==
+Create the folder '''Assets''' inside the '''Content''' folder. Then create the folders '''Materials''', '''Models''' and '''Thumbnails''' inside it. Place everything need for the pickups in these folders.
+
+{{Note|It is not needed to create own models and thumbnails for this tutorial, use the '''1M_Cube''' and the '''UE4_LOGO_CARD''' or anything else for testing.}}
+
+The next step is to create the actual pickups. Create the folder '''Content->Blueprints->Pickups'''. Navigate to the C++ classes and do a right click on '''AutoPickup''', '''ManPickup''' or '''MoneyAutoPickup''' and select '''Create Blueprint class based on...''' pick the '''Pickups''' folder as destination. Assign the static mesh, the itemID, the value (MoneyAutoPickup only), the name and the action (ManPickup only) in the blueprint.
+
+[[File:CppInventory_teapotBP.png|thumb|none|940px|]]
+
+At this point it is already possible to place the pickups in the map and the player can collect them. But the items will not be added to the inventory because they do not refer to items in the item database.
+
+Create the folder '''Data''' inside Content and create a new '''Miscellaeneous->Data Table'''. Select '''Inventory Item''' as pick structure and name it '''ItemDB'''.
+
+{{Note|Compile the C++ class '''InventoryItem''' before creating the data table, otherwise it is not possible to pick it as the structure.}}
+
+Add items to the database. The row name of every entry should be the same as the '''ItemID''', the '''ItemID''' is the same assigned in the pickup blueprints. The next picture shows a sample database with three entries.
+
+[[File:CppInventory_itemDB.png|thumb|none|940px|]]
+
+Finally the items are added to the player’s inventory.
+== On Your Own! ==
+There are many ways to improve and extend this system. These are a few ideas.
+*Implement a PickupComponent for the shared functionality between Auto- and ManPickup
+*Add support for stackable items
+**The Player also needs to be able to separate and combine stacks
+*Add drag &amp; drop to delete, drop or swap items
+*Load the ItemDB from an external database
+*Persistence for the player inventory
+*Use a database to save different Pickups
+**Also use an additional database to save spawn points for the Pickups
+*A crafting system
+**4 piles of wood can be crafted to a wall etc.
+*Loot chests with multiple different items which can be looted
+*Chests which have to be destroyed in order to loot them
+*NPCs who sell and buy items
+*NPCs who can be looted after the player killed them
+*A clothing system to equip the player character with items
+**Use the clothing system for NPCs (as seen in Skyrim)
+*Multiplayer functionality
+**Direct Trading between two players
+**An auction house
+**A mailing system
+
+[[Category:Tutorials]]
+[[Category:Code]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Templates used on this page:
+</p></div><ul>
+<li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Note&amp;action=edit&amp;redlink=1" class="new" title="Template:Note (page does not exist)">Template:Note</a> (<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Note&amp;action=edit" class="new" title="Template:Note (page does not exist)">view source</a>) </li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Rating&amp;action=edit&amp;redlink=1" class="new" title="Template:Rating (page does not exist)">Template:Rating</a> (<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Rating&amp;action=edit" class="new" title="Template:Rating (page does not exist)">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Inventory" title="C++ Inventory">C++ Inventory</a>.</p>
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Inventory">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Inventory</a>"						</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0d0405fab30c4bd94"><meta name="worker" content="134"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="https://mediawikiv2-website-prod05.ol.epicgames.net/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":109});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpcVlFA","queueTime":0,"applicationTime":156,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

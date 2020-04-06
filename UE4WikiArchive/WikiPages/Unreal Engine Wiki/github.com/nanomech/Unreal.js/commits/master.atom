@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/nanomech/Unreal.js/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/nanomech/Unreal.js/commits/master.atom"/>
+  <title>Recent Commits to Unreal.js:master</title>
+  <updated>2015-12-24T04:44:52Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b35b3ce531b5ddcde508cf4457395cfd147d845e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/b35b3ce531b5ddcde508cf4457395cfd147d845e"/>
+    <title>
+        editor extension path had unnecessary prefix
+    </title>
+    <updated>2015-12-24T04:44:52Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;editor extension path had unnecessary prefix&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b4f4159ee1444540962aca51b036157a94a5470f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/b4f4159ee1444540962aca51b036157a94a5470f"/>
+    <title>
+        arbitrary meta data
+    </title>
+    <updated>2015-12-24T04:43:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;arbitrary meta data&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fdbb34464a7a40fb16d1e8510f54e0487aecfa05</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/fdbb34464a7a40fb16d1e8510f54e0487aecfa05"/>
+    <title>
+        Debugger: graceful shutdown while debugger attached
+    </title>
+    <updated>2015-12-21T02:10:24Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Debugger: graceful shutdown while debugger attached&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/140af225bf134f1bd562f29dc39b8ab5a886faea</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/140af225bf134f1bd562f29dc39b8ab5a886faea"/>
+    <title>
+        hack for debug support : Visual Studio Code
+    </title>
+    <updated>2015-12-20T11:27:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;hack for debug support : Visual Studio Code&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f6bbccc23c300f5e362529a6f4b4690ac6c15869</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/f6bbccc23c300f5e362529a6f4b4690ac6c15869"/>
+    <title>
+        debugger re-enabled
+    </title>
+    <updated>2015-12-19T19:15:15Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;debugger re-enabled&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5536f912a8db2ae86cf50ddfc3ca8aaafb7cc3cb</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/5536f912a8db2ae86cf50ddfc3ca8aaafb7cc3cb"/>
+    <title>
+        JavascriptLibrary.GetCurrentProcessId
+    </title>
+    <updated>2015-12-19T19:04:50Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;JavascriptLibrary.GetCurrentProcessId&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6ab2755d7c3b9cdab715385792e69bca40d9de38</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/6ab2755d7c3b9cdab715385792e69bca40d9de38"/>
+    <title>
+        GC crash fix while debugger attached
+    </title>
+    <updated>2015-12-19T02:38:08Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;GC crash fix while debugger attached&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9466f540a80e25311be6080d2414f8fcd443dd65</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/9466f540a80e25311be6080d2414f8fcd443dd65"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2015-12-18T09:49:29Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a0b2fb20eebaba8a3a926f23afa1cded77dcb069</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/a0b2fb20eebaba8a3a926f23afa1cded77dcb069"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2015-12-18T06:32:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d832f204d86613b94a445f40eda1976ec0765514</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/d832f204d86613b94a445f40eda1976ec0765514"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2015-12-18T04:34:21Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/292902da2de5796feaaef298916f23cc506adf17</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/292902da2de5796feaaef298916f23cc506adf17"/>
+    <title>
+        updated
+    </title>
+    <updated>2015-12-18T04:33:13Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;updated&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7a33d9c1f8e35e60c9d3504c4f6e36d63c0b276e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/7a33d9c1f8e35e60c9d3504c4f6e36d63c0b276e"/>
+    <title>
+        Global delegates and tags
+    </title>
+    <updated>2015-12-18T02:08:55Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Global delegates and tags&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1c9cb1a74e96d7fd8ab5f8ef2d17cd1dc278b924</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/1c9cb1a74e96d7fd8ab5f8ef2d17cd1dc278b924"/>
+    <title>
+        editor extension example
+    </title>
+    <updated>2015-12-18T02:07:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;editor extension example&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7ec5884d7912ebb3e4177c82f220e97bb6d33a71</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/7ec5884d7912ebb3e4177c82f220e97bb6d33a71"/>
+    <title>
+        typing generator for enums
+    </title>
+    <updated>2015-12-15T08:51:16Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;typing generator for enums&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/db94548daf841ae0dbe038391dbbeb6e6ebfd540</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/db94548daf841ae0dbe038391dbbeb6e6ebfd540"/>
+    <title>
+        speed up
+    </title>
+    <updated>2015-12-15T08:35:32Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;speed up&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1d35215e79becfbf6286c870e1cbf36221f1bc7b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/1d35215e79becfbf6286c870e1cbf36221f1bc7b"/>
+    <title>
+        Enum exposed
+    </title>
+    <updated>2015-12-15T07:50:45Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Enum exposed&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ed6ff45c14ae68cb0af82e77dddf6bc271d02a19</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/ed6ff45c14ae68cb0af82e77dddf6bc271d02a19"/>
+    <title>
+        unique name for generated class
+    </title>
+    <updated>2015-12-15T04:38:19Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;unique name for generated class&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/41a09cec3d07a7b93e0f6243fa452b19c39460c6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/41a09cec3d07a7b93e0f6243fa452b19c39460c6"/>
+    <title>
+        Features added
+    </title>
+    <updated>2015-12-15T04:11:09Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Features added
+- UMG:PopupWindow
+- stat Javascript
+- class-object.Find(outer,path) (outer=null for ANY_PACKAGE&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ca9c4e345ee9ad1c63e3ef1e05339c6ee574fc64</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/ca9c4e345ee9ad1c63e3ef1e05339c6ee574fc64"/>
+    <title>
+        &#39;Read from invalid memory&#39; fixed
+    </title>
+    <updated>2015-12-15T01:04:42Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;&amp;#39;Read from invalid memory&amp;#39; fixed
+
+Trying to access struct.struct.something caused &amp;#39;Read from invalid memory&amp;#39; error.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fa82a7a7113204770eea5c9535aa2eda90eabbc7</id>
+    <link type="text/html" rel="alternate" href="https://github.com/nanomech/Unreal.js/commit/fa82a7a7113204770eea5c9535aa2eda90eabbc7"/>
+    <title>
+        UMG - fixed baselist item leakage
+    </title>
+    <updated>2015-12-14T03:52:21Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;UMG - fixed baselist item leakage&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

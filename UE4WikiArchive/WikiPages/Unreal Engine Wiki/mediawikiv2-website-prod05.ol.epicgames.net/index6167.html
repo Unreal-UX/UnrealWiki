@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=UE4%E4%B8%8EWEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BA%A4%E4%BA%92(json) by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:05:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>UE4与WEB服务器交互(json) - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"UE4与WEB服务器交互(json)","wgTitle":"UE4与WEB服务器交互(json)","wgCurRevisionId":703,"wgRevisionId":703,"wgArticleId":351,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials","Code","Community Created Content"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"UE4与WEB服务器交互(json)","wgRelevantArticleId":351,"wgRequestId":"3f1afd0b4516d6a249042d1d","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load9239.css?debug=false&amp;lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-UE4与WEB服务器交互_json rootpage-UE4与WEB服务器交互_json skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b48461a8a6519d83"><meta name="worker" content="206"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=UE4%E4%B8%8EWEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BA%A4%E4%BA%92(json) by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:05:54 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=UE4%E4%B8%8EWEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BA%A4%E4%BA%92%28json%29" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="index.html" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="index6167.html?title=UE4%E4%B8%8EWEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BA%A4%E4%BA%92(json)" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="index99aa.html?title=Talk:UE4%E4%B8%8EWEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BA%A4%E4%BA%92(json)&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="index6167.html?title=UE4%E4%B8%8EWEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BA%A4%E4%BA%92(json)">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="index0def.html?title=UE4%E4%B8%8EWEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BA%A4%E4%BA%92(json)&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="index8dd9.html?title=UE4%E4%B8%8EWEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BA%A4%E4%BA%92(json)&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">UE4与WEB服务器交互(json)</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><a href="index5e77.html?title=Template:Rating&amp;action=edit&amp;redlink=1" class="new" title="Template:Rating (page does not exist)">Template:Rating</a>
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.E6.A6.82.E8.BF.B0"><span class="tocnumber">1</span> <span class="toctext">概述</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.E6.B7.BB.E5.8A.A0.E6.A8.A1.E5.9D.97.E5.92.8C.E5.A4.B4.E6.96.87.E4.BB.B6.E5.BC.95.E7.94.A8"><span class="tocnumber">2</span> <span class="toctext">添加模块和头文件引用</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.E5.88.9B.E5.BB.BAjson.E6.95.B0.E6.8D.AE.E5.8C.85"><span class="tocnumber">3</span> <span class="toctext">创建json数据包</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.E5.87.86.E5.A4.87.E6.8E.A5.E6.94.B6json.E6.95.B0.E6.8D.AE.E5.8C.85.E7.9A.84PHP.E7.BD.91.E9.A1.B5"><span class="tocnumber">4</span> <span class="toctext">准备接收json数据包的PHP网页</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#POST.E6.95.B0.E6.8D.AE"><span class="tocnumber">5</span> <span class="toctext">POST数据</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#.E6.80.BB.E7.BB.93"><span class="tocnumber">6</span> <span class="toctext">总结</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#.E5.B8.B8.E8.A7.81.E9.97.AE.E9.A2.98.E5.8F.8A.E5.8F.82.E8.80.83"><span class="tocnumber">7</span> <span class="toctext">常见问题及参考</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".E6.A6.82.E8.BF.B0">概述</span></h2>
+<p>制作游戏在很多情况下需要和WEB服务器进行交互，最常见的是在做Demo时需要通过游戏向WEB服务器传递数据（登录/注册验请求），WEB服务器处理（操作数据库）之后返回结果并调用指定的方法。
+该教程简单介绍了如何通过UE4向WEB服务器（PHP）发送json数据包及回调方法。
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id=".E6.B7.BB.E5.8A.A0.E6.A8.A1.E5.9D.97.E5.92.8C.E5.A4.B4.E6.96.87.E4.BB.B6.E5.BC.95.E7.94.A8">添加模块和头文件引用</span></h2>
+<p>在代码编辑器中打开项目解决方案，在&lt;Solution Name&gt;/Source/&lt;ProjectName&gt;路径下，找到并打开&lt;ProjectName&gt;.Build.cs文件，添加HTTP模块：
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> 
+<span class="n">PrivateDependencyModuleNames</span><span class="p">.</span><span class="n">AddRange</span><span class="p">(</span><span class="k">new</span> <span class="n">string</span><span class="p">[]</span> <span class="p">{</span><span class="s">&quot;HTTP&quot;</span><span class="p">});</span> 
+<span class="n">PrivateIncludePathModuleNames</span><span class="p">.</span><span class="n">AddRange</span><span class="p">(</span><span class="k">new</span> <span class="n">string</span><span class="p">[]</span> <span class="p">{</span><span class="s">&quot;HTTP&quot;</span><span class="p">});</span>
+</pre></div>
+<p>然后在需要实现该功能的类文件中添加如下的头文件引用:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> 
+<span class="cp">#include</span> <span class="cpf">&quot;Http.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;Json.h&quot;</span><span class="cp"></span>
+</pre></div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".E5.88.9B.E5.BB.BAjson.E6.95.B0.E6.8D.AE.E5.8C.85">创建json数据包</span></h2>
+<p>数据内容为：
+</p>
+<pre>{ "user"&#160;: "StormUnited"}
+</pre>
+<p>创建：
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span> 
+<span class="c1">// Create a writer and hold it in this FString</span>
+<span class="n">FString</span> <span class="n">JsonStr</span><span class="p">;</span>
+<span class="n">TSharedRef</span><span class="o">&lt;</span> <span class="n">TJsonWriter</span><span class="o">&lt;</span><span class="n">TCHAR</span><span class="p">,</span> <span class="n">TCondensedJsonPrintPolicy</span><span class="o">&lt;</span><span class="n">TCHAR</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">JsonWriter</span> <span class="o">=</span> <span class="n">TJsonWriterFactory</span><span class="o">&lt;</span><span class="n">TCHAR</span><span class="p">,</span> <span class="n">TCondensedJsonPrintPolicy</span><span class="o">&lt;</span><span class="n">TCHAR</span><span class="o">&gt;</span> <span class="o">&gt;::</span><span class="n">Create</span><span class="p">(</span><span class="o">&amp;</span><span class="n">JsonStr</span><span class="p">);</span>
+<span class="n">JsonWriter</span><span class="o">-&gt;</span><span class="n">WriteObjectStart</span><span class="p">();</span>
+<span class="n">JsonWriter</span><span class="o">-&gt;</span><span class="n">WriteValue</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;user&quot;</span><span class="p">),</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;StormUnited&quot;</span><span class="p">));</span>
+<span class="n">JsonWriter</span><span class="o">-&gt;</span><span class="n">WriteObjectEnd</span><span class="p">();</span>
+
+<span class="c1">// Close the writer and finalize the output such that JsonStr has what we want</span>
+<span class="n">JsonWriter</span><span class="o">-&gt;</span><span class="n">Close</span><span class="p">();</span>
+</pre></div>
+<p>至此，json数据包准备完成。
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id=".E5.87.86.E5.A4.87.E6.8E.A5.E6.94.B6json.E6.95.B0.E6.8D.AE.E5.8C.85.E7.9A.84PHP.E7.BD.91.E9.A1.B5">准备接收json数据包的PHP网页</span></h2>
+<p>本示例中使用了PHP，你可以选择使用搭建动态网站或者服务器的开源软件，比如说wamp/lamp等在本机上建立一个WEB服务器来解析PHP页面。
+创建mywebpage.php文件，并添加如下代码：
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">&lt;?php</span>
+     <span class="c1">// 首先接收上传的数据</span>
+     <span class="nv">$post_data</span> <span class="o">=</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="s1">&#39;php://input&#39;</span><span class="p">);</span>
+     <span class="c1">// 解析json字符串</span>
+     <span class="nv">$obj</span> <span class="o">=</span> <span class="nb">json_decode</span><span class="p">(</span><span class="nv">$post_data</span><span class="p">);</span>
+     <span class="c1">// 获取包含在Json字符串中的数据</span>
+     <span class="k">echo</span> <span class="nv">$obj</span><span class="o">-&gt;</span><span class="p">{</span><span class="s1">&#39;user&#39;</span><span class="p">};</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="POST.E6.95.B0.E6.8D.AE">POST数据</span></h2>
+<p>将通过如下的代码将上面准备好的json数据包提交给 <a rel="nofollow" class="external free" href="http://localhost/mywebpage.php">http://localhost/mywebpage.php</a>
+</p>
+<ul><li> SetHeader：可以设置POST数据的格式</li>
+<li> SetURL：可以指定用于处理上传数据的链接</li>
+<li> SetVerb：可以设置POST/PUT/GET</li>
+<li> SetContentAsString：用于填充上传的数据内容</li>
+<li> OnProcessRequestComplete().BindUObject 用于指定在发送请求之后的回调方法。</li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">TSharedRef</span><span class="o">&lt;</span><span class="n">IHttpRequest</span><span class="o">&gt;</span> <span class="n">HttpRequest</span> <span class="o">=</span> <span class="n">FHttpModule</span><span class="o">::</span><span class="n">Get</span><span class="p">().</span><span class="n">CreateRequest</span><span class="p">();</span>
+<span class="n">HttpRequest</span><span class="o">-&gt;</span><span class="n">SetHeader</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;Content-Type&quot;</span><span class="p">),</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;application/json; charset=utf-8&quot;</span><span class="p">));</span>
+<span class="n">HttpRequest</span><span class="o">-&gt;</span><span class="n">SetURL</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;http://localhost/mywebpage.php&quot;</span><span class="p">));</span>
+<span class="n">HttpRequest</span><span class="o">-&gt;</span><span class="n">SetVerb</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;POST&quot;</span><span class="p">));</span>
+<span class="n">HttpRequest</span><span class="o">-&gt;</span><span class="n">SetContentAsString</span><span class="p">(</span><span class="n">JsonStr</span><span class="p">);</span>
+<span class="n">HttpRequest</span><span class="o">-&gt;</span><span class="n">OnProcessRequestComplete</span><span class="p">().</span><span class="n">BindUObject</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ASUMiniGameMode</span><span class="o">::</span><span class="n">HttpCompleteCallback</span><span class="p">);</span>
+<span class="n">HttpRequest</span><span class="o">-&gt;</span><span class="n">ProcessRequest</span><span class="p">();</span>
+</pre></div>  
+<p><br />
+关于回调函数的结构：void HttpCompleteCallback(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
+示例：
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="n">ASUMiniGameMode</span><span class="o">::</span><span class="n">HttpCompleteCallback</span><span class="p">(</span><span class="n">FHttpRequestPtr</span> <span class="n">Request</span><span class="p">,</span> <span class="n">FHttpResponsePtr</span> <span class="n">Response</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">bWasSuccessful</span><span class="p">)</span>
+<span class="p">{</span>
+     <span class="n">FString</span> <span class="n">MessageBody</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+
+     <span class="c1">// If HTTP fails client-side, this will still be called but with a NULL shared pointer!</span>
+     <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">Response</span><span class="p">.</span><span class="n">IsValid</span><span class="p">())</span>
+     <span class="p">{</span>
+          <span class="n">MessageBody</span> <span class="o">=</span> <span class="s">&quot;{</span><span class="se">\&quot;</span><span class="s">success</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">Error: Unable to process HTTP Request!</span><span class="se">\&quot;</span><span class="s">}&quot;</span><span class="p">;</span>
+     <span class="p">}</span>
+     <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">EHttpResponseCodes</span><span class="o">::</span><span class="n">IsOk</span><span class="p">(</span><span class="n">Response</span><span class="o">-&gt;</span><span class="n">GetResponseCode</span><span class="p">()))</span>
+     <span class="p">{</span>
+          <span class="n">MessageBody</span> <span class="o">=</span> <span class="n">Response</span><span class="o">-&gt;</span><span class="n">GetContentAsString</span><span class="p">();</span>
+     <span class="p">}</span>
+     <span class="k">else</span>
+     <span class="p">{</span>
+          <span class="n">MessageBody</span> <span class="o">=</span> <span class="n">FString</span><span class="o">::</span><span class="n">Printf</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;{</span><span class="se">\&quot;</span><span class="s">success</span><span class="se">\&quot;</span><span class="s">:</span><span class="se">\&quot;</span><span class="s">HTTP Error: %d</span><span class="se">\&quot;</span><span class="s">}&quot;</span><span class="p">),</span> <span class="n">Response</span><span class="o">-&gt;</span><span class="n">GetResponseCode</span><span class="p">());</span>
+     <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>一旦发送出请求后肯定会调用HttpCompleteCallback方法，WEB服务器处理的数据结果包含在Response参数中，可以通过Response-&gt;GetContentAsString()来获取返回的字符串，比如在本例中是StormUnited。
+</p>
+<h2><span class="mw-headline" id=".E6.80.BB.E7.BB.93">总结</span></h2>
+<p>联系我：<a href="indexc721.html?title=User:Hexcola&amp;action=edit&amp;redlink=1" class="new" title="User:Hexcola (page does not exist)">hexcola</a>
+</p>
+<h2><span class="mw-headline" id=".E5.B8.B8.E8.A7.81.E9.97.AE.E9.A2.98.E5.8F.8A.E5.8F.82.E8.80.83">常见问题及参考</span></h2>
+<ul><li> <a rel="nofollow" class="external free" href="https://answers.unrealengine.com/questions/4383/sending-an-fstring-via-sockets.html">https://answers.unrealengine.com/questions/4383/sending-an-fstring-via-sockets.html</a></li>
+<li> <a rel="nofollow" class="external free" href="https://answers.unrealengine.com/questions/4406/need-help-with-json-objects.html">https://answers.unrealengine.com/questions/4406/need-help-with-json-objects.html</a></li>
+<li> <a rel="nofollow" class="external free" href="https://answers.unrealengine.com/questions/2830/best-way-to-perform-a-http-request.html">https://answers.unrealengine.com/questions/2830/best-way-to-perform-a-http-request.html</a></li>
+<li> <a rel="nofollow" class="external free" href="https://answers.unrealengine.com/questions/3530/does-httprequest-use-httpmanager-by-default.html">https://answers.unrealengine.com/questions/3530/does-httprequest-use-httpmanager-by-default.html</a></li>
+<li> <a rel="nofollow" class="external free" href="https://answers.unrealengine.com/questions/2830/best-way-to-perform-a-http-request.html">https://answers.unrealengine.com/questions/2830/best-way-to-perform-a-http-request.html</a></li>
+<li> <a rel="nofollow" class="external free" href="https://answers.unrealengine.com/questions/23170/making-http-calls.html">https://answers.unrealengine.com/questions/23170/making-http-calls.html</a></li>
+<li> <a rel="nofollow" class="external free" href="https://answers.unrealengine.com/questions/31079/http通信について.html">https://answers.unrealengine.com/questions/31079/http%E9%80%9A%E4%BF%A1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.html</a></li>
+<li> <a rel="nofollow" class="external free" href="https://answers.unrealengine.com/questions/26704/trouble-deserializing-json.html">https://answers.unrealengine.com/questions/26704/trouble-deserializing-json.html</a></li>
+<li> <a rel="nofollow" class="external free" href="https://answers.unrealengine.com/questions/2830/best-way-to-perform-a-http-request.html">https://answers.unrealengine.com/questions/2830/best-way-to-perform-a-http-request.html</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20200401005342
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.028 seconds
+Real time usage: 0.374 seconds
+Preprocessor visited node count: 84/1000000
+Preprocessor generated node count: 184/1000000
+Post‐expand include size: 20/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.369      1 -total
+100.00%    1.369      1 Template:Rating
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:351-0!canonical and timestamp 20200401005342 and revision id 703
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="index37a2.html?title=UE4%e4%b8%8eWEB%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%ba%a4%e4%ba%92(json)&amp;oldid=703">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=UE4与WEB服务器交互(json)&amp;oldid=703</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="indexb3b2.html?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="indexdd0a.html?title=Category:Code" title="Category:Code">Code</a></li><li><a href="index1db6.html?title=Category:Community_Created_Content" title="Category:Community Created Content">Community Created Content</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b971c4e90a55eae6"><meta name="worker" content="134"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.028","walltime":"0.374","ppvisitednodes":{"value":84,"limit":1000000},"ppgeneratednodes":{"value":184,"limit":1000000},"postexpandincludesize":{"value":20,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    1.369      1 -total","100.00%    1.369      1 Template:Rating"]},"cachereport":{"timestamp":"20200401005342","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":506});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":535,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

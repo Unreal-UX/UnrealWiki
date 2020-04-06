@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Survival_Sample_Game:_Section_6 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:05:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>Survival Sample Game: Section 6 - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Survival_Sample_Game:_Section_6","wgTitle":"Survival Sample Game: Section 6","wgCurRevisionId":555,"wgRevisionId":555,"wgArticleId":277,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials","SurvivalGameSeries","Code"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Survival_Sample_Game:_Section_6","wgRelevantArticleId":277,"wgRequestId":"196ff7a4f682bc3ddbeb9e42","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Survival_Sample_Game_Section_6 rootpage-Survival_Sample_Game_Section_6 skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-08a23efcd19f60be7"><meta name="worker" content="116"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Survival_Sample_Game:_Section_6 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:05:21 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Survival+Sample+Game%3A+Section+6" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="index.html" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="index765a.html?title=Survival_Sample_Game:_Section_6" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="indexde96.html?title=Talk:Survival_Sample_Game:_Section_6&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="index765a.html?title=Survival_Sample_Game:_Section_6">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="index2ae1.html?title=Survival_Sample_Game:_Section_6&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="indexf6fe.html?title=Survival_Sample_Game:_Section_6&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Survival Sample Game: Section 6</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><a href="index5e77.html?title=Template:Rating&amp;action=edit&amp;redlink=1" class="new" title="Template:Rating (page does not exist)">Template:Rating</a>
+C++ Sample project covering common gameplay concepts packed in a small coop survival game.
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Links"><span class="tocnumber">2</span> <span class="toctext">Links</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Feature_Highlights"><span class="tocnumber">3</span> <span class="toctext">Feature Highlights</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Weapons_.26_Equipment"><span class="tocnumber">3.1</span> <span class="toctext">Weapons &amp; Equipment</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Advanced_Animation_Blueprint"><span class="tocnumber">3.2</span> <span class="toctext">Advanced Animation Blueprint</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Zombie_AI"><span class="tocnumber">3.3</span> <span class="toctext">Zombie AI</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Dynamic_Time_of_Day"><span class="tocnumber">3.4</span> <span class="toctext">Dynamic Time of Day</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Object_interaction"><span class="tocnumber">3.5</span> <span class="toctext">Object interaction</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Moving_Objects"><span class="tocnumber">3.6</span> <span class="toctext">Moving Objects</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Available_Maps"><span class="tocnumber">4</span> <span class="toctext">Available Maps</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Coop_Landscape"><span class="tocnumber">4.1</span> <span class="toctext">Coop Landscape</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#ContainerCity"><span class="tocnumber">4.2</span> <span class="toctext">ContainerCity</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Coop_and_Open_World"><span class="tocnumber">5</span> <span class="toctext">Coop and Open World</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#2-Player_Coop_Survival"><span class="tocnumber">5.1</span> <span class="toctext">2-Player Coop Survival</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Open_World"><span class="tocnumber">5.2</span> <span class="toctext">Open World</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Taking_this_project_beyond"><span class="tocnumber">6</span> <span class="toctext">Taking this project beyond</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#Upgrade_your_game_world"><span class="tocnumber">6.1</span> <span class="toctext">Upgrade your game world</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Special_Thanks"><span class="tocnumber">7</span> <span class="toctext">Special Thanks</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#Closing"><span class="tocnumber">8</span> <span class="toctext">Closing</span></a>
+<ul>
+<li class="toclevel-2 tocsection-20"><a href="#Links_2"><span class="tocnumber">8.1</span> <span class="toctext">Links</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>Section 6 is the conclusion to the C++ Survival game series. The final series is upgraded to support the latest 4.8 version of Unreal Engine. It introduces a new coop landscape map along with many tweaks and bug fixes. In this final section I will go over some of the available features in the project and give you some tips on building your own game using this series.
+</p><p><a href="index3617.html?title=File:Section6_coopoverview.jpg" class="image"><img alt="Section6 coopoverview.jpg" src="../d26ilriwvtzlb.cloudfront.net/c/c8/Section6_coopoverview.jpg" width="1280" height="741" /></a>
+</p>
+<h2><span class="mw-headline" id="Links">Links</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://forums.unrealengine.com/showthread.php?63678-Ongoing-C-Gameplay-Example-Series-Making-a-Survival-Game">Forum Thread</a></li>
+<li> <a rel="nofollow" class="external text" href="https://wiki.unrealengine.com/Survival_sample_game">Project Overview</a></li>
+<li> <a rel="nofollow" class="external text" href="https://wiki.unrealengine.com/Survival_Sample_Game:_Section_5">Previous Section (Gameplay networking)</a></li>
+<li> <a rel="nofollow" class="external text" href="https://github.com/tomlooman/EpicSurvivalGameSeries">Source at GitHub</a></li></ul>
+<h2><span class="mw-headline" id="Feature_Highlights">Feature Highlights</span></h2>
+<p>During the course of the 6 sections I covered a variety of C++ gameplay concepts for you to explore and learn from. Not all available features in the project were covered in the section documentation. I invite you to play the game and explore the source to discover everything that was included! To help you get an overview of what is available, I'm highlighting some of the project features below.
+</p>
+<h3><span class="mw-headline" id="Weapons_.26_Equipment">Weapons &amp; Equipment</span></h3>
+<p><a href="index5d67.html?title=File:Section6_equipment03.jpg" class="image"><img alt="Section6 equipment03.jpg" src="../d26ilriwvtzlb.cloudfront.net/2/28/Section6_equipment03.jpg" width="1764" height="691" /></a>
+</p><p>Players spawn with an assault rifle and a flashlight. These weapons can be carried on the character's back (rifle) and pelvis (flashlight) using <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Engine/Content/Types/SkeletalMeshes/Sockets/index.html">Sockets</a>. One of the more advanced features included is the custom <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Engine/Animation/Sequences/Notifies/index.html">AnimNotify</a> that calls for the exact moment during the animation we must switch the mesh from being in the character's hands to his back or pelvis. Any time you specify an AnimNotify in your animations you can implement this event in the EventGraph of the AnimationBlueprint for that character.
+</p>
+<h3><span class="mw-headline" id="Advanced_Animation_Blueprint">Advanced Animation Blueprint</span></h3>
+<p><a href="index4d7b.html?title=File:Section6_advancedanimbp03.jpg" class="image"><img alt="Section6 advancedanimbp03.jpg" src="../d26ilriwvtzlb.cloudfront.net/5/54/Section6_advancedanimbp03.jpg" width="1273" height="506" /></a>
+</p><p>The project includes an advanced animation blueprint setup for the player character. It includes sprinting, crouching, aiming down sights, weapon fire recoil, etc. along with a special "Idle Break" animation that is played whenever a player idle for a small period of time. On top of that <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Engine/Animation/AnimMontage/index.html">AnimMontages</a> are used to blend weapon reloading and equipping.
+</p><p>The animations are from the <a rel="nofollow" class="external text" href="https://www.unrealengine.com/content/88f875a30cfe4d5e906aef04138fbbfc">Animation Starter Pack</a>, freely available on the Unreal Engine marketplace.
+</p>
+<h3><span class="mw-headline" id="Zombie_AI">Zombie AI</span></h3>
+<p><a href="index425c.html?title=File:Section6_zombieattacking01.jpg" class="image"><img alt="Section6 zombieattacking01.jpg" src="../d26ilriwvtzlb.cloudfront.net/7/7d/Section6_zombieattacking01.jpg" width="1280" height="479" /></a>
+</p><p>Enemy AI wanders around the area during the night and moves towards noises made by the player. The AI is able to sense gun shots and footsteps and will attack the player on sight in a furious sprint.
+</p><p>The zombie has audio responses for many of the events including when sensing a player, idling, wandering, chasing, getting hit, dying, attacking etc. These audio files were kindly provided by <a rel="nofollow" class="external text" href="https://twitter.com/YorickCoster">@YorickCoster</a> and can be used in your own projects too!
+</p>
+<h3><span class="mw-headline" id="Dynamic_Time_of_Day">Dynamic Time of Day</span></h3>
+<p><a href="index682c.html?title=File:Section6_timeofday_combined.jpg" class="image"><img alt="Section6 timeofday combined.jpg" src="../d26ilriwvtzlb.cloudfront.net/6/66/Section6_timeofday_combined.jpg" width="1718" height="716" /></a>
+</p><p>The game features a dynamic time of day that is tied to the game mode. As during night time the zombies start spawning into the level and any existing zombies become more active and start wandering around the map. It supports networking with smooth interpolation on clients.
+</p><p><b>Known issue:</b> The Skylight component does not support efficient runtime re-capture of the environment. To prevent a huge performance loss the lighting is not updated per frame, as a result the day/night isn't completely smooth the moment the sun sets.
+</p>
+<h3><span class="mw-headline" id="Object_interaction">Object interaction</span></h3>
+<p><a href="indexc2fa.html?title=File:Section6_bombfuze02.jpg" class="image"><img alt="Section6 bombfuze02.jpg" src="../d26ilriwvtzlb.cloudfront.net/7/7a/Section6_bombfuze02.jpg" width="1280" height="496" /></a>
+</p><p>Some of the objects in the world can be interacted with (Hotkey "E") These include the assault rifle, flashlight, cupcake and the bomb. 
+</p><p>Consuming food restores hitpoints and energy while interacting with the bomb sets the fuze. Weapons can be added to the inventory.
+</p>
+<h3><span class="mw-headline" id="Moving_Objects">Moving Objects</span></h3>
+<p><a href="index651d.html?title=File:Section6_barrier01.jpg" class="image"><img alt="Section6 barrier01.jpg" src="../d26ilriwvtzlb.cloudfront.net/5/5e/Section6_barrier01.jpg" width="1280" height="584" /></a>
+</p><p>Using the middle-mouse button, any physically simulated object can be picked up and moved around. Examples include the red barrier and the bomb actor. you can rotate the carried objects using the scroll-wheel and the 1 &amp; 2 numeric keys. Left-clicking while carrying an object will throw it in the view direction. This is a neat trick to throw fuzed bombs are your enemy, or to throw food/equipment to your coop buddy.
+</p>
+<h2><span class="mw-headline" id="Available_Maps">Available Maps</span></h2>
+<p>For this series I've built a few maps to test out specific features. "DefaultMap" is used as the test bed for most newly introduced features.
+</p>
+<h3><span class="mw-headline" id="Coop_Landscape">Coop Landscape</span></h3>
+<p><a href="index2e57.html?title=File:Section_openworldscenery01.jpg" class="image"><img alt="Section openworldscenery01.jpg" src="../d26ilriwvtzlb.cloudfront.net/6/6c/Section_openworldscenery01.jpg" width="1280" height="547" /></a>
+</p><p>A recently introduced map for the cooperative gamemode with a slight nudge to an open world.
+</p>
+<h3><span class="mw-headline" id="ContainerCity">ContainerCity</span></h3>
+<p><a href="index11a7.html?title=File:Section6_containercity01.jpg" class="image"><img alt="Section6 containercity01.jpg" src="../d26ilriwvtzlb.cloudfront.net/1/1b/Section6_containercity01.jpg" width="1280" height="549" /></a>
+</p><p>Some may recognize it as "Shipment" from a well known shooter. It was used as a testing grounds for the AI sensing and the coop-gamemode.
+</p>
+<h2><span class="mw-headline" id="Coop_and_Open_World">Coop and Open World</span></h2>
+<p>The game was designed as a small 2-player coop survival game where players must survive as many nights as possible while using objects they find in the environment such as bombs, barriers and weapons. Additionally I've included a second gamemode stub you can use to build a more open ruleset for a DayZ/Rust like survival game.
+</p>
+<h3><span class="mw-headline" id="2-Player_Coop_Survival">2-Player Coop Survival</span></h3>
+<p><a href="indexd28a.html?title=File:Section6_coop02.jpg" class="image"><img alt="Section6 coop02.jpg" src="../d26ilriwvtzlb.cloudfront.net/e/e8/Section6_coop02.jpg" width="1280" height="749" /></a>
+</p><p>The gamemode features an accelerated day/night cycle, during the day players can collect items, equipment and setup defenses for the night to come. For the duration of the night zombies appear, any existing zombies become active and start moving around the map. Keep an eye out on your energy levels as low energy will hurt your health. If a player dies during the night, he will respawn at sunset as long as there is at least one other player still alive.
+</p><p>Players score points as they survive the night and by killing zombies. The game continues for as long as there is at least one player alive.
+</p>
+<h3><span class="mw-headline" id="Open_World">Open World</span></h3>
+<p><a href="indexbe3b.html?title=File:Section6_timeofday03.jpg" class="image"><img alt="Section6 timeofday03.jpg" src="../d26ilriwvtzlb.cloudfront.net/5/5d/Section6_timeofday03.jpg" width="1280" height="544" /></a>
+</p><p>The open world gamemode is a stub that can be used to build your own open world ruleset. Unlike the coop mode, this mode is free-for-all (friendlyfire enabled) The mode lacks the scoring system, but supports the time of day and enemy spawns to get you started. Keep in mind that it's a basic setup and will require additional work depending on the design of your own game.
+</p>
+<h2><span class="mw-headline" id="Taking_this_project_beyond">Taking this project beyond</span></h2>
+<p>This series is built primarily as a C++ learning resource. I hope you've learned a lot from the previous sections in this series and put that knowledge to use for your own project! If you wish to use this project as a base for your own game, you can!
+</p>
+<h3><span class="mw-headline" id="Upgrade_your_game_world">Upgrade your game world</span></h3>
+<p>Don't forget to check out the amazing "A boy and his kite" demo, it's available on the Learn Tab in your Unreal Engine Launcher.
+</p><p>&lt;youtube&gt;<a rel="nofollow" class="external free" href="https://www.youtube.com/watch?v=JNgsbNvkNjE">https://www.youtube.com/watch?v=JNgsbNvkNjE</a>&lt;/youtube&gt;
+</p><p>Have a look at the <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Engine/OpenWorldTools/index.html">Open World Tools</a> with many great open world rendering improvements introduced in 4.8!
+</p>
+<h2><span class="mw-headline" id="Special_Thanks">Special Thanks</span></h2>
+<p>I'd like to give a special thanks to everyone who helped out during the series. And especially Yorick Coster for providing free to use game audio! The audio files included with the project can be used in your own projects.
+</p>
+<ul><li> Yorick Coster (<a rel="nofollow" class="external text" href="https://twitter.com/YorickCoster">@YorickCoster</a>) for contributing many of the audio files</li>
+<li> Osman Tsjardiwal (<a rel="nofollow" class="external text" href="https://twitter.com/ozmant">@ozmant</a>) for providing me with ContainerCity base map</li>
+<li> Everyone on the forums to helped with reporting bugs and feedback</li>
+<li> The contributors on GitHub</li></ul>
+<h2><span class="mw-headline" id="Closing">Closing</span></h2>
+<p>This section concludes the series, I hope you've learned many new C++ gameplay concepts and use this for your own game projects moving forward!
+</p><p>Follow me on <a rel="nofollow" class="external text" href="https://twitter.com/t_looman">Twitter</a> and let me know what you think of this series! Or check out some of the other things I'm working on <a rel="nofollow" class="external text" href="http://www.tomlooman.com/">right here</a>!
+</p>
+<h3><span class="mw-headline" id="Links_2">Links</span></h3>
+<p><b><a href="index3f32.html?title=Survival_Sample_Game:_Section_5" title="Survival Sample Game: Section 5">Previous Section (Networking)</a> - <a href="index67b9.html?title=Survival_sample_game" title="Survival sample game">Main Project Page</a></b>
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="https://forums.unrealengine.com/showthread.php?63678-Ongoing-C-Gameplay-Example-Series-Making-a-Survival-Game">Forum Thread</a></li>
+<li> <a rel="nofollow" class="external text" href="https://github.com/tomlooman/EpicSurvivalGameSeries">Source at GitHub</a></li></ul>
+<p><b>Project &amp; Wiki by <a rel="nofollow" class="external text" href="http://www.tomlooman.com/">Tom Looman</a></b>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20200401004903
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.076 seconds
+Real time usage: 0.361 seconds
+Preprocessor visited node count: 82/1000000
+Preprocessor generated node count: 116/1000000
+Post‐expand include size: 20/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.014      1 -total
+100.00%    2.014      1 Template:Rating
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:277-0!canonical and timestamp 20200401004903 and revision id 555
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="index7e7a.html?title=Survival_Sample_Game:_Section_6&amp;oldid=555">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Survival_Sample_Game:_Section_6&amp;oldid=555</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="indexb3b2.html?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="index4645.html?title=Category:SurvivalGameSeries&amp;action=edit&amp;redlink=1" class="new" title="Category:SurvivalGameSeries (page does not exist)">SurvivalGameSeries</a></li><li><a href="indexdd0a.html?title=Category:Code" title="Category:Code">Code</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b48461a8a6519d83"><meta name="worker" content="116"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.076","walltime":"0.361","ppvisitednodes":{"value":82,"limit":1000000},"ppgeneratednodes":{"value":116,"limit":1000000},"postexpandincludesize":{"value":20,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    2.014      1 -total","100.00%    2.014      1 Template:Rating"]},"cachereport":{"timestamp":"20200401004903","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":89});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":127,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

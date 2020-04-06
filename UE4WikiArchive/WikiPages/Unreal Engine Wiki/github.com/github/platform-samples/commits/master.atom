@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/platform-samples/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/platform-samples/commits/master.atom"/>
+  <title>Recent Commits to platform-samples:master</title>
+  <updated>2020-03-20T14:20:20Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4a10583e53d384f3846e7534608e40b0a42409b1</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/4a10583e53d384f3846e7534608e40b0a42409b1"/>
+    <title>
+        Merge pull request #245 from github/imjohnbo/search-api
+    </title>
+    <updated>2020-03-20T14:20:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2993937?s=30&amp;u=af81e7f4c87a06be976453be24b8e045f23c4878&amp;v=4"/>
+    <author>
+      <name>imjohnbo</name>
+      <uri>https://github.com/imjohnbo</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #245 from github/imjohnbo/search-api
+
+imjohnbo/search-api&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5131b00153a0daaf8bb60d377047c4ff5766cacc</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/5131b00153a0daaf8bb60d377047c4ff5766cacc"/>
+    <title>
+        add hook to reject certain commits from being pushed to the repositor…
+    </title>
+    <updated>2020-03-20T14:02:30Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/477434?s=30&amp;u=021bd04c350a924fb6dbd8acf575d54312b15cbf&amp;v=4"/>
+    <author>
+      <name>larsxschneider</name>
+      <uri>https://github.com/larsxschneider</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add hook to reject certain commits from being pushed to the repository (#240)
+
+* add hook to reject certain commits from being pushed to the repository
+
+* Update pre-receive-hooks/reject-commits.sh
+
+Co-Authored-By: larsxschneider &amp;lt;larsxschneider@github.com&amp;gt;
+
+Co-authored-by: Thomas Hughes &amp;lt;iamhughes@github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d08243c87ec7ed86080e4736909eb0a91c56715c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/d08243c87ec7ed86080e4736909eb0a91c56715c"/>
+    <title>
+        Add more information on OCTOKIT_ACCESS_TOKEN to README.md (#261)
+    </title>
+    <updated>2020-03-20T13:04:10Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/307658?s=30&amp;v=4"/>
+    <author>
+      <name>mnuck</name>
+      <uri>https://github.com/mnuck</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add more information on OCTOKIT_ACCESS_TOKEN to README.md (#261)
+
+This tool can send a relatively large number of API requests. If not authenticated, the tool may not be able to complete even a single run. Add information about why this happens, and give the user information about how to generate the token.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/459f28b88b904ef3e43253424fe95ac5d561c1dd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/459f28b88b904ef3e43253424fe95ac5d561c1dd"/>
+    <title>
+        changed git-purge-path to git-purge-files in help (#290)
+    </title>
+    <updated>2020-03-20T13:03:24Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/745341?s=30&amp;u=7151639213e1e51f40abc1691311ad816ce83759&amp;v=4"/>
+    <author>
+      <name>affrae</name>
+      <uri>https://github.com/affrae</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;changed git-purge-path to git-purge-files in help (#290)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/13c33b8cb9543fa669059d8f5f4d5e798547706e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/13c33b8cb9543fa669059d8f5f4d5e798547706e"/>
+    <title>
+        Update commit-current-user-check.sh (#293)
+    </title>
+    <updated>2020-03-20T12:58:50Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/51922180?s=30&amp;v=4"/>
+    <author>
+      <name>brooksClo19</name>
+      <uri>https://github.com/brooksClo19</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update commit-current-user-check.sh (#293)
+
+Adding &amp;#39;$&amp;#39; to the GHE_URL variable at line 28 so it prints out full path.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1f7fbb2841c44176bcd1b977b6868216753b120d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/1f7fbb2841c44176bcd1b977b6868216753b120d"/>
+    <title>
+        Bump spark-core from 2.3 to 2.7.2 in /api/java/deployment (#297)
+    </title>
+    <updated>2020-03-20T12:55:19Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump spark-core from 2.3 to 2.7.2 in /api/java/deployment (#297)
+
+Bumps [spark-core](https://github.com/perwendel/spark) from 2.3 to 2.7.2.
+- [Release notes](https://github.com/perwendel/spark/releases)
+- [Commits](https://github.com/perwendel/spark/compare/2.3...2.7.2)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;
+
+Co-authored-by: dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0f66a9a65fbad4d70f2fe694c2adfddaae5a0898</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/0f66a9a65fbad4d70f2fe694c2adfddaae5a0898"/>
+    <title>
+        Bump rack-protection in /api/ruby/building-a-ci-server (#298)
+    </title>
+    <updated>2020-03-20T12:54:12Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump rack-protection in /api/ruby/building-a-ci-server (#298)
+
+Bumps [rack-protection](https://github.com/sinatra/sinatra) from 1.5.2 to 1.5.5.
+- [Release notes](https://github.com/sinatra/sinatra/releases)
+- [Changelog](https://github.com/sinatra/sinatra/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/sinatra/sinatra/commits)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;
+
+Co-authored-by: dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/69dc644cd1359d3aaeeae92db31de6cefe92d52f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/69dc644cd1359d3aaeeae92db31de6cefe92d52f"/>
+    <title>
+        Bump rack-protection in /api/ruby/rendering-data-as-graphs (#299)
+    </title>
+    <updated>2020-03-20T12:53:44Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump rack-protection in /api/ruby/rendering-data-as-graphs (#299)
+
+Bumps [rack-protection](https://github.com/sinatra/sinatra) from 1.5.3 to 1.5.5.
+- [Release notes](https://github.com/sinatra/sinatra/releases)
+- [Changelog](https://github.com/sinatra/sinatra/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/sinatra/sinatra/commits)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;
+
+Co-authored-by: dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/075eb86cde18d6bc9e0124537bfbc579e0cad33f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/075eb86cde18d6bc9e0124537bfbc579e0cad33f"/>
+    <title>
+        Bump rack in /api/ruby/building-your-first-github-app (#310)
+    </title>
+    <updated>2020-03-20T12:52:59Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump rack in /api/ruby/building-your-first-github-app (#310)
+
+Bumps [rack](https://github.com/rack/rack) from 2.0.5 to 2.2.2.
+- [Release notes](https://github.com/rack/rack/releases)
+- [Changelog](https://github.com/rack/rack/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/rack/rack/compare/2.0.5...v2.2.2)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;
+
+Co-authored-by: dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3c1882469a6a5cdbd01d03bee37d0a614ef449c0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/3c1882469a6a5cdbd01d03bee37d0a614ef449c0"/>
+    <title>
+        Bump rack from 1.6.8 to 1.6.13 in /api/ruby/rendering-data-as-graphs …
+    </title>
+    <updated>2020-03-20T12:52:38Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump rack from 1.6.8 to 1.6.13 in /api/ruby/rendering-data-as-graphs (#311)
+
+Bumps [rack](https://github.com/rack/rack) from 1.6.8 to 1.6.13.
+- [Release notes](https://github.com/rack/rack/releases)
+- [Changelog](https://github.com/rack/rack/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/rack/rack/compare/1.6.8...1.6.13)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;
+
+Co-authored-by: dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1dd2f24ce971ca085917bc756561c813977472bc</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/1dd2f24ce971ca085917bc756561c813977472bc"/>
+    <title>
+        Bump rack from 1.5.2 to 1.6.13 in /api/ruby/basics-of-authentication …
+    </title>
+    <updated>2020-03-20T12:52:12Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump rack from 1.5.2 to 1.6.13 in /api/ruby/basics-of-authentication (#312)
+
+Bumps [rack](https://github.com/rack/rack) from 1.5.2 to 1.6.13.
+- [Release notes](https://github.com/rack/rack/releases)
+- [Changelog](https://github.com/rack/rack/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/rack/rack/compare/1.5.2...1.6.13)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;
+
+Co-authored-by: dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1ddcd5d4bd9e3f7a05d99ff3f3154596aa3684fa</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/1ddcd5d4bd9e3f7a05d99ff3f3154596aa3684fa"/>
+    <title>
+        Bump rack from 1.6.8 to 1.6.13 in /app/ruby/app-issue-creator (#313)
+    </title>
+    <updated>2020-03-20T12:51:45Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump rack from 1.6.8 to 1.6.13 in /app/ruby/app-issue-creator (#313)
+
+Bumps [rack](https://github.com/rack/rack) from 1.6.8 to 1.6.13.
+- [Release notes](https://github.com/rack/rack/releases)
+- [Changelog](https://github.com/rack/rack/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/rack/rack/compare/1.6.8...1.6.13)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;
+
+Co-authored-by: dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/454fedc9548cff4fcd3318e901694bd705062f26</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/454fedc9548cff4fcd3318e901694bd705062f26"/>
+    <title>
+        Bump rack from 1.5.2 to 1.6.13 in /hooks/ruby/configuring-your-server…
+    </title>
+    <updated>2020-03-20T12:51:13Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump rack from 1.5.2 to 1.6.13 in /hooks/ruby/configuring-your-server (#314)
+
+Bumps [rack](https://github.com/rack/rack) from 1.5.2 to 1.6.13.
+- [Release notes](https://github.com/rack/rack/releases)
+- [Changelog](https://github.com/rack/rack/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/rack/rack/compare/1.5.2...1.6.13)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;
+
+Co-authored-by: dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/802cbff6b00eaad3051e5b545874b5f217c8c4cf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/802cbff6b00eaad3051e5b545874b5f217c8c4cf"/>
+    <title>
+        Bump rack from 1.6.5 to 1.6.13 in /hooks/ruby/dismiss-review-server (…
+    </title>
+    <updated>2020-03-20T12:50:49Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump rack from 1.6.5 to 1.6.13 in /hooks/ruby/dismiss-review-server (#315)
+
+Bumps [rack](https://github.com/rack/rack) from 1.6.5 to 1.6.13.
+- [Release notes](https://github.com/rack/rack/releases)
+- [Changelog](https://github.com/rack/rack/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/rack/rack/compare/1.6.5...1.6.13)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;
+
+Co-authored-by: dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/486ae4be0d88528621b5d459f8e05e426da85c0a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/486ae4be0d88528621b5d459f8e05e426da85c0a"/>
+    <title>
+        Bump rack from 1.5.2 to 1.6.13 in /api/ruby/building-a-ci-server (#316)
+    </title>
+    <updated>2020-03-20T12:50:16Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump rack from 1.5.2 to 1.6.13 in /api/ruby/building-a-ci-server (#316)
+
+Bumps [rack](https://github.com/rack/rack) from 1.5.2 to 1.6.13.
+- [Release notes](https://github.com/rack/rack/releases)
+- [Changelog](https://github.com/rack/rack/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/rack/rack/compare/1.5.2...1.6.13)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;
+
+Co-authored-by: dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/aadecffdb6793014637d017144aa107b03b1ebaa</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/aadecffdb6793014637d017144aa107b03b1ebaa"/>
+    <title>
+        Bump rack from 1.6.5 to 1.6.13 in /hooks/ruby/delete-repository-event…
+    </title>
+    <updated>2020-03-20T12:49:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump rack from 1.6.5 to 1.6.13 in /hooks/ruby/delete-repository-event (#317)
+
+Bumps [rack](https://github.com/rack/rack) from 1.6.5 to 1.6.13.
+- [Release notes](https://github.com/rack/rack/releases)
+- [Changelog](https://github.com/rack/rack/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/rack/rack/compare/1.6.5...1.6.13)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;
+
+Co-authored-by: dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/eab100db8ea2eb487d4c9fdb5a617120cf05c132</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/eab100db8ea2eb487d4c9fdb5a617120cf05c132"/>
+    <title>
+        Bump rest-client from 1.6.7 to 1.8.0 in /api/ruby/basics-of-authentic…
+    </title>
+    <updated>2020-03-20T12:45:38Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump rest-client from 1.6.7 to 1.8.0 in /api/ruby/basics-of-authentication (#301)
+
+* Bump rest-client in /api/ruby/basics-of-authentication
+
+Bumps [rest-client](https://github.com/rest-client/rest-client) from 1.6.7 to 1.8.0.
+- [Release notes](https://github.com/rest-client/rest-client/releases)
+- [Changelog](https://github.com/rest-client/rest-client/blob/master/history.md)
+- [Commits](https://github.com/rest-client/rest-client/compare/v1.6.7...v1.8.0)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;
+
+* Newer Ruby versions have json built-in
+
+Co-authored-by: dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;
+Co-authored-by: Johannes Nicolai &amp;lt;jonico@github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b452ef16a240537f95e1510a1577998da1362b16</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/b452ef16a240537f95e1510a1577998da1362b16"/>
+    <title>
+        [docs] simplify definition of Inactivity (#306)
+    </title>
+    <updated>2020-03-20T12:31:50Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/163029?s=30&amp;u=6b2c8be8cad59e2d7087327a369cee8036f4095c&amp;v=4"/>
+    <author>
+      <name>spier</name>
+      <uri>https://github.com/spier</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[docs] simplify definition of Inactivity (#306)
+
+* [docs] simplify definition of Inactivity
+
+I tried to write a simpler definition of Inactivity. Not sure if I succeeded?
+Please take a look.
+
+* Update api/ruby/find-inactive-members/README.md
+
+Co-Authored-By: Parker Brown &amp;lt;17183625+parkerbxyz@users.noreply.github.com&amp;gt;
+
+Co-authored-by: Parker Brown &amp;lt;17183625+parkerbxyz@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/68131c067f994f217965d25fca40c4e3c202517d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/68131c067f994f217965d25fca40c4e3c202517d"/>
+    <title>
+        Update README.md (#307)
+    </title>
+    <updated>2020-03-20T12:31:06Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/14997693?s=30&amp;u=9f858779c610c8a309b5deaf5b7a60b9104a55b8&amp;v=4"/>
+    <author>
+      <name>samwiskow</name>
+      <uri>https://github.com/samwiskow</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md (#307)
+
+Update the link to the graphQL API from early access to the v4 url&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/903ce1248cac50d1d747fc7340c402a0dd3edbbf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/platform-samples/commit/903ce1248cac50d1d747fc7340c402a0dd3edbbf"/>
+    <title>
+        Fixing CSV generation. Also add column names to the CSV output. (#309)
+    </title>
+    <updated>2020-03-20T12:30:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/163029?s=30&amp;u=6b2c8be8cad59e2d7087327a369cee8036f4095c&amp;v=4"/>
+    <author>
+      <name>spier</name>
+      <uri>https://github.com/spier</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fixing CSV generation. Also add column names to the CSV output. (#309)&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

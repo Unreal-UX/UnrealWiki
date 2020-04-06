@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=UE4_Transform_Calculus_-_Part_1 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:23:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>UE4 Transform Calculus - Part 1 - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"UE4_Transform_Calculus_-_Part_1","wgTitle":"UE4 Transform Calculus - Part 1","wgCurRevisionId":579,"wgRevisionId":579,"wgArticleId":289,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Epic Created Content"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"UE4_Transform_Calculus_-_Part_1","wgRelevantArticleId":289,"wgRequestId":"1f1c70973c4877a330dcd462","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-UE4_Transform_Calculus_-_Part_1 rootpage-UE4_Transform_Calculus_-_Part_1 skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-08a23efcd19f60be7"><meta name="worker" content="80"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=UE4_Transform_Calculus_-_Part_1 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:23:40 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=UE4+Transform+Calculus+-+Part+1" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="index.html" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="indexc5eb.html?title=UE4_Transform_Calculus_-_Part_1" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="index6ffe.html?title=Talk:UE4_Transform_Calculus_-_Part_1&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="indexc5eb.html?title=UE4_Transform_Calculus_-_Part_1">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="index60cf.html?title=UE4_Transform_Calculus_-_Part_1&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="index9386.html?title=UE4_Transform_Calculus_-_Part_1&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">UE4 Transform Calculus - Part 1</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#UE4_Transform_Calculus_-_Part_1"><span class="tocnumber">1</span> <span class="toctext">UE4 Transform Calculus - Part 1</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Motivation"><span class="tocnumber">1.1</span> <span class="toctext">Motivation</span></a></li>
+<li class="toclevel-2"><a href="#Target_Audience"><span class="tocnumber">1.2</span> <span class="toctext">Target Audience</span></a></li>
+<li class="toclevel-2"><a href="#Why_.E2.80.9CCalculus.3F.E2.80.9D"><span class="tocnumber">1.3</span> <span class="toctext">Why “Calculus?”</span></a></li>
+<li class="toclevel-2"><a href="#Rigid_Body_Hierarchies"><span class="tocnumber">1.4</span> <span class="toctext">Rigid Body Hierarchies</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Hierarchies_as_Attachments"><span class="tocnumber">1.4.1</span> <span class="toctext">Hierarchies as Attachments</span></a></li>
+<li class="toclevel-3"><a href="#Hierarchies_as_Frames_of_Reference"><span class="tocnumber">1.4.2</span> <span class="toctext">Hierarchies as Frames of Reference</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Transform_Calculus"><span class="tocnumber">1.5</span> <span class="toctext">Transform Calculus</span></a></li>
+<li class="toclevel-2"><a href="#Transforming_Vectors_and_Points"><span class="tocnumber">1.6</span> <span class="toctext">Transforming Vectors and Points</span></a></li>
+<li class="toclevel-2"><a href="#Summary"><span class="tocnumber">1.7</span> <span class="toctext">Summary</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Footnotes"><span class="tocnumber">1.7.1</span> <span class="toctext">Footnotes</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="UE4_Transform_Calculus_-_Part_1">UE4 Transform Calculus - Part 1</span></h1>
+<h2><span class="mw-headline" id="Motivation">Motivation</span></h2>
+<p>Slate often has to deal with deep and wide hierarchies of widgets, expressing the sizes and positions of children in terms of their parents. Sometimes these are simple relationships like text in a button, but sometimes those relationships are much more complex, like a graph editing panel that might be panning and zooming across a virtual canvas.
+</p><p>As hierarchies get deeper, this relationship becomes layered. For instance, if we apply a global DPI (dots per inch) scale to our application, which itself sits in a window at some arbitrary location on the desktop, there are a series of zooms and offsets that combine to form the final position of a widget on the screen.
+</p>
+<div class="center"><div class="floatnone"><a href="indexa46f.html?title=File:Calc1img1.png" class="image"><img alt="Calc1img1.png" src="../d26ilriwvtzlb.cloudfront.net/3/33/Calc1img1.png" width="624" height="452" /></a></div></div>
+<p><i>[The complex relationship of slate widgets. A UE4 Editor view displaying blueprint widgets within a virtual panel within a tabwell within a window, all having  a global application scale applied. The Blueprint editor must reason about the widgets in <b>virtual canvas space</b>, implement mouse events in <b>desktop space</b>, and render the widgets in <b>window space</b>.]</i>
+</p><p>Slate must not only be able to unwind these hierarchies internally, but also provide straightforward ways for widget authors to reason about widgets in multiple spaces (ie, local, virtual canvas, window, desktop). With the addition of <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Engine/UMG/UserGuide/Styling/index.html">Render Transforms</a> to Slate, the math for computing a child’s relationship to its parent became much more involved than a simple scale and offset.
+</p>
+<div class="center"><div class="floatnone"><a href="indexfb88.html?title=File:Calc1img2.png" class="image"><img alt="Calc1img2.png" src="../d26ilriwvtzlb.cloudfront.net/2/2c/Calc1img2.png" width="624" height="540" /></a></div></div>
+<p><i>[SlateViewer can apply an arbitrary render transform to the entire application. Now what’s the relationship of one of these widgets to its parent, or the window, or the desktop?]</i>
+</p><p>In fact, the historical simplicity of a child widget’s transform with respect to its parent in Slate contributed to an overall daunting task of updating hundreds of widgets to support arbitrary render transforms. We chose to focus on the core widgets that most widgets are composed of, but lots of legacy functions still exist in Slate that are used by other widgets that don’t support render transforms. This series of posts will focus on a new notation for manipulating transforms, along with a C++ implementation in UE4  that Slate is using to assist with this sometimes mind-bending task.
+</p>
+<h2><span class="mw-headline" id="Target_Audience">Target Audience</span></h2>
+<p>For this discussion, I assume you are already aware of basic <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Linear_algebra">linear algebra</a> and have at least cursory experience working with rigid body hierarchies in code. You should be comfortable with vectors and matrices, be able to perform basic calculations with them, and be familiar with the idea of using them to represent transformations like translation, rotation, scale, shear, etc. Some familiarity with alternate representations like quaternions etc may also be useful when we start discussing the code implementation. If you’ve ever tried to use a physics engine or render something in OpenGL or Direct3D, you likely have more than enough exposure to these concepts.
+</p><p>I will generally try to keep a conversational tone, but will occasionally stray into math-heavy territory. When I do, I’ll try to summarize the salient points and provide links to read up more if you’d like. The reason for “getting mathy” sometimes is to establish the mathematical foundation for the notation we are developing, not to rigorously prove it. I’m a programmer, not a mathematician.
+</p>
+<h2><span class="mw-headline" id="Why_.E2.80.9CCalculus.3F.E2.80.9D">Why “Calculus?”</span></h2>
+<p>So, a word about why I chose the term “Transform Calculus” instead of something less presumptive (like Framework or API). This document in fact describes a <a rel="nofollow" class="external text" href="http://www.encyclopediaofmath.org/index.php/Logical_calculus">logical calculus</a>, or a formalization of a logical theory<sup>[1]</sup>. These are concepts that provide a mathematical notation for uniformly expressing and manipulating transforms that transcends the representation (ie, a matrix or quaternion).
+</p><p>There happens to be an implementation in UE4, but that implementation is secondary to the underlying concepts. Also, the implementation sometimes has to make compromises to work within the C++ language and UE4 Core types, so is not a pure expression of these concepts.
+</p><p>To be clear, I'm not inventing anything "novel", I’m just wrapped some well-known math concepts in a higher level abstraction. That said, I do feel all the focus on notation is a critical part of the journey, as one can't use the library effectively without understanding the notation. For that reason, simply referring to this as a Framework or API seemed insufficient.
+</p><p>One could perhaps more accurately refer to this an an <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Algebra_over_a_field">algebra</a>, as it’s closed over the affine vector space. But I don’t prove this, and frankly I’ve been using the term calculus for years, so it seemed too late to turn back now. C’est la vie.&#160;:)
+</p>
+<h2><span class="mw-headline" id="Rigid_Body_Hierarchies">Rigid Body Hierarchies</span></h2>
+<p>Slate UI hierarchies are conceptually identical to rigid body hierarchies that physics engines utilize. We’ll start with a quick overview of rigid body hierarchies to establish the concepts. I expect anyone reading this to be familiar already, so I won’t dwell on details.  
+</p>
+<div class="center"><div class="floatnone"><a href="indexe8c0.html?title=File:Calc1img3.png" class="image"><img alt="Calc1img3.png" src="../d26ilriwvtzlb.cloudfront.net/8/86/Calc1img3.png" width="292" height="201" /></a></div></div>
+<h3><span class="mw-headline" id="Hierarchies_as_Attachments">Hierarchies as Attachments</span></h3>
+<p>One way to think about the hierarchy is as each part being “attached” to its parent by a transformation. This transformation places a child part relative to its parent. To place a part in the world we start at the root of the tree (“world space”) and successively transform the part all the way down to the leaf node where the part is located.
+</p>
+<div class="center"><div class="floatnone"><a href="index2299.html?title=File:Calc1imgIV.png" class="image"><img alt="Calc1imgIV.png" src="../d26ilriwvtzlb.cloudfront.net/7/70/Calc1imgIV.png" width="310" height="293" /></a></div></div>
+<p>If one thinks of these transformations as simple offsets, then it is easy to conceptualize. However, most rigid body systems allow more complex transformations like scale, rotate, and/or shear. Reasoning about parts’ relations to each other in such a hierarchy can quickly become very complicated.
+</p>
+<h3><span class="mw-headline" id="Hierarchies_as_Frames_of_Reference">Hierarchies as Frames of Reference</span></h3>
+<p>Another way to look at the hierarchy is that each part is a camera, and the transformation is taking the part from it’s local the coordinate system into that of the parent. So each part is essentially in it’s own coordinate system, or <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Frame_of_reference">“frame of reference”</a> relative to its parent.  The representation is logically equivalent to the attachment point of view described above, but instead of viewing all parts as placed at different points in the same coordinate system, each part has its own local coordinate system. This makes it easier to conceptualize the parent-child relationship as more than a simple offset. To place a child in the world, we chain, or composite, these transformations in succession just as we did when thinking of them as attachments.
+</p>
+<div class="center"><div class="floatnone"><a href="index03f6-2.html?title=File:Calc1img5.png" class="image"><img alt="Calc1img5.png" src="../d26ilriwvtzlb.cloudfront.net/9/97/Calc1img5.png" width="396" height="303" /></a></div></div>
+<h2><span class="mw-headline" id="Transform_Calculus">Transform Calculus</span></h2>
+<p>This notion of a hierarchy as a chain of transformations taking us from one frame of reference to another is very powerful. In linear algebra, a frame of reference is like a vector <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Basis_(linear_algebra)">basis</a><sup>[2]</sup>, and the transformation to another frame of reference is a <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Change_of_basis">change of basis</a>. In code, we often represent this transformation as a matrix and composite them using matrix multiplication<sup>[3]</sup>. For efficiency, we sometimes represent a transform using narrower representations like euler angles, quaternions, translations, or even scalars. Regardless of the representation we use, a transformation is essentially a function over a vector space that maps one frame of reference to another. We can represent this function along with operations to manipulate it using a common notation, or calculus:
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Transform Calculus Operations
+</th></tr>
+<tr>
+<td> Transformation </td>
+<td> T<sub>A-&gt;B</sub>(V) </td>
+<td> Evaluating T transforms V from frame A to frame B
+<ul>
+<li>Frame A is the “input frame”</li>
+<li>Frame B is the “output frame”</li>
+</ul>
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Inverse_function">Inversion</a> </td>
+<td> T<sub>A-&gt;B</sub><sup>-1</sup> ⇒ T<sub>B-&gt;A</sub> </td>
+<td> T<sup>-1</sup> reverses the input and output frames, so A-&gt;B becomes B-&gt;A.
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Composition_of_relations">Composition</a> (&#8853;) </td>
+<td> T<sub>A-&gt;B</sub>&#8853;T<sub>B-&gt;C</sub> ⇒ T<sub>A-&gt;C</sub> </td>
+<td> composition forms a “chain”, going from frame A to frame B to frame C.
+</td></tr></table>
+<p>Note that composition (&#8853;) is a <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Transitive_relation">transitive relation</a> -- the output frame of the first must match the input frame of the second, otherwise the composition is invalid:
+<br />
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Composition is Transitive
+</th></tr>
+<tr>
+<td> T<sub>A-&gt;B</sub>&#8853;T<sub>B-&gt;C</sub> </td>
+<td> <font color="#009933">Valid (output Frame B matches input Frame B)</font>
+</td></tr>
+<tr>
+<td> T<sub>A-&gt;B</sub>&#8853;T<sub>C-&gt;B</sub> </td>
+<td> <font color="#ff0000">Invalid (output Frame B mismatches input Frame C)</font>
+</td></tr>
+<tr>
+<td> T<sub>A-&gt;B</sub>&#8853;T<sub>C-&gt;B</sub><sup>-1</sup> ⇒ T<sub>A-&gt;B</sub>&#8853;T<sub>B-&gt;C</sub> </td>
+<td> <font color="#009933">Valid (inversion swaps the input and output Frame)</font>
+</td></tr></table>
+<p>I’m using the mysterious  symbol for composition because it is a conceptual operation, and the calculation is not important right now. For instance, something like the multiply or addition operator might seem attractive to use instead, but could be misleading. For instance, two matrices are indeed composited using multiplication, but two translation vectors are composited using addition. However, they are both conceptually a composition of two transformations. I want to convey the concept of composition without focusing on the specific math required to achieve it, which is more tied to the representation used for the transform. I’ll discuss this more in the next post.
+</p><p>Let’s go back to our rigid body tank example and express some transformations using this new calculus:
+<br />
+</p>
+<dl><dd>T<sub><span style="color:#ff0000">gun</span>-&gt;<span style="color:#ff9933">world</span></sub>	= T<sub><span style="color:#ff0000">gun</span>-&gt;<span style="color:#0033cc">turret</span></sub>&#8853;T<sub><span style="color:#0033cc">turret</span>-&gt;<span style="color:#009933">chassis</span></sub>&#8853;T<sub><span style="color:#009933">chassis</span>-&gt;<span style="color:#ff9933">world</span></sub>	</dd>
+<dd>T<sub><span style="color:#ff0000">gun</span>-&gt;<span style="color:#9933ff">wheel1</span></sub> = T<sub><span style="color:#ff0000">gun</span>-&gt;<span style="color:#0033cc">turret</span></sub>&#8853;T<sub><span style="color:#0033cc">turret</span>-&gt;<span style="color:#009933">chassis</span></sub>&#8853;T<sub><span style="color:#9933ff">wheel1</span>-&gt;<span style="color:#009933">chassis</span></sub><sup>-1</sup></dd></dl>
+<p><br />
+This is makes logical sense: to determine the transformation from the gun’s frame of reference to the world’s, chain the gun-to-turret transform to the turret-to-chassis transform to the chassis-to-world transform. Each step moves UP the hierarchy to the root. Note in the second example how we use the inverse to go back DOWN the hierarchy to get to the lower wheel1 node, preserving the transitive chain of operations.
+</p>
+<h2><span class="mw-headline" id="Transforming_Vectors_and_Points">Transforming Vectors and Points</span></h2>
+<p>As discussed, a transformation is a mapping function over the vector space. But we use points to describe geometry. So what’s the difference between a vector and a point? Well, a point is a distinct location in space, while a vector is a displacement between two points (like a vertex normal). Luckily, both points AND vectors can be represented using <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Homogeneous_coordinates">homogeneous coordinates</a>, the former with a homogeneous coordinate of 1, and the latter with a 0<sup>[4]</sup>.  By thinking of our transforms as operating on <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Affine_space">affine spaces</a> using homogeneous coordinates, we can transform points and vectors the same way:
+<br />
+</p>
+<dl><dd>T<sub>A-&gt;B</sub>(P) ⇒ Transformation of homogeneous point P from frame A to frame B</dd>
+<dd>T<sub>A-&gt;B</sub>(V) ⇒ Transformation of homogeneous vector V from frame A to frame B</dd></dl>
+<h2><span class="mw-headline" id="Summary">Summary</span></h2>
+<p>We have outlined a formal notation, or calculus, for expressing a rigid body hierarchy as a tree of coordinate transformations taking us from the frame of reference of a child node to its parent. We can composite and invert these transformations using a logical notation that allows us to reason about any node from the perspective of any other node, regardless of how that transform is represented. Finally, we can apply these transformations to a set of vectors or points to reason about specific geometry associated with those nodes. This is something Slate has to do all the time.
+</p><p>In the next post I’ll discuss how these operations are actually implemented using several transformation representations available in UE4 and demonstrate how the calculus allows us to simplify real-world code by expressing the concept rather than focusing on the math itself.
+</p>
+<div style="text-align:center;width:100%;border-right:1px solid #d0d0d0;">
+<p><a href="indexb210.html?title=UE4_Transform_Calculus_-_Part_2" title="UE4 Transform Calculus - Part 2"> Continue to Part 2 &gt;</a>
+</p>
+</div>
+<p><br />
+</p>
+<hr />
+<h4><span class="mw-headline" id="Footnotes">Footnotes</span></h4>
+<dl><dd><sup>1</sup>I’m applying symbols for particular operations/semantics, so I guess it’s technically a <a rel="nofollow" class="external text" href="http://www.encyclopediaofmath.org/index.php/Logical_calculus">logico-mathematical calculus</a>, but who really cares?</dd>
+<dd><sup>2</sup> Technically, it’s an <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Affine_space">affine space</a> as we also need an offset to place the basis at a point in space, but the mathematical properties we are concerned with are equivalent, as affine spaces are in fact <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Linear_subspace">vector subspaces</a>. However, studying vector bases leads us more directly to the properties we want to consider.</dd>
+<dd><sup>3</sup>This is known as composition of <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Linear_map">linear transformations</a>, which form what is called an <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Associative_algebra">associative algebra</a>. This algebra gives us many useful properties like <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Associative_property">associativity</a> and <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Distributive_property">distributivity</a>.</dd>
+<dd><sup>4</sup>This <a rel="nofollow" class="external text" href="http://math.stackexchange.com/questions/89621/how-to-multiply-vector-3-with-4by4-matrix-more-precisely-position-transformat">StackExchange link</a> gives a good technical explanation without getting too mathy..</dd></dl>
+
+<!-- 
+NewPP limit report
+Cached time: 20200401010402
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.056 seconds
+Real time usage: 0.153 seconds
+Preprocessor visited node count: 21/1000000
+Preprocessor generated node count: 44/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 1/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:289-0!canonical and timestamp 20200401010402 and revision id 579
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="indexc5ce.html?title=UE4_Transform_Calculus_-_Part_1&amp;oldid=579">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=UE4_Transform_Calculus_-_Part_1&amp;oldid=579</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="indexa27e.html?title=Category:Epic_Created_Content" title="Category:Epic Created Content">Epic Created Content</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0e33288c51e7947d3"><meta name="worker" content="188"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="index34da.html"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.056","walltime":"0.153","ppvisitednodes":{"value":21,"limit":1000000},"ppgeneratednodes":{"value":44,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":1,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20200401010402","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":89});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":140,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

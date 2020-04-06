@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Package_and_Deployment_Troubleshooting by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:17:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>Package and Deployment Troubleshooting - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Package_and_Deployment_Troubleshooting","wgTitle":"Package and Deployment Troubleshooting","wgCurRevisionId":323,"wgRevisionId":323,"wgArticleId":161,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Troubleshooting"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Package_and_Deployment_Troubleshooting","wgRelevantArticleId":161,"wgRequestId":"880ab240690f2ee1ae30c049","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Package_and_Deployment_Troubleshooting rootpage-Package_and_Deployment_Troubleshooting skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0fabd7d8c0a1277bf"><meta name="worker" content="206"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Package_and_Deployment_Troubleshooting by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:17:58 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Package+and+Deployment+Troubleshooting" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="index.html" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="indexd278.html?title=Package_and_Deployment_Troubleshooting" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="index3f1f.html?title=Talk:Package_and_Deployment_Troubleshooting&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="indexd278.html?title=Package_and_Deployment_Troubleshooting">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="index2b71.html?title=Package_and_Deployment_Troubleshooting&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="index329a.html?title=Package_and_Deployment_Troubleshooting&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Package and Deployment Troubleshooting</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><em>This page is currently under construction, more errors and solutions will be added over time. </em>
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Additional_Resources"><span class="tocnumber">1</span> <span class="toctext">Additional Resources</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Using_Answerhub_for_Packaging_Issues"><span class="tocnumber">2</span> <span class="toctext">Using Answerhub for Packaging Issues</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Packaging_Failed_.28Automation_Tool_Unable_to_Run_Successfully.29"><span class="tocnumber">2.1</span> <span class="toctext">Packaging Failed (Automation Tool Unable to Run Successfully)</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Searching_for_your_error"><span class="tocnumber">2.2</span> <span class="toctext">Searching for your error</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Posting_on_Answerhub"><span class="tocnumber">2.3</span> <span class="toctext">Posting on Answerhub</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Retrieving_Logs_from_a_packaged_game"><span class="tocnumber">2.4</span> <span class="toctext">Retrieving Logs from a packaged game</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#What_are_Unreal_Engine_4.27s_system_recommendations.3F"><span class="tocnumber">2.5</span> <span class="toctext">What are Unreal Engine 4's system recommendations?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Common_errors"><span class="tocnumber">3</span> <span class="toctext">Common errors</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Non-platform_specific"><span class="tocnumber">3.1</span> <span class="toctext">Non-platform specific</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Windows"><span class="tocnumber">3.2</span> <span class="toctext">Windows</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Android"><span class="tocnumber">3.3</span> <span class="toctext">Android</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#iOS"><span class="tocnumber">3.4</span> <span class="toctext">iOS</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#HTML5"><span class="tocnumber">3.5</span> <span class="toctext">HTML5</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Mac"><span class="tocnumber">3.6</span> <span class="toctext">Mac</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#TVOS"><span class="tocnumber">3.7</span> <span class="toctext">TVOS</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Additional_Resources_2"><span class="tocnumber">3.8</span> <span class="toctext">Additional Resources</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Miscellaneous_Links"><span class="tocnumber">3.9</span> <span class="toctext">Miscellaneous Links</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<table id="mp-upper" style="width: 100%; margin:4px 0 0 0; background:none; border-spacing: 0px;">
+<tr>
+<td class="MainPageBG" style="width:100%; border:0px solid #4C4C4E; padding:2px 5px 5px; background:#F0F0F0; vertical-align:top; color:#000000;">
+<table id="mp-left" style="width:100%; vertical-align:top; background:#e2e3e4;">
+
+<table style="width:100%; border:none; background:none;">
+<tr>
+<td style="width:280px; text-align:center; white-space:nowrap; color:#000;">
+<div style="font-size:170%; text-align:center; border:none; margin:2 px&#160;; padding:2px; color:#000;font-weight:bold;">Packaging and Deployment Troubleshooting</div>
+</td></tr></table>
+<tr><td></td></tr></table>
+<div class="action">
+<table id="mp-upper" style="width: 100%; margin:4px 0 0 0; background:none; border-spacing: 0px;">
+<tr>
+<td class="MainPageBG" style="width:100%; border:0px solid #4C4C4E; background:#e9eff4; vertical-align:top; color:#000000;">
+<table id="mp-right" style="width:100%; vertical-align:top; background:#e9eff4;">
+
+<tr>
+<td style="padding:2px;"> <h2 id="mp-dyk-h2" class="heading"><span class="mw-headline" id="Additional_Resources">Additional Resources</span></h2>
+</td></tr>
+</table>
+<p>Here are a few helpful guides:</p>
+<ul><li> <a href="indexb045.html?title=Mobile_Development_Troubleshooting_Guide" title="Mobile Development Troubleshooting Guide">Mobile Development Troubleshooting Guide</a></li>
+<li> <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Engine/Basics/Projects/Packaging/">Packaging Projects Documentation</a></li>
+<li> <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Engine/Deployment/">Packaging and Cooking Games Documentation</a></li>
+<li> <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Platforms/Android/GettingStarted/index.html">Android Quick Start</a></li>
+<li> <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Platforms/iOS/QuickStart/index.html">iOS Quick Start</a></li>
+<li> <a rel="nofollow" class="external text" href="https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#How_to_get_logs_off_of_an_Android_device">Obtain logs off an Android Device</a></li>
+<li> <a rel="nofollow" class="external text" href="https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#How_to_get_logs_off_of_an_iOS_device">Obtain logs off an iOS Device</a></li></ul>
+</td></tr></table>
+<p><b>This page is currently under development and will be populated as we find more common mobile development bugs/crashes. Thank you for your understanding.</b>
+</p><p><b>If you notice a build failure in your logs, please try the following first:</b>
+</p>
+<ol><li> Open the log that includes the information about your build failure in a text editor. This can be found in the project's directory under the Saved/Logs directory.</li>
+<li> Use the find function (Ctrl+F) to search for the word "Error" and "Warning"</li>
+<li> Make a list of each unique error/warning and attempt to search for other Answerhub posts that mention them (Please take a look further in this guide for more information on common error messages, as well as the information that would likely be needed to diagnose your issue)</li></ol>
+<p>If you cannot find another report of the error you're receiving and are not able to solve the issue, a general all purpose solution can sometimes be to delete the following folders:
+</p>
+<dl><dd><ul><li> Intermediate</li>
+<li> Saved</li>
+<li> Config</li></ul></dd></dl>
+<ul><li>  Restart your computer if there is an 'Unknown Cook Failure'</li></ul>
+<p>If the above does not help your situation, please look through the rest of this guide for a run down of the troubleshooting process and examples of common errors and solutions
+</p>
+<h1><span class="mw-headline" id="Using_Answerhub_for_Packaging_Issues">Using Answerhub for Packaging Issues</span></h1>
+<h2><span class="mw-headline" id="Packaging_Failed_.28Automation_Tool_Unable_to_Run_Successfully.29">Packaging Failed (Automation Tool Unable to Run Successfully)</span></h2>
+<p>The first thing to keep in mind is that there are multiple error messages that are generic that are there to let you know that a process failed but will not give any useful information otherwise. These error messages are two examples of general errors which are stating that the process failed. This could be the result of a multitude of different errors. The best course of action is to search elsewhere in the log for other errors and warnings, as this is likely a symptom of those issues.
+</p><p>A couple more of these types of errors are:
+</p>
+<ul><li> RunUAT.bat ERROR: AutomationTool was unable to run</li>
+<li> Error: Error Unknown Error</li></ul>
+<h2><span class="mw-headline" id="Searching_for_your_error">Searching for your error</span></h2>
+<p>Once you believe you've found the actual error or warning that is causing your problem, try searching for the issue here. If the issue isn't listed on this page, you can try searching for it in our database. Try searching for your error on the <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/">Documentation</a> page as this covers all of our support outlets.
+</p><p>If you are able to find a post that relates to your issue but the information is not helpful or the issue was never resolved, check the Product Version listed. If the Product Version is older than what you are currently using, create a new post (see next section). Otherwise, feel free to post about your issue on the existing page.
+</p>
+<h2><span class="mw-headline" id="Posting_on_Answerhub">Posting on Answerhub</span></h2>
+<p>When posting about a packaging issue on Answerhub, it will be easier for someone to help you when you provide them with as much information as possible. The list below can give you a starting point but any additional information is always helpful.
+</p>
+<ul><li> Logs (These are the most important and should be attached as a .txt file)</li>
+<li> Engine version</li>
+<li> The exact steps you've taken to package.</li>
+<li> The exact OS version you're on.</li>
+<li> Can it be reproduced in a clean project?</li>
+<li> If it can be reproduced, provide a clear list of steps to reproduce the issue.</li></ul>
+<h2><span class="mw-headline" id="Retrieving_Logs_from_a_packaged_game">Retrieving Logs from a packaged game</span></h2>
+<p>Finding errors that occur in the game that results from a successful package attempt can be done by looking at the warnings in the original packaging log but can also be seen in the logs for the packaged game itself. They can found different locations based off the platform.
+</p>
+<ul><li> Windows: <i>PackagedDirectory</i>/<i>ProjectName</i>/Saved/Logs/<i>ProjectName</i>.log</li>
+<li> Mac: 	~/Library/Logs/ProjectName/</li>
+<li> iOS: <a rel="nofollow" class="external text" href="https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#How_to_get_logs_off_of_an_iOS_device">Obtain logs off an iOS Device</a></li>
+<li> Android: <a rel="nofollow" class="external text" href="https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#How_to_get_logs_off_of_an_Android_device">Obtain logs off an Android Device</a></li>
+<li> HTML5: <i>To be added</i></li>
+<li> Linux: <i>To be added</i></li>
+<li> tvOS: <i>To be added</i></li></ul>
+<h2><span class="mw-headline" id="What_are_Unreal_Engine_4.27s_system_recommendations.3F">What are Unreal Engine 4's system recommendations?</span></h2>
+<p>For developing with UE4, we recommend a certain level of hardware for a desired result. UE4 will run on desktops and laptops below these recommendations, but performance may be limited. For more information on these recommendations, please see <a rel="nofollow" class="external text" href="https://wiki.unrealengine.com/Recommended_Hardware">Recommended Hardware</a>.
+</p>
+<h1><span class="mw-headline" id="Common_errors">Common errors</span></h1>
+<p>This section will provide a list of common errors along with resolved Answerhub links related to the issue as well as possible solutions.
+</p>
+<h2><span class="mw-headline" id="Non-platform_specific">Non-platform specific</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/303922/build-failed-64-bit-windows.html"><b> Error loading an asset</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/412747/build-failed-windows.html"><b>WARNING: Visual C++ 2015 toolchain does not appear to be correctly installed. Please verify that "Common Tools for Visual C++ 2015" was selected when installing Visual Studio 2015.</b></a></li></ul>
+<ul><li>  No 32-bit compiler toolchain found in C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe</li></ul>
+<p>This is a warning that can cause other errors to occur. This can be resolved by installing the Common Tools for Visual C++ 2015 for Visual Studio 2015. Please see the Answerhub post for steps to do so.
+</p>
+<ul><li> No modules found to build. All requested binaries were already part of the installed engine data.</li></ul>
+<p>This is a message that points out that you are using a Plugin that requires being compiled but you're using it in a Blueprint-only project. In this case, there are three options:
+</p>
+<ol>
+<ul><li> Find a version of the plugin that does not require compiling, if it exists</li>
+<li> Disable/Uninstall the plugin</li>
+<li> Add code to your project (File &gt; New C++ Class...). Please note: This will permanently make the project a code project.</li></ul>
+</ol>
+<h2><span class="mw-headline" id="Windows">Windows</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/252762/failed-to-open-descriptior-file.html"><b> Shipping - Source Build </b></a></li></ul>
+<dl><dd>Ensure you have built for the type of build you're packaging: Shipping | Debug | Development</dd></dl>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/262680/failed-to-open-descriptor-file-error.html"><b> Rename the .exe </b></a></li>
+<li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/239140/descriptor-file-3.html"><b> Migrating Files to a New Project </b></a></li>
+<li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/284296/cant-package-game-an-item-with-the-same-key-has-al.html"><b> An item with the same key has already been added</b></a></li>
+<li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/364215/how-to-create-a-working-shipping-build.html"><b> How to create a working Shipping build?</b></a></li>
+<li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/385259/bug-4104-configurations-not-making-it-to-ios-devic.html"><b>Win10: Configurations are not updating on iOS devices via Remote Build</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/297165/global-shader-cache-pcd3d-sm5-missing.html"><b> Global shader cache-pcd3d-sm5 missing</b></a></li>
+<li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/397520/cannot-launch-y-level-after-update-from-4104-to-41.html"><b> UE4Game.pdb Missing</b></a></li></ul>
+<ol>
+This may also be resolved by unchecking "Include Debug Files" in your project's Project Settings under the Packaging section.
+</ol>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/420623/cannot-find-hcadlib-when-using-unrealed.html"><b> Cannot find HCAD.lib</b></a></li>
+<li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/337507/unknown-structure-error-when-cook.html"><b>Unknown Structure Error</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/311220/fatal-error-in-packaged-game.html"><b>Fatal Error</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/338180/cant-package-project.html"><b>MSCORLIB ERROR: An item with the same key has already been added</b></a></li></ul>
+<h2><span class="mw-headline" id="Android">Android</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/478177/unable-to-deploy-to-android-1.html"><b>Unable to Deploy to Android</b></a> </li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/590201/android-packaging-failed-unknown-error-2.html"><b>Error: C:\Unreal Projects\<i>ProjectName</i>\Intermediate\Android\APK\JavaLibs\play-services-ads-9.2.0 is not a valid project (AndroidManifest.xml not found).</b></a></li></ul>
+<h2><span class="mw-headline" id="iOS">iOS</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/480092/how-to-launch-code-project-to-ios-on-windows-413.html"><b>Unable to Launch Code Projects on Windows - Cygwin</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/223227/remove-obsolete-mobileprovision-profiles-ios.html"><b>How to manually remove Mobile Provisions for iOS</b></a></li></ul>
+<ol>
+<ul><li> Windows: C:\Users\(you)\AppData\Local\Apple Computer\MobileDevices\Provisioning Profiles</li>
+<li> Mac: ~/Library/MobileDevice/Provisioning Profiles</li></ul>
+</ol>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/350633/ios-crash-on-first-launch.html"><b>Crashes on First Launch</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/361738/distribution-packing-ios-on-source-build-fails.html"><b>Distribution Source Build Fails to Package</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/258023/ios-identifier-not-matched.html"><b>iOS Identifier is Not Matching</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/498731/ios10-deploy-fails.html"><b>Code signing is required for product type 'Application' in SDK iOS 10.0'</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/480693/iap-enabled-apps-get-rejected-from-ios-store.html"><b>In-App Purchase Enabled Apps are Rejected from iOS</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/424191/ios-provisioning-and-signingkey-not-found-worked-o.html"><b>Provision &amp; Signing Keys Not Found</b></a></li></ul>
+<ol>
+<ul><li> Related documentation: <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Platforms/iOS/QuickStart/6/">Creating &amp; Importing Provisions</a></li></ul>
+</ol>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/341162/why-hud-is-odd-on-iphone-4s-after-49-version.html"><b>iOS 4S Incorrect HUD Scaling</b></a></li></ul>
+<ol>
+<ul><li> Related documentation: <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Platforms/DeviceProfiles/">Setting Device Profiles</a></li></ul>
+</ol>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/489154/assetpackmanifestplist-creating-errors-when-upload.html"><b>AssetPackManifest.plist Errors</b></a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="HTML5">HTML5</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/517823/hosting-html5-game-on-github-page.html"><b>Issues hosting a HTML5 game online</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/496832/ue4-doesnt-package-nor-launch-html5.html"><b>Environment Variables aren't set for HTML5</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/287463/questions-about-the-packing-size.html"><b>Trouble Launching Packaged Projects on Certain Sites</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/331691/how-to-deploy-a-html5-game-on-apache.html"><b>How to Deploy HTML5 Games on Apache? (4.9)</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/331805/html5-how-to-make-it-work.html"><b>HTML5: Little-Endian Error</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/432839/html5-build-fails.html"><b>Failed to run llvm optimizations</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/270610/html5-can-not-load-levels.html"><b>HTML5 In-Game Complications</b></a></li></ul>
+<ol>
+<ul><li> Related documentation: <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Engine/Levels/index.html">Levels</a></li></ul>
+</ol>
+<h2><span class="mw-headline" id="Mac">Mac</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/400490/ue-411-hangs-cooking-on-macbook-pro.html"><b>Cooking with a Macbook Pro Hangs</b></a></li></ul>
+<ol>
+<ul><li> Related documentation: <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Engine/Deployment/">Packaging and Cooking Games</a></li></ul>
+</ol>
+<h2><span class="mw-headline" id="TVOS">TVOS</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/372681/411-packaging-ios-incorrect-bundle-identifier.html"><b>Error: iOS Incorrect Bundle Identifier</b></a></li></ul>
+<h2><span class="mw-headline" id="Additional_Resources_2">Additional Resources</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/404275/how-can-i-stop-unreal-engine-from-closing-on-its-o.html"><b>How to stop UE4 from crashing on its own </b></a></li>
+<li> <a rel="nofollow" class="external text" href="https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide"><b> Mobile Development Troubleshooting Guide </b></a></li>
+<li> <a rel="nofollow" class="external text" href="https://docs.unrealengine.com/latest/INT/Engine/Deployment/index.html"><b> Packaging and Cooking Games </b></a></li></ul>
+<h2><span class="mw-headline" id="Miscellaneous_Links">Miscellaneous Links</span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/499017/packaging-fails-when-using-chunks.html"><b>Packaging Fails when using Chunk ID</b></a></li></ul>
+<ul><li> <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/questions/395344/how-to-change-the-name-of-target-build.html"><b> Renaming Target Build</b></a></div></li></ul>
+</td>
+</tr>
+</table>
+
+<!-- 
+NewPP limit report
+Cached time: 20200401010241
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.020 seconds
+Real time usage: 0.021 seconds
+Preprocessor visited node count: 66/1000000
+Preprocessor generated node count: 74/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:161-0!canonical and timestamp 20200401010241 and revision id 323
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="index076a.html?title=Package_and_Deployment_Troubleshooting&amp;oldid=323">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Package_and_Deployment_Troubleshooting&amp;oldid=323</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="index8e57.html?title=Category:Troubleshooting" title="Category:Troubleshooting">Troubleshooting</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-08a23efcd19f60be7"><meta name="worker" content="152"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="index34da.html"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.020","walltime":"0.021","ppvisitednodes":{"value":66,"limit":1000000},"ppgeneratednodes":{"value":74,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20200401010241","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":82});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":141,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

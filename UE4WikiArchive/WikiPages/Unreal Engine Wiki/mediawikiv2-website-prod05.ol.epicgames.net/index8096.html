@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=%E4%B8%AD%E6%96%87_%E5%85%89%E7%85%A7%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:53:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>View source for 中文 光照的常见问题和解决 - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"中文_光照的常见问题和解决","wgTitle":"中文 光照的常见问题和解决","wgCurRevisionId":1079,"wgRevisionId":0,"wgArticleId":539,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"中文_光照的常见问题和解决","wgRelevantArticleId":539,"wgRequestId":"81b8eb6f5cec527c8fba1784","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-中文_光照的常见问题和解决 rootpage-中文_光照的常见问题和解决 skin-vector action-edit"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-08a23efcd19f60be7"><meta name="worker" content="134"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=%E4%B8%AD%E6%96%87_%E5%85%89%E7%85%A7%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:53:48 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=%E4%B8%AD%E6%96%87+%E5%85%89%E7%85%A7%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=%E4%B8%AD%E6%96%87_%E5%85%89%E7%85%A7%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:%E4%B8%AD%E6%96%87_%E5%85%89%E7%85%A7%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=%E4%B8%AD%E6%96%87_%E5%85%89%E7%85%A7%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3">Read</a></span></li>
+							<li id="ca-viewsource" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=%E4%B8%AD%E6%96%87_%E5%85%89%E7%85%A7%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=%E4%B8%AD%E6%96%87_%E5%85%89%E7%85%A7%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">View source for 中文 光照的常见问题和解决</h1>
+												<div id="bodyContent" class="mw-body-content">
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=EpicUnrealEngineWiki:Administrators&amp;action=edit&amp;redlink=1" class="new" title="EpicUnrealEngineWiki:Administrators (page does not exist)">Administrators</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">[[Category:教程]]
+[[Category:照明]]
+[[Category:Epic 创建的内容]]
+[[Category:故障诊断]]
+=='''关于本指南'''==__NOEDITSECTION__
+
+好游戏和优秀游戏的差距往往在于照明。即使是最优秀的模型，如果以较差的阴影分辨率渲染，并且没有利用适当的后期处理设置，也会看起来十分糟糕。在虚幻引擎中，这意味着要深入挖掘我们强大的照明、反射和后期处理设置。本《故障排除指南》尽量包含用户在最初深入挖掘照明和渲染系统时遇到的一些常见问题。本指南并不全面，但会随着引擎变化动态更新，所以我们会补充和变更此处提供的建议。本指南旨在为尝试充分利用引擎渲染系统的美工提供一个良好的开端。
+
+'''供参考的常用照明文档页面：'''&lt;br />
+::[https://docs.unrealengine.com/latest/INT/Engine/Rendering/LightingAndShadows/Lightmass/index.html '''光照系统 (Lightmass) 全局光照''']&lt;br />
+::[https://docs.unrealengine.com/latest/INT/Resources/ContentExamples/Lighting/index.html '''照明基本知识''']&lt;br />
+::[https://docs.unrealengine.com/latest/INT/Engine/Rendering/LightingAndShadows/index.html '''环境照明''']&lt;br />
+::[https://docs.unrealengine.com/latest/INT/Resources/ContentExamples/Lighting/index.html '''照明内容示例''']&lt;br />
+::[https://docs.unrealengine.com/latest/INT/Platforms/Mobile/Lighting/index.html '''移动平台照明''']&lt;br />
+::[https://docs.unrealengine.com/latest/INT/Engine/Rendering/index.html '''渲染和图形''']
+
+&lt;!--********************************************************************************************-->
+&lt;!--**********一般照明******************************************************************-->
+&lt;!--**********一般照明******************************************************************-->
+&lt;!--**********一般照明******************************************************************-->
+&lt;!--**********一般照明******************************************************************-->
+&lt;!--********************************************************************************************-->
+=='''一般照明'''==
+_________________________________________________________________________________________________
+&lt;!--*********************************-->
+&lt;!--*********************************-->
+&lt;!--为什么我的阴影是黑色的？************************************->
+&lt;!--************************************************************-->
+&lt;!--************************************************************-->
+===为什么我的阴影是黑色的？===
+
+用照明术语来说，深黑色阴影通常意味着没有辅助光。这种情况通常发生于单一方向光照是为了表示太阳的室外环境。UE4 内置了一种方法来提供全局影响辅助光，我们称之为'''天空光'''。[https://docs.unrealengine.com/latest/INT/Engine/Rendering/LightingAndShadows/LightTypes/SkyLight/index.html '''想要进一步了解天空光？''']
+
+&lt;gallery heights=250px mode="packed">
+File:No Skylight.png|无天空光
+File:Skylight.PNG|有天空光
+&lt;/gallery>
+_________________________________________________________________________________________________
+&lt;!--*************************************************************************************-->
+&lt;!--******************************************************************************************-->
+&lt;!--将 BSP 转换为静态网格时光照贴图设置无效***************************************************-->
+&lt;!--*********************************************************************************************-->
+&lt;!--****************************************************************************************-->
+===将 BSP 转换为静态网格时光照贴图设置无效===
+
+'''从 4.6 及后续版本开始，任何转换的 BSP 的默认光照贴图分辨率将设置为 4，但仍需要根据下列步骤设置正确的光照贴图坐标索引。'''
+
+在将 BSP 几何结构转换为静态网格时，很可能会看到如下结果：
+
+[[File:BSPToSM InvalidLMSettings.PNG|frame|x350px|center|从 BSP 箱体转换的静态网格]]
+
+不必担心，这是正常情况！由于我们现在已经将 BSP 转换为了静态网格，所以需要确保指定正确的光照贴图通道。为了方便操作，在转换 BSP 时，会自动为你生成光照贴图 UV。唯一没有自动设置的是需要确保指定正确的通道和分辨率。
+&lt;br clear=all>
+
+[[File:BSPLMSetup.png|frame|x250px|right|静态网格编辑器“细节”面板]]
+
+* 为执行此操作，打开新创建的静态网格。查看右侧的“细节”面板，并找到“静态网格设置”选项卡。
+
+* 在这里需要设置光照贴图分辨率。这可以是 2 的任何幂次方（即32、64、128 等）。这将是光照贴图纹理的分辨率。光照贴图分辨率越高，烘焙到纹理中的阴影质量越好，但也会增加内存占用量和照明构建时间。
+
+* 接下来，将光照贴图坐标索引设置为 1（这是大多数情况下使用的光照贴图 UV 通道）。这是不会有任何重叠面的光照贴图 UV 位置。 
+
+* 如果想要查看光照贴图 UV 的效果，可以单击工具栏中的 UV 对应按钮，从按钮右侧的下拉列表中选择“UV 通道 1”。
+
+&lt;br clear=all>
+_________________________________________________________________________________________________
+&lt;!--*********************************************************************************************-->
+&lt;!--*********************************************************************************************-->
+&lt;!--如果我完全不想要光照贴图或游戏不需要光照贴图呢？************************-->
+&lt;!--*******************************************************************************************-->
+&lt;!--*********************************************************************************************-->
+===如果我完全不想要光照贴图或游戏不需要光照贴图呢？===
+
+有时，游戏并不需要光照贴图，因为已经选择只使用可移动（动态）照明。有一个选项可以禁用全部光照贴图，方法是打开“全局设置”，选中“不使用预先计算的照明”选项。当重新构建照明时，会删除之前烘焙过的所有光照贴图。 
+
+禁用静态照明有两种方法：
+
+[[File:1 ProjectSettings.png|frame|x350px|right|项目设置、“渲染”选项卡、“照明”选项卡]]
+
+'''特定于项目：禁用静态照明'''
+
+# 菜单 > 编辑 > 项目设置
+# 转至“渲染”选项卡 >“照明”选项卡
+# 取消选中'''允许静态照明'''选项
+# 要使该选项彻底生效，需要'''重新启动编辑器'''
+
+&lt;br clear=all>
+
+'''特定于关卡：禁用静态照明'''
+
+[[File:World Settings Toolbar.png|frame|x100px|right|全局设置]]
+
+1.打开“全局设置”
+
+&lt;br clear=all>
+
+[[File:2 WorldSettings.png|frame|x375px|right|光照系统设置]]
+
+2.转至“光照系统”选项卡&lt;br />
+3.取消选中'''不使用预先计算的照明'''
+
+&lt;br clear=all>
+
+[[File:3 ForcedNoPreComp Warning.png|frame|x100px|right|不使用预先计算的照明警告]]
+
+4.你会看到一个警告。单击“确定”。&lt;br />
+5.构建照明以擦除已经存储的照明数据。
+
+&lt;br clear=all>
+_________________________________________________________________________________________________
+&lt;!--*********************************************************************************************-->
+&lt;!--**********************************************************************************************-->
+&lt;!--用于单面网格的双侧照明，或者为何我的照明是穿过屋顶的？*******-->
+&lt;!--**********************************************************************************************-->
+&lt;!--**********************************************************************************************-->
+===用于单面网格的双侧照明，或者为何我的照明是穿过屋顶的？===
+
+[[File:1 3Ds Max geometry.png|frame|x249px|right|用 3DS Max 创建的资产]]
+
+在该图中，你已经看到我创建了一面效果很不错的墙和一个管子，如果我把管子放倒的话，走进去会很瘆人！
+
+&lt;br clear=all>
+
+[[File:2 UE4Import.png|frame|x249px|right|用 UE4 创建的资产]]
+
+整体看起来不错，效果理想，而且在我自己的选择的建模程序中能看到网格的两个面。但是，导入到虚幻引擎 4 之后就变样了！
+
+那么为何会如此呢，难道是因为这样就是不对吗？
+
+这完全是 100% 正常的（一语双关）。即使这个平面看起来正常，但是背面并没有像管子网格最靠近我们的这一面一样进行渲染。
+
+&lt;br clear=all>
+
+[[File:3 Wireframe.png|frame|x249px|right|用 UE4 创建的资产的线框]]
+
+默认情况下，在建模程序中创建几何结构时，软件会设置为让你看到几何结构的两个面。
+
+在 UE4 中，会自动剔除多边形的背面以提高性能，每一个细节都会有助于性能的提高！并不总是需要显示额外的多边形或者渲染可能并不需要的面，否则，会调用额外的绘图功能，从而导致性能变慢，在一些情况下，影响可能并不明显，但针对特定平台进行开发或者每次调用绘图功能都要进行大量计算时，影响就会凸显出来。
+
+为了理解为何只能看到一面，我们可以在静态网格编辑器中打开网格，勾选工具栏选项“法线”。就会看到绿色线条指向多边形面的方向。在下面这个管子资产图形中，我们可以看到，不可见面的线条指向网格中心。这是可以观察到可见面的方向。
+
+&lt;br clear=all>
+
+[[File:4 SMEditor Normals.png|frame|x250px|right|静态网格编辑器]]
+
+&lt;font size="4">'''''专家提示：'''''在 UE4 中，如果有任何网格包含似乎不可见的几何结构或者缺少某些面，可以在这里检查法线，然后再去建模软件中解决该问题。&lt;/font>
+
+&lt;br clear=all>
+
+现在，我们已经扫清了障碍，可以直奔主题，通过一些复选框和材质解决不可见面的问题。
+
+1.'''（仅限静态）像双面一样照明'''
+::*在“细节”面板中，针对关卡视口中选中的资产启用该选项。
+::*选中该选项后，当构建照明时，光照系统会将该几何结构计算到烘焙中。它会投射阴影以便将其烘焙到光照贴图纹理中，虽然我们从这个角度看不到阴影。这并不适用于可移动/动态照明，因为虚幻引擎 4 会使用延迟渲染管道。  
+
+&lt;gallery heights=225px mode="packed">
+File:6 twosidedDetailsPanel.png|关卡视口中资产的“细节”面板
+File:5 LightasTwoSided.png|最终结果
+&lt;/gallery>
+
+2.'''创建双面材质'''
+::*打开材质编辑器，在左侧的“细节”面板中，选择“双面”选项。
+::*保存并编译材质以使该设置生效。
+::*这种方法可以用于静态/静止/可移动照明。由于正在渲染的是材质，因此之前不可见的面不会再被剔除，因此可能会阻挡光线。但请注意，现在会渲染网格的两个面，因此会增加绘图调用。正如之前所述，在较小场景或设置中这未必会影响性能，但如果你的目标硬件很容易受到性能影响则另当别论。
+
+&lt;gallery heights=250px mode="packed">
+File:7 Materials DetailPanel.png|材质属性“细节”面板
+File:8 materialtwosidedresults.png|最终结果
+&lt;/gallery>
+_________________________________________________________________________________________________
+&lt;!--**********************************************************************************-->
+&lt;!--*******************************************************************************************-->
+&lt;!--为何看起来与原来完全不同，即引擎比例调整*************-->
+&lt;!--**********************************************************************************************-->
+&lt;!--**********************************************************************************************-->
+===为何看起来与原来完全不同，即引擎比例调整===
+
+[[File:1 EngineScalability.png|frame|x300px|right|引擎比例调整设置]]
+
+引擎比例调整设置可以通过工具栏中的“设置 > 引擎比例调整”选项进行访问。
+
+该设置的目的是按比例调整引擎渲染设置，以适应难以流畅运行的机器。默认情况下，编辑器会在 FPS 降得过低时降低这里的设置。 
+
+“阴影”选项会直接影响任何可移动（动态）阴影的阴影距离。当列表设置为“可移动”或者尚未构建静态照明时确实如此，因为此时会使用动态阴影作为临时参考，直到照明构建完成并烘焙到光照贴图中为止。
+
+&lt;br clear=all>
+
+下面的图形演示了“引擎比例调整”选项卡中每种阴影设置的阴影距离。
+
+&lt;gallery heights=200px mode="packed">
+File:2 StatueShadowsEPIC.png|Epic
+File:3 StatueShadowsHIGH.png|高
+File:4 StatueShadowsMEDIUM.png|中
+File:5 StatueShadowsLOW.png|低
+&lt;/gallery>
+
+如果你的关卡中没有阴影，则最好先从这里开始检查。即使用的是最顶级的系统，这些设置仍会自动设置为较低值，并且在 FPS 降得过低时保持不变。最好总是先检查这里的设置，然后再查看可能的其他问题。
+
+如果因为某种原因而不需要自动按比例调整，可以取消选中“引擎比例调整”窗口底部的对应选项来将其禁用。需要注意的是，这样可能会导致性能问题，因为编辑器不会再监视需要调整为较低设置以保持正常性能的情况。
+
+[https://docs.unrealengine.com/latest/INT/Engine/Performance/Scalability/ScalabilityReference/index.html#scalabilitysettings '''想要进一步了解引擎比例调整？''']
+_________________________________________________________________________________________________
+&lt;!--***********************************************************************************************-->
+&lt;!--**********************************************************************************************-->
+&lt;!--为何我的照明上有一个红色的“X”？**********************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--**********************************************************************************************-->
+===为何我的照明上有一个红色的“X”？===
+
+[[File:OverlappingLights.jpg|frame|x296px|center|重叠静止照明]]
+
+静止照明限制为最多可以重叠 4 层阴影投射照明。如果添加了第 5 层，就会出现一个红色的“X”，表示这一重叠区域中半径最小的照明将还原为动态照明。这会导致性能问题，因为投射阴影的动态照明比烘焙照明相比耗用的资源更多。
+
+&lt;br clear=all>
+
+如果照明是使用任何静止光照构建的，并且这些静止光照是重叠问题光，那么就会显示一个警告，详细指出哪个是问题光，哪个是衍生光。
+
+&lt;!-- &lt;gallery heights=304px mode="packed">
+File:DynamicLightSettings.png|动态照明“细节”面板
+&lt;/gallery> -->
+
+为了更正此问题，请确保一个区域中的阴影投射重叠静止光照不会超过 4 层。可能需要删除光照，禁用投射阴影标志，或者调整半径直到不再重叠为止。 
+
+如果只放置了三层静止光照，而第 4 层光照上出现了红色 X，请确保关卡中没有其他静止光照会导致重叠。这往往是因为定向光设置为静止而导致发生此问题。
+
+[https://docs.unrealengine.com/latest/INT/Resources/ContentExamples/Lighting/2_2/index.html '''想要进一步了解静止光照？''']
+
+_________________________________________________________________________________________________
+&lt;!--************************************************************************************************-->
+&lt;!--************************************************************************************************-->
+&lt;!--**不合理的光照贴图 UV 设置***************************************-->
+&lt;!--************************************************************************************************-->
+&lt;!--************************************************************************************************-->
+===不合理的光照贴图 UV 布局===
+
+实现良好的光照贴图烘焙的关键就是正确设置光照贴图，让它能够有效地利用 0-1 UV 空间。超出该空间范围或者有重叠面时，就会在贴图检查警告中看到“光照贴图重叠 xx%”！ 
+
+建议首先阅读我们提供的关于正确设置光照贴图的文档。在以下地址阅读关于 UE4 光照贴图的所有资料。 
+
+* https://docs.unrealengine.com/latest/INT/Engine/Content/Types/StaticMeshes/LightmapUnwrapping/
+
+以下是设置光照贴图时需要谨记的要点： 
+
+* 不能有重叠面
+* 不能超出 0,1 UV 空间范围
+* 平面贴图不是最佳方法，通常会导致光照贴图出现许多错误
+* 要充分利用 0,1 UV 空间，以便不会浪费纹理空间。
+* 如果你的网格较大并且可能会很复杂，为了达到良好的光照贴图分辨率以及一些其他性能因素（例如遮蔽剔除），最好细分成多个部分。
+* 使用尽可能最低的光照贴图分辨率，以节省运行时纹理内存。
+* 确保 UV 岛之间至少有 2 个像素的间隔，以防止发生光线透射。光照贴图的目标分辨率可能会导致发生此情况。 
+
+_________________________________________________________________________________________________
+&lt;!--************************************************************************************************-->
+&lt;!--************************************************************************************************-->
+&lt;!--**后期处理全局光照设置的作用    ***************************************-->
+&lt;!--************************************************************************************************-->
+&lt;!--************************************************************************************************-->
+===后期处理全局光照设置的作用===
+
+后期处理体积可以成为处理场景照明的强大工具，尤其是静态照亮区域。你可以通过调整后期处理设置中的下列设置，进行轻松控制。
+
+[[File:PPV GlobalIllumination.png|frame|x300px|right|GI 后期处理设置]]
+
+在以下这个简单的示例中，完全是用发光材质表示杆，在房间设置一个暗淡的点光源，并设置了两个重叠的后期处理体积进行控制的。这是使用后期处理伪造某种动态 GI 的极其低端的方法！ 
+
+设置： 
+
+* 利用非常暗淡的点光源来表示房间中某种柔和的环境光。 
+* 对移动杆应用了简单的发光材质，并用一个乘数来控制亮度。
+* 围绕着场景运用了一个后期处理体积，使用的是默认设置，除非要针对基本场景更改其他设置，否则其实并不需要该设置。 
+* 第二个后期处理体积是与移动杆相连的，跟随着杆移入和移出视线。长度上比移动杆稍大，这样就会存在一部分的重叠。这里进行了三处设置调整，令其更顺利地发挥作用。 
+# “间接照明颜色”设置为类似于移动杆自发光色的颜色，但颜色较浅。
+# “间接照明强度”进行了调整，令人感觉这种自发光并没有投射到房间里。 
+# 后期处理体积的转接半径用于转接两个体积，在房间里形成一种自然的光线渗透效果。 
+
+[[File:GIChange.gif|frame|x300px|center|示例场景（如果未加载 gif，请单击此图）]]
+
+这完全是用后期处理体积和静态照明控制的！如果需要作出一些风格选择，能够控制烘焙 GI 可以让你更多地控制整个场景，不必完全依赖于照明构建就可以达到 100% 的精确性。 
+
+_________________________________________________________________________________________________
+&lt;!--**********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--关节囊阴影********************************************************************************-->
+&lt;!--************************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===关节囊阴影===
+
+关节囊阴影是 4.11 及后续版本中的新功能，让骨架网格能够更好地融入到间接照亮和直接照亮区域中，并带有柔和阴影。 
+
+如果你尚未使用过该功能，该页面教程可以帮助你入门。
+
+http://timhobsonue4.snappages.com/lighting-capsule-shadows
+
+_________________________________________________________________________________________________
+&lt;!--***********************************************************************************************-->
+&lt;!--**********动态（可移动）照明****************-->
+&lt;!--**********动态（可移动）照明****************-->
+&lt;!--**********动态（可移动）照明****************-->
+&lt;!--**********动态（可移动）照明****************-->
+&lt;!--**********************************************************************************************-->
+=='''动态（可移动）照明'''==
+_________________________________________________________________________________________________
+&lt;!--**********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--阴影渗透或错误的阴影质量*******************************************************-->
+&lt;!--************************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===阴影渗透或错误的阴影质量===
+
+在本指南中，我们将研究如何帮助提高质量，以使阴影更精准地融入到网格中。我们还会提供一些提示来改善远距离的动态照明。
+
+&lt;gallery heights=450px mode="packed">
+File:Dynamic Default Shadows.png|阴影渗透或阴影质量不正确示例
+&lt;/gallery>
+
+====只有定向光：层叠阴影贴图设置：====
+
+&lt;gallery heights=200px mode="packed">
+File:2 settings.png|定向光细节中的层叠阴影贴图设置
+&lt;/gallery>
+
+'''动态阴影距离可移动'''：这是阴影将覆盖到的距离镜头的距离。值 0 将禁用此设置。&lt;br />&lt;br />
+'''动态阴影距离静止'''：这是阴影将覆盖到的与镜头的距离。默认情况下，针对定向静止光，该选项设置为 0&lt;br />&lt;br />
+'''动态阴影层叠数'''：这是视锥体将拆分成的层叠数。层叠越多，阴影分辨率越高，但也会显著增加渲染成本。要进一步了解视锥体，请查看以下文章：http://en.wikipedia.org/wiki/Viewing_frustum
+
+&lt;gallery heights=200px mode="packed" caption="动态阴影层叠数（在以下示例中，下文将会讲述的阴影偏移已经设置为 0，可以更清楚地看到层叠。">
+File:1Cascades0.png|层叠数 = 0
+File:1Cascades1.png|层叠数 = 1
+File:1Cascades2.png|层叠数 = 2
+File:1Cascades3.png|层叠数 = 3（默认值）
+File:1Cascades4.png|层叠数 = 4
+&lt;/gallery>
+
+'''层叠分布指数'''：该设置控制层叠分布的是离镜头更近一些（值越大）还是更远一些（值越小）。值 1 表示将按照分辨率成比例地过渡。
+
+&lt;gallery heights=200px mode="packed" caption="层叠分布指数">
+File:2Distribution1.png|分布 = 1
+File:2Distribution2.png|分布 = 2
+File:2Distribution3.png|分布 = 3
+File:2Distribution4.png|分布 = 4
+&lt;/gallery>
+
+'''层叠过渡指数'''：该选项控制各个层叠之间的消退区域比例。较低值会在阴影层叠之间产生硬边，较大的值会让两个层叠融合起来。
+
+&lt;gallery heights=360px mode="packed" caption="层叠过渡指数">
+File:3TransitionGif.gif|过渡效果
+&lt;/gallery>
+
+&lt;gallery heights=x450px mode="packed" caption="层叠过渡指数">
+File:3TransitionHard.png|硬边（值较低）
+File:3TransitionBlended.png|融合边（值较高）
+&lt;/gallery>
+
+'''阴影距离淡出分数'''：该选项控制一定距离阴影的淡出效果。较大的值会令阴影淡出，而较低的值会留下一定距离的较深阴影。
+
+&lt;gallery heights=300px mode="packed" caption="阴影距离淡出分数">
+File:4Fadeout0.png|淡出 = 0
+File:4Fadeout1.png|淡出 = 1
+&lt;/gallery>
+
+====远处阴影====
+
+该选项用于为静态网格或景观设置远处阴影，好处是能够让层叠阴影贴图延伸到非常远的距离，而不是局限在接近镜头的有限范围内。 
+
+[[File:FarShadows.png|frame|x300px|center|启用远处阴影]]
+
+通过在定向光设置中的“层叠阴影贴图”下启用“远处阴影层叠”可以控制该设置。 
+
+[[File:CSMFarShadowSettings.png|frame|x300px|center|远处阴影设置]]
+
+你可以将要使用的远处阴影层叠数和启用了远处阴影标志的 Actor 将投射阴影的距离一起设置。对于该默认设置，使用 300 米作为起始距离。该值也应该比离镜头最近的层叠阴影贴图距离要大。 
+
+此外，还需记住的是，该选项最合适用于远处的较大物体，不建议用于所拥有的每一个网格。这样可能会对性能产生明显影响，正因如此，需要选择想要使用远处阴影的每个静态网格 
+
+[[File:Farshadow.gif|frame|x300px|center|远处阴影演示（如果未加载 gif，请单击此图）]]
+
+在该设置中，定向光的动态阴影距离已经设置为 5000 个单位，远处阴影距离设置为 50000 个单位，具有 4 层远处阴影层叠。 
+
+左侧的静态网格不使用远处阴影，右侧的启用了远处阴影。 
+
+
+
+&lt;br clear=all>
+
+====调整层叠以获得更好的质量：====
+
+阴影渗透和精确性可以通过调整上述演示的设置组合进行微调。本节将尝试调整这些值，以获得更好的阴影精确性，并且令阴影紧随着镜头的移动而移动。寻找一种适合任何特定游戏的平衡需要投入时间和精力，反复测试才能得出最合适的设置。
+
+[[File:1AdjustingSettings1.png|frame|x300px|right|基本场景，默认设置]]
+
+这是只采用了默认设置的基本场景：
+
+&lt;br clear=all>
+
+[[File:1AdjustingSettings2 ProblemAreas.png|frame|x300px|right|高亮问题区域]]
+
+该场景中已经普遍存在一些与阴影边缘精确性有关的问题。
+
+&lt;br clear=all>
+
+[[File:1AdjustingSettings2 ProblemAreasCloser.png|frame|x300px|right|高亮问题区域，特写镜头]]
+
+这里展示得更为清楚。
+
+&lt;br clear=all>
+
+[[File:1AdjustingSettings2 finalResult.png|frame|x300px|right|默认场景，最终效果]]
+
+通过着重调整'''层叠分布指数'''，阴影渗透当然可以尽量降低。动态阴影的默认距离是 20,000 个单位。不一定非要设置为默认值，为了更好地利用层叠，可以设置为更低的值。&lt;br />  
+
+如果游戏关卡要使用室内和室外场景，寻找一种适合所有或大部分区域的组合非常难，需要经过大量的调整。没有任何一种设置会让所有画面都有完美的效果。&lt;br /> 
+
+在该场景中，通过调整分布、阴影距离和层叠数设置，渗透和精确性才达到可以接受的程度。
+
+&lt;br clear=all>
+
+====所有动态照明（“照明”选项卡设置）：====
+
+最后，在光源的“照明”选项卡中还有两个设置对提高照明精确性有所帮助。 
+
+这些设置位于以下位置：
+
+&lt;gallery heights=300px mode="packed">
+File:DynamicLightSettings.png|照明细节、阴影偏移和过滤清晰度
+&lt;/gallery>
+
+'''阴影偏移'''控制如何在场景中显示确切的阴影，但如果设置的值较低，就会产生失真。缺省值为 0.5，能够很好地权衡精确性和实际效果。&lt;br />
+
+'''阴影过滤清晰度'''可以帮助遮住一些因为较低值产生的失真，这也会直接影响阴影边缘的清晰度。&lt;br />
+
+考虑到没有对下面的图片调整过上述任何设置，它们演示了'''阴影偏移'''和'''阴影过滤清晰度'''默认的效果。
+
+&lt;gallery heights=300px mode="packed" caption="阴影偏移">
+File:Dynamic AdjustedShadows.png|阴影偏移 = 0.5（默认值）
+File:Dynamic Artifacts.png|阴影偏移 = 0，调整得过低会导致失真
+&lt;/gallery>
+
+关键在于要找到一个很好的平衡点，不能设置得过低，合理地利用选项卡中的层叠阴影设置。
+
+&lt;gallery heights=300px mode="packed" caption="阴影过滤清晰度，较高的值会锐化阴影边缘">
+File:FilterSharpen1.png|过滤清晰度 = 0
+File:FilterSharpen2.png|过滤清晰度 = 1
+&lt;/gallery>
+
+最明显的是，清晰度过滤的值越高，阴影越清晰。较低值导致的软边现在已经消失。  
+_________________________________________________________________________________________________
+&lt;!--**********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--为什么我的可移动照明在很远的距离透过网格照射出来？*****************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--**********************************************************************************************-->
+===为什么我的可移动照明在很远的距离透过网格照射出来？===
+
+动态照明，尤其是点光源会导致突然发生此类问题。虚幻引擎 4 在这方面优化具有很好的表现，这样用户就不必太过担心此问题。问题是有时会失去控制，导致发生此类没有明显解决办法的问题。 
+
+&lt;gallery heights=350px mode="packed">
+File:1.png|这是我们需要的效果，靠近镜头
+File:4.png|离镜头较远
+&lt;/gallery>
+
+那么为何会如此呢？ 
+
+为了方便解释，我们需要讨论引擎实现了哪些非常棒的优化。引擎使用场景深度来确定哪些内容可见，哪些不可见。由于我们这里有一个点光源，按照设定的半径射出光线，当网格超出其边界时，就会被遮蔽或者不再显现。这就会导致我们所看到的问题，即光线开始朝着所有的方向投射。
+
+从下图中可以看到，当镜头逐渐远去，网格遮蔽部分开始在外边缘形成光晕，直到光线可以朝着所有方向投射。
+
+&lt;gallery heights=350px mode="packed">
+File:WallOcclusion.gif|网格照明遮蔽
+&lt;/gallery>
+
+你或许已经注意到，如果在远距离处选择网格，照明就会恢复为正常。这是正常情况，因为你刚刚选择了网格，网格现在获得了焦点。 
+
+[[File:Detailspanel.png|frame|x350px|right|对象界限，“细节”面板，“渲染”选项卡]]
+
+为防止网格被遮挡，需要选择网格并转至“细节”面板。在这里搜索或滚动到“界限比例”（位于“渲染”选项卡下面。）
+
+&lt;br clear=all>
+
+默认值设置为 1.0。增大这个比例时，确保仅使用较小的增量数字。使用值 2.0 会导致已经设置好的距离翻倍，这可能是过度设置。尝试每次增加较小的值。（即1.1、1.2）。不必超过自己所需的设置，因为这样会影响性能和阴影质量。 
+
+你可以转至“视口 > 显示 > 高级 > 界限”来显示网格界限。
+
+你会看到如下示例：
+
+[[File:Bounds.png|frame|x400px|center|显示的对象界限]]
+
+&lt;!---&lt;gallery heights=400px mode="packed">
+File:Bounds.png|显示的对象界限
+&lt;/gallery>-->
+
+附加提示： 
+
+如果你遇到网格遮蔽的问题，但考虑到性能原因而不想增大界限比例，可以尝试使用聚光灯。由于这只会朝着单一方向投射光线，所以当网格被遮蔽时，不会看到点光源朝着所有方向投射光线的情况。这非常适用于曾经演示过的相似情况，但可能需要针对具体项目进行一些测试来达到理想的效果。 
+
+或者，你可以放弃完全可移动/动态照明，使用静止照明来烘焙光照贴图纹理，这样在运行时渲染阴影信息是零开销的，所以也有助于性能稳定。 
+_________________________________________________________________________________________________
+&lt;!--***********************************************************************************************-->
+&lt;!--**********静态照明**********************************************************************-->
+&lt;!--**********静态照明**********************************************************************-->
+&lt;!--**********静态照明**********************************************************************-->
+&lt;!--**********静态照明**********************************************************************-->
+&lt;!--************************************************************************************************-->
+=='''静态照明'''==
+----
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--光照贴图分辨率/阴影质量***********************************************************-->
+&lt;!--************************************************************************************************-->
+&lt;!--**********************************************************************************************-->
+===光照贴图分辨率/阴影质量===
+
+每一个项目都有其独特的艺术方向和目标，所以本节意在介绍一些常见的概念，提供一些基本知识，便于你开始实现通过静态照明想要达到的效果。我们在此提供的设置并不一定始终适合于每一个项目。
+
+&lt;gallery heights=477px mode="packed">
+File:LM Resolution.PNG|包含 3 个静态网格的样本场景
+&lt;/gallery>
+
+该场景中有 3 个对象，两面墙和一个地板网格。每一个对象都有自己的阴影，阴影烘焙到纹理中，称为光照贴图。该光照贴图将投射到自身的任何阴影/照明信息存储到该纹理中。这通常由美工在创建资产时处理。[https://docs.unrealengine.com/latest/INT/Engine/Content/Types/StaticMeshes/LightmapUnwrapping/index.html '''想要进一步了解光照贴图以及如何有效地创建光照贴图？''']
+
+换言之，如果我想提高墙投射到门口的阴影的分辨率，我不会调整门口，而是调整地板的光照贴图分辨率。这是阴影所投射到并烘焙到光照贴图的位置。
+
+明确这一点之后，我们可能只需要提高一部分网格的光照贴图分辨率。每个网格都有自己的光照贴图分辨率，选择网格后可以通过“细节”面板进行设置，也可以通过网格编辑器进行设置。 
+
+对于该光照贴图质量演示，我们只需研究地板网格的光照贴图分辨率即可。
+
+在调整 LM 分辨率时，确保使用 2 的幂次方（32 [引擎默认值]、64、128 等），但 BSP 例外（详情见下文）
+
+该光照贴图分辨率的质量主要取决于两个因素：网格大小和光照贴图 UV 中的 UV 壳的大小。
+
+&lt;gallery heights=192px caption="静态网格的光照贴图分辨率" mode="packed">
+File:LM64.PNG|分辨率 = 64
+File:LM128.PNG|分辨率 = 128
+File:LM256.PNG|分辨率 = 256
+File:LM512.PNG|分辨率 = 512
+&lt;/gallery>
+
+需要注意的是，在 BSP 上使用光照贴图与在静态网格上使用光照贴图的主要差异在于值不会增大，而是降低才能获得更好的分辨率。
+
+&lt;gallery heights=192px caption="BSP 光照贴图分辨率" mode="packed">
+File:BSPLM32.PNG|分辨率 = 32
+File:BSPLM24.PNG|分辨率 = 24
+File:BSPLM16.PNG|分辨率 = 16
+File:BSPLM8.PNG|分辨率 = 8
+&lt;/gallery>
+
+虽然调整光照贴图分辨率可以获得更好的结果，但是仍有一些取舍。如果使用较小网格，那么光照贴图分辨率较低的地板会有更好的效果，如果使用更大的网格，就需要增大光照贴图分辨率，纹理也会占用更多游戏资源。
+
+&lt;gallery heights=300px caption="景观光照贴图分辨率" mode="packed">
+File:LandscapeDefault1.png|分辨率 = 1.0
+File:Landscape2.png|分辨率 = 2.0
+&lt;/gallery>
+
+就像在使用 BSP 和静态网格时设置静态照明分辨率的差异一样，景观也有稍许不同。景观光照贴图分辨率使用一个乘数，为烘焙后的阴影提供更好的分辨率。较大景观可能需要更大的分辨率值，而较小景观则相反。 
+
+在“细节”面板中，你可以选择增大'''静态照明分辨率'''，其默认值为 1。调整该设置时，只需以整数为增量逐渐增大即可，直到达到所需分辨率。 
+_________________________________________________________________________________________________
+&lt;!--************************************************************************************************-->
+&lt;!--************************************************************************************************-->
+&lt;!--**间接照明的阴影接缝/明暗差异***************************************-->
+&lt;!--************************************************************************************************-->
+&lt;!--************************************************************************************************-->
+===间接照明的阴影接缝/明暗差异===
+
+通常在构建项目照明时，在间接照亮区域中，可能会注意到模块化平面之间有时会出现明暗差异，通常是墙面、地面和天花板。这是目前由于对静态间接照明的处理方式而导致的负面影响，无法轻易解决。希望将来能够加以改善。
+
+以下是对该问题的详细剖析，方便对此尚不熟悉的读者学习。 
+
+* 照明点亮了一个表面，然后光线反射到了周围的表面上。这种类型的反射光称为间接照明。有些表面也会被直接照亮，同时也会接收到一些反射光，比如下图中的墙，一部分是完全照亮的，一部分接收了间接照明，因此在有阴影的角落出现了明暗问题。 
+
+[[File:LightBounce.png|frame|x300px|center|光线反射示例]]
+
+* 如果接收间接照明的表面是纯平面，就会产生下图这样的明暗差异： 
+
+[[File:Shading.png|frame|x300px|center|间接照明失真]]
+
+
+其过程是这样的，每一个静态网格都会发送到 CPU，按照接收的顺序通过不同的 CPU 线程进行处理。这就意味着，虽然每一个静态网格都通过光照系统构建了自己的照明，而其他网格并不知道自己前面的网格具有怎样的明暗设置，也就无法参考边缘来确保匹配。因此导致各个平面之间存在轻微的明暗差异。 
+
+现在大家一定在想，我该怎么解决这个问题呢？
+
+在全局设置的光照系统部分下，可以调整一些设置来获得更好的效果。 
+
+* 间接照明质量可以设置为 2 或更大的值。
+* 间接照明平滑度通常可以设置为 .65-.75 的范围。该值越低，失真的可能性越大，导致光照贴图看起来就像有污渍。
+* （仅建议高级用户使用！！）静态照明关卡比例可以调整为较低值，也可以获得更好的融合效果。但是这会更改为整个关卡计算照明的比例。如果将该值降低，会明显增加构建时间，但结果也会更好。该设置通常被建筑可视化领域的从业者们使用，游戏开发者则不常用，除非具有特定的原因并理解该选择的效果。
+
+调整间接照明的质量时，降低照明平滑度总是很好的做法，这样可以获得更好的结果。这样有助于各个面更自然地衔接起来，但不一定会彻底解决该问题，而且也可能会产生其他负面影响。应该在项目或测试贴图中进行测试，充分理解各种调整的影响以及原因。
+
+还可以执行一些其他步骤来降低这种失真的明显程度，并执行一些其他操作来改进项目设计。 
+
+* 尽量不要将关卡设计得过于模块化！这一点十分重要。有些人可能会觉得，把一面中等面积的墙体分解成一块块小型的精简拼块，然后像乐高一样打包在一起是最好的做法，但这就会有明暗差异的风险，而且现在会有更多的 Actor，导致绘图调用增加，资产可见性检查量也会增加。最好是就设计一面墙，这样更为合理，而不是许多小的拼块。这样绘图调用数量降低，照明问题也会减少。 
+* 只需要使用一些其他的几何结构来隐藏可能存在接缝的位置即可，比如柱状体、邻接墙或踢脚线。 
+
+
+_________________________________________________________________________________________________
+&lt;!--************************************************************************************************-->
+&lt;!--************************************************************************************************-->
+&lt;!--构建照明时出现的“重叠 UV 错误”是什么意思？***************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===构建照明时出现的“重叠 UV 错误”是什么意思？===
+
+在使用静态或静止照明时，必须在网格中使用两个 UV，否则在构建照明时就会看到如下警告：
+
+&lt;gallery heights=293px mode="packed">
+File:Overlapping UV Error.PNG|消息日志，照明结果
+&lt;/gallery>
+
+这意味着需要为光照贴图建立第二个 UV 通道，否则编辑器就会使用现有的纹理 UV 作为光照贴图，从而引起这一类的错误。 
+
+要解决该问题，可以调整光照贴图的 UV，以便不会出现重叠面。 
+
+该操作可以[[#如何在编辑器中生成光照贴图 UV？|在编辑器中]]通过生成光照贴图执行，也可以使用所选的建模软件来创建和编辑 UV。
+
+&lt;gallery heights=299px caption="原始 UV 和结果" mode="packed">
+File:Overlapping LogoUV.PNG|重叠 UV
+File:Overlapping UV Results.PNG|编辑器中的结果
+&lt;/gallery>
+
+&lt;gallery heights=299px caption="更正后的 UV 和结果" mode="packed">
+File:Overlapping LogoUV Adjusted.PNG|更正后的 UV
+File:Overlapping UV Results Adjusted.PNG|编辑器中的结果
+&lt;/gallery>
+
+请注意，最终结果中的 UV 没有重叠面，所以可以正确烘焙纹理的阴影/照明信息，从而在构建照明后应用到网格。 
+
+如果有重叠面，就会因为无法正确烘焙照明信息而产生不正确的明暗效果。
+_________________________________________________________________________________________________
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--如何在编辑器中生成光照贴图 UV？**************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===如何在编辑器中生成光照贴图 UV？===
+
+在 4.5 版本中，编辑器会自动在导入时或使用网格编辑器生成 UV。
+
+我们假设你想要从网格编辑器进行设置。
+
+* 打开想要为其创建光照贴图的网格。
+
+* 在右侧找到如下面板：
+
+&lt;gallery heights=300px mode="packed">
+File:GeneratedLMs.png|静态网格编辑器“细节”面板
+&lt;/gallery>
+
+该面板允许您创建光照贴图通道，但这里不能直接控制光照贴图分辨率，也不能指定坐标索引。这些设置将在下文进一步介绍。
+
+“构建设置”选项卡中需要重点关注的设置包括：
+
+&lt;div align=left>'''生成光照贴图 UV''' = 确保选中该项。&lt;br />
+'''最低光照贴图分辨率''' = 这是你希望光照贴图分辨率具有的最小值。&lt;br />
+'''源点光照贴图索引''' = 这是要从中生成光照贴图 UV 的源点。&lt;br />
+'''目标光照贴图索引''' = 这是在创建后将用于存储该 UV 的位置。&lt;/div>
+
+对于大多数资产而言，上述设置足以满足需要。关键是要确保选择正确的源点光照贴图索引。这是通常用于纹理的 UV。该 UV 中的 UV 壳/岛会重新打包，避免出现重叠面，这对于使用光照贴图而言至关重要。
+
+对于光照贴图分辨率设置，从较低值开始使用也并不是坏事，因为不一定会用到这个分辨率。如果决定使用较高分辨率，无需回到这里更改设置，除非你知道这样会改善光照贴图烘焙。在大多数情况下不必如此。 
+
+单击“应用更改”之后，可以验证是否创建了光照贴图，查看是否有任何错误。
+
+要执行此操作，可以转至网格编辑器工具栏，单击 UV 图标来显示 UV，并使用右侧的下拉按钮来选择 UV 通道 1，就可以看到新创建的光照贴图。
+
+应该类似于以下内容：
+
+&lt;gallery heights=300px mode="packed">
+File:UVChannelSelection.png|静态网格编辑器，UV 通道选择
+&lt;/gallery>
+
+至此本过程还未结束。我们还需要指定正确的 UV 通道来用于光照贴图。 
+
+在网格编辑器右侧的“细节”面板中，找到“静态网格设置”选项卡?
+
+[[File:LightmapUVSet.PNG|frame|x300px|right|静态网格编辑器细节，光照贴图设置]]
+
+* 在该选项卡中，需要调整所需的光照贴图分辨率。
+
+32 是默认光照贴图分辨率。该值适用于较小物体。对于较大物体，可能需要使用更高的分辨率。
+
+确保以 2 的幂次方调整该值。（即32、64、128、256 等）
+
+* 需要核实的下一个设置时光照贴图坐标索引现在是否指向正确的通道。确保设置为你在上述构建设置中所设置的通道。通常应该设置为 1。
+
+在使用这些设置后，你现在应该具有正确的光照贴图分辨率了。
+
+&lt;br clear=all>
+
+但这里也有一些注意事项，可能需要使用 Blender、3Ds Max 或 Maya 之类的建模程序来彻底更正该问题。
+
+生成的光照贴图不会导致现有 UV 中来自纹理 UV 通道 1 的接缝断开。只会重新打包现有的 UV 布局，以更好地适应光照贴图 UV 的需要。
+
+例如，可以想象一个圆柱体。如果要把这些面全部平铺展开，需要在圆柱体的侧面剪开一条线才可以。在建模程序中，这不是必需操作，具体取决于你是如何设置要使用的纹理 UV 的。如果切割这个侧面不是为了平铺展开，那么通过网格编辑器生成的 UV 就不起作用，但仍会在构建照明后引起重叠 UV 警告。
+_________________________________________________________________________________________________
+&lt;!--***********************************************************************************************-->
+&lt;!--************************************************************************************************-->
+&lt;!--如何使用静态照明控制全局光照？即反射的优点***-->
+&lt;!--************************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===如何使用静态照明控制全局光照？即反射的优点===
+
+在使用静态照明时，需要构建照明来查看结果。光照系统用于编译和生成纹理，通过将场景的照明和阴影信息烘焙到光照贴图纹理，将该信息存储到纹理中。 
+
+默认情况下，光照系统设置为使用三次光线反射，以通过静态照明控制 GI。如果还需要进一步设置，需要通过“全局设置”选项卡直接更改光照系统设置来获得不同的结果。我们可以通过更改光线投射的反射次数来影响全局光照。 
+
+要启用“全局设置”选项卡，需要转至工具栏，选择“设置 > 全局设置”
+
+&lt;gallery heights=132px mode="packed">
+File:World Settings Toolbar.png|全局设置
+&lt;/gallery>
+
+[[File:LightmassSettings.png|frame|x531px|right|默认光照系统全局设置]]
+
+单击右侧“细节”面板选项旁边的“全局设置”选项卡。
+
+这里看到的很多设置都会影响通过光照系统处理照明的方式，从而直接影响场景。对于 GI，我们只会着重讲解第二个选项“间接光线反射次数”。该滑块的范围是 1 到 4。但只能通过手动输入值覆盖原有设置。 
+
+右侧显示的是默认设置。
+
+&lt;br clear=all>
+
+&lt;gallery heights=299px caption="全局光照样本场景，单一点光源位于 250（&amp;asymp; 15W 灯泡）" mode="packed">
+File:Scene Setup.PNG|场景设置
+File:NumBounces0.png|0 次反射
+File:NumBounces1.png|1 次反射
+File:NumBounces2.png|2 次反射
+File:NumBounces3.png|3 次反射
+File:NumBounces4.png|4 次反射
+File:NumBounces100.png|100 次反射
+&lt;/gallery>
+
+&lt;div align="center">&lt;font size="4">'''第一次反射的计算时间最长。后续反射对实际构建时间具有较小影响，但视觉影响也会大幅降低。'''&lt;/font>
+&lt;br />
+[https://docs.unrealengine.com/latest/INT/Engine/Rendering/LightingAndShadows/Lightmass/index.html '''想要进一步了解光照系统和全局光照？''']&lt;/div>
+_________________________________________________________________________________________________
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--为什么我的静态网格上有阴影斑点************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===为什么我的静态网格上有阴影斑点？或者如何清理这些不干净的光照贴图？===
+
+在 UE4 中，无论使用哪种类型的静态照明，出现污渍、斑点、污垢等都是十分常见的问题。但不要担心，因为我们可以通过光照系统设置来清理这些不干净的光照贴图。 
+
+首先，看到类似效果的原因是光照系统构建时 GI 反射产生的间接照明导致的。 
+
+为了最有效地重现此问题，下面这个简单的场景有两个房间。
+
+&lt;gallery heights=300px caption="样本场景" mode="packed">
+File:1 sceneSetup.png|外部
+File:2 sceneSetup.png|内部
+&lt;/gallery>
+
+该场景将使用“制作”质量进行照明构建。该场景使用“起步内容”包中的资产，这些内容可以添加到任何新建的项目当中。场景中的所有网格都使用光照贴图分辨率 256，除非另有说明。后期处理效果设置为默认值且具有眼部适应设置，以便更容易看清较暗的房间。
+
+构建照明后得出以下结果：
+
+&lt;gallery heights=300px caption="初始照明构建，默认设置" mode="packed">
+File:3 Room1 Clean.png|第一个室内，直接照亮且有一次反射光
+File:4 Room2 dirty.png|第二个室内，完全通过间接照明照亮
+&lt;/gallery>
+
+可以借助简单粗暴的方法消除部分间接照明失真，也就是提高光照贴图分辨率，这样实际上会增大用于存储照明和阴影信息的纹理大小，但这并不总是最好的做法，比如可以使用较低分辨率并调整光照系统设置来达到高质量结果。在引擎中处理任何渲染应用，尤其是照明会增大纹理大小的情况下，解决此问题的这种方法未必总是对性能最有利的方法，甚至可能导致在后面的开发过程中产生更多性能问题。
+
+例如，下面是光照贴图分辨率更改为 1024 的上述第二个室内。
+
+&lt;gallery heights=300px caption="初始照明构建，默认设置" mode="packed">
+File:4 Room2 dirty.png|第二个室内，光照贴图分辨率 256
+File:5 lightmap1024.png|第二个室内，光照贴图分辨率 1024
+&lt;/gallery>
+
+在该示例中，通过使用较高的光照贴图分辨率大幅减少了失真，但这也导致纹理内存增加为原来的 4 倍。还有一种更有利于性能的解决方案来处理这些间接照明失真，即对“全局设置”进行简单调整。
+
+[[File:7 World Settings.png|frame|x239px|right|全局设置]]
+
+* 您可以在该位置找到“全局设置”：
+
+&lt;br clear=all>
+
+[[File:6 LightmassSettings.png|frame|x500px|right|全局设置]]
+
+* 这是可以调整的光照系统设置：
+
+&lt;br clear=all>
+
+&lt;div align=center>&lt;font size=4>'''间接照明质量'''：这会增大全局光照解算器计数，为需要高质量的关卡提高质量。&lt;br/>
+'''间接照明平滑度'''：这是要应用于间接照明的平滑度因子。&lt;br/>
+警告：间接照明质量使用大于 1 的值会大幅增加构建时间。&lt;/font>&lt;/div>
+
+&lt;br/>
+
+&lt;gallery heights=60px mode="packed">
+File:8 settings.png
+File:10 settings.png
+&lt;/gallery>
+&lt;gallery heights=300px mode="packed">
+File:9 results.png|默认设置
+File:11 results.png|示例设置 1
+&lt;/gallery>
+
+如上文“如何使用静态照明控制全局光照？即反射的优点”所述，你可能还想调整间接照明反射的次数来产生以下结果：
+
+&lt;gallery heights=300px mode="packed">
+File:13 results.png|间接照明反弹次数 = 4
+File:14 Results2.png|间接照明反弹次数 = 5
+&lt;/gallery>
+
+至此，对照明设置的调整足以隐藏一些纹理的失真效果，但如果这种方法不可行，也可以将每个网格的光照贴图分辨率直接增大到较高值。这里使用的光照贴图分辨率是 256。如果更改为 512，将会获得如下结果：
+
+&lt;gallery heights=300px mode="packed">
+File:15 FinalResult.png|调整间接设置，512 光照贴图分辨率
+File:5 lightmap1024.png|不调整间接设置，1024 光照贴图分辨率
+&lt;/gallery>
+
+在本教程开始时，显示了一个使用 1024 光照贴图消除失真的比较效果。通过调整几项光照系统设置，失真效果有所减少，资产使用较低纹理分辨率呈现出较好的结果。
+
+虽然这种方法深入探索了不在房间里设置任何照明的选项，并寻找各种方法减少由于间接照明导致的“不干净”失真，但必须注意的是，在这些区域中使用照明，即使是密度极低的无阴影投射光线，也会产生一定的效果。以上所列的方法可以作为起点，可能需要经历一些试验和错误才能得到更理想的结果。
+
+[https://docs.unrealengine.com/latest/INT/Engine/Rendering/LightingAndShadows/Lightmass/Basics/index.html 想要进一步了解光照系统基本支持？]
+
+[https://docs.unrealengine.com/latest/INT/Engine/Rendering/LightingAndShadows/Lightmass/index.html 想要进一步了解光照系统全局光照？]
+
+_________________________________________________________________________________________________
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--左上角错误中的“需要重建照明”是什么意思？**********************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===左上角错误中的“需要重建照明”是什么意思？===
+
+[[File:1 lighting rebuilt.png|frame|x87px|right|错误消息]]
+
+如果在使用 PIE（在编辑器中播放）、模拟或独立游戏时，视口左上角出现该错误，这只是表示需要为场景重建照明。这仅影响静态和静止照明。动态照亮的场景无需重建照明。 
+
+当照明因移动或修改照明 Actor 而导致失效时会产生此警告。这样会导致问题的原因是关卡中的渲染照明不能准确地表示关卡中当前的照明状态。要解决该错误，可以转至“构建”菜单并重建地图照明。
+
+====故障排除技巧====
+
+'''未构建 Actor 列表'''
+
+有时会发现已经构建了照明，但仍会看到弹出该警告，指出有多个未构建的对象，但无法直接识别是哪些对象。 
+
+您可以从“开发者工具”菜单打开'''输出日志'''窗口。输入命令 '''DumpUnbuiltLightInteractions''' 就会显示一列没有构建照明或者照明失效的 Actor。 
+
+这一列 Actor 对于确定所发生的问题十分有用。可能只是因为某个蓝图设置为静态但包含可移动组件，也可能是因为某个 Actor 是通过构造脚本放置的，然后构建照明后被移到了其他位置。 
+
+'''统计信息窗口'''
+
+转至“窗口 > 统计信息”可以打开'''统计信息'''窗口。该工具可以用于确定构建照明的信息以及场景中设置了光照贴图分辨率的所有静态网格的信息。要排查特定 Actor 在照明构建过程中构建照明所需的确切时间，该工具十分有用。如果感觉某些进程十分缓慢，该工具可以帮助轻松识别照明构建时间较长的有问题对象。 
+
+&lt;br clear=all>
+
+_________________________________________________________________________________________________
+&lt;!--**********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--照明质量比较，或制作 > 预览********************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===照明质量比较，或制作 > 预览===
+
+当需要为某个关卡构建照明时，可以转至工具栏中的“构建 > 照明质量”并选择质量级别来设置光照贴图的照明构建质量。 
+
+默认情况下，该质量设置为'''预览'''。该设置具有最快的计算时间，而'''制作'''的计算时间最慢，但准确性要高得多。
+
+“照明质量”设置位于以下位置：
+
+&lt;gallery heights=150px mode="packed">
+File:2 BuildOptions.png|照明质量设置
+&lt;/gallery>
+
+在以下演示中，用了一个封闭的房间显示所构建阴影的质量：（该场景与[[#为什么我的静态网格上有阴影斑点？或者如何清理这些不干净的光照贴图？]]所用的场景设置一样
+
+&lt;gallery heights=250px mode="packed" caption="照明质量设置，建筑">
+File:3 Preview.png|预览
+File:4 Medium.png|中
+File:5 High.png|高
+File:6 Production.png|制作
+&lt;/gallery>
+
+在该示例中，很容易看出默认的“预览”设置和“制作”设置的差异。在“制作”设置中，在前面几种质量设置中普遍存在的所有漏光现象几乎全部消失。这是发生漏光时排查照明问题的好方法。如果“制作”没有消除漏光问题，则需要查看光照贴图 UV 的设置方式，甚至可能需要检查关卡中的网格布局。
+
+在以下场景中，雕塑静态网格的阴影质量调整并不明显。质量上有轻微的差异，但这个具体的对象不足明显地显示出来。
+
+&lt;gallery heights=250px mode="packed" caption="照明质量设置，有机线条">
+File:7 statue preview.png|预览
+File:8 statue Medium.png|中
+File:9 Statue High.png|高
+File:10 Statue Production.png|制作
+&lt;/gallery>
+
+[[File:11 StatueQuality.gif|frame|x448px|right|雕塑照明质量]]
+
+在该动画 Gif 中，质量差异相较于该预览是极其细微的。较为有机的形状应该也是这种行为。如果颜色和亮度相同，人眼会先注意到非有机直线（例如建筑直角），然后才会注意到弯曲或更有机的形状。需要注意的是，平坦地面上的阴影粗糙度是较大网格采用较低光照贴图分辨率所导致的结果。提高光照贴图分辨率会改善阴影定义的质量。
+
+&lt;br clear=all>
+
+
+_________________________________________________________________________________________________
+&lt;!--**********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--光照贴图错误颜色************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===光照贴图错误颜色===
+
+选择“使用错误颜色”并使用“预览”或“中”照明质量设置时，通过“构建菜单”下拉按钮可以启用该选项。
+
+[[File:LightingErrorColoring.png|frame|250px|Left|错误颜色选项]]
+
+当光照系统遇到错误时，会用颜色表示错误类型，方便用户识别。以下是针对所遇到问题反映出的颜色类型。
+
+* 橙色：因非唯一或重叠 UV 导致的。 
+* 绿色：因环绕 UV 或 UV 超出了 0,1 UV 空间范围导致的。
+* 黄色：这是没有贴图的纹理元素，它们或者没有光照贴图区域，或者光照贴图分辨率过低（如果是 BSP）。
+
+您可以在仍然适用的 UE3 文档中查看更多信息： 
+https://udn.epicgames.com/Three/LightmassTools.html#Lightmap error colors
+
+_________________________________________________________________________________________________
+&lt;!--**********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--查找“需要重建照明（X 个对象）”中引用的对象**********************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===查找“需要重建照明（X 个对象）”中引用的对象===
+
+有时，可能会遇到照明总是无效的问题，或者你可能调整了关卡中的某些设置，但没有意识到因此而导致了令人沮丧的“需要重建照明（[数量] 个对象）”，但却不能轻松识别这 [数量] 个对象都是什么。 
+
+幸运的是，我们为你提供了一种简单的方法来获取此信息，帮助你更有效地跟踪、调查和解决照明无效的问题。 
+
+* 首先转至“窗口 > 开发者工具 > 输出日志”以打开“输出日志”窗口。
+* 使用 `（波浪符）键，输入命令 '''DumpUnbuiltLightInteractions''' 来打开控制台
+
+那么这种方法作用在哪呢？
+
+* 你可以快速识别导致出现该警告的 Actor。
+* 所构建的某个 Actor 是静态的，然后使用代码或蓝图进行了移动，从而导致出现该警告。
+* 使用大量实例和高光照贴图分辨率实例化的网格可能没有正确构建，因为没有生成集群实例光照贴图。这表示需要降低光照贴图分辨率。
+* 在某些情况下，使用构造脚本通过蓝图生成网格位置时，如果之前构建了照明，那么移动网格会导致照明失效。该命令也可以快速识别这种情况。 
+
+_________________________________________________________________________________________________
+&lt;!--**********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--照明构建统计信息*************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===照明构建统计信息===
+
+编辑器中提供的“统计信息”窗口是在光照构建完成后查看关卡统计信息的好方法。该窗口可以提供有用的统计信息，帮助缩小场景中耗时最长的 Actor 的范围，计算该 Actor 的照明所耗用的时间及其光照贴图分辨率。 
+
+[[File:StatisticsWindow.png|frame|x300px|center|统计信息窗口]]
+''该窗口取自 Epic Games 启动程序“学习”选项卡中提供的 Sun Temple 照明构建。''
+
+照明构建信息和静态网格照明信息中包含的所有信息都有助于优化、调查和排查照明构建。 
+
+也可以在下列文档中找到该信息：https://docs.unrealengine.com/latest/INT/Engine/Rendering/LightingAndShadows/Lightmass/#gettingthebestlightingbuildtimes
+
+
+_________________________________________________________________________________________________
+&lt;!--**********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--景观草类资产平铺图案********************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===景观草类资产平铺图案===
+
+你或许没有注意到，景观草类资产中有一个隐藏的小功能。此功能允许使用景观光照贴图，通过引用间接照明缓存样本，对过程景观草类材质获得更好的融合效果。 
+
+你可以选中“使用景观光照贴图”复选框来启用该功能。
+
+[[File:LandscapeGrassTypeSettings.png|frame|x300px|left|景观草类设置]]
+
+该功能最初是为了动态照亮环境而开发的，但在使用静止或静态照亮环境时，会发现此类环境的图案是根据景观间接照明的平铺组件生成的，效果非常分散。
+
+&lt;gallery heights=250px mode="packed" caption="景观草类使用景观光照贴图">
+File:LandscapeGrassType1.png|禁用
+File:LandscapeGrassType2.png|启用
+&lt;/gallery>
+
+启用或禁用“使用景观光照贴图”选项后，材质会重新生成，而无需重构照明，前提是之前已经构建好了照明。 
+
+_________________________________________________________________________________________________
+&lt;!--**********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--通过命令行构建照明********************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===通过命令行构建照明===
+
+如果需要通过命令行构建照明，该功能从 4.10.2 开始已经添加到引擎中。 
+
+要使用命令行构建照明，请使用以下结构进行设置以作为基础：
+
+* UE4-Editor.exe [Project Folder Path] -run=resavepackages -buildlighting -MapsOnly -ProjectOnly -AllowCommandletRendering -Map=[Name of map]
+
+如果想要构建项目中所有可用的地图/关卡，可以删除 -Map=[Map Name]。
+
+在以下 GitHub 提交版本中可以找到更多详细信息：https://github.com/EpicGames/UnrealEngine/commit/f89256dd0efb7d0b1427729a8f8a6007
+
+如果看到 404 错误页面，需要确保你有 GitHub 帐户，并且 Epic 帐户已经与 GitHub 帐户关联起来。 
+
+
+_________________________________________________________________________________________________
+&lt;!--**********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--植物叶子工具光照贴图分辨率**************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+===植物叶子工具光照贴图分辨率===
+
+使用植物叶子工具时，工具面板中有一些不同的设置可供所选 Actor 使用。一个重要的设置是覆盖网格光照贴图分辨率的选项。 
+
+[[File:FoliageLightmap.png|frame|x200px|left|植物叶子光照贴图设置]]
+
+该选项默认是禁用的，表示将使用静态网格自己的光照贴图分辨率。 
+
+你可能会疑惑“这样有什么不好？我不就是希望正常烘焙的阴影有一个良好的光照贴图分辨率吗？”但问题是使用植物叶子工具时，它们不再是独自放置并具有自己的光照贴图的 Actor。它们是聚集在一起的实例，而这些集群会一起烘焙到单一光照贴图中。 
+
+如果你有大量实例，并继续以静态网格默认光照贴图分辨率进行构建，很可能会遇到警告“Instanced_Foliage_Actor_[X] 光照贴图过大，应缩小。”该警告明确表示光照贴图分辨率过高。应该启用上述选项，尝试更低的分辨率，比如 8 或 4，然后再继续重建。 
+
+但一种较为普遍的合理做法是执行下列操作： 
+
+* 如果希望树木/草丛随风摆动，限制静态照明在植物叶子上的使用。植物叶子摆动时看起来不自然，但阴影则不会。
+* 将植物叶子的光照贴图分辨率降低至可以处理的大小。 
+* 禁用草上的静态照明。这是较为普遍的合理做法，因为随着关卡的发展，实例数量很可能会达到数千个，在大多数情况下会显著增加光照构建时间。
+
+
+_________________________________________________________________________________________________
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+&lt;!--***********************************************************************************************-->
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=%E4%B8%AD%E6%96%87_%E5%85%89%E7%85%A7%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E8%A7%A3%E5%86%B3" title="中文 光照的常见问题和解决">中文 光照的常见问题和解决</a>.</p>
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=%e4%b8%ad%e6%96%87_%e5%85%89%e7%85%a7%e7%9a%84%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98%e5%92%8c%e8%a7%a3%e5%86%b3">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=中文_光照的常见问题和解决</a>"						</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b971c4e90a55eae6"><meta name="worker" content="152"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="https://mediawikiv2-website-prod05.ol.epicgames.net/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":92});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpcVlFA","queueTime":0,"applicationTime":135,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Reflecting_Projectile_C%2B%2B&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:11:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>View source for Reflecting Projectile C++ - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Reflecting_Projectile_C++","wgTitle":"Reflecting Projectile C++","wgCurRevisionId":809,"wgRevisionId":0,"wgArticleId":404,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Reflecting_Projectile_C++","wgRelevantArticleId":404,"wgRequestId":"03eb79d367579ac043267022","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Reflecting_Projectile_C rootpage-Reflecting_Projectile_C skin-vector action-edit"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0e33288c51e7947d3"><meta name="worker" content="206"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Reflecting_Projectile_C%2B%2B&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:11:41 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Reflecting+Projectile+C%2B%2B&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Reflecting_Projectile_C%2B%2B" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Reflecting_Projectile_C%2B%2B&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Reflecting_Projectile_C%2B%2B">Read</a></span></li>
+							<li id="ca-viewsource" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Reflecting_Projectile_C%2B%2B&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Reflecting_Projectile_C%2B%2B&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">View source for Reflecting Projectile C++</h1>
+												<div id="bodyContent" class="mw-body-content">
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=EpicUnrealEngineWiki:Administrators&amp;action=edit&amp;redlink=1" class="new" title="EpicUnrealEngineWiki:Administrators (page does not exist)">Administrators</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">[[Category:Tutorials]]
+[[Category:Code]]
+[[Category:Community Created Content]]
+{{Rating|Type=Article|Versions=(please verify)}}
+== Background ==
+At the [http://forums.unrealengine.com/showthread.php?14834-Tutorial-Reflecting-Projectile-%28C-%29 suggestion] of Adam Davis, I have reproduced my website's reflecting projectile [http://theokrin.com/?p=126 tutorial] here.  This tutorial will cover setting up the project and detailing in depth what changes I made to produce the end result.  So read on to see how to make a reflecting projectile in Unreal Engine 4.
+
+== Assumptions ==
+First off, this tutorial is aimed at beginners, but you should be familiar with navigating the Editor and compiling Visual Studio projects.  Also, this project was created using version 4.2.1 of UE4, and it was compiled using Visual Studio 2013.
+
+== The Goal ==
+I'll start by showing off a quick video that demonstrates the end goal of this tutorial.  The green lines are the initial path the projectile took, and when it is reflected the line changes to red.
+
+&lt;youtube>http://www.youtube.com/embed/qQxCxW98e_g&lt;/youtube> 
+
+== Setting Up the Project ==
+First we want to launch the Editor via the Unreal Engine Launcher and create a new project.
+
+[[File:Theokrin TRP1 LaunchEditor.png|thumbnail|none|450px|Launch UE4 4.2.1]]
+
+Once the Editor's Project Browser is open.  Click the New Project tab at the top.  Choose Code First Person from the list as the project to create.  For reference, I named mine WPPost2.  Thus in screenshots/code samples my projectile class will be WPPost2Projectile.
+
+[[File:Theokrin_TRP2_ProjectBrowser.png|thumbnail|none|450px|Create project]]
+
+== Remove Existing Projectile Code ==
+After you click Create Project, Visual Studio should open the project's solution automatically.  By default the project will come with a projectile class called &lt;ProjectName>Projectile.h and &lt;ProjectName>Projectile.cpp, and these files are found in the &lt;ProjectName> folder under the Source folder in the project hierarchy.
+
+[[File:Theokrin_TRP3_ProjectHiearchy.png|thumbnail|none|400px|Project hiearchy in Visual Studio]]
+
+This class comes predefined with a UProjectileMovementComponent as a member component.  We want to remove this component and its associated code.  Because we will be adding our own logic in later.  I've highlighted the lines we'll be removing from the header and source files.
+
+=== Before - WPPost2Projectile.h ===
+&lt;syntaxhighlight lang="cpp" line="GESHI_NORMAL_LINE_NUMBERS|GESHI_FANCY_LINE_NUMBERS" highlight="15-17,19-21">
+// Copyright 1998-2014 Epic Games, Inc. All Rights Reserved.
+#pragma once
+
+#include "WPPost2Projectile.generated.h"
+
+UCLASS(config=Game)
+class AWPPost2Projectile : public AActor
+{
+    GENERATED_UCLASS_BODY()
+
+    /** Sphere collision component */
+    UPROPERTY(VisibleDefaultsOnly, Category=Projectile)
+    TSubobjectPtr&lt;USphereComponent> CollisionComp;
+
+    /** Projectile movement component */
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Movement)
+    TSubobjectPtr&lt;class UProjectileMovementComponent> ProjectileMovement;
+
+    /** called when projectile hits something */
+    UFUNCTION()
+    void OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult&amp; Hit);
+};
+&lt;/syntaxhighlight>
+
+=== Before - WPPost2Projectile.cpp ===
+&lt;syntaxhighlight lang="cpp" line="GESHI_NORMAL_LINE_NUMBERS|GESHI_FANCY_LINE_NUMBERS" highlight="13-14,17-23,29-38">
+// Copyright 1998-2014 Epic Games, Inc. All Rights Reserved.
+
+#include "WPPost2.h"
+#include "WPPost2Projectile.h"
+
+
+AWPPost2Projectile::AWPPost2Projectile(const class FPostConstructInitializeProperties&amp; PCIP) 
+	: Super(PCIP)
+{
+    // Use a sphere as a simple collision representation
+    CollisionComp = PCIP.CreateDefaultSubobject&lt;USphereComponent>(this, TEXT("SphereComp"));
+    CollisionComp->InitSphereRadius(5.0f);
+    CollisionComp->BodyInstance.SetCollisionProfileName("Projectile");			// Collision profiles are defined in DefaultEngine.ini
+    CollisionComp->OnComponentHit.AddDynamic(this, &amp;AWPPost2Projectile::OnHit);		// set up a notification for when this component overlaps something
+    RootComponent = CollisionComp;
+
+    // Use a ProjectileMovementComponent to govern this projectile's movement
+    ProjectileMovement = PCIP.CreateDefaultSubobject&lt;UProjectileMovementComponent>(this, TEXT("ProjectileComp"));
+    ProjectileMovement->UpdatedComponent = CollisionComp;
+    ProjectileMovement->InitialSpeed = 3000.f;
+    ProjectileMovement->MaxSpeed = 3000.f;
+    ProjectileMovement->bRotationFollowsVelocity = true;
+    ProjectileMovement->bShouldBounce = true;
+
+    // Die after 3 seconds by default
+    InitialLifeSpan = 3.0f;
+}
+
+void AWPPost2Projectile::OnHit(AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult&amp; Hit)
+{
+    // Only add impulse and destroy projectile if we hit a physics
+    if ((OtherActor != NULL) &amp;&amp; (OtherActor != this) &amp;&amp; (OtherComp != NULL) &amp;&amp; OtherComp->IsSimulatingPhysics())
+    {
+        OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
+        
+        Destroy();
+    }
+}
+&lt;/syntaxhighlight>
+
+=== After - WPPost2Projectile.h ===
+After you've removed the code, the header and source files should look like this:
+&lt;syntaxhighlight lang="cpp" line="GESHI_NORMAL_LINE_NUMBERS|GESHI_FANCY_LINE_NUMBERS">
+// Copyright 1998-2014 Epic Games, Inc. All Rights Reserved.
+#pragma once
+
+#include "WPPost2Projectile.generated.h"
+
+UCLASS(config=Game)
+class AWPPost2Projectile : public AActor
+{
+    GENERATED_UCLASS_BODY()
+
+    /** Sphere collision component */
+    UPROPERTY(VisibleDefaultsOnly, Category=Projectile)
+    TSubobjectPtr&lt;USphereComponent> CollisionComp;
+};
+&lt;/syntaxhighlight>
+
+=== After - WPPost2Projectile.cpp ===
+&lt;syntaxhighlight lang="cpp" line="GESHI_NORMAL_LINE_NUMBERS|GESHI_FANCY_LINE_NUMBERS">
+// Copyright 1998-2014 Epic Games, Inc. All Rights Reserved.
+
+#include "WPPost2.h"
+#include "WPPost2Projectile.h"
+
+
+AWPPost2Projectile::AWPPost2Projectile(const class FPostConstructInitializeProperties&amp; PCIP) 
+	: Super(PCIP)
+{
+    // Use a sphere as a simple collision representation
+    CollisionComp = PCIP.CreateDefaultSubobject&lt;USphereComponent>(this, TEXT("SphereComp"));
+    CollisionComp->InitSphereRadius(5.0f);
+    RootComponent = CollisionComp;
+
+    // Die after 3 seconds by default
+    InitialLifeSpan = 3.0f;
+}
+&lt;/syntaxhighlight>
+
+Now we want to compile and run the project.  Once the editor is open, we want to find the Projectile Class Blueprint and '''recompile''' it because we removed a component in the code.  Otherwise you ''will'' see runtime errors when you try to play the level because the blueprint still has the UProjectileMovementComponent.  For recompiling, you need to open the blueprint, click compile, and click save.  You will notice the component disappear when you compile it.
+
+[[File:Theokrin_TRP4_ProjectileBP.png|thumbnail|none|700px|Open Projectile class blueprint]]
+
+[[File:Theokrin_TRP5_ProjectileBP_BeforeCompile.png|thumbnail|none|700px|Projectile blueprint before compile]]
+
+[[File:Theokrin_TRP6_ProjectileBP_AfterCompile.png|thumbnail|none|700px|Projectile blueprint after compile]]
+
+
+== Setting Up the Collision Profiles ==
+While we have the editor open lets go ahead and cover how to setup the Collision Profile for our projectile.  The profile is responsible for defining what events will trigger based on what objects our projectile interacts with in the world.  This can be found on the Defaults tab of the blueprint under the Collision section.  Click the arrow next to Collision Presets to expand the view. You can look at the different presets, but I decided to go with a Custom profile because I didn't see a preset that would produce the events I wanted.
+
+[[File:Theokrin_TRP7_ProjectileBP_DefaultsExpand.png|thumbnail|none|700px|Projectile blueprint's Defaults tab showing Collision section]]
+
+First, we want to make sure the checkboxes Simulation Generates Hit Events and Generate Overlap Event are ticked.  Second, we need to choose Collision Enabled from the Collision Enabled dropdown.  Finally, we setup the responses by ticking the corresponding checkboxes.  Since the white boxes in the level are of type PhysicsBody, we want that collision to generate an Overlap event.  Otherwise we want the collision to generate a Block or Hit event.   Be sure to compile and save the blueprint after making the changes.
+
+[[File:Theokrin_TRP8_ProjectileBP_CollisionProfile.png|thumbnail|none|700px|Projectile blueprint's collision profile]]
+
+We told the projectile to generate an Overlap event when colliding with a PhysicsBody.  Now we need to do the same for the physics objects in the level.  Thus we will want to tick the Generate Overlap Events checkbox for each physics object.
+
+[[File:Theokrin_TRP9_PhysicsObjectsGenOverlap.png|thumbnail|none|700px|Set physics object to Generate Overlap Events]]
+
+You can do this quickly by holding Ctrl when you click each physics object in the level.  Then ticking the checkbox after you've selected all them.  This is similar to how you can Ctrl+Click files in Windows to select multiple specific files.
+
+[[File:Theokrin_TRP10_MultiPhysObjGenOverlap1.png|thumbnail|none|700px|Set multiple objects to Generate Overlap Events]]
+
+Alternatively, you could use the Scene Outliner's search box and search for EditorCube.  (Note: When you click an object in the level it will select the object in the Scene Outliner.  That's how I knew to search for EditorCube.)  Then click one of the cubes from the list and press Ctrl+A.  This will highlight all of them in the level.
+
+[[File:Theokrin_TRP11_MultiPhysObjGenOverlap2.png|thumbnail|none|700px|Set multiple objects to Generate Overlap Events]]
+
+=== Understanding Collisions ===
+Figuring out how to get the proper events to trigger took some research.  So here are a couple reference links I found when researching collisions and events for this project.  They were extremely helpful in understanding how collisions work and what events will fire under what circumstances.
+
+[http://docs.unrealengine.com/latest/INT/Engine/Physics/Collision/index.html Unreal Engine | Collision Responses]
+
+[http://docs.unrealengine.com/latest/INT/Engine/Blueprints/UserGuide/Events/index.html Unreal Engine | Events]
+
+I found them by searching the [http://docs.unrealengine.com/latest/INT/index.html documentation].  Also, it's a good idea to see what others have posted up on the Answers exchange and forums ([http://forums.unrealengine.com/showthread.php?1318-Hit-Event-not-triggering Link 1], [http://forums.unrealengine.com/showthread.php?932-Event-Hit Link 2]).  Big thanks to the Epic developers and their insightful responses.
+
+== Adding Our Projectile Code ==
+Be sure to save your level and close the editor.  Now, we want to make the projectile work!  First we need to modify the header file to add some member variables, overload some inherited Actor functions, and create the callback function for Overlap events.
+
+=== Changes to WPPost2Projectile.h ===
+&lt;syntaxhighlight lang="cpp" line="GESHI_NORMAL_LINE_NUMBERS|GESHI_FANCY_LINE_NUMBERS" highlight="15-16,18-19,21-23,26-28,30-32,34-38">
+// Copyright 1998-2014 Epic Games, Inc. All Rights Reserved.
+#pragma once
+
+#include "WPPost2Projectile.generated.h"
+
+UCLASS(config = Game)
+class AWPPost2Projectile : public AActor
+{
+    GENERATED_UCLASS_BODY()
+
+    /** Sphere collision component */
+    UPROPERTY(VisibleDefaultsOnly, Category = Projectile)
+    TSubobjectPtr&lt;USphereComponent> CollisionComponent;
+
+    /** Projectile's velocity vector */
+    FVector MyVelocity;
+
+    /** Flag to indicate projectile has been reflected */
+    bool bReflected;
+
+    /** called when projectile overlaps with something */
+    UFUNCTION()
+    void OnOverlap(AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
+public:
+    /** How fast the projectile moves */
+    UPROPERTY(EditAnywhere, Category = Projectile)
+    float fSpeed;
+
+    /** How much a bounce affects the speed of the projectile */
+    UPROPERTY(EditAnywhere, Category = Projectile)
+    float fBounceSpeedLoss;
+
+    // Begin AActor overrides
+    virtual void OnConstruction(const FTransform&amp; Transform) OVERRIDE;
+    virtual void ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult&amp; Hit) OVERRIDE;
+    virtual void Tick(float DeltaSeconds) OVERRIDE;
+    // End AActor overrides
+};
+&lt;/syntaxhighlight>
+
+=== Changes to WPPost2Projectile.cpp ===
+Now we want to implement these functions and set the variables in the correct places.  The following code belongs in the CPP file.
+&lt;syntaxhighlight lang="cpp" line="GESHI_NORMAL_LINE_NUMBERS|GESHI_FANCY_LINE_NUMBERS" highlight="10-12,17-18,25-68">
+// Copyright 1998-2014 Epic Games, Inc. All Rights Reserved.
+
+#include "WPPost2.h"
+#include "WPPost2Projectile.h"
+
+
+AWPPost2Projectile::AWPPost2Projectile(const class FPostConstructInitializeProperties&amp; PCIP)
+: Super(PCIP)
+{
+    PrimaryActorTick.bCanEverTick = true;
+    fSpeed = 3000.f;
+    fBounceSpeedLoss = 0.7f;
+
+    // Use a sphere as a simple collision representation
+    CollisionComponent = PCIP.CreateDefaultSubobject&lt;USphereComponent>(this, TEXT("SphereComp"));
+    CollisionComponent->InitSphereRadius(5.0f);
+    CollisionComponent->OnComponentBeginOverlap.AddDynamic(this, &amp;AWPPost2Projectile::OnOverlap);   // set up a notification for when this component overlaps something
+    CollisionComponent->OnComponentEndOverlap.AddDynamic(this, &amp;AWPPost2Projectile::OnOverlap);     // set up a notification for when this component overlaps something
+    RootComponent = CollisionComponent;
+
+    // Die after 3 seconds by default
+    InitialLifeSpan = 3.0f;
+}
+
+void AWPPost2Projectile::OnConstruction(const FTransform&amp; Transform)
+{
+    Super::OnConstruction(Transform);
+
+    MyVelocity = GetActorForwardVector() * fSpeed;
+}
+
+void AWPPost2Projectile::OnOverlap(AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+    if ((OtherActor != NULL) &amp;&amp; (OtherActor != this) &amp;&amp; (OtherComp != NULL))
+    {
+        // Only add impulse and destroy projectile if we hit a physics object
+        if (OtherComp->IsSimulatingPhysics())
+        {
+            OtherComp->AddImpulseAtLocation(MyVelocity * 100.f, GetActorLocation());
+
+            Destroy();
+        }
+    }
+}
+
+void AWPPost2Projectile::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp,
+    bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult&amp; Hit)
+{
+    Super::ReceiveHit(MyComp, Other, OtherComp, bSelfMoved, HitLocation, HitNormal, NormalImpulse, Hit);
+
+    // Reflect the projectile because we hit a non-physics object
+    FVector ReflectedVelocity = fBounceSpeedLoss * (-2 * FVector::DotProduct(MyVelocity, HitNormal) * HitNormal + MyVelocity);
+    MyVelocity = ReflectedVelocity;
+    ReflectedVelocity.Normalize();
+    SetActorRotation(ReflectedVelocity.Rotation());
+
+    bReflected = true;
+}
+
+void AWPPost2Projectile::Tick(float DeltaSeconds)
+{
+    Super::Tick(DeltaSeconds);
+
+    FColor LineColor = bReflected ? FColor::Red : FColor::Green;
+    DrawDebugLine(GetWorld(), GetActorLocation(), GetActorLocation() + MyVelocity * DeltaSeconds, LineColor, false, 2.f, 0, 1.f);
+
+    SetActorLocation(GetActorLocation() + MyVelocity * DeltaSeconds, true);
+}
+&lt;/syntaxhighlight>
+
+Now I'm going to breakdown each part and explain what each variable is for, what each function is doing, why we're setting certain variables in certain functions, when each function is called, etc.
+
+== Breaking Down the Changes ==
+
+=== Constructor ===
+First lets inspect the code added to the projectile's constructor.
+
+&lt;syntaxhighlight lang="cpp" line="GESHI_NORMAL_LINE_NUMBERS|GESHI_FANCY_LINE_NUMBERS">
+// Constructor changes
+PrimaryActorTick.bCanEverTick = true;
+fSpeed = 3000.f;
+fBounceSpeedLoss = 0.7f;
+
+CollisionComponent->OnComponentBeginOverlap.AddDynamic(this, &amp;AWPPost2Projectile::OnOverlap);   // set up a notification for when this component overlaps something
+CollisionComponent->OnComponentEndOverlap.AddDynamic(this, &amp;AWPPost2Projectile::OnOverlap);     // set up a notification for when this component overlaps something
+&lt;/syntaxhighlight>
+
+We have to set the actor's tick flag to true otherwise our Tick function will not be called.  This is accomplished by line 2 above.  Line 3 and 4 are just setting default values for the speed and speed loss variables.  Lines 6 and 7 are setting our OnOverlap function to be the function that the CollisionComponent will call when overlap events occur for that component.  These events will occur when our projectile's movement overlaps one of the physics object in the level just the way we set it up in the Collision Profiles section.
+
+=== OnConstruction ===
+In this function we want to set the velocity of our projectile.  This is accomplished by retrieving the projectile's forward vector and scaling it by our speed variable.
+
+&lt;syntaxhighlight lang="cpp">
+// OnConstruction setting velocity
+MyVelocity = GetActorForwardVector() * fSpeed;
+&lt;/syntaxhighlight>
+
+I originally tried setting the velocity in the constructor, but that resulted in the projectile always firing in the X axis direction regardless of where you were aiming.  Then I tried setting it in the Tick function, but that would overwrite our change to the velocity on reflection.  So after some research I found this function could be overrided from AActor, and it was giving me the correct forward vector whenever a projectile was fired.   A quick note, if you're overriding a function from a class you're extending be sure to call the super class's function first.  That's why I'm calling Super::OnConstruction first.
+
+&lt;syntaxhighlight lang="cpp">
+// Call the super class's function first
+Super::OnConstruction(Transform);
+&lt;/syntaxhighlight>
+
+=== OnOverlap ===
+The OnOverlap function is what gets called thanks to our collision profile set to provide an Overlap response for PhysicsBody and because we ticked the Generate Overlap Events checkbox on both our projectile and the physics objects. So to push the objects around we need to apply our velocity to the objects.  First it's good programming practice to check pointers before de-referencing them.
+
+&lt;syntaxhighlight lang="cpp">
+// Checking pointers
+if ((OtherActor != NULL) &amp;&amp; (OtherActor != this) &amp;&amp; (OtherComp != NULL))
+&lt;/syntaxhighlight>
+
+Then we know if we hit one of the physics object by checking if it's simulating physics as no other objects in the level are.
+
+&lt;syntaxhighlight lang="cpp">
+// Only add impulse and destroy projectile if we hit a physics object
+if (OtherComp->IsSimulatingPhysics())
+&lt;/syntaxhighlight>
+
+Note, since the boxes are simulating physics we are able to push them by using  the AddImpulseAtLocation function.  We do this by passing the projectile's velocity with a little extra umph, and we use the location of the projectile at the moment of collision (which is the current location when this function is called).  Then we destroy the projectile.  Otherwise, it will continue moving and generating overlap events and pushing the boxes.
+
+&lt;syntaxhighlight lang="cpp">
+OtherComp->AddImpulseAtLocation(MyVelocity * 100.f, GetActorLocation());
+
+Destroy();
+&lt;/syntaxhighlight>
+
+=== ReceiveHit ===
+The ReceiveHit function is called whenever the projectile has a blocking collision otherwise known as a Hit event.  As always you should call the super class's function first.
+
+&lt;syntaxhighlight lang="cpp">
+Super::ReceiveHit(MyComp, Other, OtherComp, bSelfMoved, HitLocation, HitNormal, NormalImpulse, Hit);
+&lt;/syntaxhighlight>
+
+Then using a little [http://www.3dkingdoms.com/weekly/weekly.php?a=2 vector math] we can reflect the vector at the point of collision.  Note, FVector overloads the pipe ( | ) and caret ( ^ ) operators.  Here I've used the verbose DotProduct function call, but in the engine's source you will find the pipe ( | ) and caret ( ^ ) symbols being used for DotProduct and CrossProduct respectively.
+
+&lt;syntaxhighlight lang="cpp">
+// Reflect the projectile because we hit a non-physics object
+FVector ReflectedVelocity = fBounceSpeedLoss * (-2 * FVector::DotProduct(MyVelocity, HitNormal) * HitNormal + MyVelocity);
+MyVelocity = ReflectedVelocity;
+&lt;/syntaxhighlight>
+
+Now we need to update the projectile's rotation because the reflected velocity is in a different direction.  Also, we need to normalize the vector first because we want a unit vector for the rotation.
+
+&lt;syntaxhighlight lang="cpp">
+ReflectedVelocity.Normalize();
+SetActorRotation(ReflectedVelocity.Rotation());
+&lt;/syntaxhighlight>
+
+Finally, we update the boolean that tells us when a reflection has occurred.  I use this in the Tick function to change the line color.
+
+&lt;syntaxhighlight lang="cpp">
+bReflected = true;
+&lt;/syntaxhighlight>
+
+=== Tick ===
+Last but not least, the Tick function is responsible for moving the projectile forward and drawing a line showing us the path the projectile took.  Nothing new here, we need to call the super class's function first.
+
+&lt;syntaxhighlight lang="cpp">
+Super::Tick(DeltaSeconds);
+&lt;/syntaxhighlight>
+
+DeltaSeconds is the amount of time that has passed between Tick calls.  Using this in our calculations is what allows for smooth movement of the projectile.  Now lets figure out what color to use and draw the projectile's path.
+
+&lt;syntaxhighlight lang="cpp">
+FColor LineColor = bReflected ? FColor::Red : FColor::Green;
+DrawDebugLine(GetWorld(), GetActorLocation(), GetActorLocation() + MyVelocity * DeltaSeconds, LineColor, false, 2.f, 0, 1.f);
+&lt;/syntaxhighlight>
+
+Here I make use of the [http://www.cprogramming.com/reference/operators/ternary-operator.html ternary operator] which is just a shorthand version of an '''IF''' statement.  Then we draw a debug line using DrawDebugLine and use the same calculation as we would to move our projectile.  Finally, we move the projectile by setting its new location to the sum of its current location and the velocity vector times DeltaSeconds.
+
+&lt;syntaxhighlight lang="cpp">
+SetActorLocation(GetActorLocation() + MyVelocity * DeltaSeconds, true);
+&lt;/syntaxhighlight>
+
+The second parameter is a flag that indicates whether this is a sweep movement or not.  We want to pass true because sweeping movements generate blocking events aka hit events.  Otherwise we are just teleporting the projectile around.  Thanks to Epic's JamesG for pointing this out in a response to Shammah's [http://forums.unrealengine.com/showthread.php?8075-Extended-blocking-volume-and-overlapping-volume-hitresults forum post].
+
+== Videos ==
+Compile and run the project to see the reflecting projectile in action.  Here's a couple more videos of the finished product.  These showcase the speed loss due to reflection, and the projectile reflecting off other projectiles.
+
+&lt;youtube>http://www.youtube.com/embed/4jOaRBAh1jY&lt;/youtube>
+
+&lt;youtube>http://www.youtube.com/embed/a3R1ahFD3ww&lt;/youtube>
+
+== Conclusion / Final Notes ==
+Thanks for reading my tutorial.  I hope my few days of research condensed into a post is helpful for anyone else starting out with UE4.
+
+A parting protip for anyone doing lots of C++ development especially in UE4, check out the trial for [http://www.wholetomato.com/ Visual Assist] (only works with non express versions of Visual Studio).  If you like it, you'll probably buy a license when the trial expires just like I did.
+
+
+
+Tutorial by [http://wiki.unrealengine.com/User:Theokrin Theokrin]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Rating&amp;action=edit&amp;redlink=1" class="new" title="Template:Rating (page does not exist)">Template:Rating</a> (<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Rating&amp;action=edit" class="new" title="Template:Rating (page does not exist)">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Reflecting_Projectile_C%2B%2B" title="Reflecting Projectile C++">Reflecting Projectile C++</a>.</p>
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Reflecting_Projectile_C%2B%2B">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Reflecting_Projectile_C%2B%2B</a>"						</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b971c4e90a55eae6"><meta name="worker" content="206"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="https://mediawikiv2-website-prod05.ol.epicgames.net/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":94});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpcVlFA","queueTime":0,"applicationTime":144,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/scientist/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/scientist/commits/master.atom"/>
+  <title>Recent Commits to scientist:master</title>
+  <updated>2020-03-08T13:11:26Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/39977c7aa38366817e9460c73d5c6c9dd5c5f5b0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/39977c7aa38366817e9460c73d5c6c9dd5c5f5b0"/>
+    <title>
+        Merge pull request #113 from TrueWill/add-alternative
+    </title>
+    <updated>2020-03-08T13:11:26Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/6259?s=30&amp;u=0a1ba933caa8b6dae5a057cc80fd69a9d86c6681&amp;v=4"/>
+    <author>
+      <name>rick</name>
+      <uri>https://github.com/rick</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #113 from TrueWill/add-alternative
+
+Add TrueWill/tzientist to Alternatives in README&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/accef06407d904f04a5c19a3c96ae64d57ddb38c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/accef06407d904f04a5c19a3c96ae64d57ddb38c"/>
+    <title>
+        Add TrueWill/tzientist to Alternatives in README
+    </title>
+    <updated>2020-03-07T23:25:50Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/1709726?s=30&amp;v=4"/>
+    <author>
+      <name>TrueWill</name>
+      <uri>https://github.com/TrueWill</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add TrueWill/tzientist to Alternatives in README&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/dffdbd49113ade0f9830032a67a1d2ce1b5df58b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/dffdbd49113ade0f9830032a67a1d2ce1b5df58b"/>
+    <title>
+        Merge pull request #111 from gerovermaas/Add-ServerlessScientits-to-a…
+    </title>
+    <updated>2020-02-07T14:13:39Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/3999?s=30&amp;v=4"/>
+    <author>
+      <name>zerowidth</name>
+      <uri>https://github.com/zerowidth</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #111 from gerovermaas/Add-ServerlessScientits-to-alternatives
+
+Added Serverless Scientist to the list of alternatives.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8cad6dc410e957a13641541e7ea9e0cb08442f38</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/8cad6dc410e957a13641541e7ea9e0cb08442f38"/>
+    <title>
+        Added Serverless Scientist to the list of alternatives.
+    </title>
+    <updated>2020-02-07T12:31:16Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/278938?s=30&amp;u=5ccadc21be0c032695ca1f32fd195dfa83d72b6e&amp;v=4"/>
+    <author>
+      <name>gerovermaas</name>
+      <uri>https://github.com/gerovermaas</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Added Serverless Scientist to the list of alternatives.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ced649720b0e8d5d58487f0b9bfca2e085d3e88b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/ced649720b0e8d5d58487f0b9bfca2e085d3e88b"/>
+    <title>
+        Merge pull request #110 from mriddle/add-exception-handling-note
+    </title>
+    <updated>2019-12-11T18:20:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/3999?s=30&amp;v=4"/>
+    <author>
+      <name>zerowidth</name>
+      <uri>https://github.com/zerowidth</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #110 from mriddle/add-exception-handling-note
+
+Update README, remove exception handling ambiguity&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/396e1e546b73a7ab8b529f64152ea900af52e3fa</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/396e1e546b73a7ab8b529f64152ea900af52e3fa"/>
+    <title>
+        Update README, removing exception handling ambiguity
+    </title>
+    <updated>2019-12-06T07:37:44Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/672956?s=30&amp;u=842d6abc4129a9f948002934331589e0c0468b38&amp;v=4"/>
+    <author>
+      <name>mriddle</name>
+      <uri>https://github.com/mriddle</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README, removing exception handling ambiguity
+
+When reading the documentation and implementing an experiment I was
+caught out by the contradictory information. The following changes aim
+to remove any confusion, one must override the method if they expect
+exceptions to be swallowed.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e4bd860ddf47f5e38c0e9fb166267cbfd58eb030</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/e4bd860ddf47f5e38c0e9fb166267cbfd58eb030"/>
+    <title>
+        Bump to 1.4.0
+    </title>
+    <updated>2019-09-20T20:41:13Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/3999?s=30&amp;v=4"/>
+    <author>
+      <name>zerowidth</name>
+      <uri>https://github.com/zerowidth</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump to 1.4.0
+
+Incrementing minor version since MismatchException base class changes.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a854426baaddc2afaf938f15265f3b4bd2b9b13b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/a854426baaddc2afaf938f15265f3b4bd2b9b13b"/>
+    <title>
+        Merge pull request #107 from iamvery/iamvery/errors
+    </title>
+    <updated>2019-09-20T20:40:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/3999?s=30&amp;v=4"/>
+    <author>
+      <name>zerowidth</name>
+      <uri>https://github.com/zerowidth</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #107 from iamvery/iamvery/errors
+
+Make MismatchError a base Exception&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ad48edc8dd6678ae2e48a624c2c01a5d64dea77d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/ad48edc8dd6678ae2e48a624c2c01a5d64dea77d"/>
+    <title>
+        Fix begin/rescue syntax for older rubies
+    </title>
+    <updated>2019-09-17T15:31:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/79619?s=30&amp;u=a26b54d101e017d95ae08a82ed1d4143c9f0d3e0&amp;v=4"/>
+    <author>
+      <name>iamvery</name>
+      <uri>https://github.com/iamvery</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix begin/rescue syntax for older rubies&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0b76afccfda17ce927522225903c1b0a559d8888</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/0b76afccfda17ce927522225903c1b0a559d8888"/>
+    <title>
+        Make MismatchError a base Exception
+    </title>
+    <updated>2019-09-17T15:29:00Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/79619?s=30&amp;u=a26b54d101e017d95ae08a82ed1d4143c9f0d3e0&amp;v=4"/>
+    <author>
+      <name>iamvery</name>
+      <uri>https://github.com/iamvery</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Make MismatchError a base Exception
+
+This allows mismatches to avoid being caught by bare rescue&amp;#39;s which
+should help make them more visible in the face of code which chooses to
+use such a general rescue strategy.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3463724750c96e4f7d24d58b2d34bd1650df239e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/3463724750c96e4f7d24d58b2d34bd1650df239e"/>
+    <title>
+        Add failing example illustrating behavior of MismatchError in bare re…
+    </title>
+    <updated>2019-09-17T15:28:57Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/79619?s=30&amp;u=a26b54d101e017d95ae08a82ed1d4143c9f0d3e0&amp;v=4"/>
+    <author>
+      <name>iamvery</name>
+      <uri>https://github.com/iamvery</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add failing example illustrating behavior of MismatchError in bare rescue&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1105e41f19cdb8ab3f4797e0e4e43645d594fbc3</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/1105e41f19cdb8ab3f4797e0e4e43645d594fbc3"/>
+    <title>
+        Merge pull request #106 from github/lab-tech
+    </title>
+    <updated>2019-08-26T18:34:38Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/3999?s=30&amp;v=4"/>
+    <author>
+      <name>zerowidth</name>
+      <uri>https://github.com/zerowidth</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #106 from github/lab-tech
+
+Add lab_tech link to README&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fcb5ec4d861f24e710a99749359fc9e83487bc2e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/fcb5ec4d861f24e710a99749359fc9e83487bc2e"/>
+    <title>
+        Add lab_tech link to README
+    </title>
+    <updated>2019-08-26T18:17:27Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/3999?s=30&amp;v=4"/>
+    <author>
+      <name>zerowidth</name>
+      <uri>https://github.com/zerowidth</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add lab_tech link to README&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/25a22f733d4be523404b22ad818e520d20b57619</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/25a22f733d4be523404b22ad818e520d20b57619"/>
+    <title>
+        Update changelog and version for 1.3.0 release
+    </title>
+    <updated>2019-04-02T17:19:12Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/3999?s=30&amp;v=4"/>
+    <author>
+      <name>zerowidth</name>
+      <uri>https://github.com/zerowidth</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update changelog and version for 1.3.0 release&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5216dfde9fba86f3e9132c0a7d8ec93f3686dcaf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/5216dfde9fba86f3e9132c0a7d8ec93f3686dcaf"/>
+    <title>
+        Merge pull request #103 from geeksam/add-testing-hooks
+    </title>
+    <updated>2019-04-02T15:30:15Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/3999?s=30&amp;v=4"/>
+    <author>
+      <name>zerowidth</name>
+      <uri>https://github.com/zerowidth</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #103 from geeksam/add-testing-hooks
+
+Add testing hooks&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/081ba3858f976a91a1e2aafbf801ed443c6e03d9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/081ba3858f976a91a1e2aafbf801ed443c6e03d9"/>
+    <title>
+        Document new behaviors in the README
+    </title>
+    <updated>2019-04-01T22:25:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/6462?s=30&amp;v=4"/>
+    <author>
+      <name>geeksam</name>
+      <uri>https://github.com/geeksam</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Document new behaviors in the README&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/dea3daaae7ccb497621a0a9644da0ac90a068810</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/dea3daaae7ccb497621a0a9644da0ac90a068810"/>
+    <title>
+        Allow users to provide fabricated durations
+    </title>
+    <updated>2019-04-01T21:49:12Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/6462?s=30&amp;v=4"/>
+    <author>
+      <name>geeksam</name>
+      <uri>https://github.com/geeksam</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Allow users to provide fabricated durations
+
+See https://github.com/github/scientist/issues/95 for rationale&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7b2ff6a4fcc5baa8555fa05e1ed5bd1ebfcab7e5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/7b2ff6a4fcc5baa8555fa05e1ed5bd1ebfcab7e5"/>
+    <title>
+        Add an accessor for the configured clean block
+    </title>
+    <updated>2019-04-01T21:49:12Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/6462?s=30&amp;v=4"/>
+    <author>
+      <name>geeksam</name>
+      <uri>https://github.com/geeksam</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add an accessor for the configured clean block&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bd02ce130e24706109c2cec9ab8a366eebbf9fd8</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/bd02ce130e24706109c2cec9ab8a366eebbf9fd8"/>
+    <title>
+        Merge pull request #102 from geeksam/clarify-scientist-run-tests
+    </title>
+    <updated>2019-04-01T16:54:31Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/3999?s=30&amp;v=4"/>
+    <author>
+      <name>zerowidth</name>
+      <uri>https://github.com/zerowidth</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #102 from geeksam/clarify-scientist-run-tests
+
+Actually test which blocks `Scientist.run` runs&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/68df9d6be39e7be08b83f63197842f8170457fdb</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/scientist/commit/68df9d6be39e7be08b83f63197842f8170457fdb"/>
+    <title>
+        Merge branch &#39;master&#39; into clarify-scientist-run-tests
+    </title>
+    <updated>2019-04-01T16:33:38Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/3999?s=30&amp;v=4"/>
+    <author>
+      <name>zerowidth</name>
+      <uri>https://github.com/zerowidth</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into clarify-scientist-run-tests&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

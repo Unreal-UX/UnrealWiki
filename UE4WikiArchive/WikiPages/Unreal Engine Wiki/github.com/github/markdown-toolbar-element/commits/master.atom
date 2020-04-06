@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/markdown-toolbar-element/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/markdown-toolbar-element/commits/master.atom"/>
+  <title>Recent Commits to markdown-toolbar-element:master</title>
+  <updated>2020-01-20T12:42:06Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/aea975ea42a75ba399d5ecf496e68f7f74b90b25</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/aea975ea42a75ba399d5ecf496e68f7f74b90b25"/>
+    <title>
+        1.1.1
+    </title>
+    <updated>2020-01-20T12:42:06Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;1.1.1&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3fc119908a678d4e3217f101411279c614fd76cc</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/3fc119908a678d4e3217f101411279c614fd76cc"/>
+    <title>
+        Merge pull request #28 from github/use-html-element-tag-name-map
+    </title>
+    <updated>2020-01-20T12:41:14Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #28 from github/use-html-element-tag-name-map
+
+Add HTMLElementTagNameMap interface to TypeScript declaration file.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a8a481a40d790d9c52d213408ab4ed2073e76a61</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/a8a481a40d790d9c52d213408ab4ed2073e76a61"/>
+    <title>
+        &#39;add type to HTMLElementTagNameMap&#39;
+    </title>
+    <updated>2020-01-16T17:07:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;&amp;#39;add type to HTMLElementTagNameMap&amp;#39;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fac7fdab8a05f55eb85cc250dcc8e7473c5d1808</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/fac7fdab8a05f55eb85cc250dcc8e7473c5d1808"/>
+    <title>
+        Fix closing tag in example page
+    </title>
+    <updated>2019-11-07T21:19:47Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/1153134?s=30&amp;u=03ac6b56ab9e554419848758a06eb2f3e4ccb022&amp;v=4"/>
+    <author>
+      <name>muan</name>
+      <uri>https://github.com/muan</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix closing tag in example page&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/60eb1da06e6e342fffc1f514d6b7b595051f5bc6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/60eb1da06e6e342fffc1f514d6b7b595051f5bc6"/>
+    <title>
+        also fetch library from unpkg on github.com
+    </title>
+    <updated>2019-10-14T09:54:03Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;also fetch library from unpkg on github.com&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e7f67b2a9e31f252456d5c24a94f50bfcab4bb05</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/e7f67b2a9e31f252456d5c24a94f50bfcab4bb05"/>
+    <title>
+        1.1.0
+    </title>
+    <updated>2019-09-26T10:46:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;1.1.0&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/21286dfbbfcc52f177bb19ec672c7137f01d2d1d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/21286dfbbfcc52f177bb19ec672c7137f01d2d1d"/>
+    <title>
+        Merge pull request #22 from mintbridge/image-button
+    </title>
+    <updated>2019-09-26T10:26:52Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #22 from mintbridge/image-button
+
+adding an image button to generate image markdown&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c6e4e1594026959501cdbdb2a67481d99cd83a8c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/c6e4e1594026959501cdbdb2a67481d99cd83a8c"/>
+    <title>
+        Merge branch &#39;master&#39; into image-button
+    </title>
+    <updated>2019-09-26T10:23:23Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into image-button&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/931dbeb64a6774e397569cadc235a363cde2e26d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/931dbeb64a6774e397569cadc235a363cde2e26d"/>
+    <title>
+        Merge pull request #24 from github/no-more-then-six-levels-of-headers
+    </title>
+    <updated>2019-09-26T08:55:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #24 from github/no-more-then-six-levels-of-headers
+
+No more then six levels of headers&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/762cdf03efecd6f98a39424871550766cf4569f7</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/762cdf03efecd6f98a39424871550766cf4569f7"/>
+    <title>
+        check to see if level is less than one
+    </title>
+    <updated>2019-09-25T16:14:24Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;check to see if level is less than one
+
+Co-Authored-By: Mu-An 慕安 &amp;lt;me@muanchiou.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6c77550bfb7a39cb35b978098a7a81f90e2d7cd7</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/6c77550bfb7a39cb35b978098a7a81f90e2d7cd7"/>
+    <title>
+        Merge branch &#39;master&#39; into no-more-then-six-levels-of-headers
+    </title>
+    <updated>2019-09-25T10:46:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into no-more-then-six-levels-of-headers&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0599d0e675c5e59a32d13bbfffa3db303ceb233d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/0599d0e675c5e59a32d13bbfffa3db303ceb233d"/>
+    <title>
+        Merge pull request #25 from github/dependabot/npm_and_yarn/eslint-uti…
+    </title>
+    <updated>2019-09-25T10:41:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #25 from github/dependabot/npm_and_yarn/eslint-utils-1.4.2
+
+Bump eslint-utils from 1.3.1 to 1.4.2&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0fc3ba82bbe3bdf62809c61372ed625b90c32b19</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/0fc3ba82bbe3bdf62809c61372ed625b90c32b19"/>
+    <title>
+        Bump eslint-utils from 1.3.1 to 1.4.2
+    </title>
+    <updated>2019-09-25T10:38:49Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump eslint-utils from 1.3.1 to 1.4.2
+
+Bumps [eslint-utils](https://github.com/mysticatea/eslint-utils) from 1.3.1 to 1.4.2.
+- [Release notes](https://github.com/mysticatea/eslint-utils/releases)
+- [Commits](https://github.com/mysticatea/eslint-utils/compare/v1.3.1...v1.4.2)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b6d2bce37aad61289dbc47046a7e20994c025ca8</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/b6d2bce37aad61289dbc47046a7e20994c025ca8"/>
+    <title>
+        dont render headers above level 6
+    </title>
+    <updated>2019-09-25T10:22:40Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;dont render headers above level 6&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a000d2b3191c3f82bf52b797a917d7e05275ce44</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/a000d2b3191c3f82bf52b797a917d7e05275ce44"/>
+    <title>
+        add example test from @muan
+    </title>
+    <updated>2019-09-25T10:21:43Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add example test from @muan&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f120439ceeb56b8038c302595869d9d743a0e2e0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/f120439ceeb56b8038c302595869d9d743a0e2e0"/>
+    <title>
+        😬
+    </title>
+    <updated>2019-09-24T20:53:52Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/1153134?s=30&amp;u=03ac6b56ab9e554419848758a06eb2f3e4ccb022&amp;v=4"/>
+    <author>
+      <name>muan</name>
+      <uri>https://github.com/muan</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;😬&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e54c17d20b1cc9b3b559dfe70880cdbdb755c363</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/e54c17d20b1cc9b3b559dfe70880cdbdb755c363"/>
+    <title>
+        Merge branch &#39;master&#39; into image-button
+    </title>
+    <updated>2019-09-24T13:26:52Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into image-button&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f5615604a0f16aa2097a081b131eb6f81a767cb0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/f5615604a0f16aa2097a081b131eb6f81a767cb0"/>
+    <title>
+        Merge pull request #20 from mintbridge/patch-2
+    </title>
+    <updated>2019-09-24T11:45:44Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #20 from mintbridge/patch-2
+
+add attribute support for setting the heading level&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8ab0060d9d9e57ff270d6e5ddc30a1aef15bd94e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/8ab0060d9d9e57ff270d6e5ddc30a1aef15bd94e"/>
+    <title>
+        Merge branch &#39;master&#39; into image-button
+    </title>
+    <updated>2019-09-23T20:25:23Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/32777?s=30&amp;v=4"/>
+    <author>
+      <name>mintbridge</name>
+      <uri>https://github.com/mintbridge</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into image-button&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a315e88d66d8392ed4397d8edcaea426378c389e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/markdown-toolbar-element/commit/a315e88d66d8392ed4397d8edcaea426378c389e"/>
+    <title>
+        Merge branch &#39;master&#39; into patch-2
+    </title>
+    <updated>2019-09-23T20:25:08Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/32777?s=30&amp;v=4"/>
+    <author>
+      <name>mintbridge</name>
+      <uri>https://github.com/mintbridge</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into patch-2&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

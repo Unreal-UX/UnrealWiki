@@ -1,0 +1,3708 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from github.com/facebook/react-native/issues/28103 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 03:25:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com/">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com/">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com/">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-FG+rXqMOivrAjdEQE7tO4BwM1poGmg70hJFTlNSxjX87grtrZ6UnPR8NkzwUHlQEGviu9XuRYeO8zH9YwvZhdg==" rel="stylesheet" href="../../../../github.githubassets.com/assets/frameworks-146fab5ea30e8afac08dd11013bb4ee0.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-iXrV/b4ypc1nr10b3Giikqff+qAx5osQ0yJRxHRDd8mKFefdMtEZ0Sxs1QysJxuJBayOKThjsuMjynwBJQq0aw==" rel="stylesheet" href="../../../../github.githubassets.com/assets/site-897ad5fdbe32a5cd67af5d1bdc68a292.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-23DJ0jGXuHq4HnEnOv5yjJ3aD9zHvk4UkkK4Vs7e52NlpTBA9/zI9GMjyZ7MrJmYgiHJ0ZHNKVSFxEC3Pud9UA==" rel="stylesheet" href="../../../../github.githubassets.com/assets/github-db70c9d23197b87ab81e71273afe728c.css" />
+    
+    
+    
+    
+
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Migrate off of old context APIs · Issue #28103 · facebook/react-native · GitHub</title>
+    <meta name="description" content="We want to get rid of our usage of the prop-types package. The last remaining usage of this is a couple of old components that use the old React context API. We need to migrate these components to use the modern React.createContext API. ...">
+    <link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="../../../fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://avatars0.githubusercontent.com/u/69631?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="Migrate off of old context APIs · Issue #28103 · facebook/react-native" /><meta name="twitter:description" content="We want to get rid of our usage of the prop-types package. The last remaining usage of this is a couple of old components that use the old React context API. We need to migrate these components to ..." />
+    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/69631?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="Migrate off of old context APIs · Issue #28103 · facebook/react-native" /><meta property="og:url" content="28103.html" /><meta property="og:description" content="We want to get rid of our usage of the prop-types package. The last remaining usage of this is a couple of old components that use the old React context API. We need to migrate these components to ..." />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  
+  
+
+  <meta name="request-id" content="D1B4:7523:62495:9AE1C:5E83F599" data-pjax-transient="true"/><meta name="html-safe-nonce" content="2f5c4d90450f6cdcc6366c926866fc0da907d10e" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHA6Ly9naXRodWIuY29tL2V4cGxvcmUiLCJyZXF1ZXN0X2lkIjoiRDFCNDo3NTIzOjYyNDk1OjlBRTFDOjVFODNGNTk5IiwidmlzaXRvcl9pZCI6Ijg0MjgyMDg4ODQyNTAwNDQwNTUiLCJyZWdpb25fZWRnZSI6ImlhZCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="df89ab7664313e0f738707c3a8edd5a2fc04d109dbf94deb05cbbfdf374b8b5f" data-pjax-transient="true"/>
+
+    <meta name="hovercard-subject-tag" content="issue:566670387" data-pjax-transient>
+
+
+  <meta name="github-keyboard-shortcuts" content="repository,issues" data-pjax-transient="true" />
+
+  
+
+  <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/issues/show" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+
+<meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+
+
+    <meta name="enabled-features" content="MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,RELATED_ISSUES">
+
+  <meta http-equiv="x-pjax-version" content="8769db88308fb15007b2d764cf15a630">
+  
+
+      <link href="../commits/master.atom" rel="alternate" title="Recent Commits to react-native:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/facebook/react-native git https://github.com/facebook/react-native.git">
+
+  <meta name="octolytics-dimension-user_id" content="69631" /><meta name="octolytics-dimension-user_login" content="facebook" /><meta name="octolytics-dimension-repository_id" content="29028775" /><meta name="octolytics-dimension-repository_nwo" content="facebook/react-native" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="29028775" /><meta name="octolytics-dimension-repository_network_root_nwo" content="facebook/react-native" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="../../../../github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <link rel="manifest" href="../../../manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production page-responsive">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+      <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+
+    
+    
+
+
+
+        <header class="Header-old header-logged-out js-details-container Details position-relative f4 py-2" role="banner">
+  <div class="container-lg d-lg-flex flex-items-center p-responsive">
+    <div class="d-flex flex-justify-between flex-items-center">
+        <a class="mr-4" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+          <svg height="32" class="octicon octicon-mark-github text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+
+          <div class="d-lg-none css-truncate css-truncate-target width-fit p-2">
+            
+              <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+    <a class="Header-link" href="../../../facebook.html">facebook</a>
+    /
+    <a class="Header-link" href="../../react-native.html">react-native</a>
+
+
+          </div>
+
+        <div class="d-flex flex-items-center">
+            <a href="https://github.com/join?source=header-repo"
+              class="d-inline-block d-lg-none f5 text-white no-underline border border-gray-dark rounded-2 px-2 py-1 mr-3 mr-sm-5"
+              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="6536829969206ba0b18f911e5dff4d284815b9347941c6de172c73ae69f54c94"
+              data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">
+              Sign&nbsp;up
+            </a>
+
+          <button class="btn-link d-lg-none mt-1 js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <svg height="24" class="octicon octicon-three-bars text-white" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+          </button>
+        </div>
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--logged-out position-fixed top-0 right-0 bottom-0 height-fit position-lg-relative d-lg-flex flex-justify-between flex-items-center flex-auto">
+      <div class="d-flex d-lg-none flex-justify-end border-bottom bg-gray-light p-3">
+        <button class="btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <svg height="24" class="octicon octicon-x text-gray" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+        </button>
+      </div>
+
+        <nav class="mt-0 px-3 px-lg-0 mb-5 mb-lg-0" aria-label="Global">
+          <ul class="d-lg-flex list-style-none">
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Why GitHub?
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <a href="../../../features.html" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Features">Features <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+                    <ul class="list-style-none f5 pb-3">
+                      <li class="edge-item-fix"><a href="../../../features/code-review/index.html" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code review">Code review</a></li>
+                      <li class="edge-item-fix"><a href="../../../features/project-management/index.html" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Project management">Project management</a></li>
+                      <li class="edge-item-fix"><a href="../../../features/integrations.html" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Integrations">Integrations</a></li>
+                      <li class="edge-item-fix"><a href="../../../features/actions.html" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Actions">Actions</a></li>
+                      <li class="edge-item-fix"><a href="../../../features/packages.html" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Packages">Packages</a></li>
+                      <li class="edge-item-fix"><a href="../../../features/security.html" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Security">Security</a></li>
+                      <li class="edge-item-fix"><a href="../../../features.html#team-management" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Team management">Team management</a></li>
+                      <li class="edge-item-fix"><a href="../../../features.html#hosting" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code hosting">Hosting</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="https://github.com/customer-stories" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Customer stories">Customer stories <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="../../../security.html" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Security">Security <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
+                <a href="../../../enterprise.html" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Enterprise">Enterprise</a>
+              </li>
+
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Explore
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="../../../explore.html" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Explore">Explore GitHub <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Learn &amp; contribute</h4>
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="../../../topics.html" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Topics">Topics</a></li>
+                        <li class="edge-item-fix"><a href="../../../collections.html" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Collections">Collections</a></li>
+                      <li class="edge-item-fix"><a href="../../../trending.html" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Trending">Trending</a></li>
+                      <li class="edge-item-fix"><a href="https://lab.github.com/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Learning lab">Learning Lab</a></li>
+                      <li class="edge-item-fix"><a href="https://opensource.guide/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Open source guides">Open source guides</a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Connect with others</h4>
+                    <ul class="list-style-none mb-0">
+                      <li class="edge-item-fix"><a href="../../../events.html" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Events">Events</a></li>
+                      <li class="edge-item-fix"><a href="https://github.community/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Community forum">Community forum</a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com/" class="py-2 pb-0 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Education">GitHub Education</a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+
+              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
+                <a href="../../../marketplace.html" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Marketplace">Marketplace</a>
+              </li>
+
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Pricing
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                       <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-4 mt-0 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <a href="../../../pricing.html" class="pb-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Pricing">Plans <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="../../../pricing.html#feature-comparison" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Compare plans">Compare plans</a></li>
+                      <li class="edge-item-fix"><a href="https://enterprise.github.com/contact" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Contact Sales">Contact Sales</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="../../../nonprofit.html" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Nonprofits">Nonprofit <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com/" class="py-2 pb-0 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover"  data-ga-click="(Logged out) Header, go to Education">Education <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+          </ul>
+        </nav>
+
+      <div class="d-lg-flex flex-items-center px-3 px-lg-0 text-center text-lg-left">
+          <div class="d-lg-flex mb-3 mb-lg-0">
+            <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="29028775" data-scoped-search-url="/facebook/react-native/search" data-unscoped-search-url="/search" action="https://github.com/facebook/react-native/search" accept-charset="UTF-8" method="get">
+      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search"
+          data-unscoped-placeholder="Search GitHub"
+          data-scoped-placeholder="Search"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations"
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="gR/P4GBsnTuDiscxE1pn/AV+8bEojoK4ais8wziWj0G7ORKu68RaaM29i/Ik8VuKnwKOln9PCbF6QrvEPM+2bg==" />
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="#">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="#" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="#">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="#" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="#">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0013 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 000-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="#" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+          </div>
+
+        <a href="https://github.com/login?return_to=%2Ffacebook%2Freact-native%2Fissues%2F28103"
+          class="HeaderMenu-link no-underline mr-3"
+          data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c8b11cc6336d0ef0c71d34bf6651b76d66a842420f4a39df503a44918fbec43a"
+          data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">
+          Sign&nbsp;in
+        </a>
+          <a href="https://github.com/join?source=header-repo&amp;source_repo=facebook%2Freact-native"
+            class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1"
+            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c8b11cc6336d0ef0c71d34bf6651b76d66a842420f4a39df503a44918fbec43a"
+            data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">
+            Sign&nbsp;up
+          </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+    <div id="js-flash-container">
+
+
+  <template class="js-flash-template">
+    <div class="flash flash-full  js-flash-template-container">
+  <div class="container-lg px-2" >
+    <button class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    
+      <div class="js-flash-template-message"></div>
+
+  </div>
+</div>
+  </template>
+</div>
+
+
+      
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled>
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main id="js-repo-pjax-container" data-pjax-container >
+      
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <div class="pagehead repohead hx_repohead readability-menu bg-gray-light pb-0 pt-0 pt-lg-3">
+
+    <div class="d-flex container-lg mb-4 p-responsive d-none d-lg-flex">
+
+      <div class="flex-auto min-width-0 width-fit mr-3">
+        <h1 class="public  d-flex flex-wrap flex-items-center break-word float-none ">
+    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author ml-1 flex-self-stretch" itemprop="author">
+    <a class="url fn" rel="author" data-hovercard-type="organization" data-hovercard-url="/orgs/facebook/hovercard" href="../../../facebook.html">facebook</a>
+  </span>
+  <span class="path-divider flex-self-stretch">/</span>
+  <strong itemprop="name" class="mr-2 flex-self-stretch">
+    <a data-pjax="#js-repo-pjax-container" href="../../react-native.html">react-native</a>
+  </strong>
+  
+</h1>
+
+
+      </div>
+
+      <ul class="pagehead-actions flex-shrink-0 " >
+
+
+
+
+  <li>
+    
+  <a class="tooltipped tooltipped-s btn btn-sm btn-with-count" aria-label="You must be signed in to watch a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c28bd2187bb015a07a413a97277cbc2efcf54a0ea5be887f808fa685e90b5135" href="../../../login6e39.html?return_to=%2Ffacebook%2Freact-native">
+    <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+</a>    <a class="social-count" href="../watchers.html"
+       aria-label="3712 users are watching this repository">
+      3.7k
+    </a>
+
+  </li>
+
+  <li>
+        <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to star a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="233beda3207371521303f0d3cd7580af5f76b083a88cf63721ffd7eea8e3f006" href="../../../login6e39.html?return_to=%2Ffacebook%2Freact-native">
+      <svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+
+      Star
+</a>
+    <a class="social-count js-social-count" href="../stargazers.html"
+      aria-label="85929 users starred this repository">
+      85.9k
+    </a>
+
+  </li>
+
+  <li>
+      <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to fork a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="89fbb7eaeb62151c68049870aa8ac2453f22aceeb1a103d9f95cc7310396459c" href="../../../login6e39.html?return_to=%2Ffacebook%2Freact-native">
+        <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+</a>
+    <a href="../network/members-2.html" class="social-count"
+       aria-label="19194 users forked this repository">
+      19.2k
+    </a>
+  </li>
+</ul>
+
+    </div>
+      
+<nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax clearfix container-lg p-responsive d-none d-lg-block"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item reponav-item" itemprop="url" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /facebook/react-native" href="../../react-native.html">
+      <div class="d-inline"><svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg></div>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item selected reponav-item" aria-current="page" data-selected-links="repo_issues repo_labels repo_milestones /facebook/react-native/issues" href="../issues.html">
+        <div class="d-inline"><svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></div>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">681</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" data-skip-pjax="true" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /facebook/react-native/pulls" href="../pulls.html">
+      <div class="d-inline"><svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg></div>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">90</span>
+      <meta itemprop="position" content="4">
+</a>  </span>
+
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement" class="position-relative float-left">
+      <a data-hotkey="g w" data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="repo_actions /facebook/react-native/actions" href="../actions.html">
+        <div class="d-inline"><svg class="octicon octicon-play" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 8A7 7 0 110 8a7 7 0 0114 0zm-8.223 3.482l4.599-3.066a.5.5 0 000-.832L5.777 4.518A.5.5 0 005 4.934v6.132a.5.5 0 00.777.416z"/></svg></div>
+        Actions
+</a>
+    </span>
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /facebook/react-native/projects" href="../projects.html">
+      <div class="d-inline"><svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg></div>
+      Projects
+      <span class="Counter">0</span>
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /facebook/react-native/wiki" href="../wiki.html">
+      <div class="d-inline"><svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg></div>
+      Wiki
+</a>
+    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy token_scanning code_scanning /facebook/react-native/security/advisories" href="../security/advisories.html">
+      <div class="d-inline"><svg class="octicon octicon-shield" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 2l7-2 7 2v6.02C14 12.69 8.69 16 7 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L7 1l6 1.75v5.268C13 12.104 8.449 15 7 15c-1.449 0-6-2.896-6-6.982V2.75zm1 .75L7 2v12c-1.207 0-5-2.482-5-5.985V3.5z"/></svg></div>
+      Security
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph dependabot_updates pulse people /facebook/react-native/pulse" href="../pulse.html">
+      <div class="d-inline"><svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg></div>
+      Insights
+</a>
+
+</nav>
+
+  <div class="reponav-wrapper reponav-small d-lg-none">
+  <nav class="reponav js-reponav text-center no-wrap"
+       itemscope
+       itemtype="http://schema.org/BreadcrumbList">
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a class="js-selected-navigation-item reponav-item" itemprop="url" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /facebook/react-native" href="../../react-native.html">
+        <span itemprop="name">Code</span>
+        <meta itemprop="position" content="1">
+</a>    </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item selected reponav-item" aria-current="page" data-selected-links="repo_issues repo_labels repo_milestones /facebook/react-native/issues" href="../issues.html">
+          <span itemprop="name">Issues</span>
+          <span class="Counter">681</span>
+          <meta itemprop="position" content="2">
+</a>      </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /facebook/react-native/pulls" href="../pulls.html">
+        <span itemprop="name">Pull requests</span>
+        <span class="Counter">90</span>
+        <meta itemprop="position" content="4">
+</a>    </span>
+
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /facebook/react-native/projects" href="../projects.html">
+          <span itemprop="name">Projects</span>
+          <span class="Counter">0</span>
+          <meta itemprop="position" content="5">
+</a>      </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_actions /facebook/react-native/actions" href="../actions.html">
+          <span itemprop="name">Actions</span>
+          <meta itemprop="position" content="6">
+</a>      </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_wiki /facebook/react-native/wiki" href="../wiki.html">
+          <span itemprop="name">Wiki</span>
+          <meta itemprop="position" content="7">
+</a>      </span>
+
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy token_scanning code_scanning /facebook/react-native/security/advisories" href="../security/advisories.html">
+        <span itemprop="name">Security</span>
+        <meta itemprop="position" content="8">
+</a>
+      <a class="js-selected-navigation-item reponav-item" data-selected-links="pulse /facebook/react-native/pulse" href="../pulse.html">
+        Pulse
+</a>
+
+  </nav>
+</div>
+
+
+  </div>
+
+  
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+<div class="container-lg clearfix new-discussion-timeline  p-responsive">
+  <div class="repository-content ">
+
+    
+    
+  <div class="js-check-all-container" data-pjax>
+    
+    <div class="signup-prompt-bg rounded-1 js-signup-prompt" data-prompt="signup" hidden>
+    <div class="signup-prompt p-4 text-center mb-4 rounded-1">
+      <div class="position-relative">
+        <button type="button" class="position-absolute top-0 right-0 btn-link link-gray js-signup-prompt-button" data-ga-click="(Logged out) Sign up prompt, clicked Dismiss, text:dismiss">
+          Dismiss
+        </button>
+        <h3 class="pt-2">Join GitHub today</h3>
+        <p class="col-6 mx-auto">GitHub is home to over 40 million developers working together to host and review code, manage projects, and build software together.</p>
+        <a class="btn btn-primary" data-ga-click="(Logged out) Sign up prompt, clicked Sign up, text:sign-up" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;files signup prompt&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="e0bb6e1e983cb577f48c14ae42975d8f3267ad663beadb438cbb03ab1acae25e" href="https://github.com/join?source=prompt-issue-show&amp;source_repo=facebook%2Freact-native">Sign up</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="show_issue"
+        class="js-issues-results js-socket-channel js-updatable-content"
+        data-channel="issue:566670387:timeline">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container Details js-socket-channel js-updatable-content issue"
+    data-channel="issue:566670387"
+    data-url="/facebook/react-native/issues/28103/show_partial?partial=issues%2Ftitle&amp;sticky=true"
+    data-gid="MDU6SXNzdWU1NjY2NzAzODc=">
+  <div class="gh-header-show ">
+    <div class="d-flex flex-column flex-md-row">
+      <div class="gh-header-actions mt-0 mt-md-1 mb-3 mb-md-0 ml-0 flex-md-order-1 flex-shrink-0 d-flex flex-items-start">
+
+          
+<details class="details-reset details-overlay details-overlay-dark float-right" >
+  <summary
+    class="btn btn-sm btn-primary m-0 ml-0 ml-md-2"
+    
+    
+    data-ga-click="Issues, create new issue, view:issue_show location:issue_header style:button logged_in:false"
+>
+    
+    New issue
+  </summary>
+  <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast overflow-auto" aria-label="Sign up for GitHub">
+      <button class="position-absolute p-4 right-0 btn-link muted-link" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+    <div class="d-flex flex-column p-4">
+            <div class="mt-3 mb-2 text-center">
+  <svg height="60" class="octicon octicon-comment-discussion text-blue" viewBox="0 0 16 16" version="1.1" width="60" aria-hidden="true"><path fill-rule="evenodd" d="M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z"/></svg>
+</div>
+
+<div class="px-4">
+  <p class="text-center mb-4">
+  <strong>Have a question about this project?</strong> Sign up for a free GitHub account to open an issue and contact its maintainers and the community.
+  </p>
+
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-signup-form" autocomplete="off" action="https://github.com/join?return_to=%2Ffacebook%2Freact-native%2Fissues%2Fnew" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="vii30RffumDlhN454mLTmGWexXH93McyzKhDpgJ8GPKnjj9/HkskEvatsV7Z4Sf09D+NM+khemvK/qj6LNd/wA==" />    <auto-check src="https://github.com/signup_check/username">
+      <dl class="form-group"><dt class="input-label"><label name="user[login]" autocapitalize="off" autofocus="autofocus" for="user_login_issues">Pick a username</label></dt><dd><input name="user[login]" autocapitalize="off" autofocus="autofocus" class="form-control" type="text" id="user_login_issues" /></dd></dl>
+      <input type="hidden" data-csrf="true" value="XGWCUX1M2Nl3WEpdTeteDqiCNiRyVCpQL7yAmNuewKczozPHeCzjiPsPl9oVActNd63+IL1KRnslLCOK6073wg==" />
+    </auto-check>
+
+    <auto-check src="../../../signup_check/email.html">
+      <dl class="form-group"><dt class="input-label"><label name="user[email]" autocapitalize="off" for="user_email_issues">Email Address</label></dt><dd><input name="user[email]" autocapitalize="off" class="form-control" type="text" id="user_email_issues" /></dd></dl>
+      <input type="hidden" data-csrf="true" value="3UU4Bhdj+35ZNqcrLBAvhmjO3UPXf5m39X+ROT/wKJIQjljLDSLYNpqlypLVYplHkrVUh91bI4/Fs5Slkd0zXw==" />
+    </auto-check>
+
+    <dl class="form-group"><dt class="input-label"><label name="user[password]" for="user_password_issues">Password</label></dt><dd><input name="user[password]" class="form-control" type="password" id="user_password_issues" /></dd></dl>
+
+    <input type="hidden" name="source" class="js-signup-source" value="modal-issues">
+    <input class="form-control" type="text" name="required_field_6829" hidden="hidden" />
+<input class="form-control" type="hidden" name="timestamp" value="1585706394701" />
+<input class="form-control" type="hidden" name="timestamp_secret" value="2ddfa70b33540ea64c50aad07261ee56e3c7161727b522036bb3454077d08912" />
+
+
+    <button class="btn btn-primary mt-2 btn-block" type="submit" data-ga-click="(Logged out) New issue modal, clicked Sign up, text:sign-up">Sign up for GitHub</button>
+</form>
+  <p class="mt-4 text-gray text-center">By clicking &ldquo;Sign up for GitHub&rdquo;, you agree to our <a href="https://help.github.com/terms" target="_blank">terms of service</a> and
+  <a href="https://help.github.com/privacy" target="_blank">privacy statement</a>. We’ll occasionally send you account related emails.</p>
+
+  <p class="mt-4 text-gray text-center">
+    Already on GitHub?
+    <a data-ga-click="(Logged out) New issue modal, clicked Sign in, text:sign-in" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;new issue modal&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="33e3fd6c600bf0fef05d701f4cc10c4576b21645357ff2b9eb9a0df0223473c5" href="https://github.com/login?return_to=%2Ffacebook%2Freact-native%2Fissues%2Fnew">Sign in</a>
+    to your account
+  </p>
+</div>
+
+</div>
+  </details-dialog>
+</details>
+        <div class="flex-auto text-right d-block d-md-none">
+          <a href="#issue-comment-box" class="py-1">Jump to bottom</a>
+        </div>
+      </div>
+
+    <h1 class="gh-header-title f1 mr-0 flex-auto break-word">
+      <span class="js-issue-title">
+        Migrate off of old context APIs
+      </span>
+      <span class="gh-header-number">#28103</span>
+    </h1>
+    </div>
+  </div>
+
+  <div class="TableObject gh-header-meta">
+    <div class="TableObject-item">
+        <span class="State State--green  " title="Status: Open">
+  
+  <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg> Open
+
+</span>
+
+    </div>
+    <div class="TableObject-item TableObject-item--primary">
+        <a class="author text-bold link-gray" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior">TheSavior</a>  opened this issue
+<relative-time datetime="2020-02-18T06:10:31Z" class="no-wrap">Feb 18, 2020</relative-time>
+&middot; 11 comments
+
+<span data-issue-and-pr-hovercards-enabled>
+  
+</span>
+
+    </div>
+  </div>
+
+
+    <div class="js-sticky js-sticky-offset-scroll top-0 gh-header-sticky">
+      <div class="sticky-content">
+        <div class="d-flex flex-items-center flex-justify-between mt-2">
+          <div class="d-flex flex-row flex-items-center min-width-0">
+            <div class="mr-2 flex-shrink-0">
+                <span class="State State--green  " title="Status: Open">
+  
+  <svg height="16" class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg> Open
+
+</span>
+
+            </div>
+            <div class="min-width-0">
+              <h1 class="d-flex text-bold f5">
+  <a class="js-issue-title css-truncate css-truncate-target link-gray-dark width-fit" href="#">Migrate off of old context APIs</a>
+  <span class="gh-header-number text-gray-light pl-1">#28103</span>
+</h1>
+
+              <div class="meta text-gray-light css-truncate css-truncate-target d-block width-fit">
+                  <a class="author text-bold link-gray" data-hovercard-z-index-override="111" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior">TheSavior</a>  opened this issue
+<relative-time datetime="2020-02-18T06:10:31Z" class="no-wrap">Feb 18, 2020</relative-time>
+&middot; 11 comments
+
+<span data-issue-and-pr-hovercards-enabled>
+  
+</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gh-header-shadow box-shadow js-notification-shelf-offset-top"></div>
+</div>
+
+
+
+      <div class="d-block d-md-none border-bottom mb-4 f6">
+
+      <div class="d-flex mb-3">
+        <span class="text-bold text-gray col-3 col-sm-2 flex-shrink-0">Labels</span>
+        <div class="min-width-0 d-flex flex-wrap mt-n1">
+            <a class="mt-1 mr-1 IssueLabel" style="background-color: #0052cc; color: #ffffff" data-name="Good first issue" title="Interested in collaborating? Take a stab at fixing one of these issues." href="https://github.com/facebook/react-native/labels/Good first issue"><span class="css-truncate-target" style="max-width: 100%">Good first issue</span></a>
+            <a class="mt-1 mr-1 IssueLabel" style="background-color: #bfd4f2; color: #000000" data-name="JavaScript" title="JavaScript" href="https://github.com/facebook/react-native/labels/JavaScript"><span class="css-truncate-target" style="max-width: 100%">JavaScript</span></a>
+        </div>
+      </div>
+
+
+  </div>
+
+
+    <h2 class="sr-only">Comments</h2>
+    <div id="discussion_bucket">
+      <div class="gutter-condensed gutter-lg d-flex flex-column flex-md-row">
+
+  <div class="flex-shrink-0 col-12 col-md-9 mb-5 mb-md-0">
+              <div class="js-quote-selection-container"
+            data-quote-markdown=".js-comment-body"
+            
+            data-issue-and-pr-hovercards-enabled
+            data-team-hovercards-enabled>
+
+            <div
+              class="js-discussion js-socket-channel ml-0 pl-0 ml-md-6 pl-md-3"
+              data-channel="marked-as-read:issue:566670387"
+            >
+
+              
+<div class="TimelineItem pt-0 js-comment-container js-socket-channel"
+  data-gid="MDU6SXNzdWU1NjY2NzAzODc="
+  data-url="/_render_node/MDU6SXNzdWU1NjY2NzAzODc=/issues/body"
+  data-channel="issue:566670387">
+
+  
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior"><img class="avatar rounded-1" height="40" width="40" alt="@TheSavior" src="https://avatars2.githubusercontent.com/u/249164?s=88&amp;u=3016ef5cdbcbef3879f2a6486de80c38069930a3&amp;v=4" /></a>
+
+</div>
+
+
+  
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="issue-566670387">
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret "
+       data-body-version="4b04a60e5861b944c6190a0d9e840e19"
+       data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="qqKhQRX/FnkOV5XybtN0ztqAq1yBykXokFh2hxUjl7QN8rxMfsgCVTFFp+V1H6zEJkMIo8x1fOeCEC7HgfqzYQ==" />
+
+    
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="issue-566670387-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  <div class="d-none d-sm-flex">
+
+    
+    <span class="timeline-comment-label text-bold tooltipped tooltipped-multiline tooltipped-s" aria-label="This user is a member of the Facebook organization.">
+      Member
+    </span>
+
+
+  
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior"><img class="avatar rounded-1" height="20" width="20" alt="@TheSavior" src="https://avatars1.githubusercontent.com/u/249164?s=60&amp;u=3016ef5cdbcbef3879f2a6486de80c38069930a3&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior">TheSavior</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#issue-566670387" id="issue-566670387-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-02-18T06:10:31Z" class="no-wrap">Feb 18, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+        
+  <span class="d-inline-block text-gray-light">&#8226;</span>
+
+  <details class="details-overlay details-reset d-inline-block dropdown hx_dropdown-fullscreen">
+    <summary class="btn-link no-underline text-gray js-notice">
+      <div class="position-relative">
+        <span>
+            edited
+        </span>
+        <svg height="11" class="octicon octicon-triangle-down v-align-middle" viewBox="0 0 12 16" version="1.1" width="8" aria-hidden="true"><path fill-rule="evenodd" d="M0 5l6 6 6-6H0z"/></svg>
+      </div>
+    </summary>
+    <details-menu
+      class="dropdown-menu dropdown-menu-s width-auto py-0 js-comment-edit-history-menu"
+      style="max-width: 352px; z-index: 99;"
+      src="https://github.com/_render_node/MDU6SXNzdWU1NjY2NzAzODc=/comments/comment_edit_history_log"
+      preload>
+      <include-fragment class="octocat-spinner my-3" style="min-width: 100px;" aria-label="Loading"></include-fragment>
+    </details-menu>
+  </details>
+
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>We want to get rid of our usage of the <code>prop-types</code> package. The last remaining usage of this is a couple of old components that use <a href="https://reactjs.org/docs/context.html#classcontexttype" rel="nofollow">the old React context API</a>. We need to migrate these components to use the modern <code>React.createContext</code> API.</p>
+<p>The components using the old context API are:</p>
+<ul>
+<li><a href="../blob/master/Libraries/Lists/VirtualizedList.html#L1979">VirtualizedList</a> (<a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/mikaoelitiana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mikaoelitiana">@mikaoelitiana</a>)</li>
+<li><a href="../blob/master/Libraries/Modal/Modal.html#L162-L166">Modal</a> (<a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/Naturalclar/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Naturalclar">@Naturalclar</a>)</li>
+<li><a href="../blob/master/Libraries/ReactNative/AppContainer.html#L49-L59">AppContainer</a> (<a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/safaiyeh/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/safaiyeh">@safaiyeh</a>)</li>
+<li><del><a href="../blob/master/Libraries/Experimental/Incremental.html#L109-L117">Incremental</a> (<a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/venits/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/venits">@venits</a>)</del></li>
+</ul>
+<p>For more information about the old API and how to migrate to the new API you can check out the React docs for Context: <a rel="nofollow" href="https://reactjs.org/docs/context.html#classcontexttype">https://reactjs.org/docs/context.html#classcontexttype</a></p>
+<p>If we are able to remove the usage of prop-types from React Native we should be able to substantially lower the bundle size of React Native. We'd love your help!</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+        
+
+<div class="comment-reactions border-top has-reactions js-reactions-container "
+
+    >
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-pick-reaction" action="https://github.com/facebook/react-native/reactions" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" data-csrf="true" name="authenticity_token" value="fbTHkz2+AtYQX8K6th/evK6nU6uaAVvGIajjBGsoCNhk+h1pbYOIUcg27XzEaf9FHXGzj1wIyD41AsqzRRAS7Q==" />
+      <input type="hidden" name="input[subjectId]" value="MDU6SXNzdWU1NjY2NzAzODc=">
+
+      <div class="comment-reactions-options">
+          <button disabled
+                  class="btn-link reaction-summary-item tooltipped tooltipped-se tooltipped-multiline "
+                  name="input[content]"
+                  type="submit"
+                  value="HEART react"
+                  aria-label="jacobp100, thymikee, and Akagutz reacted with heart emoji">
+            <g-emoji alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png" class="emoji mr-1">❤️</g-emoji>
+            3
+          </button>
+      </div>
+</form></div>
+
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+                
+
+  <div id="js-timeline-progressive-loader" data-timeline-item-src="facebook/react-native/timeline?id=MDU6SXNzdWU1NjY2NzAzODc%3D&amp;variables%5Bafter%5D=Y3Vyc29yOnYyOpPPAAABcQzIr7gAqTYwMzI0NjUxMw%3D%3D&amp;variables%5Bfirst%5D=60" ></div>
+
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOkxhYmVsZWRFdmVudDMwNDU4MDk1ODM=">
+  
+        <div class="TimelineItem"  data-team-hovercards-enabled  id="event-3045809583">
+  <div class="TimelineItem-badge ">
+    <svg class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 000-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+  </div>
+  <div class="TimelineItem-body">
+
+    
+
+        <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior"><img class="avatar" height="20" width="20" alt="@TheSavior" src="https://avatars1.githubusercontent.com/u/249164?s=60&amp;u=3016ef5cdbcbef3879f2a6486de80c38069930a3&amp;v=4" /></a>
+  <a class="author link-gray-dark text-bold" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior">TheSavior</a>
+  
+
+
+      
+
+    added
+      
+<span class="IssueLabel d-inline-block v-align-middle" title="Interested in collaborating? Take a stab at fixing one of these issues." style="background-color: #0052cc;">
+  <a class="lh-condensed-ultra" href="https://github.com/facebook/react-native/labels/Good first issue" style="color: #ffffff;">Good first issue</a>
+</span>
+
+      
+<span class="IssueLabel d-inline-block v-align-middle"  style="background-color: #bfd4f2;">
+  <a class="lh-condensed-ultra" href="https://github.com/facebook/react-native/labels/JavaScript" style="color: #000000;">JavaScript</a>
+</span>
+
+  labels
+
+
+    <a href="#event-3045809583" class="link-gray"><relative-time datetime="2020-02-18T06:10:31Z" class="no-wrap">Feb 18, 2020</relative-time></a>
+
+  </div>
+</div>
+
+
+  <div class="TimelineItem">
+  <div class="TimelineItem-badge">
+    <svg class="octicon octicon-bookmark" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9 0H1C.27 0 0 .27 0 1v15l5-3.09L10 16V1c0-.73-.27-1-1-1zm-.78 4.25L6.36 5.61l.72 2.16c.06.22-.02.28-.2.17L5 6.6 3.12 7.94c-.19.11-.25.05-.2-.17l.72-2.16-1.86-1.36c-.17-.16-.14-.23.09-.23l2.3-.03.7-2.16h.25l.7 2.16 2.3.03c.23 0 .27.08.09.23h.01z"/></svg>
+  </div>
+
+  <div class="TimelineItem-body" >
+      <div >
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/safaiyeh/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/safaiyeh"><img class="avatar" height="20" width="20" alt="@safaiyeh" src="https://avatars3.githubusercontent.com/u/8675043?s=60&amp;u=c281354c817bfbf35867de2257e89d7ce3dadcc1&amp;v=4" /></a>
+  <a class="author link-gray-dark text-bold" data-hovercard-type="user" data-hovercard-url="/users/safaiyeh/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/safaiyeh">safaiyeh</a>
+  
+
+    mentioned this issue
+
+  <a class="link-gray" href="#ref-pullrequest-566688790" >
+    <relative-time datetime="2020-02-18T07:03:07Z" class="no-wrap">Feb 18, 2020</relative-time>
+  </a>
+</div>
+
+<div class="mt-2 d-flex flex-items-start">
+  <div class="flex-auto break-word" id="ref-pullrequest-566688790" >
+    <a href="https://github.com/facebook/react-native/pull/28104" class="link-gray-dark f4 text-bold" data-hovercard-type="pull_request" data-hovercard-url="/facebook/react-native/pull/28104/hovercard">
+      Migrate AppContainer to new Context API
+      <span class="text-gray text-normal" >#28104</span>
+</a>  </div>
+
+
+  <div class="flex-shrink-0 ml-3">
+      <span class="State State--green State--small " title="Status: Open">
+  
+  <svg height="14" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg> Open
+
+</span>
+
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+
+</div>
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDU4NzMyMjMzNA==">
+  
+    
+<div class="TimelineItem js-comment-container"
+      data-gid="MDEyOklzc3VlQ29tbWVudDU4NzMyMjMzNA=="
+      data-url="/_render_node/MDEyOklzc3VlQ29tbWVudDU4NzMyMjMzNA==/timeline/issue_comment">
+
+  
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/Naturalclar/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Naturalclar"><img class="avatar rounded-1" height="40" width="40" alt="@Naturalclar" src="https://avatars0.githubusercontent.com/u/6936373?s=88&amp;u=4edd14e6636c45d10ac6a3eecb4b3ffa6cc2bf5c&amp;v=4" /></a>
+
+</div>
+
+
+  
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="issuecomment-587322334">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="523ad7625d32b120ef20d761fab4e2ac">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7078f4b8561421f65a4d02559fe2fcf06ae3f5c81d5fee38976b17a43715f393" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffacebook%2Freact-native%2Fissues%2F28103">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret "
+       data-body-version="523ad7625d32b120ef20d761fab4e2ac"
+       data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="G7zwjfaJEX2/ho15/NBqPGPHERQoJqGy6ayHxTf0Bea87O2Anb4FUYCUv27nHLI2nwSy62WZmL375N+Foy0hMw==" />
+
+    
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="issuecomment-587322334-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  <div class="d-none d-sm-flex">
+
+    
+    <span class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s" aria-label="This user has previously committed to the react-native repository.">
+      Contributor
+    </span>
+
+
+  
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/Naturalclar/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Naturalclar"><img class="avatar rounded-1" height="20" width="20" alt="@Naturalclar" src="https://avatars3.githubusercontent.com/u/6936373?s=60&amp;u=4edd14e6636c45d10ac6a3eecb4b3ffa6cc2bf5c&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/Naturalclar/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Naturalclar">Naturalclar</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#issuecomment-587322334" id="issuecomment-587322334-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-02-18T07:38:12Z" class="no-wrap">Feb 18, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>I'd love to help out! Could I work on <code>Modal</code>?</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+        
+
+<div class="comment-reactions border-top has-reactions js-reactions-container "
+
+    >
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-pick-reaction" action="https://github.com/facebook/react-native/reactions" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" data-csrf="true" name="authenticity_token" value="jT76HlQ13Km767j0pGHQoB8u5Z1Sq6YSRMSNynUpvy6UcCDkBAhWLmOClzLWF/FZrPgFuZSiNepQbqR9WxGlGw==" />
+      <input type="hidden" name="input[subjectId]" value="MDEyOklzc3VlQ29tbWVudDU4NzMyMjMzNA==">
+
+      <div class="comment-reactions-options">
+          <button disabled
+                  class="btn-link reaction-summary-item tooltipped tooltipped-se tooltipped-multiline "
+                  name="input[content]"
+                  type="submit"
+                  value="THUMBS_UP react"
+                  aria-label="TheSavior, thymikee, troZee, and safaiyeh reacted with thumbs up emoji">
+            <g-emoji alias="+1" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji mr-1">👍</g-emoji>
+            4
+          </button>
+      </div>
+</form></div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDU4NzM3ODM2Nw==">
+  
+    
+<div class="TimelineItem js-comment-container"
+      data-gid="MDEyOklzc3VlQ29tbWVudDU4NzM3ODM2Nw=="
+      data-url="/_render_node/MDEyOklzc3VlQ29tbWVudDU4NzM3ODM2Nw==/timeline/issue_comment">
+
+  
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/venits/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/venits"><img class="avatar rounded-1" height="40" width="40" alt="@venits" src="https://avatars2.githubusercontent.com/u/31382349?s=88&amp;u=762b2a0fc902a4397ba82acfd17b296f9711c5c1&amp;v=4" /></a>
+
+</div>
+
+
+  
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="issuecomment-587378367">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="e376f77ad866cd7286e2f9b75513a768">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7078f4b8561421f65a4d02559fe2fcf06ae3f5c81d5fee38976b17a43715f393" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffacebook%2Freact-native%2Fissues%2F28103">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret "
+       data-body-version="e376f77ad866cd7286e2f9b75513a768"
+       data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="flkGBcawLHLzlPnZuDUBF2gAWZ/hQ+GGW5JZmmJTpqPZCRsIrYc4XsyGy86j+dkdlMP6YKz82IlJ2gHa9oqCdg==" />
+
+    
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="issuecomment-587378367-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  <div class="d-none d-sm-flex">
+
+    
+    <span class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s" aria-label="This user has previously committed to the react-native repository.">
+      Contributor
+    </span>
+
+
+  
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/venits/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/venits"><img class="avatar rounded-1" height="20" width="20" alt="@venits" src="https://avatars1.githubusercontent.com/u/31382349?s=60&amp;u=762b2a0fc902a4397ba82acfd17b296f9711c5c1&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/venits/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/venits">venits</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#issuecomment-587378367" id="issuecomment-587378367-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-02-18T10:02:23Z" class="no-wrap">Feb 18, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>I would love to take care of <code>Incremental</code> :)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+        
+
+<div class="comment-reactions border-top has-reactions js-reactions-container "
+
+    >
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-pick-reaction" action="https://github.com/facebook/react-native/reactions" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" data-csrf="true" name="authenticity_token" value="14P9KUVLOprPXGZAxEMicpdKS3PRhiYNEPE0Ee/d2zfOzSfTFXawHRc1SYa2NQOLJJyrVxePtfUEWx2mweXBAg==" />
+      <input type="hidden" name="input[subjectId]" value="MDEyOklzc3VlQ29tbWVudDU4NzM3ODM2Nw==">
+
+      <div class="comment-reactions-options">
+          <button disabled
+                  class="btn-link reaction-summary-item tooltipped tooltipped-se tooltipped-multiline "
+                  name="input[content]"
+                  type="submit"
+                  value="THUMBS_UP react"
+                  aria-label="thymikee, troZee, and safaiyeh reacted with thumbs up emoji">
+            <g-emoji alias="+1" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji mr-1">👍</g-emoji>
+            3
+          </button>
+      </div>
+</form></div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDIwOkNyb3NzUmVmZXJlbmNlZEV2ZW50MTAyMzQwNDc4Ng==">
+  
+        <div class="TimelineItem">
+  <div class="TimelineItem-badge">
+    <svg class="octicon octicon-bookmark" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9 0H1C.27 0 0 .27 0 1v15l5-3.09L10 16V1c0-.73-.27-1-1-1zm-.78 4.25L6.36 5.61l.72 2.16c.06.22-.02.28-.2.17L5 6.6 3.12 7.94c-.19.11-.25.05-.2-.17l.72-2.16-1.86-1.36c-.17-.16-.14-.23.09-.23l2.3-.03.7-2.16h.25l.7 2.16 2.3.03c.23 0 .27.08.09.23h.01z"/></svg>
+  </div>
+
+  <div class="TimelineItem-body" >
+      <div >
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/venits/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/venits"><img class="avatar" height="20" width="20" alt="@venits" src="https://avatars1.githubusercontent.com/u/31382349?s=60&amp;u=762b2a0fc902a4397ba82acfd17b296f9711c5c1&amp;v=4" /></a>
+  <a class="author link-gray-dark text-bold" data-hovercard-type="user" data-hovercard-url="/users/venits/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/venits">venits</a>
+  
+
+    mentioned this issue
+
+  <a class="link-gray" href="#ref-pullrequest-566917685" >
+    <relative-time datetime="2020-02-18T14:09:07Z" class="no-wrap">Feb 18, 2020</relative-time>
+  </a>
+</div>
+
+<div class="mt-2 d-flex flex-items-start">
+  <div class="flex-auto break-word" id="ref-pullrequest-566917685" >
+    <a href="https://github.com/facebook/react-native/pull/28107" class="link-gray-dark f4 text-bold" data-hovercard-type="pull_request" data-hovercard-url="/facebook/react-native/pull/28107/hovercard">
+      [JavaScript][Removed] - Remove leftover `Incremental` component
+      <span class="text-gray text-normal" >#28107</span>
+</a>  </div>
+
+
+  <div class="flex-shrink-0 ml-3">
+      <span class="State State--red State--small " title="Status: Closed">
+  
+  <svg height="14" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg> Closed
+
+</span>
+
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+
+</div>
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDU4NzUxNjc5Mg==">
+  
+    
+<div class="TimelineItem js-comment-container"
+      data-gid="MDEyOklzc3VlQ29tbWVudDU4NzUxNjc5Mg=="
+      data-url="/_render_node/MDEyOklzc3VlQ29tbWVudDU4NzUxNjc5Mg==/timeline/issue_comment">
+
+  
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/mikaoelitiana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mikaoelitiana"><img class="avatar rounded-1" height="40" width="40" alt="@mikaoelitiana" src="https://avatars2.githubusercontent.com/u/674667?s=88&amp;u=26a5a734d90483972696cae732e5d21fb5460d4b&amp;v=4" /></a>
+
+</div>
+
+
+  
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="issuecomment-587516792">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="2ae13de48e56acee4df8bf8ab43f2b70">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7078f4b8561421f65a4d02559fe2fcf06ae3f5c81d5fee38976b17a43715f393" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffacebook%2Freact-native%2Fissues%2F28103">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret "
+       data-body-version="2ae13de48e56acee4df8bf8ab43f2b70"
+       data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="acfb1N+OOe8VTc3YcJLfQdGcQ0CPh1q5SelJZpUuXp/Ol8bZtLktwypf/89rXgdLLV/gv8I4Y7ZboREmAfd6Sg==" />
+
+    
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="issuecomment-587516792-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  <div class="d-none d-sm-flex">
+
+    
+    <span class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s" aria-label="This user has previously committed to the react-native repository.">
+      Contributor
+    </span>
+
+
+  
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/mikaoelitiana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mikaoelitiana"><img class="avatar rounded-1" height="20" width="20" alt="@mikaoelitiana" src="https://avatars1.githubusercontent.com/u/674667?s=60&amp;u=26a5a734d90483972696cae732e5d21fb5460d4b&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/mikaoelitiana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mikaoelitiana">mikaoelitiana</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#issuecomment-587516792" id="issuecomment-587516792-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-02-18T15:25:33Z" class="no-wrap">Feb 18, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>hey there, I can check virtualizedlist</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+        
+
+<div class="comment-reactions border-top has-reactions js-reactions-container "
+
+    >
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-pick-reaction" action="https://github.com/facebook/react-native/reactions" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" data-csrf="true" name="authenticity_token" value="aDIErj8o5fQnvSSdJDy4QzPcYYA2/LMH6CFx6YRj2WVxfN5UbxVvc//UC1tWSpm6gAqBpPD1IP/8i1heqlvDUA==" />
+      <input type="hidden" name="input[subjectId]" value="MDEyOklzc3VlQ29tbWVudDU4NzUxNjc5Mg==">
+
+      <div class="comment-reactions-options">
+          <button disabled
+                  class="btn-link reaction-summary-item tooltipped tooltipped-se tooltipped-multiline "
+                  name="input[content]"
+                  type="submit"
+                  value="THUMBS_UP react"
+                  aria-label="thymikee and Akagutz reacted with thumbs up emoji">
+            <g-emoji alias="+1" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji mr-1">👍</g-emoji>
+            2
+          </button>
+      </div>
+</form></div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDE1OlJlZmVyZW5jZWRFdmVudDMwNTAyMzc3MDQ=">
+  
+        <div class="TimelineItem">
+  <span class="TimelineItem-badge">
+    <svg class="octicon octicon-bookmark" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9 0H1C.27 0 0 .27 0 1v15l5-3.09L10 16V1c0-.73-.27-1-1-1zm-.78 4.25L6.36 5.61l.72 2.16c.06.22-.02.28-.2.17L5 6.6 3.12 7.94c-.19.11-.25.05-.2-.17l.72-2.16-1.86-1.36c-.17-.16-.14-.23.09-.23l2.3-.03.7-2.16h.25l.7 2.16 2.3.03c.23 0 .27.08.09.23h.01z"/></svg>
+  </span>
+  <div class="TimelineItem-body" id="ref-commit-e998002">
+    
+  <a class="author link-gray-dark text-bold" data-hovercard-type="user" data-hovercard-url="/users/facebook-github-bot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/facebook-github-bot">facebook-github-bot</a> 
+
+      added a commit
+      that referenced
+      this issue
+
+    <a href="#ref-commit-e998002" class="link-gray">
+      <relative-time datetime="2020-02-19T04:44:52Z" class="no-wrap">Feb 19, 2020</relative-time>
+    </a>
+    <div class="mt-3">
+      
+
+<div class="js-details-container Details js-socket-channel js-updatable-content"
+     data-channel="repo:29028775:commit:e99800267b78aa581aff956d47b8be91858628b9"
+     data-url="/facebook/react-native/commit/e99800267b78aa581aff956d47b8be91858628b9/_render_node/commit/condensed">
+  <div class="d-flex">
+      
+<div class="AvatarStack flex-self-start AvatarStack--two">
+  <div class="AvatarStack-body" aria-label="venits and facebook-github-bot (non-author committer)">
+        <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/venits/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/venits">
+          <img height="20" width="20" alt="@venits" src="https://avatars1.githubusercontent.com/u/31382349?s=60&amp;u=762b2a0fc902a4397ba82acfd17b296f9711c5c1&amp;v=4" class="" />
+</a>        <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/facebook-github-bot/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/facebook-github-bot">
+          <img height="20" width="20" alt="@facebook-github-bot" src="https://avatars3.githubusercontent.com/u/6422482?s=60&amp;u=1e8724230d8d2a259d754a1b580af5e52db552f4&amp;v=4" class="" />
+</a>  </div>
+</div>
+
+
+    <div class="commit-message pr-1 flex-auto min-width-0">
+      <code>
+        <a title="- Remove leftover `Incremental` component (#28107)
+
+Summary:
+1/4 of https://github.com/facebook/react-native/issues/28103
+
+## Changelog
+
+[JavaScript][Removed] - Remove leftover `Incremental` component.
+Pull Request resolved: https://github.com/facebook/react-native/pull/28107
+
+Test Plan: In RNTester `Incremental` component is no longer used so I modified one of existing examples to use it.
+
+Reviewed By: rickhanlonii
+
+Differential Revision: D19960536
+
+Pulled By: TheSavior
+
+fbshipit-source-id: 791bda7138ac23916957577ed5f5c465c5e96299" data-pjax="true" class="link-gray" href="https://github.com/facebook/react-native/commit/e99800267b78aa581aff956d47b8be91858628b9">- Remove leftover `Incremental` component (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="566917685" data-permission-text="Title is private" data-url="https://github.com/facebook/react-native/issues/28107" data-hovercard-type="pull_request" data-hovercard-url="/facebook/react-native/pull/28107/hovercard" href="https://github.com/facebook/react-native/pull/28107">#28107</a><a title="- Remove leftover `Incremental` component (#28107)
+
+Summary:
+1/4 of https://github.com/facebook/react-native/issues/28103
+
+## Changelog
+
+[JavaScript][Removed] - Remove leftover `Incremental` component.
+Pull Request resolved: https://github.com/facebook/react-native/pull/28107
+
+Test Plan: In RNTester `Incremental` component is no longer used so I modified one of existing examples to use it.
+
+Reviewed By: rickhanlonii
+
+Differential Revision: D19960536
+
+Pulled By: TheSavior
+
+fbshipit-source-id: 791bda7138ac23916957577ed5f5c465c5e96299" data-pjax="true" class="link-gray" href="https://github.com/facebook/react-native/commit/e99800267b78aa581aff956d47b8be91858628b9">)</a>
+      </code>
+
+        <span class="hidden-text-expander inline">
+          <button type="button" class="ellipsis-expander js-details-target" aria-expanded="false">&hellip;</button>
+        </span>
+
+    </div>
+
+    <div class="text-right pr-1">
+      
+
+    </div>
+
+    <div class="pr-1 flex-shrink-0" style="width: 16px;">
+        
+  <details class="commit-build-statuses details-overlay details-reset js-dropdown-details"
+    data-deferred-details-content-url="/_render_node/MDE3OlN0YXR1c0NoZWNrUm9sbHVwMjkwMjg3NzU6ZTk5ODAwMjY3Yjc4YWE1ODFhZmY5NTZkNDdiOGJlOTE4NTg2MjhiOQ==/statuses/combined_branch_status">
+    <summary class="text-red">
+      <svg aria-label="13 / 16 checks OK" class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </summary>
+    <div class="dropdown-menu dropdown-menu-w overflow-hidden">
+      <include-fragment class="m-4 d-flex flex-column flex-items-center">
+        <div class="anim-pulse"><svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg></div>
+        <div class="text-gray no-wrap">Loading status checks&hellip;</div>
+      </include-fragment>
+    </div>
+  </details>
+
+
+    </div>
+
+    <div class="text-right">
+      <code>
+        <a href="https://github.com/facebook/react-native/commit/e99800267b78aa581aff956d47b8be91858628b9" class="link-gray">e998002</a>
+      </code>
+    </div>
+  </div>
+    <div class="Details-content--hidden mt-2">
+      <pre class="text-gray ws-pre-wrap">Summary:
+1/4 of <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="566670387" data-permission-text="Title is private" data-url="https://github.com/facebook/react-native/issues/28103" data-hovercard-type="issue" data-hovercard-url="/facebook/react-native/issues/28103/hovercard" href="28103.html">#28103</a>
+
+## Changelog
+
+[JavaScript][Removed] - Remove leftover `Incremental` component.
+Pull Request <span class="issue-keyword tooltipped tooltipped-se" aria-label="This commit closes pull request #28107.">resolved</span>: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="566917685" data-permission-text="Title is private" data-url="https://github.com/facebook/react-native/issues/28107" data-hovercard-type="pull_request" data-hovercard-url="/facebook/react-native/pull/28107/hovercard" href="https://github.com/facebook/react-native/pull/28107">#28107</a>
+
+Test Plan: In RNTester `Incremental` component is no longer used so I modified one of existing examples to use it.
+
+Reviewed By: rickhanlonii
+
+Differential Revision: D19960536
+
+Pulled By: TheSavior
+
+fbshipit-source-id: 791bda7138ac23916957577ed5f5c465c5e96299</pre>
+    </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDU5MDI2NDI1MQ==">
+  
+    
+<div class="TimelineItem js-comment-container"
+      data-gid="MDEyOklzc3VlQ29tbWVudDU5MDI2NDI1MQ=="
+      data-url="/_render_node/MDEyOklzc3VlQ29tbWVudDU5MDI2NDI1MQ==/timeline/issue_comment">
+
+  
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/thymikee/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/thymikee"><img class="avatar rounded-1" height="40" width="40" alt="@thymikee" src="https://avatars1.githubusercontent.com/u/5106466?s=88&amp;u=7383112415151d47ef1f0c6178f322567d7d6c8c&amp;v=4" /></a>
+
+</div>
+
+
+  
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="issuecomment-590264251">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="aed17b4e884fbe3f3fc266727e7fe5ec">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7078f4b8561421f65a4d02559fe2fcf06ae3f5c81d5fee38976b17a43715f393" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffacebook%2Freact-native%2Fissues%2F28103">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret "
+       data-body-version="aed17b4e884fbe3f3fc266727e7fe5ec"
+       data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="gHJDSSnFtR5ciZH2Tiz3RO35QtrtmBhDmSJB85nSZGUnIl5EQvKhMmObo+FV4C9OETrhJaAnIUyLahmzDQtAsA==" />
+
+    
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="issuecomment-590264251-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  <div class="d-none d-sm-flex">
+
+    
+    <span class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s" aria-label="This user has been invited to collaborate on the react-native repository.">
+      Collaborator
+    </span>
+
+
+  
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/thymikee/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/thymikee"><img class="avatar rounded-1" height="20" width="20" alt="@thymikee" src="https://avatars2.githubusercontent.com/u/5106466?s=60&amp;u=7383112415151d47ef1f0c6178f322567d7d6c8c&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/thymikee/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/thymikee">thymikee</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#issuecomment-590264251" id="issuecomment-590264251-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-02-24T10:52:30Z" class="no-wrap">Feb 24, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/Naturalclar/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Naturalclar">@Naturalclar</a> <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/mikaoelitiana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mikaoelitiana">@mikaoelitiana</a> they're all yours to take :)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+        
+
+<div class="comment-reactions border-top has-reactions js-reactions-container "
+
+    >
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-pick-reaction" action="https://github.com/facebook/react-native/reactions" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" data-csrf="true" name="authenticity_token" value="hg5SlBATBUmzNNHJo5TwkPqVQVaWoY3VVegZL9gpITKfQIhuQC6Pzmtd/g/R4tFpSUOhclCoHi1BQjCY9hE7Bw==" />
+      <input type="hidden" name="input[subjectId]" value="MDEyOklzc3VlQ29tbWVudDU5MDI2NDI1MQ==">
+
+      <div class="comment-reactions-options">
+          <button disabled
+                  class="btn-link reaction-summary-item tooltipped tooltipped-se tooltipped-multiline "
+                  name="input[content]"
+                  type="submit"
+                  value="THUMBS_UP react"
+                  aria-label="Naturalclar reacted with thumbs up emoji">
+            <g-emoji alias="+1" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji mr-1">👍</g-emoji>
+            1
+          </button>
+      </div>
+</form></div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDU5MDI2NzA2Mw==">
+  
+    
+<div class="TimelineItem js-comment-container"
+      data-gid="MDEyOklzc3VlQ29tbWVudDU5MDI2NzA2Mw=="
+      data-url="/_render_node/MDEyOklzc3VlQ29tbWVudDU5MDI2NzA2Mw==/timeline/issue_comment">
+
+  
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/mikaoelitiana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mikaoelitiana"><img class="avatar rounded-1" height="40" width="40" alt="@mikaoelitiana" src="https://avatars2.githubusercontent.com/u/674667?s=88&amp;u=26a5a734d90483972696cae732e5d21fb5460d4b&amp;v=4" /></a>
+
+</div>
+
+
+  
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="issuecomment-590267063">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="d7fbaaf1db4df2cc720d58a8af8aad7a">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7078f4b8561421f65a4d02559fe2fcf06ae3f5c81d5fee38976b17a43715f393" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffacebook%2Freact-native%2Fissues%2F28103">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret "
+       data-body-version="d7fbaaf1db4df2cc720d58a8af8aad7a"
+       data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="r8K/YDLjqafRDEuZyx5SBIiH6R3Zsg/qIp5KUEY2uXUIkqJtWdS9i+4eeY7Q0ooOdERK4pQNNuUw1hIQ0u+doA==" />
+
+    
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="issuecomment-590267063-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  <div class="d-none d-sm-flex">
+
+    
+    <span class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s" aria-label="This user has previously committed to the react-native repository.">
+      Contributor
+    </span>
+
+
+  
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/mikaoelitiana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mikaoelitiana"><img class="avatar rounded-1" height="20" width="20" alt="@mikaoelitiana" src="https://avatars1.githubusercontent.com/u/674667?s=60&amp;u=26a5a734d90483972696cae732e5d21fb5460d4b&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/mikaoelitiana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mikaoelitiana">mikaoelitiana</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#issuecomment-590267063" id="issuecomment-590267063-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-02-24T11:00:11Z" class="no-wrap">Feb 24, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/thymikee/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/thymikee">@thymikee</a> thanks, I am already working on <code>VirtualizedList</code>, the module is quite big and I try to make sure I am doing things the right way</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+        
+
+<div class="comment-reactions border-top has-reactions js-reactions-container "
+
+    >
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-pick-reaction" action="https://github.com/facebook/react-native/reactions" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" data-csrf="true" name="authenticity_token" value="OMZMNmSfpgcYJ2zJMhcbcALe0KF7GQf8vPjKvuTDYo4hiJbMNKIsgMBOQw9AYTqJsQgwhb0QlASoUuMJyvt4uw==" />
+      <input type="hidden" name="input[subjectId]" value="MDEyOklzc3VlQ29tbWVudDU5MDI2NzA2Mw==">
+
+      <div class="comment-reactions-options">
+          <button disabled
+                  class="btn-link reaction-summary-item tooltipped tooltipped-se tooltipped-multiline "
+                  name="input[content]"
+                  type="submit"
+                  value="THUMBS_UP react"
+                  aria-label="thymikee and Akagutz reacted with thumbs up emoji">
+            <g-emoji alias="+1" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji mr-1">👍</g-emoji>
+            2
+          </button>
+      </div>
+</form></div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDIwOkNyb3NzUmVmZXJlbmNlZEV2ZW50MTAyNDQwNTAxMg==">
+  
+        <div class="TimelineItem">
+  <div class="TimelineItem-badge">
+    <svg class="octicon octicon-bookmark" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9 0H1C.27 0 0 .27 0 1v15l5-3.09L10 16V1c0-.73-.27-1-1-1zm-.78 4.25L6.36 5.61l.72 2.16c.06.22-.02.28-.2.17L5 6.6 3.12 7.94c-.19.11-.25.05-.2-.17l.72-2.16-1.86-1.36c-.17-.16-.14-.23.09-.23l2.3-.03.7-2.16h.25l.7 2.16 2.3.03c.23 0 .27.08.09.23h.01z"/></svg>
+  </div>
+
+  <div class="TimelineItem-body" >
+      <div >
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/Naturalclar/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Naturalclar"><img class="avatar" height="20" width="20" alt="@Naturalclar" src="https://avatars3.githubusercontent.com/u/6936373?s=60&amp;u=4edd14e6636c45d10ac6a3eecb4b3ffa6cc2bf5c&amp;v=4" /></a>
+  <a class="author link-gray-dark text-bold" data-hovercard-type="user" data-hovercard-url="/users/Naturalclar/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Naturalclar">Naturalclar</a>
+  
+
+    mentioned this issue
+
+  <a class="link-gray" href="#ref-pullrequest-572269937" >
+    <relative-time datetime="2020-02-27T18:25:41Z" class="no-wrap">Feb 27, 2020</relative-time>
+  </a>
+</div>
+
+<div class="mt-2 d-flex flex-items-start">
+  <div class="flex-auto break-word" id="ref-pullrequest-572269937" >
+    <a href="../pull/28193.html" class="link-gray-dark f4 text-bold" data-hovercard-type="pull_request" data-hovercard-url="/facebook/react-native/pull/28193/hovercard">
+      Modal: replace childContext with new Context api
+      <span class="text-gray text-normal" >#28193</span>
+</a>  </div>
+
+
+  <div class="flex-shrink-0 ml-3">
+      <span class="State State--green State--small " title="Status: Open">
+  
+  <svg height="14" class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="10" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg> Open
+
+</span>
+
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+
+</div>
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDU5MzU3MTQ2OQ==">
+  
+    
+<div class="TimelineItem js-comment-container"
+      data-gid="MDEyOklzc3VlQ29tbWVudDU5MzU3MTQ2OQ=="
+      data-url="/_render_node/MDEyOklzc3VlQ29tbWVudDU5MzU3MTQ2OQ==/timeline/issue_comment">
+
+  
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior"><img class="avatar rounded-1" height="40" width="40" alt="@TheSavior" src="https://avatars2.githubusercontent.com/u/249164?s=88&amp;u=3016ef5cdbcbef3879f2a6486de80c38069930a3&amp;v=4" /></a>
+
+</div>
+
+
+  
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="issuecomment-593571469">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="0f18da6d83b5256efbc9eef44723df15">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7078f4b8561421f65a4d02559fe2fcf06ae3f5c81d5fee38976b17a43715f393" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffacebook%2Freact-native%2Fissues%2F28103">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret "
+       data-body-version="0f18da6d83b5256efbc9eef44723df15"
+       data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="InQnaFZkykUMqj3cIXCERv/5XuwmjEJDwrpjYMFDq2GFJDplPVPeaTO4D8s6vFxMAzr9E2sze0zQ8jsgVZqPtA==" />
+
+    
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="issuecomment-593571469-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  <div class="d-none d-sm-flex">
+
+    
+    <span class="timeline-comment-label text-bold tooltipped tooltipped-multiline tooltipped-s" aria-label="This user is a member of the Facebook organization.">
+      Member
+    </span>
+
+
+  <span
+  class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s"
+  aria-label="This user is the author of this issue.">
+  Author
+</span>
+
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior"><img class="avatar rounded-1" height="20" width="20" alt="@TheSavior" src="https://avatars1.githubusercontent.com/u/249164?s=60&amp;u=3016ef5cdbcbef3879f2a6486de80c38069930a3&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior">TheSavior</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#issuecomment-593571469" id="issuecomment-593571469-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-03-02T19:20:03Z" class="no-wrap">Mar 2, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>It looks like Modal actually only uses the VirtualizedList Context and AppContainer Context, it doesn't have its own context. So we need to get the VirtualizedList and AppContainer ones done first.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+        
+
+<div class="comment-reactions border-top has-reactions js-reactions-container "
+
+    >
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-pick-reaction" action="https://github.com/facebook/react-native/reactions" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" data-csrf="true" name="authenticity_token" value="wq5i22XcUo0uxFLSX10PcHZ3SdvYSnD830FQKVsoDZjb4LghNeHYCvatfRQtKy6JxaGp/x5D4wTL63medRAXrQ==" />
+      <input type="hidden" name="input[subjectId]" value="MDEyOklzc3VlQ29tbWVudDU5MzU3MTQ2OQ==">
+
+      <div class="comment-reactions-options">
+          <button disabled
+                  class="btn-link reaction-summary-item tooltipped tooltipped-se tooltipped-multiline "
+                  name="input[content]"
+                  type="submit"
+                  value="THUMBS_UP react"
+                  aria-label="Naturalclar reacted with thumbs up emoji">
+            <g-emoji alias="+1" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji mr-1">👍</g-emoji>
+            1
+          </button>
+      </div>
+</form></div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDU5NTE3NjIwMQ==">
+  
+    
+<div class="TimelineItem js-comment-container"
+      data-gid="MDEyOklzc3VlQ29tbWVudDU5NTE3NjIwMQ=="
+      data-url="/_render_node/MDEyOklzc3VlQ29tbWVudDU5NTE3NjIwMQ==/timeline/issue_comment">
+
+  
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/mikaoelitiana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mikaoelitiana"><img class="avatar rounded-1" height="40" width="40" alt="@mikaoelitiana" src="https://avatars2.githubusercontent.com/u/674667?s=88&amp;u=26a5a734d90483972696cae732e5d21fb5460d4b&amp;v=4" /></a>
+
+</div>
+
+
+  
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="issuecomment-595176201">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="516d855c44575350e782bb8dc0e36bfd">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7078f4b8561421f65a4d02559fe2fcf06ae3f5c81d5fee38976b17a43715f393" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffacebook%2Freact-native%2Fissues%2F28103">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret "
+       data-body-version="516d855c44575350e782bb8dc0e36bfd"
+       data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="EkDfduLeBYcBU7IoVmp6Kmh3hixJUYwUAlig+/W2JKS1EMJ7iekRqz5BgD9NpqIglLQl0wTutRsQEPi7YW8AcQ==" />
+
+    
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="issuecomment-595176201-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  <div class="d-none d-sm-flex">
+
+    
+    <span class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s" aria-label="This user has previously committed to the react-native repository.">
+      Contributor
+    </span>
+
+
+  
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/mikaoelitiana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mikaoelitiana"><img class="avatar rounded-1" height="20" width="20" alt="@mikaoelitiana" src="https://avatars1.githubusercontent.com/u/674667?s=60&amp;u=26a5a734d90483972696cae732e5d21fb5460d4b&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/mikaoelitiana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mikaoelitiana">mikaoelitiana</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#issuecomment-595176201" id="issuecomment-595176201-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-03-05T11:17:08Z" class="no-wrap">Mar 5, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>So this means these contexts need to be exported, right?</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+        
+
+<div class="comment-reactions border-top  js-reactions-container "
+
+    >
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDU5NTI5ODI2NA==">
+  
+    
+<div class="TimelineItem js-comment-container"
+      data-gid="MDEyOklzc3VlQ29tbWVudDU5NTI5ODI2NA=="
+      data-url="/_render_node/MDEyOklzc3VlQ29tbWVudDU5NTI5ODI2NA==/timeline/issue_comment">
+
+  
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior"><img class="avatar rounded-1" height="40" width="40" alt="@TheSavior" src="https://avatars2.githubusercontent.com/u/249164?s=88&amp;u=3016ef5cdbcbef3879f2a6486de80c38069930a3&amp;v=4" /></a>
+
+</div>
+
+
+  
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="issuecomment-595298264">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="e8f4be024a0d04cc060a6b79a067a9c1">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7078f4b8561421f65a4d02559fe2fcf06ae3f5c81d5fee38976b17a43715f393" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffacebook%2Freact-native%2Fissues%2F28103">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret "
+       data-body-version="e8f4be024a0d04cc060a6b79a067a9c1"
+       data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="TRVg2JABCI1IGTtIgiVM3/J3RLHoQ7L8alZPn/d5Z/fqRX3V+zYcoXcLCV+Z6ZTVDrTnTqX8i/N4HhffY6BDIg==" />
+
+    
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="issuecomment-595298264-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  <div class="d-none d-sm-flex">
+
+    
+    <span class="timeline-comment-label text-bold tooltipped tooltipped-multiline tooltipped-s" aria-label="This user is a member of the Facebook organization.">
+      Member
+    </span>
+
+
+  <span
+  class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s"
+  aria-label="This user is the author of this issue.">
+  Author
+</span>
+
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior"><img class="avatar rounded-1" height="20" width="20" alt="@TheSavior" src="https://avatars1.githubusercontent.com/u/249164?s=60&amp;u=3016ef5cdbcbef3879f2a6486de80c38069930a3&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior">TheSavior</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#issuecomment-595298264" id="issuecomment-595298264-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-03-05T15:45:58Z" class="no-wrap">Mar 5, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>Yeah, the root tag context is already exported, unstable_RootTagContext, the VirtualizedList one can be exported as a static property on VirtualizedList: VirtualizedList.Context</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+        
+
+<div class="comment-reactions border-top  js-reactions-container "
+
+    >
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDU5NjA5MDU4OA==">
+  
+    
+<div class="TimelineItem js-comment-container"
+      data-gid="MDEyOklzc3VlQ29tbWVudDU5NjA5MDU4OA=="
+      data-url="/_render_node/MDEyOklzc3VlQ29tbWVudDU5NjA5MDU4OA==/timeline/issue_comment">
+
+  
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/thymikee/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/thymikee"><img class="avatar rounded-1" height="40" width="40" alt="@thymikee" src="https://avatars1.githubusercontent.com/u/5106466?s=88&amp;u=7383112415151d47ef1f0c6178f322567d7d6c8c&amp;v=4" /></a>
+
+</div>
+
+
+  
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="issuecomment-596090588">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="1f66fd900d8b6b844ce64cbf2305610c">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7078f4b8561421f65a4d02559fe2fcf06ae3f5c81d5fee38976b17a43715f393" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffacebook%2Freact-native%2Fissues%2F28103">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret "
+       data-body-version="1f66fd900d8b6b844ce64cbf2305610c"
+       data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="YbXw1O8XgKyIOpwXk2Nqxj+VfLX5mfg0CsfYbYobbX7G5e3ZhCCUgLcorgCIr7LMw1bfSrQmwTsYj4AtHsJJqw==" />
+
+    
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="issuecomment-596090588-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  <div class="d-none d-sm-flex">
+
+    
+    <span class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s" aria-label="This user has been invited to collaborate on the react-native repository.">
+      Collaborator
+    </span>
+
+
+  
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/thymikee/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/thymikee"><img class="avatar rounded-1" height="20" width="20" alt="@thymikee" src="https://avatars2.githubusercontent.com/u/5106466?s=60&amp;u=7383112415151d47ef1f0c6178f322567d7d6c8c&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/thymikee/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/thymikee">thymikee</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#issuecomment-596090588" id="issuecomment-596090588-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-03-07T13:50:37Z" class="no-wrap">Mar 7, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p><a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior">@TheSavior</a> is the VirtualizedList context used internally at FB? It looks like Modal overwrites the <code>virtualizedList</code> context with null, so it doesn't propagate further and there are no consumers of this inside RN codebase. So, if there are no internal FB components using this context, we could maybe kill it entirely? But I guess there are <g-emoji class="g-emoji" alias="smile" fallback-src="../../../../github.githubassets.com/images/icons/emoji/unicode/1f604.png">😄</g-emoji></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+        
+
+<div class="comment-reactions border-top  js-reactions-container "
+
+    >
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDU5NjA5NDE3NA==">
+  
+    
+<div class="TimelineItem js-comment-container"
+      data-gid="MDEyOklzc3VlQ29tbWVudDU5NjA5NDE3NA=="
+      data-url="/_render_node/MDEyOklzc3VlQ29tbWVudDU5NjA5NDE3NA==/timeline/issue_comment">
+
+  
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior"><img class="avatar rounded-1" height="40" width="40" alt="@TheSavior" src="https://avatars2.githubusercontent.com/u/249164?s=88&amp;u=3016ef5cdbcbef3879f2a6486de80c38069930a3&amp;v=4" /></a>
+
+</div>
+
+
+  
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="issuecomment-596094174">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="2589d58006b76ac99247cbe249fd544c">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7078f4b8561421f65a4d02559fe2fcf06ae3f5c81d5fee38976b17a43715f393" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffacebook%2Freact-native%2Fissues%2F28103">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret "
+       data-body-version="2589d58006b76ac99247cbe249fd544c"
+       data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="pwM4n3THIj3SBNXAPRe2kx+PLPkcjIeigGeSnPoRqAMAUyWSH/A2Ee0W59cm226Z40yPBlEzvq2SL8rcbsiM1g==" />
+
+    
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="issuecomment-596094174-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  <div class="d-none d-sm-flex">
+
+    
+    <span class="timeline-comment-label text-bold tooltipped tooltipped-multiline tooltipped-s" aria-label="This user is a member of the Facebook organization.">
+      Member
+    </span>
+
+
+  <span
+  class="timeline-comment-label tooltipped tooltipped-multiline tooltipped-s"
+  aria-label="This user is the author of this issue.">
+  Author
+</span>
+
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior"><img class="avatar rounded-1" height="20" width="20" alt="@TheSavior" src="https://avatars1.githubusercontent.com/u/249164?s=60&amp;u=3016ef5cdbcbef3879f2a6486de80c38069930a3&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior">TheSavior</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#issuecomment-596094174" id="issuecomment-596094174-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-03-07T14:30:37Z" class="no-wrap">Mar 7, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>Yeah, these contexts are all used fairly heavily. Any kind of portal type thing would use it like Modal or BottomSheet.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+        
+
+<div class="comment-reactions border-top has-reactions js-reactions-container "
+
+    >
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-pick-reaction" action="https://github.com/facebook/react-native/reactions" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" data-csrf="true" name="authenticity_token" value="3rIuXmG9EaY3pJnerGKWpDkuV/zYNC0XJj0oLoTZWU/H/PSkMYCbIe/NthjeFLddivi32B49vu8ylwGZquFDeg==" />
+      <input type="hidden" name="input[subjectId]" value="MDEyOklzc3VlQ29tbWVudDU5NjA5NDE3NA==">
+
+      <div class="comment-reactions-options">
+          <button disabled
+                  class="btn-link reaction-summary-item tooltipped tooltipped-se tooltipped-multiline "
+                  name="input[content]"
+                  type="submit"
+                  value="THUMBS_UP react"
+                  aria-label="thymikee reacted with thumbs up emoji">
+            <g-emoji alias="+1" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" class="emoji mr-1">👍</g-emoji>
+            1
+          </button>
+      </div>
+</form></div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDE1OlJlZmVyZW5jZWRFdmVudDMxMDk4MjM1Njg=">
+  
+        <div class="TimelineItem">
+  <span class="TimelineItem-badge">
+    <svg class="octicon octicon-bookmark" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9 0H1C.27 0 0 .27 0 1v15l5-3.09L10 16V1c0-.73-.27-1-1-1zm-.78 4.25L6.36 5.61l.72 2.16c.06.22-.02.28-.2.17L5 6.6 3.12 7.94c-.19.11-.25.05-.2-.17l.72-2.16-1.86-1.36c-.17-.16-.14-.23.09-.23l2.3-.03.7-2.16h.25l.7 2.16 2.3.03c.23 0 .27.08.09.23h.01z"/></svg>
+  </span>
+  <div class="TimelineItem-body" id="ref-commit-782e88c">
+    
+  <a class="author link-gray-dark text-bold" data-hovercard-type="user" data-hovercard-url="/users/osdnk/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/osdnk">osdnk</a> 
+
+      added a commit
+        to osdnk/react-native
+      that referenced
+      this issue
+
+    <a href="#ref-commit-782e88c" class="link-gray">
+      <relative-time datetime="2020-03-09T09:34:59Z" class="no-wrap">Mar 9, 2020</relative-time>
+    </a>
+    <div class="mt-3">
+      
+
+<div class="js-details-container Details js-socket-channel js-updatable-content"
+     data-channel="repo:245994252:commit:782e88c9efd628de535c999ecdcc716c93da69f5"
+     data-url="/osdnk/react-native/commit/782e88c9efd628de535c999ecdcc716c93da69f5/_render_node/commit/condensed">
+  <div class="d-flex">
+      
+<div class="AvatarStack flex-self-start AvatarStack--two">
+  <div class="AvatarStack-body" aria-label="venits and osdnk (non-author committer)">
+        <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/venits/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/venits">
+          <img height="20" width="20" alt="@venits" src="https://avatars1.githubusercontent.com/u/31382349?s=60&amp;u=762b2a0fc902a4397ba82acfd17b296f9711c5c1&amp;v=4" class="" />
+</a>        <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/osdnk/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/osdnk">
+          <img height="20" width="20" alt="@osdnk" src="https://avatars0.githubusercontent.com/u/25709300?s=60&amp;u=6f99f5b9606dd7e5cdc46112a5cd39b2e799f5a4&amp;v=4" class="" />
+</a>  </div>
+</div>
+
+
+    <div class="commit-message pr-1 flex-auto min-width-0">
+      <code>
+        <a title="- Remove leftover `Incremental` component (#28107)
+
+Summary:
+1/4 of https://github.com/facebook/react-native/issues/28103
+
+## Changelog
+
+[JavaScript][Removed] - Remove leftover `Incremental` component.
+Pull Request resolved: https://github.com/facebook/react-native/pull/28107
+
+Test Plan: In RNTester `Incremental` component is no longer used so I modified one of existing examples to use it.
+
+Reviewed By: rickhanlonii
+
+Differential Revision: D19960536
+
+Pulled By: TheSavior
+
+fbshipit-source-id: 791bda7138ac23916957577ed5f5c465c5e96299" data-pjax="true" class="link-gray" href="https://github.com/osdnk/react-native/commit/782e88c9efd628de535c999ecdcc716c93da69f5">- Remove leftover `Incremental` component (</a><a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="566917685" data-permission-text="Title is private" data-url="https://github.com/facebook/react-native/issues/28107" data-hovercard-type="pull_request" data-hovercard-url="/facebook/react-native/pull/28107/hovercard" href="https://github.com/facebook/react-native/pull/28107">facebook#28107</a><a title="- Remove leftover `Incremental` component (#28107)
+
+Summary:
+1/4 of https://github.com/facebook/react-native/issues/28103
+
+## Changelog
+
+[JavaScript][Removed] - Remove leftover `Incremental` component.
+Pull Request resolved: https://github.com/facebook/react-native/pull/28107
+
+Test Plan: In RNTester `Incremental` component is no longer used so I modified one of existing examples to use it.
+
+Reviewed By: rickhanlonii
+
+Differential Revision: D19960536
+
+Pulled By: TheSavior
+
+fbshipit-source-id: 791bda7138ac23916957577ed5f5c465c5e96299" data-pjax="true" class="link-gray" href="https://github.com/osdnk/react-native/commit/782e88c9efd628de535c999ecdcc716c93da69f5">)</a>
+      </code>
+
+        <span class="hidden-text-expander inline">
+          <button type="button" class="ellipsis-expander js-details-target" aria-expanded="false">&hellip;</button>
+        </span>
+
+    </div>
+
+    <div class="text-right pr-1">
+      
+
+    </div>
+
+    <div class="pr-1 flex-shrink-0" style="width: 16px;">
+    </div>
+
+    <div class="text-right">
+      <code>
+        <a href="https://github.com/osdnk/react-native/commit/782e88c9efd628de535c999ecdcc716c93da69f5" class="link-gray">782e88c</a>
+      </code>
+    </div>
+  </div>
+    <div class="Details-content--hidden mt-2">
+      <pre class="text-gray ws-pre-wrap">Summary:
+1/4 of <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="566670387" data-permission-text="Title is private" data-url="https://github.com/facebook/react-native/issues/28103" data-hovercard-type="issue" data-hovercard-url="/facebook/react-native/issues/28103/hovercard" href="28103.html">facebook#28103</a>
+
+## Changelog
+
+[JavaScript][Removed] - Remove leftover `Incremental` component.
+Pull Request <span class="issue-keyword tooltipped tooltipped-se" aria-label="This commit closes pull request #28107.">resolved</span>: <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="566917685" data-permission-text="Title is private" data-url="https://github.com/facebook/react-native/issues/28107" data-hovercard-type="pull_request" data-hovercard-url="/facebook/react-native/pull/28107/hovercard" href="https://github.com/facebook/react-native/pull/28107">facebook#28107</a>
+
+Test Plan: In RNTester `Incremental` component is no longer used so I modified one of existing examples to use it.
+
+Reviewed By: rickhanlonii
+
+Differential Revision: D19960536
+
+Pulled By: TheSavior
+
+fbshipit-source-id: 791bda7138ac23916957577ed5f5c465c5e96299</pre>
+    </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+  
+  
+<div class="js-timeline-item js-timeline-progressive-focus-container" data-gid="MDEyOklzc3VlQ29tbWVudDYwMzI0NjUxMw==">
+  
+    
+<div class="TimelineItem js-comment-container"
+      data-gid="MDEyOklzc3VlQ29tbWVudDYwMzI0NjUxMw=="
+      data-url="/_render_node/MDEyOklzc3VlQ29tbWVudDYwMzI0NjUxMw==/timeline/issue_comment">
+
+  
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+    <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/joelbrewer/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/joelbrewer"><img class="avatar rounded-1" height="40" width="40" alt="@joelbrewer" src="https://avatars1.githubusercontent.com/u/2348386?s=88&amp;u=bf588ad19a505b23528eed3aa370274d4e2d60a4&amp;v=4" /></a>
+
+</div>
+
+
+  
+<div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="issuecomment-603246513">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+<details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="97cd65f4834d916d54968b5249044697">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="text-gray text-small">
+          <a rel="nofollow" class="link-gray" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;minimized comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="7078f4b8561421f65a4d02559fe2fcf06ae3f5c81d5fee38976b17a43715f393" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffacebook%2Freact-native%2Fissues%2F28103">Sign in to view</a>
+        </div>
+      </div>
+    </summary>
+</details>
+
+
+    </div>
+  <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret "
+       data-body-version="97cd65f4834d916d54968b5249044697"
+       data-unfurl-hide-url="/content_reference_attachments/hide">
+    <input type="hidden" data-csrf="true" class="js-data-unfurl-hide-url-csrf" value="IwJYFuF9xHOFFz5LBEj0q7jjaIo/WNk4epdYH5xR1c+EUkUbikrQX7oFDFwfhCyhRCDLdXLn4Ddo3wBfCIjxGg==" />
+
+    
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" role="img"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm5 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM13 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="issuecomment-603246513-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+      
+  </details-menu>
+</details>
+
+  </div>
+
+
+  <div class="d-none d-sm-flex">
+
+    
+
+
+  
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/joelbrewer/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/joelbrewer"><img class="avatar rounded-1" height="20" width="20" alt="@joelbrewer" src="https://avatars2.githubusercontent.com/u/2348386?s=60&amp;u=bf588ad19a505b23528eed3aa370274d4e2d60a4&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/joelbrewer/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/joelbrewer">joelbrewer</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#issuecomment-603246513" id="issuecomment-603246513-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-03-24T13:43:31Z" class="no-wrap">Mar 24, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+    <div class="edit-comment-hide">
+
+      
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>It appears all of the tasks on this issue have been claimed? Looking for my first RN issue to help out on :)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+        
+
+<div class="comment-reactions border-top  js-reactions-container "
+
+    >
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Rendered timeline since 2020-03-24 06:43:31 -->
+<div class="js-timeline-marker js-socket-channel js-updatable-content"
+      id="partial-timeline"
+      data-channel="issue:566670387"
+      data-url="/_render_node/MDU6SXNzdWU1NjY2NzAzODc=/issues/unread_timeline?variables%5BhasFocusedReviewComment%5D=false&amp;variables%5BhasFocusedReviewThread%5D=false&amp;variables%5BsyntaxHighlightingEnabled%5D=true&amp;variables%5BtimelinePageSize%5D=30&amp;variables%5BtimelineSince%5D=2020-03-24T13%3A43%3A31Z"
+      data-last-modified="Tue, 24 Mar 2020 13:43:31 GMT"
+      data-gid="MDU6SXNzdWU1NjY2NzAzODc=">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="d-none js-timeline-marker-form" action="https://github.com/_graphql/MarkNotificationSubjectAsRead" accept-charset="UTF-8" data-remote="true" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="Bf0VQVWoxj8jRXJbtHpZ8AxzXLk3VjpN55AXD4KdtNTLG+/7RIkRA8evRJXQ07etiloDz4RwKpdHgNbCOSUySg==" />
+    <input type="hidden" name="variables[subjectId]" value="MDU6SXNzdWU1NjY2NzAzODc=">
+</form></div>
+
+
+            </div>
+
+
+            <span id="issue-comment-box"></span>
+            <div class="discussion-timeline-actions">
+                    
+<div class="flash flash-warn mt-3">
+    <a rel="nofollow" class="btn btn-primary" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;signed out comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="abf32b1aefb422a989608932c8fbe3c6c6993bef64d59a43976d3a43db136df2" href="https://github.com/join?source=comment-repo">Sign up for free</a>
+    <strong>to join this conversation on GitHub</strong>.
+    Already have an account?
+    <a rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;signed out comment&quot;,&quot;repository_id&quot;:29028775,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;originating_url&quot;:&quot;https://github.com/facebook/react-native/issues/28103&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="5599136ec1919e5795f53f0b71b7e26d69ff78d5b8c55b6a404d56783937380e" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Ffacebook%2Freact-native%2Fissues%2F28103">Sign in to comment</a>
+</div>
+
+
+            </div>
+          </div>
+
+</div>
+
+    <div class="flex-shrink-0 col-12 col-md-3">
+                  
+<div id="partial-discussion-sidebar"
+  class="js-socket-channel js-updatable-content"
+  data-channel="issue:566670387"
+  data-gid="MDU6SXNzdWU1NjY2NzAzODc="
+  data-url="/facebook/react-native/issues/28103/show_partial?partial=issues%2Fsidebar"
+  data-project-hovercards-enabled>
+
+
+  <div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-issue-sidebar-form" aria-label="Select assignees" action="https://github.com/facebook/react-native/issues/28103/assignees" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" data-csrf="true" name="authenticity_token" value="rmsTLMde324djZWx1X27wm7GZC0AO2nof+cCYZk/gTYUPxn6l4M7QSqd6FYlEH4QeN/fP4k7fhCeywg530+xKg==" />
+    
+  <div class="discussion-sidebar-heading text-bold">
+    Assignees
+  </div>
+
+    
+<span class="css-truncate js-issue-assignees">
+    No one assigned
+</span>
+
+</form></div>
+
+    <div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  
+
+
+  <div class="discussion-sidebar-heading text-bold">
+    Labels
+  </div>
+
+  <div class="labels css-truncate js-issue-labels">
+      <a class="sidebar-labels-style box-shadow-none width-full d-block IssueLabel" style="background-color: #0052cc; color: #ffffff" data-name="Good first issue" title="Interested in collaborating? Take a stab at fixing one of these issues." href="https://github.com/facebook/react-native/labels/Good first issue"><span class="css-truncate-target" style="max-width: 100%">Good first issue</span></a>
+  <a class="sidebar-labels-style box-shadow-none width-full d-block IssueLabel" style="background-color: #bfd4f2; color: #000000" data-name="JavaScript" title="JavaScript" href="https://github.com/facebook/react-native/labels/JavaScript"><span class="css-truncate-target" style="max-width: 100%">JavaScript</span></a>
+
+</div>
+
+</div>
+
+    
+<div class="discussion-sidebar-item js-discussion-sidebar-item">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-issue-sidebar-form" aria-label="Select projects" action="https://github.com/facebook/react-native/projects/issues/28103" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" data-csrf="true" name="authenticity_token" value="JaW/V7n+4yRwh4lrEDdvAVgbn8RbtvyDikKn2NSzdxOjUhEpZpaELZSmTPYq7Ic6UspecBXY9nboNixQGKiLZg==" />
+    
+  <div class="discussion-sidebar-heading text-bold">
+    Projects
+  </div>
+
+    
+<span class="css-truncate sidebar-progress-bar">
+    None yet
+</span>
+
+</form></div>
+
+    <div class="discussion-sidebar-item sidebar-progress-bar js-discussion-sidebar-item">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-issue-sidebar-form" aria-label="Select milestones" action="https://github.com/facebook/react-native/issues/28103/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" data-csrf="true" name="authenticity_token" value="Y6YW2lbAzlFaPx6Agpds2JFjmlgy6oDY3rTZD4UVy5lfynXsZtyyBsCGdg56thk3wKPkbzCLwePomWVt8pkkuA==" />
+    
+  <div class="discussion-sidebar-heading text-bold">
+    Milestone
+  </div>
+
+      No milestone
+
+</form></div>
+
+    
+<div class="discussion-sidebar-item js-discussion-sidebar-item" data-issue-and-pr-hovercards-enabled >
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-issue-sidebar-form" aria-label="Link issues" action="https://github.com/facebook/react-native/issues/closing_references?source_id=566670387&amp;source_type=ISSUE" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" data-csrf="true" name="authenticity_token" value="rK36ZR54vMyXWtAtn5W9Uhx2pKOWlmr6tMpbvi7cTL6q9ia/bgdKcTkIN3wvoIbzTvT+KsBRf2IoeskzqSUuzA==" />
+    
+  <div class="discussion-sidebar-heading text-bold">
+    Linked pull requests
+  </div>
+
+
+      
+<p>Successfully merging a pull request may close this issue.</p>
+
+  None yet
+
+</form>
+</div>
+
+  
+  <div id="partial-users-participants" class="discussion-sidebar-item">
+  <div class="participation">
+
+    <div class="discussion-sidebar-heading text-bold">
+      6 participants
+    </div>
+    <div class="participation-avatars d-flex flex-wrap">
+        <a class="participant-avatar" data-hovercard-type="user" data-hovercard-url="/users/TheSavior/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/TheSavior">
+          <img class="avatar" src="https://avatars2.githubusercontent.com/u/249164?s=52&amp;v=4" width="26" height="26" alt="@TheSavior" /> 
+</a>        <a class="participant-avatar" data-hovercard-type="user" data-hovercard-url="/users/Naturalclar/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/Naturalclar">
+          <img class="avatar" src="https://avatars0.githubusercontent.com/u/6936373?s=52&amp;v=4" width="26" height="26" alt="@Naturalclar" /> 
+</a>        <a class="participant-avatar" data-hovercard-type="user" data-hovercard-url="/users/venits/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/venits">
+          <img class="avatar" src="https://avatars1.githubusercontent.com/u/31382349?s=52&amp;v=4" width="26" height="26" alt="@venits" /> 
+</a>        <a class="participant-avatar" data-hovercard-type="user" data-hovercard-url="/users/mikaoelitiana/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mikaoelitiana">
+          <img class="avatar" src="https://avatars0.githubusercontent.com/u/674667?s=52&amp;v=4" width="26" height="26" alt="@mikaoelitiana" /> 
+</a>        <a class="participant-avatar" data-hovercard-type="user" data-hovercard-url="/users/thymikee/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/thymikee">
+          <img class="avatar" src="https://avatars1.githubusercontent.com/u/5106466?s=52&amp;v=4" width="26" height="26" alt="@thymikee" /> 
+</a>        <a class="participant-avatar" data-hovercard-type="user" data-hovercard-url="/users/joelbrewer/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/joelbrewer">
+          <img class="avatar" src="https://avatars3.githubusercontent.com/u/2348386?s=52&amp;v=4" width="26" height="26" alt="@joelbrewer" /> 
+</a>    </div>
+  </div>
+</div>
+
+
+  
+
+
+
+  
+
+
+</div>
+
+
+</div>
+</div>
+
+
+    </div>
+  </div>
+
+  </div>
+
+
+  </div>
+</div>
+
+    </main>
+  </div>
+  
+
+  </div>
+
+        
+<div class="footer container-lg width-full p-responsive" role="contentinfo">
+  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      <li class="mr-3 mr-lg-0">&copy; 2020 GitHub, Inc.</li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="../../../security.html">Security</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com/">Help</a></li>
+
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3 mr-lg-0"><a href="../../../pricing.html" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.blog/" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="../../../about.html">About</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" async="async" integrity="sha512-WcQmT2vhcClFVOaaAJV/M+HqsJ2Gq/myvl6F3gCVBxykazXTs+i5fvxncSXwyG1CSfcrqmLFw/R/bmFYzprX2A==" type="application/javascript" id="js-conditional-compat" data-src="../../../../github.githubassets.com/assets/compat-bootstrap-59c4264f.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-6XBdUZGib4aqdruJTnLMOLpIh0VJsGlgQ7M3vndWJIH6YQNv+zqpo1TbCDzjHJ+YYEm4xkEinaY0VsemDUfi9A==" type="application/javascript" src="../../../../github.githubassets.com/assets/environment-bootstrap-e9705d51.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-fNcWYAh2sNNjfGtnzXeDPemQsJYesX60BB9k+YlUmuSw+iX+9bVew+TJOO74e0yqqKS3gU570rxTCs+ZBpJCvg==" type="application/javascript" src="../../../../github.githubassets.com/assets/vendor-7cd71660.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-CcKFBqQZKOCZU5otP6R8GH2k+iJ3zC9r2z2Iakfs/Bo9/ptHy6JIWQN3FPhVuS3CR+Q/CkEOSfg+WJfoq3YMxQ==" type="application/javascript" src="../../../../github.githubassets.com/assets/frameworks-09c28506.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-YJfUzazDr9cv5vQ3uprerx75rOxBtkO8808pBDxH5ZC51jmraibbSP5xgU4Lkq860/f4tyDJ7vmLPuiKptv/0Q==" type="application/javascript" src="../../../../github.githubassets.com/assets/github-bootstrap-6097d4cd.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a href="#">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="#">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  </body>
+
+<!-- Mirrored from github.com/facebook/react-native/issues/28103 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 03:25:24 GMT -->
+</html>
+

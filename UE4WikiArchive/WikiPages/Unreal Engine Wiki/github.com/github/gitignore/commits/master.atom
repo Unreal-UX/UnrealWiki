@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/gitignore/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/gitignore/commits/master.atom"/>
+  <title>Recent Commits to gitignore:master</title>
+  <updated>2020-03-28T14:47:35Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3df9bc0bd9cb0c3f5ea0904e88b9df5a378ccd59</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/3df9bc0bd9cb0c3f5ea0904e88b9df5a378ccd59"/>
+    <title>
+        Update R.gitignore (#3354)
+    </title>
+    <updated>2020-03-28T14:47:35Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/8430564?s=30&amp;u=9e056a83469152268da0a7da00eaae0543ba9211&amp;v=4"/>
+    <author>
+      <name>pat-s</name>
+      <uri>https://github.com/pat-s</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update R.gitignore (#3354)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e931ef7f3e7d8f7aa0e784c14bd291ad4448b1ab</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/e931ef7f3e7d8f7aa0e784c14bd291ad4448b1ab"/>
+    <title>
+        [Python] adding IDE &amp; static related stuff (#3317)
+    </title>
+    <updated>2020-03-13T11:53:35Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/30233243?s=30&amp;u=7c328f2ad8da32c76df2c0c7277ef42c11909e1b&amp;v=4"/>
+    <author>
+      <name>meysam81</name>
+      <uri>https://github.com/meysam81</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[Python] adding IDE &amp;amp; static related stuff (#3317)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ae5431d6f09a0cc52fd2c03c20125c6d2a7f6255</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/ae5431d6f09a0cc52fd2c03c20125c6d2a7f6255"/>
+    <title>
+        Changes to PyBuilder 0.12+ (#3338)
+    </title>
+    <updated>2020-03-12T18:49:35Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/5355666?s=30&amp;u=917ccb5635a1c3474fda7286a9a50386e52877a6&amp;v=4"/>
+    <author>
+      <name>arcivanov</name>
+      <uri>https://github.com/arcivanov</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Changes to PyBuilder 0.12+ (#3338)
+
+PyB 0.12 uses `$project_root/.pybuilder/` for internal venvs.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ef59ea57e8ea4f18f1ec7068b2ccb22a5b79b40a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/ef59ea57e8ea4f18f1ec7068b2ccb22a5b79b40a"/>
+    <title>
+        Extend Qt.gitignore with qmlcache qrc files (#3322)
+    </title>
+    <updated>2020-03-12T18:47:06Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/1609182?s=30&amp;u=636502b73bbefde0e4396b261d961af261fcfb8b&amp;v=4"/>
+    <author>
+      <name>martonmiklos</name>
+      <uri>https://github.com/martonmiklos</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Extend Qt.gitignore with qmlcache qrc files (#3322)
+
+Projects using QML files generating a temporary qrc file if a qrc file present in the project.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c851a10cab28082fcfbe5cecce52c4b5edca1d7c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/c851a10cab28082fcfbe5cecce52c4b5edca1d7c"/>
+    <title>
+        update README (#3248)
+    </title>
+    <updated>2020-03-12T11:23:31Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/51149077?s=30&amp;v=4"/>
+    <author>
+      <name>jymok12</name>
+      <uri>https://github.com/jymok12</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;update README (#3248)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/811be05b83a2740e20b3b0f9a5c5efb89961fefe</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/811be05b83a2740e20b3b0f9a5c5efb89961fefe"/>
+    <title>
+        Add Win32/ to gitginore list (#3308)
+    </title>
+    <updated>2020-03-12T11:21:54Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3538226?s=30&amp;u=254e47b655f2f85bc78c793cbc5a2f44331191fe&amp;v=4"/>
+    <author>
+      <name>noloader</name>
+      <uri>https://github.com/noloader</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add Win32/ to gitginore list (#3308)
+
+Visual Studio .Net used Win32/ as one of the default output directories for C and C++ projects. Later, when 64-bit support was added to the toolchain (circa 2005), x64/ was used. The Gitignore files include x64/, but not Win32/. The commit adds support for both Win32/ and x64/.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c022baa5052bff5fa7d83c79310871b9e085f991</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/c022baa5052bff5fa7d83c79310871b9e085f991"/>
+    <title>
+        Update Autotools.gitignore. (#3337)
+    </title>
+    <updated>2020-03-12T11:14:59Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/8720191?s=30&amp;v=4"/>
+    <author>
+      <name>cniethammer</name>
+      <uri>https://github.com/cniethammer</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update Autotools.gitignore. (#3337)
+
+Ignore .dirstamp files from automake used for non-existing directory dependencies.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0af689b9886d71df768822874f0fe68aa6b0f6c0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/0af689b9886d71df768822874f0fe68aa6b0f6c0"/>
+    <title>
+        [VisualStudio] Add rule for ScaffoldingReadMe.txt (#3328)
+    </title>
+    <updated>2020-03-11T21:06:43Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/11236522?s=30&amp;u=1a945990c92509f028f8c24421cbb534f9a791b7&amp;v=4"/>
+    <author>
+      <name>plr108</name>
+      <uri>https://github.com/plr108</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[VisualStudio] Add rule for ScaffoldingReadMe.txt (#3328)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/be4f76b416f1279ec23b9c833333d510e2ddee8b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/be4f76b416f1279ec23b9c833333d510e2ddee8b"/>
+    <title>
+        [Node] Add yarn v2 excludes (#3327)
+    </title>
+    <updated>2020-03-11T13:08:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/6916518?s=30&amp;u=c97938773990ce49b07fe60e4489210ec3b0c558&amp;v=4"/>
+    <author>
+      <name>ChiefORZ</name>
+      <uri>https://github.com/ChiefORZ</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[Node] Add yarn v2 excludes (#3327)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/dc8c27c5f9eea7185a80478084d67ed3bbe43e2d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/dc8c27c5f9eea7185a80478084d67ed3bbe43e2d"/>
+    <title>
+        Add Unity&#39;s Addressables and Android&#39;s temp files. (#3311)
+    </title>
+    <updated>2020-03-11T13:07:49Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/48373360?s=30&amp;v=4"/>
+    <author>
+      <name>JasperCiti</name>
+      <uri>https://github.com/JasperCiti</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add Unity&amp;#39;s Addressables and Android&amp;#39;s temp files. (#3311)
+
+* Added Addressables.
+
+Prevent automatically generated addressable files to end up in Git.
+
+* Update .gitignore to exclude packed Addressables and Android auto-generated files.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/81ebaeca4185e2e44e589d6cb3e88cbfc7e0895c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/81ebaeca4185e2e44e589d6cb3e88cbfc7e0895c"/>
+    <title>
+        Improved JENKINS_HOME example (#3332)
+    </title>
+    <updated>2020-03-11T13:03:44Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/875669?s=30&amp;v=4"/>
+    <author>
+      <name>samrocketman</name>
+      <uri>https://github.com/samrocketman</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Improved JENKINS_HOME example (#3332)
+
+After years of use I&amp;#39;ve come up with some improvements to the
+`JENKINS_HOME.gitignore` example.
+
+- Major performance improvement: On very large Jenkins installations that
+  have been running for more than one year, there tends to be many builds
+  (hundreds of thousands of builds).  The `builds` directory of these
+  jobs contain millions of files which would cause Git to hang for
+  several minutes on simple commands like `git status` and longer for
+  committing changes.  `strace` was used on Git to figure out the
+  performance impact and this proposed change includes the optimization.
+  I also added a clear comment explaining the line&amp;#39;s purpose.
+- There&amp;#39;s an example for how to include Jenkins encryption keys, and
+  there&amp;#39;s a disclaimer informing the user why they shouldn&amp;#39;t but still
+  giving an example.
+- Comments have been reworded and slightly reformatted to be a little
+  more clear.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/589831e1dc8822c2cb0cd33e72b929dfa005ef01</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/589831e1dc8822c2cb0cd33e72b929dfa005ef01"/>
+    <title>
+        Ignore Cython debug symbols (#3330)
+    </title>
+    <updated>2020-03-11T12:59:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/153711?s=30&amp;u=9453a0b9bad74ed671f0d1bd7a77e3b3e0ef64a6&amp;v=4"/>
+    <author>
+      <name>elijahr</name>
+      <uri>https://github.com/elijahr</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Ignore Cython debug symbols (#3330)
+
+Cython extension modules built with `gdb_debug=True` spit out debug symbols in the `cython_debug` directory at the top level of the project. The files in this directory contain hardcoded paths and are not shareable/meaningful across environments, so I think it makes sense to include them in a default Python .gitignore.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/823e38ff6880cbde2eb77eb804cbdb7d9e1ccca4</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/823e38ff6880cbde2eb77eb804cbdb7d9e1ccca4"/>
+    <title>
+        Add /public/uploads for file upload gem Shrine (#3333)
+    </title>
+    <updated>2020-03-11T12:54:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/12226907?s=30&amp;u=15808822745d65b348256e4521c87e580047fba8&amp;v=4"/>
+    <author>
+      <name>MetaJuanitoFatas</name>
+      <uri>https://github.com/MetaJuanitoFatas</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add /public/uploads for file upload gem Shrine (#3333)
+
+When using a file upload gem called Shrine, its file system mode put images under `public/uploads`.
+
+https://github.com/shrinerb/shrine/blob/053bcf297e092e9695731fb9b67a86780e898203/doc/storage/file_system.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4d4af94e22e9c8f14ea5e6fc5339f89430f34c61</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/4d4af94e22e9c8f14ea5e6fc5339f89430f34c61"/>
+    <title>
+        Update Drupal.gitignore (#3329)
+    </title>
+    <updated>2020-03-11T12:44:55Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/29234802?s=30&amp;u=6df0f12ef9b99ba73711505b274882cab8a86528&amp;v=4"/>
+    <author>
+      <name>ssaaiidd</name>
+      <uri>https://github.com/ssaaiidd</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update Drupal.gitignore (#3329)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/863f9d209dc5a3b4e562a06a218677ab49a08f41</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/863f9d209dc5a3b4e562a06a218677ab49a08f41"/>
+    <title>
+        update parcel cache (#3331)
+    </title>
+    <updated>2020-03-11T12:28:59Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/23744935?s=30&amp;v=4"/>
+    <author>
+      <name>SimonSiefke</name>
+      <uri>https://github.com/SimonSiefke</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;update parcel cache (#3331)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9904c122443526ff7f1d8ebab86223b7ff69ba06</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/9904c122443526ff7f1d8ebab86223b7ff69ba06"/>
+    <title>
+        Jigsaw (#3334)
+    </title>
+    <updated>2020-03-11T12:13:00Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/2164321?s=30&amp;u=c7c2b6c11b55308080e062336811bf5d6126f98c&amp;v=4"/>
+    <author>
+      <name>RohanSakhale</name>
+      <uri>https://github.com/RohanSakhale</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Jigsaw (#3334)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1095d930974d0688a4f58b085e6c4dc9410fa587</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/1095d930974d0688a4f58b085e6c4dc9410fa587"/>
+    <title>
+        Update for Prestashop 1.7 (#3261)
+    </title>
+    <updated>2020-03-11T12:10:57Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/7281565?s=30&amp;v=4"/>
+    <author>
+      <name>marouanehassine</name>
+      <uri>https://github.com/marouanehassine</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update for Prestashop 1.7 (#3261)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8918d73afec1d26351f2e522fa6a68e13abeaf98</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/8918d73afec1d26351f2e522fa6a68e13abeaf98"/>
+    <title>
+        Add period. (#3336)
+    </title>
+    <updated>2020-03-11T12:09:58Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17163541?s=30&amp;u=6caa83d76bacfaea569b11533a86d0db79200142&amp;v=4"/>
+    <author>
+      <name>MasujimaRyohei</name>
+      <uri>https://github.com/MasujimaRyohei</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add period. (#3336)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/599646e9d0a26283d67715dead8f26e0eb2df753</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/599646e9d0a26283d67715dead8f26e0eb2df753"/>
+    <title>
+        Include Rider as a supported IDE (#3323)
+    </title>
+    <updated>2020-02-28T12:30:29Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/418030?s=30&amp;v=4"/>
+    <author>
+      <name>bitbonk</name>
+      <uri>https://github.com/bitbonk</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Include Rider as a supported IDE (#3323)
+
+AS far as I can tell this .gitignore also applies to Rider. Looking at the somewhat official .gitignore for Rider [here](https://github.com/JetBrains/resharper-rider-samples/blob/master/.gitignore), it seems compatible.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d650516d96ab0abecdc446c64faa992a178e3d18</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/gitignore/commit/d650516d96ab0abecdc446c64faa992a178e3d18"/>
+    <title>
+        Changed TeX to not ignore tikz files by default. (#3320)
+    </title>
+    <updated>2020-02-25T12:54:06Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5159635?s=30&amp;v=4"/>
+    <author>
+      <name>bverhagen</name>
+      <uri>https://github.com/bverhagen</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Changed TeX to not ignore tikz files by default. (#3320)&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

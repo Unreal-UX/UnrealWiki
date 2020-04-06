@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=AI_Controlled_Butterfly_-_C%2B%2B_tutorial&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:12:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>View source for AI Controlled Butterfly - C++ tutorial - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"AI_Controlled_Butterfly_-_C++_tutorial","wgTitle":"AI Controlled Butterfly - C++ tutorial","wgCurRevisionId":1451,"wgRevisionId":0,"wgArticleId":725,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"AI_Controlled_Butterfly_-_C++_tutorial","wgRelevantArticleId":725,"wgRequestId":"8d5a21f2861b8ee58316848a","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-AI_Controlled_Butterfly_-_C_tutorial rootpage-AI_Controlled_Butterfly_-_C_tutorial skin-vector action-edit"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b971c4e90a55eae6"><meta name="worker" content="152"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=AI_Controlled_Butterfly_-_C%2B%2B_tutorial&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:12:13 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=AI+Controlled+Butterfly+-+C%2B%2B+tutorial&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=AI_Controlled_Butterfly_-_C%2B%2B_tutorial" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:AI_Controlled_Butterfly_-_C%2B%2B_tutorial&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=AI_Controlled_Butterfly_-_C%2B%2B_tutorial">Read</a></span></li>
+							<li id="ca-viewsource" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=AI_Controlled_Butterfly_-_C%2B%2B_tutorial&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=AI_Controlled_Butterfly_-_C%2B%2B_tutorial&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">View source for AI Controlled Butterfly - C++ tutorial</h1>
+												<div id="bodyContent" class="mw-body-content">
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=EpicUnrealEngineWiki:Administrators&amp;action=edit&amp;redlink=1" class="new" title="EpicUnrealEngineWiki:Administrators (page does not exist)">Administrators</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">{{Rating|Type=Tutorial|Versions=4.18}}
+
+[[Category:Tutorials]]
+[[Category:Code]]
+
+''Original Author:'' [[User:LeszekS|LeszekS]]
+
+==Overview==
+I am very new to Unreal engine, started with Blueprints first and now doing in C++. This is my first individual project inspired by flying butterflies in Epic's  '''Blueprints''' tutorial ( can be found under ''"Learn"'' section of ''Epic Games Launcher'' ). I learned the butterfly AI logic from that tutorial and did it my way in C++. Also assets I used were migrated from that project. I think this tutorial can be helpful for all C++ programmers starting with Unreal.
+
+Here is how the final work looks like ...
+
+[[File:AIControlledButterfly01.png|600px|"AI Controlled Butterfly"]]
+
+... and some quick recording.
+
+&lt;youtube>https://youtu.be/cT5CrV4VAxE&lt;/youtube>
+
+==What can you learn?==
+You can learn following Unreal C++ programming topics from this tutorial:
+# Create actor's components and build their hierarchy. Load mesh and assign it to component.
+# Create and load float curve asset into the program.
+# Use of FTimeline following float curve to animate meshes.
+# Move the object changing its location and rotation. Very easy vector and rotatory mathematics used for that.
+# Checking for collision with the line tracing.
+# Using random ranges.
+# Creating simple state machine to implement AI logic.
+# Debugging with the help of HUD Message or Output Log.
+
+==Requirements==
+You need to know basics of Unreal: C++ project creation, C++ class creation, using Content Browser and create assets, compile C++ project, basic scene set up, analyse C++ code. I will not guide you through details of the source code but it is well commented to help you understand its logic.
+
+==Step by step==
+Here is a quick guide to reproduce my project:
+# Create new C++ project in ''Unreal Project Browser''. Use ''"Basic Code"'' template, no need for ''Starter Content''.
+# Download '''Blueprints''' project from ''Epic Games Launcher/Learn''.
+# Open '''Blueprints''' project, in ''Content Browser'' go to '''''Content/Assets/Meshes''''' folder. Migrate following assets: '''''S_Butterfly_Body''''', '''''S_Butterfly_Left_Wing''''', '''''S_Butterfly_Right_Wing''''' to your just created C++ project folder. As a target for migration select '''''Content''''' folder of your project.
+# Open your C++ project in Unreal. In ''Content Browser'' create 3 Curve Float assets ( right click then '''''Miscellaneous/Curve''''' and  then select '''''CurveFloat''''' ):
+#* '''CF_ButterflyFlight''' with key points: ( 0, 1 ), ( 0.2, -1 ), ( 0.5, 1 )[[File:AIControledButterfly02.png|600px]]
+#* '''CF_ButterflyLanding''' with key points: ( 0, 0  ), ( 1.5, 1 )'''[[File:AIControledButterfly03.png|600px]]
+#* '''CF_ButterflyResting''' with key points: ( 0, 0.1 ), ( 0.66, 0.79 ), ( 1.65, 0.95 ), ( 2.5, 0.23 ), ( 4.77, 0.18 ), ( 5.75, 0.78 ), ( 8.15, 0.92 ), ( 9.2, 0.1 ), ( 10, 0.35 )'''[[File:AIControledButterfly04.png|600px]]
+# Create new C++ class using '''Actor''' as the parent and naming it '''ButterflyActor'''. Compile your C++ project.
+# You can now replace your '''''ButterflyActor.cpp''''' and '''''.h''''' files with my files. Recompile again.
+# You can either drag C++ '''ButterFlyActor''' to your scene or create Blueprint using '''ButterflyActor''' as a parent and even change its logic there. While '''ButterflyActor''' object is selected in the Editor you can change ''TargetAttractor'', ''MaxFlightRange'', ''GroundLevel'' parameters found under '''Butterfly''' category in '''Details''' panel.
+# Enjoy the fly!
+
+==AI logic debrief==
+I hope my comments in source code are clear enough to help you understand it. Here is brief logic description:
+# The first route is toward ''TargetAttractor'' location. Then target is exchanged with random location but not farther then ''MaxFlightRange'' from ''TargetAttractor''.
+# '''Flying''' state: - sets random flight time on the beginning; - every tick: changes location and rotation of the root component following move logic; checks for collision, if hit found then switch to '''Landing Approach''' state; if approaches close enough to the target then selects randomly new target; checks a flight time and if finished then targets to ''GroundLevel''; - with use of time line controls also swing of wings and the body.
+# '''Landing Approach''' state: - using new time line changes location and rotation of the root component different way than during '''Flying''': - continues to swing wings but 2.5 time faster now; - if landing time line is not playing any more then ends this state.
+# '''Resting state''': - sets random time of resting; - plays wings swing time line with the different curve float; - if time of resting is up then ends this state and triggers '''Lift Off'''.
+# '''Lift Off''' state: - sets the time of '''Lift Off''' and triggers fast wings swing; - smoothly change just location of the root component; - when the lift off time is up then ends current state and triggers '''Flying'''.
+
+==Source Code==
+Here are '''ButterflyActor.h''' and '''ButterflyActor.cpp''' files:
+&lt;syntaxhighlight lang="cpp">
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "ButterflyActor.generated.h"
+
+
+
+UCLASS()
+class BUTTERFLYPROJECT_API AButterflyActor : public AActor
+{
+	GENERATED_BODY()
+
+public:
+		// Sets default values for this actor's properties
+	AButterflyActor();
+
+protected:
+		// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:
+		// Called every frame
+	virtual void Tick( float DeltaTime ) override;
+		// called before garbage collection
+	virtual void BeginDestroy();
+
+#if WITH_EDITOR
+		// this is to update TargetAttractor parameter after it changed in Editor
+	virtual void PostEditChangeProperty( FPropertyChangedEvent&amp; PropertyChangeEvent );
+
+#endif
+		// components created in that class
+	UPROPERTY( VisibleDefaultsOnly, Category = Butterfly )
+	class UArrowComponent* ButterflyRoot;
+
+	UPROPERTY( VisibleDefaultsOnly, Category = Butterfly )
+	class UStaticMeshComponent* Body;
+
+	UPROPERTY( VisibleDefaultsOnly, Category = Butterfly )
+	class UStaticMeshComponent* LeftWing;
+
+	UPROPERTY( VisibleDefaultsOnly, Category = Butterfly )
+	class UStaticMeshComponent* RightWing;
+
+	UPROPERTY( VisibleDefaultsOnly, BlueprintReadOnly, Category = Butterfly )
+	class UArrowComponent* FlightTarget;
+		// base location to find new random target
+	UPROPERTY( EditAnywhere, BlueprintReadWrite, Category = Butterfly )
+	FVector	TargetAttractor;
+		// max range value from TargetAttractor
+	UPROPERTY( EditAnywhere, BlueprintReadWrite, Category = Butterfly )
+	float	MaxFlightRange;
+		// Z level for forced landing
+	UPROPERTY( EditAnywhere, BlueprintReadWrite, Category = Butterfly )
+	float	GroundLevel;
+
+protected:
+		// state machine states
+	enum ButterflyStateEnum
+		{
+		DoNothing,
+		Resting,
+		LiftOff,
+		Flying,
+		LandingApproach,
+		};
+			// stores state machine current status
+	ButterflyStateEnum ButterflyState;
+		// check for collisions during the flight
+	void	CheckCollision();
+		// offsets location during the flight
+	void	FlyingMoveLocation( float DeltaTime );
+		// chnage rotation during hte flight
+	void	FlyingMoveRotation( float DeltaTime );
+		// randomly selects new target
+	void	ChooseNewTarget();
+		// rotate the wings, if Reset is true then positions them in default rotation
+	void RotateWings( float Value, bool Reset = false );
+		// moves the body
+	void RotateBody( float Value, bool Reset = false );
+		// below methos service states of state machine
+	void LiftOffStart();
+	void LiftOffEnd();
+
+	void FlyingStart();
+	UFUNCTION()
+	void FlyingContinues( float Value );	// method passed to Timeline processing has to be declared with UFUNCTION()!!!
+	void FlyingEnd();
+
+	void LandingApproachStart();
+	UFUNCTION()
+	void LandingApproachContinues( float Value );	// method passed to Timeline processing has to be declared with UFUNCTION()!!!
+	void LandingApproachEnd();
+
+	void RestingStart();
+	UFUNCTION()
+	void RestingContinues( float Value );	// method passed to Timeline processing has to be declared with UFUNCTION()!!!
+	void RestingEnd();
+
+		// below variables are made available to the Blueprint logic
+	UPROPERTY( BlueprintReadWrite )
+	float	ForwardSpeed;
+	UPROPERTY( BlueprintReadWrite )
+	float	UpwardSpeed;
+	UPROPERTY( BlueprintReadWrite )
+	FVector		CurrentTargetLocation;
+
+		// internal backup variable	
+	FVector		CurrentTargetLocationBackup;
+		// landing locations
+	FVector		LandingApproachStartLocation;
+	FRotator	LandingApproachStartRotation;
+	FVector		LandingApproachEndLocation;
+	FVector		LandingApproachEndNormal;
+		// landing support locations
+	FVector		LandingLocationSlightlyBelow;
+	FVector		LandingLocationSlightlyAbove;
+		// timers counting seconds till next event
+	float		SecondsTillNextSwing;
+	float		SecondsTillLiftOff;
+	float		SecondsTillLiftOffEnd;
+	float		SecondsTillNextLanding;
+		// setups struct fields and binds method
+	void MaintainTimeLine( struct FTimeline* TimeLine, class UCurveFloat* CurveFloat, const FName&amp; MethodName, bool Looping = false );
+		//pointers to Timeline structures
+	struct FTimeline*	FTLButterflyFlight;
+	struct FTimeline*	FTLButterflyLanding;
+	struct FTimeline*	FTLButterflyResting;
+		// load mesh asset
+	static void LoadMeshAsset( UStaticMeshComponent* MeshComponent, const TCHAR* AssetPath );
+		// load curve float asset
+	static UCurveFloat* LoadCurveFloatAsset( const TCHAR* AssetPath );
+
+};
+&lt;/syntaxhighlight>
+
+
+&lt;syntaxhighlight lang="cpp">
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#include "ButterflyActor.h"
+
+#include "Components/ArrowComponent.h"
+#include "Kismet/KismetMathLibrary.h"
+#include "Components/TimelineComponent.h"
+#include "Math/UnrealMathUtility.h"
+#include "DrawDebugHelpers.h"
+#include "ConstructorHelpers.h"
+
+
+
+// prints message to the screen with selected color
+#define HUDMessage(color,text) if( GEngine ) GEngine->AddOnScreenDebugMessage( -1, 5.0f, color, text );
+
+
+// those variables store resources, which should be loaded only once 
+static UCurveFloat*		CFButterflyFlight;
+static UCurveFloat*		CFButterflyLanding;
+static UCurveFloat*		CFButterflyResting;
+
+
+// Sets default values
+AButterflyActor::AButterflyActor() :
+	ForwardSpeed( 100.0f ),
+	UpwardSpeed( 1.0f ),
+	MaxFlightRange( 400.0f ),
+	GroundLevel( 0 ),
+	ButterflyState( DoNothing ),
+	SecondsTillNextSwing( 0.0f ),
+	SecondsTillLiftOff( 32.0f ),
+	SecondsTillLiftOffEnd( 1.8f ),
+	SecondsTillNextLanding( 9 )
+{
+		// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = true;
+
+		// create components hierachy
+		// start from the root, which is starting position arrow component
+	ButterflyRoot = CreateDefaultSubobject&lt;UArrowComponent>( TEXT( "ButterflyRoot" ) );
+	ButterflyRoot->SetArrowColor( FLinearColor( FColor::Green ) );
+	ButterflyRoot->bEditableWhenInherited = true;
+	ButterflyRoot->SetRelativeScale3D( FVector( 4.0f, 4.0f, 4.0f ) );
+		// make it a root component
+	RootComponent = ButterflyRoot;
+		// buterfly body mesh component now
+	Body = CreateDefaultSubobject&lt;UStaticMeshComponent>( TEXT( "Body" ) );
+	Body->SetupAttachment( RootComponent );
+	LoadMeshAsset( Body, TEXT( "/Game/Assets/Meshes/S_Butterfly_Body.S_Butterfly_Body" ) );
+		// left wing mesh component
+	LeftWing = CreateDefaultSubobject&lt;UStaticMeshComponent>( TEXT( "LeftWing" ) );
+	LeftWing->SetupAttachment( Body );
+	LoadMeshAsset( LeftWing, TEXT( "/Game/Assets/Meshes/S_Butterfly_Left_Wing.S_Butterfly_Left_Wing" ) );
+		// right wing mesh component
+	RightWing = CreateDefaultSubobject&lt;UStaticMeshComponent>( TEXT( "RightWing" ) );
+	RightWing->SetupAttachment( Body );
+	LoadMeshAsset( RightWing, TEXT( "/Game/Assets/Meshes/S_Butterfly_Right_Wing.S_Butterfly_Right_Wing" ) );
+		// target position arrow component
+	FlightTarget = CreateDefaultSubobject&lt;UArrowComponent>( TEXT( "FlightTarget" ) );
+	FlightTarget->SetupAttachment( RootComponent );
+		// some default target position
+	FlightTarget->SetRelativeLocation( FVector( 40.0f, 20.0f, 10.0f ) );
+
+		// load ButterflyFlight curve float
+	if ( CFButterflyFlight == nullptr )
+		CFButterflyFlight = LoadCurveFloatAsset( TEXT( "/Game/Assets_Mine/CF_ButterflyFlight" ) );
+		// load butterfly landing curve float
+	if ( CFButterflyLanding == nullptr )
+		CFButterflyLanding = LoadCurveFloatAsset( TEXT( "/Game/Assets_Mine/CF_ButterflyLanding" ) );
+		// load butterfly resting curve float
+	if ( CFButterflyResting == nullptr )
+		CFButterflyResting = /*UMyStaticLibrary::*/LoadCurveFloatAsset( TEXT( "/Game/Assets_Mine/CF_ButterflyResting" ) );
+
+		// create FTimeLine structures so can be used during the Play
+	FTLButterflyFlight = new FTimeline;
+	FTLButterflyLanding = new FTimeline;
+	FTLButterflyResting = new FTimeline;
+}
+
+void AButterflyActor::BeginDestroy()
+{
+		//UE_LOG( LogTemp, Warning, TEXT("In AButterflyActor::BeginDestroy()") );
+			// clean up FTimeline structures
+	delete FTLButterflyFlight;
+	delete FTLButterflyLanding;
+	delete FTLButterflyResting;
+		// must call for the super class!!!
+	Super::BeginDestroy();
+}
+
+	// Called when the game starts or when spawned
+void AButterflyActor::BeginPlay()
+{
+	Super::BeginPlay();
+		// initial target location
+	CurrentTargetLocation = TargetAttractor;
+
+		// setup butterfly flight timeline
+	if ( CFButterflyFlight )
+		{
+		MaintainTimeLine( FTLButterflyFlight, CFButterflyFlight, FName( "FlyingContinues" ), true );
+		}
+			// setup butterfly landing timeline
+	if ( CFButterflyLanding )
+		{
+		MaintainTimeLine( FTLButterflyLanding, CFButterflyLanding, FName( "LandingApproachContinues" ) );
+		}
+			// setup butterfly resting timeline
+	if ( CFButterflyResting )
+		{
+		MaintainTimeLine( FTLButterflyResting, CFButterflyResting, FName( "RestingContinues" ) );
+		}
+
+		//FlyingStart();
+			// start from resting state now
+	RestingStart();
+}
+
+	// Called every frame
+void AButterflyActor::Tick( float DeltaTime )
+{
+	Super::Tick( DeltaTime );
+		// let the update of timelines
+	FTLButterflyFlight->TickTimeline( DeltaTime );
+	FTLButterflyLanding->TickTimeline( DeltaTime );
+	FTLButterflyResting->TickTimeline( DeltaTime );
+		// act according to the current state 
+	switch ( ButterflyState )
+		{
+			case LiftOff:
+					// count seconds till end of LiftOff phase
+				if ( SecondsTillLiftOffEnd &lt;= 0 )
+					LiftOffEnd();
+				else
+					SecondsTillLiftOffEnd -= DeltaTime;
+					// just move the butterfly location, no rotation
+				FlyingMoveLocation( DeltaTime );
+				break;
+
+			case Flying:
+					// move the buterfly location
+				FlyingMoveLocation( DeltaTime );
+					// and rotate it accordingly
+				FlyingMoveRotation( DeltaTime );
+					// in case of collision start LandApproach state
+				CheckCollision();
+					// check if close to current target
+				if ( ( CurrentTargetLocation - ButterflyRoot->GetComponentLocation() ).Size() &lt; 60 )
+					ChooseNewTarget();
+					// count seconds till landing, so butterfly is not flying to long
+				if ( SecondsTillNextLanding &lt;= 0 )
+					CurrentTargetLocation.Z = GroundLevel;
+				else
+					SecondsTillNextLanding -= DeltaTime;
+
+				break;
+
+			case LandingApproach:
+					// if landing timeline is not playing then finish this state
+				if ( !FTLButterflyLanding->IsPlaying() )
+					{
+						//UE_LOG(LogTemp, Warning, TEXT("LandingApproachEnd in Tick()") );
+					LandingApproachEnd();
+					}
+
+				break;
+			case Resting:
+					// if resting timeline is not playing then ...
+				if ( !FTLButterflyResting->IsPlaying() )
+					if ( SecondsTillNextSwing > 0 )
+							// ... count seconds ...
+						SecondsTillNextSwing -= DeltaTime;
+					else
+						{
+								// ... or paly next swing if it is time for that
+						FTLButterflyResting->PlayFromStart();
+							// assign random value till next Swing
+						SecondsTillNextSwing = FMath::FRandRange( 5.0f, 10.0f );
+						}
+						// count seconds till LiftOff ...
+				SecondsTillLiftOff -= DeltaTime;
+				if ( SecondsTillLiftOff &lt;= 0 )
+					{
+							// ... finish this state and start LiftOff
+					RestingEnd();
+					LiftOffStart();
+					}
+
+				break;
+			default:
+				break;
+		}
+}
+
+void AButterflyActor::FlyingMoveLocation( float DeltaTime )
+{
+		// calculate move offset in DeltaTime and sets root component
+	FVector DeltaLocation( ForwardSpeed, 0.0f, UpwardSpeed );
+	DeltaLocation *= DeltaTime;
+	ButterflyRoot->AddLocalOffset( DeltaLocation );
+}
+
+void AButterflyActor::FlyingMoveRotation( float DeltaTime )
+{
+		// calculate rotation change in DeltaTime and sets root component
+	FRotator TargetRotation = UKismetMathLibrary::FindLookAtRotation( ButterflyRoot->GetComponentLocation(), CurrentTargetLocation );
+	FRotator NewDirectionRotation = FMath::RInterpTo( ButterflyRoot->GetComponentRotation(), TargetRotation, DeltaTime, 1.2 );
+	ButterflyRoot->SetWorldRotation( NewDirectionRotation );
+}
+
+void AButterflyActor::ChooseNewTarget()
+{
+	float RandomHX = FMath::FRandRange( -0.7f*MaxFlightRange, MaxFlightRange );
+	float RandomHY = FMath::FRandRange( -0.7f*MaxFlightRange, MaxFlightRange );
+	float RandomV = FMath::FRandRange( -0.15f*MaxFlightRange, 0.5f*MaxFlightRange );
+	CurrentTargetLocation = TargetAttractor + FVector( RandomHX, RandomHY, RandomV );
+	//UE_LOG(LogTemp, Warning, TEXT("Approaching CurrentTarget Location"));
+}
+
+void AButterflyActor::CheckCollision()
+{
+			// get current location of the root component
+	FVector ButterflyRootLocation = ButterflyRoot->GetComponentLocation();
+		// trace if any collision is in the front
+#define TRACE_LENGTH	70
+		// forward vector is unit vector hence it is mulitplied, then slightly put down and finaly added to the current location
+	FVector	TraceEndLocation = ButterflyRootLocation + ( ( ButterflyRoot->GetForwardVector()*TRACE_LENGTH ) - FVector( 0.0f, 0.0f, 15.0f ) );
+		// you can see tracing vector below
+	//DrawDebugLine(GetWorld(), ButterflyRootLocation, TraceEndLocation, FColor::Red, false, -1.0f, 0, 1.0f);
+		// set parameters for tracing
+	FHitResult Hit;
+	FCollisionObjectQueryParams ObjectQueryParams( ECC_WorldStatic );
+	FCollisionQueryParams QueryParams( FName(), true, this );
+		// call tracing function
+	bool Result = GetWorld()->LineTraceSingleByObjectType( Hit, ButterflyRootLocation, TraceEndLocation, ObjectQueryParams, QueryParams );
+		// if hit founf then ... 
+	if ( Result )
+		{
+			//UE_LOG(LogTemp, Log, TEXT("-"));
+			//UE_LOG( LogTemp, Warning, TEXT("Trace hit for %s into %s"), *GetName(), *Hit.Actor->GetName() );
+			//UE_LOG(LogTemp, Warning, TEXT("Location: %s ImpactPoint: %s"), *Hit.Location.ToString(), *Hit.ImpactPoint.ToString() );
+			//UE_LOG(LogTemp, Warning, TEXT("Normal: %s ImpactNormal: %s"), *Hit.Normal.ToString(), *Hit.ImpactNormal.ToString());
+				// store hit location in local variables
+		LandingApproachEndLocation = Hit.Location;
+		LandingApproachEndNormal = Hit.Normal;
+			// ... start LandingApproach
+		LandingApproachStart();
+		}
+}
+
+void AButterflyActor::RotateWings( float Value, bool Reset )
+{
+			// neutral values for the mesh positions
+	float XLeftWing = 0, XRightWing = 0;
+
+	if ( !Reset )
+		{
+				// set mesh positions following Value
+		XLeftWing = FMath::Lerp( 0.0f, 80.0f, Value );
+		XRightWing = FMath::Lerp( 0.0f, -80.0f, Value );
+		}
+			// change mesh
+	LeftWing->SetRelativeRotation( FRotator( 0.0f, 0.0f, XLeftWing ) );
+	RightWing->SetRelativeRotation( FRotator( 0.0f, 0.0f, XRightWing ) );
+	//UE_LOG( LogTemp, Warning, TEXT( "Value: %f   XLeftWing: %f   XRightWing: %f" ), Value, XLeftWing, XRightWing );
+}
+
+void AButterflyActor::RotateBody( float Value, bool Reset )
+{
+			// neutral values for the mesh positions
+	float ZBody = 0, YBody = 0;
+
+	if ( !Reset )
+		{
+				// set mesh positions following Value
+		ZBody = FMath::Lerp( 0.5f, -0.5f, Value );
+		YBody = FMath::Lerp( 4.0f, -2.0f, Value );
+		}
+			// change mesh
+	Body->SetRelativeLocation( FVector( 0.0f, 0.0f, ZBody ) );
+	Body->SetRelativeRotation( FRotator( YBody, 0.0f, 0.0f ) );
+}
+
+void AButterflyActor::RestingStart()
+{
+			// change state machine status
+	ButterflyState = Resting;
+		// play the timeline
+	FTLButterflyResting->PlayFromStart();
+		// get random time till LiftOff
+	SecondsTillLiftOff = FMath::FRandRange( 11.0f, 18.0f );
+}
+
+void AButterflyActor::RestingContinues( float Value )
+{
+			// animate wings in line with the Value value
+	RotateWings( Value );
+	//UE_LOG(LogTemp, Warning, TEXT("RestingContinues"));
+}
+
+void AButterflyActor::RestingEnd()
+{
+			// stop the timeline
+	FTLButterflyResting->Stop();
+}
+
+void AButterflyActor::FlyingStart()
+{
+			// get random for till the landing
+	SecondsTillNextLanding = FMath::RandRange( 9.0f, 18.0f );
+		// set velocity parameters
+	ForwardSpeed = 100;
+	UpwardSpeed = 0;
+		// change state machine status
+	ButterflyState = Flying;
+		// .. and start timeline play
+	FTLButterflyFlight->PlayFromStart();
+	FTLButterflyFlight->SetPlayRate( 1.0f );
+}
+
+void AButterflyActor::FlyingContinues( float Value )
+{
+		//UE_LOG( LogTemp, Warning, TEXT( "Inside FlyingContinues %f" ), Value );
+			// animate wings and body in line with the Value value
+	RotateWings( Value );
+	RotateBody( Value );
+}
+
+void AButterflyActor::FlyingEnd()
+{
+			// stop timeline
+	FTLButterflyFlight->Stop();
+		// ... prepare for the next fly, this can be moved to FlyingStart but I wanted the first fly targeted TargetAttractor and not a random values
+	ChooseNewTarget();
+}
+
+void AButterflyActor::LandingApproachStart()
+{
+			// store local variables used later on
+	LandingApproachStartLocation = ButterflyRoot->GetComponentLocation();
+	LandingApproachStartRotation = ButterflyRoot->GetComponentRotation();
+		// calculate landing support locations
+	LandingLocationSlightlyBelow = LandingApproachEndLocation + ( LandingApproachEndNormal * -5 );
+	LandingLocationSlightlyAbove = LandingApproachEndLocation + ( LandingApproachEndNormal * 5 );
+		// flight procedure continues with 2.5 faster wing rotation but flying navigation discontinues
+	FTLButterflyFlight->SetPlayRate( 2.5 );
+		// change state machine status
+	ButterflyState = LandingApproach;
+		// trigger landing timeline to navigate landing
+	FTLButterflyLanding->PlayFromStart();
+}
+
+void AButterflyActor::LandingApproachContinues( float Value )
+{
+			// handle location change for LandingApproach
+	FVector NewLocation = FMath::Lerp( LandingApproachStartLocation, LandingLocationSlightlyAbove, Value );
+	ButterflyRoot->SetWorldLocation( NewLocation );
+		// ... and now rotation excepet last 0.01
+	if ( Value &lt; 0.99f )
+		{
+				// find the target rotation ...
+		FRotator TargetRotation = UKismetMathLibrary::FindLookAtRotation( ButterflyRoot->GetComponentLocation(), LandingLocationSlightlyBelow );
+			// ... and pitch it 90 degree
+		TargetRotation += FRotator( 90.0f, 0.0f, 0.0f );
+			// lerp (linear interpolation) it so the move is smooth
+		FRotator NewRotation = FMath::Lerp( LandingApproachStartRotation, TargetRotation, Value );
+		ButterflyRoot->SetWorldRotation( NewRotation );
+		//UE_LOG(LogTemp, Warning, TEXT("TargetRotation: %s NewRotation: %s"), *TargetRotation.ToString(), *NewRotation.ToString());
+		}
+}
+
+void AButterflyActor::LandingApproachEnd()
+{
+			// finish Flying state
+	FlyingEnd();
+	FTLButterflyLanding->Stop();
+		// ... and start Resting
+	RestingStart();
+		// rotate wings so they stay sligthly up
+	RotateWings( 0.45f );
+		// .. and reset body to original position
+	RotateBody( 0.0f, true );
+	//UE_LOG( LogTemp, Warning, TEXT("LandingApproachEnd") );
+	//UE_LOG(LogTemp, Warning, TEXT("End Location: %s Rotaion: %s"), *ButterflyRoot->GetComponentLocation().ToString(), *ButterflyRoot->GetComponentRotation().ToString());
+}
+
+void AButterflyActor::LiftOffStart()
+{
+			// set velocity differnt to Flying state
+	ForwardSpeed = 15;
+	UpwardSpeed = 30;
+		// temprarly chanbe current target location
+	CurrentTargetLocationBackup = CurrentTargetLocation;
+	CurrentTargetLocation = LandingApproachStartLocation;
+		// set time till LiftOff end
+	SecondsTillLiftOffEnd = 1.2f;
+		// set new state machine status !!! watchout for code racing this must be after FTLButterflyLanding->PlayFromStart();
+	ButterflyState = LiftOff;
+		// play Flying timeline
+	FTLButterflyFlight->PlayFromStart();
+	FTLButterflyFlight->SetPlayRate( 2.5f );
+}
+
+void AButterflyActor::LiftOffEnd()
+{
+			// restore current target location
+	CurrentTargetLocation = CurrentTargetLocationBackup;
+		// clean up landing support variables
+	LandingApproachStartLocation = LandingApproachEndLocation = LandingApproachEndNormal =
+		LandingLocationSlightlyBelow = LandingLocationSlightlyAbove = FVector( ForceInitToZero );
+	LandingApproachStartRotation = FRotator( ForceInitToZero );
+		// start Flying state
+	FlyingStart();
+}
+
+void AButterflyActor::LoadMeshAsset( UStaticMeshComponent * MeshComponent, const TCHAR * AssetPath )
+{
+	ConstructorHelpers::FObjectFinder&lt;UStaticMesh> MeshAsset( AssetPath );
+
+	if ( MeshAsset.Succeeded() )
+		{
+		MeshComponent->SetStaticMesh( MeshAsset.Object );
+		}
+}
+
+UCurveFloat * AButterflyActor::LoadCurveFloatAsset( const TCHAR * AssetPath )
+{
+	ConstructorHelpers::FObjectFinder&lt;UCurveFloat> CurveAsset( AssetPath );
+	if ( CurveAsset.Succeeded() )
+		{
+		return CurveAsset.Object;
+		}
+
+	return nullptr;
+}
+
+void AButterflyActor::MaintainTimeLine( FTimeline * TimeLine, UCurveFloat* CurveFloat, const FName &amp; MethodName, bool Looping )
+{
+	FOnTimelineFloat	ProgressionFunction;
+	ProgressionFunction.BindUFunction( this, MethodName );
+
+	TimeLine->AddInterpFloat( CurveFloat, ProgressionFunction );
+	TimeLine->SetLooping( Looping );
+}
+
+#if WITH_EDITOR
+void AButterflyActor::PostEditChangeProperty( FPropertyChangedEvent&amp; PropertyChangeEvent )
+{
+		// this is very simple method of handling that, full example can be found here:
+		// https://docs.unrealengine.com/latest/INT/API/Runtime/Engine/GameFramework/AActor/PostEditChangeProperty/
+
+		// HUDMessage(FColor::Red, TEXT("Property changed"))
+	FlightTarget->SetWorldLocation( TargetAttractor );
+
+	Super::PostEditChangeProperty( PropertyChangeEvent );
+}
+
+#endif
+
+&lt;/syntaxhighlight>
+
+==Next Steps==
+There are still some functionalities that can be added, e.g. wings color set in object's Details panel, audio effects, collision sphere capsule encapsulating butterfly so 2 actors do not overlap each other or body and wings are not hiding in the ground. That is the work for next tutorial.
+
+
+Thank you Epic for very inspiring and helpful tutorials!
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Rating&amp;action=edit&amp;redlink=1" class="new" title="Template:Rating (page does not exist)">Template:Rating</a> (<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Rating&amp;action=edit" class="new" title="Template:Rating (page does not exist)">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=AI_Controlled_Butterfly_-_C%2B%2B_tutorial" title="AI Controlled Butterfly - C++ tutorial">AI Controlled Butterfly - C++ tutorial</a>.</p>
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=AI_Controlled_Butterfly_-_C%2B%2B_tutorial">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=AI_Controlled_Butterfly_-_C%2B%2B_tutorial</a>"						</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0fabd7d8c0a1277bf"><meta name="worker" content="188"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="https://mediawikiv2-website-prod05.ol.epicgames.net/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":94});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpcVlFA","queueTime":0,"applicationTime":126,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

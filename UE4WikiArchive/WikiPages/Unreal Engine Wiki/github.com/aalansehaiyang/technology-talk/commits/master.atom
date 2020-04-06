@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/aalansehaiyang/technology-talk/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/aalansehaiyang/technology-talk/commits/master.atom"/>
+  <title>Recent Commits to technology-talk:master</title>
+  <updated>2020-03-30T09:54:17Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5782f9fc5ef5d0be92c239d74bb8c8fa98dda6d1</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/5782f9fc5ef5d0be92c239d74bb8c8fa98dda6d1"/>
+    <title>
+        aa
+    </title>
+    <updated>2020-03-30T09:54:17Z</updated>
+    <media:thumbnail height="30" width="30" url="https://1.gravatar.com/avatar/8d35962bbe98eb065ae148c230237256?d=https%3A%2F%2Fgithub.githubassets.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=g&amp;s=30"/>
+    <author>
+      <name></name>
+      <email>onlyone@onlyonedeMacBook-Pro.local</email>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;aa&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8d3a70912284917e7a56675fdcf9d8ec7aa0e007</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/8d3a70912284917e7a56675fdcf9d8ec7aa0e007"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-02-24T09:13:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md
+
+up&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ba62204e484ccd580404f5c3961efc805bfd3fbb</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/ba62204e484ccd580404f5c3961efc805bfd3fbb"/>
+    <title>
+        a
+    </title>
+    <updated>2019-12-26T14:55:47Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;a&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7ef4e5fc396d67818d95fa6d0b2690fee106d202</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/7ef4e5fc396d67818d95fa6d0b2690fee106d202"/>
+    <title>
+        aa
+    </title>
+    <updated>2019-12-26T14:51:31Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;aa&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/056a51c4a45f4612126d7a1a51705b41b9071bf1</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/056a51c4a45f4612126d7a1a51705b41b9071bf1"/>
+    <title>
+        add
+    </title>
+    <updated>2019-12-26T14:23:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fd5cbdc0ac8aa9eb1973443e84cecac444e7b25a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/fd5cbdc0ac8aa9eb1973443e84cecac444e7b25a"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2019-12-23T10:44:59Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md
+
+add&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/990e610d5386eee54ab6151afb7ed72607f4693e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/990e610d5386eee54ab6151afb7ed72607f4693e"/>
+    <title>
+        add
+    </title>
+    <updated>2019-12-08T01:30:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/cff6a89824b24465eacd2841d2e00fd8dd319827</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/cff6a89824b24465eacd2841d2e00fd8dd319827"/>
+    <title>
+        add
+    </title>
+    <updated>2019-12-08T01:27:01Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/93e49e28558e5bdbe76bbf2ebfc66e550ddcc31f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/93e49e28558e5bdbe76bbf2ebfc66e550ddcc31f"/>
+    <title>
+        add
+    </title>
+    <updated>2019-12-08T01:25:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/43f1df24ec8524fd6bbd03fe03f07f8222ff82fd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/43f1df24ec8524fd6bbd03fe03f07f8222ff82fd"/>
+    <title>
+        add
+    </title>
+    <updated>2019-11-20T11:35:53Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/75b8090afc97cb3793d57c957e34b2697b713a0c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/75b8090afc97cb3793d57c957e34b2697b713a0c"/>
+    <title>
+        aa
+    </title>
+    <updated>2019-08-09T13:16:10Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;aa&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bb17c43a0b93fbfd073219f50f96a90676694704</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/bb17c43a0b93fbfd073219f50f96a90676694704"/>
+    <title>
+        微信公众号
+    </title>
+    <updated>2019-07-31T05:53:08Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;微信公众号&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/19180d7c82c80136cd591f8aa2c129d8ad698772</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/19180d7c82c80136cd591f8aa2c129d8ad698772"/>
+    <title>
+        新开微信公众号，欢迎交流
+    </title>
+    <updated>2019-07-30T10:55:09Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;新开微信公众号，欢迎交流&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3d05a36c68e4914d5fd380286ab29b32c5e3ea31</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/3d05a36c68e4914d5fd380286ab29b32c5e3ea31"/>
+    <title>
+        add
+    </title>
+    <updated>2019-04-20T09:03:25Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9ef1c79c1d68a5f57e3b1671ec15f0a3045ff9ea</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/9ef1c79c1d68a5f57e3b1671ec15f0a3045ff9ea"/>
+    <title>
+        aa
+    </title>
+    <updated>2019-03-09T00:18:38Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;aa&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8cc5febaaa868c82fa61b0bb6456995e5406a97a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/8cc5febaaa868c82fa61b0bb6456995e5406a97a"/>
+    <title>
+        kafka、kafka-manager
+    </title>
+    <updated>2018-12-30T16:24:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;kafka、kafka-manager&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0c05b3f012323163ff49fd917073b2fe07db2c5b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/0c05b3f012323163ff49fd917073b2fe07db2c5b"/>
+    <title>
+        技术大纲
+    </title>
+    <updated>2018-12-30T05:45:48Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;技术大纲&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/37ffec70069236a350d17e18bfd3ccee76b306a4</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/37ffec70069236a350d17e18bfd3ccee76b306a4"/>
+    <title>
+        快速排查线上问题
+    </title>
+    <updated>2018-12-23T03:17:23Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;快速排查线上问题&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/75328fa29c903f42eabc49d8858081690fafaebd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/75328fa29c903f42eabc49d8858081690fafaebd"/>
+    <title>
+        a
+    </title>
+    <updated>2018-12-20T03:53:10Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;a&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c21d5fee5faad46b361d5157dceddd75a286b6be</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aalansehaiyang/technology-talk/commit/c21d5fee5faad46b361d5157dceddd75a286b6be"/>
+    <title>
+        add
+    </title>
+    <updated>2018-12-19T05:48:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/3633925?s=30&amp;u=f7c92a5616923fa024750e39d03cb8d254839eff&amp;v=4"/>
+    <author>
+      <name>aalansehaiyang</name>
+      <uri>https://github.com/aalansehaiyang</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

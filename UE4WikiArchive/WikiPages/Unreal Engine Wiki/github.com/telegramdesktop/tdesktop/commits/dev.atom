@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/telegramdesktop/tdesktop/commits/dev</id>
+  <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commits/dev"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/telegramdesktop/tdesktop/commits/dev.atom"/>
+  <title>Recent Commits to tdesktop:dev</title>
+  <updated>2020-03-31T09:06:33Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/aae5024b281004f4b5b7583f427d24ace63f45db</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/aae5024b281004f4b5b7583f427d24ace63f45db"/>
+    <title>
+        Version 2.0.1.
+    </title>
+    <updated>2020-03-31T09:06:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Version 2.0.1.
+
+- Switch between folders using Ctrl+1, ..., Ctrl+8.
+- Fix crash when a pinned in folder chat was added to archive.
+- Fix font issues in Linux version.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/69d3414594c6541ebcdcf04e1edb626e5a7045ff</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/69d3414594c6541ebcdcf04e1edb626e5a7045ff"/>
+    <title>
+        Improve empty chat list layout.
+    </title>
+    <updated>2020-03-31T08:36:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Improve empty chat list layout.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9ef41062d316be092fbd07a4aef05eb076622556</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/9ef41062d316be092fbd07a4aef05eb076622556"/>
+    <title>
+        Ignore whitespaces in dice sending.
+    </title>
+    <updated>2020-03-30T19:53:10Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Ignore whitespaces in dice sending.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c2ff27793a56241135fde194256a2ebf7bc5ec90</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/c2ff27793a56241135fde194256a2ebf7bc5ec90"/>
+    <title>
+        Try to use Ctrl+1..Ctrl+8 for folders.
+    </title>
+    <updated>2020-03-30T19:34:07Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Try to use Ctrl+1..Ctrl+8 for folders.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2f7563767dc7214ec3c9a4d0c4d4b50e62c5927f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/2f7563767dc7214ec3c9a4d0c4d4b50e62c5927f"/>
+    <title>
+        Fix crash in archive / pinned in folder management.
+    </title>
+    <updated>2020-03-30T17:04:49Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix crash in archive / pinned in folder management.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f4822cf55894825b64dbdc4809ee49e0a5160c32</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/f4822cf55894825b64dbdc4809ee49e0a5160c32"/>
+    <title>
+        Version 2.0.
+    </title>
+    <updated>2020-03-30T12:56:15Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Version 2.0.
+
+- Organize chats into Chat Folders if you have too many chats.
+- Create custom folders with flexible settings,
+or use default recommendations.
+- Pin an unlimited number of chats in each folder.
+- Switch between folders in the new side bar
+to easily access all of your chats.
+- Send :dice: to any chat to try your luck and get
+a random number from the animated dice.
+- Send :virus:, :face_with_thermometer:, :mask:,
+:face_with_head_bandage:, :sneeze:, :sick:, :soap: or :ambulance:
+to try out the new animated emoji.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8c6b5caa579abc5f3d94cd4121a8b2feb034b46c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/8c6b5caa579abc5f3d94cd4121a8b2feb034b46c"/>
+    <title>
+        Fix possible crash in inconsistent HistoryWidget state.
+    </title>
+    <updated>2020-03-30T12:43:09Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix possible crash in inconsistent HistoryWidget state.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/31ba2828af957fea804906d2e6ec50f5830a5d21</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/31ba2828af957fea804906d2e6ec50f5830a5d21"/>
+    <title>
+        Add a tooltip with information about the dice.
+    </title>
+    <updated>2020-03-30T11:21:16Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add a tooltip with information about the dice.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7b44d107c9d7cd134aba4b20c4846e663dbf6110</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/7b44d107c9d7cd134aba4b20c4846e663dbf6110"/>
+    <title>
+        Don&#39;t use default title if it doesn&#39;t fit.
+    </title>
+    <updated>2020-03-30T11:10:08Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Don&amp;#39;t use default title if it doesn&amp;#39;t fit.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2379812890b5e7f08c37b80375de6951de23061e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/2379812890b5e7f08c37b80375de6951de23061e"/>
+    <title>
+        Move add exceptions button to the top.
+    </title>
+    <updated>2020-03-30T11:00:50Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Move add exceptions button to the top.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/570ab663b7f5b974438a7d6f5fbeb07b91339043</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/570ab663b7f5b974438a7d6f5fbeb07b91339043"/>
+    <title>
+        Use cache for remembered last dice frames.
+    </title>
+    <updated>2020-03-30T10:57:14Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Use cache for remembered last dice frames.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2feaa85ed943b45647d0a04374879cd19df0af2b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/2feaa85ed943b45647d0a04374879cd19df0af2b"/>
+    <title>
+        Fix fontconfig fallback for snap.
+    </title>
+    <updated>2020-03-30T09:51:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix fontconfig fallback for snap.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/49111814e439b2e57733f463982455674c670be9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/49111814e439b2e57733f463982455674c670be9"/>
+    <title>
+        Add fallback codepath for QSaveFile::open failure.
+    </title>
+    <updated>2020-03-30T09:46:58Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add fallback codepath for QSaveFile::open failure.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0d58f1c9fa5be2934ae59c71b62e4a261d914b30</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/0d58f1c9fa5be2934ae59c71b62e4a261d914b30"/>
+    <title>
+        Try system font config once in snap build.
+    </title>
+    <updated>2020-03-30T08:18:50Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Try system font config once in snap build.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/86b9927965fb08ace10c3b937fecd808722441ff</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/86b9927965fb08ace10c3b937fecd808722441ff"/>
+    <title>
+        Log global menu usage
+    </title>
+    <updated>2020-03-29T10:17:11Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/17829319?s=30&amp;u=1751946fd35c376bd9de7b426d99aac8e0939f49&amp;v=4"/>
+    <author>
+      <name>ilya-fedin</name>
+      <uri>https://github.com/ilya-fedin</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Log global menu usage&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/aa4968faaa98ed5e72d8c6bee8316a0ee2ff300a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/aa4968faaa98ed5e72d8c6bee8316a0ee2ff300a"/>
+    <title>
+        Re-use fontconfig fallback code in snap
+    </title>
+    <updated>2020-03-29T10:14:56Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/17829319?s=30&amp;u=1751946fd35c376bd9de7b426d99aac8e0939f49&amp;v=4"/>
+    <author>
+      <name>ilya-fedin</name>
+      <uri>https://github.com/ilya-fedin</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Re-use fontconfig fallback code in snap&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bdde198f52113069eb5260734658f7621387c5ab</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/bdde198f52113069eb5260734658f7621387c5ab"/>
+    <title>
+        Add AV1 support to snap
+    </title>
+    <updated>2020-03-29T10:14:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/17829319?s=30&amp;u=1751946fd35c376bd9de7b426d99aac8e0939f49&amp;v=4"/>
+    <author>
+      <name>ilya-fedin</name>
+      <uri>https://github.com/ilya-fedin</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add AV1 support to snap&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c89c98183de55b92694910b423f2f370b901b564</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/c89c98183de55b92694910b423f2f370b901b564"/>
+    <title>
+        Handle some updates even while not authed.
+    </title>
+    <updated>2020-03-29T10:06:10Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Handle some updates even while not authed.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c209aedb22a1c612f868112e65253aa9160db39c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/c209aedb22a1c612f868112e65253aa9160db39c"/>
+    <title>
+        Fix dice animating to the last frame.
+    </title>
+    <updated>2020-03-29T09:47:07Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix dice animating to the last frame.
+
+I hope this fixes #7465.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/90a1cea5159300b8d34aa8f92496075ab5efaa8e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/telegramdesktop/tdesktop/commit/90a1cea5159300b8d34aa8f92496075ab5efaa8e"/>
+    <title>
+        Fix forwarded dice size.
+    </title>
+    <updated>2020-03-29T09:35:14Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/17900494?s=30&amp;v=4"/>
+    <author>
+      <name>john-preston</name>
+      <uri>https://github.com/john-preston</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix forwarded dice size.
+
+Fixes #7472.&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

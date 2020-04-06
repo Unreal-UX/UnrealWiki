@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/davinirjr/Unreal.js/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/davinirjr/Unreal.js/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/davinirjr/Unreal.js/releases.atom"/>
+  <title>Release notes from Unreal.js</title>
+  <updated>2015-11-24T15:55:57Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/46821867/prebuilt-win64-ustruct-crash-fix</id>
+    <updated>2015-11-24T15:55:57Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/davinirjr/Unreal.js/releases/tag/prebuilt-win64-ustruct-crash-fix"/>
+    <title>prebuilt-win64-ustruct-crash-fix: Merge pull request #10 from ncsoft/UStructCrashFix</title>
+    <content type="html">&lt;p&gt;GC bug fix&lt;/p&gt;</content>
+    <author>
+      <name>nakosung</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/46821867/v8-msvc2015</id>
+    <updated>2015-11-20T04:10:03Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/davinirjr/Unreal.js/releases/tag/v8-msvc2015"/>
+    <title>v8-msvc2015</title>
+    <content type="html">&lt;p&gt;initial commit&lt;/p&gt;</content>
+    <author>
+      <name>nakosung</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/46821867/v8-msvc2013</id>
+    <updated>2015-11-20T04:48:23Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/davinirjr/Unreal.js/releases/tag/v8-msvc2013"/>
+    <title>v8-msvc2013</title>
+    <content type="html">&lt;p&gt;Merge branch &#39;master&#39; of &lt;a href=&quot;https://github.com/ncsoft/Unreal.js&quot;&gt;https://github.com/ncsoft/Unreal.js&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>nakosung</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/46821867/prebuilt-win64</id>
+    <updated>2015-11-20T09:35:59Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/davinirjr/Unreal.js/releases/tag/prebuilt-win64"/>
+    <title>prebuilt-win64</title>
+    <content type="html">&lt;p&gt;Merge branch &#39;master&#39; of &lt;a href=&quot;https://github.com/ncsoft/Unreal.js&quot;&gt;https://github.com/ncsoft/Unreal.js&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>nakosung</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=60&amp;v=4"/>
+  </entry>
+</feed>

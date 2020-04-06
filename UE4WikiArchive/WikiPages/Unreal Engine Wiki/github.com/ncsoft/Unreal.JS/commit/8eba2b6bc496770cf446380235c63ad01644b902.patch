@@ -1,0 +1,48 @@
+From 8eba2b6bc496770cf446380235c63ad01644b902 Mon Sep 17 00:00:00 2001
+From: hyeoncheol cho <crocuis@gmail.com>
+Date: Mon, 15 Feb 2016 09:30:56 +0900
+Subject: [PATCH] fix exception
+
+---
+ .../UnrealJS/Source/V8/Private/Exception.h    | 25 +++++++++++--------
+ 1 file changed, 14 insertions(+), 11 deletions(-)
+
+diff --git a/Plugins/UnrealJS/Source/V8/Private/Exception.h b/Plugins/UnrealJS/Source/V8/Private/Exception.h
+index 11e9d97..739d49d 100644
+--- a/Plugins/UnrealJS/Source/V8/Private/Exception.h
++++ b/Plugins/UnrealJS/Source/V8/Private/Exception.h
+@@ -16,20 +16,23 @@ struct FV8Exception
+ 		}
+ 		else
+ 		{
+-			auto filename = StringFromV8(message->GetScriptResourceName());
+-			auto linenum = message->GetLineNumber();
+-			auto line = StringFromV8(message->GetSourceLine());			
++			if (!exception.IsEmpty())
++			{
++				auto filename = StringFromV8(message->GetScriptResourceName());
++				auto linenum = message->GetLineNumber();
++				auto line = StringFromV8(message->GetSourceLine());
+ 
+-			UE_LOG(Javascript, Error, TEXT("%s:%d: %s"), *filename, linenum, *exception);
++				UE_LOG(Javascript, Error, TEXT("%s:%d: %s"), *filename, linenum, *exception);
+ 
+-			auto stack_trace = StringFromV8(try_catch.StackTrace());
+-			if (stack_trace.Len() > 0)
+-			{
+-				TArray<FString> Lines;
+-				stack_trace.ParseIntoArrayLines(Lines);
+-				for (const auto& line : Lines)
++				auto stack_trace = StringFromV8(try_catch.StackTrace());
++				if (stack_trace.Len() > 0)
+ 				{
+-					UE_LOG(Javascript, Error, TEXT("%s"), *line);
++					TArray<FString> Lines;
++					stack_trace.ParseIntoArrayLines(Lines);
++					for (const auto& line : Lines)
++					{
++						UE_LOG(Javascript, Error, TEXT("%s"), *line);
++					}
+ 				}
+ 			}
+ 		}

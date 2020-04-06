@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/linguist/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/linguist/commits/master.atom"/>
+  <title>Recent Commits to linguist:master</title>
+  <updated>2020-03-19T15:09:06Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/40992ba7f86889f80dfed3ba95e11e1082200bad</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/40992ba7f86889f80dfed3ba95e11e1082200bad"/>
+    <title>
+        Release v7.9.0 (#4816)
+    </title>
+    <updated>2020-03-19T15:09:06Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/627280?s=30&amp;u=5f3a2c4901b73127cab65c8ea965fbbdab5a9de4&amp;v=4"/>
+    <author>
+      <name>lildude</name>
+      <uri>https://github.com/lildude</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Release v7.9.0 (#4816)
+
+* Prepare 7.9.0 release
+
+* Put back the v7.8.0 version
+
+We need this to ensure the versioning used during testing on GitHub.com doesn&amp;#39;t cause caching problems in future
+
+* fix errors on non-UTF-8 encodings
+
+Some files failed with &amp;quot;invalid byte sequence in UTF-8 (ArgumentError)&amp;quot;
+when BlobHelper#lines was called. Some problematic files include
+UTF-16LE samples such as test/fixtures/Data/utf16le.
+
+Errors were not present when computing stats from git repositories,
+since git blobs are always read as ASCII-8BIT and that was working
+correctly. However, when using FileBlob, encoding could be ASCII-8BIT,
+UTF-8 or other, depending on the runtime value of Encoding.external_encoding.
+
+Tests were not catching the error since they were forcing
+Encoding.external_encoding to be ASCII-8BIT (introduced in #1211). So the
+error would only be seen in wild usage (see issue #353).
+
+This commit forces ASCII-8BIT on File.read calls. The error is still
+present if using memory blobs with other encodings.
+
+* Decrease expected error count
+
+* Set version to 7.9.0
+
+Co-authored-by: Rick Winfrey &amp;lt;rewinfrey@github.com&amp;gt;
+Co-authored-by: Santiago M. Mola &amp;lt;santi@mola.io&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f5125ea31eacab74a9e934f3f60d27c4c63537cf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/f5125ea31eacab74a9e934f3f60d27c4c63537cf"/>
+    <title>
+        Detect go files as generated according to official rules (#4821)
+    </title>
+    <updated>2020-03-17T18:16:21Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/17709867?s=30&amp;u=f98c9a26b43c456c19dd7ffbb756de0ed2e111cb&amp;v=4"/>
+    <author>
+      <name>ernestas2k</name>
+      <uri>https://github.com/ernestas2k</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Detect go files as generated according to official rules (#4821)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/96ca71ab99c2f9928d5d69f4c08fd2a51440d045</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/96ca71ab99c2f9928d5d69f4c08fd2a51440d045"/>
+    <title>
+        Update Dart grammar (#4820)
+    </title>
+    <updated>2020-03-16T14:02:19Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/13644170?s=30&amp;u=958e9b6a2a0088f859512c19662bc08ffc13b63d&amp;v=4"/>
+    <author>
+      <name>mit-mit</name>
+      <uri>https://github.com/mit-mit</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update Dart grammar (#4820)
+
+* Update Dart grammar
+
+* Update yml
+
+* Updated readme (from script/list-grammars)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7a7f01f88017149cb3b58e04c1c8ac9d3c87df2f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/7a7f01f88017149cb3b58e04c1c8ac9d3c87df2f"/>
+    <title>
+        fix errors on non-UTF-8 encodings (#4730)
+    </title>
+    <updated>2020-03-16T13:59:04Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/23248?s=30&amp;u=8cfbe7885117ee1678cb97ecfe8bbfb40399b7e0&amp;v=4"/>
+    <author>
+      <name>smola</name>
+      <uri>https://github.com/smola</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix errors on non-UTF-8 encodings (#4730)
+
+Some files failed with &amp;quot;invalid byte sequence in UTF-8 (ArgumentError)&amp;quot;
+when BlobHelper#lines was called. Some problematic files include
+UTF-16LE samples such as test/fixtures/Data/utf16le.
+
+Errors were not present when computing stats from git repositories,
+since git blobs are always read as ASCII-8BIT and that was working
+correctly. However, when using FileBlob, encoding could be ASCII-8BIT,
+UTF-8 or other, depending on the runtime value of Encoding.external_encoding.
+
+Tests were not catching the error since they were forcing
+Encoding.external_encoding to be ASCII-8BIT (introduced in #1211). So the
+error would only be seen in wild usage (see issue #353).
+
+This commit forces ASCII-8BIT on File.read calls. The error is still
+present if using memory blobs with other encodings.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f0e2d0d7f1ce600b2a5acccaef6b149c87d8b99c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/f0e2d0d7f1ce600b2a5acccaef6b149c87d8b99c"/>
+    <title>
+        Add support for Nessus Attack Scripting Language (#4792)
+    </title>
+    <updated>2020-03-11T10:03:14Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/8716254?s=30&amp;u=a93899fba0f6dbcc2d1dcd470770f9b11fc63d51&amp;v=4"/>
+    <author>
+      <name>tchatard</name>
+      <uri>https://github.com/tchatard</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add support for Nessus Attack Scripting Language (#4792)
+
+* Adding support for NASL (Nessus Attack Scripting Language) from Tenable Network Security, Inc.
+
+* Addressing review comments:
+- Nasl --&amp;gt; NASL
+- Adding heuristics with matching samples
+
+* Addressing more review comments:
+- more relevant samples
+- no named pattern for heuristic (+ improved regex)
+
+* Addressing review comments about heuristic regex&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/59c5ce52b7cd3db726120ca49aaad5ef9178bc54</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/59c5ce52b7cd3db726120ca49aaad5ef9178bc54"/>
+    <title>
+        Use newest .gitattributes SHA from test/attributes branch (#4815)
+    </title>
+    <updated>2020-03-10T15:25:38Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/627280?s=30&amp;u=5f3a2c4901b73127cab65c8ea965fbbdab5a9de4&amp;v=4"/>
+    <author>
+      <name>lildude</name>
+      <uri>https://github.com/lildude</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Use newest .gitattributes SHA from test/attributes branch (#4815)
+
+* Use newest .gitattributes SHA from test/attributes branch
+
+* Update comment
+
+* Update to merge SHA&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7b805b65bf49a9b3dc1b96f14b1778435853f887</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/7b805b65bf49a9b3dc1b96f14b1778435853f887"/>
+    <title>
+        Add Haxe generated source detection (#4808)
+    </title>
+    <updated>2020-03-10T11:25:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/2620907?s=30&amp;u=845dc8cfd06f49498a9582d9c9aa4e300712da6f&amp;v=4"/>
+    <author>
+      <name>Gama11</name>
+      <uri>https://github.com/Gama11</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add Haxe generated source detection (#4808)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/506e0131fe0a19d7b419c0e15f1b1daae85dacdf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/506e0131fe0a19d7b419c0e15f1b1daae85dacdf"/>
+    <title>
+        Add syntax highlighting to Yarn lockfiles (#4761)
+    </title>
+    <updated>2020-03-10T11:02:48Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/1037931?s=30&amp;u=c65e38b238c406ff7eb8e67efecce2d6c021c76c&amp;v=4"/>
+    <author>
+      <name>arcanis</name>
+      <uri>https://github.com/arcanis</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add syntax highlighting to Yarn lockfiles (#4761)
+
+* Adds proper highlighting for Yarn&amp;#39;s lockfile
+
+* Adds samples
+
+* Moves the Yarn 2 lockfile to filenames
+
+* Optimizes the yarn.lock content&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/cfa5f7314cad365e46a62b6007c649127e8f2783</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/cfa5f7314cad365e46a62b6007c649127e8f2783"/>
+    <title>
+        Register `.luacheckrc` as a Lua filename (#4794)
+    </title>
+    <updated>2020-03-10T10:18:18Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2346707?s=30&amp;u=bd0eb4f21fd0eb6fb74043f803b1edb6c54f488a&amp;v=4"/>
+    <author>
+      <name>Alhadis</name>
+      <uri>https://github.com/Alhadis</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Register `.luacheckrc` as a Lua filename (#4794)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/743107dd463e81d18d8fdff49f34871a26b4d639</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/743107dd463e81d18d8fdff49f34871a26b4d639"/>
+    <title>
+        Add syntax highlighting for PlantUML (#4740)
+    </title>
+    <updated>2020-03-10T10:18:03Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/10199495?s=30&amp;u=cb04588f35a34d0fd81b4a02ca5d75676db5dc0c&amp;v=4"/>
+    <author>
+      <name>karlwbrown</name>
+      <uri>https://github.com/karlwbrown</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add syntax highlighting for PlantUML (#4740)
+
+* Created initial cut at syntax highlighting changes
+for PlantUML, a popular diagram markup language
+
+* Update color
+
+* Trying another color - this time background color used in most plantUML diagrams
+
+* Trying very light green
+
+* Update vendor/licenses/grammar/vscode-plantuml.txt
+
+Co-Authored-By: Colin Seymour &amp;lt;colin@github.com&amp;gt;
+
+* Added 2 plantuml samples each for iuml, pu, and wsd
+
+* Added heuristics for plantuml files
+
+* Remove .pu, .wsd, mark as data
+
+* Removed .pu and .wsd from heuristics file
+
+* Undo changes to heuristics
+
+* Add another iuml example
+
+Co-authored-by: Colin Seymour &amp;lt;colin@github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/85d85a9ec58723c936cdea628cc6ae4f16513a34</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/85d85a9ec58723c936cdea628cc6ae4f16513a34"/>
+    <title>
+        Add OpenQASM support (#4796)
+    </title>
+    <updated>2020-03-10T10:10:53Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/24778804?s=30&amp;u=3ecdf579fc3a64a3efbd75089d0d8a50ecf7bc78&amp;v=4"/>
+    <author>
+      <name>neelkamath</name>
+      <uri>https://github.com/neelkamath</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add OpenQASM support (#4796)
+
+* Add OpenQASM support
+
+* Add grammar
+
+* Update submodules&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2a81510cc8bea5929d13e11ad5e0fb96f7e27041</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/2a81510cc8bea5929d13e11ad5e0fb96f7e27041"/>
+    <title>
+        Add `.jsonc` extension (#4797)
+    </title>
+    <updated>2020-03-10T10:08:38Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/9750687?s=30&amp;u=a508469d26b58d53fd195e27a04c9824344232c5&amp;v=4"/>
+    <author>
+      <name>nathanshelly</name>
+      <uri>https://github.com/nathanshelly</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add `.jsonc` extension (#4797)
+
+* Add `.jsonc` extension
+
+* Replace sample with real-world example&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/69bd5e6bf8696812f2f7c8af5288beec4e803502</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/69bd5e6bf8696812f2f7c8af5288beec4e803502"/>
+    <title>
+        Add CodeQL language (#4805)
+    </title>
+    <updated>2020-03-09T19:27:24Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/941226?s=30&amp;u=1c0910914fe58bc25bf12e8719d24c4b0be6950d&amp;v=4"/>
+    <author>
+      <name>rewinfrey</name>
+      <uri>https://github.com/rewinfrey</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add CodeQL language (#4805)
+
+* Add QL to language.yml
+
+* Vendor QL grammar and update ids
+
+* Add QL sample
+
+* Update samples to include their source link and license information
+
+* Update order of QL in language list
+
+* Correct order of QL in language list
+
+* Add qll samples
+
+* Update QL grammar
+
+* Rename from QL to CodeQL
+
+* Remove duplicate alias; not case-sensitive
+
+* Missed this alias
+
+* Fix vendor/README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/707158ecd1beab533ac3cfd77a532591b0947baf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/707158ecd1beab533ac3cfd77a532591b0947baf"/>
+    <title>
+        Make shebang detection cheaper (#4806)
+    </title>
+    <updated>2020-02-28T23:55:04Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/3124?s=30&amp;v=4"/>
+    <author>
+      <name>tenderlove</name>
+      <uri>https://github.com/tenderlove</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Make shebang detection cheaper (#4806)
+
+* Make shebang detection cheaper
+
+String#lines can potentially allocate *many* strings depending on the
+number of newlines in the string.  That might be OK if the file we&amp;#39;re
+looking at is actually a file with a shebang in it (because we might
+eventually use every line).  But it is not OK when the file isn&amp;#39;t a
+shebang file because we end up allocating many objects for no reason.
+
+This commit reduces the number of allocations it takes to determine
+whether or not the string is interesting to the Shebang class.
+
+Here is a benchmark:
+
+```ruby
+require &amp;quot;linguist/shebang&amp;quot;
+
+def allocs
+  x = GC.stat(:total_allocated_objects)
+  yield
+  GC.stat(:total_allocated_objects) - x
+end
+
+file = &amp;quot;foo\n&amp;quot; * 1000
+
+p allocs {
+  Linguist::Shebang.interpreter(file)
+}
+```
+
+Before this commit:
+
+```
+$ bundle _1.17.2_ exec ruby -I lib:test thing.rb
+1003
+```
+
+After this commit:
+
+```
+$ bundle _1.17.2_ exec ruby -I lib:test thing.rb
+2
+```
+
+* Update lib/linguist/shebang.rb
+
+Co-Authored-By: John Hawthorn &amp;lt;john@hawthorn.email&amp;gt;
+
+* File might not have a line ending
+
+File might not have a line ending so this won&amp;#39;t match
+
+* reduce allocations even more
+
+Co-authored-by: John Hawthorn &amp;lt;john@hawthorn.email&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b545f1c6befe87c2074e5e608f47ca0f6334d355</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/b545f1c6befe87c2074e5e608f47ca0f6334d355"/>
+    <title>
+        Remove @kivikakk from CONTRIBUTORS.md (#4798)
+    </title>
+    <updated>2020-02-19T07:45:52Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/1915?s=30&amp;u=ebd6f93fb5ab9cf290fa338f850328e96e41a117&amp;v=4"/>
+    <author>
+      <name>kivikakk</name>
+      <uri>https://github.com/kivikakk</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Remove @kivikakk from CONTRIBUTORS.md (#4798)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0a7455166b14b0ba9b46deabdff5603592f737f7</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/0a7455166b14b0ba9b46deabdff5603592f737f7"/>
+    <title>
+        Bump version string to v7.8.0 (#4788)
+    </title>
+    <updated>2020-01-29T18:10:17Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/627280?s=30&amp;u=5f3a2c4901b73127cab65c8ea965fbbdab5a9de4&amp;v=4"/>
+    <author>
+      <name>lildude</name>
+      <uri>https://github.com/lildude</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump version string to v7.8.0 (#4788)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0f6ccc510489cebd178f40db1e8f84e3acaa9650</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/0f6ccc510489cebd178f40db1e8f84e3acaa9650"/>
+    <title>
+        Release v7.8.0 (#4787)
+    </title>
+    <updated>2020-01-29T10:18:47Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/627280?s=30&amp;u=5f3a2c4901b73127cab65c8ea965fbbdab5a9de4&amp;v=4"/>
+    <author>
+      <name>lildude</name>
+      <uri>https://github.com/lildude</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Release v7.8.0 (#4787)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/25d8cf809805d23af52368c76b4257fd0596fc7d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/25d8cf809805d23af52368c76b4257fd0596fc7d"/>
+    <title>
+        Enable soft-wrapping in Roff documents (#4786)
+    </title>
+    <updated>2020-01-29T07:34:24Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2346707?s=30&amp;u=bd0eb4f21fd0eb6fb74043f803b1edb6c54f488a&amp;v=4"/>
+    <author>
+      <name>Alhadis</name>
+      <uri>https://github.com/Alhadis</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Enable soft-wrapping in Roff documents (#4786)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c51a594581b77132866b15d90fbd442a7d0d43d9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/c51a594581b77132866b15d90fbd442a7d0d43d9"/>
+    <title>
+        Add support to  4D language (#4767)
+    </title>
+    <updated>2020-01-28T08:35:42Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/13737185?s=30&amp;u=15c5dbf186b43b9115b7392619b41ca4ac31e534&amp;v=4"/>
+    <author>
+      <name>ayoubserti</name>
+      <uri>https://github.com/ayoubserti</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add support to  4D language (#4767)
+
+* add .4dm extensons
+
+* no language for the moment
+
+* change the source of syntax highlighting for Agda (#4768)
+
+* Add interpreters &amp;#39;csh&amp;#39; and &amp;#39;tcsh&amp;#39; for language &amp;#39;Tcsh&amp;#39; (#4760)
+
+* Update languages.yml
+
+* Create regtest_nmmnest.csh
+
+Source: https://github.com/barlage/WRF-kill/blob/master/tools/regtest_nmmnest.csh
+
+* Register `.bibtex` as a BibTeX file-extension (#4764)
+
+* Register `.dof` as an INI file-extension (#4766)
+
+* Register `.epsi` as a PostScript file-extension (#4763)
+
+* Add common extensions to Motorola 68k Assembly (#4637)
+
+* Add common extensions to Motorola 68k
+
+* Revert ACE mode for m68k assembly
+
+* Add heuristics for Motorola 68K Assembly
+
+* Add SWIG language and `.i` Assembly extension
+
+Co-authored-by: John Gardner &amp;lt;gardnerjohng@gmail.com&amp;gt;
+
+* Add file extension for SnakeMake (#3953)
+
+* Add file extension for SnakeMake
+
+Previously a file name was defined for [SnakeMake[(snakemake-wrappers.readthedocs.io): https://github.com/github/linguist/pull/1834
+
+Currently, the canonical extension is `smk` (see [this discussion](https://groups.google.com/forum/#!topic/Snakemake/segLE-RlV_s) with the author (@johanneskoester) of SnakeMake, and the [FAQ](http://snakemake.readthedocs.io/en/stable/project_info/faq.html#how-do-i-enable-syntax-highlighting-in-vim-for-snakefiles)).
+
+* Adding two Snakemake (smk) example files
+
+* add .4dm extensons
+
+* no language for the moment
+
+* add lang-4d tmLanguage
+
+* link syntax highliting
+
+* typo
+
+Co-authored-by: Guillaume Brunerie &amp;lt;guillaume.brunerie+github@gmail.com&amp;gt;
+Co-authored-by: friedc &amp;lt;52925889+friedc@users.noreply.github.com&amp;gt;
+Co-authored-by: John Gardner &amp;lt;gardnerjohng@gmail.com&amp;gt;
+Co-authored-by: Iggy Drougge &amp;lt;idrougge@mac.com&amp;gt;
+Co-authored-by: Nils Homer &amp;lt;nh13@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/857bbfbdd72dd21efd79041319860c0e090a9584</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/linguist/commit/857bbfbdd72dd21efd79041319860c0e090a9584"/>
+    <title>
+        improve GLSL classification (#4692)
+    </title>
+    <updated>2020-01-27T06:14:53Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/23248?s=30&amp;u=8cfbe7885117ee1678cb97ecfe8bbfb40399b7e0&amp;v=4"/>
+    <author>
+      <name>smola</name>
+      <uri>https://github.com/smola</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;improve GLSL classification (#4692)
+
+* added extensions .gs, .comp and .glslf.
+  See: https://stackoverflow.com/q/6432838
+
+* add disambiguation rule for .gs files:
+  if it starts with `#version &amp;lt;number&amp;gt;`, it&amp;#39;s GLSL.
+  This seems to work for most GLSL files with few exceptions
+  that are catched by the classifier.
+
+* added sample extrude_normal.gs from kyle-piddington/ShaderTool
+  (licensed under MIT):
+  https://github.com/kyle-piddington/ShaderTool/blob/c753a53bde6eab942da617adab9483c945f27f51/assets/shaders/extrude_normals.gs
+
+* added sample blend_120.glslf from gfx-rs/gfx (licensed under
+  Apache 2.0):
+  https://github.com/gfx-rs/gfx/blob/7b084cfbb95e3e4d1ea51e91746fc75b2efb3be3/examples/blend/shader/blend_120.glslf
+
+* test_heuristics.rb now supports alt_name to ake a different file name
+for a fixture.&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

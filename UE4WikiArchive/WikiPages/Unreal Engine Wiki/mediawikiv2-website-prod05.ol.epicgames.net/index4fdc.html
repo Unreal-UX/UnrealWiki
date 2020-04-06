@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Creating_a_Skeletal_Mesh_in_Blender by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:30:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>Creating a Skeletal Mesh in Blender - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Creating_a_Skeletal_Mesh_in_Blender","wgTitle":"Creating a Skeletal Mesh in Blender","wgCurRevisionId":229,"wgRevisionId":229,"wgArticleId":114,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials","Community Created Content"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Creating_a_Skeletal_Mesh_in_Blender","wgRelevantArticleId":114,"wgRequestId":"814d55dc13d30a6aef5f0e8e","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Creating_a_Skeletal_Mesh_in_Blender rootpage-Creating_a_Skeletal_Mesh_in_Blender skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-08a23efcd19f60be7"><meta name="worker" content="80"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Creating_a_Skeletal_Mesh_in_Blender by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:30:04 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Creating+a+Skeletal+Mesh+in+Blender" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="index.html" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="index4fdc.html?title=Creating_a_Skeletal_Mesh_in_Blender" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="index909d.html?title=Talk:Creating_a_Skeletal_Mesh_in_Blender&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="index4fdc.html?title=Creating_a_Skeletal_Mesh_in_Blender">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="index60b0.html?title=Creating_a_Skeletal_Mesh_in_Blender&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="index1fa4.html?title=Creating_a_Skeletal_Mesh_in_Blender&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Creating a Skeletal Mesh in Blender</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><a href="index5e77.html?title=Template:Rating&amp;action=edit&amp;redlink=1" class="new" title="Template:Rating (page does not exist)">Template:Rating</a>
+<a href="index7615.html?title=Template:Note&amp;action=edit&amp;redlink=1" class="new" title="Template:Note (page does not exist)">Template:Note</a>
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Caveats"><span class="tocnumber">2</span> <span class="toctext">Caveats</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Versions"><span class="tocnumber">3</span> <span class="toctext">Versions</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Assets"><span class="tocnumber">4</span> <span class="toctext">Assets</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#TL.3BDR._Just_Give_me_Some_Pointers"><span class="tocnumber">5</span> <span class="toctext">TL;DR. Just Give me Some Pointers</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Creating_a_Skeletal_Mesh.2C_Step-by-Step"><span class="tocnumber">6</span> <span class="toctext">Creating a Skeletal Mesh, Step-by-Step</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Creating_a_New_Scene"><span class="tocnumber">6.1</span> <span class="toctext">Creating a New Scene</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#Create_a_new_Project"><span class="tocnumber">6.1.1</span> <span class="toctext">Create a new Project</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Move_Default_Light_.26_Camera_to_own_Layer"><span class="tocnumber">6.1.2</span> <span class="toctext">Move Default Light &amp; Camera to own Layer</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Set_Scene_Scale_to_match_Unreal_Units"><span class="tocnumber">6.1.3</span> <span class="toctext">Set Scene Scale to match Unreal Units</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Rename_.26_Scale_Cube"><span class="tocnumber">6.1.4</span> <span class="toctext">Rename &amp; Scale Cube</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-12"><a href="#Creating_your_Model"><span class="tocnumber">6.2</span> <span class="toctext">Creating your Model</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Preparing_to_Model"><span class="tocnumber">6.2.1</span> <span class="toctext">Preparing to Model</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Model_Arm"><span class="tocnumber">6.2.2</span> <span class="toctext">Model Arm</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Model_Leg"><span class="tocnumber">6.2.3</span> <span class="toctext">Model Leg</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Mirror_to_Create_Body"><span class="tocnumber">6.2.4</span> <span class="toctext">Mirror to Create Body</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="#Model_Head"><span class="tocnumber">6.2.5</span> <span class="toctext">Model Head</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Subdivision_and_Smoothing"><span class="tocnumber">6.2.6</span> <span class="toctext">Subdivision and Smoothing</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#Thin-out_Model"><span class="tocnumber">6.2.7</span> <span class="toctext">Thin-out Model</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#Preparing_to_Make_Face"><span class="tocnumber">6.2.8</span> <span class="toctext">Preparing to Make Face</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#Make_the_Left_Eye"><span class="tocnumber">6.2.9</span> <span class="toctext">Make the Left Eye</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="#Mirror_the_Right_Eye"><span class="tocnumber">6.2.10</span> <span class="toctext">Mirror the Right Eye</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="#Make_a_Mouth"><span class="tocnumber">6.2.11</span> <span class="toctext">Make a Mouth</span></a></li>
+<li class="toclevel-3 tocsection-24"><a href="#Make_Buttons"><span class="tocnumber">6.2.12</span> <span class="toctext">Make Buttons</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-25"><a href="#Texturing_your_Model"><span class="tocnumber">6.3</span> <span class="toctext">Texturing your Model</span></a>
+<ul>
+<li class="toclevel-3 tocsection-26"><a href="#Getting_ready_to_Texture_Map"><span class="tocnumber">6.3.1</span> <span class="toctext">Getting ready to Texture Map</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#Apply_the_Cookie_Texture"><span class="tocnumber">6.3.2</span> <span class="toctext">Apply the Cookie Texture</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="#Apply_the_Candy_Texture"><span class="tocnumber">6.3.3</span> <span class="toctext">Apply the Candy Texture</span></a></li>
+<li class="toclevel-3 tocsection-29"><a href="#Getting_Ready_to_Create_Lightmap_UVs"><span class="tocnumber">6.3.4</span> <span class="toctext">Getting Ready to Create Lightmap UVs</span></a></li>
+<li class="toclevel-3 tocsection-30"><a href="#Add_Lightmap_UVs"><span class="tocnumber">6.3.5</span> <span class="toctext">Add Lightmap UVs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-31"><a href="#Exporting_a_Static_Mesh_.28Optional.29"><span class="tocnumber">6.4</span> <span class="toctext">Exporting a Static Mesh (Optional)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-32"><a href="#Export_Mesh_FBX"><span class="tocnumber">6.4.1</span> <span class="toctext">Export Mesh FBX</span></a></li>
+<li class="toclevel-3 tocsection-33"><a href="#Importing_into_UE4"><span class="tocnumber">6.4.2</span> <span class="toctext">Importing into UE4</span></a></li>
+<li class="toclevel-3 tocsection-34"><a href="#Creating_Materials_and_Assigning_Them"><span class="tocnumber">6.4.3</span> <span class="toctext">Creating Materials and Assigning Them</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-35"><a href="#Rigging_your_Model"><span class="tocnumber">6.5</span> <span class="toctext">Rigging your Model</span></a>
+<ul>
+<li class="toclevel-3 tocsection-36"><a href="#Preparing_to_Rig"><span class="tocnumber">6.5.1</span> <span class="toctext">Preparing to Rig</span></a></li>
+<li class="toclevel-3 tocsection-37"><a href="#Creating_the_Rig"><span class="tocnumber">6.5.2</span> <span class="toctext">Creating the Rig</span></a></li>
+<li class="toclevel-3 tocsection-38"><a href="#Skinning_the_Mesh_with_the_Rig"><span class="tocnumber">6.5.3</span> <span class="toctext">Skinning the Mesh with the Rig</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-39"><a href="#Animating_your_Model"><span class="tocnumber">6.6</span> <span class="toctext">Animating your Model</span></a>
+<ul>
+<li class="toclevel-3 tocsection-40"><a href="#Preparing_to_Animate"><span class="tocnumber">6.6.1</span> <span class="toctext">Preparing to Animate</span></a></li>
+<li class="toclevel-3 tocsection-41"><a href="#Your_First_Animation"><span class="tocnumber">6.6.2</span> <span class="toctext">Your First Animation</span></a></li>
+<li class="toclevel-3 tocsection-42"><a href="#Your_Second_Animation"><span class="tocnumber">6.6.3</span> <span class="toctext">Your Second Animation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-43"><a href="#Exporting_a_Skeletal_Mesh"><span class="tocnumber">6.7</span> <span class="toctext">Exporting a Skeletal Mesh</span></a>
+<ul>
+<li class="toclevel-3 tocsection-44"><a href="#Export_Skeletal_Mesh"><span class="tocnumber">6.7.1</span> <span class="toctext">Export Skeletal Mesh</span></a></li>
+<li class="toclevel-3 tocsection-45"><a href="#Import_Skeletal_Mesh"><span class="tocnumber">6.7.2</span> <span class="toctext">Import Skeletal Mesh</span></a></li>
+<li class="toclevel-3 tocsection-46"><a href="#Creating_Materials_and_Assigning_Them_2"><span class="tocnumber">6.7.3</span> <span class="toctext">Creating Materials and Assigning Them</span></a></li>
+<li class="toclevel-3 tocsection-47"><a href="#Import_Animations"><span class="tocnumber">6.7.4</span> <span class="toctext">Import Animations</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-48"><a href="#Troubleshooting"><span class="tocnumber">7</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class="toclevel-2 tocsection-49"><a href="#Help.21_Skeletal_Mesh_Import_Never_Ends.21"><span class="tocnumber">7.1</span> <span class="toctext">Help! Skeletal Mesh Import Never Ends!</span></a></li>
+<li class="toclevel-2 tocsection-50"><a href="#Help.21_My_Skeletal_Mesh_is_All_Spikey.21"><span class="tocnumber">7.2</span> <span class="toctext">Help! My Skeletal Mesh is All Spikey!</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-51"><a href="#Who_Wrote_this.3F"><span class="tocnumber">8</span> <span class="toctext">Who Wrote this?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>This tutorial is geared toward users who are new to Blender.  It is a step-by-step guide that will walk you through the steps needed to create a simple model and armature that can be imported into UE4 as an animated skeletal mesh.  I’m assuming some basic knowledge of UE4’s content browser and material setup.
+</p><p>This tutorial is based on the Gus the Gingebread man animation tutorial (<a rel="nofollow" class="external autonumber" href="http://wiki.blender.org/index.php/Doc:2.6/Manual/Your_First_Animation">[1]</a>) from the Blender Wiki. I’ve modified various parts of the tutorial to make the resulting model more UE4-friendly.
+</p><p>There is also a Video tutorial created by EPIC employee Kevin Vassey <a rel="nofollow" class="external free" href="https://www.youtube.com/watch?v=Ayp1lof0RJU">https://www.youtube.com/watch?v=Ayp1lof0RJU</a>
+</p>
+<h2><span class="mw-headline" id="Caveats">Caveats</span></h2>
+<p>I’m not a Blender expert, nor a 3D modeler/animator.  I’m a Programmer/Game Designer by trade, so don’t expect great art or an ideal workflow.  The best I can offer is making something that works.  Making it beautiful will have to be up to you!
+</p>
+<h2><span class="mw-headline" id="Versions">Versions</span></h2>
+<p>I last tested this tutorial with Blender 2.70a and Unreal Engine 4.2.1.
+</p>
+<h2><span class="mw-headline" id="Assets">Assets</span></h2>
+<p>You can download the Blender project file as well as the textures used in this tutorial here: 
+<a href="https://d26ilriwvtzlb.cloudfront.net/c/ce/UE4SkeletalMeshFromBlender.zip" class="internal" title="UE4SkeletalMeshFromBlender.zip">Media:UE4SkeletalMeshFromBlender.zip</a>
+</p>
+<h1><span class="mw-headline" id="TL.3BDR._Just_Give_me_Some_Pointers">TL;DR. Just Give me Some Pointers</span></h1>
+<p>Already know how to use Blender and just want some tips to have your model behave better in UE4? Well here you go:
+</p>
+<ul><li> Use the Scene Property tab, set your Units to Metric and Scale to 0.01. This will better match Blender Units to Unreal Units.</li>
+<li> Add a 2nd UV map to your model to serve as lightmap UVs in Unreal. Make sure UVs don’t overlap in the 2nd UV map. (They can overlap in your 1st UV map just fine.)</li>
+<li> You should have a single armature in your FBX that parents your mesh</li>
+<li> The armature should have one root bone from which all other bones are hierarchically connected</li>
+<li> You can use the Action Editor to organize multiple animations in one project</li>
+<li> You can use the F button to Force a reference to exist on an action in the Action Editor so it doesn’t disappear when closing your Blender project</li>
+<li> When exporting your FBX, select Armature &amp; Mesh and deselect the “Include Default Take” option</li>
+<li> When importing the FBX, you import into Unreal twice. First, you import the skeleton. Next, you import the animations and apply them to the skeleton you created.</li></ul>
+<h1><span class="mw-headline" id="Creating_a_Skeletal_Mesh.2C_Step-by-Step">Creating a Skeletal Mesh, Step-by-Step</span></h1>
+<p><a href="index7615.html?title=Template:Note&amp;action=edit&amp;redlink=1" class="new" title="Template:Note (page does not exist)">Template:Note</a>
+</p>
+<h2><span class="mw-headline" id="Creating_a_New_Scene">Creating a New Scene</span></h2>
+<h3><span class="mw-headline" id="Create_a_new_Project">Create a new Project</span></h3>
+<ul><li> With Blender open, press Ctrl+N then Enter to create a new project</li>
+<li> You should have a new scene with a light, a camera, and a cube</li></ul>
+<h3><span class="mw-headline" id="Move_Default_Light_.26_Camera_to_own_Layer">Move Default Light &amp; Camera to own Layer</span></h3>
+<ul><li> Select the Camera using RMB</li>
+<li> Use SHIFT + RMB to add the LIght to the selection</li>
+<li> Press M to bring up the Layer menu</li>
+<li> LMB on a layer on the right side of the pop-up menu</li>
+<li> Press enter to close the Layer menu</li></ul>
+<h3><span class="mw-headline" id="Set_Scene_Scale_to_match_Unreal_Units">Set Scene Scale to match Unreal Units</span></h3>
+<ul><li> Select the Scene Property tab with LMB</li>
+<li> Set Units to Metric</li>
+<li> Set Scale to 0.01</li></ul>
+<h3><span class="mw-headline" id="Rename_.26_Scale_Cube">Rename &amp; Scale Cube</span></h3>
+<ul><li> Select Cube with RMB</li>
+<li> Select Object Info Tab with LMB</li>
+<li> Rename "Cube" to "CookieMan"</li>
+<li> Select View -&gt; Front (or Numpad 1) to set camera to Front Ortho</li>
+<li> Use Mousewheel to zoom camera way out (until text below Front Ortho reads Meters)</li>
+<li> Press S to enter scaling mode</li>
+<li> Hold CTRL while moving mouse to scale cube by 100</li>
+<li> Once scale is 100, LMB to apply change</li>
+<li> Press CTRL + A to bring up Apply menu and select Scale</li></ul>
+<h2><span class="mw-headline" id="Creating_your_Model">Creating your Model</span></h2>
+<h3><span class="mw-headline" id="Preparing_to_Model">Preparing to Model</span></h3>
+<ul><li> Press TAB while mousing over 3D Window to switch to edit mode</li>
+<li> Select 'Subdivide' from Mesh Tools</li>
+<li> Press A to Unselect all vertices</li>
+<li> Toggle off "Limit selection to visible"</li>
+<li> Select all vertices on left with border select (B -&gt; drag-box -&gt; LMB)</li>
+<li> Delete vertices by pressing DEL then selecting Vertices from pop-up menu</li></ul>
+<h3><span class="mw-headline" id="Model_Arm">Model Arm</span></h3>
+<ul><li> B to border select, select upper 2 vertices on right side</li>
+<li> Press E to extrude</li>
+<li> Drag left 1 meter, hold CTRL to snap to grid borders, click LMB to apply</li>
+<li> Zoom in to 10 Centimeters distance</li>
+<li> E to extrude</li>
+<li> Drag left 50 cm, hold CTRL to snap, LMB to apply</li>
+<li> Press A to deselect</li></ul>
+<h3><span class="mw-headline" id="Model_Leg">Model Leg</span></h3>
+<ul><li> B to border select, select bottom 2 vertices</li>
+<li> E to extrude, click MMB to disable axis-lock</li>
+<li> Drag 1 meter down, 40 cm to right, hold CTRL to snap, LMB to apply</li>
+<li> E to extrude, click MMB to disable axis-lock</li>
+<li> Drag 80 cm down, 40 cm to right, hold CTRL to snap, LMB to apply</li>
+<li> E to extrude, click MMB to disable axis-lock</li>
+<li> Drag 20 cm down, 10 cm to right, hold CTRL to snap, LMB to apply</li></ul>
+<h3><span class="mw-headline" id="Mirror_to_Create_Body">Mirror to Create Body</span></h3>
+<ul><li> Tab in 3D window to return to Object Mode</li>
+<li> Select Modifier Tab</li>
+<li> Select Mirror modifier from Generate column</li>
+<li> Body should be mirrored nicely</li></ul>
+<h3><span class="mw-headline" id="Model_Head">Model Head</span></h3>
+<ul><li> Tab in 3D window to go to Edit Mode</li>
+<li> Press SHIFT + A to bring up add menu.  Select Cube from the pop-up menu</li>
+<li> Press G to 'grab' cube, press Z to lock to z-axis</li>
+<li> Move the cube up 180 cm, LMB to lock into position</li></ul>
+<h3><span class="mw-headline" id="Subdivision_and_Smoothing">Subdivision and Smoothing</span></h3>
+<ul><li> Tab in 3D window to go back to Object mode</li>
+<li> Select Modifier Tab</li>
+<li> Select Subdivision Surface modifier from Generate column</li>
+<li> Set View &amp; Render to 2</li>
+<li> Tab into Edit Mode</li>
+<li> Press A to de-select, then Press A to select all</li>
+<li> Press CTRL-F the Faces menu.  Select Shade Smooth</li>
+<li> Tab back to Object Mode</li></ul>
+<h3><span class="mw-headline" id="Thin-out_Model">Thin-out Model</span></h3>
+<ul><li> Hold MMB to rotate view and see model from various angles, notice that he's too fat depth-wise</li>
+<li> Press 'S' to scale, 'Y' to lock to y-axis</li>
+<li> Hold CTRL and move mouse to scale down to 0.4 on the Y axis</li>
+<li> Press CTRL + A to bring up Apply menu and select Scale</li></ul>
+<h3><span class="mw-headline" id="Preparing_to_Make_Face">Preparing to Make Face</span></h3>
+<ul><li> Create 2nd 3D Window by dragging from handle on corner of 3D Window</li>
+<li> View -&gt; Front to set one 3D Window to Front Ortho view</li>
+<li> Set Viewport shading to wireframe</li>
+<li> View -&gt; Right to set other 3D Window to Right Ortho view</li>
+<li> Set Viewport shading to wireframe</li>
+<li> Use SHIFT+RMB and Mousewheel to zoom &amp; center face in each of the views</li>
+<li> Probably useful to have one more view, so drag off the handle of a 3D window for a third window</li>
+<li> Use hold MMB and drag to rotate the perspective camera</li>
+<li> Set Viewport shading to Solid</li></ul>
+<h3><span class="mw-headline" id="Make_the_Left_Eye">Make the Left Eye</span></h3>
+<ul><li> LMB to place cursor in-between where the eyes will go on the head</li>
+<li> Press SHIFT + S to open the Snap menu. Select Cursor to Grid to align cursor</li>
+<li> Press SHIFT + A to open Add menu, select Mesh -&gt; UV Sphere</li>
+<li> Press F6 and set segments to 16, Press ESC to close the pop-up menu</li>
+<li> Tab in a 3D Window to go to Edit mode</li>
+<li> Press A to unselect all vertices</li>
+<li> Press B to and drag a box to boundary select the rear vertices of the sphere</li>
+<li> Tab back to Object Mode</li>
+<li> Press S then hold CTRL while moving the mouse to scale the sphere down to 0.2, left-click to apply</li>
+<li> In the Front viewport, press G to enter 'grab' mode, then X to lock to the X-axis</li>
+<li> Move the eye to the left of the face. Left-click to apply</li>
+<li> In the Right viewport, press G to enter 'grab' mode, then Y to lock to the Y-axis</li>
+<li> Move the eye to until it's properly embedded in the head. Left-click to apply</li></ul>
+<h3><span class="mw-headline" id="Mirror_the_Right_Eye">Mirror the Right Eye</span></h3>
+<ul><li> Tab to enter Edit mode</li>
+<li> Set the pivot point to 3D Cursor</li>
+<li> Press A to select all verts</li>
+<li> Press SHIFT+D to duplicate these verts. You will automatically be in 'grab' mode, so press ESC to leave 'grab' mode</li>
+<li> Press CTRL+M to start mirroring the duplicated verts, </li>
+<li> Press X to apply the mirror along the X-axis. Press Enter to apply the mirror operation</li>
+<li> Press A to unselect verts, press A again to select both the original and duplicated verts</li>
+<li> Press CTRL+F then select Smooth Shading</li>
+<li> Press CTRL+N to make normals consistent</li></ul>
+<h3><span class="mw-headline" id="Make_a_Mouth">Make a Mouth</span></h3>
+<ul><li> Tab back to Object Mode</li>
+<li> Left-click then SHIFT+S to place the 3D Cursor on the center of the face</li>
+<li> SHIFT+A, Mesh-&gt;UV Sphere</li>
+<li> Tab in a 3D Window to go to Edit mode</li>
+<li> Press S then hold CTRL while moving the mouse to scale the sphere down to 0.1, left-click to apply</li>
+<li> Press G to enter 'grab' mode and position the sphere to form the corner of the mouth</li>
+<li> Do the same in the Right viewport to make sure the depth of the sphere is correct</li>
+<li> Tab to Edit mode</li>
+<li> Press A to make sure all verts of the mouth sphere are selected</li>
+<li> Press ALT+R to apply the Spin tool</li>
+<li> In the Spin tool window, change Steps to 3</li>
+<li> Press A to unselect all vertices</li>
+<li> Press B to and drag a box to boundary select the rear vertices of the sphere</li>
+<li> Delete the rear vertices</li>
+<li> Press A to select all remaining vertices</li>
+<li> Press CTRL+F then select Smooth Shading</li>
+<li> CTRL+N to make normals consistent</li></ul>
+<h3><span class="mw-headline" id="Make_Buttons">Make Buttons</span></h3>
+<ul><li> SHIFT+A, Mesh-&gt;UV Sphere to create the first button</li>
+<li> Press S then hold CTRL while moving the mouse to scale the sphere down to 0.2, left-click to apply</li>
+<li> From the Front view, Press G, then Z to move the sphere down to the CookieMan's chest</li>
+<li> From the Right view, Press G, then Y to move the sphere into the CookieMan's chest</li>
+<li> Press A to unselect all vertices</li>
+<li> Press B to and drag a box to boundary select the rear vertices of the sphere</li>
+<li> Delete the rear vertices</li>
+<li> Press A to select all remaining vertices</li>
+<li> SHIFT+D to duplicate the verts, then Z to lock to the Z-axis</li>
+<li> Move the button down the CookieMan's body</li>
+<li> Do the same for one more button</li>
+<li> Press A then A again to select all remaining vertices</li>
+<li> Press CTRL+F then select Smooth Shading</li>
+<li> CTRL+N to make normals consistent</li></ul>
+<h2><span class="mw-headline" id="Texturing_your_Model">Texturing your Model</span></h2>
+<h3><span class="mw-headline" id="Getting_ready_to_Texture_Map">Getting ready to Texture Map</span></h3>
+<ul><li> Tab back to Object Mode</li>
+<li> Drag the handle of one of the 3D Windows up to the 3D Window above it, an arror should appear. The two windows will merge leaving only one.</li>
+<li> Set one 3D Window to Viewport Shading to Texture</li>
+<li> Set the other window to UV/Image Editor</li>
+<li> RMB to select CookieMan's body</li>
+<li> Select the Modifier Info tab</li>
+<li> Click the Apply button for the Subdivision and Mirror modifiers</li></ul>
+<h3><span class="mw-headline" id="Apply_the_Cookie_Texture">Apply the Cookie Texture</span></h3>
+<ul><li> Select the Texture Info Tab</li>
+<li> There should be a default texture entry, set the type to Image or Movie</li>
+<li> Open Cookie512.tga from the Image section of the Texture Info tab</li>
+<li> Under Mapping, set Coordinate to UV</li>
+<li> With the mouse over the 3D Window, press Tab to enter Edit mode</li>
+<li> RMB to select CookieMan's body</li>
+<li> Tab to Enter Edit Mode</li>
+<li> Press A to select all vertices</li>
+<li> Press U to open the Unwrap menu</li>
+<li> Select Smart UV Project then click OK to accept the default values</li>
+<li> In the UV/Image Editor, set the Image pulldown to Cookie512.tga</li>
+<li> Tab in the 3D Window to return to Object Mode</li></ul>
+<h3><span class="mw-headline" id="Apply_the_Candy_Texture">Apply the Candy Texture</span></h3>
+<ul><li> RMB to select the Eyes</li>
+<li> Go to the texture panel and create a texture entry if one doesn't already exist by clicking on the +New button</li>
+<li> Set the texture type to Image or Movie, then open Candy512.tga</li>
+<li> With the mouse over the 3D Window, press Tab to enter Edit mode</li>
+<li> Press A to select all vertices</li>
+<li> Press U to open the Unwrap menu</li>
+<li> Select Smart UV Project then click OK to accept the default values</li>
+<li> In the UV/Image Editor, set the Image pulldown to Candy512.tga</li>
+<li> In the image editor, select all the vertices by pressing A</li>
+<li> Press S then use the mouse to scale the faces and G to position them so they fit within the black square of the texture</li>
+<li> With the mouse over the 3D Window, press Tab to leave Edit Mode</li>
+<li> Select the Mouth mesh, tab to enter Edit mode, then repeat the above mapping process only using a white square this time</li>
+<li> Once the Mouth is mapped, it is time to do the same for the buttons</li>
+<li> This time, enter Edit mode first, press B and use boundary select to choose just the vertices of the top button</li>
+<li> Press U then Smart UV Project to set UV coordinates for just that button</li>
+<li> In the UV/Image editor, set Candy512.tga as before then scale/translate the coords to the red part of the texture</li>
+<li> Do the same for the middle and bottom buttons, placing them on the blue and green parts of the texture respectively</li></ul>
+<h3><span class="mw-headline" id="Getting_Ready_to_Create_Lightmap_UVs">Getting Ready to Create Lightmap UVs</span></h3>
+<ul><li> In the 3D Window, Tab to Object Mode</li>
+<li> RMB to select the Eyes, then SHIFT + RMB to add the CookieMan's body to the selection</li>
+<li> Press CTRL+J to merge the Eyes into the CookieMan mesh.  They are now the same object</li>
+<li> Press A to clear the selection</li>
+<li> RMB to select the Mouth, then SHIFT + RMB to add the CookieMan's body to the selection</li>
+<li> Press CTRL+J to merge the Mouth into the CookieMan mesh.</li>
+<li> Press A to clear the selection</li>
+<li> RMB to select the Buttons, then SHIFT + RMB to add the CookieMan's body to the selection</li>
+<li> Press CTRL+J to merge the Buttons into the CookieMan mesh.</li>
+<li> CookieMan should now consist of one mesh</li></ul>
+<h3><span class="mw-headline" id="Add_Lightmap_UVs">Add Lightmap UVs</span></h3>
+<ul><li> With CookieMan selected, click on the Object Data panel (little mesh triangle icon)</li>
+<li> Under the UV Maps tab, press the plus icon on the right to add a new UV map</li>
+<li> Name the new UV map "Lightmap"</li>
+<li> Make sure the new "Lightmap" UV Map is selected</li>
+<li> In the 3D Window, tab to Edit mode</li>
+<li> Press A to select all the vertices of Cookie map</li>
+<li> Press U, then select Smart UV Project</li>
+<li> In the UV/Image editor press CTRL+A, then CTRL+P to minimize overlap</li>
+<li> You should now have non-overlapping UV coordinates, you can change which UVs are displayed by selecting them in the Object Data panel's UV Maps section</li></ul>
+<h2><span class="mw-headline" id="Exporting_a_Static_Mesh_.28Optional.29">Exporting a Static Mesh (Optional)</span></h2>
+<h3><span class="mw-headline" id="Export_Mesh_FBX">Export Mesh FBX</span></h3>
+<ul><li> Select File-&gt;Export-&gt;Autodesk FBX</li>
+<li> In the Export FBX section, select Mesh only</li>
+<li> Click "Export FBX"</li></ul>
+<h3><span class="mw-headline" id="Importing_into_UE4">Importing into UE4</span></h3>
+<ul><li> Drag FBX into Content Browser</li>
+<li> Select Static Mesh</li></ul>
+<h3><span class="mw-headline" id="Creating_Materials_and_Assigning_Them">Creating Materials and Assigning Them</span></h3>
+<ul><li> Create Material</li>
+<li> Assign Textures</li></ul>
+<h2><span class="mw-headline" id="Rigging_your_Model">Rigging your Model</span></h2>
+<h3><span class="mw-headline" id="Preparing_to_Rig">Preparing to Rig</span></h3>
+<ul><li> Set one window to 3D View with Right Ortho View</li>
+<li> Set another window to 3D View with Front Orth View</li>
+<li> Shift + C to center 3D Cursor</li>
+<li> In Object mode with Gus selected, press G to go into Grab mode</li>
+<li> Press Z to lock to the Z-axis</li>
+<li> Hold Ctrl while moving mouse up to position feet at 0 on the Z-axis</li></ul>
+<h3><span class="mw-headline" id="Creating_the_Rig">Creating the Rig</span></h3>
+<ul><li> In Object Mode, Shift+A to open Add menu.  Select Armature-&gt;Single Bone</li>
+<li> (With armature selected) Tab into Edit Mode, press G to enter Grab mode. End of newly-added bone is selected</li>
+<li> Hold Shift to lock axis while moving the bone end up to Gus's hip. LMB to apply</li>
+<li> With bone end still selected, CTRL+LMB to create Gus's left hip bone</li>
+<li> CTRL+LMB again to create his knee bone</li>
+<li> CTRL+LMB again to creat his foot bone (See picture)</li>
+<li> RMB on the end of the first bone again</li>
+<li> With bone end still selected, CTRL+LMB to create Gus's right hip bone</li>
+<li> CTRL+LMB again to create his knee bone</li>
+<li> CTRL+LMB again to creat his foot bone</li>
+<li> RMB on the end of the first bone again</li>
+<li> CTRL+LMB to create a spine bone up to the middle button</li>
+<li> CTRL+LMB to create a spine bone up to just above the top button (See picture)</li>
+<li> CTRL+LMB to create right shoulder bone</li>
+<li> CTRL+LMB to create right arm bone</li>
+<li> RMB on top spine bone</li>
+<li> CTRL+LMB to create left shoulder bone</li>
+<li> CTRL+LMB to create left arm bone</li>
+<li> RMB on top spine bone</li>
+<li> CTRL+LMB to create head bone</li>
+<li> In the Object Data tab, check Names in the Display selection</li>
+<li> Click the Bone tab and rename the selected bone to "Head"</li>
+<li> Using RMB to select and the Bone tab, rename the bones as seen in the picture</li></ul>
+<h3><span class="mw-headline" id="Skinning_the_Mesh_with_the_Rig">Skinning the Mesh with the Rig</span></h3>
+<ul><li> Tab to Object Mode</li>
+<li> Press A until nothing is selected</li>
+<li> Select Gus's mesh with RMB</li>
+<li> Then SHIFT+RMB to select the Armature</li>
+<li> CTRL+P to parent mesh to the Armature. Select Armature Deform -&gt; With Automatic Weights</li>
+<li> If missing some verts from bones, you can select and assign them from Vertex Groups area</li></ul>
+<h2><span class="mw-headline" id="Animating_your_Model">Animating your Model</span></h2>
+<h3><span class="mw-headline" id="Preparing_to_Animate">Preparing to Animate</span></h3>
+<ul><li> Left-click drag handle of left window to create new window</li>
+<li> Set lower window to Dope Sheet</li>
+<li> Set mode to Action Editor, this window will help you organize multiple animations in one Blender project</li>
+<li> Left-click drag handle of right window down to create a new window</li>
+<li> Drag this window around to get a decent perspective view of Gus</li>
+<li> In the Object Data tab, check Names in the Display selection to hide bone names</li></ul>
+<h3><span class="mw-headline" id="Your_First_Animation">Your First Animation</span></h3>
+<ul><li> Click + button to create new action</li>
+<li> Rename 'Action' to 'Idle'</li>
+<li> Click F button to Force a reference</li>
+<li> Select Armature in Object Mode</li>
+<li> Tab into Edit Mode</li>
+<li> Set mode to Pose Mode</li>
+<li> Press A to select all bones</li>
+<li> Press I to bring up Insert Keyframe menu.  Select Rotation.</li>
+<li> Scrub to Frame 30.  Press I and keyframe Rotations</li>
+<li> Scrub to 10</li>
+<li> Select bones with RMB, press R to rotate, LMB to apply rotations.  Pose like so.</li>
+<li> Press A until all bones are selected.  Press I then select Rotations.</li>
+<li> Scrub to 20</li>
+<li> ALT+R to clear rotations</li>
+<li> Select bones with RMB, press R to rotate, LMB to apply rotations.  Pose like so.</li></ul>
+<h3><span class="mw-headline" id="Your_Second_Animation">Your Second Animation</span></h3>
+<ul><li> Repeat the above to create as many animations as you need</li></ul>
+<h2><span class="mw-headline" id="Exporting_a_Skeletal_Mesh">Exporting a Skeletal Mesh</span></h2>
+<h3><span class="mw-headline" id="Export_Skeletal_Mesh">Export Skeletal Mesh</span></h3>
+<ul><li> Select File-&gt;Export-&gt;Autodesk FBX</li>
+<li> In the Export FBX section, select Mesh and Armature</li>
+<li> Deselect "Include Default Take"</li>
+<li> Click "Export FBX"</li></ul>
+<p>Video example (Blender 2.75, UE 4.8.1): <a rel="nofollow" class="external free" href="https://www.youtube.com/watch?v=kiJHNjRpwrY">https://www.youtube.com/watch?v=kiJHNjRpwrY</a>
+</p>
+<h3><span class="mw-headline" id="Import_Skeletal_Mesh">Import Skeletal Mesh</span></h3>
+<ul><li> Drag into UE4</li>
+<li> Select Skeletal Mesh and click Import</li></ul>
+<h3><span class="mw-headline" id="Creating_Materials_and_Assigning_Them_2">Creating Materials and Assigning Them</span></h3>
+<ul><li> Create Material</li>
+<li> Assign Textures</li></ul>
+<h3><span class="mw-headline" id="Import_Animations">Import Animations</span></h3>
+<ul><li> Drag into UE4</li>
+<li> Select Animation</li>
+<li> Select the Skeletal Mesh you imported from the dropdown list</li>
+<li> Click Import</li></ul>
+<h1><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h1>
+<h2><span class="mw-headline" id="Help.21_Skeletal_Mesh_Import_Never_Ends.21">Help! Skeletal Mesh Import Never Ends!</span></h2>
+<p>Check your armature in your Blender project.  Make sure you only have one armature. Also, make sure that all the bones in the armature are hierarchically linked to a single root bone.
+</p>
+<h2><span class="mw-headline" id="Help.21_My_Skeletal_Mesh_is_All_Spikey.21">Help! My Skeletal Mesh is All Spikey!</span></h2>
+<p>You probably have some vertices that aren’t assigned to a bone. Look at the Vertex Groups of your mesh in Edit mode and make sure the spiking vertices are assigned to a vertex group.
+</p>
+<h1><span class="mw-headline" id="Who_Wrote_this.3F">Who Wrote this?</span></h1>
+<p>Original Version by <a href="index9063.html?title=User:NobunagaOta&amp;action=edit&amp;redlink=1" class="new" title="User:NobunagaOta (page does not exist)">NobunagaOta</a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20200401010553
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.032 seconds
+Real time usage: 0.035 seconds
+Preprocessor visited node count: 212/1000000
+Preprocessor generated node count: 276/1000000
+Post‐expand include size: 56/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.215      1 -total
+ 41.35%    0.916      1 Template:Rating
+ 37.97%    0.841      2 Template:Note
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:114-0!canonical and timestamp 20200401010553 and revision id 229
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="index2d43.html?title=Creating_a_Skeletal_Mesh_in_Blender&amp;oldid=229">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Creating_a_Skeletal_Mesh_in_Blender&amp;oldid=229</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="indexb3b2.html?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="index1db6.html?title=Category:Community_Created_Content" title="Category:Community Created Content">Community Created Content</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0d0405fab30c4bd94"><meta name="worker" content="98"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.032","walltime":"0.035","ppvisitednodes":{"value":212,"limit":1000000},"ppgeneratednodes":{"value":276,"limit":1000000},"postexpandincludesize":{"value":56,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    2.215      1 -total"," 41.35%    0.916      1 Template:Rating"," 37.97%    0.841      2 Template:Note"]},"cachereport":{"timestamp":"20200401010553","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":83});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":140,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

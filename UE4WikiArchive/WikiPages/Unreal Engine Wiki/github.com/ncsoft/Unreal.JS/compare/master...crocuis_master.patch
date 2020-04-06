@@ -1,0 +1,31 @@
+From a2fed3ca249aa7d64b867d936a761b7e65e968e5 Mon Sep 17 00:00:00 2001
+From: Hyeoncheol Cho <crocuis@gmail.com>
+Date: Sun, 19 Jun 2016 00:53:49 +0900
+Subject: [PATCH] miss module
+
+---
+ Examples/JavascriptPlayground.uproject | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+diff --git a/Examples/JavascriptPlayground.uproject b/Examples/JavascriptPlayground.uproject
+index 42eeaa6..2dbbc71 100644
+--- a/Examples/JavascriptPlayground.uproject
++++ b/Examples/JavascriptPlayground.uproject
+@@ -1,6 +1,14 @@
+ {
+ 	"FileVersion": 3,
+-	"EngineAssociation": "4.12",
++	"EngineAssociation": "{1C7B2890-4893-6EAA-0BC3-588EAED42C4F}",
+ 	"Category": "",
+-	"Description": ""
++	"Description": "",
++	"Modules": [
++		{
++			"Name": "JavascriptPlayground",
++			"Type": "Runtime",
++			"LoadingPhase": "Default"
++		}
++	]
++
+ }
+\ No newline at end of file

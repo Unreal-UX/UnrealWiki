@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/training-kit/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/training-kit/commits/master.atom"/>
+  <title>Recent Commits to training-kit:master</title>
+  <updated>2020-03-24T13:48:05Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/88a57a3a9806b648ea5196c7a50556fc672e7c70</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/88a57a3a9806b648ea5196c7a50556fc672e7c70"/>
+    <title>
+        Add internal links from overview (#743)
+    </title>
+    <updated>2020-03-24T13:48:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/211284?s=30&amp;u=674558aa9ebc54d840d0f11da84d40ac1c061ca8&amp;v=4"/>
+    <author>
+      <name>tobiasahlin</name>
+      <uri>https://github.com/tobiasahlin</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add internal links from overview (#743)
+
+* Add relative URLs
+
+* Clean up comments&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/cddb1cee3561606cac1cc790096b512c262c82d8</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/cddb1cee3561606cac1cc790096b512c262c82d8"/>
+    <title>
+        remove outdated comments (#742)
+    </title>
+    <updated>2020-03-24T11:16:28Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/9906718?s=30&amp;u=552df5bb91d26c24dd56f7609c312431ed799eb7&amp;v=4"/>
+    <author>
+      <name>brianamarie</name>
+      <uri>https://github.com/brianamarie</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;remove outdated comments (#742)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e6348ffbc6c41a5f711405aaea75d5e7d8482ed5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/e6348ffbc6c41a5f711405aaea75d5e7d8482ed5"/>
+    <title>
+        Update index.html (#733)
+    </title>
+    <updated>2020-03-23T09:22:32Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/41732514?s=30&amp;u=5f5be33befdb86f11bb19f716e755c9cc60bb185&amp;v=4"/>
+    <author>
+      <name>0ishan0</name>
+      <uri>https://github.com/0ishan0</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update index.html (#733)
+
+Change the name of Bengali source.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3f86fdb6048a90fa96990ee9405cedee4b84b2a2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/3f86fdb6048a90fa96990ee9405cedee4b84b2a2"/>
+    <title>
+        More GitHub content  (#741)
+    </title>
+    <updated>2020-03-19T09:27:47Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/9906718?s=30&amp;u=552df5bb91d26c24dd56f7609c312431ed799eb7&amp;v=4"/>
+    <author>
+      <name>brianamarie</name>
+      <uri>https://github.com/brianamarie</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;More GitHub content  (#741)
+
+* begin git guides
+
+* include git workflow text
+
+* finish draft for git-overview
+
+* borrow content from git overview for commit page
+
+* begin commit page
+
+* draft of git commit
+
+* add content for installing git
+
+* prune down metadata
+
+* rework first sentence around git commits
+
+* move info about how commits work into proper section
+
+* more detail about why its bad to change history
+
+* add git log to list of commands
+
+* add related commands to git commit
+
+* fix italics
+
+* turn bullets into section headers
+
+* add 4 new page outlines
+
+* draft of git add content
+
+* draft for git clone
+
+* add git remote -v term to git overview
+
+* draft of git pull guide
+
+* start git remote page
+
+* draft of git init
+
+* fix typo in installation
+
+* remove metadata for git init
+
+* refine git init
+
+* refine git add
+
+* tidy git clone
+
+* refine git pull
+
+* more exact language around pull force
+
+* Add installation notes for windows
+
+* Update installation notes for GH Desktop
+
+* Update installation notes for macOS
+
+* Update installation notes for Linux
+
+* update git add page with more detail in steps and shell example
+
+* move add shell to under when do you use
+
+* add git clone shell example
+
+* add shell example of commit
+
+* add shell example to git init
+
+* add shell example of git pull
+
+* remove the git remote page
+
+* add the git remote page
+
+* add empty push and status pages
+
+* add content for git remote and git push
+
+* add git status draft
+
+* Update git-status.md
+
+* Add git pull best practice note to push
+
+* Remove note about commit structure
+
+Although important, this seemed out-of-place for this guide. It makes more sense to include this in git add or git commit. Feel free to revert if viewed differently
+
+* Update git-guides/git-push.md
+
+Co-Authored-By: Parker Brown &amp;lt;17183625+parkerbxyz@users.noreply.github.com&amp;gt;
+
+* Update git-guides/git-remote.md
+
+Co-Authored-By: Parker Brown &amp;lt;17183625+parkerbxyz@users.noreply.github.com&amp;gt;
+
+* Update git-guides/git-remote.md
+
+Co-Authored-By: Parker Brown &amp;lt;17183625+parkerbxyz@users.noreply.github.com&amp;gt;
+
+* Update git-guides/git-status.md
+
+Co-Authored-By: Parker Brown &amp;lt;17183625+parkerbxyz@users.noreply.github.com&amp;gt;
+
+* Update git-guides/git-status.md
+
+Co-Authored-By: Parker Brown &amp;lt;17183625+parkerbxyz@users.noreply.github.com&amp;gt;
+
+* fill in details for push options
+
+* update fork image
+
+Co-authored-by: Dylan Stark &amp;lt;dylanastark@gmail.com&amp;gt;
+Co-authored-by: a-a-ron &amp;lt;a-a-ron@github.com&amp;gt;
+Co-authored-by: Parker Brown &amp;lt;17183625+parkerbxyz@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/53720ebee917bae60bc2852f93d3b90a9c50b68b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/53720ebee917bae60bc2852f93d3b90a9c50b68b"/>
+    <title>
+        Add more general Git and GitHub (#712)
+    </title>
+    <updated>2020-03-12T12:30:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/9906718?s=30&amp;u=552df5bb91d26c24dd56f7609c312431ed799eb7&amp;v=4"/>
+    <author>
+      <name>brianamarie</name>
+      <uri>https://github.com/brianamarie</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add more general Git and GitHub (#712)
+
+* begin git guides
+
+* include git workflow text
+
+* finish draft for git-overview
+
+* borrow content from git overview for commit page
+
+* begin commit page
+
+* draft of git commit
+
+* add content for installing git
+
+* prune down metadata
+
+* rework first sentence around git commits
+
+* move info about how commits work into proper section
+
+* more detail about why its bad to change history
+
+* add git log to list of commands
+
+* add related commands to git commit
+
+* fix italics
+
+* turn bullets into section headers
+
+* add 4 new page outlines
+
+* draft of git add content
+
+* draft for git clone
+
+* add git remote -v term to git overview
+
+* draft of git pull guide
+
+* start git remote page
+
+* draft of git init
+
+* fix typo in installation
+
+* remove metadata for git init
+
+* refine git init
+
+* refine git add
+
+* tidy git clone
+
+* refine git pull
+
+* more exact language around pull force
+
+* Add installation notes for windows
+
+* Update installation notes for GH Desktop
+
+* Update installation notes for macOS
+
+* Update installation notes for Linux
+
+* update git add page with more detail in steps and shell example
+
+* move add shell to under when do you use
+
+* add git clone shell example
+
+* add shell example of commit
+
+* add shell example to git init
+
+* add shell example of git pull
+
+* remove the git remote page
+
+Co-authored-by: Dylan Stark &amp;lt;dylanastark@gmail.com&amp;gt;
+Co-authored-by: a-a-ron &amp;lt;a-a-ron@github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/cabc92f2bd726aa4e03d265c7d508b7faafd3bb9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/cabc92f2bd726aa4e03d265c7d508b7faafd3bb9"/>
+    <title>
+        Update README.md (#740)
+    </title>
+    <updated>2020-03-09T12:20:26Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/7259442?s=30&amp;u=8a01b65d95906558c6f87c7c8c2bf8df83295172&amp;v=4"/>
+    <author>
+      <name>geunkim</name>
+      <uri>https://github.com/geunkim</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md (#740)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e68604713ae66f40f591264282cbb3e0f9998441</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/e68604713ae66f40f591264282cbb3e0f9998441"/>
+    <title>
+        zh-cn: improve grammar and add translation (#736)
+    </title>
+    <updated>2020-03-03T08:19:53Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/22864418?s=30&amp;u=1fa30c2b38b8e94ccd38ba7e2fdbd6150f05c48d&amp;v=4"/>
+    <author>
+      <name>lynkas</name>
+      <uri>https://github.com/lynkas</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;zh-cn: improve grammar and add translation (#736)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9a22e5f6de0dddb7cac90f7874c0123ada49df26</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/9a22e5f6de0dddb7cac90f7874c0123ada49df26"/>
+    <title>
+        Merge pull request #735 from github/dependabot/bundler/nokogiri-1.10.8
+    </title>
+    <updated>2020-03-03T08:13:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #735 from github/dependabot/bundler/nokogiri-1.10.8&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1b2f2c6d5318958e9fafbe66e35b9782e3a3cda5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/1b2f2c6d5318958e9fafbe66e35b9782e3a3cda5"/>
+    <title>
+        Bump nokogiri from 1.10.7 to 1.10.8
+    </title>
+    <updated>2020-02-25T08:14:54Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/29110?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot</name>
+      <uri>https://github.com/dependabot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump nokogiri from 1.10.7 to 1.10.8
+
+Bumps [nokogiri](https://github.com/sparklemotion/nokogiri) from 1.10.7 to 1.10.8.
+- [Release notes](https://github.com/sparklemotion/nokogiri/releases)
+- [Changelog](https://github.com/sparklemotion/nokogiri/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/sparklemotion/nokogiri/compare/v1.10.7...v1.10.8)
+
+Signed-off-by: dependabot[bot] &amp;lt;support@github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f0f268b9b26fbed788dfa9a8a3648287e802f43e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/f0f268b9b26fbed788dfa9a8a3648287e802f43e"/>
+    <title>
+        Update Russian Git Cheat Sheet (#730)
+    </title>
+    <updated>2020-02-10T09:56:54Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/18502017?s=30&amp;u=08ff95f9fc6f351e66ec5235404fe9515f23e28d&amp;v=4"/>
+    <author>
+      <name>anastasiaeg</name>
+      <uri>https://github.com/anastasiaeg</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update Russian Git Cheat Sheet (#730)
+
+* Update &amp;quot;Russian&amp;quot; to native spelling
+
+* Fix grammar issues in a russian cheat sheet
+
+* Don&amp;#39;t write in russian, I think it&amp;#39;s not supported&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/aa410420f5b61b846659cc040f88983f3af62aea</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/aa410420f5b61b846659cc040f88983f3af62aea"/>
+    <title>
+        bring back script/package (#731)
+    </title>
+    <updated>2020-02-04T12:44:25Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/9906718?s=30&amp;u=552df5bb91d26c24dd56f7609c312431ed799eb7&amp;v=4"/>
+    <author>
+      <name>brianamarie</name>
+      <uri>https://github.com/brianamarie</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;bring back script/package (#731)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2dc764ff90c5d2dd57afe2b142cc5719bf662c35</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/2dc764ff90c5d2dd57afe2b142cc5719bf662c35"/>
+    <title>
+        commit package-lock.json (#732)
+    </title>
+    <updated>2020-02-04T12:44:00Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/9906718?s=30&amp;u=552df5bb91d26c24dd56f7609c312431ed799eb7&amp;v=4"/>
+    <author>
+      <name>brianamarie</name>
+      <uri>https://github.com/brianamarie</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;commit package-lock.json (#732)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/99b24c23daf9e0fc24736e715c0ea54b41e46abe</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/99b24c23daf9e0fc24736e715c0ea54b41e46abe"/>
+    <title>
+        Improve and modernize the submodule cheat sheet (#727)
+    </title>
+    <updated>2020-02-03T13:08:25Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/44212482?s=30&amp;u=0d50de2fbc432fe7ca4e2f3e2e8a711dc8278af9&amp;v=4"/>
+    <author>
+      <name>phil-blain</name>
+      <uri>https://github.com/phil-blain</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Improve and modernize the submodule cheat sheet (#727)
+
+* Use correct spelling for the Git system
+
+Since commit 2de9b71138 (Documentation: the name of the system is &amp;#39;Git&amp;#39;, not
+&amp;#39;git&amp;#39;, 2013-01-21) in git.git, the Git community settled on using &amp;#39;Git&amp;#39;
+as the correct spelling for the systems as a whole.
+
+Let&amp;#39;s use the correct spelling in the cheat sheets.
+
+* Submodule cheatsheet: use --recurse-submodules in clone
+
+The `--recursive` flag has been removed from the `git clone`
+documentation since commit bb62e0a99f (clone: teach --recurse-submodules
+to optionally take a pathspec, 2017-03-17) in git.git.
+
+Let&amp;#39;s use the documented flag `--recurse-submodules` instead,
+which tells `clone` to recursively clone all submodules
+along with the superproject.
+
+* Submodule cheatsheet: add more &amp;#39;git diff&amp;#39; options
+
+First, remove the `--cached` option as this option is only useful
+if the changes to the submodule are staged beforehand.
+
+Second, list all 3 `git diff` options related to submodules:
+- `--submodule` (defaults to --submodule=log)
+- `--submodule=short (default for `git diff`)
+- `--submodule=diff`
+
+Third, remove the `sdiff` alias as `git diff --submodule=diff` does the
+same thing but is a builtin command.
+
+* Submodule cheatsheet: add details to &amp;#39;Clone&amp;#39; section
+
+Introduce `git submodule update --init` as a way to clone and checkout
+submodules if you forgot `--recurse-submodules` when cloning.
+
+A following commit will introduce a new section &amp;#39;Pulling Superproject
+Updates&amp;#39; to show how to update an already cloned repo that has
+submodules.
+
+Also introduce the `--recursive` flag, which is needed if any submodule
+itself has submodules.
+
+* Submodule cheatsheet: improve &amp;#39;Pulling in Subproject Updates&amp;#39;
+
+- Add `git commit` after `git submodule update --remote` to complete
+  the update in the superproject
+- Instruct readers that `git submodule update &amp;lt;path&amp;gt;` wants the *path*
+  to a submodule, not its name (important if submodules are not at the
+  root of the repo).
+- By default, `git submodule update --remote` will pull the `master`
+  branch of the remote repository, not the default branch on the remote.
+- Introduce `git submodule set-branch`, added in Git 2.22, to
+  change the default branch for `git submodule update --remote`.
+
+* Submodule cheatsheet: add &amp;#39;Pulling Superproject Updates&amp;#39; section
+
+When pulling in a repository that has submodules, the default behaviour of
+`git pull` is to fetch the submodule, but not to update the working
+directory of the submodule.
+
+This leads to a very confusing situation, since just after the pull
+the working directory of the submodule is not in sync with the commit
+recorded in the superproject.
+
+To complete the update, a separate `git submodule update` is required,
+or `git pull` must be called with the `--recurse-submodules` flag.
+
+Also, if the superproject changes the URL of the submodule,
+`git submodule sync` is required to synchronize the URL to the local
+.git/config and .git/modules/&amp;lt;name&amp;gt;/config configuration files.
+
+* Submodule cheatsheet: add &amp;#39;Changing branches&amp;#39; section
+
+When changing branches in a project that has submodules, the default
+behaviour of `git checkout` is to not update the working
+directory of the submodule.
+
+This leads to a very confusing situation, since just after the checkout
+the working directory of the submodule is not in sync with the commit
+recorded in the superproject.
+
+To complete the update, a separate `git submodule update` is required,
+or `git checkout` must be called with the `--recurse-submodules` flag.
+
+* Submodule cheatsheet: improve &amp;#39;Making changes to a Subproject&amp;#39;
+
+- Make it clearer that best practice is to make the changes in a
+  separate *clone* of the submodule repository
+- Add a config to make `git push` default to
+  `--recurse-submodules=on-demand`
+
+* Submodule cheatsheet: add submodule.recurse to &amp;#39;Helpful Configs for Submodules&amp;#39;
+
+The submodule.recurse config is super useful as it makes all Git
+commands (except `clone`, as of Git 2.25) automatically use the
+`--recurse-submodules` flag if they support it, so mention that config
+setting.
+
+Also, add `--global` to the status.submoduleSummary `git config` call,
+for uniformity.
+
+* Submodules cheatsheet: mention that submodule.recurse needs Git 2.15 for `git pull`
+
+Co-Authored-By: Aaron Stewart &amp;lt;a-a-ron@github.com&amp;gt;
+
+Co-authored-by: Aaron Stewart &amp;lt;a-a-ron@github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/cec2b5947f54b230b1c4cd2f89b8db9ac7965c5b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/cec2b5947f54b230b1c4cd2f89b8db9ac7965c5b"/>
+    <title>
+        Refresh zh-cn (#723)
+    </title>
+    <updated>2020-01-28T08:29:13Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/24759802?s=30&amp;u=2eedaf6d04b1b6b02ea9f1dc2e08aca79c25011b&amp;v=4"/>
+    <author>
+      <name>imba-tjd</name>
+      <uri>https://github.com/imba-tjd</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Refresh zh-cn (#723)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/850ab7a8929b6adf8cd801c688c8e4765b52454b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/850ab7a8929b6adf8cd801c688c8e4765b52454b"/>
+    <title>
+        CONTRIBUTING: update &#39;Building and testing&#39; instructions (#726)
+    </title>
+    <updated>2020-01-28T08:24:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/44212482?s=30&amp;u=0d50de2fbc432fe7ca4e2f3e2e8a711dc8278af9&amp;v=4"/>
+    <author>
+      <name>phil-blain</name>
+      <uri>https://github.com/phil-blain</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;CONTRIBUTING: update &amp;#39;Building and testing&amp;#39; instructions (#726)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/99f8735df1f68cf411f8b4c219a68276f0f2d9d7</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/99f8735df1f68cf411f8b4c219a68276f0f2d9d7"/>
+    <title>
+        Update github-git and github-bash cheatsheets (#724)
+    </title>
+    <updated>2020-01-23T10:08:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/35298207?s=30&amp;u=21444c42922ed73cc6ca36a1e58eaf55cd6b9885&amp;v=4"/>
+    <author>
+      <name>NishkarshRaj</name>
+      <uri>https://github.com/NishkarshRaj</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update github-git and github-bash cheatsheets (#724)
+
+* Update github-git-cheat-sheet.md
+
+* Update github-bash-cheat-sheet.md
+
+* Update downloads/github-git-cheat-sheet.md
+
+Co-Authored-By: Briana Swift &amp;lt;brianamarie@github.com&amp;gt;
+
+* Update downloads/github-git-cheat-sheet.md
+
+Co-Authored-By: Briana Swift &amp;lt;brianamarie@github.com&amp;gt;
+
+* Update downloads/github-bash-cheat-sheet.md
+
+Co-Authored-By: Briana Swift &amp;lt;brianamarie@github.com&amp;gt;
+
+Co-authored-by: Briana Swift &amp;lt;brianamarie@github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bceb8bb45f298613ed792fbceeb7b046cc6df83c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/bceb8bb45f298613ed792fbceeb7b046cc6df83c"/>
+    <title>
+        Chore: use https (#722)
+    </title>
+    <updated>2020-01-13T08:38:30Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/24759802?s=30&amp;u=2eedaf6d04b1b6b02ea9f1dc2e08aca79c25011b&amp;v=4"/>
+    <author>
+      <name>imba-tjd</name>
+      <uri>https://github.com/imba-tjd</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Chore: use https (#722)
+
+* Chore: use https
+
+* Update footer.html
+
+* update
+
+* Delete a space&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4be306164811b6504dfdce73bc71cf13df60ae5a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/4be306164811b6504dfdce73bc71cf13df60ae5a"/>
+    <title>
+        Merge pull request #721 from Maharramoff/Azerbaijani-localization
+    </title>
+    <updated>2020-01-13T08:36:13Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/9906718?s=30&amp;u=552df5bb91d26c24dd56f7609c312431ed799eb7&amp;v=4"/>
+    <author>
+      <name>brianamarie</name>
+      <uri>https://github.com/brianamarie</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #721 from Maharramoff/Azerbaijani-localization
+
+add Azerbaijani localization&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8acec146e59f61cae2c80199289aa2d09df3f420</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/8acec146e59f61cae2c80199289aa2d09df3f420"/>
+    <title>
+        fix: wordings, spelling errors
+    </title>
+    <updated>2020-01-11T17:39:08Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/9804406?s=30&amp;u=c140f099cc0120286557516a22ddfd9bd6cf8f25&amp;v=4"/>
+    <author>
+      <name>Maharramoff</name>
+      <uri>https://github.com/Maharramoff</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix: wordings, spelling errors
+
+Slightly improved readability&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a479e3495bc3d66cb35a37ef011b8495e02378b3</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/training-kit/commit/a479e3495bc3d66cb35a37ef011b8495e02378b3"/>
+    <title>
+        add link to the translated resource
+    </title>
+    <updated>2020-01-11T12:19:11Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/9804406?s=30&amp;u=c140f099cc0120286557516a22ddfd9bd6cf8f25&amp;v=4"/>
+    <author>
+      <name>Maharramoff</name>
+      <uri>https://github.com/Maharramoff</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add link to the translated resource&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/micro/go-micro/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/micro/go-micro/commits/master.atom"/>
+  <title>Recent Commits to go-micro:master</title>
+  <updated>2020-03-31T22:50:37Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7b7a859a03b5da591d839071818027df00a14b5b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/7b7a859a03b5da591d839071818027df00a14b5b"/>
+    <title>
+        api: use http request Clone (#1458)
+    </title>
+    <updated>2020-03-31T22:50:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/481307?s=30&amp;v=4"/>
+    <author>
+      <name>vtolstov</name>
+      <uri>https://github.com/vtolstov</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;api: use http request Clone (#1458)
+
+Signed-off-by: Vasiliy Tolstov &amp;lt;v.tolstov@unistack.org&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8a8742f86765688dda3fef4ee27220eed75053e2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/8a8742f86765688dda3fef4ee27220eed75053e2"/>
+    <title>
+        api/handler/rpc: dont change types of url fields (#1457)
+    </title>
+    <updated>2020-03-31T22:26:58Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/481307?s=30&amp;v=4"/>
+    <author>
+      <name>vtolstov</name>
+      <uri>https://github.com/vtolstov</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;api/handler/rpc: dont change types of url fields (#1457)
+
+Signed-off-by: Vasiliy Tolstov &amp;lt;v.tolstov@unistack.org&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/68b0238a5d37fd48d70be14162bd6b33c4528e54</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/68b0238a5d37fd48d70be14162bd6b33c4528e54"/>
+    <title>
+        add stream timeout option which defaults to 0 (#1456)
+    </title>
+    <updated>2020-03-31T22:22:11Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17530?s=30&amp;u=54a5bd782851e18e32f1d3c171b6b8532b1c3a1a&amp;v=4"/>
+    <author>
+      <name>asim</name>
+      <uri>https://github.com/asim</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add stream timeout option which defaults to 0 (#1456)
+
+* add stream timeout option which defaults to 0
+
+* fix option&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1490aff38ee3ee820c7c01bcd7fb4cfc116204f7</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/1490aff38ee3ee820c7c01bcd7fb4cfc116204f7"/>
+    <title>
+        api/handler/rpc: correctly parse nested url vars (#1455)
+    </title>
+    <updated>2020-03-31T21:23:17Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/481307?s=30&amp;v=4"/>
+    <author>
+      <name>vtolstov</name>
+      <uri>https://github.com/vtolstov</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;api/handler/rpc: correctly parse nested url vars (#1455)
+
+Signed-off-by: Vasiliy Tolstov &amp;lt;v.tolstov@unistack.org&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3a22efbd7dad62d75f6cdb233db6ecfef078053c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/3a22efbd7dad62d75f6cdb233db6ecfef078053c"/>
+    <title>
+        metadata: change method name (#1454)
+    </title>
+    <updated>2020-03-31T20:39:18Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/481307?s=30&amp;v=4"/>
+    <author>
+      <name>vtolstov</name>
+      <uri>https://github.com/vtolstov</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;metadata: change method name (#1454)
+
+Signed-off-by: Vasiliy Tolstov &amp;lt;v.tolstov@unistack.org&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5e65a46be384c8051a89e498a080afe47472762b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/5e65a46be384c8051a89e498a080afe47472762b"/>
+    <title>
+        metadata: allow to remove key from metadata (#1453)
+    </title>
+    <updated>2020-03-31T19:55:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/481307?s=30&amp;v=4"/>
+    <author>
+      <name>vtolstov</name>
+      <uri>https://github.com/vtolstov</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;metadata: allow to remove key from metadata (#1453)
+
+Signed-off-by: Vasiliy Tolstov &amp;lt;v.tolstov@unistack.org&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/18061723bbddef80393b809c2cf9096ea2a4f874</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/18061723bbddef80393b809c2cf9096ea2a4f874"/>
+    <title>
+        fix api metadata extract from context (#1452)
+    </title>
+    <updated>2020-03-31T19:36:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/481307?s=30&amp;v=4"/>
+    <author>
+      <name>vtolstov</name>
+      <uri>https://github.com/vtolstov</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix api metadata extract from context (#1452)
+
+Signed-off-by: Vasiliy Tolstov &amp;lt;v.tolstov@unistack.org&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d6bef84de08b00c3059a073fc26872f9545b2893</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/d6bef84de08b00c3059a073fc26872f9545b2893"/>
+    <title>
+        api/handler/rpc: fix metadata cleanup (#1451)
+    </title>
+    <updated>2020-03-31T18:59:35Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/481307?s=30&amp;v=4"/>
+    <author>
+      <name>vtolstov</name>
+      <uri>https://github.com/vtolstov</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;api/handler/rpc: fix metadata cleanup (#1451)
+
+Signed-off-by: Vasiliy Tolstov &amp;lt;v.tolstov@unistack.org&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6c6c5359b188597d73455bda91ca40f2fde1d3c2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/6c6c5359b188597d73455bda91ca40f2fde1d3c2"/>
+    <title>
+        Add options to config (#1450)
+    </title>
+    <updated>2020-03-31T16:13:21Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17530?s=30&amp;u=54a5bd782851e18e32f1d3c171b6b8532b1c3a1a&amp;v=4"/>
+    <author>
+      <name>asim</name>
+      <uri>https://github.com/asim</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add options to config (#1450)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/26747906947fa5208f0cf346a2d2eb81b564abf5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/26747906947fa5208f0cf346a2d2eb81b564abf5"/>
+    <title>
+        Service =&gt; Service Auth (#1448)
+    </title>
+    <updated>2020-03-31T15:18:04Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/14938548?s=30&amp;u=ac3763bb8844f4d9840775365e439041c519ea28&amp;v=4"/>
+    <author>
+      <name>ben-toogood</name>
+      <uri>https://github.com/ben-toogood</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Service =&amp;gt; Service Auth (#1448)
+
+* Service =&amp;gt; Service Auth
+
+* WithServicePrivileges =&amp;gt; ServicePrivileges
+
+* Fixes for CLI login
+
+* ServicePrivileges =&amp;gt; ServiceToken
+
+* Fallback to service token
+
+Co-authored-by: Ben Toogood &amp;lt;ben@micro.mu&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9fb1d476a2239065d139ef97c1183d283b0155dc</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/9fb1d476a2239065d139ef97c1183d283b0155dc"/>
+    <title>
+        Merge branch &#39;master&#39; into auth-srv-srv
+    </title>
+    <updated>2020-03-31T15:15:17Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/14938548?s=30&amp;u=ac3763bb8844f4d9840775365e439041c519ea28&amp;v=4"/>
+    <author>
+      <name>ben-toogood</name>
+      <uri>https://github.com/ben-toogood</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into auth-srv-srv&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/36386354d72e9d6ea72631a09bbbd810a5724c3c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/36386354d72e9d6ea72631a09bbbd810a5724c3c"/>
+    <title>
+        Fallback to service token
+    </title>
+    <updated>2020-03-31T12:51:32Z</updated>
+    <media:thumbnail height="30" width="30" url="https://0.gravatar.com/avatar/efd6d40e5fee99cff25f604b9ee2eb43?d=https%3A%2F%2Fgithub.githubassets.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=g&amp;s=30"/>
+    <author>
+      <name></name>
+      <email>ben@micro.mu</email>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fallback to service token&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bd70820b6bd035b3d7802e6add6ef30ffa31a67e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/bd70820b6bd035b3d7802e6add6ef30ffa31a67e"/>
+    <title>
+        ServicePrivileges =&gt; ServiceToken
+    </title>
+    <updated>2020-03-31T12:48:28Z</updated>
+    <media:thumbnail height="30" width="30" url="https://0.gravatar.com/avatar/efd6d40e5fee99cff25f604b9ee2eb43?d=https%3A%2F%2Fgithub.githubassets.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=g&amp;s=30"/>
+    <author>
+      <name></name>
+      <email>ben@micro.mu</email>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;ServicePrivileges =&amp;gt; ServiceToken&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/956029ae3dc70481582ed890e64dfb45a2f51dd0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/956029ae3dc70481582ed890e64dfb45a2f51dd0"/>
+    <title>
+        Fixes for CLI login
+    </title>
+    <updated>2020-03-31T12:30:14Z</updated>
+    <media:thumbnail height="30" width="30" url="https://0.gravatar.com/avatar/efd6d40e5fee99cff25f604b9ee2eb43?d=https%3A%2F%2Fgithub.githubassets.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=g&amp;s=30"/>
+    <author>
+      <name></name>
+      <email>ben@micro.mu</email>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fixes for CLI login&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e0c7f48d20eb99718c4a5b491e4ed69f164a8c1f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/e0c7f48d20eb99718c4a5b491e4ed69f164a8c1f"/>
+    <title>
+        WithServicePrivileges =&gt; ServicePrivileges
+    </title>
+    <updated>2020-03-31T11:57:38Z</updated>
+    <media:thumbnail height="30" width="30" url="https://0.gravatar.com/avatar/efd6d40e5fee99cff25f604b9ee2eb43?d=https%3A%2F%2Fgithub.githubassets.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=g&amp;s=30"/>
+    <author>
+      <name></name>
+      <email>ben@micro.mu</email>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;WithServicePrivileges =&amp;gt; ServicePrivileges&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d659e435c6604c264043c12b16ad631330293996</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/d659e435c6604c264043c12b16ad631330293996"/>
+    <title>
+        Service =&gt; Service Auth
+    </title>
+    <updated>2020-03-31T11:44:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://0.gravatar.com/avatar/efd6d40e5fee99cff25f604b9ee2eb43?d=https%3A%2F%2Fgithub.githubassets.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=g&amp;s=30"/>
+    <author>
+      <name></name>
+      <email>ben@micro.mu</email>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Service =&amp;gt; Service Auth&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3d274ab6a2fcd1137e3a2d568547929972bed877</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/3d274ab6a2fcd1137e3a2d568547929972bed877"/>
+    <title>
+        Add namespace support to Kubernetes client (#1446)
+    </title>
+    <updated>2020-03-31T11:03:32Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/333465?s=30&amp;v=4"/>
+    <author>
+      <name>jakexks</name>
+      <uri>https://github.com/jakexks</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add namespace support to Kubernetes client (#1446)
+
+* Add namespace support to Kubernetes client
+
+* Fix LastUpdateTime Condition&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1222d076f252733cd9264c503e2a10321d60708e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/1222d076f252733cd9264c503e2a10321d60708e"/>
+    <title>
+        There can be only one! (#1445)
+    </title>
+    <updated>2020-03-31T09:18:50Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17530?s=30&amp;u=54a5bd782851e18e32f1d3c171b6b8532b1c3a1a&amp;v=4"/>
+    <author>
+      <name>asim</name>
+      <uri>https://github.com/asim</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;There can be only one! (#1445)
+
+* There can be only one
+
+* fix proto?&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/76ade7efd9b8ca921b5a1fcd309421b71a057b12</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/76ade7efd9b8ca921b5a1fcd309421b71a057b12"/>
+    <title>
+        Auth - Swap Refresh to Token and change secrets to be strings, not to…
+    </title>
+    <updated>2020-03-31T09:06:13Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/14938548?s=30&amp;u=ac3763bb8844f4d9840775365e439041c519ea28&amp;v=4"/>
+    <author>
+      <name>ben-toogood</name>
+      <uri>https://github.com/ben-toogood</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Auth - Swap Refresh to Token and change secrets to be strings, not tokens (#1444)
+
+* Refresh =&amp;gt; Token
+
+* Secret is no longer a token
+
+Co-authored-by: Ben Toogood &amp;lt;ben@micro.mu&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c706ebe3fb1fadbe9d883fb2efa876db41f6af51</id>
+    <link type="text/html" rel="alternate" href="https://github.com/micro/go-micro/commit/c706ebe3fb1fadbe9d883fb2efa876db41f6af51"/>
+    <title>
+        auth proto: provide help to protoc-gen-go (#1442)
+    </title>
+    <updated>2020-03-30T21:35:11Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/481307?s=30&amp;v=4"/>
+    <author>
+      <name>vtolstov</name>
+      <uri>https://github.com/vtolstov</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;auth proto: provide help to protoc-gen-go (#1442)
+
+Signed-off-by: Vasiliy Tolstov &amp;lt;v.tolstov@unistack.org&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

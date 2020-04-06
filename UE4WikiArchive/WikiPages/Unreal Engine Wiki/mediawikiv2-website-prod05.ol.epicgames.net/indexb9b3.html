@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Third_Person_Camera_Zoom_C%2B%2B&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:16:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>View source for Third Person Camera Zoom C++ - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Third_Person_Camera_Zoom_C++","wgTitle":"Third Person Camera Zoom C++","wgCurRevisionId":755,"wgRevisionId":0,"wgArticleId":377,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Third_Person_Camera_Zoom_C++","wgRelevantArticleId":377,"wgRequestId":"416f27bd9c2df1b03b50f6b0","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Third_Person_Camera_Zoom_C rootpage-Third_Person_Camera_Zoom_C skin-vector action-edit"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b48461a8a6519d83"><meta name="worker" content="116"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Third_Person_Camera_Zoom_C%2B%2B&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:16:47 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Third+Person+Camera+Zoom+C%2B%2B&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Third_Person_Camera_Zoom_C%2B%2B" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Third_Person_Camera_Zoom_C%2B%2B&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Third_Person_Camera_Zoom_C%2B%2B">Read</a></span></li>
+							<li id="ca-viewsource" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Third_Person_Camera_Zoom_C%2B%2B&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Third_Person_Camera_Zoom_C%2B%2B&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">View source for Third Person Camera Zoom C++</h1>
+												<div id="bodyContent" class="mw-body-content">
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=EpicUnrealEngineWiki:Administrators&amp;action=edit&amp;redlink=1" class="new" title="EpicUnrealEngineWiki:Administrators (page does not exist)">Administrators</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">[[Category:Tutorials]]
+[[Category:Code]]
+[[Category:Community Created Content]]
+{{Rating|Type=Article|Versions=4.2.1+}}
+== '''Third Person Camera Zoom with C++''' ==
+ &lt;br />&lt;br />
+
+Hello and welcome to this page! Here is a list of things that you will learn upon the completion of this tutorial: &lt;br />
+* ''1) Creating Custom Functions''&lt;br />
+* ''2) Initializing and Declaring Local and Global Variables''&lt;br />
+* ''3) Compiling and Creating Working Code for a Zooming 3rd Person Camera''&lt;br />
+* ''4) Understanding WHY it works! (I can't stress how important this is!)''&lt;br />
+  &lt;br />
+
+Well then, let's get started shall we? First and foremost go ahead and start the UE4 launcher. That would be this little guy here in the caption:&lt;br />
+[[File:UE4ZoomTut1.png|thumbnail|The Launcher]]&lt;br />
+Now that this is open it's important too follow these steps very carefully. We wouldn't want to get lost would we? Anyways, go ahead and click the big yellow button that says "Launch".&lt;br />&lt;br />
+
+[[File:UE4ZoomTut2.png|thumbnail|Template]]
+Now that you've done that you'll want to click "New Project" and scroll down until you find the "Code Third Person" template. When you've done that you can go ahead and name it anything you'd like but i'd strongly recommend you follow my naming convention (Basically name it the same as me) so that way it'll be easier to follow, i'll explain later, in case you're lost please click the image that says Template.&lt;br />
+&lt;br />
+
+[[File:UE4ZoomTut3.png|thumbnail|Visual Studio Startup]]
+So you've just created the Code Third Person template with the name TutorialForOthers and just clicked Create Project. Amazing! Let's move on. If you have Microsoft Visual Studio 2013(Which is basically required for Coding in UE4!), the project should have immediately started in the compiler. If it did and this is your first time with Visual Studio 2013, don't freak out. I admit that it does look sort of intimidating but don't let that frighten you. Be sure to click the image on this wiki page called Visual Studio Startup.&lt;br />&lt;br />
+
+
+One thing you'll notice is that on the left panel I have TutorialForOthers selected that is why it's highlighted in blue. But directly to the left you should notice a little arrow, go ahead and click that to open up the solution's contents. Now go ahead and click on the folder called "'''Source'''" and again just click the little arrow underneath it. Go ahead and repeat the process for the folder in that one called "''TutorialForOthers''"&lt;br />&lt;br />
+
+[[File:UE4ZoomTut4.png|thumbnail|Visual Studio Solution 1]]
+''(Oh and for good reference please click the picture called Visual Studio Solution 1 to double check that you're looking at the exact same thing as I.)''&lt;br />&lt;br />
+
+
+Anyways, let's continue. Now you're probably thinking if you're new to Visual Studio or programming in general, "What the heck am I looking at!?". Trust me this is totally normal. On the left hand side you should notice a bunch of files that are literally called TutorialForOthers with their respective .cpp (C++) and .h(Header) files next to them.&lt;br />&lt;br />
+
+=== Coding Start ===
+
+
+Well where do we get started? Simple. If we think about this logically, who does the camera really concern in a game? The character. So that tells us immediately that we should probably take a look in the TutorialForOthersCharacter.cpp and TutorialForOthersCharacter.h files. Go ahead and double click on both of those.&lt;br />&lt;br />
+
+''(A Header File is a file in which the programmer typically creates a class and defines all the functions (Or methods, it's basically the same thing.) into it, this includes variables as well. This is called proto-typing. That means that if I wanted a character to Jump, i'd create the Jumping in the Header file but the actual code that performs the jump would be in the .cpp file. Get it? A Class is just a collection of Methods and Variables, it's called encapsulation.)''&lt;br />&lt;br />
+
+[[File:UE4ZoomTut5.png|thumbnail|Visual Studio Solution 2]]
+Please go ahead and click the image Visual Studio Solution 2. Immediately you should notice that we should be in the TutorialForOthersCharacter.h file, in the protected section. Don't worry about protection and what that means until you've familiarized yourself with C++ a little more. It's a little out of the scope of this tutorial and won't effect us at this time. Now here is where the real fun begins and it's time to get our hands dirty with some actual coding.&lt;br />
+&lt;br />
+
+First and fore-most. Directly under "''protected:''" it is important to write this exactly as I do, if confused look at the image HeaderFileCharacter .&lt;br />
+[[File:UE4ZoomTut6.png|thumbnail|HeaderFileCharacter]]
+&lt;br />
+&lt;syntaxhighlight lang="cpp">
+protected:
+    void CameraZoomIn();
+    void CameraZoomOut();
+    float CameraZoom_v;
+&lt;/syntaxhighlight>
+
+Don't worry about all the other code directly underneath the bit we just wrote. Now then it's important to explain exactly what we did. As mentioned before this is called proto-typing. We created two functions(Or methods, same thing really) with the void return type(No return type) which is literally just a name of something that we expect it to do. For instance if we made a function name called Jump then we'd expect something to jump when that function is called. Last but not least we created a variable using the data type float which is basically a decimal number. We're going to call it CameraZoom_v, why _v? Because it reminds me that this is a variable that needs to be assigned a number later on.&lt;br />
+&lt;br />
+
+[[File:UE4ZoomTut7.png|thumbnail|CPPFileCharacter]]
+
+Go ahead and double click on TutorialForOthersCharacter.cpp and it should open the appropriate file. Of course you can click on the image on this wiki CPPFileCharacter to make sure that you're on the right track. Don't mind the red lines that your compiler might get for now. It's perfectly fine. Visual Studio 2013 can act a little bit slow and glitchy from time to time. It isn't anything to worry about at this time. &lt;br />
+&lt;br />
+
+Now let's get to work. Directly underneath the two include instructions at the top of the code I want you to create the following. If you're lost then go ahead and click the image called CPPFileCharacter2.
+&lt;br />
+&lt;syntaxhighlight lang="cpp">
+/////
+void ATutorialForOthersCharacter::CameraZoomIn()
+{
+
+}
+
+void ATutorialForOthersCharacter::CameraZoomOut()
+{
+
+}
+&lt;/syntaxhighlight>
+
+
+[[File:UE4ZoomTut8.png|thumbnail|CPPFileCharacter2]]
+
+
+Alright, I feel it's pretty important to discuss exactly what we just did. Remember in the .h file we made the name of the two functions and I mentioned that we were proto-typing them? Well this is where we actually start to see it come to life. In the .cpp file we're going to actually make it DO SOMETHING. First though we had to specify it's return type, the void and then call the name of the class with the letter A in front of it, in this case it was called ATutorialForOthersCharacter. Then we included the membership operator which is the two colons :: followed by the name of the function that we earlier created in the Header file. Pretty cool huh? We separated it this time with curly braces and this means that inside this function any code created will be used. So now it's time to actually tell the camera how we want it to operate.&lt;br />
+&lt;br />
+
+Inside the CameraZoomIn function what do we expect? Well, if I scroll up with my middle mouse button then I expect the camera to zoom in. But how do we do that? If you scrolled down and looked at this page you might have found this: CameraBoom->TargetArmLength = 300.0f; Woah, what the heck is that!? Well, when we started with the Third Person Template from earlier it created something called a CameraBoom which handles the camera. That was nice of it wasn't it? Thanks Unreal! Anyways, it then has an arrow pointing towards something called TargetArmLength, this is called the member Access operator. Don't worry about it since it is a little beyond the scope of this tutorial. However at the end we can see a float value at the number 300.0f. This means the the camera is currently behind the character at around 300.0 unreal measurement units. This is extremely important to us because this is the number we want to play with.&lt;br />
+&lt;br />
+[[File:UE4ZoomTut9.png|thumbnail|NextPart]]
+
+So here is what we're going to do, if confused you know the drill, simply click the image titled NextPart. Inside of our newly created CameraZoomIn function let's go ahead and add the following:&lt;br />
+
+&lt;syntaxhighlight lang="cpp">
+float a = 25.0;
+CameraZoom_v = CameraZoom_v - 25.0;
+
+if(CameraZoom_v &lt;= 75.0)
+{
+    CameraBoom->TargetArmLength = 75.0;
+    CameraZoom_v = 75.0;
+}
+else
+{
+    CameraBoom->TargetArmLength = CameraZoom_v;
+}
+&lt;/syntaxhighlight>
+
+
+Oh boy! Well let's go over what we just did and why. First we created a local variable called 'a'. That means that ONLY IN THIS FUNCTION can the variable 'a' be used. The moment this function is done, that variable is gone and the bytes it took to store it are now no longer being used. Anyways, we had also assigned the float type variable 'a' to the number '25.0'. Then underneath that we decided to use our old friend CameraZoom_v. We assigned CameraZoom_v to itself and then performed abit of math. We're going to subtract whatever number (Currently nothing) that's in CameraZoom_v by 25.0. This means every time you call this function that number is going to get subtracted by 'a'. &lt;br />
+&lt;br />
+Next on the list we have our first control statement called an If statement. It does exactly what it sounds like. If the condition is true then perform what is inside the brackets if it is no longer true then perform the else statement. Now the real question is what is inside these control statements and how are they working? Well, the if statement says: "If CameraZoom_v is less than or equal to the number 75.0 then inside I want you to set the camera at 75.0 no matter what. Also let's set the number CameraZoom_v to 75 as well.". Next in the else statement it's telling us: "Hey, if CameraZoom_v is anything greater than the number 75.0 then I want you to set the camera to whatever number is in CameraZoom_v.". Pretty neat, huh?&lt;br />
+&lt;br />
+
+[[File:UE4ZoomTut10.png|thumbnail|Constructor]]
+
+Now then... this all look's fine and dandy except we're missing one thing. What number is assigned to CameraZoom_v!? Well currently we don't have a number in it so if we ran this right now the compiler is going to throw a huge fit and say "Hey buddy, I don't know what number this is! You tell me!". So that's exactly what we're going to do. Scroll down to the constructor. What is the constructor you might be asking? Well, when this class is created and turned into an object the first thing it's going to do is run something called a constructor. This is the FIRST bit of code that get's executed. &lt;br />
+So scroll on down and look for the following: ''ATutorialForOthersCharacter::ATutorialForOthersCharacter(const class FPostConstructInitializeProperties&amp; PCIP)''.&lt;br />
+A good way to know that this is the constructor is that the membership operator :: is literally the same name as the Class. A constructor will ALWAYS have the same name as the Class.&lt;br />
+&lt;br />
+Anyways... by now you should know that the code goes in between the brackets. So let's go ahead and write our code, of course if you're lost just go ahead and click the picture that says Constructor.&lt;br />&lt;br />
+
+&lt;syntaxhighlight lang="cpp">
+CameraZoom_v = 300.0;
+&lt;/syntaxhighlight>
+&lt;br />
+
+
+Woah that was real hard wasn't it? Phew. Glad we could manage to do that. By now you might be able to see what i'm getting at here. Programming isn't really that difficult once you understand the logic and syntax(How it's formatted and written, us programmers like to use terms of art though which can make things really confusing!). What we just said was the moment this object, our character, is created we want to turn this global (float) variable CameraZoom_v into the number 300.0. So now the compiler knows exactly what this number is and now we do too.&lt;br />
+&lt;br />
+
+
+[[File:UE4ZoomTut11.png|thumbnail|ZoomOutTut]]
+Say... aren't we forgetting something else? Oh my goodness we are! What happens when we zoom out!? Well currently nothing. Scroll back on up to your ZoomOut function. Now... I wouldn't recommend copying and pasting because that is usually where things typically can go wrong, but quite literally you CAN copy and paste this next part from your own code and tweak it slightly to work for you. We're not going to do that though, but you'll see what I mean in just a second, if not go ahead and click the image called ZoomOutTut on this page.&lt;br />
+&lt;br />
+
+&lt;syntaxhighlight lang="cpp">
+float a = 25.0;
+CameraZoom_v = CameraZoom_v + 25.0;
+
+if(CameraZoom_v >= 300.0)
+{
+    CameraBoom->TargetArmLength = 300.0;
+    CameraZoom_v = 300.0;
+}
+else
+{
+    CameraBoom->TargetArmLength = CameraZoom_v;
+} &lt;/syntaxhighlight>
+&lt;br />
+
+Do you by chance happen to see something here? A pattern maybe? If not i'll help you see it! Remember in our CameraZoomIn we said CameraZoom_v = CameraZoom_v - 25.0;? Well now we're going to go in the opposite direction and ADD. You might begin to see the picture now. When we zoom out we're subtracting from 300.0 and since we know that 300.0 is the start of the camera position we're actually moving it closer to the character who is at 0. When we're adding to that number we're actually moving the camera further by adding to it. Pretty simple right? Uh-oh... then we get to our if statement what on earth does that mean?&lt;br />
+&lt;br />
+The If statement says "Hey listen fella. If CameraZoom_v is greater then or equal to 300.0 then i'm going to lock this at 300.0 i'm also going to set the variable CameraZoom_v to 300.0 and make sure it doesn't exceed past that number. If this isn't true then well, let's go ahead and set the number to whatever CameraZoom_v is". And that is literally all that If statement does... but we STILL aren't done, I know, I know. Trust me we're almost finished! This will go by so much quicker when you completely understand what is happening.&lt;br />
+&lt;br />
+
+[[File:UE4ZoomTut12.png|thumbnail|CharacterInput]]&lt;br />
+
+''(Now just in case you haven't been looking at the pictures you're going to want to do so here.)''&lt;br />
+&lt;br />
+
+Next we want a way to actually CALL these functions. They exist but how do we actually use them? Well, scroll on down towards the function/method called ''void ATutorialForOthersCharacter::SetupPlayerInputComponent(class UInputComponent* InputComponent)''. At first glance you might look at it and immediately recognize that this is where all the character input is actually handled from your keyboard, touch-screen or controller. For the sake of this tutorial though we're using the keyboard. Anyways we're going to add two lines of code and then guess what? We're done with the programming part! Cheers! By now you should know where the code goes, if not look at the picture called CharacterInput&lt;br />
+&lt;br />
+
+&lt;syntaxhighlight lang="cpp">
+InputComponent->BindAction("ZoomIn", IE_Pressed, this, &amp;ATutorialForOthersCharacter::CameraZoomIn);
+InputComponent->BindAction("ZoomOut", IE_Pressed, this, &amp;ATutorialForOthersCharacter::CameraZoomOut);
+&lt;/syntaxhighlight>
+&lt;br />
+
+Alright, so what on earth are we telling the compiler? Well... when I press a button, which we haven't decided yet, I want to call the Action '''"ZoomIn"''' and only do this when I press the button, '''IE_Pressed'''. I want it to effect '''this''' object(TutorialForOthers). When that happens I want you to call the function CameraZoomIn from this object (&amp;ATutorialForOthersCharacter::CameraZoomIn). &lt;br />
+&lt;br />&lt;br />
+
+== Enough Coding Already! ==
+
+Good news or bad news first? Okay, the bad news is we aren't done just yet. Good news is we've finished the programming side of things! Go ahead and click the Green Arrow on your compiler that says "Start Debugging". This will compile and launch the editor. It might take a little while for the first time but it will eventually speed up. &lt;br />
+&lt;br />
+
+[[File:UE4ZoomTut13.png|thumbnail|HomeStretch]]
+
+Right about now you should be looking at the default level that comes with this template, if confused click the image called HomeStretch. Here is what you need to do. At the top left click Edit and then scroll down to Project Settings and then click on the left hand side the button that says Input. Underneath action mappings we want to add our own input, how do we do that? Click the + sign next to the button Action Mappings. Now this part is very important, you'll notice a new box appeared underneath Jump. You need to name this "ZoomIn" just like you did in the code. Click the + button beside the new ZoomIn action map to add something underneath it. Be sure to click the arrow to expand the window. Here you can set it to whatever button you would like. For the sake of this tutorial though you may want to set it to Mouse Wheel Up. Repeat this process except for the next field make sure it's called ZoomOut and then map it to whichever key you like. Of course you SHOULD use Mouse Wheel Down if you had already used Mouse Wheel Up, it's only common sense... unless you LIKE being confused and confusing others with weird inputs! Anyways...&lt;br />
+&lt;br />
+Last but not least close that window and press the giant play button and test it out. I hope you enjoyed this tutorial! Happy Coding and be sure to make your Unreal Engine 4 a FUN experience the way that you would like to. Take it easy!&lt;br />
+&lt;br />
+
+Creator of this Tutorial: https://wiki.unrealengine.com/User:Master_Kyp
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>Template used on this page:
+</p></div><ul>
+<li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Rating&amp;action=edit&amp;redlink=1" class="new" title="Template:Rating (page does not exist)">Template:Rating</a> (<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Rating&amp;action=edit" class="new" title="Template:Rating (page does not exist)">view source</a>) </li></ul></div><p id="mw-returnto">Return to <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Third_Person_Camera_Zoom_C%2B%2B" title="Third Person Camera Zoom C++">Third Person Camera Zoom C++</a>.</p>
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Third_Person_Camera_Zoom_C%2B%2B">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Third_Person_Camera_Zoom_C%2B%2B</a>"						</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-08a23efcd19f60be7"><meta name="worker" content="80"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="https://mediawikiv2-website-prod05.ol.epicgames.net/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":104});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpcVlFA","queueTime":0,"applicationTime":146,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

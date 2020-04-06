@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/covid-19-repo-data/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/covid-19-repo-data/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/covid-19-repo-data/commits/master.atom"/>
+  <title>Recent Commits to covid-19-repo-data:master</title>
+  <updated>2020-03-31T15:56:34Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1adaee22d21eeda59477ad25c29be15e0c34d088</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid-19-repo-data/commit/1adaee22d21eeda59477ad25c29be15e0c34d088"/>
+    <title>
+        add 2020-03-27 files
+    </title>
+    <updated>2020-03-31T15:56:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1565958?s=30&amp;u=347ce39a8deb1f7bb462e9c67a3b69f361b5d45f&amp;v=4"/>
+    <author>
+      <name>gregce</name>
+      <uri>https://github.com/gregce</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add 2020-03-27 files&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4cc2d754aba2af42567bb7df5c718d687bfb20d5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/covid-19-repo-data/commit/4cc2d754aba2af42567bb7df5c718d687bfb20d5"/>
+    <title>
+        add initial data, README, license, etc
+    </title>
+    <updated>2020-03-30T21:35:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/5544007?s=30&amp;u=bdc2e2b18ed66db0d47698bf2193b8d7ebf750e0&amp;v=4"/>
+    <author>
+      <name>DJedamski</name>
+      <uri>https://github.com/DJedamski</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add initial data, README, license, etc&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

@@ -1,0 +1,2948 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Rama%27s_Vertex_Snap_Editor_Plugin&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:10:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>View source for Rama's Vertex Snap Editor Plugin - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Rama's_Vertex_Snap_Editor_Plugin","wgTitle":"Rama's Vertex Snap Editor Plugin","wgCurRevisionId":1806,"wgRevisionId":0,"wgArticleId":900,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Rama's_Vertex_Snap_Editor_Plugin","wgRelevantArticleId":900,"wgRequestId":"496538dc9fedd2474a24e282","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Rama_s_Vertex_Snap_Editor_Plugin rootpage-Rama_s_Vertex_Snap_Editor_Plugin skin-vector action-edit"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b48461a8a6519d83"><meta name="worker" content="206"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Rama%27s_Vertex_Snap_Editor_Plugin&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:10:34 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Rama%27s+Vertex+Snap+Editor+Plugin&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Rama%27s_Vertex_Snap_Editor_Plugin" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Rama%27s_Vertex_Snap_Editor_Plugin&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Rama%27s_Vertex_Snap_Editor_Plugin">Read</a></span></li>
+							<li id="ca-viewsource" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Rama%27s_Vertex_Snap_Editor_Plugin&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Rama%27s_Vertex_Snap_Editor_Plugin&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">View source for Rama's Vertex Snap Editor Plugin</h1>
+												<div id="bodyContent" class="mw-body-content">
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=EpicUnrealEngineWiki:Administrators&amp;action=edit&amp;redlink=1" class="new" title="EpicUnrealEngineWiki:Administrators (page does not exist)">Administrators</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">==Overview==
+
+''Plugin Author:'' [[User:Rama|Rama]] ([[User talk:Rama|talk]])
+
+Dear Community,
+
+Here is my Vertex Snapping UE4 Editor Plugin!
+
+Below I am sharing with you not only the actual plugin, but the '''entire source code for''':
+	
+1. The plugin, showing you how to make your own (you get the source with my plugin file download)
+
+2. My extended UE4 Editor Engine class
+
+3. My very own Vertex Snapping Editor Mode, showing you via complete example how you can make your own Editor Modes!
+
+===Entire C++ Source Code===
+
+[[#My Entire Plugin C++ Source Code|My Entire C++ Source Code For You!]]
+
+==Pictures==
+
+[[File:InstancedStaticMeshEditor.jpg|800x]]
+
+[[File:VertexSnapContinuous.jpg|600px]]
+
+[[File:VertexEditorPlugin Snap.jpg|600x450px]]
+
+[[File:VertexEditorPlugin Resize.jpg|600x450px]]
+
+[[File:VertexEditorPlugin SnapAngle.jpg|600x450px]]
+
+==Plugin Release Dates and UE4 Engine Versions==
+
+== All Future Updates ==
+
+Because of the wiki file size limit of 20mb I am compelled to unify my Victory Plugin distribution into Editor + Packaged Binaries only in a media fire download from now on.
+
+All future updates are at this link:
+
+[https://www.mediafire.com/?ieovbd5l9d7yub2 Rama's Victory Plugin, Editor + Packaged Binaries]
+
+Entire C++ Source code is included!
+
+'''Github link:'''
+https://github.com/EverNewJoy/VictoryPlugin
+
+===Victory Ed Engine ~ Vertex Snapping &amp; Instanced Static Mesh Editor===
+
+==== Media Fire Download Links ====
+I include media fire links in the file description for more recent engine verisons!
+
+[[File:VictoryEdEngine.zip]]
+
+==Installation of Victory Blueprint Library==
+
+You should install my Victory Plugin in the Engine/Plugins/Runtime folder of the appropriate Engine version.
+
+You should always try to package for Development Win64 first, and Shipping Win32 as these are the only two platforms I support for those who do not have C++ access.
+
+[https://forums.unrealengine.com/showthread.php?3851-(39)-Rama-s-Extra-Blueprint-Nodes-for-You-as-a-Plugin-No-C-Required!&amp;p=476476&amp;viewfull=1#post476476 Detailed Description]
+==Installation of VictoryEdEngine for Vertex Snapping==
+
+[[Image:Victorybpplugin.jpg|650px]]
+
+
+Plugin download ('''5.8 MB'''):
+
+
+It is important to do all of these steps in order
+
+1. download my editor / BP plugin and put in a directory directly off of your main project directory called "'''Plugins'''"
+
+spelling must be exact 
+
+2. Load UE4 editor and go to Windows->Plugins
+
+3. Find my plugin and make sure it is checked as being active
+
+4. maybe double check #3
+
+5. close the editor.
+
+6. go to '''YourProject/Config/DefaultEngine.ini'''
+
+7. add these lines:
+
+	
+  [/Script/Engine.Engine]
+  UnrealEdEngine=/Script/VictoryEdEngine.VictoryEdEngine
+(Please note these instructions are only for VictoryEdEngine plugin, Victory Plugin does not need this as it is a runtime/packaged game plugin that does not modify the editor)
+
+	
+8. Load UE4 Editor again
+
+9. click on any static mesh actor 
+
+10. You should now see the Victory Editor HotKeys button in the top left
+
+11. If you hover mouse over this title area any time, you can get the list of hotkeys
+
+12. Enjoooy!
+
+'''What does this all do?'''
+
+My plugin includes an alternative UnrealEdEngine class, that makes use of my new additional FEdMode editor mode class.
+
+The config file tells the main UE4 binary to use my alternative UnrealEdEngine class instead of the default.
+
+Commenting out the line you added will instantly disable my Editor Mode.
+
+Unchecking my plugin in Windows->Plugins within the editor, but leaving the config file set,
+
+is pretty much guaranteed to cause a crash.
+
+soooo
+
+===Disabling My Editor Mode / Entire Plugin===
+
+To disable my editor mode you should *always* comment out the DefaultEngine.ini line first!
+
+Then you can load the editor again and disable the plugin entirely
+
+
+My plugin cannot corrupt or damage your main UE4 install in any way,
+
+
+If you get a crash dont panic, just read these steps again 
+
+
+'''" Help I can't Load UE4 Anymore "'''
+
+The worst that can happen is that the config file gets setup up wrong, 
+
+and you wont be able to load the editor, 
+
+and it will crash if you try cause it can't find the new Engine class.
+
+
+'''But, this is extremely easy to fix!'''
+
+
+just comment out the line that you added in your config file and you are guaranteed good-to-go
+
+  [/Script/Engine.Engine]
+  UnrealEdEngine=/Script/VictoryEdEngine.VictoryEdEngine
+
+==Instanced Static Mesh Editor==
+
+[[File:InstancedStaticMeshEditor.jpg|800x]]
+
+'''Introduction Video'''
+
+&lt;youtube>https://www.youtube.com/watch?v=iC1sjgalEJg]&lt;/youtube>
+
+
+'''Setup'''
+
+&lt;youtube>https://www.youtube.com/watch?v=mYj_kaLDZZ4]&lt;/youtube>
+
+I recently added a feature so that you can select many static mesh actors that all have the same static mesh and convert them into 1 instanced static mesh!
+
+This process can be reversed at any time to make individual edits!
+
+In this way you can enable UE4 to render 1000s of static meshes while maintaining very high FPS!
+
+Now you can edit instanced static meshes with all the tools you are familiar with and convert all the static mesh actors when you are done, to get a huge FPS boost!
+
+===Update: Part of Victory Ed Engine===
+
+My ISM Editor feature is now part of the Victory Ed Engine plugin which is separate from the Victory BP Library plugin :)
+
+
+===Mandatory Setup Step===
+
+To make my Instanced Static Mesh system work with your project you have to choose a ISM actor class. You can either create your own by adding a Instanced Static Mesh Actor to a new Actor blueprint, making the ISM component the root component, or you can use the VictoryISM class in my Victory BP Library plugin!
+
+1. Go to Project Settings->Game->Victory Ed Engine
+
+2. Choose your own custom Instanced Static Mesh Actor class, or use the one from my Victory BP Library plugin
+
+3. Select a bunch of static mesh actors and press i to convert them, shift + i to convert back, also work with undo/redo
+
+4. Enjoy!
+
+==Works With UE4 Undo System==
+
+My Vertex Snap Editor Mode now works with UE4's undo system!
+
+Yay!
+
+You can undo as many individual snap events as you want!
+
+Note that I only save an undo state when you release the V key to avoid flooding the system while you are continuously snapping while holding down V.
+
+So make sure you release the V key to save your final state before using CTRL + Z
+
+[[File:Undo.jpg|600x450px]]
+
+Rama
+
+==Newest Editor Feature:==
+
+===New Display Options===
+
+Now pressing the U key is a display toggle!
+
+*Default = only show the vertex the mouse is hovering over
+*Press U once to show all vertices
+*Press U again to show no vertices
+*Press U again to be back to showing cursor-highlighted vertices only
+*etc
+ 
+===New Workflow(3/27/14)===
+
+*Press V to select a vertex
+*Hold down V to continuously snap to vertices of other highlighted meshes
+*Release to finalize the move 
+
+===New Snap to Surface Normal Workflow===
+
+*Press V and and also hold down shift
+*If you fiddle with your approach angle and move the mouse little bits, you can get some really great normal alignments without much effort
+
+Enjoy!
+
+Rama
+
+[[File:VertexSnapContinuous.jpg|600x450px]]
+
+==Drop Static Meshes to Nearest Surface!==
+
+
+'''Now you can just press the Y key in the UE4 Editor''' 
+
+to drop the selected Static Mesh or Static Meshes to the nearest surface in the level!
+
+
+You can drop Static Meshes down to each other too!
+
+My algorithm takes into account the actual shape of the static mesh being dropped, as well as the landscape/level/meshes it is being dropped onto!
+
+'''If you have multiple objects selected''', they are treated as one big object and all the surfaces are calculated together, and the group is dropped, maintaining formation, to the nearest surface within your level.
+
+==Vertex Snap Plugin==
+
+My extended Editor Engine detects when the user clicks on a static mesh actor, and activates my Vertex Snapping Editor Mode.
+
+===UE4 Editor Plugin, No Code Compile Required===
+
+Dear Community,
+
+This is my very first '''new Editor Mode''' for the main UE4 Editor!
+
+This is a tiny ( under 10 MB ) plugin, that you can download and use without having to compile any source code.
+
+Your project ''does not'' have to be a code-based project!
+
+'''It adds 3 new features'''
+
+1. Toggle instantly moving selected static meshes to the mouse cursor, to quickly move them around, or "teleport" them across the map, supports Multi Selection.
+
+
+2. Press K to reset a static mesh actor's rotation
+
+
+3. Vertex Snapping! Optionally snap to surface normal of destination static mesh
+
+    -verticies can be resized anytime using + or -
+    -you can cycle among 5 different verticies display options at any time 
+    -you can toggle vertex displaying by pressing Y.
+
+
+All of the features are related to static mesh actors and my editor mode disables itself if you are not working with a static mesh actor.
+
+It is super easy to enable or disable my editor mode, or suspend it entirely after trying it out.
+
+
+'''With my editor mode plugin you can enjoy some new features for your UE4 Editor Experience!'''
+
+
+==Victory Editor Align Mode==
+
+===Features:===
+	
+====Instant Mouse Move of Static Mesh Actor====
+	-Press T key to toggle this mode! 	(mapping it to a mouse button proved too complicated given all existing editor mouse button functionality)
+	
+	-The selected Static Mesh(es) will move instantly to follow the mouse cursor anywhere in the XY plane, staying on the current Z 
+	
+	-This can be used to instantly move objects to a location by
+		a. selecting them all
+		b. moving to your desired destination location
+		c. press T key and they will all warp to your current location :)
+	
+	-Supports multi-selection
+
+====Reset any Static Mesh Actor's rotation to 0====
+	-Press the K key
+	-just a handy little feature, 
+	-extra-useful if the vertex Snap-By-Surface-Normal goes wonky
+	
+====Vertx Display and Snapping====
+	-Press Y key to toggle displaying of static mesh verticies!
+	-Press B to toggled between five different display types for all verticies
+		a. simple crosshair
+		b. solid rectangle
+		c. 3D box
+		d. diamond (pretty good even at 4000 verticies)
+		e. sphere (slow for > 3000 verticies)
+		
+	-Hold SHIFT while selecting the second vertex to use Snap-By-Surface-Normal, which will try to align the source static mesh actor with the surface of the destination actor.
+	
+	-snap selected static mesh actor by chosen vertex to the chosen vertex of another static mesh actor,
+	
+	-can do whole process with 3 input key presses total!
+	
+
+
+====Vertex Resizing====
+
+You can resize all the verticies at once by pressing and holding -/+ 
+
+
+
+====Verticies Dynamically Update====
+
+No matter how you scale or rotate the mesh the drawn verticies will update correctly:)
+
+
+
+====Vertex Selection====
+
+You can move/rotate the selected static mesh actor after selecting one of its verticies, and the selection will be maintained and updated.
+
+
+===WorkFlow Efficiency===
+====Fast User Interface====
+
+Vertex snapping can be accompished in three input presses total
+
+1. select the actor you are going to move
+2. hover over chosen vertex and press V
+3. hover over chosen vertex of other mesh and press V
+
+The reason this only takes 3 inputs is because when you hover the mouse over other static mesh actors, 
+
+my editor mode automatically highlights all of the vertices and the vertex that is closest to the cursor.
+
+
+'''Why not use Mouse Click?'''
+
+The reason the vertex selections are key presses not mouse clicks:
+
+-any kind of mouse click tends to change selection, and I dont wish to override this functionality
+
+-it's easy to miss-click with the mouse on a vertex that is at a corner, and end up selecting the landscape instead
+
+-the thematic consistency provided by using a same-key-press to do the whole snap process feels nice :)
+
+'''The flow becomes:'''
+	
+hover mouse over vertex
+press key V
+
+hover mouse over other vertex
+press same key V
+
+Snap done!
+
+====Speed: Using the PDI / Primitive Draw Interface====
+
+In case you are curious, I am drawing directly to the PDI, the fundamental drawing surface, using DrawPoint.
+
+This is about as light-weight as I know how to get at present
+
+An advantage of using PDI and DrawPoint is that only verticies in the chosen depth priority will draw.
+
+'''This enables me to hide verticies''' that you would not realistically want to click on from the opposite side of a mesh.
+
+====High Vertex Counts====
+
+-Verticies are not drawn if the object vertex count is too high (10,000 at moment), as that could cause a long delay or even a hang if you click on a high-res statue or something like that :)
+
+- I automatically switch sphere vertex display mode down to box mode if vertex cound is > 5000 to prevent slowdown if cycling through the B key 
+
+
+
+====Editor Environment Integration====
+
+-Victory Align Mode auto-activates when you click on Static Mesh Actors, 
+	
+-Press P key to restore previous Editor mode and Real Time Status instantly
+
+-Clicking on non-static mesh actors will restore previous Editor Mode
+
+
+'''Example:'''
+	
+If you are busy clicking on stuff and you end up in my editor mode by accident, press the P key to instantly revert to prevous mode
+	
+'''Interface:'''
+
+-There is a useful hover-button in top left of window that will show you all the hotkeys for this Editor Mode any time you hover mouse over it
+
+-The hover-button fades itself out to be less visual distraction, but hovering mouse over it will fade it back in and display helpful info
+
+-When using the Instant Mouse Move by tapping the T key, 
+      the move/rotate/scale main editor widget disappears to let you know you are in that mode and also because it is not really usable while using the T-key mode.
+
+-Deselecting or exiting the mode cancels the Instant T(ranslate) key mode.
+
+===Using Vertex Snap Mode===
+
+Once you click on a static mesh actor, if the verticies are not showing, press the V key
+
+1. Hover mouse on vertex, 
+
+2. press V
+
+3. Hover mouse over other static mesh and one of its verticies, 
+
+4. press V
+
+
+If you are using Align-By-Surface-Normal, the selected static mesh will attempt to orient itself to the surface closest to the vertex of the other static mesh.
+
+===Vertex Editor Plugin Summary===
+'''Light-Weight for Your UE4 Editing Experience'''
+
+I tried to make the vertex-selection aspect of my editor mode as light-weight as possible,
+
+- no traces
+- no collision
+- no extra actors involved
+- just drawing to the PDI
+
+There is not actually any 3D collision for the verticies!
+
+I defined a "button" struct which stores the projected coordinates of the verticies, plus the resizable drawn-vertex scaling.
+
+So as you scale the verticies the buttons grow to accommodate.
+
+Whenever the view changes, the buttons are freshed.
+
+If there is no input to the UE4 Editor or you have it in the background, the buttons are never refreshed 
+
+In Summary, it's just a bunch of invisible floats that are determining when you are clicking or highlighting the verticies of the Static Mesh Actors
+
+
+
+'''Have Fun'''
+
+Have fun with my editor mode!
+
+[[User:Rama|Rama]] ([[User talk:Rama|talk]])
+
+== ==
+==My Entire Plugin C++ Source Code==
+===Credits===
+	
+Feel free to use my C++ code as an outline for making your own Editor Mode Plugin!
+
+Just please give me credit somewhere appropriate.
+
+I did not use any algorithms or math equations from any source, 
+
+I wrote all the code myself and just used Epic's awesome UE4 Beta .h files as a reference.
+
+  '''This code does not contain any UE4 C++ source code, as I did not have access to it when I wrote this plugin.'''
+
+===VictoryEdEngine===
+
+This is the class that becomes your new UE4 Engine class, and it must be set to be used by UE4 via DefaultEngine.ini
+
+&lt;syntaxhighlight lang="cpp">
+[/Script/Engine.Engine]
+;UnrealEdEngine=/Script/UnrealEd.UnrealEdEngine
+UnrealEdEngine=/Script/VictoryBPLibrary.VictoryEdEngine
+&lt;/syntaxhighlight>
+
+====.H====
+
+&lt;syntaxhighlight lang="cpp">
+#pragma once
+
+#include "UnrealEd.h" 
+#include "VictoryEdAlignMode.h"
+#include "VictoryEdEngine.generated.h"
+
+USTRUCT()
+struct FDropToClosestSurfaceData
+{
+	GENERATED_USTRUCT_BODY()
+	
+	UPROPERTY()
+	AStaticMeshActor* TheActor;
+	
+	UPROPERTY()
+	FVector SurfaceLoc;
+	
+	UPROPERTY()
+	float DistSquared;
+	
+	FDropToClosestSurfaceData()
+	{
+		DistSquared = 1000000000;
+		SurfaceLoc = FVector::ZeroVector;
+		TheActor = NULL;
+	}
+};
+USTRUCT()
+struct FVButton
+{
+	GENERATED_USTRUCT_BODY()
+	
+	UPROPERTY()
+	int32 Vibe;
+	
+	UPROPERTY()
+	FVector PointInWorld;
+	
+	UPROPERTY()
+	float minX;
+	
+	UPROPERTY()
+	float maxX;
+	
+	UPROPERTY()
+	float minY;
+	
+	UPROPERTY()
+	float maxY;
+	
+	FVButton()
+	{
+		Vibe = -1;
+	}
+};
+
+UCLASS(config=Engine)
+class UVictoryEdEngine : public UUnrealEdEngine
+{
+	GENERATED_UCLASS_BODY()
+		
+	bool CreatedVictoryEdMode;
+
+	//the user-selected mode prior to initiating VictoryEdMode
+	FEditorModeID PrevModeID;
+
+	
+//utility
+
+//Assets
+public:
+	
+	/*
+	UPROPERTY()
+	UStaticMesh* AssetSM_EngineCube;
+	//StaticMesh'/Engine/EngineMeshes/Cube.Cube'
+	
+	
+	UPROPERTY()
+	UMaterial* ColorMat;
+	
+	UPROPERTY()
+	UMaterialInstanceDynamic* ColorMatInst_GlowyBlue;
+	
+	UPROPERTY()
+	UMaterialInstanceDynamic* ColorMatInst_GlowyRed;
+	
+	UPROPERTY()
+	UMaterialInstanceDynamic* ColorMatInst_GlowyYellow;
+	*/
+	
+//Font
+public:
+	UPROPERTY()
+	UFont* VictoryEditorFont;
+	//Font'/Engine/EngineFonts/RobotoDistanceField.RobotoDistanceField'
+	
+	FORCEINLINE UFont* GetVictoryFont()
+	{
+		if(VictoryEditorFont) return VictoryEditorFont;
+		return GetStatsFont();
+	}
+	
+//Selection
+public:
+	AActor* VSelectedActor;
+	
+	TArray&lt;FVector> SelectionRelativeOffsets;
+	void GetSelectedActorsRelativeOffsets();
+	bool SelectedActorVerticiesNeedsUpdating;
+	bool ClearSelectedVertex;
+	
+//core
+public:
+	static const FName VictoryEditorModeID;
+	void SwitchToVictoryEdMode();
+	
+	FORCEINLINE void ExitVictoryAlignMode()
+	{
+		//Deactivate Mode
+		GEditorModeTools().DeactivateMode( VictoryEditorModeID );
+		
+		//Restore Previous Realtime State
+		//GCurrentLevelEditingViewportClient->RestoreRealtime(true); //allow disable
+		
+		//Activate Previous Mode
+		GEditorModeTools().ActivateMode(PrevModeID);
+	}
+	
+//tests
+public:
+	void RunTests();
+	
+protected:
+	
+	virtual void NoteSelectionChange() OVERRIDE;
+	
+	virtual void Tick(float DeltaSeconds, bool bIdleMode) OVERRIDE;
+};
+&lt;/syntaxhighlight>
+
+====.CPP====
+
+&lt;syntaxhighlight lang="cpp">
+// Copyright 1998-2013 Epic Games, Inc. All Rights Reserved.
+
+//Unreal Editor Fun With Rama
+
+//#include "VictoryGame.h"
+#include "VictoryBPLibraryPrivatePCH.h"
+
+
+const FName UVictoryEdEngine::VictoryEditorModeID = FName("VictoryEditorMode");
+
+UVictoryEdEngine::UVictoryEdEngine(const class FPostConstructInitializeProperties&amp; PCIP)
+	: Super(PCIP)
+{
+	CreatedVictoryEdMode = false;
+	
+	PrevModeID = FBuiltinEditorModes::EM_Default;
+	
+	//Font
+	static ConstructorHelpers::FObjectFinder&lt;UFont> TheFontOb(TEXT("Font'/Engine/EngineFonts/RobotoDistanceField.RobotoDistanceField'"));
+	VictoryEditorFont = (UFont*)TheFontOb.Object;
+	
+	/*
+	//Cube
+	static ConstructorHelpers::FObjectFinder&lt;UStaticMesh> StaticMeshOb_cube(TEXT("StaticMesh'/Engine/EngineMeshes/Cube.Cube'"));
+	AssetSM_EngineCube= StaticMeshOb_cube.Object;
+	
+	//Color Mat Inst
+	static ConstructorHelpers::FObjectFinder&lt;UMaterial> ColorMatInstOb(TEXT("Material'/Engine/EditorMaterials/Utilities/LinearColorPicker_MAT.LinearColorPicker_MAT'"));
+	ColorMat = ColorMatInstOb.Object;
+	
+	//Create Instance
+	if(ColorMat)
+	{
+		ColorMatInst_GlowyBlue = UMaterialInstanceDynamic::Create(ColorMat, this);
+		if(ColorMatInst_GlowyBlue) ColorMatInst_GlowyBlue->SetVectorParameterValue(FName("Color"), FLinearColor(0,0,1,1));
+		
+		ColorMatInst_GlowyRed = UMaterialInstanceDynamic::Create(ColorMat, this);
+		if(ColorMatInst_GlowyRed) ColorMatInst_GlowyRed->SetVectorParameterValue(FName("Color"), FLinearColor(1,0,0,1));
+		
+		ColorMatInst_GlowyYellow = UMaterialInstanceDynamic::Create(ColorMat, this);
+		if(ColorMatInst_GlowyYellow) ColorMatInst_GlowyYellow->SetVectorParameterValue(FName("Color"), FLinearColor(1,1,0,1));
+	}
+	*/
+}
+
+void UVictoryEdEngine::SwitchToVictoryEdMode()
+{
+	//Create it if it not exist yet
+	if(!CreatedVictoryEdMode)
+	{
+		//Proper way to make a shared ref ???
+		TSharedRef&lt;class FVictoryEdAlignMode,ESPMode::Fast> VictoryEdMode = MakeShareable( new FVictoryEdAlignMode() );
+		
+		//Init VictoryEdMode
+		VictoryEdMode->JoyInit(this);
+			
+		//Register
+		GEditorModeTools().RegisterMode(VictoryEdMode);
+	
+		CreatedVictoryEdMode = true;
+	}
+	
+	//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Store Previous Editor Mode [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	TArray&lt;FEdMode*> OutActiveModes;
+	FEdMode* CurMode = NULL;
+	GEditorModeTools().GetActiveModes( OutActiveModes );
+	
+	for(int32 Itr = 0; Itr &lt; OutActiveModes.Num(); Itr++)
+	{
+		CurMode = OutActiveModes[Itr];
+		if(!CurMode) continue;
+		if(CurMode->GetID() == VictoryEditorModeID ) continue;
+			
+		PrevModeID = CurMode->GetID();
+		//UE_LOG(Victory,Warning, TEXT("Previous Editor Mode: %s"), *CurMode->GetID().ToString() );
+	}
+		
+	//Activate Victory Editor Mode
+	GEditorModeTools().ActivateMode(VictoryEditorModeID);
+}
+
+void UVictoryEdEngine::RunTests()
+{
+	//tests
+}
+
+
+void UVictoryEdEngine::GetSelectedActorsRelativeOffsets()
+{
+	SelectionRelativeOffsets.Empty();
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	
+	//Get the Relative Offsets
+	const FVector Origin = VSelectedActor->GetActorLocation();
+	
+	AActor* VSelectItrActor;
+	for(FSelectionIterator VSelectItr = GetSelectedActorIterator(); 
+		VSelectItr; ++VSelectItr )
+	{
+		VSelectItrActor = Cast&lt;AActor>(*VSelectItr);
+		if(!VSelectItrActor) continue;
+		//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+		
+		SelectionRelativeOffsets.Add(VSelectItrActor->GetActorLocation() - Origin );
+		//UE_LOG(Victory, Error, TEXT("Relative offset %s"), *SelectionRelativeOffsets[SelectionRelativeOffsets.Num() - 1].ToString());
+	};
+}
+void UVictoryEdEngine::NoteSelectionChange()
+{
+	Super::NoteSelectionChange();
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~~
+	
+	if(!GetSelectedActors()) return;
+	AActor* SelectedActor = Cast&lt;AActor>(GetSelectedActors()->GetTop(AActor::StaticClass()));
+	if(!SelectedActor) return;
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	
+	if(SelectedActor != VSelectedActor) ClearSelectedVertex = true;
+	
+	//Update
+	VSelectedActor = SelectedActor;
+	
+	//Always Refresh
+	SelectedActorVerticiesNeedsUpdating = true;
+	
+	//For use with multi-select moves
+	GetSelectedActorsRelativeOffsets();
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	
+	//Only Activate for Static Mesh Actors Currently
+	if(SelectedActor->IsA(AStaticMeshActor::StaticClass()))
+	{
+		//Switch to Victory Align Mode if not active already
+		if(!GEditorModeTools().IsModeActive(VictoryEditorModeID)) 
+			SwitchToVictoryEdMode();
+	}
+	else
+	{
+		//Deactivate Mode for Non-Static Mesh Actors
+		ExitVictoryAlignMode();
+	}
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	
+	//RunTests();
+	
+	//UE_LOG(Victory, Warning, TEXT("New Selected Actor %s"), *SelectedActor->GetName() );
+	//UE_LOG(Victory, Warning, TEXT("New Selected Actor Location %s"), *SelectedActor->GetActorLocation().ToString() );
+}
+
+//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+
+void UVictoryEdEngine::Tick(float DeltaSeconds, bool bIdleMode)
+{
+	Super::Tick(DeltaSeconds,bIdleMode);
+	
+}
+&lt;/syntaxhighlight>
+
+===VictoryEdMode===
+
+Since the EdMode is a pure C++ class, it must go in the Public directory of your plugin file structure!
+
+====.H====
+
+&lt;syntaxhighlight lang="cpp">
+#pragma once
+
+#include "UnrealEd.h" 
+#include "Editor.h"
+//#include "BSPOps.h"
+
+class UVictoryEdEngine;
+
+struct FVButton;
+struct FDropToClosestSurfaceData;
+
+class FVictoryEdAlignMode : public FEdMode
+{
+	
+//Statics
+public:
+	static const FColor RV_VRed;
+	static const FColor RV_VBlue;
+	static const FColor RV_VYellow;
+	static const FLinearColor RV_Red;
+	static const FLinearColor RV_Yellow;
+	static const FLinearColor RV_Blue;
+
+//Display Updates
+public:
+	bool DoSingleDisplayUpdate;
+//Drop to Surface
+public:
+	
+	//if multiple selected, the test runs on each and finds the nearest of nearest surfaces
+	void DropSelectedActorsToNearestSurface();
+	
+	FDropToClosestSurfaceData* GetActorWithShortestDrop(TArray&lt;FDropToClosestSurfaceData>&amp; TheData);
+	
+	FORCEINLINE void GetBottomSurfacePoint(AStaticMeshActor* TheSMA, FVector&amp; BottomMostPoint)
+	{
+                BottomMostPoint = FVector::ZeroVector;
+		if(!TheSMA) return;
+		if(!TheSMA->StaticMeshComponent) return;
+		//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+		FVector Origin;
+		FVector Extent;
+		TheSMA->GetActorBounds(true,Origin,Extent);
+		TheSMA->StaticMeshComponent->GetDistanceToCollision(Origin - FVector(0,0,Extent.Z + 100),BottomMostPoint);
+	}
+//Vertex:
+public:
+	
+	void GetSelectedVertexLocation(FVector&amp; LocOut);
+	
+	//Snap Key Pressed!
+	bool SnapKeyPressed;
+	
+	//VertexDisplayChoice
+	uint8 VertexDisplayChoice;
+		
+	//Snap!
+	void DoVertexSnap(const FVector&amp; Dest);
+	
+	FPositionVertexBuffer* 			SelectedVertexBuffer;
+	FPositionVertexBuffer* 			HighlightedVertexBuffer;
+	
+	//Highlighted Actor
+	AStaticMeshActor* 				HighlightedActor;
+	
+	//Buttons
+	TArray&lt;FVButton> SelectedActorButtons;
+	TArray&lt;FVButton> HighlightedActorButtons;
+	
+	//CheckArrays - find the vertex button closest to camera
+	TArray&lt;FVButton*> ClosestSelectedActorButtons;
+	TArray&lt;FVButton*> ClosestHighlightedActorButtons;
+	int32 FindClosestOfButtons(TArray&lt;FVButton*> Inbuttons);
+	void RefreshVertexButtons(const FSceneView* View);
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	
+	//Vertex Scale
+	float CurrentVerticiesScale;
+	bool PlusIsDown;
+	bool MinusIsDown;
+	bool DoDrawVerticies;
+	
+	//Index of Vertex, so actor can move and maintain selection
+	int32 SelectedVertexForSelectedActor;
+	int32 HighlightedVertexForSelectedActor;
+	int32 HighlightedVertexForHighlightedActor;
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	FVector VertexWorldSpace;
+	FVector2D Vertex2DCenter;
+
+	//Vertex Functions
+	void PDI_DrawVerticies(const FSceneView* View, FPrimitiveDrawInterface* PDI, const FPositionVertexBuffer* VertexBuffer, const FTransform&amp; SMATransform, bool DrawingSelectedActor);
+	
+	//Get Vertex Bufer
+	FPositionVertexBuffer* GetVerticies(AStaticMeshActor* TheSMA);
+	
+//Mouse Instant Move SMA
+public:
+	bool UsingMouseInstantMove;
+	void ProcessMouseInstantMove(FLevelEditorViewportClient* ViewportClient);
+	//
+//Selection
+public:
+	AActor* VSelectItrActor;
+	
+//Input Related
+public:
+	FVector2D 		MouseLocation;
+	FVector2D 		PrevMouseLocation;
+	FVector 	CursorWorldPrevPos;
+	FVector 	CursorWorldPos;
+	FVector 	CursorWorldDir;
+	FVector 	CursorWorldDelta;
+	
+	void InputKeyPressed(EKey Key);
+	void InputKeyReleased(EKey Key);
+	void InputKeyDoubleClick(EKey Key);
+	
+	void MiddleMouseEvent(EInputEvent Event);
+	void LeftMouseClick();
+	
+	
+	//States
+	bool RMBDown;
+	bool XDown;
+	bool YDown;
+	bool ShiftDown;
+	
+//HUD
+public:
+	FIntPoint ViewportSize;
+	
+	void DrawHotkeyToolTip(FCanvas* Canvas);
+	void DrawMouseCoordinates(FCanvas* Canvas);
+	
+	void CheckCursorInButtons(FCanvas* Canvas);
+	TArray&lt;FVButton> 	VictoryButtons;
+	int32 					ActiveButton_Vibe;
+	FVButton* 			CurCheckButton;
+	void RefreshVictoryButtons();
+	bool PendingButtonRefresh;
+	
+//Utility
+public:
+	void DrawVictoryText(FCanvas* Canvas, const FString&amp; TheStr, float X, float Y, float TheScale=1 );
+	void DrawVictoryTextWithColor(FCanvas* Canvas, const FString&amp; TheStr, float X, float Y, FLinearColor TheColor=FLinearColor(1,0,1,1), float TheScale=1 );
+	void DrawVictoryLine(FCanvas* Canvas, const FVector2D&amp; Start, const FVector2D&amp; End, FLinearColor TheColor=FLinearColor(1,0,1,1), float Thick=0 );
+	void DrawVictoryRect(FCanvas* Canvas, float X, float Y, float Width, float Height, FLinearColor Color=FLinearColor(0,0,1,1));
+
+	//Scene-view Level Project and Deproject
+	void VictoryProject(		const FSceneView* View,const FVector&amp; WorldPoint,		FVector2D&amp; OutPixelLocation);
+	void VictoryDeProject(	const FSceneView* View,const FVector2D&amp; ScreenPoint, FVector&amp; out_WorldOrigin, FVector&amp; out_WorldDirection);
+	
+	//Box from Point with Size
+	FORCEINLINE FBox BoxFromPointWithSize(const FVector&amp; InCenter, const float&amp; Size)
+	{
+		return FBox(
+			InCenter+(FVector(1,1,1) * -Size/2),
+			InCenter+(FVector(1,1,1) * Size/2)
+		);
+	}
+	
+//RV
+public:
+	int32 RV_Int32;
+	float RV_yStart;
+	float RV_Float;
+	FVector RV_Vect;
+	FRotator RV_Rot;
+	FCollisionQueryParams RV_TraceParams;
+	FHitResult RV_Hit;
+	AActor* RV_HitActor;
+//Victory Title
+//Time
+public:
+	FDateTime VictoryTitleAppearTime;
+	FTimespan CurTimeSpan;
+	bool VictoryTitleVisible;
+	bool FadeInVictoryTitle;
+	float VictoryTitleAlpha;
+	
+	FORCEINLINE void VictoryTitleAppears()
+	{
+		VictoryTitleAppearTime = FDateTime::Now();
+		VictoryTitleAlpha = 1;
+		VictoryTitleVisible = true;
+		FadeInVictoryTitle = false;
+	}
+	
+//Tick
+public:
+	void Tick_VictoryTitle(FLevelEditorViewportClient* ViewportClient);
+	void Tick_VictoryTitleFadeIn();
+	void Tick_VictoryInterface(FLevelEditorViewportClient* ViewportClient);
+		
+//Core
+public:
+	UPROPERTY()
+	UVictoryEdEngine* VictoryEngine;
+	
+	bool ReEntering;
+	
+//Constructor/Destructor
+public:
+	FVictoryEdAlignMode(); 
+	~FVictoryEdAlignMode(); 
+	void JoyInit(UVictoryEdEngine* EnginePtr);
+	
+//FEdMode
+public:
+	virtual void Enter() OVERRIDE;
+	virtual void Exit() OVERRIDE;
+	
+	//More fundamental than DrawHUD
+	virtual void Render(const FSceneView* View,FViewport* Viewport,FPrimitiveDrawInterface* PDI) OVERRIDE;
+	
+	virtual void DrawHUD(FLevelEditorViewportClient* ViewportClient,FViewport* Viewport,const FSceneView* View,FCanvas* Canvas) OVERRIDE;
+	virtual bool InputKey(FLevelEditorViewportClient* ViewportClient,FViewport* Viewport,EKey Key,EInputEvent Event) OVERRIDE;
+	virtual bool MouseMove(FLevelEditorViewportClient* ViewportClient,FViewport* Viewport,int32 x, int32 y) OVERRIDE;
+	virtual bool InputAxis(FLevelEditorViewportClient* InViewportClient,FViewport* Viewport,int32 ControllerId,EKey Key,float Delta,float DeltaTime) OVERRIDE;
+	/** Notifies all active modes of any change in mouse movement */
+	virtual bool InputDelta( FLevelEditorViewportClient* InViewportClient,FViewport* InViewport,FVector&amp; InDrag,FRotator&amp; InRot,FVector&amp; InScale ) OVERRIDE;
+	
+	virtual bool HandleClick(FLevelEditorViewportClient* InViewportClient, HHitProxy *HitProxy, const FViewportClick &amp;Click) OVERRIDE;
+	virtual void Tick(FLevelEditorViewportClient* ViewportClient,float DeltaTime) OVERRIDE;
+	
+	//Cursor
+	virtual bool GetCursor(EMouseCursor::Type&amp; OutCursor) const OVERRIDE; 
+	
+	/**
+	 * Lets the mode determine if it wants to draw the widget or not.
+	 */
+	virtual bool ShouldDrawWidget() const;
+};
+&lt;/syntaxhighlight>
+
+====.CPP====
+
+&lt;syntaxhighlight lang="cpp">
+
+// Victory Ed Mode extension by Rama
+
+// Copyright 1998-2013 Epic Games, Inc. All Rights Reserved.
+
+//Victory Alignment Mode
+
+//#include "VictoryGame.h"
+#include "VictoryBPLibraryPrivatePCH.h"
+
+//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+
+#define CHECK_VSELECTED if(!VictoryEngine) return; if(!VictoryEngine->VSelectedActor) return;
+
+//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Display Choices [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+#define VERTEX_DISPLAY_STARS 		0
+#define VERTEX_DISPLAY_3DBOX 		1
+#define VERTEX_DISPLAY_RECT 			2
+#define VERTEX_DISPLAY_DIAMOND3D 	3
+#define VERTEX_DISPLAY_SPHERE 		4
+#define VERTEX_SELECTED_MULT		1.333
+#define VERTEX_SHAPE_MULT			0.8
+//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Defines [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+
+//MAX
+#define MAX_VERTEX_COUNT_FOR_DRAWING 10000
+#define MAX_VERTEX_COUNT_FOR_DRAWING_SPHERES 5000
+
+//Speeds
+#define XYZSPEEDMULT 20
+
+//3D
+#define DEFAULT_INSTANT_MOVE_DISTANCE 2048
+#define CURSOR_DELTA_DISTANCE_CALC 2048
+//HUD
+#define VICTORY_TITLE_HEIGHT 38
+#define VICTORY_TEXT_HEIGHT 24
+
+//Color
+#define RED 		0
+#define BLUE		1
+#define YELLOW 3
+
+//TIME
+#define VICTORY_TITLE_VISIBLE_DURATION 2
+
+//Button Vibes
+#define BUTTON_VIBE_VICTORYHOTKEYS 		0
+
+//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Const [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+const FLinearColor FVictoryEdAlignMode::RV_Red = FLinearColor(1,0,0,1);
+const FLinearColor FVictoryEdAlignMode::RV_Yellow = FLinearColor(1,1,0,1);
+const FLinearColor FVictoryEdAlignMode::RV_Blue= FLinearColor(0,0,1,1);
+const FColor FVictoryEdAlignMode::RV_VRed = FColor(255,0,0,255);
+const FColor FVictoryEdAlignMode::RV_VBlue = FColor(0,0,255,255);
+const FColor FVictoryEdAlignMode::RV_VYellow = FColor(255,255,0,255);
+	
+
+FVictoryEdAlignMode::FVictoryEdAlignMode()
+{
+	
+}
+FVictoryEdAlignMode::~FVictoryEdAlignMode()
+{	
+}
+
+//INIT
+void FVictoryEdAlignMode::JoyInit(UVictoryEdEngine* EnginePtr)
+{
+	ID = FName("VictoryEditorMode");
+	
+	//VictoryEngine
+	VictoryEngine = EnginePtr;
+	
+	//Victory Buttons
+	RefreshVictoryButtons();
+
+	//Enable Realtime
+	ReEntering = true;
+	
+	//Verticies
+	DoDrawVerticies = true;
+	VertexDisplayChoice = VERTEX_DISPLAY_STARS;
+	
+	//[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	
+	UsingMouseInstantMove = false;
+	CurrentVerticiesScale = 12;
+	
+	//[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	
+	//Traces
+	RV_TraceParams = FCollisionQueryParams(FName(TEXT("HUDRMBDown")), true, NULL);
+	RV_TraceParams.bTraceComplex = true;
+	//RV_TraceParams.bTraceAsyncScene = true;
+	RV_TraceParams.bReturnPhysicalMaterial = false;
+}
+
+void FVictoryEdAlignMode::RefreshVictoryButtons()
+{
+	VictoryButtons.Empty();
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~~
+	
+	FVButton NewButton;
+	NewButton.Vibe 	= BUTTON_VIBE_VICTORYHOTKEYS;
+	NewButton.minX	=	10;
+	NewButton.maxX	=	200;
+	NewButton.minY	=	VICTORY_TITLE_HEIGHT;
+	NewButton.maxY	=	VICTORY_TITLE_HEIGHT + VICTORY_TEXT_HEIGHT;
+	VictoryButtons.Add(NewButton);
+}
+
+//EXIT
+void FVictoryEdAlignMode::Exit()
+{
+	UsingMouseInstantMove = false;
+}
+//ENTER
+void FVictoryEdAlignMode::Enter()
+{
+	//FEdMode::Enter();
+	//18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	
+	//Victory Title Appears
+	VictoryTitleAppears();
+	ReEntering = true;
+	
+	//Clear keys
+	MinusIsDown = false;
+	PlusIsDown = false;
+	ShiftDown = false;
+	
+	//Trace
+	RV_TraceParams = FCollisionQueryParams(FName(TEXT("HUDRMBDown")), true, NULL);
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	
+	//testing
+	CHECK_VSELECTED
+	
+	//CreateUModel();
+}
+
+//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+
+FDropToClosestSurfaceData* FVictoryEdAlignMode::GetActorWithShortestDrop(TArray&lt;FDropToClosestSurfaceData>&amp; TheData)
+{
+	//No Actors
+	if(TheData.Num() &lt; 1) return NULL;
+	
+	//Only 1 Actor
+	if(TheData.Num() &lt; 2) return &amp;TheData[0];
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~~
+	
+	float SmallestDistance = 100000000;
+	int32 SmallestDataIndex = 0;
+	
+	//Find Smallest
+	for(int32 b = 0; b &lt; TheData.Num(); b++)
+	{
+		if( TheData[b].DistSquared &lt; SmallestDistance)
+		{
+			SmallestDistance = TheData[b].DistSquared;
+			SmallestDataIndex = b;
+		}
+	}
+	
+	//Valid?
+	if(TheData.IsValidIndex(SmallestDataIndex))
+	{
+		return &amp;TheData[SmallestDataIndex];
+	}
+	
+	return NULL;
+}
+void FVictoryEdAlignMode::DropSelectedActorsToNearestSurface()
+{
+	if(!VictoryEngine) return;
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	
+
+	//ONLY WORKING WITH SMAs at the moment, due to nature of rest of plugin
+	AStaticMeshActor* AsSMA = NULL;
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	// Closest Surface Data
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	TArray&lt;FDropToClosestSurfaceData> ClosestSurfaceData;
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	//TRACE PARAMETERS
+	FCollisionQueryParams TraceParams(FName(TEXT("VictoryEd Trace")), true, NULL);
+	TraceParams.bTraceComplex = true;
+	//TraceParams.bTraceAsyncScene = true;
+	TraceParams.bReturnPhysicalMaterial = false;
+	
+	//Ignore  ALL Selected Actors
+	for(FSelectionIterator VSelectItr = VictoryEngine->GetSelectedActorIterator(); 
+		VSelectItr; ++VSelectItr )
+	{
+		VSelectItrActor = Cast&lt;AActor>(*VSelectItr);
+		if(!VSelectItrActor) continue;
+		//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+		
+		//Add
+		TraceParams.AddIgnoredActor(VSelectItrActor);
+	}
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	//Hit Result
+	FHitResult TheHit;
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+
+	
+	//Iterate Over Selected Actors
+	FVector ActorLoc;
+	FVector BottomPoint;
+	FVector OffsetFromCenter;
+	for(FSelectionIterator VSelectItr = VictoryEngine->GetSelectedActorIterator(); 
+		VSelectItr; ++VSelectItr )
+	{
+		AsSMA = Cast&lt;AStaticMeshActor>(*VSelectItr);
+		if(!AsSMA) continue;
+		//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+		
+		//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+		//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Do the Trace [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+		//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+
+		//Re-initialize hit info
+		TheHit = FHitResult(ForceInit);
+		
+		//Trace!
+		ActorLoc = AsSMA->GetActorLocation();
+		GetWorld()->LineTraceSingle(
+			TheHit,		//result
+			ActorLoc,								
+			ActorLoc + FVector(0,0,-20000),
+			ECC_Pawn, //collision channel
+			TraceParams
+		);
+		
+		//Hit any Actor?
+		if(!TheHit.GetActor()) continue;
+		//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~~
+		
+		
+		//See .h
+		GetBottomSurfacePoint(AsSMA,BottomPoint);
+		
+		
+		//Offset From Center
+		OffsetFromCenter = ActorLoc - BottomPoint;
+			
+		//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) ADD Closest Surface Data [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+		FDropToClosestSurfaceData NewData;
+		NewData.TheActor = AsSMA;
+		NewData.SurfaceLoc = TheHit.ImpactPoint + OffsetFromCenter;
+		NewData.DistSquared = FVector::DistSquared(AsSMA->GetActorLocation(),NewData.SurfaceLoc);
+		ClosestSurfaceData.Add(NewData);
+		
+	}
+	
+	
+	//Get Smallest Drop Data
+	FDropToClosestSurfaceData* SmallestDropData = GetActorWithShortestDrop(ClosestSurfaceData);
+	if(!SmallestDropData) return;
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	
+	//Get Smallest Drop Actor
+	AStaticMeshActor* AnchorActor = SmallestDropData->TheActor;
+	if(!AnchorActor) return;
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	
+	
+	
+	//Get Relative Offsets of this to all other actors in selection
+	const FVector Origin = AnchorActor->GetActorLocation();
+	TArray&lt;FVector> AnchorOffsets;
+	AActor* AsActor;
+	for(FSelectionIterator VSelectItr = VictoryEngine->GetSelectedActorIterator(); 
+		VSelectItr; ++VSelectItr )
+	{
+		AsActor = Cast&lt;AActor>(*VSelectItr);
+		if(!AsActor) continue;
+		//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+		
+		AnchorOffsets.Add(AsActor->GetActorLocation() - Origin);
+	}
+	
+	
+	//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Move Anchor Actor [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	
+	//Move to impact, Plus the offset from nearest surface of object
+	AnchorActor->SetActorLocation(SmallestDropData->SurfaceLoc);
+	
+	//Move all other actors to Anchor Actor + Offset
+	int32 AnchorItr = 0;
+	for(FSelectionIterator VSelectItr = VictoryEngine->GetSelectedActorIterator(); 
+		VSelectItr; ++VSelectItr )
+	{
+		AsActor = Cast&lt;AActor>(*VSelectItr);
+		if(!AsActor) continue;
+		//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+		
+		//VALID?
+		if(!AnchorOffsets.IsValidIndex(AnchorItr)) break;
+		
+		AsActor->SetActorLocation(SmallestDropData->SurfaceLoc + AnchorOffsets[AnchorItr]);
+		
+		//INC
+		AnchorItr++;
+	}
+	
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	
+	//Update Display!
+	DoSingleDisplayUpdate = true;
+	
+	
+	//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) RESELECT SINGLE ACTOR TO MOVE WIDGET
+	if(VictoryEngine->GetSelectedActorCount() &lt; 2)
+	{
+		//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~~
+		//Deselect without Noting
+		VictoryEngine->SelectNone(false, true, false);
+		VictoryEngine->SelectActor(AnchorActor,true,true);
+	}
+}
+
+//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+
+FPositionVertexBuffer* FVictoryEdAlignMode::GetVerticies(AStaticMeshActor* TheSMA)
+{
+	if(!TheSMA) return NULL;
+	if(!TheSMA->IsValidLowLevel()) return NULL;
+	if(!TheSMA->StaticMeshComponent) return NULL;
+	if(!TheSMA->StaticMeshComponent->StaticMesh) return NULL;
+	if(!TheSMA->StaticMeshComponent->StaticMesh->RenderData) return NULL;
+	
+	//Valid LOD ?
+	if(TheSMA->StaticMeshComponent->StaticMesh->RenderData->LODResources.Num() &lt;= 0) return NULL;
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	//				Vertex Buffer Check
+	FPositionVertexBuffer* VertexBuffer = 
+		&amp;TheSMA->StaticMeshComponent->StaticMesh->RenderData->LODResources[0].PositionVertexBuffer;
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	//			Count Too High?
+	if(VertexBuffer->GetNumVertices() > MAX_VERTEX_COUNT_FOR_DRAWING)
+	{
+		//UE_LOG(Victory, Error, TEXT("Vertex Count too high to draw! %d"), VertexBuffer->GetNumVertices() );
+		return NULL;
+		//18:11, 4 July 2018 (UTC)~~
+	}
+	
+	//Return Vertex Buffer
+	return &amp;TheSMA->StaticMeshComponent->StaticMesh->RenderData->LODResources[0].PositionVertexBuffer;
+}
+
+//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+
+/*
+UENUM()
+enum EInputEvent
+{
+	IE_Pressed              =0,
+	IE_Released             =1,
+	IE_Repeat               =2,
+	IE_DoubleClick          =3,
+	IE_Axis                 =4,
+	IE_MAX                  =5,
+};
+*/
+
+//Pressed
+void FVictoryEdAlignMode::InputKeyPressed(EKey Key)
+{
+	//UE_LOG(Victory, Error, TEXT("Key pressed %s"), *EKeys::GetKeyName(Key).ToString() );
+	
+	if(!VictoryEngine) return;
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~~
+	
+	//RMB
+	if(Key == EKeys::RightMouseButton) 
+	{
+		RMBDown = true;
+		return;
+		//18:11, 4 July 2018 (UTC)~
+	}
+	
+	//Left Mouse
+	if(Key == EKey::LeftMouseButton)
+	{
+		LeftMouseClick();
+		return;
+		//18:11, 4 July 2018 (UTC)~
+	}
+	
+	//X Key
+	if(Key == EKey::X) 
+	{
+		XDown = true;
+		return;
+	}
+	
+	//Y Key
+	if(Key == EKey::Y) 
+	{
+		DropSelectedActorsToNearestSurface();
+		return;
+	}
+	
+	//U Key
+	if(Key == EKey::U) 
+	{
+		YDown = true;
+		DoDrawVerticies = !DoDrawVerticies;
+		return;
+	}
+	
+	//K Key
+	if(Key == EKey::K) 
+	{
+		if(VictoryEngine->VSelectedActor)
+			VictoryEngine->VSelectedActor->SetActorRotation(FRotator::ZeroRotator);
+		return;
+	}
+	
+	//SHIFT KEY
+	if(Key == EKey::LeftShift || Key == EKey::RightShift) 
+	{
+		ShiftDown = true;
+		return;
+	}
+	
+	
+	//- Key
+	if(Key == EKeys::Underscore) 
+	{
+		MinusIsDown = true;
+		PendingButtonRefresh = true;
+		return;
+	}
+	//+ Key
+	if(Key == EKey::Equals) 
+	{
+		PlusIsDown = true;
+		PendingButtonRefresh = true;
+		return;
+	}
+	
+	//T Key
+	if(Key == EKey::T)
+	{
+		UsingMouseInstantMove = !UsingMouseInstantMove;
+		return;
+		//18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	}
+	
+	//V Key
+	if(Key == EKey::V)
+	{
+		SnapKeyPressed = true;
+		return;
+		//18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	}
+	//B Key
+	if(Key == EKey::B)
+	{
+		VertexDisplayChoice++;
+		if(VertexDisplayChoice > 4) VertexDisplayChoice = 0;
+		return;
+		//18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	}
+	
+	
+	//Restore Previous Editor Mode
+	if(Key == EKey::P)
+	{
+		//Clear all Verticies
+	
+		//Exit
+		VictoryEngine->ExitVictoryAlignMode();
+		
+		return;
+		//18:11, 4 July 2018 (UTC)~
+	}
+}
+
+//Released
+void FVictoryEdAlignMode::InputKeyReleased(EKey Key)
+{
+	//RMB
+	if(Key == EKeys::RightMouseButton)
+	{
+		PendingButtonRefresh = true;
+		RMBDown = false;
+	}
+	
+	//LMB
+	else if(Key == EKeys::LeftMouseButton)
+	{
+		PendingButtonRefresh = true;
+	}
+	
+	//SHIFT KEY
+	if(Key == EKey::LeftShift || Key == EKey::RightShift) ShiftDown = false;
+	
+	//- Key
+	else if(Key == EKeys::Underscore) MinusIsDown = false;
+	
+	//+ Key
+	else if(Key == EKey::Equals)  PlusIsDown = false;
+	
+	//X Key
+	else if(Key == EKey::X) XDown = false;
+	
+	//Y Key
+	else if(Key == EKey::Y) YDown = false;
+	
+}
+
+//Double Click
+void FVictoryEdAlignMode::InputKeyDoubleClick(EKey Key)
+{
+	//UE_LOG(Victory, Error, TEXT("Key DOUBLE CLICK %s"), *EKeys::GetKeyName(Key).ToString() );
+}
+
+bool FVictoryEdAlignMode::InputKey(FLevelEditorViewportClient* ViewportClient,FViewport* Viewport,EKey Key,EInputEvent Event)
+{
+	//Middle Mouse
+	if (Key == EKeys::MiddleMouseButton) 			MiddleMouseEvent(Event);
+	else if(Event == EInputEvent::IE_Pressed) 		InputKeyPressed(Key);
+	else if(Event == EInputEvent::IE_Released) 	InputKeyReleased(Key);
+	else if(Event == EInputEvent::IE_DoubleClick) 	InputKeyDoubleClick(Key);
+	
+	return false;
+}
+
+void FVictoryEdAlignMode::ProcessMouseInstantMove(FLevelEditorViewportClient* ViewportClient)
+{
+	CHECK_VSELECTED
+	if(!ViewportClient) return;
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	
+	//Re-initialize hit info
+	RV_Hit = FHitResult(ForceInit);
+	
+	//Clear Previous Ignore Actors
+	RV_TraceParams.IgnoreActors.Empty();
+	
+	//Ignore All Selected Actors!!!
+	for(FSelectionIterator VSelectItr = VictoryEngine->GetSelectedActorIterator(); 
+		VSelectItr; ++VSelectItr )
+	{
+		VSelectItrActor = Cast&lt;AActor>(*VSelectItr);
+		if(!VSelectItrActor) continue;
+		//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+		
+		//Add
+		RV_TraceParams.AddIgnoredActor(VSelectItrActor);
+	}
+	
+	//Trace
+	GetWorld()->LineTraceSingle(
+		RV_Hit,		//result
+		CursorWorldPos,	//start
+		CursorWorldPos + 100000 * CursorWorldDir , //end
+		ECC_WorldStatic, //collision channel
+		RV_TraceParams
+	);
+	
+	//Store Hit Actor
+	RV_HitActor = RV_Hit.GetActor();
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	//				Update Highlighted Actor
+	
+		//does  not equal same		  does not equal the main Selected Actor
+	if(RV_HitActor != HighlightedActor &amp;&amp; RV_HitActor != VictoryEngine->VSelectedActor )
+	{
+		//potentially deselect any highlighted
+		HighlightedActor = Cast&lt;AStaticMeshActor>(RV_HitActor);
+		
+		//Refresh Vertex Buffer
+		HighlightedVertexBuffer = NULL;
+		if(HighlightedActor) HighlightedVertexBuffer = GetVerticies(HighlightedActor);
+		
+		
+	}
+	
+	if(RV_Hit.bBlockingHit)
+	{
+		//INVALIDATE THE DISPLAY
+		ViewportClient->Viewport->InvalidateDisplay();
+	}
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	//			PROCESS MOUSE INSTANT MOVE?
+	if(!UsingMouseInstantMove) return;
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	
+	//If not hit something, use default distance
+	if(!RV_Hit.bBlockingHit) RV_Hit.ImpactPoint = CursorWorldPos + DEFAULT_INSTANT_MOVE_DISTANCE * CursorWorldDir;
+	
+	
+	//		Move the Primary, the Origin!
+	RV_Vect = RV_Hit.ImpactPoint;
+		
+		//Use Existing Z of Object
+	RV_Vect.Z = VictoryEngine->VSelectedActor->GetActorLocation().Z;
+		
+		//Update Location
+	VictoryEngine->VSelectedActor->SetActorLocation(RV_Vect);	
+		
+		//Save New Origin Location
+	const FVector NewOrigin(RV_Vect);
+	
+	//18:11, 4 July 2018 (UTC)~~
+	
+	//Update the Others According to the Moved Origin
+	RV_Int32 = 0;
+	for(FSelectionIterator VSelectItr = VictoryEngine->GetSelectedActorIterator(); 
+		VSelectItr; ++VSelectItr )
+	{
+		VSelectItrActor = Cast&lt;AActor>(*VSelectItr);
+		if(!VSelectItrActor) 
+		{
+			RV_Int32++;
+			continue;
+		}
+		//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+		
+		//Get New Origin
+		RV_Vect = NewOrigin;
+		
+		//Add Offset
+		if(VictoryEngine->SelectionRelativeOffsets.IsValidIndex(RV_Int32))
+		{
+			RV_Vect+=VictoryEngine->SelectionRelativeOffsets[RV_Int32];
+		}
+		
+		//Update Location
+		VSelectItrActor->SetActorLocation(RV_Vect);
+		
+		//Inc
+		RV_Int32++;
+	}
+	
+	//INVALIDATE THE DISPLAY
+	ViewportClient->Viewport->InvalidateDisplay();
+	
+}
+
+bool FVictoryEdAlignMode::InputDelta( FLevelEditorViewportClient* InViewportClient,FViewport* InViewport,FVector&amp; InDrag,FRotator&amp; InRot,FVector&amp; InScale )
+{
+	//only works if LMB is down
+	
+	return false;
+}
+
+bool FVictoryEdAlignMode::InputAxis(FLevelEditorViewportClient* InViewportClient,FViewport* Viewport,int32 ControllerId,EKey Key,float Delta,float DeltaTime)
+{
+	//only works if any mouse button is down
+	
+	return false;
+}
+
+bool FVictoryEdAlignMode::MouseMove(FLevelEditorViewportClient* ViewportClient,FViewport* Viewport,int32 x, int32 y)
+{
+	if(!ViewportClient) return false;
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	//	ESSENTIAL UPDATES
+	MouseLocation.X=x;
+	MouseLocation.Y=y;
+	
+	//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Cursor World Space [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	FViewportCursorLocation CursorWS = ViewportClient->GetCursorWorldLocationFromMousePos();
+	CursorWorldPos = CursorWS.GetOrigin();
+	CursorWorldDir = CursorWS.GetDirection();
+	
+	//Calc Delta
+	RV_Vect = CursorWorldPos + CursorWorldDir * CURSOR_DELTA_DISTANCE_CALC;
+	CursorWorldDelta = RV_Vect - CursorWorldPrevPos;
+	CursorWorldDelta /= 4;
+	if(CursorWorldDelta.SizeSquared() &lt; 3) CursorWorldDelta = FVector::ZeroVector;
+	if(CursorWorldDelta.SizeSquared() > 10000) CursorWorldDelta = FVector::ZeroVector;
+	
+	//Save Prev
+	CursorWorldPrevPos = RV_Vect;
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	
+	//SUPER HYPER BUTTON REFRESHING
+	//		due to the slide physx camera thing when moving
+	if(!UsingMouseInstantMove) PendingButtonRefresh = true;
+	
+	return false;
+}
+
+//Middle Mouse Event
+void FVictoryEdAlignMode::MiddleMouseEvent(EInputEvent Event)
+{
+	//Pressed
+	if(Event == EInputEvent::IE_Pressed)
+	{
+		
+	
+		return;
+	}
+	
+	//Released
+	if(Event == EInputEvent::IE_Released)
+	{
+		
+		return;
+	}
+}
+
+//Left Mouse Click
+void FVictoryEdAlignMode::LeftMouseClick()
+{
+	CHECK_VSELECTED
+	
+	//SelectedVertexForSelectedActor = -1;
+}
+bool FVictoryEdAlignMode::HandleClick(FLevelEditorViewportClient* InViewportClient, HHitProxy *HitProxy, const FViewportClick &amp;Click)
+{
+
+	return false;
+}
+
+//[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+
+//``
+void FVictoryEdAlignMode::GetSelectedVertexLocation(FVector&amp; LocOut)
+{
+	CHECK_VSELECTED
+	
+	if(!SelectedVertexBuffer)  return;	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	
+	const FTransform SMATransform = VictoryEngine->VSelectedActor->GetTransform();
+	const FVector SMALocation 		= SMATransform.GetLocation();
+	const int32 VertexCount 			= SelectedVertexBuffer->GetNumVertices();
+	for(int32 Itr = 0; Itr &lt; VertexCount; Itr++)
+	{
+		if(Itr == SelectedVertexForSelectedActor) 
+		{
+			LocOut = SMALocation + SMATransform.TransformVector(SelectedVertexBuffer->VertexPosition(Itr));
+			return;
+			//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+		}
+	}
+}
+
+void FVictoryEdAlignMode::DoVertexSnap(const FVector&amp; Dest)
+{
+	CHECK_VSELECTED
+	
+	FVector SelectedVertexLocation;
+	
+	//Initial Location
+	GetSelectedVertexLocation(SelectedVertexLocation);
+	
+	//Match rotation of owner of target vertex?
+	if(ShiftDown)
+	{
+		VictoryEngine->VSelectedActor->SetActorRotation(RV_Hit.ImpactNormal.Rotation());
+		//Recalc Selected Vertex After Rotation
+		GetSelectedVertexLocation(SelectedVertexLocation);
+		
+		//UE_LOG(Victory, Error, TEXT("WHAT IS HIT NORMAL %s"), *RV_Hit.ImpactNormal.Rotation().ToString() );
+	}
+	
+	//No modifier, just regular click
+	
+	//1. calc distance between selected vertex and JSMA location
+	//2. move the JSMA to the target vertex
+	//3. subtract the distance
+	
+	//Distance Offset
+	const FVector LocOffset = SelectedVertexLocation - VictoryEngine->VSelectedActor->GetActorLocation();
+	
+	//Set Location
+	VictoryEngine->VSelectedActor->SetActorLocation(Dest - LocOffset);
+	
+	//Refresh After Moving
+	PendingButtonRefresh = true;
+}
+
+void FVictoryEdAlignMode::RefreshVertexButtons(const FSceneView* View)
+{
+	CHECK_VSELECTED
+	
+	if(!View) return;
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	
+	//No Longer Pending
+	PendingButtonRefresh = false;
+	
+	//Refresh
+	SelectedActorButtons.Empty();
+	HighlightedActorButtons.Empty();
+	
+	//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Vars [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	const float ButtonHalfSize = CurrentVerticiesScale/2;
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	//			Selected Actor
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	if(!VictoryEngine->VSelectedActor->IsValidLowLevel() ) return;
+	
+	if(!SelectedVertexBuffer)  return;	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	
+	FTransform SMATransform = VictoryEngine->VSelectedActor->GetTransform();
+	FVector SMALocation 		= SMATransform.GetLocation();
+	const int32 VertexCount 			= SelectedVertexBuffer->GetNumVertices();
+	for(int32 Itr = 0; Itr &lt; VertexCount; Itr++)
+	{
+		//Get Rotated Scaled Translated Vertex Pos
+		VertexWorldSpace = SMALocation + SMATransform.TransformVector(SelectedVertexBuffer->VertexPosition(Itr));
+		
+		//Get 2D Center
+		VictoryProject(View, 
+			VertexWorldSpace, 
+			Vertex2DCenter 
+		);
+		
+		FVButton NewButton;
+		NewButton.Vibe 			= 	Itr;
+		NewButton.PointInWorld 	= 	VertexWorldSpace;
+		NewButton.minX			=	Vertex2DCenter.X - ButtonHalfSize;
+		NewButton.maxX			=	Vertex2DCenter.X + ButtonHalfSize;
+		NewButton.minY			=	Vertex2DCenter.Y - ButtonHalfSize;
+		NewButton.maxY			=	Vertex2DCenter.Y + ButtonHalfSize;
+
+		//Add Button
+		SelectedActorButtons.Add(NewButton);
+	}
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	//			Highlighted Actor
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	if(!HighlightedActor) return;
+	if(!HighlightedActor->IsValidLowLevel()) return;
+	
+	if(!HighlightedVertexBuffer)  return;	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	
+	SMATransform = HighlightedActor->GetTransform();
+	SMALocation 		= SMATransform.GetLocation();
+	const int32 VertexCount2 			= HighlightedVertexBuffer->GetNumVertices();
+	for(int32 Itr = 0; Itr &lt; VertexCount2; Itr++)
+	{
+		//Get Rotated Scaled Translated Vertex Pos
+		VertexWorldSpace = SMALocation + SMATransform.TransformVector(HighlightedVertexBuffer->VertexPosition(Itr));
+		
+		//Get 2D Center
+		VictoryProject(View, 
+			VertexWorldSpace, 
+			Vertex2DCenter 
+		);
+		
+		FVButton NewButton;
+		NewButton.Vibe 			= 	Itr;
+		NewButton.PointInWorld 	= 	VertexWorldSpace;
+		NewButton.minX			=	Vertex2DCenter.X - ButtonHalfSize;
+		NewButton.maxX			=	Vertex2DCenter.X + ButtonHalfSize;
+		NewButton.minY			=	Vertex2DCenter.Y - ButtonHalfSize;
+		NewButton.maxY			=	Vertex2DCenter.Y + ButtonHalfSize;
+
+		//Add Button
+		HighlightedActorButtons.Add(NewButton);
+	}
+	
+}
+
+//```
+void FVictoryEdAlignMode::PDI_DrawVerticies(const FSceneView* View, FPrimitiveDrawInterface* PDI, const FPositionVertexBuffer* VertexBuffer, const FTransform&amp; SMATransform, bool DrawingSelectedActor)
+{
+	CHECK_VSELECTED
+	
+	if(!View) 			return;
+	if(!PDI) 			return;
+	if(!VertexBuffer) 	return;
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+
+	//Location
+	const FVector SMALocation 			= SMATransform.GetLocation();
+	
+	//Get Count
+	const int32 VertexCount = VertexBuffer->GetNumVertices();
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	//			Selected Actor
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	if(DrawingSelectedActor)
+	{
+	for(int32 Itr = 0; Itr &lt; VertexCount; Itr++)
+	{
+		//Selected Vertex?
+		if(SelectedVertexForSelectedActor == Itr )
+		{
+			//Draw to the PDI
+			PDI->DrawPoint(
+				SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),
+				RV_Yellow,
+				CurrentVerticiesScale*VERTEX_SELECTED_MULT,
+				0 //depth
+			);
+			continue;
+		}
+		else if(HighlightedVertexForSelectedActor == Itr)
+		{
+			//Draw to the PDI
+			PDI->DrawPoint(
+				SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),
+				FLinearColor(0,1,1,1),
+				CurrentVerticiesScale*VERTEX_SELECTED_MULT,
+				0 //depth
+			);
+			continue;
+		}
+		else
+		{
+			
+			//Spheres
+			if(VertexDisplayChoice == VERTEX_DISPLAY_SPHERE)
+			{
+				if(VertexCount > MAX_VERTEX_COUNT_FOR_DRAWING_SPHERES)
+				{
+				DrawWireBox(
+					PDI,
+					BoxFromPointWithSize(SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),CurrentVerticiesScale*0.5),
+					RV_VRed,
+					0
+				);
+				continue;
+				}
+				else
+				{
+				DrawWireSphere(
+					PDI, 
+					SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),
+					RV_VRed, 
+					CurrentVerticiesScale*VERTEX_SHAPE_MULT, 
+					12, 
+					0
+				);
+				continue;
+				}
+			}
+			
+			//Diamond
+			else if(VertexDisplayChoice == VERTEX_DISPLAY_DIAMOND3D)
+			{
+			DrawWireSphere(
+				PDI, 
+				SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),
+				RV_VRed, 
+				CurrentVerticiesScale*VERTEX_SHAPE_MULT, 
+				4, 
+				0
+			);
+			continue;
+			}
+			
+			//Box
+			else if(VertexDisplayChoice == VERTEX_DISPLAY_3DBOX)
+			{
+			DrawWireBox(
+				PDI,
+				BoxFromPointWithSize(SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),CurrentVerticiesScale*VERTEX_SHAPE_MULT),
+				RV_VRed,
+				0
+			);
+			continue;
+			}
+			
+			//Stars
+			else if(VertexDisplayChoice == VERTEX_DISPLAY_STARS)
+			{
+			DrawWireStar(
+				PDI,
+				SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),
+				CurrentVerticiesScale, 
+				RV_VRed,
+				0
+			);
+			continue;
+			}
+			
+			//Rect
+			else if(VertexDisplayChoice == VERTEX_DISPLAY_RECT)
+			{
+			//Draw to the PDI
+			PDI->DrawPoint(
+				SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),
+				RV_Red,
+				CurrentVerticiesScale,
+				0 //depth
+			);
+			continue;
+			}
+			
+		}
+			
+	}
+	}
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	//			Highlighted Actor
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	else
+	{
+	for(int32 Itr = 0; Itr &lt; VertexCount; Itr++)
+	{
+		if(HighlightedVertexForHighlightedActor == Itr)
+		{
+			//Draw to the PDI
+			PDI->DrawPoint(
+				SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),
+				FLinearColor(0,1,1,1),
+				CurrentVerticiesScale*VERTEX_SELECTED_MULT,
+				0 //depth
+			);
+			continue;
+		}
+		
+		//Spheres
+		if(VertexDisplayChoice == VERTEX_DISPLAY_SPHERE)
+		{
+			if(VertexCount > MAX_VERTEX_COUNT_FOR_DRAWING_SPHERES)
+			{
+			DrawWireBox(
+				PDI,
+				BoxFromPointWithSize(SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),CurrentVerticiesScale*VERTEX_SHAPE_MULT),
+				RV_VBlue,
+				0
+			);
+			continue;
+			}
+			else
+			{
+			DrawWireSphere(
+				PDI, 
+				SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),
+				RV_VBlue, 
+				CurrentVerticiesScale*VERTEX_SHAPE_MULT, 
+				12, 
+				0
+			);
+			continue;
+			}
+		}
+		
+		//Diamond
+		else if(VertexDisplayChoice == VERTEX_DISPLAY_DIAMOND3D)
+		{
+		DrawWireSphere(
+			PDI, 
+			SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),
+			RV_VBlue, 
+			CurrentVerticiesScale*VERTEX_SHAPE_MULT, 
+			4, 
+			0
+		);
+		continue;
+		}
+			
+		//Box
+		else if(VertexDisplayChoice == VERTEX_DISPLAY_3DBOX)
+		{
+		DrawWireBox(
+			PDI,
+			BoxFromPointWithSize(SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),CurrentVerticiesScale),
+			RV_VBlue,
+			0
+		);
+		continue;
+		}
+		
+		//Stars
+		else if(VertexDisplayChoice == VERTEX_DISPLAY_STARS)
+		{
+		
+		DrawWireStar(
+			PDI,
+			SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),
+			CurrentVerticiesScale, 
+			RV_VBlue,
+			0
+		);
+		continue;
+		}
+		
+		//Rect
+		else if(VertexDisplayChoice == VERTEX_DISPLAY_RECT)
+		{
+		//Draw to the PDI
+		PDI->DrawPoint(
+			SMALocation + SMATransform.TransformVector(VertexBuffer->VertexPosition(Itr)),
+			RV_Blue,
+			CurrentVerticiesScale,
+			0 //depth
+		);
+		continue;
+		}
+	}	
+	}
+}
+
+
+void FVictoryEdAlignMode::DrawHotkeyToolTip(FCanvas* Canvas)
+{
+	if(!Canvas) return;
+	//18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	
+	RV_yStart = MouseLocation.Y + 16;
+	
+	//Background
+	DrawVictoryRect(Canvas, 
+		MouseLocation.X - 7, 
+		RV_yStart - 7,
+		420,
+		VICTORY_TEXT_HEIGHT * 10 + 120,
+		FLinearColor(0,0,1,0.777)
+	);
+	
+	DrawVictoryTextWithColor(Canvas, 
+		"[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Victory Editor Mode Hotkeys [[User:Admin|Admin]] ([[User talk:Admin|talk]])", 
+		MouseLocation.X,RV_yStart,
+		RV_Yellow
+	);
+	
+	RV_yStart += VICTORY_TEXT_HEIGHT * 2;
+	DrawVictoryTextWithColor(Canvas, 
+		"P ~ Restore previous Editor Mode", 
+		MouseLocation.X,RV_yStart,
+		RV_Yellow
+	);
+	
+	RV_yStart += VICTORY_TEXT_HEIGHT + 20;
+	DrawVictoryTextWithColor(Canvas, 
+		"Y ~ Drop Objects to Nearest Surface!", 
+		MouseLocation.X,RV_yStart,
+		RV_Yellow
+	);
+	
+	RV_yStart += VICTORY_TEXT_HEIGHT + 20;
+	DrawVictoryTextWithColor(Canvas, 
+		"T ~ Toggle Instant Mouse Move Mode", 
+		MouseLocation.X,RV_yStart,
+		RV_Yellow
+	);
+	
+	RV_yStart += VICTORY_TEXT_HEIGHT;
+	DrawVictoryTextWithColor(Canvas, 
+		"K ~ Reset Rotation", 
+		MouseLocation.X,RV_yStart,
+		RV_Yellow
+	);
+	
+	RV_yStart += VICTORY_TEXT_HEIGHT + 20;
+	DrawVictoryTextWithColor(Canvas, 
+		"V ~ Select Verticies for Snapping!", 
+		MouseLocation.X,RV_yStart,
+		RV_Yellow
+	);
+	
+	RV_yStart += VICTORY_TEXT_HEIGHT + 5;
+	DrawVictoryTextWithColor(Canvas, 
+		"SHIFT + V ~ Snap by Surface Normal", 
+		MouseLocation.X,RV_yStart,
+		RV_Yellow
+	);
+	
+	RV_yStart += VICTORY_TEXT_HEIGHT + 5;
+	DrawVictoryTextWithColor(Canvas, 
+		"B ~ Toggle Different Vertex Types!!!", 
+		MouseLocation.X,RV_yStart,
+		RV_Yellow
+	);
+	
+	RV_yStart += VICTORY_TEXT_HEIGHT + 4;
+	DrawVictoryTextWithColor(Canvas, 
+		"Hold + or - ~ Change Vertex Size!", 
+		MouseLocation.X,RV_yStart,
+		RV_Yellow
+	);
+	
+	RV_yStart += VICTORY_TEXT_HEIGHT + 4;
+	DrawVictoryTextWithColor(Canvas, 
+		"U ~ Toggle Hiding of All Verticies", 
+		MouseLocation.X,RV_yStart,
+		RV_Yellow
+	);
+}
+
+void FVictoryEdAlignMode::DrawVictoryText(FCanvas* Canvas, const FString&amp; TheStr, float X, float Y, float TheScale )
+{
+	if(!Canvas) return;
+	//18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	
+	FCanvasTextItem NewText(
+		FVector2D(X,Y),
+		FText::FromString(TheStr),
+		VictoryEngine->GetVictoryFont(),
+		FLinearColor(1,0,1,1)
+	);
+	NewText.Scale.Set(TheScale,TheScale);
+	NewText.bOutlined = true;
+	NewText.Draw(Canvas);
+}
+void FVictoryEdAlignMode::DrawVictoryTextWithColor(FCanvas* Canvas, const FString&amp; TheStr, float X, float Y, FLinearColor TheColor, float TheScale )
+{
+	if(!Canvas) return;
+	//18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	
+	FCanvasTextItem NewText(
+		FVector2D(X,Y),
+		FText::FromString(TheStr),
+		VictoryEngine->GetVictoryFont(),
+		TheColor
+	);
+	NewText.Scale.Set(TheScale,TheScale);
+	NewText.bOutlined = true;
+	
+	//Outline gets its alpha from the main color
+	NewText.OutlineColor = FLinearColor(0,0,0,TheColor.A * 2);
+	
+	NewText.Draw(Canvas);
+}
+
+void FVictoryEdAlignMode::DrawVictoryLine(
+	FCanvas* Canvas, 
+	const FVector2D&amp; Start, 
+	const FVector2D&amp; End, 
+	FLinearColor TheColor, 
+	float Thick
+)
+{
+	if(!Canvas) return;
+	//18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	
+	FCanvasLineItem NewLine(Start,End);
+	NewLine.SetColor(TheColor);
+	NewLine.LineThickness = Thick;
+	NewLine.Draw(Canvas);
+}
+void FVictoryEdAlignMode::DrawVictoryRect(FCanvas* Canvas, float X, float Y, float Width, float Height, FLinearColor Color)
+{
+	if(!Canvas) return;
+	//18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	
+	FCanvasTileItem TileItem( 
+		FVector2D(X, Y), 
+		FVector2D( Width, Height ), 
+		Color 
+	);
+   
+    TileItem.BlendMode = SE_BLEND_Translucent;
+	TileItem.Draw(Canvas);
+	
+	/*
+	Canvas->DrawTile( 
+		X, Y, 
+		Width, Height, 
+		0, 0, 1, 1, 
+		Color
+	);
+	*/
+
+}
+
+int32 FVictoryEdAlignMode::FindClosestOfButtons(TArray&lt;FVButton*> Inbuttons)
+{
+	float CurDistance;
+	float MinDistance = 10000000000;
+	int32 MinIndex = -1;
+	for(int32 Itr=0; Itr &lt; Inbuttons.Num(); Itr++)
+	{
+		CurCheckButton = Inbuttons[Itr];
+		if(!CurCheckButton) continue;
+		
+		//world space location stored in the Button itself
+		CurDistance = FVector::DistSquared(CurCheckButton->PointInWorld,CursorWorldPos);
+		
+		//Min Check
+		if(CurDistance &lt; MinDistance)
+		{
+			MinDistance = CurDistance;
+			MinIndex = Itr;
+		}
+	}
+	
+	//VALIDITY CHECK
+	if(!Inbuttons.IsValidIndex(MinIndex))
+		return -1;
+		
+	else return MinIndex;
+}
+
+void FVictoryEdAlignMode::CheckCursorInButtons(FCanvas* Canvas)
+{	
+	if(!Canvas) return;
+	//18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+
+	//Reset Highlighted
+	HighlightedVertexForSelectedActor = -1;
+	HighlightedVertexForHighlightedActor = -1;
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	//Main Buttons
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	RV_Int32=0;
+	while(VictoryButtons.IsValidIndex(RV_Int32))
+	{
+		CurCheckButton = &amp;VictoryButtons[RV_Int32];
+		
+		//check cursor in bounds
+		if (CurCheckButton->minX &lt;= MouseLocation.X &amp;&amp; MouseLocation.X &lt;= CurCheckButton->maxX &amp;&amp;
+			CurCheckButton->minY &lt;= MouseLocation.Y &amp;&amp; MouseLocation.Y &lt;= CurCheckButton->maxY )
+		{
+			//Active Button Type
+			ActiveButton_Vibe = CurCheckButton->Vibe; 
+			
+			if(ActiveButton_Vibe == BUTTON_VIBE_VICTORYHOTKEYS)
+			{
+				DrawHotkeyToolTip(Canvas);
+				FadeInVictoryTitle = true;
+				VictoryTitleVisible = false; //prevent a duel between the two
+				return;
+				//18:11, 4 July 2018 (UTC)
+			}
+		}
+		
+		//18:11, 4 July 2018 (UTC)~~
+		RV_Int32++;
+	}
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	//Selected Actor Vertex Buttons
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	RV_Int32=0;
+	ClosestSelectedActorButtons.Empty();
+	while(SelectedActorButtons.IsValidIndex(RV_Int32))
+	{
+		CurCheckButton = &amp;SelectedActorButtons[RV_Int32];
+		//check cursor in bounds
+		if (CurCheckButton->minX &lt;= MouseLocation.X &amp;&amp; MouseLocation.X &lt;= CurCheckButton->maxX &amp;&amp;
+			CurCheckButton->minY &lt;= MouseLocation.Y &amp;&amp; MouseLocation.Y &lt;= CurCheckButton->maxY )
+		{
+			ClosestSelectedActorButtons.Add(&amp;SelectedActorButtons[RV_Int32]);
+		}
+		
+		//18:11, 4 July 2018 (UTC)~~
+		RV_Int32++;
+	}
+	
+	//Find closest of potentially highlighted/selected
+	
+	const int32 FoundIndex = FindClosestOfButtons(ClosestSelectedActorButtons);
+	if(FoundIndex != -1)
+	{
+		CurCheckButton = ClosestSelectedActorButtons[FoundIndex];
+		if(CurCheckButton)
+		{
+			//Active Button Type
+			ActiveButton_Vibe = CurCheckButton->Vibe; 
+			
+			//Highlight Vertex if hovered over!
+			HighlightedVertexForSelectedActor = ActiveButton_Vibe;
+			
+			//Vertex Selected and not same?
+			if(SnapKeyPressed &amp;&amp; SelectedVertexForSelectedActor != ActiveButton_Vibe )
+			{
+				SnapKeyPressed = false;
+				SelectedVertexForSelectedActor = ActiveButton_Vibe;
+				return;
+				//18:11, 4 July 2018 (UTC)
+			}
+		}
+	}
+		
+	
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~~
+	//Highlighted Actor Vertex Buttons
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~~
+	
+	RV_Int32=0;
+	ClosestHighlightedActorButtons.Empty();
+	while(HighlightedActorButtons.IsValidIndex(RV_Int32))
+	{
+		CurCheckButton = &amp;HighlightedActorButtons[RV_Int32];
+		//check cursor in bounds
+		if (CurCheckButton->minX &lt;= MouseLocation.X &amp;&amp; MouseLocation.X &lt;= CurCheckButton->maxX &amp;&amp;
+			CurCheckButton->minY &lt;= MouseLocation.Y &amp;&amp; MouseLocation.Y &lt;= CurCheckButton->maxY )
+		{
+			ClosestHighlightedActorButtons.Add(&amp;HighlightedActorButtons[RV_Int32]);
+		}
+		
+		//18:11, 4 July 2018 (UTC)~~
+		RV_Int32++;
+	}
+	
+	//Find closest of potentially highlighted/selected
+	
+	const int32 FoundIndex2 = FindClosestOfButtons(ClosestHighlightedActorButtons);
+	if(FoundIndex2 != -1)
+	{
+		CurCheckButton = ClosestHighlightedActorButtons[FoundIndex2];
+		if(CurCheckButton)
+		{
+			//Active Button Type
+			ActiveButton_Vibe = CurCheckButton->Vibe; 
+			
+			//Highlight Vertex if hovered over!
+			HighlightedVertexForHighlightedActor = ActiveButton_Vibe;
+			
+			//Vertex Selected?
+			if(SnapKeyPressed)
+			{
+				SnapKeyPressed = false;
+				DoVertexSnap(CurCheckButton->PointInWorld);
+			}
+		}
+	}
+}
+
+//Victory Project
+void FVictoryEdAlignMode::VictoryProject(const FSceneView* View,const FVector&amp; WorldPoint,FVector2D&amp; OutPixelLocation)
+{
+	if(!View) return;
+	//18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	
+	/** Transforms a point from the view's world-space into pixel coordinates relative to the view's X,Y (left, top). */
+	View->WorldToPixel(WorldPoint,OutPixelLocation);
+}
+
+//Victory DeProject
+void FVictoryEdAlignMode::VictoryDeProject(const FSceneView* View,const FVector2D&amp; ScreenPoint, FVector&amp; out_WorldOrigin, FVector&amp; out_WorldDirection)
+{
+	if(!View) return;
+	//18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	
+	//NEEDS TO BE MADE CONST TO BE ABLE TO USE THIS
+	/** transforms 2D screen coordinates into a 3D world-space origin and direction 
+	 * @param ScreenPos - screen coordinates in pixels
+	 * @param out_WorldOrigin (out) - world-space origin vector
+	 * @param out_WorldDirection (out) - world-space direction vector
+	 */
+	//View->DeprojectFVector2D(ScreenPoint, out_WorldOrigin, out_WorldDirection);
+
+	
+	/** transforms 2D screen coordinates into a 3D world-space origin and direction 
+	 * @param ScreenPos - screen coordinates in pixels
+	 * @param ViewRect - view rectangle
+	 * @param InvViewMatrix - inverse view matrix
+	 * @param InvProjMatrix - inverse projection matrix
+	 * @param out_WorldOrigin (out) - world-space origin vector
+	 * @param out_WorldDirection (out) - world-space direction vector
+	 */
+	FSceneView::DeprojectScreenToWorld(
+		ScreenPoint, 
+		View->ViewRect, 
+		View->InvViewMatrix, 
+		View->ViewMatrices.GetInvProjMatrix(), 
+		out_WorldOrigin, 
+		out_WorldDirection
+	);
+
+}
+	
+
+//Draw Using the More Fundamental Method, PDI
+void FVictoryEdAlignMode::Render(const FSceneView* View,FViewport* Viewport,FPrimitiveDrawInterface* PDI)
+{
+	//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Verticies [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	if(DoDrawVerticies)
+	{
+	
+	if(SelectedVertexBuffer &amp;&amp; VictoryEngine->VSelectedActor)
+	{
+		PDI_DrawVerticies(View,	PDI,
+			SelectedVertexBuffer,VictoryEngine->VSelectedActor->GetTransform(),
+			true
+		);
+	}
+	
+	//Dont draw if Highlighted == Selected, drawn already
+	if(HighlightedVertexBuffer &amp;&amp; HighlightedActor &amp;&amp; HighlightedActor != VictoryEngine->VSelectedActor) 
+	{
+		PDI_DrawVerticies( View,	PDI,
+			HighlightedVertexBuffer, HighlightedActor->GetTransform(),
+			false //Highlighted Actor
+		);
+	}
+	
+	} //end of do draw verticies
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+}
+
+//Draw HUD
+void FVictoryEdAlignMode::DrawHUD(FLevelEditorViewportClient* ViewportClient,FViewport* Viewport,const FSceneView* View,FCanvas* Canvas)
+{
+	if(!Canvas) return;
+	if(!VictoryEngine) return;
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	
+	//Title Button
+	DrawVictoryTextWithColor(Canvas, "Victory Editor Hotkeys", 10,VICTORY_TITLE_HEIGHT, FLinearColor(1,0,1,VictoryTitleAlpha));
+		
+	//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Cursor [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	if(!UsingMouseInstantMove) CheckCursorInButtons(Canvas);
+	
+	//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Make Buttons? [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	if(PendingButtonRefresh) RefreshVertexButtons(View);
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	//Mouse Coordinates
+	//DrawVictoryText(Canvas, MouseLocation.ToString(), 400,50);
+	
+	//Mouse World Space Dir
+	//DrawVictoryText(Canvas, CursorWorldDir.ToString(), 300,50 + VICTORY_TEXT_HEIGHT );
+}
+
+void FVictoryEdAlignMode::Tick_VictoryTitle(FLevelEditorViewportClient* ViewportClient)
+{
+	CurTimeSpan = FDateTime::Now() - VictoryTitleAppearTime;
+	
+	//If > then Allowed Visible Duration, start to fade out
+	if(CurTimeSpan.GetTotalSeconds() > VICTORY_TITLE_VISIBLE_DURATION)
+	{
+		if(VictoryTitleAlpha &lt;= 0)
+		{
+			VictoryTitleVisible = false;
+			VictoryTitleAlpha = 0;
+			return;
+		}
+		
+		VictoryTitleAlpha -= 0.01;
+	}
+	
+	//INVALIDATE THE DISPLAY
+	ViewportClient->Viewport->InvalidateDisplay();
+}
+void FVictoryEdAlignMode::Tick_VictoryTitleFadeIn()
+{
+	if(VictoryTitleAlpha >=1)
+	{
+		VictoryTitleAppears();
+		return;
+	}
+	
+	VictoryTitleAlpha += 0.01;
+}
+
+//TICK
+void FVictoryEdAlignMode::Tick_VictoryInterface(FLevelEditorViewportClient* ViewportClient)
+{
+	if(!ViewportClient) return;
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)~
+	
+	//Re-activate Real-time each time enter Mode
+	/*
+	if(ReEntering)
+	{
+		ReEntering = false;
+		ViewportClient->SetRealtime(true,true);
+	}
+	*/
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)[[User:Admin|Admin]] ([[User talk:Admin|talk]]) 18:11, 4 July 2018 (UTC)
+	//							HUD
+	ViewportSize = ViewportClient->Viewport->GetSizeXY();
+	
+	//Victory Title Tick
+	if(VictoryTitleVisible) Tick_VictoryTitle(ViewportClient);
+	
+	//Fading in?
+	if(FadeInVictoryTitle) 
+	{
+		Tick_VictoryTitleFadeIn();
+		ViewportClient->Viewport->InvalidateDisplay();
+	}
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)						
+	//			Move cursor if RMB is down
+	//if(RMBDown) ViewportClient->Viewport->SetMouse(ViewportSize.X/2, ViewportSize.Y/2);
+}
+
+bool FVictoryEdAlignMode::ShouldDrawWidget() const
+{
+	if(UsingMouseInstantMove) return false;
+	return true;
+}
+
+
+bool FVictoryEdAlignMode::GetCursor(EMouseCursor::Type&amp; OutCursor) const
+{
+	if(UsingMouseInstantMove)
+	{
+		OutCursor = EMouseCursor::GrabHand;
+		return true;
+	}
+	
+	return false; //no modified cursor
+}
+
+void FVictoryEdAlignMode::Tick(FLevelEditorViewportClient* ViewportClient,float DeltaTime)
+{
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	//				Single Invalidate
+	if(DoSingleDisplayUpdate) 
+	{
+		ViewportClient->Viewport->InvalidateDisplay();
+		DoSingleDisplayUpdate = false;
+	}
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	//				HUD Elements and Input
+	Tick_VictoryInterface(ViewportClient);
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	//				TRACE CURSOR POSITION
+	ProcessMouseInstantMove(ViewportClient);
+	
+	
+	
+	//[[User:Admin|Admin]] ([[User talk:Admin|talk]]) Begin Vertex Related [[User:Admin|Admin]] ([[User talk:Admin|talk]])
+	CHECK_VSELECTED
+	
+	//Minus or Plus?
+	if(MinusIsDown) CurrentVerticiesScale -= 0.333;
+	else if(PlusIsDown) CurrentVerticiesScale += 0.333;
+	if(CurrentVerticiesScale &lt; 2) CurrentVerticiesScale = 2;
+	
+	//18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)18:11, 4 July 2018 (UTC)
+	//					New Selection Actor?
+	if(VictoryEngine->SelectedActorVerticiesNeedsUpdating)
+	{
+		VictoryEngine->SelectedActorVerticiesNeedsUpdating = false;
+		SelectedVertexBuffer = GetVerticies(Cast&lt;AStaticMeshActor>(VictoryEngine->VSelectedActor));
+		PendingButtonRefresh = true;
+	}
+	
+	if(VictoryEngine->ClearSelectedVertex)
+	{
+		VictoryEngine->ClearSelectedVertex = false;
+		SelectedVertexForSelectedActor = -1;
+	}
+}
+&lt;/syntaxhighlight>
+
+== ==
+==Core of Making Your Own Editor Mode==
+
+===Interaction of EdEngine with EdMode Class===
+The key interaction between the Editor Mode class and the extended Unreal Engine class is in the Unreal Engine class, where it creates the editor mode instance.
+
+Here is that code:
+
+&lt;syntaxhighlight lang="cpp">
+//Create it if it not exist yet
+	if(!CreatedVictoryEdMode)
+	{
+		TSharedRef&lt;class FVictoryEdAlignMode,ESPMode::Fast> VictoryEdMode = MakeShareable( new FVictoryEdAlignMode() );
+ 
+		//Init VictoryEdMode
+		VictoryEdMode->JoyInit(this);
+ 
+		//Register
+		GEditorModeTools().RegisterMode(VictoryEdMode);
+ 
+		CreatedVictoryEdMode = true;
+	}
+&lt;/syntaxhighlight>
+
+===Activating The Editor Mode, Once Created===
+
+Once you've created your own EdMode class instance, you activate your editor mode using:
+
+&lt;syntaxhighlight lang="cpp">
+//Activate Victory Editor Mode
+GEditorModeTools().ActivateMode(VictoryEditorModeID);
+&lt;/syntaxhighlight>
+
+=== The Ed Mode's Unique ID ===
+
+Note that this is a const FName that I declared here:
+
+&lt;syntaxhighlight lang="cpp">
+const FName UVictoryEdEngine::VictoryEditorModeID = FName("VictoryEditorMode");
+&lt;/syntaxhighlight>
+
+And you have to actually give your EdMode its ID in its class constructor. In my case I used my custom JoyInit function
+
+&lt;syntaxhighlight lang="cpp">
+//INIT
+void FVictoryEdAlignMode::JoyInit(UVictoryEdEngine* EnginePtr)
+{
+	ID = FName("VictoryEditorMode");
+}
+&lt;/syntaxhighlight>
+
+==Plugin Build.cs==
+
+&lt;syntaxhighlight lang="cpp">
+// Copyright 1998-2013 Epic Games, Inc. All Rights Reserved.
+
+using UnrealBuildTool;
+
+public class VictoryBPLibrary : ModuleRules
+{
+	public VictoryBPLibrary(TargetInfo Target)
+	{
+        PublicDependencyModuleNames.AddRange(
+			new string[] { 
+				"Core", 
+				"CoreUObject", 
+				"Engine", 
+				"UnrealEd",
+			}
+			);
+	}
+}
+&lt;/syntaxhighlight>
+
+==Plugin Download==
+
+[[File:VictoryPlugin.zip|Vertex Snap Editor and Rama's BP Library]]
+
+(Please note this file does not contain an executable, just the .dll that UE4 needs for a plugin, that's why the file warning appears)
+
+==Enjoy!==
+
+I hope that providing you with my entire Vertex Snapping C++ Source code helps you to create your own Editor Plugins!
+
+Enjoy!
+ 
+[[User:Rama|Rama]] ([[User talk:Rama|talk]])
+
+[[Category:Plug-ins]]
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Rama%27s_Vertex_Snap_Editor_Plugin" title="Rama&#039;s Vertex Snap Editor Plugin">Rama&#039;s Vertex Snap Editor Plugin</a>.</p>
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Rama%27s_Vertex_Snap_Editor_Plugin">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Rama%27s_Vertex_Snap_Editor_Plugin</a>"						</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b971c4e90a55eae6"><meta name="worker" content="206"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="https://mediawikiv2-website-prod05.ol.epicgames.net/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":96});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpcVlFA","queueTime":0,"applicationTime":176,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

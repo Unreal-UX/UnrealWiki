@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/suadev/turkish-microservice-architecture-book/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/suadev/turkish-microservice-architecture-book/commits/master.atom"/>
+  <title>Recent Commits to turkish-microservice-architecture-book:master</title>
+  <updated>2020-03-31T13:57:31Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/02c7064bd12098760a1e24d862d15b39eb0f6c09</id>
+    <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commit/02c7064bd12098760a1e24d862d15b39eb0f6c09"/>
+    <title>
+        todo liste güncelleme
+    </title>
+    <updated>2020-03-31T13:57:31Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5918811?s=30&amp;u=fa7a0856867504956bb9ed8ac5ca078234aaaf8a&amp;v=4"/>
+    <author>
+      <name>suadev</name>
+      <uri>https://github.com/suadev</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;todo liste güncelleme&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9133205dfbe3f408fd95973d8ad0b2d9049c55d5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commit/9133205dfbe3f408fd95973d8ad0b2d9049c55d5"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-30T22:33:36Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5918811?s=30&amp;u=fa7a0856867504956bb9ed8ac5ca078234aaaf8a&amp;v=4"/>
+    <author>
+      <name>suadev</name>
+      <uri>https://github.com/suadev</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b5d2aaf165e69eccd988cd1c16a8fde55c46ca7f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commit/b5d2aaf165e69eccd988cd1c16a8fde55c46ca7f"/>
+    <title>
+        Offline okuma için pdf eklendi.
+    </title>
+    <updated>2020-03-30T22:28:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5918811?s=30&amp;u=fa7a0856867504956bb9ed8ac5ca078234aaaf8a&amp;v=4"/>
+    <author>
+      <name>suadev</name>
+      <uri>https://github.com/suadev</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Offline okuma için pdf eklendi.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/038be76ec7d2bd5d9e6de4b0961195f77effbe2f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commit/038be76ec7d2bd5d9e6de4b0961195f77effbe2f"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-29T12:42:38Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5918811?s=30&amp;u=fa7a0856867504956bb9ed8ac5ca078234aaaf8a&amp;v=4"/>
+    <author>
+      <name>suadev</name>
+      <uri>https://github.com/suadev</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/dbc39b4fe049a54839c1004a2f12cba2ea68d421</id>
+    <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commit/dbc39b4fe049a54839c1004a2f12cba2ea68d421"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-29T12:32:49Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5918811?s=30&amp;u=fa7a0856867504956bb9ed8ac5ca078234aaaf8a&amp;v=4"/>
+    <author>
+      <name>suadev</name>
+      <uri>https://github.com/suadev</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a7e251a38f7b69db2526810495e956b39771ae26</id>
+    <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commit/a7e251a38f7b69db2526810495e956b39771ae26"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-28T21:40:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5918811?s=30&amp;u=fa7a0856867504956bb9ed8ac5ca078234aaaf8a&amp;v=4"/>
+    <author>
+      <name>suadev</name>
+      <uri>https://github.com/suadev</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1badbde1ff1e8c0cd53fca33419c83be7c0cf38c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commit/1badbde1ff1e8c0cd53fca33419c83be7c0cf38c"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-28T19:22:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5918811?s=30&amp;u=fa7a0856867504956bb9ed8ac5ca078234aaaf8a&amp;v=4"/>
+    <author>
+      <name>suadev</name>
+      <uri>https://github.com/suadev</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4c08546a8946a5347d15b369baba13906d284613</id>
+    <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commit/4c08546a8946a5347d15b369baba13906d284613"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-28T19:11:00Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5918811?s=30&amp;u=fa7a0856867504956bb9ed8ac5ca078234aaaf8a&amp;v=4"/>
+    <author>
+      <name>suadev</name>
+      <uri>https://github.com/suadev</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b925fbde9c96401c6ec15ce73a4d6829f27602ae</id>
+    <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commit/b925fbde9c96401c6ec15ce73a4d6829f27602ae"/>
+    <title>
+        Delete deneme.md
+    </title>
+    <updated>2020-03-27T22:30:00Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5918811?s=30&amp;u=fa7a0856867504956bb9ed8ac5ca078234aaaf8a&amp;v=4"/>
+    <author>
+      <name>suadev</name>
+      <uri>https://github.com/suadev</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Delete deneme.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d686d80768c6e8158c13264d4aabf354956cdcee</id>
+    <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commit/d686d80768c6e8158c13264d4aabf354956cdcee"/>
+    <title>
+        Create deneme.md
+    </title>
+    <updated>2020-03-27T22:27:18Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5918811?s=30&amp;u=fa7a0856867504956bb9ed8ac5ca078234aaaf8a&amp;v=4"/>
+    <author>
+      <name>suadev</name>
+      <uri>https://github.com/suadev</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Create deneme.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1e4b4e5c5ea7a039ed2e3f92fea49067b41849cc</id>
+    <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commit/1e4b4e5c5ea7a039ed2e3f92fea49067b41849cc"/>
+    <title>
+        Update LICENSE
+    </title>
+    <updated>2020-03-27T22:13:17Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5918811?s=30&amp;u=fa7a0856867504956bb9ed8ac5ca078234aaaf8a&amp;v=4"/>
+    <author>
+      <name>suadev</name>
+      <uri>https://github.com/suadev</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update LICENSE&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/169498c89fabf85a4a65df5b9f59d4c2c8a3431d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/suadev/turkish-microservice-architecture-book/commit/169498c89fabf85a4a65df5b9f59d4c2c8a3431d"/>
+    <title>
+        Initial commit
+    </title>
+    <updated>2020-03-27T22:06:29Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5918811?s=30&amp;u=fa7a0856867504956bb9ed8ac5ca078234aaaf8a&amp;v=4"/>
+    <author>
+      <name>suadev</name>
+      <uri>https://github.com/suadev</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Initial commit&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

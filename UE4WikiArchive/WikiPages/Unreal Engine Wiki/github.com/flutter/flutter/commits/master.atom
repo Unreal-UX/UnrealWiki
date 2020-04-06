@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/flutter/flutter/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/flutter/flutter/commits/master.atom"/>
+  <title>Recent Commits to flutter:master</title>
+  <updated>2020-03-31T23:16:25Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2a649b16e24fae5d7815e27fdeb9adcf2b621721</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/2a649b16e24fae5d7815e27fdeb9adcf2b621721"/>
+    <title>
+        Add an adaptive visual density static function, and add it to… (#51921)
+    </title>
+    <updated>2020-03-31T23:16:25Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/8867023?s=30&amp;u=07f51f21184a63a731a242ee9f8e7c4499693c25&amp;v=4"/>
+    <author>
+      <name>gspencergoog</name>
+      <uri>https://github.com/gspencergoog</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add an adaptive visual density static function, and add it to… (#51921)
+
+Adds a VisualDensity.adaptivePlatformDensity static function that returns different values for visual density based on the defaultTargetPlatform. Returns compact for desktop platforms, and a default visual density for other platforms.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b2cf417863ea7f9503e8b753b75b53a3d7654777</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/b2cf417863ea7f9503e8b753b75b53a3d7654777"/>
+    <title>
+        807ca8543 More rename from GPU thread to raster thread (flutter/engin…
+    </title>
+    <updated>2020-03-31T23:16:01Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/42042535?s=30&amp;v=4"/>
+    <author>
+      <name>engine-flutter-autoroll</name>
+      <uri>https://github.com/engine-flutter-autoroll</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;807ca8543 More rename from GPU thread to raster thread (flutter/engine#17408) (#53700)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d14a301e419af7f3eff7cc3a49bf936c75d2b2f0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/d14a301e419af7f3eff7cc3a49bf936c75d2b2f0"/>
+    <title>
+        Revert &quot;[Slider] Rebase. (#52663)&quot; (#53698)
+    </title>
+    <updated>2020-03-31T23:14:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/16763114?s=30&amp;u=3ba78ef960cee8316fcc3803aee27f9c6d982191&amp;v=4"/>
+    <author>
+      <name>JoseAlba</name>
+      <uri>https://github.com/JoseAlba</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Revert &amp;quot;[Slider] Rebase. (#52663)&amp;quot; (#53698)
+
+This reverts commit e71cf1cdbeebab9081d09daa73d4d7642f165b9d.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ad07c4041a966415ab96ebe4ee174ee43093c233</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/ad07c4041a966415ab96ebe4ee174ee43093c233"/>
+    <title>
+        Delete unused NDK location checks (#53694)
+    </title>
+    <updated>2020-03-31T21:53:49Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/682784?s=30&amp;u=61fcb634e0e9643c014b0e3c4b861c91e47e7b58&amp;v=4"/>
+    <author>
+      <name>jmagman</name>
+      <uri>https://github.com/jmagman</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Delete unused NDK location checks (#53694)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/572680e9d248475af98bae1968795ca71a218161</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/572680e9d248475af98bae1968795ca71a218161"/>
+    <title>
+        Roll engine 6b09714a2c88..fc5b44c901ce (4 commits) (#53687)
+    </title>
+    <updated>2020-03-31T21:36:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/42042535?s=30&amp;v=4"/>
+    <author>
+      <name>engine-flutter-autoroll</name>
+      <uri>https://github.com/engine-flutter-autoroll</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Roll engine 6b09714a2c88..fc5b44c901ce (4 commits) (#53687)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/025f7ae642bbb20fd60eaf094374b56fba5975f1</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/025f7ae642bbb20fd60eaf094374b56fba5975f1"/>
+    <title>
+        Add ability to shard customer tests (#53433)
+    </title>
+    <updated>2020-03-31T21:01:01Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/2148558?s=30&amp;u=adb268faf142bd84a8d2955f3fa86ee0bb50d82d&amp;v=4"/>
+    <author>
+      <name>CaseyHillers</name>
+      <uri>https://github.com/CaseyHillers</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add ability to shard customer tests (#53433)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/730a440fd58071b87bcd6381a86e4a33c5e96000</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/730a440fd58071b87bcd6381a86e4a33c5e96000"/>
+    <title>
+        Roll engine 10887c2abe7b..6b09714a2c88 (4 commits) (#53675)
+    </title>
+    <updated>2020-03-31T20:26:01Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/42042535?s=30&amp;v=4"/>
+    <author>
+      <name>engine-flutter-autoroll</name>
+      <uri>https://github.com/engine-flutter-autoroll</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Roll engine 10887c2abe7b..6b09714a2c88 (4 commits) (#53675)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d3be7e157794adbc1706f82bcc4aaf15b9d06d38</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/d3be7e157794adbc1706f82bcc4aaf15b9d06d38"/>
+    <title>
+        Restore codegen in separate PR (#53617)
+    </title>
+    <updated>2020-03-31T20:21:01Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/16964204?s=30&amp;u=0e04c6bd2df91afc18af08f77962f288668f0ad5&amp;v=4"/>
+    <author>
+      <name>Piinks</name>
+      <uri>https://github.com/Piinks</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Restore codegen in separate PR (#53617)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6280b391643dcc95a20c2f0716bfa0876599a3d4</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/6280b391643dcc95a20c2f0716bfa0876599a3d4"/>
+    <title>
+        Un-gate value setting in formatter repeat check logic (#53613)
+    </title>
+    <updated>2020-03-31T20:16:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1887398?s=30&amp;u=032864264ddc9cf0199016f0b37cd9f69a8500db&amp;v=4"/>
+    <author>
+      <name>GaryQian</name>
+      <uri>https://github.com/GaryQian</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Un-gate value setting in formatter repeat check logic (#53613)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/cb4147cf732b7a4124b4ba5ea9a9c46306080f3b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/cb4147cf732b7a4124b4ba5ea9a9c46306080f3b"/>
+    <title>
+        Doc Improvements (#53377)
+    </title>
+    <updated>2020-03-31T20:11:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/16964204?s=30&amp;u=0e04c6bd2df91afc18af08f77962f288668f0ad5&amp;v=4"/>
+    <author>
+      <name>Piinks</name>
+      <uri>https://github.com/Piinks</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Doc Improvements (#53377)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/183b3c321e9d915678db1ae7ded968bdbd62655f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/183b3c321e9d915678db1ae7ded968bdbd62655f"/>
+    <title>
+        Turn metal on in the platform views benchmark (#53676)
+    </title>
+    <updated>2020-03-31T18:56:23Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/1410613?s=30&amp;u=5fa54b74b08be6ef0985f3a28094efae2fa5962c&amp;v=4"/>
+    <author>
+      <name>blasten</name>
+      <uri>https://github.com/blasten</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Turn metal on in the platform views benchmark (#53676)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/df90bb5fd64e2066594151b9e311d45cd687a80c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/df90bb5fd64e2066594151b9e311d45cd687a80c"/>
+    <title>
+        fix issue with multiple java runtimes on macOS (#52474)
+    </title>
+    <updated>2020-03-31T18:36:01Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/44836329?s=30&amp;u=9b17c79821f10db4c5a4cc1a65523c609018fbef&amp;v=4"/>
+    <author>
+      <name>mimam419</name>
+      <uri>https://github.com/mimam419</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix issue with multiple java runtimes on macOS (#52474)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c6665e43da2ef1b4048966fde02fd31003520a50</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/c6665e43da2ef1b4048966fde02fd31003520a50"/>
+    <title>
+        Roll flutter engine to 10887c2abe7b7fe5866e84d6b63dd546f02fc963 (#53669)
+    </title>
+    <updated>2020-03-31T18:28:03Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/381137?s=30&amp;u=26f3369ff091108d8ca8c853a4f97d7d33f6ebae&amp;v=4"/>
+    <author>
+      <name>aam</name>
+      <uri>https://github.com/aam</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Roll flutter engine to 10887c2abe7b7fe5866e84d6b63dd546f02fc963 (#53669)
+
+* Update stack trace test expectations to adjust for a fix landed in dart sdk
+
+* Include engine roll to 10887c2abe7b7fe5866e84d6b63dd546f02fc963
+
+* Update column for the exception expectation&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fcd90c0a51ef9504f01aaf6ab8911f08a5c94aa0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/fcd90c0a51ef9504f01aaf6ab8911f08a5c94aa0"/>
+    <title>
+        ScrollPosition.jumpTo call notifyListeners twice (#53425)
+    </title>
+    <updated>2020-03-31T18:26:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/37606102?s=30&amp;v=4"/>
+    <author>
+      <name>nujz</name>
+      <uri>https://github.com/nujz</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;ScrollPosition.jumpTo call notifyListeners twice (#53425)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/560c72287b1758e47b0ea93ed83f20336cea90f9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/560c72287b1758e47b0ea93ed83f20336cea90f9"/>
+    <title>
+        TODO Audits - 1 (#53604)
+    </title>
+    <updated>2020-03-31T18:21:01Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/16964204?s=30&amp;u=0e04c6bd2df91afc18af08f77962f288668f0ad5&amp;v=4"/>
+    <author>
+      <name>Piinks</name>
+      <uri>https://github.com/Piinks</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;TODO Audits - 1 (#53604)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9b6fd7cb0b4524ad462fd0699fe95aa285b7e6d8</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/9b6fd7cb0b4524ad462fd0699fe95aa285b7e6d8"/>
+    <title>
+        Separate PR (#53619)
+    </title>
+    <updated>2020-03-31T18:16:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/16964204?s=30&amp;u=0e04c6bd2df91afc18af08f77962f288668f0ad5&amp;v=4"/>
+    <author>
+      <name>Piinks</name>
+      <uri>https://github.com/Piinks</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Separate PR (#53619)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7bf74c34600d3da594f19054ae893a196218a20a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/7bf74c34600d3da594f19054ae893a196218a20a"/>
+    <title>
+        [flutter_tools] handle unsafe build outputs (#53601)
+    </title>
+    <updated>2020-03-31T18:01:01Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/8975114?s=30&amp;u=2037b238602f5b3a06dab56b4dcbb9984c3bc0fe&amp;v=4"/>
+    <author>
+      <name>jonahwilliams</name>
+      <uri>https://github.com/jonahwilliams</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[flutter_tools] handle unsafe build outputs (#53601)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e71cf1cdbeebab9081d09daa73d4d7642f165b9d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/e71cf1cdbeebab9081d09daa73d4d7642f165b9d"/>
+    <title>
+        [Slider] Rebase. (#52663)
+    </title>
+    <updated>2020-03-31T17:56:01Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/16763114?s=30&amp;u=3ba78ef960cee8316fcc3803aee27f9c6d982191&amp;v=4"/>
+    <author>
+      <name>JoseAlba</name>
+      <uri>https://github.com/JoseAlba</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[Slider] Rebase. (#52663)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a2d62df3eefeb94e667d9e5334e60190dca8a775</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/a2d62df3eefeb94e667d9e5334e60190dca8a775"/>
+    <title>
+        Use feature flags for desktop cache (#53608)
+    </title>
+    <updated>2020-03-31T04:51:48Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/122189?s=30&amp;u=d0ea2b79e6194998faa6b73ed2a7787d357b71b2&amp;v=4"/>
+    <author>
+      <name>stuartmorgan</name>
+      <uri>https://github.com/stuartmorgan</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Use feature flags for desktop cache (#53608)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/aee9e94c21009bfc6c08f442eacde06f001c25f9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/flutter/flutter/commit/aee9e94c21009bfc6c08f442eacde06f001c25f9"/>
+    <title>
+        Revert &quot;Implements the navigator page api (#50362)&quot; (#53610)
+    </title>
+    <updated>2020-03-30T23:12:40Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/47866232?s=30&amp;u=13d6366393d7a0a8d7383c88a7cad56e7a80f53d&amp;v=4"/>
+    <author>
+      <name>chunhtai</name>
+      <uri>https://github.com/chunhtai</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Revert &amp;quot;Implements the navigator page api (#50362)&amp;quot; (#53610)
+
+This reverts commit 9a6eb7def3e932bc54f554200ec1fe7cdf2e630e.&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

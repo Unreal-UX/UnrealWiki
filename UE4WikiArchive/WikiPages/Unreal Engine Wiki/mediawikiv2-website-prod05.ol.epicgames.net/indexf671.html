@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Mobile_Development_Troubleshooting_Guide&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:07:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>View source for Mobile Development Troubleshooting Guide - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Mobile_Development_Troubleshooting_Guide","wgTitle":"Mobile Development Troubleshooting Guide","wgCurRevisionId":439,"wgRevisionId":0,"wgArticleId":219,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Mobile_Development_Troubleshooting_Guide","wgRelevantArticleId":219,"wgRequestId":"c5b5854b269abcad4085e117","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Mobile_Development_Troubleshooting_Guide rootpage-Mobile_Development_Troubleshooting_Guide skin-vector action-edit"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0d0405fab30c4bd94"><meta name="worker" content="188"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Mobile_Development_Troubleshooting_Guide&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:07:04 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Mobile+Development+Troubleshooting+Guide&amp;returntoquery=action%3Dedit" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Mobile_Development_Troubleshooting_Guide" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Mobile_Development_Troubleshooting_Guide&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Mobile_Development_Troubleshooting_Guide">Read</a></span></li>
+							<li id="ca-viewsource" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Mobile_Development_Troubleshooting_Guide&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Mobile_Development_Troubleshooting_Guide&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">View source for Mobile Development Troubleshooting Guide</h1>
+												<div id="bodyContent" class="mw-body-content">
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text"><p>You do not have permission to edit this page, for the following reason:
+</p>
+<div class="permissions-errors">
+<p>The action you have requested is limited to users in the group: <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=EpicUnrealEngineWiki:Administrators&amp;action=edit&amp;redlink=1" class="new" title="EpicUnrealEngineWiki:Administrators (page does not exist)">Administrators</a>.
+</p>
+</div>
+<hr />
+<p>You can view and copy the source of this page.
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="en" dir="ltr" name="wpTextbox1">
+
+&lt;em>This page is currently under construction, more errors and solutions will be added over time. &lt;/em>
+__ToC__
+
+[[Category:Troubleshooting]]
+{| id="mp-upper" style="width: 100%; margin:4px 0 0 0; background:none; border-spacing: 0px;"
+| class="MainPageBG" style="width:100%; border:0px solid #4C4C4E; padding:2px 5px 5px; background:#F0F0F0; vertical-align:top; color:#000000;" |
+{| id="mp-left" style="width:100%; vertical-align:top; background:#e2e3e4;"
+
+{| style="width:100%; border:none; background:none;"
+| style="width:280px; text-align:center; white-space:nowrap; color:#000;" |
+&lt;div style="font-size:170%; text-align:center; border:none; margin:2 px ; padding:2px; color:#000;font-weight:bold;">Mobile Development Troubleshooting Guide&lt;/div>
+|}
+Here is your one stop shop to find solutions to the most common mobile development and packaging . Take a look to see if the problems you are experiencing are listed and if so what steps you can take to fix the bug. If these fixes do not work, there will be a list of information needed when you make a post on the '''[http://answers.unrealengine.com Answerhub]''' detailing your specific error. 
+|}
+&lt;div class="action">
+{| id="mp-upper" style="width: 100%; margin:4px 0 0 0; background:none; border-spacing: 0px;"
+| class="MainPageBG" style="width:100%; border:0px solid #4C4C4E; background:#e9eff4; vertical-align:top; color:#000000;" |
+{| id="mp-right" style="width:100%; vertical-align:top; background:#e9eff4;"
+|-
+| style="padding:2px;" | &lt;h2 id="mp-dyk-h2" class="heading">Additional Resources&lt;/h2>
+|-
+|}
+&lt;p>Here are a few extra pages that may help determine if the error you are seeing is a bug in engine or a compatibility error with the specific device you are using. &lt;/p>
+
+* [[Android Device Compatibility]]
+* [[IOS Device Compatibility]]
+* [https://docs.unrealengine.com/latest/INT/Platforms/Android/GettingStarted/index.html Android Quick Start]
+* [https://docs.unrealengine.com/latest/INT/Platforms/iOS/QuickStart/index.html iOS Quick Start]
+|}
+'''This page is currently under development and will be populated as we find more common mobile development bugs/crashes. Thank you for your understanding.'''
+&lt;h1>Windows&lt;/h1>
+&lt;h2>Android&lt;/h2>
+
+&lt;h3>Build Failing&lt;/h3>
+
+
+'''4.11 or earlier:'''
+&lt;ol>
+&lt;li>Make sure you have AndroidWorks installed instead of CodeWorks.&lt;/li>
+&lt;li>Be sure that you are using Visual Studio 2013.&lt;/li>
+&lt;li>Did you follow the SDK Documentation? (Found [https://docs.unrealengine.com/latest/INT/Platforms/Android/GettingStarted/1/index.html here])&lt;/li>
+&lt;ul>
+&lt;li>If not, Re-installation of SDK may be necessary.&lt;/li>
+&lt;/ul>
+&lt;li>Did you download the correct [[Android Device Compatibility|Drivers]] for your device?&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+
+'''4.12 or higher:'''
+&lt;ol>
+&lt;li>Make sure that you have CodeWorks installed instead of AndroidWorks.&lt;/li>
+&lt;li>Be sure that Visual Studio 2015 is installed.&lt;/li>
+&lt;li>Did you follow the SDK Documentation? (Found [https://docs.unrealengine.com/latest/INT/Platforms/Android/GettingStarted/1/index.html here])&lt;/li>
+&lt;ul>
+&lt;li>If not, Re-installation of SDK may be necessary.&lt;/li>
+&lt;/ul>
+&lt;li>Did you download the correct [[Android Device Compatibility|Drivers]] for your device?&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+'''Build Failure Solutions:'''
+&lt;ol>
+&lt;li>Failure due to [https://answers.unrealengine.com/questions/294806/ue-49-android-launch-fails.html both old and new .jar files included in build library]&lt;/li>
+&lt;li>Warning: [https://answers.unrealengine.com/questions/264423/android-package-build-fail.html Major Version 51 is newer than 50].
+&lt;li>[https://answers.unrealengine.com/questions/294430/packaging-for-android-fail-on-49-was-working-on-48.html SDK/NDK version mismatch.]&lt;/li>
+&lt;li>Build failure due to [https://answers.unrealengine.com/questions/294258/49-androidworks-cant-package-my-game.html NDK API Level of Android-23].&lt;/li>
+&lt;li>Error [https://answers.unrealengine.com/questions/464357/gameactivityjava277-error-cannot-find-symbol.html GameActivity.java:277: error: cannot find symbol].&lt;/li>
+&lt;li>Build failure due to [https://answers.unrealengine.com/questions/394628/android-keystore-file-cannot-be-found.html Android Keystore] not being found.
+&lt;li>[https://answers.unrealengine.com/questions/370017/wcharh-file-not-found.html 'wchar.h' file not found.]
+&lt;/ol>
+
+&lt;h3>Not Deploying to the Device&lt;/h3>
+&lt;ol>
+&lt;li>Is your [[Android Device Compatibility|Device Supported?]]&lt;/li>
+&lt;li>Is the phone on [https://docs.unrealengine.com/latest/INT/Platforms/Android/GettingStarted/2/index.html Developer Mode]?&lt;/li>
+&lt;li>Do you have the correct [[Android Device Compatibility|Drivers]] installed? (Located in the Epic Games Device List graph)&lt;/li>
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>How to fix Advertisements and Googleplay Leaderboards&lt;/h3>
+&lt;ol>
+Solution: [https://answers.unrealengine.com/questions/473592/ads-not-working-in-android-game.html AnswerHub]
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Review [https://docs.unrealengine.com/latest/INT/Platforms/Android/Ads/ Unreal Match 3 Advertisement Documentation]
+&lt;li>Review [https://developer.android.com/google/index.html Google Developer Documentation]&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Crashing Once Deployed on the Device&lt;/h3>
+&lt;ol>
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Obtain [https://wiki.unrealengine.com/index.php?title=Mobile_Development_Troubleshooting_Guide#How_to_get_logs_off_of_an_Android_device Monitor.bat] logs from device.&lt;/li>
+&lt;ul>
+&lt;li>These logs will be vital when writing a Bug Report&lt;/li>
+&lt;/ul>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Game Freezing Once Deployed&lt;/h3>
+&lt;ol>
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Did you recently change the API level?&lt;/li>
+&lt;li>If not, obtain [https://wiki.unrealengine.com/index.php?title=Mobile_Development_Troubleshooting_Guide#How_to_get_logs_off_of_an_Android_device Monitor.bat] logs from device.&lt;/li>
+&lt;ul>
+&lt;li>These logs will be vital when writing a Bug Report&lt;/li>
+&lt;/ul>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Game crashing due to a Static Mesh&lt;/h3>
+&lt;ol>
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Does deleting your Intermediate, Saved and Config folders from your project resolve the issue?&lt;/li>
+&lt;li>Are you able to launch onto your device?&lt;/li>
+&lt;li>Does it only crash in the engine? If so, save your Output Logs as a .txt file.&lt;/li>
+&lt;li>Does the application crash once it's on your device?&lt;/li>
+&lt;li>If so, obtain [https://wiki.unrealengine.com/index.php?title=Mobile_Development_Troubleshooting_Guide#How_to_get_logs_off_of_an_Android_device Monitor.bat] logs from device.&lt;/li>
+&lt;ul>
+&lt;li>Either of these logs will be vital when writing a Bug Report&lt;/li>
+&lt;/ul>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Screen is Black, but Analogs are Showing&lt;/h3>
+&lt;ol>
+&lt;li>Is your [[Android Device Compatibility|Device Supported?]] &lt;/li>
+&lt;li>Have you built your lighting/lightmass?&lt;/li>
+&lt;li>Make sure your Default/Startup Map is set correctly in ‘Project Settings’&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Dynamic Shadows are not Rendering Properly&lt;/h3>
+&lt;ol>
+&lt;li>Is the Directional Light in the project set to Movable?&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Failed to find Shader Map for default material WorldGridMaterial!&lt;/h3>
+&lt;ol>
+&lt;li>Did you change your r.MobileHDR option in DefaultDeviceProfile.ini?
+&lt;li>If so, does it differ from your settings in ProjectSettings? Make sure they both match one another.
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Unable to load level on Android project&lt;/h3>
+&lt;ol>
+Solution: [https://answers.unrealengine.com/questions/489178/launch-error-unable-to-load-level-onto-htc-m9.html AnswerHub]
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Using FPaths::ConvertRelativePathToFull on Android&lt;/h3>
+&lt;ol>
+Solution: [https://answers.unrealengine.com/questions/498328/androidconvertrelativepathtofull-didnt-work.html AnswerHub]
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Materials not Showing Correctly&lt;/h3>
+&lt;ol>
+&lt;li>[https://docs.unrealengine.com/latest/INT/Platforms/Mobile/Materials/index.html Materials for Mobile Platforms]&lt;/li>
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Android Missing .so File&lt;/h3>
+&lt;p>Android missing .so file to launch or package (ERROR: Can't make an APK without the compiled .so [C:\Program Files\Epic Games\4.6\Engine\Binaries\Android\UE4Game-x86-es2.so])&lt;/p>
+
+&lt;!--Numbered list-->
+&lt;ol>
+Solution: Open Project Setting and in Platforms/Android/Build uncheck "Support x86"
+&lt;!--Bullet list-->
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Post your issue on the [https://answers.unrealengine.com/ Answerhub]&lt;/li>
+&lt;ul>
+'''We will need the following information:'''
+&lt;li>Crash logs&lt;/li>
+&lt;li>[https://support.microsoft.com/en-us/instantanswers/b319762b-f281-41b4-b746-d14de804b246/open-and-run-dxdiag.exe DxDiag]&lt;/li>
+&lt;li>Engine version&lt;/li>
+&lt;li>The exact type of mobile device (Example: Samsung Galaxy S3)&lt;/li>
+&lt;li>The exact version of the Operating System being used on the device&lt;/li>
+&lt;li>Can it be reproduced in a clean project?&lt;/li>
+&lt;li>If it can be reproduced, we will need a detailed list of steps to reproduce the issue on our end&lt;/li>
+&lt;/ul>
+&lt;/ol>
+
+&lt;h3>AndroidWorks SDK Installation Error&lt;/h3>
+&lt;ol>
+Solution: Contact [http://www.nvidia.com/page/support.html NVIDIA®] for support.
+&lt;/ol>
+
+&lt;h3>Unimplemented OpenGL ES API&lt;/h3>
+&lt;p>Galaxy S3 mini: called unimplemented OpenGL ES API&lt;/p>
+
+&lt;ol>
+&lt;!--Numbered List-->
+Solution: Galaxy S3 mini is not supported
+&lt;!--Bullet list-->
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Post your issue on the [https://answers.unrealengine.com/ Answerhub]&lt;/li>
+&lt;ul>
+'''We will need the following information:'''
+&lt;li>Crash logs&lt;/li>
+&lt;li>[https://support.microsoft.com/en-us/instantanswers/b319762b-f281-41b4-b746-d14de804b246/open-and-run-dxdiag.exe DxDiag]&lt;/li>
+&lt;li>Engine version&lt;/li>
+&lt;li>The exact type of mobile device (Example: Samsung Galaxy S3)&lt;/li>
+&lt;li>The exact version of the Operating System being used on the device&lt;/li>
+&lt;li>Can it be reproduced in a clean project?&lt;/li>
+&lt;li>If it can be reproduced, we will need a detailed list of steps to reproduce the issue on our end&lt;/li>
+&lt;/ul>
+&lt;/ol>
+
+&lt;h3>AutomationTool Unable to Run&lt;/h3>
+&lt;p>Packaging (Android (All)): BUILD FAILED AutomationTool was unable to run successfully.&lt;/p>
+
+&lt;ol>
+&lt;!--Numbered List-->
+Solution: [http://www.youtube.com/watch?v=e9YApCIx18Q Video: Setting up Android Development Environment | UE4]
+&lt;!--Bullet list-->
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Post your issue on the [https://answers.unrealengine.com/ Answerhub]&lt;/li>
+&lt;ul>
+'''We will need the following information:'''
+&lt;li>Crash logs&lt;/li>
+&lt;li>[https://support.microsoft.com/en-us/instantanswers/b319762b-f281-41b4-b746-d14de804b246/open-and-run-dxdiag.exe DxDiag]&lt;/li>
+&lt;li>Engine version&lt;/li>
+&lt;li>The exact type of mobile device (Example: Samsung Galaxy S3)&lt;/li>
+&lt;li>The exact version of the Operating System being used on the device&lt;/li>
+&lt;li>Can it be reproduced in a clean project?&lt;/li>
+&lt;li>If it can be reproduced, we will need a detailed list of steps to reproduce the issue on our end&lt;/li>
+&lt;/ul>
+&lt;/ol>
+
+&lt;h3>Error Exporting to Android&lt;/h3>
+&lt;p>Error Exporting to Android Platform (Software Development Kit (SDK) not found. Please install the SDK for the Android target platform)&lt;/p>
+
+&lt;ol>
+&lt;!--Numbered List-->
+Solution: Make sure NVPACK is properly installed
+&lt;!--Bullet list-->
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Post your issue on the [https://answers.unrealengine.com/ Answerhub]&lt;/li>
+&lt;ul>
+'''We will need the following information:'''
+&lt;li>Crash logs&lt;/li>
+&lt;li>[https://support.microsoft.com/en-us/instantanswers/b319762b-f281-41b4-b746-d14de804b246/open-and-run-dxdiag.exe DxDiag]&lt;/li>
+&lt;li>Engine version&lt;/li>
+&lt;li>The exact type of mobile device (Example: Samsung Galaxy S3)&lt;/li>
+&lt;li>The exact version of the Operating System being used on the device&lt;/li>
+&lt;li>Can it be reproduced in a clean project?&lt;/li>
+&lt;li>If it can be reproduced, we will need a detailed list of steps to reproduce the issue on our end&lt;/li>
+&lt;/ul>
+&lt;/ol>
+
+&lt;h3>Orientation Trouble&lt;/h3>
+&lt;p>Incorrect Orientation for Download Background&lt;/p>
+
+&lt;ol>
+&lt;!--Numbered List-->
+Solution: Replace the image with a 1280x720 image. Copy the downloader_progress.xml in Engine/Build/Java/res/layout to your project's Build/Android/res/layout (make the directories as needed). Edit downloader_progress.xml and change the orientation="vertical" to "horizontal".
+&lt;li>Similar [https://answers.unrealengine.com/questions/436788/landscape-oriented-download-background-android.html Answerhub] issue.&lt;/li>
+&lt;li>Post your issue on the [https://answers.unrealengine.com/ Answerhub]&lt;/li>
+&lt;ul>
+'''We will need the following information:'''
+&lt;li>Crash logs&lt;/li>
+&lt;li>[https://support.microsoft.com/en-us/instantanswers/b319762b-f281-41b4-b746-d14de804b246/open-and-run-dxdiag.exe DxDiag]&lt;/li>
+&lt;li>Engine version&lt;/li>
+&lt;li>The exact type of mobile device (Example: Samsung Galaxy S3)&lt;/li>
+&lt;li>The exact version of the Operating System being used on the device&lt;/li>
+&lt;li>Can it be reproduced in a clean project?&lt;/li>
+&lt;li>If it can be reproduced, we will need a detailed list of steps to reproduce the issue on our end&lt;/li>
+&lt;/ul>
+&lt;/ol>
+
+&lt;h3>Launch Failure&lt;/h3>
+&lt;p>Andriod Launch Failure (The system cannot find the path specified.)&lt;/p>
+
+&lt;ol>
+&lt;!--Numbered List-->
+Solution: Try to reinstall the Android SDK. If you have not previously done so, you can find documentation here on how to set it up: [https://docs.unrealengine.com/latest/INT/Platforms/Android/GettingStarted/1/index.html Documentation: Getting Started on Android]
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Post your issue on the [https://answers.unrealengine.com/ Answerhub]&lt;/li>
+&lt;ul>
+'''We will need the following information:'''
+&lt;li>Crash logs&lt;/li>
+&lt;li>[https://support.microsoft.com/en-us/instantanswers/b319762b-f281-41b4-b746-d14de804b246/open-and-run-dxdiag.exe DxDiag]&lt;/li>
+&lt;li>Engine version&lt;/li>
+&lt;li>The exact type of mobile device (Example: Samsung Galaxy S3)&lt;/li>
+&lt;li>The exact version of the Operating System being used on the device&lt;/li>
+&lt;li>Can it be reproduced in a clean project?&lt;/li>
+&lt;li>If it can be reproduced, we will need a detailed list of steps to reproduce the issue on our end&lt;/li>
+&lt;/ul>
+&lt;/ol>
+
+&lt;h3>Asus Transformer TF700T: Screen Garbled on Deploy&lt;/h3>
+&lt;p>Asus Transformer TF700T is recognized by the engine, but when pushing to deploy the screen on the tablet looks garbled.&lt;/p>
+
+&lt;ol>
+&lt;!--Numbered List-->
+Solution: Disabled Mobile HDR and Use Android DXT
+&lt;!--Bullet list-->
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Post your issue on the [https://answers.unrealengine.com/ Answerhub]&lt;/li>
+&lt;ul>
+'''We will need the following information:'''
+&lt;li>Crash logs&lt;/li>
+&lt;li>[https://support.microsoft.com/en-us/instantanswers/b319762b-f281-41b4-b746-d14de804b246/open-and-run-dxdiag.exe DxDiag]&lt;/li>
+&lt;li>Engine version&lt;/li>
+&lt;li>The exact type of mobile device (Example: Samsung Galaxy S3)&lt;/li>
+&lt;li>The exact version of the Operating System being used on the device&lt;/li>
+&lt;li>Can it be reproduced in a clean project?&lt;/li>
+&lt;li>If it can be reproduced, we will need a detailed list of steps to reproduce the issue on our end&lt;/li>
+&lt;/ul>
+&lt;/ol>
+
+&lt;h3>APKBlacklist is not working? (4.13)&lt;/h3>
+&lt;ol>&lt;!--Numbered List-->
+Solution: [https://answers.unrealengine.com/questions/479126/apkblacklist-shippingtxt-not-working.html AnswerHub: ApkBlacklist-Shipping.txt not working]
+&lt;!--Bullet list-->
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Post your issue on the [https://answers.unrealengine.com/ Answerhub]&lt;/li>
+&lt;ul>
+'''We will need the following information:'''
+&lt;li>Engine version&lt;/li>
+&lt;li>Log or screenshot from Blacklist&lt;/li>
+&lt;/ul>&lt;/ol>
+
+&lt;h3>How to correctly package a prebuilt shared library (.so)?&lt;/h3>
+&lt;ol>&lt;!--Numbered List-->
+Solution: [https://answers.unrealengine.com/questions/412020/what-is-correct-and-present-method-of-packaging-a.html AnswerHub: Prebuilt Shared Library (.so)]&lt;/ol>
+
+&lt;h2>iOS&lt;/h2>
+'''**When building on a Windows machine, you are going to need to have [https://www.apple.com/itunes/ iTunes] available as well as a Mac available for [https://forums.unrealengine.com/showthread.php?78804-Windows-gt-iOS-Rsync-Remote-Build-Guide-(4-8) Remote Building]**'''
+
+&lt;h3>Build Failing&lt;/h3>
+
+&lt;ol>
+&lt;li>Did you set up [https://forums.unrealengine.com/showthread.php?78804-Windows-gt-iOS-Rsync-Remote-Build-Guide-(4-8) SSH Remote Building?]&lt;/li>
+&lt;li>Did you ‘Trust’ your PC on the iOS device?&lt;/li>
+&lt;li>Did you ‘Trust’ the device on your PC via iTunes?&lt;/li>
+&lt;li>Have you entered your Provisions and/or Certificate in the Project Settings>iOS section?&lt;/li>
+&lt;li>Are the Provisions and/or Certificate sections highlighted red or green?&lt;/li>
+&lt;li>Are you able to recreate this issue on a Blank Template Project?&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Not Deploying to the Device&lt;/h3>
+&lt;ol>
+&lt;li>Did you set up [https://forums.unrealengine.com/showthread.php?78804-Windows-gt-iOS-Rsync-Remote-Build-Guide-(4-8) SSH Remote Building?]&lt;/li>
+&lt;li>Did you ‘Trust’ your PC on your iOS device?&lt;/li>
+&lt;li>Did you Trust the device on your PC, via iTunes?&lt;/li>
+&lt;li>Have you entered your Provisions and/or Certificate in the Project Settings>iOS section?&lt;/li>
+&lt;li>Are the Provisions and/or Certificate sections highlighted red or green?&lt;/li>
+&lt;li>Are you able to recreate this issue on a Blank Template Project?&lt;/li>
+&lt;li>If it is still occurring:&lt;/li>
+&lt;ul>&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>&lt;/ul>
+&lt;/ol>
+
+&lt;h3>Crashing Once Deployed to the Device&lt;/h3>
+&lt;ol>
+&lt;li>Would you be able to replicate this issue on a blank template project?&lt;/li>
+&lt;ul>
+&lt;li>If so, could you provide steps to reproduce the issue?&lt;/li>
+&lt;/ul>
+&lt;li>Would you be able to provide the logs from the device? (See below for how to acquire the logs needed)&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Screen is Black, but Analogs are Showing&lt;/h3>
+&lt;ol>
+&lt;li>Have you built your lighting/lightmass?&lt;/li>
+&lt;li>Make sure your Default/Startup Map is set correctly in ‘Project Settings’&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Dynamic Shadows not Rendering Properly&lt;/h3>
+&lt;ol>
+&lt;li>Change Directional light from ‘Stationary’ to ‘Movable’&lt;/li>
+&lt;li>Character has ‘Cast Dynamic Shadow’ checked&lt;/li>
+&lt;li>Have you built lighting?&lt;/li>
+&lt;li>[https://docs.unrealengine.com/latest/INT/Platforms/Mobile/Lighting/index.html Lighting for Mobile Platforms]&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Materials or Textures rendering Black or Splotchy&lt;/h3>
+&lt;ol>
+&lt;li>What is the normal intensity of your material?&lt;/li>
+&lt;li>Are the texture samples formatted correctly for mobile?&lt;/li>
+&lt;li>Uncheck the ‘Allow Static Lighting for Normal Maps’ within the ‘Project Settings’&lt;/li>
+&lt;li>[https://docs.unrealengine.com/latest/INT/Platforms/Mobile/Textures/index.html Texture Guidelines for Mobile Platforms]&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>How do you disable packaging a second chunk for IPA?&lt;/h3>
+&lt;ol>&lt;!--Numbered list-->
+Solution: [https://answers.unrealengine.com/questions/483209/packaging-problem-3.html AnswerHub: Disabling Second Chunk for IPA]
+&lt;!--Bullet list-->
+&lt;li>Search the [https://answers.unrealengine.com/ Answerhub] for similar issues.&lt;/li>
+&lt;li>Post your issue on the [https://answers.unrealengine.com/ Answerhub]&lt;/li>
+&lt;ul>
+'''We will need the following information:'''
+&lt;li>Engine version&lt;/li>
+&lt;li>Can it be reproduced in a clean project?&lt;/li>
+&lt;li>Step by step reproduction&lt;/li>
+&lt;/ul>&lt;/ol>
+
+&lt;h1>Mac&lt;/h1>
+&lt;h2>Android&lt;/h2>
+
+'''**[https://docs.unrealengine.com/latest/INT/Platforms/Android/GettingStarted/ Android] is now available for developing on Mac as of 4.12.**'''
+
+&lt;h2>iOS&lt;/h2>
+
+&lt;h3>Build Failing&lt;/h3>
+&lt;ol>
+&lt;li>Have you entered your Provisions and/or Certificate in the Project Settings>iOS section?&lt;/li>
+&lt;li>Are the Provisions and/or Certificate sections highlighted red or green?&lt;/li>
+&lt;li>Are you able to recreate this issue on a Blank Template Project?&lt;/li>
+&lt;li>Obtain the [https://wiki.unrealengine.com/index.php?title=Mobile_Development_Troubleshooting_Guide#How_to_get_logs_off_of_an_Android_device iOS] logs from device.&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Not Deploying to the Device&lt;/h3>
+&lt;ol>
+&lt;li>Have you entered your Provisions and/or Certificate in the Project Settings>iOS section?&lt;/li>
+&lt;li>Are the Provisions and/or Certificate sections highlighted red or green?&lt;/li>
+&lt;li>Are you able to recreate this issue on a Blank Template Project?&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Screen is Black, but Analogs are Showing&lt;/h3>
+&lt;ol>
+&lt;li>Have you built your lighting/lightmass?&lt;/li>
+&lt;li>Make sure your Default/Startup Map is set correctly in ‘Project Settings’.&lt;/li>
+&lt;li>Obtain the [https://wiki.unrealengine.com/index.php?title=Mobile_Development_Troubleshooting_Guide#How_to_get_logs_off_of_an_Android_device iOS] logs from device.&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Dynamic Shadows not Rendering Properly&lt;/h3>
+&lt;ol>
+&lt;li>Change Directional light from ‘Stationary’ to ‘Movable’&lt;/li>
+&lt;li>Character has ‘Cast Dynamic Shadow’ checked&lt;/li>
+&lt;li>Have you built lighting?&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Materials or Textures rendering Black or Splotchy&lt;/h3>
+&lt;ol>
+&lt;li>What is the normal intensity of your material?&lt;/li>
+&lt;li>Are the texture samples formatted correctly for mobile?&lt;/li>
+&lt;li>Uncheck the ‘Allow Static Lighting for Normal Maps’ within the ‘Project Settings’&lt;/li>
+&lt;/ol>
+
+&lt;h3>Setting up iOS Device Compatibility for the Apple Store&lt;/h3>
+&lt;ol>
+Solution: [https://answers.unrealengine.com/questions/222566/ios-device-compatibility-set-for-apple-store.html Answerhub]
+&lt;li>Documentation: [https://developer.apple.com/library/ios/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/DeviceCompatibilityMatrix/DeviceCompatibilityMatrix.html Device Compatibility]&lt;/li>
+&lt;li>Create a Bug Report on the [https://answers.unrealengine.com/ Answerhub]. (See [https://wiki.unrealengine.com/Mobile_Development_Troubleshooting_Guide#Creating_a_Bug_Report ‘Creating a Bug Report’] below)&lt;/li>
+&lt;/ol>
+
+&lt;h3>Setting up Flurry Analytics for iOS&lt;/h3>
+&lt;ol>
+Solution: [https://forums.unrealengine.com/showthread.php?92932-Flurry-Documentation-Sentences-aren-t-even-finished Answerhub]
+&lt;li>Documentation: [https://docs.unrealengine.com/latest/INT/Gameplay/Analytics/ In-Game Analytics]&lt;/li>
+&lt;/ol>
+
+
+&lt;!--Numbered list-->
+&lt;!--
+&lt;ol>
+&lt;li>Solution1&lt;/li>
+&lt;li>Solution2&lt;/li>
+&lt;li>Solution3&lt;/li>
+&lt;li>Answerhub&lt;/li>
+-->
+&lt;!--Bullet list-->
+&lt;!--
+&lt;ul>
+&lt;li>list items/files/info needed as bullet points&lt;/li>
+&lt;li>Second item&lt;/li>
+&lt;/ul>
+&lt;/ol>
+-->
+&lt;!--
+&lt;h3>Problem2&lt;/h3>
+&lt;p>This is a description of the problem - provide relevant link if necessary&lt;/p>
+
+&lt;ol>
+-->
+&lt;!--Numbered List-->
+&lt;!--
+&lt;li>Solution1&lt;/li>
+&lt;li>Solution2&lt;/li>
+&lt;li>Solution3&lt;/li>
+&lt;li>Answerhub&lt;/li>
+-->
+&lt;!--Bullet List-->
+&lt;!--
+&lt;ul>
+&lt;li>list items/files/info needed as bullet points&lt;/li>
+&lt;li>Second item&lt;/li>
+&lt;/ul>
+&lt;/ol>
+-->
+&lt;!--
+&lt;h3>Problem1&lt;/h3>
+&lt;p>This is a description of the problem - provide relevant link if necessary&lt;/p>
+-->
+&lt;!--Numbered list-->
+&lt;!--
+&lt;ol>
+&lt;li>Solution1&lt;/li>
+&lt;li>Solution2&lt;/li>
+&lt;li>Solution3&lt;/li>
+&lt;li>Answerhub&lt;/li>
+-->
+&lt;!--Bullet list-->
+&lt;!--
+&lt;ul>
+&lt;li>list items/files/info needed as bullet points&lt;/li>
+&lt;li>Second item&lt;/li>
+&lt;/ul>
+&lt;/ol>
+-->
+&lt;!--
+&lt;h3>Problem2&lt;/h3>
+&lt;p>This is a description of the problem - provide relevant link if necessary&lt;/p>
+
+&lt;ol>
+-->
+&lt;!--Numbered List-->
+&lt;!--
+&lt;li>Solution1&lt;/li>
+&lt;li>Solution2&lt;/li>
+&lt;li>Solution3&lt;/li>
+&lt;li>Answerhub&lt;/li>
+-->
+
+&lt;!--Bullet List-->
+&lt;!--
+&lt;ul>
+&lt;li>list items/files/info needed as bullet points&lt;/li>
+&lt;li>Second item&lt;/li>
+&lt;/ul>
+&lt;/ol>
+-->
+&lt;h1>Additional Information&lt;/h1>
+&lt;h2>Creating a Bug Report&lt;/h2>
+&lt;ul>
+&lt;li>Is the mobile device Android or iOS?&lt;/li>
+&lt;li>What is the exact device they are using and what version is that device on?&lt;/li>
+&lt;li>Would you be able to reproduce this issue on a Blank Template Project?&lt;/li>
+&lt;li>What version of the Engine are you using and is that version a binary or source build?&lt;/li>
+&lt;li>What engine version did you first see this error occurring?&lt;/li>
+&lt;li>Would you be able to reproduce this issue on a blank template project?&lt;/li>
+&lt;li>If there is a crash, would it be occurring when opening the application on the device of while packaging the project?&lt;/li>
+&lt;li>Be sure to include any build failed logs or any logs that may help to understand what may be occurring.&lt;/li> 
+&lt;li>If the application is crashing on an Android device, include the Monitor Logs. (Need to add a link for how to obtain the monitor logs)&lt;/li>
+&lt;/ul>
+&lt;h2>How to get logs off of an iOS device&lt;/h2>
+
+&lt;h3>Windows&lt;/h3>
+&lt;ul>
+&lt;li>Open iPhonePackager (Engine/Binaries/DotNET/IOS)&lt;/li>
+&lt;li>Select a uproject file (Optional)&lt;/li>
+&lt;li>Select the Advance Tools tab&lt;/li>
+&lt;li>Select Other Deployment Tools…&lt;/li>
+&lt;li>Select Backup Documents…&lt;/li>
+&lt;li>Select the IPA for the game you wish to get a log for&lt;/li>
+&lt;li>The documents directory data will then be copied to Engine/Binaries/DotNET/IOS/IOS_Backups or GameDir/IOS_Backups if a uproject was selected&lt;/li>
+&lt;li>The log can then be found at IOS_Backups/Game/Saved/Logs&lt;/li>
+&lt;/ul>
+&lt;h3>Mac&lt;/h3>
+&lt;ul>
+&lt;li>Connect device to a Mac&lt;/li>
+&lt;li>Open XCode > Window > Devices &lt;/li>
+&lt;li>Select your device&lt;/li>
+&lt;li>Select 'View Device Logs'&lt;/li>
+&lt;li>Select the process which matches your Game and Crash date/time&lt;/li>
+&lt;li>Right-click on the process and select 'Export Log'&lt;/li>
+&lt;/ul>
+&lt;h2>How to get logs off of an Android device&lt;/h2>
+&lt;ul>
+&lt;li>Attach your phone to the computer&lt;/li>
+&lt;li>Go here: C:\NVPACK\android-sdk-windows\tools&lt;/li>
+&lt;li>Open up Monitor.bat&lt;/li>
+&lt;li>Launch the program and save the logs by highlighting all of the logs you wish to save and pressing the save icon at the top right of the log window.&lt;/li>
+&lt;/ul> 
+'''If you cannot get Monitor.bat to open, please go to:'''
+&lt;ul>
+&lt;li>C:\NVPACK\android-sdk-windows\tools\lib\monitor-x86&lt;/li>
+&lt;li>Open up Monitor.exe&lt;/li>
+&lt;li>Follow the instructions above&lt;/li>
+&lt;/ul>
+
+&lt;h2>How to Remove Obsolete Mobile Provision Profiles (iOS)&lt;/h2>
+&lt;h3>Windows&lt;/h3>
+&lt;ul>
+&lt;li>C:\Users\&lt;you>\AppData\Local\Apple Computer\MobileDevice\Provisioning Profiles&lt;/li>
+&lt;li>Profiles will show up and can be deleted as necessary.&lt;/li>
+&lt;/ul>
+&lt;h3>Mac&lt;/h3>
+&lt;ul>
+&lt;li>~/Library/MobileDevice/Provisioning Profiles&lt;/li>
+&lt;li>Profiles will show up and can be deleted as necessary.&lt;/li>
+&lt;/ul>
+
+&lt;h2>Useful Mobile Documentation&lt;/h2>
+&lt;ul>'''iOS'''&lt;li>
+[https://docs.unrealengine.com/latest/INT/Platforms/iOS/Windows/index.html Building iOS on Windows]&lt;/li>
+&lt;li>[https://docs.unrealengine.com/latest/INT/Platforms/iOS/QuickStart/1/index.html iOS Quick Start Documentation]&lt;/li>
+&lt;li>[https://docs.unrealengine.com/latest/INT/Platforms/iOS/DeviceCompatibility/index.html iOS Device Compatibility]&lt;/li>
+&lt;li>[https://docs.unrealengine.com/latest/INT/Platforms/iOS/Leaderboards/index.html iOS Game Center]&lt;/li>
+&lt;li>[https://docs.unrealengine.com/latest/INT/Platforms/iOS/Ads/index.html iOS: Using In-Game Ads]
+&lt;/li>
+
+'''Android'''
+&lt;li>[https://docs.unrealengine.com/latest/INT/Platforms/Android/GettingStarted/index.html Android Quick Start Documentation]&lt;/li>
+&lt;li>[https://docs.unrealengine.com/latest/INT/Platforms/Android/DeviceCompatibility/index.html Android Device Compatibility]&lt;/li>
+&lt;li>[https://docs.unrealengine.com/latest/INT/Platforms/Android/Achievements/index.html Android: Using Google Play Achievements]&lt;/li>
+&lt;li>[https://docs.unrealengine.com/latest/INT/Platforms/Android/Ads/index.html Android: Using Ad Mob In-Game Ads]&lt;/li>
+</textarea><div class="templatesUsed"></div><p id="mw-returnto">Return to <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Mobile_Development_Troubleshooting_Guide" title="Mobile Development Troubleshooting Guide">Mobile Development Troubleshooting Guide</a>.</p>
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Mobile_Development_Troubleshooting_Guide">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Mobile_Development_Troubleshooting_Guide</a>"						</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-08a23efcd19f60be7"><meta name="worker" content="80"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="https://mediawikiv2-website-prod05.ol.epicgames.net/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":94});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpcVlFA","queueTime":0,"applicationTime":145,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

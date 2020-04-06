@@ -1,0 +1,33 @@
+From 10ef0ef85b4d54515a90c518d3ad7812bb7ab5fd Mon Sep 17 00:00:00 2001
+From: Hyeoncheol Cho <crocuis@gmail.com>
+Date: Tue, 8 Dec 2015 21:42:45 +0900
+Subject: [PATCH] fix visibility
+
+---
+ Plugins/UnrealJS/Content/Scripts/UMG.js | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/Plugins/UnrealJS/Content/Scripts/UMG.js b/Plugins/UnrealJS/Content/Scripts/UMG.js
+index 56a3814..22c6214 100644
+--- a/Plugins/UnrealJS/Content/Scripts/UMG.js
++++ b/Plugins/UnrealJS/Content/Scripts/UMG.js
+@@ -143,7 +143,7 @@
+                     function set_data(flag) {                        
+                         if (flag && child == null) {
+                             child = elem.add_child(template,scope)
+-                            elem.SetVisibility('Visible')                                                                            
++                            elem.SetVisibility('SelfHitTestInvisible')                                                                            
+                         } else if (!flag && child) {
+                             elem.remove_child(child)
+                             elem.SetVisibility('Collapsed')
+@@ -364,8 +364,8 @@
+ 
+                 var instances = []
+                 
+-                // @HACK : ?�건 style???�로 ?�긴 control???�???�용?��? ?�는 문제 ?�문??발생?�는 것인??..
+-                // ?�실 ??control??extended style??갖고 ?�??직접 ?�용??주면 ??�?같습?�다.
++                // @HACK : ?�건 style???�로 ?�긴 control???�???�용?��? ?�는 문제 ?�문??발생?�는 것인??..
++                // ?�실 ??control??extended style??갖고 ?�??직접 ?�용??주면 ??��?같습?�다.
+                 var pending_fn = null
+ 
+                 var Tabs = children.map(function (child) {

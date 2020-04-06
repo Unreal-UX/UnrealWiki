@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/semantic/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/semantic/commits/master.atom"/>
+  <title>Recent Commits to semantic:master</title>
+  <updated>2020-03-31T17:27:59Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2b3e3d602d799f53c3d9899bef465e57b3f6fdc4</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/2b3e3d602d799f53c3d9899bef465e57b3f6fdc4"/>
+    <title>
+        Merge pull request #525 from github/one-fewer-package
+    </title>
+    <updated>2020-03-31T17:27:59Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #525 from github/one-fewer-package
+
+Depend on upstream fused-effects-readline.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bd67e8bf28c9d07ba9990e2900cc1aedeb88c239</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/bd67e8bf28c9d07ba9990e2900cc1aedeb88c239"/>
+    <title>
+        Depend on upstream fused-effects-readline.
+    </title>
+    <updated>2020-03-31T16:43:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Depend on upstream fused-effects-readline.
+
+One fewer package we have to build is always a good thing.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/71d374d8f06c6552121574bc8ea94b8bd9329ad5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/71d374d8f06c6552121574bc8ea94b8bd9329ad5"/>
+    <title>
+        Merge pull request #523 from zhujinxuan/bash-issue
+    </title>
+    <updated>2020-03-30T13:36:38Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #523 from zhujinxuan/bash-issue
+
+Use env bash because /bin/bash does not exists in nixos&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/df8e63f1fb65eef23221865feff94617c3071ef5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/df8e63f1fb65eef23221865feff94617c3071ef5"/>
+    <title>
+        Use env bash because /bin/bash does not exists in nixos
+    </title>
+    <updated>2020-03-30T02:49:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/746159?s=30&amp;u=8bc3331d0f5c10913d3ac07aebeb72f688e3bac0&amp;v=4"/>
+    <author>
+      <name>zhujinxuan</name>
+      <uri>https://github.com/zhujinxuan</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Use env bash because /bin/bash does not exists in nixos&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7b588d89c51563f01e2786e2688b6768a560e9e4</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/7b588d89c51563f01e2786e2688b6768a560e9e4"/>
+    <title>
+        Merge pull request #518 from github/bump-semantic-source
+    </title>
+    <updated>2020-03-27T18:40:44Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/941226?s=30&amp;u=1c0910914fe58bc25bf12e8719d24c4b0be6950d&amp;v=4"/>
+    <author>
+      <name>rewinfrey</name>
+      <uri>https://github.com/rewinfrey</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #518 from github/bump-semantic-source
+
+Bump semantic-source&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0b30c84d01f71c902e11cdcc729b6d0ae6a8d0a9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/0b30c84d01f71c902e11cdcc729b6d0ae6a8d0a9"/>
+    <title>
+        Stray import.
+    </title>
+    <updated>2020-03-27T17:48:28Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Stray import.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/577f9d25640ba82adae5b2ed8c7f2ecf1b1855c9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/577f9d25640ba82adae5b2ed8c7f2ecf1b1855c9"/>
+    <title>
+        Add an orphan to propitiate the tests.
+    </title>
+    <updated>2020-03-27T16:41:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add an orphan to propitiate the tests.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/11366939f49efc94382edcb35268d4df0a5048c2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/11366939f49efc94382edcb35268d4df0a5048c2"/>
+    <title>
+        Fix old uses of lowerBound.
+    </title>
+    <updated>2020-03-27T16:38:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix old uses of lowerBound.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c872660ffc3710ef02761f74e8b26f12272787ac</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/c872660ffc3710ef02761f74e8b26f12272787ac"/>
+    <title>
+        Merge pull request #519 from zhujinxuan/pathtype-all
+    </title>
+    <updated>2020-03-27T16:16:14Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #519 from zhujinxuan/pathtype-all
+
+Replace FilePath with pathtype for ModulePath, Blob and Project&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/dc90cc950f19f8d2fd93405f1d275e1850a2fbd5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/dc90cc950f19f8d2fd93405f1d275e1850a2fbd5"/>
+    <title>
+        Compare by striing
+    </title>
+    <updated>2020-03-27T04:45:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/746159?s=30&amp;u=8bc3331d0f5c10913d3ac07aebeb72f688e3bac0&amp;v=4"/>
+    <author>
+      <name>zhujinxuan</name>
+      <uri>https://github.com/zhujinxuan</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Compare by striing&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ee39d1d3f959c489512cca5725a507d443dc9ca6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/ee39d1d3f959c489512cca5725a507d443dc9ca6"/>
+    <title>
+        Bump tree-sitter
+    </title>
+    <updated>2020-03-25T00:32:27Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/941226?s=30&amp;u=1c0910914fe58bc25bf12e8719d24c4b0be6950d&amp;v=4"/>
+    <author>
+      <name>rewinfrey</name>
+      <uri>https://github.com/rewinfrey</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump tree-sitter&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1c1b708b25fde25ce5e3c1aa1a665be12ba49476</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/1c1b708b25fde25ce5e3c1aa1a665be12ba49476"/>
+    <title>
+        Replace use of position lowerbound
+    </title>
+    <updated>2020-03-25T00:30:52Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/941226?s=30&amp;u=1c0910914fe58bc25bf12e8719d24c4b0be6950d&amp;v=4"/>
+    <author>
+      <name>rewinfrey</name>
+      <uri>https://github.com/rewinfrey</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Replace use of position lowerbound&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/10f9090ca8d0d5c4b93662df4258cb921b6d7d25</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/10f9090ca8d0d5c4b93662df4258cb921b6d7d25"/>
+    <title>
+        Fix Lower instance for Info.
+    </title>
+    <updated>2020-03-24T20:39:21Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix Lower instance for Info.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/34ea0d1dd6ac1a142e2215f097f17abeed66de34</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/34ea0d1dd6ac1a142e2215f097f17abeed66de34"/>
+    <title>
+        Merge pull request #521 from github/read-blobs-more-like-read-slobs-s…
+    </title>
+    <updated>2020-03-24T18:53:59Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #521 from github/read-blobs-more-like-read-slobs-sorry-idk
+
+Remove `readBlobsFromDir` and `codeNavLanguages`.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fbd1d0b05102db71118769a0b88a71e757f28766</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/fbd1d0b05102db71118769a0b88a71e757f28766"/>
+    <title>
+        Resolve import folderol.
+    </title>
+    <updated>2020-03-24T18:03:24Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Resolve import folderol.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ac2da0240fb2614da8618be134a0900d0ca43e46</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/ac2da0240fb2614da8618be134a0900d0ca43e46"/>
+    <title>
+        Stray import.
+    </title>
+    <updated>2020-03-24T15:18:58Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Stray import.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2ac6d738da0f4f804aefa9aef90ebc7e97f695dd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/2ac6d738da0f4f804aefa9aef90ebc7e97f695dd"/>
+    <title>
+        Revert &quot;Stray import.&quot;
+    </title>
+    <updated>2020-03-24T15:18:15Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Revert &amp;quot;Stray import.&amp;quot;
+
+This reverts commit 3962e510294a160befcae0fecc7b3f87711bd677.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3962e510294a160befcae0fecc7b3f87711bd677</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/3962e510294a160befcae0fecc7b3f87711bd677"/>
+    <title>
+        Stray import.
+    </title>
+    <updated>2020-03-24T15:17:15Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Stray import.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8c6315f4de0a481f067ee8a74ab15301c1606201</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/8c6315f4de0a481f067ee8a74ab15301c1606201"/>
+    <title>
+        Remove use of lowerBound that was slipping through the cache.
+    </title>
+    <updated>2020-03-24T14:50:57Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Remove use of lowerBound that was slipping through the cache.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f9dd7e8922daa3a01388cbd696d6039535e93f20</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/semantic/commit/f9dd7e8922daa3a01388cbd696d6039535e93f20"/>
+    <title>
+        Remove `readBlobsFromDir` and `codeNavLanguages`.
+    </title>
+    <updated>2020-03-24T14:46:56Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/2498?s=30&amp;u=cfbc65f29d9d994f94a3e38f9dfd8f0c1ddfba3e&amp;v=4"/>
+    <author>
+      <name>patrickt</name>
+      <uri>https://github.com/patrickt</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Remove `readBlobsFromDir` and `codeNavLanguages`.
+
+These weren&amp;#39;t being called anywhere but the tests, and as such are
+little more than make-work whenever we add new features.&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

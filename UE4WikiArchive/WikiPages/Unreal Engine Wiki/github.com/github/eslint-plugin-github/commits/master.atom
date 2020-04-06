@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/eslint-plugin-github/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/eslint-plugin-github/commits/master.atom"/>
+  <title>Recent Commits to eslint-plugin-github:master</title>
+  <updated>2020-03-30T08:27:28Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/54bd28dd6358cdecd4800fcc0339ceb7ed395e02</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/54bd28dd6358cdecd4800fcc0339ceb7ed395e02"/>
+    <title>
+        Merge pull request #103 from github/use-prettier-config-package
+    </title>
+    <updated>2020-03-30T08:27:28Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #103 from github/use-prettier-config-package
+
+Use prettier from npm package&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ee6c421d37e9dfe9549daba9ac0af5749d11fe26</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/ee6c421d37e9dfe9549daba9ac0af5749d11fe26"/>
+    <title>
+        4.0.0-0
+    </title>
+    <updated>2020-03-27T12:29:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;4.0.0-0&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/40fbc4a691b39389857904fafa297c6c53891465</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/40fbc4a691b39389857904fafa297c6c53891465"/>
+    <title>
+        use prettier from npm package
+    </title>
+    <updated>2020-03-25T13:57:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;use prettier from npm package&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a6c489bd7614ba355db94a8d5bb4cc02d3958de6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/a6c489bd7614ba355db94a8d5bb4cc02d3958de6"/>
+    <title>
+        Merge pull request #101 from github/fix-camelcase-rule-in-typescript-…
+    </title>
+    <updated>2020-03-24T17:46:27Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #101 from github/fix-camelcase-rule-in-typescript-config
+
+Turn eslint `camelcase` rule off in typescript config&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/882f4edab81b93e800becb3db57df93946ca55f4</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/882f4edab81b93e800becb3db57df93946ca55f4"/>
+    <title>
+        Merge pull request #102 from github/disable-no-none-null-assertion-rule
+    </title>
+    <updated>2020-03-24T17:46:13Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #102 from github/disable-no-none-null-assertion-rule
+
+Turn off `no-non-null-assertion` rule&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7bbc89a975549041ccce513bbc24b80ddb65351a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/7bbc89a975549041ccce513bbc24b80ddb65351a"/>
+    <title>
+        turn off `no-non-nul-assertion` rule
+    </title>
+    <updated>2020-03-24T15:34:14Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;turn off `no-non-nul-assertion` rule&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9b9bba3fb1d0ea9eeed2c906edbd257b3709726e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/9b9bba3fb1d0ea9eeed2c906edbd257b3709726e"/>
+    <title>
+        turn eslint `camelcase` rule off in typescript config
+    </title>
+    <updated>2020-03-24T15:32:55Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;turn eslint `camelcase` rule off in typescript config&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a50a31ad1627d589f0bc3de6d679ccc8e003e202</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/a50a31ad1627d589f0bc3de6d679ccc8e003e202"/>
+    <title>
+        Merge pull request #100 from github/update-deps
+    </title>
+    <updated>2020-03-24T14:20:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #100 from github/update-deps
+
+Update dependencies&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/14f81625737649e26f2264088d24a88cd5c0f4c3</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/14f81625737649e26f2264088d24a88cd5c0f4c3"/>
+    <title>
+        update `svg-element-attributes`
+    </title>
+    <updated>2020-03-24T14:13:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;update `svg-element-attributes`&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bedd852475e1192ad96cc0570d819d7d1bbc032a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/bedd852475e1192ad96cc0570d819d7d1bbc032a"/>
+    <title>
+        update @typescript-eslint packages to their latest versions
+    </title>
+    <updated>2020-03-24T14:10:18Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;update @typescript-eslint packages to their latest versions&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4d102864914a50c3da25689a1a9fbad5a78eb437</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/4d102864914a50c3da25689a1a9fbad5a78eb437"/>
+    <title>
+        update mocha
+    </title>
+    <updated>2020-03-24T14:09:00Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;update mocha&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d77c6e513ada51439761718299667d55a187829c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/d77c6e513ada51439761718299667d55a187829c"/>
+    <title>
+        update eslint and friends
+    </title>
+    <updated>2020-03-24T14:03:45Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;update eslint and friends&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ccd340b991fc1677b3fa1f0323c668e190f06453</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/ccd340b991fc1677b3fa1f0323c668e190f06453"/>
+    <title>
+        Merge pull request #99 from github/remove-scripts
+    </title>
+    <updated>2020-03-23T11:15:47Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #99 from github/remove-scripts
+
+Remove scripts&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f547093310e1dcf714f9e8ace64757cedffba3b2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/f547093310e1dcf714f9e8ace64757cedffba3b2"/>
+    <title>
+        Merge pull request #91 from github/dependabot/npm_and_yarn/acorn-7.1.1
+    </title>
+    <updated>2020-03-19T17:00:42Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #91 from github/dependabot/npm_and_yarn/acorn-7.1.1
+
+Bump acorn from 7.1.0 to 7.1.1&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/31cc05e12804f3c6fcd02dd9887a4ffc67ddc3f3</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/31cc05e12804f3c6fcd02dd9887a4ffc67ddc3f3"/>
+    <title>
+        Create CODEOWNERS
+    </title>
+    <updated>2020-03-19T16:57:52Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Create CODEOWNERS&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/268bb0164c624c4c6540f08e3aff17f072267526</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/268bb0164c624c4c6540f08e3aff17f072267526"/>
+    <title>
+        remove docs/configs.md
+    </title>
+    <updated>2020-03-19T16:54:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;remove docs/configs.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fb3a5aa1afef3d95f83d5de4c842fcb2358a7ba9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/fb3a5aa1afef3d95f83d5de4c842fcb2358a7ba9"/>
+    <title>
+        fix weird docs example
+    </title>
+    <updated>2020-03-19T16:54:17Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix weird docs example&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e1463ccb1a52842eae2a729bb78f38157e236cfd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/e1463ccb1a52842eae2a729bb78f38157e236cfd"/>
+    <title>
+        update README
+    </title>
+    <updated>2020-03-19T16:52:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;update README&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/dd6beedfdbbc44b24f098e8596f36047e58fc1e0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/dd6beedfdbbc44b24f098e8596f36047e58fc1e0"/>
+    <title>
+        remove scripts
+    </title>
+    <updated>2020-03-19T16:52:19Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;remove scripts&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4128e9c91bda0ba2694da8aa90e69fbd5d4392c5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/eslint-plugin-github/commit/4128e9c91bda0ba2694da8aa90e69fbd5d4392c5"/>
+    <title>
+        Merge pull request #98 from github/rename-app-config
+    </title>
+    <updated>2020-03-19T14:55:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/318208?s=30&amp;u=d3370a55206407dd1aa3b0d345807456bc086e7d&amp;v=4"/>
+    <author>
+      <name>koddsson</name>
+      <uri>https://github.com/koddsson</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #98 from github/rename-app-config
+
+Rename app config&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

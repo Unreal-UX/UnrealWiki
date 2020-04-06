@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/site-policy/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/site-policy/commits/master.atom"/>
+  <title>Recent Commits to site-policy:master</title>
+  <updated>2020-03-30T22:35:19Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/da71d8b6a9251a543cac55ab68452f22b0a8a436</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/da71d8b6a9251a543cac55ab68452f22b0a8a436"/>
+    <title>
+        Merge pull request #219 from github/supplier-coc
+    </title>
+    <updated>2020-03-30T22:35:19Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17750691?s=30&amp;u=263a16e5bb6114e959d9257e3e5caab2e263407a&amp;v=4"/>
+    <author>
+      <name>vollmera</name>
+      <uri>https://github.com/vollmera</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #219 from github/supplier-coc
+
+add option for vendors to comply with Microsoft&amp;#39;s Supplier CoC or GitHub&amp;#39;s statement&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/21ce77351d14c279c692f963d6b7c641d1cca193</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/21ce77351d14c279c692f963d6b7c641d1cca193"/>
+    <title>
+        add option to comply with Microsoft&#39;s Supplier CoC or GitHub&#39;s statement
+    </title>
+    <updated>2020-03-30T21:56:21Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17750691?s=30&amp;u=263a16e5bb6114e959d9257e3e5caab2e263407a&amp;v=4"/>
+    <author>
+      <name>vollmera</name>
+      <uri>https://github.com/vollmera</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add option to comply with Microsoft&amp;#39;s Supplier CoC or GitHub&amp;#39;s statement&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ea969e374a7b8c1a6b9c94a0f5faaac0b2e2e01b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/ea969e374a7b8c1a6b9c94a0f5faaac0b2e2e01b"/>
+    <title>
+        add option to comply with Microsoft&#39;s Supplier CoC or GitHub&#39;s statement
+    </title>
+    <updated>2020-03-30T21:55:14Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17750691?s=30&amp;u=263a16e5bb6114e959d9257e3e5caab2e263407a&amp;v=4"/>
+    <author>
+      <name>vollmera</name>
+      <uri>https://github.com/vollmera</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add option to comply with Microsoft&amp;#39;s Supplier CoC or GitHub&amp;#39;s statement&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4e9e3265ac1a499587ad27688c623598365b1b05</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/4e9e3265ac1a499587ad27688c623598365b1b05"/>
+    <title>
+        Merge pull request #217 from github/jenndeforest-patch-1-1
+    </title>
+    <updated>2020-03-05T20:25:53Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/42984983?s=30&amp;u=7601856f4cc9a678eb7957be98f58466b046e999&amp;v=4"/>
+    <author>
+      <name>jenndeforest</name>
+      <uri>https://github.com/jenndeforest</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #217 from github/jenndeforest-patch-1-1
+
+Update github-enterprise-server-license-agreement.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/77c5116146b5bf4da3469c9882ce1174c14eeddc</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/77c5116146b5bf4da3469c9882ce1174c14eeddc"/>
+    <title>
+        Update github-enterprise-server-license-agreement.md
+    </title>
+    <updated>2020-03-05T18:50:01Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/42984983?s=30&amp;u=7601856f4cc9a678eb7957be98f58466b046e999&amp;v=4"/>
+    <author>
+      <name>jenndeforest</name>
+      <uri>https://github.com/jenndeforest</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update github-enterprise-server-license-agreement.md
+
+Remove Section 8.2 from the Enterprise Server License Agreement as well as the &amp;quot;Professional Services Credit&amp;quot; definition. We no longer offer professional services credits.
+
+help-docs PR link: https://github.com/github/help-docs/pull/12615&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fe3e10ff8aced17832d70b5c5e9995df51a20e26</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/fe3e10ff8aced17832d70b5c5e9995df51a20e26"/>
+    <title>
+        Merge pull request #215 from github/macdiva-call-out-self-dealing-1
+    </title>
+    <updated>2020-02-22T00:18:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17750691?s=30&amp;u=263a16e5bb6114e959d9257e3e5caab2e263407a&amp;v=4"/>
+    <author>
+      <name>vollmera</name>
+      <uri>https://github.com/vollmera</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #215 from github/macdiva-call-out-self-dealing-1
+
+Add &amp;quot;self-dealing&amp;quot; prohibition to &amp;quot;Acceptable Use&amp;quot; for Sponsors&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9d650e8b4f1de1375d15fc12f3fcd0fd96b3e08b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/9d650e8b4f1de1375d15fc12f3fcd0fd96b3e08b"/>
+    <title>
+        Merge pull request #216 from github/remove-deprecated-support-email
+    </title>
+    <updated>2020-02-22T00:17:47Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17750691?s=30&amp;u=263a16e5bb6114e959d9257e3e5caab2e263407a&amp;v=4"/>
+    <author>
+      <name>vollmera</name>
+      <uri>https://github.com/vollmera</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #216 from github/remove-deprecated-support-email
+
+Remove/replace deprecated support email with contact form link&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a1a1f2b32b8294f02a44711e8c095cf777a5e2d8</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/a1a1f2b32b8294f02a44711e8c095cf777a5e2d8"/>
+    <title>
+        replace deprecated email with contact form link
+    </title>
+    <updated>2020-02-22T00:06:31Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17750691?s=30&amp;u=263a16e5bb6114e959d9257e3e5caab2e263407a&amp;v=4"/>
+    <author>
+      <name>vollmera</name>
+      <uri>https://github.com/vollmera</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;replace deprecated email with contact form link&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/62761e73e0f9df10115079160fe40df7ae3432b0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/62761e73e0f9df10115079160fe40df7ae3432b0"/>
+    <title>
+        replace deprecated email with contact form link
+    </title>
+    <updated>2020-02-22T00:04:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17750691?s=30&amp;u=263a16e5bb6114e959d9257e3e5caab2e263407a&amp;v=4"/>
+    <author>
+      <name>vollmera</name>
+      <uri>https://github.com/vollmera</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;replace deprecated email with contact form link&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e50d79528b17eb2d6d086b91db84be8e8d1ad03e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/e50d79528b17eb2d6d086b91db84be8e8d1ad03e"/>
+    <title>
+        remove deprecated email, update contact form link
+    </title>
+    <updated>2020-02-22T00:01:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17750691?s=30&amp;u=263a16e5bb6114e959d9257e3e5caab2e263407a&amp;v=4"/>
+    <author>
+      <name>vollmera</name>
+      <uri>https://github.com/vollmera</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;remove deprecated email, update contact form link&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a32995914a0bfc3e2b2c4243b173b42077f63b4d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/a32995914a0bfc3e2b2c4243b173b42077f63b4d"/>
+    <title>
+        Add &quot;self-dealing&quot; prohibition to &quot;Acceptable Use&quot;
+    </title>
+    <updated>2020-02-21T22:29:21Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/50756?s=30&amp;v=4"/>
+    <author>
+      <name>macdiva</name>
+      <uri>https://github.com/macdiva</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add &amp;quot;self-dealing&amp;quot; prohibition to &amp;quot;Acceptable Use&amp;quot;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bfdb7f898b8c2653a7785d373c8ad9a4c3c65d4b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/bfdb7f898b8c2653a7785d373c8ad9a4c3c65d4b"/>
+    <title>
+        Merge pull request #214 from github/community-guidelines-language-imp…
+    </title>
+    <updated>2020-02-19T22:40:24Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/282759?s=30&amp;u=66a047057408f48c80dc585ca5e57dc0e4179729&amp;v=4"/>
+    <author>
+      <name>benbalter</name>
+      <uri>https://github.com/benbalter</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #214 from github/community-guidelines-language-improvements
+
+Language improvements to the community guidelines &amp;quot;Building a strong community&amp;quot; section&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e0f79f6608f2cc2c5fcc48b6bd41aacc740724d6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/e0f79f6608f2cc2c5fcc48b6bd41aacc740724d6"/>
+    <title>
+        Update &quot;Building a strong community&quot; language
+    </title>
+    <updated>2020-02-19T21:39:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/282759?s=30&amp;u=66a047057408f48c80dc585ca5e57dc0e4179729&amp;v=4"/>
+    <author>
+      <name>benbalter</name>
+      <uri>https://github.com/benbalter</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update &amp;quot;Building a strong community&amp;quot; language&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9a29cf403c6c010e9c5ed19590f6dec0fdbd6695</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/9a29cf403c6c010e9c5ed19590f6dec0fdbd6695"/>
+    <title>
+        Merge pull request #212 from github/ESLA-and-Enterprise-Subscription-…
+    </title>
+    <updated>2020-02-11T18:16:58Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/42984983?s=30&amp;u=7601856f4cc9a678eb7957be98f58466b046e999&amp;v=4"/>
+    <author>
+      <name>jenndeforest</name>
+      <uri>https://github.com/jenndeforest</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #212 from github/ESLA-and-Enterprise-Subscription-Agreement-typo-fix-February-2019
+
+Esla and enterprise subscription agreement typo fix february 2019&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3c81029a7e06f4c98d7bc3e05310be21b9a44ee8</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/3c81029a7e06f4c98d7bc3e05310be21b9a44ee8"/>
+    <title>
+        Merge pull request #213 from github/repo-sync
+    </title>
+    <updated>2020-02-10T23:05:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17750691?s=30&amp;u=263a16e5bb6114e959d9257e3e5caab2e263407a&amp;v=4"/>
+    <author>
+      <name>vollmera</name>
+      <uri>https://github.com/vollmera</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #213 from github/repo-sync
+
+syncing with GitHub Help&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2ac6f1d27c9c7ceebb83b32d274264b7979133ee</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/2ac6f1d27c9c7ceebb83b32d274264b7979133ee"/>
+    <title>
+        syncing with GitHub Help
+    </title>
+    <updated>2020-02-10T22:52:54Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/17750691?s=30&amp;u=263a16e5bb6114e959d9257e3e5caab2e263407a&amp;v=4"/>
+    <author>
+      <name>vollmera</name>
+      <uri>https://github.com/vollmera</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;syncing with GitHub Help&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a62308c3a21abe7a43dfba59c311bd2739381291</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/a62308c3a21abe7a43dfba59c311bd2739381291"/>
+    <title>
+        Update github-enterprise-subscription-agreement.md
+    </title>
+    <updated>2020-02-04T00:40:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/42984983?s=30&amp;u=7601856f4cc9a678eb7957be98f58466b046e999&amp;v=4"/>
+    <author>
+      <name>jenndeforest</name>
+      <uri>https://github.com/jenndeforest</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update github-enterprise-subscription-agreement.md
+
+Removing Section 1.2.2 and corresponding definition&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c20caddc4bf9fd93c0c1c034a117fb500280ed53</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/c20caddc4bf9fd93c0c1c034a117fb500280ed53"/>
+    <title>
+        Update github-enterprise-server-license-agreement.md
+    </title>
+    <updated>2020-02-04T00:39:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/42984983?s=30&amp;u=7601856f4cc9a678eb7957be98f58466b046e999&amp;v=4"/>
+    <author>
+      <name>jenndeforest</name>
+      <uri>https://github.com/jenndeforest</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update github-enterprise-server-license-agreement.md
+
+Adding Section 11.3&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e34a0e4a025b77d3fc1a4b84d1d9cc05c233f948</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/e34a0e4a025b77d3fc1a4b84d1d9cc05c233f948"/>
+    <title>
+        Merge pull request #202 from kemitchell/eol-spaces
+    </title>
+    <updated>2020-01-25T20:12:59Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/40415?s=30&amp;u=906cf62dea14a697e26a092d0bc942e917881ffe&amp;v=4"/>
+    <author>
+      <name>mlinksva</name>
+      <uri>https://github.com/mlinksva</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #202 from kemitchell/eol-spaces
+
+Delete spaces at ends of lines&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f3a2c2ef67280e3d2505ac1fb19708ef61ba1b5c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/site-policy/commit/f3a2c2ef67280e3d2505ac1fb19708ef61ba1b5c"/>
+    <title>
+        other eol spaces
+    </title>
+    <updated>2020-01-25T20:06:17Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/40415?s=30&amp;u=906cf62dea14a697e26a092d0bc942e917881ffe&amp;v=4"/>
+    <author>
+      <name>mlinksva</name>
+      <uri>https://github.com/mlinksva</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;other eol spaces&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

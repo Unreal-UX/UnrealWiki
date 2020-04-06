@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Camera_Controlled_Turrets&oldid=1015 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:13:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>C++ Camera Controlled Turrets - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"C++_Camera_Controlled_Turrets","wgTitle":"C++ Camera Controlled Turrets","wgCurRevisionId":1015,"wgRevisionId":1015,"wgArticleId":507,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials","Code"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"C++_Camera_Controlled_Turrets","wgRelevantArticleId":507,"wgRequestId":"9430a408c4dfe36ad55b6310","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load9239.css?debug=false&amp;lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-C_Camera_Controlled_Turrets rootpage-C_Camera_Controlled_Turrets skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b48461a8a6519d83"><meta name="worker" content="206"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Camera_Controlled_Turrets&oldid=1015 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:13:01 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=C%2B%2B+Camera+Controlled+Turrets&amp;returntoquery=oldid%3D1015" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Camera_Controlled_Turrets" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:C%2B%2B_Camera_Controlled_Turrets&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Camera_Controlled_Turrets">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Camera_Controlled_Turrets&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Camera_Controlled_Turrets&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">C++ Camera Controlled Turrets</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Rating&amp;action=edit&amp;redlink=1" class="new" title="Template:Rating (page does not exist)">Template:Rating</a>
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Requirements"><span class="tocnumber">2</span> <span class="toctext">Requirements</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Our_Goals"><span class="tocnumber">3</span> <span class="toctext">Our Goals</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Getting_Started"><span class="tocnumber">4</span> <span class="toctext">Getting Started</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Set_up_the_Ship_Mesh"><span class="tocnumber">4.1</span> <span class="toctext">Set up the Ship Mesh</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Set_up_the_Turret_Barrel_Mesh"><span class="tocnumber">4.2</span> <span class="toctext">Set up the Turret Barrel Mesh</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Creating_The_Base_Classes"><span class="tocnumber">4.3</span> <span class="toctext">Creating The Base Classes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Initializing_the_Ship_and_Turret_Classes"><span class="tocnumber">5</span> <span class="toctext">Initializing the Ship and Turret Classes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#ShipBase_Class"><span class="tocnumber">5.1</span> <span class="toctext">ShipBase Class</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#TurretBase_Class"><span class="tocnumber">5.2</span> <span class="toctext">TurretBase Class</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Extending_The_Base_Classes"><span class="tocnumber">6</span> <span class="toctext">Extending The Base Classes</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Adding_Turret_Functionality"><span class="tocnumber">7</span> <span class="toctext">Adding Turret Functionality</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Turret_Spawn_Logic"><span class="tocnumber">7.1</span> <span class="toctext">Turret Spawn Logic</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Turret_Control"><span class="tocnumber">7.2</span> <span class="toctext">Turret Control</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Turret_Firing"><span class="tocnumber">7.3</span> <span class="toctext">Turret Firing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Conclusion"><span class="tocnumber">8</span> <span class="toctext">Conclusion</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>This tutorial is aimed at people who want to do a little more C++ programming. Having some prior knowledge of C++ is not needed to follow this tutorial. It will take you from the beginning to end. The end result is having a player controlled ship which it's turrets will follow the direction of the camera.
+</p><p>So I've decided that since I've finally figured out how to make turrets work on battleships/spaceships that I should share my discovery and help anyone else who is having difficulties figuring it out with C++! I'm going to take you through the entire process from start to finish, including the set up needed to get everything working just right. So this tutorial may be a little bit long, but I promise you it's worth it!
+</p>
+<h2><span class="mw-headline" id="Requirements">Requirements</span></h2>
+<p>Before you start this tutorial, you should have a few things prepared and ready.
+</p>
+<ol><li> C++ empty project.</li>
+<li> Ship mesh</li>
+<li> Turret Chassis mesh</li>
+<li> Turret Barrel mesh</li></ol>
+<p>For a little clarification on the Turret meshes, you want two separate meshes to bring into the engine, the body of the turret (which we will refer to as the Chassis) and the barrels of the turret (which we will refer to as the Barrels).
+</p><p>Go on ahead and get all those three meshes imported into the project!
+</p>
+<h2><span class="mw-headline" id="Our_Goals">Our Goals</span></h2>
+<p>So we are setting out with a few goals to accomplish in this tutorial.
+</p>
+<ol><li> We want to set up the Ship and Turret base classes</li>
+<li> Extend the Ship and Turret base classes into blueprints</li>
+<li> Get the turrets to spawn on the Ship</li>
+<li> Make the turrets rotate and pitch properly</li>
+<li> Bonus: Get the turrets to fire!</li></ol>
+<h2><span class="mw-headline" id="Getting_Started">Getting Started</span></h2>
+<h3><span class="mw-headline" id="Set_up_the_Ship_Mesh">Set up the Ship Mesh</span></h3>
+<p>Before we go to much further, we want to make sure that your ship mesh is set up correctly! What we want to do is add some sockets to the ship so our code can spawn the turrets in correctly and at the right locations. So go to where your ship mesh is and double click it. This should bring up the mesh editor in the engine.
+</p><p>Now make sure that the Sockets button is highlighted in the top navbar, and then go to Window -&gt; Socket Manager.
+</p><p>This will make a little window appear off to the right, with a green button named Create Socket.
+</p><p>Go ahead and create some sockets and place them where ever on the mesh you wish! Mine are set up as below.
+</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Note&amp;action=edit&amp;redlink=1" class="new" title="Template:Note (page does not exist)">Template:Note</a>
+</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ShipSockets.png" class="image"><img alt="ShipSockets.png" src="https://d26ilriwvtzlb.cloudfront.net/9/97/ShipSockets.png" width="1918" height="1013" /></a>
+</p>
+<h3><span class="mw-headline" id="Set_up_the_Turret_Barrel_Mesh">Set up the Turret Barrel Mesh</span></h3>
+<p>Just like the Ship Mesh and placing it's sockets, we want to do the same thing for the barrel mesh, but this time where putting the sockets at the end of the barrels. This is going to be used to help give an origin point of where we are going to spawn our projectiles.
+</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Note&amp;action=edit&amp;redlink=1" class="new" title="Template:Note (page does not exist)">Template:Note</a>
+</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:TurretSockets.png" class="image"><img alt="TurretSockets.png" src="https://d26ilriwvtzlb.cloudfront.net/8/8e/TurretSockets.png" width="1530" height="561" /></a>
+</p>
+<h3><span class="mw-headline" id="Creating_The_Base_Classes">Creating The Base Classes</span></h3>
+<p>So let's get those base classes created! We will begin with the Ship Base Class.
+</p><p>So once your project is open in the editor, go to File -&gt; New C++ Class.
+</p><p>You will be prompted with a screen of what to inherit. We want our parent class to be the Pawn.
+</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ParentClass.png" class="image"><img alt="ParentClass.png" src="https://d26ilriwvtzlb.cloudfront.net/d/d5/ParentClass.png" width="960" height="608" /></a>
+</p><p>Then we want to give the class a name, ShipBase is what I used. You can name it anything.
+</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:NameClass.png" class="image"><img alt="NameClass.png" src="https://d26ilriwvtzlb.cloudfront.net/d/dc/NameClass.png" width="960" height="608" /></a>
+</p><p>It will only take a moment for the engine to add the code file and structure to your project, so sit tight!
+</p><p>Once that is done, go ahead and repeat this section for the Turret. I named the class TurretBase.
+</p><p>So now you should have two classes created and the files should be open in your IDE.
+</p>
+<h2><span class="mw-headline" id="Initializing_the_Ship_and_Turret_Classes">Initializing the Ship and Turret Classes</span></h2>
+<p>Our two classes should look the same and have a few things in the code already like below.
+</p><p>ShipBase.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;TurretTutorial.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ShipBase.h&quot;</span><span class="cp"></span>
+
+
+<span class="c1">// Sets default values</span>
+<span class="n">AShipBase</span><span class="o">::</span><span class="n">AShipBase</span><span class="p">()</span>
+<span class="p">{</span>
+ 	<span class="c1">// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don&#39;t need it.</span>
+	<span class="n">PrimaryActorTick</span><span class="p">.</span><span class="n">bCanEverTick</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="c1">// Called when the game starts or when spawned</span>
+<span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">BeginPlay</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">Super</span><span class="o">::</span><span class="n">BeginPlay</span><span class="p">();</span>
+	
+<span class="p">}</span>
+
+<span class="c1">// Called every frame</span>
+<span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">Tick</span><span class="p">(</span> <span class="kt">float</span> <span class="n">DeltaTime</span> <span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">Super</span><span class="o">::</span><span class="n">Tick</span><span class="p">(</span> <span class="n">DeltaTime</span> <span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="c1">// Called to bind functionality to input</span>
+<span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">SetupPlayerInputComponent</span><span class="p">(</span><span class="k">class</span> <span class="nc">UInputComponent</span><span class="o">*</span> <span class="n">InputComponent</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">Super</span><span class="o">::</span><span class="n">SetupPlayerInputComponent</span><span class="p">(</span><span class="n">InputComponent</span><span class="p">);</span>
+
+<span class="p">}</span>
+</pre></div>
+<p>ShipBase.h
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// Fill out your copyright notice in the Description page of Project Settings.</span>
+
+<span class="cp">#pragma once</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;GameFramework/Pawn.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ShipBase.generated.h&quot;</span><span class="cp"></span>
+
+<span class="n">UCLASS</span><span class="p">()</span>
+<span class="k">class</span> <span class="nc">TURRETTUTORIAL_API</span> <span class="nl">AShipBase</span> <span class="p">:</span> <span class="k">public</span> <span class="n">APawn</span>
+<span class="p">{</span>
+	<span class="n">GENERATED_BODY</span><span class="p">()</span>
+
+<span class="k">public</span><span class="o">:</span>
+	<span class="c1">// Sets default values for this pawn&#39;s properties</span>
+	<span class="n">AShipBase</span><span class="p">();</span>
+
+	<span class="c1">// Called when the game starts or when spawned</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">BeginPlay</span><span class="p">()</span> <span class="k">override</span><span class="p">;</span>
+	
+	<span class="c1">// Called every frame</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">Tick</span><span class="p">(</span> <span class="kt">float</span> <span class="n">DeltaSeconds</span> <span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+
+	<span class="c1">// Called to bind functionality to input</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">SetupPlayerInputComponent</span><span class="p">(</span><span class="k">class</span> <span class="nc">UInputComponent</span><span class="o">*</span> <span class="n">InputComponent</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+
+	
+	
+<span class="p">};</span>
+</pre></div>
+<p>So the next step is to get our ShipBase and TurretBase classes to actually work so we can extend these base classes out into Blueprints and do some fun stuff with them! The main reason why we are creating a base class for the ship and turret and then extending it out into Blueprints is observing a thing called Object Oriented Programming. I wont go into the semantics of it, but the idea is that we have a common parent class of a Ship and a Turret. We then can create as many variations of these base classes in either Blueprints or Code. This creates flexibility and eliminates having a ton of duplicate code!
+</p><p>In short the ShipBase and TurretBase classes will have all the common properties shared among any ships and any turrets.
+</p>
+<h3><span class="mw-headline" id="ShipBase_Class">ShipBase Class</span></h3>
+<p>So let us get our ShipBase.h filled out! First we want to include our newly created TurretBase class. 
+</p><p>ShipBase.h
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// TurretBase Include</span>
+<span class="cp">#include</span> <span class="cpf">&quot;../Turrets/TurretBase.h&quot;</span><span class="cp"></span>
+</pre></div>
+<p>Now we want to get everything else set up, including our Mesh of our ship, then build up the camera and get a few more things sorted. Take a look at the rest of the code below.
+</p><p>ShipBase.h
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">UCLASS</span><span class="p">()</span>
+<span class="k">class</span> <span class="nc">TURRETTUTORIAL_API</span> <span class="nl">AShipBase</span> <span class="p">:</span> <span class="k">public</span> <span class="n">APawn</span>
+<span class="p">{</span>
+	<span class="n">GENERATED_BODY</span><span class="p">()</span>
+
+<span class="k">public</span><span class="o">:</span>
+
+	<span class="cm">/** StaticMesh component that will be the visuals for our flying ship */</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Mesh</span><span class="p">,</span> <span class="n">VisibleDefaultsOnly</span><span class="p">,</span> <span class="n">BlueprintReadOnly</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">AllowPrivateAccess</span> <span class="o">=</span> <span class="s">&quot;true&quot;</span><span class="p">))</span>
+	<span class="k">class</span> <span class="nc">UStaticMeshComponent</span><span class="o">*</span> <span class="n">HullMesh</span><span class="p">;</span>
+
+	<span class="cm">/** Spring arm that will offset the camera */</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Camera</span><span class="p">,</span> <span class="n">VisibleDefaultsOnly</span><span class="p">,</span> <span class="n">BlueprintReadOnly</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">AllowPrivateAccess</span> <span class="o">=</span> <span class="s">&quot;true&quot;</span><span class="p">))</span>
+	<span class="k">class</span> <span class="nc">USpringArmComponent</span><span class="o">*</span> <span class="n">SpringArm</span><span class="p">;</span>
+
+	<span class="cm">/** Camera component that will be our viewpoint */</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Camera</span><span class="p">,</span> <span class="n">VisibleDefaultsOnly</span><span class="p">,</span> <span class="n">BlueprintReadOnly</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">AllowPrivateAccess</span> <span class="o">=</span> <span class="s">&quot;true&quot;</span><span class="p">))</span>
+	<span class="k">class</span> <span class="nc">UCameraComponent</span><span class="o">*</span> <span class="n">Camera</span><span class="p">;</span>
+	
+	<span class="c1">// Sets default values for this actor&#39;s properties</span>
+	<span class="n">AShipBase</span><span class="p">(</span><span class="k">const</span> <span class="n">FObjectInitializer</span><span class="o">&amp;</span> <span class="n">ObjectInitializer</span><span class="p">);</span>
+
+	<span class="c1">// Called when the game starts or when spawned</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">BeginPlay</span><span class="p">()</span> <span class="k">override</span><span class="p">;</span>
+	
+	<span class="c1">// Called every frame</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">Tick</span><span class="p">(</span> <span class="kt">float</span> <span class="n">DeltaSeconds</span> <span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+
+        <span class="cm">/** Returns PlaneMesh subobject **/</span>
+	<span class="n">FORCEINLINE</span> <span class="k">class</span> <span class="nc">UStaticMeshComponent</span><span class="o">*</span> <span class="nf">GetPlaneMesh</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">HullMesh</span><span class="p">;</span> <span class="p">}</span>
+	<span class="cm">/** Returns SpringArm subobject **/</span>
+	<span class="n">FORCEINLINE</span> <span class="k">class</span> <span class="nc">USpringArmComponent</span><span class="o">*</span> <span class="nf">GetSpringArm</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">SpringArm</span><span class="p">;</span> <span class="p">}</span>
+	<span class="cm">/** Returns Camera subobject **/</span>
+	<span class="n">FORCEINLINE</span> <span class="k">class</span> <span class="nc">UCameraComponent</span><span class="o">*</span> <span class="nf">GetCamera</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">Camera</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="k">protected</span><span class="o">:</span>
+
+        <span class="c1">// Camera variables so we can control our camera</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Camera</span><span class="p">,</span> <span class="n">EditDefaultsOnly</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">SpringArmDistance</span><span class="p">;</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Camera</span><span class="p">,</span> <span class="n">EditDefaultsOnly</span><span class="p">)</span>
+		<span class="n">FVector</span> <span class="n">SpringArmSocketOffset</span><span class="p">;</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Camera</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">EditAnywhere</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">CameraMaxPitch</span><span class="p">;</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Camera</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">EditAnywhere</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">CameraMinPitch</span><span class="p">;</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Camera</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">EditAnywhere</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">CameraZoomAmount</span><span class="p">;</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Camera</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">EditAnywhere</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">CameraZoomSpeed</span><span class="p">;</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Camera</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">EditAnywhere</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">CameraMaxZoom</span><span class="p">;</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Camera</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">EditAnywhere</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">CameraMinZoom</span><span class="p">;</span>
+
+	<span class="c1">// Camera CURRENT variables</span>
+	<span class="kt">float</span> <span class="n">CurrentCameraZoomDistance</span><span class="p">;</span>
+
+        <span class="c1">// Begin AActor overrides</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">SetupPlayerInputComponent</span><span class="p">(</span><span class="k">class</span> <span class="nc">UInputComponent</span> <span class="o">*</span> <span class="n">InputComponent</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+	<span class="c1">// End AActor overrides</span>
+
+	<span class="kt">void</span> <span class="nf">CameraYawInput</span><span class="p">(</span><span class="kt">float</span> <span class="n">Val</span><span class="p">);</span>
+	<span class="kt">void</span> <span class="nf">CameraPitchInput</span><span class="p">(</span><span class="kt">float</span> <span class="n">Val</span><span class="p">);</span>
+	<span class="kt">void</span> <span class="nf">CameraZoom</span><span class="p">(</span><span class="kt">float</span> <span class="n">Val</span><span class="p">);</span>
+	<span class="kt">void</span> <span class="nf">CameraZoomIn</span><span class="p">();</span>
+	<span class="kt">void</span> <span class="nf">CameraZoomOut</span><span class="p">();</span>
+</pre></div>
+<p>Now with the header file completed, we will now add to our ShipBase.cpp file. First were going to modify this original constructor of the class, which should look like this right now...
+</p><p>ShipBase.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// Sets default values</span>
+<span class="n">AShipBase</span><span class="o">::</span><span class="n">AShipBase</span><span class="p">()</span>
+<span class="p">{</span>
+ 	<span class="c1">// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don&#39;t need it.</span>
+	<span class="n">PrimaryActorTick</span><span class="p">.</span><span class="n">bCanEverTick</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></div>
+<p>And turn it into this...
+</p><p>ShipBase.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">AShipBase</span><span class="o">::</span><span class="n">AShipBase</span><span class="p">(</span><span class="k">const</span> <span class="n">FObjectInitializer</span><span class="o">&amp;</span> <span class="n">ObjectInitializer</span><span class="p">)</span> <span class="o">:</span> <span class="n">Super</span><span class="p">(</span><span class="n">ObjectInitializer</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="c1">// Initialize all base values</span>
+
+	<span class="c1">// Set camera control defaults</span>
+	<span class="n">SpringArmDistance</span> <span class="o">=</span> <span class="mf">1250.0f</span><span class="p">;</span>
+	<span class="n">SpringArmSocketOffset</span> <span class="o">=</span> <span class="n">FVector</span><span class="p">(</span><span class="mf">0.f</span><span class="p">,</span> <span class="mf">0.f</span><span class="p">,</span> <span class="mf">380.f</span><span class="p">);</span>
+	<span class="n">CameraMaxPitch</span> <span class="o">=</span> <span class="mf">45.0f</span><span class="p">;</span>
+	<span class="n">CameraMinPitch</span> <span class="o">=</span> <span class="o">-</span><span class="mf">45.0f</span><span class="p">;</span>
+	<span class="n">CameraMaxZoom</span> <span class="o">=</span> <span class="n">SpringArmDistance</span> <span class="o">*</span> <span class="mi">3</span><span class="p">;</span>
+	<span class="n">CameraMinZoom</span> <span class="o">=</span> <span class="mf">500.0f</span><span class="p">;</span>
+	<span class="n">CameraZoomAmount</span> <span class="o">=</span> <span class="mf">250.0f</span><span class="p">;</span>
+	<span class="n">CameraZoomSpeed</span> <span class="o">=</span> <span class="n">CameraZoomAmount</span> <span class="o">/</span> <span class="mi">3</span><span class="p">;</span>
+
+	<span class="c1">// Create static mesh component</span>
+	<span class="n">HullMesh</span> <span class="o">=</span> <span class="n">CreateDefaultSubobject</span><span class="o">&lt;</span><span class="n">UStaticMeshComponent</span><span class="o">&gt;</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;HullMesh&quot;</span><span class="p">));</span>
+	<span class="n">RootComponent</span> <span class="o">=</span> <span class="n">HullMesh</span><span class="p">;</span>
+	<span class="n">SpringArm</span> <span class="o">=</span> <span class="n">CreateDefaultSubobject</span><span class="o">&lt;</span><span class="n">USpringArmComponent</span><span class="o">&gt;</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;SpringArm&quot;</span><span class="p">));</span>
+	<span class="n">SpringArm</span><span class="o">-&gt;</span><span class="n">AttachToComponent</span><span class="p">(</span><span class="n">RootComponent</span><span class="p">,</span> <span class="n">FAttachmentTransformRules</span><span class="o">::</span><span class="n">KeepRelativeTransform</span><span class="p">);</span>
+
+	<span class="c1">// Create the spring arm component</span>
+	<span class="n">SpringArmDistance</span> <span class="o">=</span> <span class="mf">700.0f</span><span class="p">;</span>	<span class="c1">// Sets up default SpringArmDistance</span>
+	<span class="n">SpringArmSocketOffset</span> <span class="o">=</span> <span class="n">FVector</span><span class="p">(</span><span class="mf">0.f</span><span class="p">,</span> <span class="mf">0.f</span><span class="p">,</span> <span class="mf">60.f</span><span class="p">);</span>	<span class="c1">//Sets up default SpringArm Offset</span>
+
+	
+	<span class="n">SpringArm</span><span class="o">-&gt;</span><span class="n">TargetArmLength</span> <span class="o">=</span> <span class="n">SpringArmDistance</span><span class="p">;</span>
+	<span class="n">SpringArm</span><span class="o">-&gt;</span><span class="n">SocketOffset</span> <span class="o">=</span> <span class="n">SpringArmSocketOffset</span><span class="p">;</span>
+	<span class="n">SpringArm</span><span class="o">-&gt;</span><span class="n">bEnableCameraLag</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="n">SpringArm</span><span class="o">-&gt;</span><span class="n">CameraLagSpeed</span> <span class="o">=</span> <span class="mf">15.f</span><span class="p">;</span>
+
+	<span class="c1">// Create camera component</span>
+	<span class="n">Camera</span> <span class="o">=</span> <span class="n">CreateDefaultSubobject</span><span class="o">&lt;</span><span class="n">UCameraComponent</span><span class="o">&gt;</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;Camera&quot;</span><span class="p">));</span>
+	<span class="n">Camera</span><span class="o">-&gt;</span><span class="n">AttachToComponent</span><span class="p">(</span><span class="n">SpringArm</span><span class="p">,</span> <span class="n">FAttachmentTransformRules</span><span class="o">::</span><span class="n">KeepRelativeTransform</span><span class="p">,</span> <span class="n">USpringArmComponent</span><span class="o">::</span><span class="n">SocketName</span><span class="p">);</span>
+	<span class="n">Camera</span><span class="o">-&gt;</span><span class="n">bUsePawnControlRotation</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span> <span class="c1">// Don&#39;t rotate camera with the controller</span>
+
+	<span class="n">HullMesh</span><span class="o">-&gt;</span><span class="n">SetCollisionObjectType</span><span class="p">(</span><span class="n">ECC_Pawn</span><span class="p">);</span>
+	<span class="n">HullMesh</span><span class="o">-&gt;</span><span class="n">SetCollisionEnabled</span><span class="p">(</span><span class="n">ECollisionEnabled</span><span class="o">::</span><span class="n">QueryAndPhysics</span><span class="p">);</span>
+
+	<span class="c1">// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don&#39;t need it.</span>
+	<span class="n">PrimaryActorTick</span><span class="p">.</span><span class="n">bCanEverTick</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+<p>Whew! That was a big change. But were not done just yet, we now should add in our input controls for our camera! Remember you have to match this code in the input controls of the engine!
+</p><p>ShipBase.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">SetupPlayerInputComponent</span><span class="p">(</span><span class="k">class</span> <span class="nc">UInputComponent</span> <span class="o">*</span><span class="n">InputComponent</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">check</span><span class="p">(</span><span class="n">InputComponent</span><span class="p">);</span>
+	<span class="n">InputComponent</span><span class="o">-&gt;</span><span class="n">BindAxis</span><span class="p">(</span><span class="s">&quot;CameraYaw&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">AShipBase</span><span class="o">::</span><span class="n">CameraYawInput</span><span class="p">);</span>
+	<span class="n">InputComponent</span><span class="o">-&gt;</span><span class="n">BindAxis</span><span class="p">(</span><span class="s">&quot;CameraPitch&quot;</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">AShipBase</span><span class="o">::</span><span class="n">CameraPitchInput</span><span class="p">);</span>
+	<span class="n">InputComponent</span><span class="o">-&gt;</span><span class="n">BindAction</span><span class="p">(</span><span class="s">&quot;MouseWheelUp&quot;</span><span class="p">,</span> <span class="n">IE_Pressed</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">AShipBase</span><span class="o">::</span><span class="n">CameraZoomIn</span><span class="p">);</span>
+	<span class="n">InputComponent</span><span class="o">-&gt;</span><span class="n">BindAction</span><span class="p">(</span><span class="s">&quot;MouseWheelDown&quot;</span><span class="p">,</span> <span class="n">IE_Pressed</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">AShipBase</span><span class="o">::</span><span class="n">CameraZoomOut</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">CameraYawInput</span><span class="p">(</span><span class="kt">float</span> <span class="n">Val</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">SpringArm</span><span class="o">-&gt;</span><span class="n">RelativeRotation</span><span class="p">.</span><span class="n">Yaw</span> <span class="o">+=</span> <span class="n">Val</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">CameraPitchInput</span><span class="p">(</span><span class="kt">float</span> <span class="n">Val</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="kt">float</span> <span class="n">NewPitch</span> <span class="o">=</span> <span class="p">(</span><span class="n">Val</span> <span class="o">*</span> <span class="o">-</span><span class="mf">1.0f</span><span class="p">)</span> <span class="o">+</span> <span class="n">SpringArm</span><span class="o">-&gt;</span><span class="n">RelativeRotation</span><span class="p">.</span><span class="n">Pitch</span><span class="p">;</span>
+	<span class="n">SpringArm</span><span class="o">-&gt;</span><span class="n">RelativeRotation</span><span class="p">.</span><span class="n">Pitch</span> <span class="o">=</span> <span class="n">FMath</span><span class="o">::</span><span class="n">Clamp</span><span class="p">(</span><span class="n">NewPitch</span><span class="p">,</span> <span class="n">CameraMinPitch</span><span class="p">,</span> <span class="n">CameraMaxPitch</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">CameraZoom</span><span class="p">(</span><span class="kt">float</span> <span class="n">Val</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">CurrentCameraZoomDistance</span> <span class="o">=</span> <span class="n">SpringArm</span><span class="o">-&gt;</span><span class="n">TargetArmLength</span><span class="p">;</span>
+	<span class="n">SpringArmDistance</span> <span class="o">=</span> <span class="n">CurrentCameraZoomDistance</span> <span class="o">+</span> <span class="p">(</span><span class="n">CameraZoomAmount</span> <span class="o">*</span> <span class="n">Val</span><span class="p">);</span>
+	<span class="kt">float</span> <span class="n">TargetArmDistance</span> <span class="o">=</span> <span class="n">FMath</span><span class="o">::</span><span class="n">Clamp</span><span class="p">(</span><span class="n">SpringArmDistance</span><span class="p">,</span> <span class="n">CameraMinZoom</span><span class="p">,</span> <span class="n">CameraMaxZoom</span><span class="p">);</span>
+	<span class="n">SpringArm</span><span class="o">-&gt;</span><span class="n">TargetArmLength</span> <span class="o">=</span> <span class="n">FMath</span><span class="o">::</span><span class="n">FInterpTo</span><span class="p">(</span><span class="n">CurrentCameraZoomDistance</span><span class="p">,</span> <span class="n">TargetArmDistance</span><span class="p">,</span> <span class="n">GetWorld</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetDeltaSeconds</span><span class="p">(),</span> <span class="n">CameraZoomSpeed</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">CameraZoomIn</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">CameraZoom</span><span class="p">(</span><span class="mf">1.0f</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">CameraZoomOut</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">CameraZoom</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0f</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<p>Now were in business! With the initial set up of our ShipBase class, we now need to go on to getting our TurretBase class set up as well!
+</p>
+<h3><span class="mw-headline" id="TurretBase_Class">TurretBase Class</span></h3>
+<p>So similarly in the ShipBase.h, we want to get out TurretBase.h file up to snuff. So lets get our class filled out properly...
+</p><p>TurretBase.h
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">UCLASS</span><span class="p">()</span>
+<span class="k">class</span> <span class="nc">TURRETTUTORIAL_API</span> <span class="nl">ATurretBase</span> <span class="p">:</span> <span class="k">public</span> <span class="n">APawn</span><span class="p">,</span> <span class="k">public</span> <span class="n">ITurretInterface</span>
+<span class="p">{</span>
+	<span class="n">GENERATED_BODY</span><span class="p">()</span>
+	
+<span class="k">public</span><span class="o">:</span>	
+	<span class="c1">// Public Variables</span>
+	<span class="n">FRotator</span> <span class="n">TurretLocalRot</span><span class="p">;</span>
+
+	<span class="c1">// Sets default values for this actor&#39;s properties</span>
+	<span class="n">ATurretBase</span><span class="p">(</span><span class="k">const</span> <span class="n">FObjectInitializer</span><span class="o">&amp;</span> <span class="n">ObjectInitializer</span><span class="p">);</span>
+
+	<span class="cm">/** StaticMesh component that will be the visuals for the turret */</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Mesh</span><span class="p">,</span> <span class="n">EditDefaultsOnly</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">AllowPrivateAccess</span> <span class="o">=</span> <span class="s">&quot;true&quot;</span><span class="p">))</span>
+		<span class="k">class</span> <span class="nc">UStaticMeshComponent</span><span class="o">*</span> <span class="n">TurretHullMesh</span><span class="p">;</span>
+
+        <span class="cm">/** StaticMesh component that will be the visuals for the barrels */</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Mesh</span><span class="p">,</span> <span class="n">EditDefaultsOnly</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">meta</span> <span class="o">=</span> <span class="p">(</span><span class="n">AllowPrivateAccess</span> <span class="o">=</span> <span class="s">&quot;true&quot;</span><span class="p">))</span>
+		<span class="k">class</span> <span class="nc">UStaticMeshComponent</span><span class="o">*</span> <span class="n">TurretBarrelMesh</span><span class="p">;</span>
+
+	<span class="c1">// Called when the game starts or when spawned</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">BeginPlay</span><span class="p">()</span> <span class="k">override</span><span class="p">;</span>
+	
+	<span class="c1">// Called every frame</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">Tick</span><span class="p">(</span> <span class="kt">float</span> <span class="n">DeltaSeconds</span> <span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+
+	<span class="kt">void</span> <span class="nf">TurretLookAt</span><span class="p">();</span>
+
+	<span class="c1">// Spawns Munitions</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">BlueprintSpawn</span><span class="p">,</span> <span class="n">EditDefaultsOnly</span><span class="p">,</span> <span class="n">BlueprintReadOnly</span><span class="p">)</span>
+		<span class="n">TSubclassOf</span><span class="o">&lt;</span><span class="n">AMunitionsBase</span><span class="o">&gt;</span> <span class="n">MunitionsBP</span><span class="p">;</span>
+	<span class="n">TArray</span><span class="o">&lt;</span><span class="n">FName</span><span class="o">&gt;</span> <span class="n">MuzzleArray</span><span class="p">;</span>
+	<span class="kt">void</span> <span class="nf">GetMuzzleSockets</span><span class="p">();</span>
+	<span class="kt">void</span> <span class="nf">SpawnMunitions</span><span class="p">(</span><span class="n">FName</span> <span class="n">_MuzzleSocketName</span><span class="p">);</span>
+
+	<span class="c1">//ITurretInterface</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">PrimaryFireControl</span><span class="p">()</span> <span class="k">override</span><span class="p">;</span>
+
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Chasis</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">VisibleAnywhere</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">TurretYawSpeed</span><span class="p">;</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Chasis</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">VisibleAnywhere</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">TurretMaxYaw</span><span class="p">;</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Chasis</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">VisibleAnywhere</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">TurretMinYaw</span><span class="p">;</span>
+
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Barrel</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">VisibleAnywhere</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">TurretPitchSpeed</span><span class="p">;</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Barrel</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">VisibleAnywhere</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">TurretMaxPitch</span><span class="p">;</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Barrel</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">VisibleAnywhere</span><span class="p">)</span>
+		<span class="kt">float</span> <span class="n">TurretMinPitch</span><span class="p">;</span>
+
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Control</span><span class="p">,</span> <span class="n">BlueprintReadWrite</span><span class="p">,</span> <span class="n">EditDefaultsOnly</span><span class="p">)</span>
+		<span class="kt">bool</span> <span class="n">IsOccupied</span><span class="p">;</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">Control</span><span class="p">,</span> <span class="n">BlueprintReadOnly</span><span class="p">,</span> <span class="n">VisibleAnywhere</span><span class="p">)</span>
+		<span class="kt">bool</span> <span class="n">IsTargeting</span><span class="p">;</span>
+
+<span class="k">private</span><span class="o">:</span>
+	<span class="kt">bool</span> <span class="n">IsFiring</span><span class="p">;</span>
+	<span class="kt">float</span> <span class="n">CurrentChasisRot</span><span class="p">;</span>
+	<span class="kt">float</span> <span class="n">CurrentBarrelRot</span><span class="p">;</span>
+	<span class="kt">float</span> <span class="n">CurrentYawMin</span><span class="p">;</span>
+	<span class="kt">float</span> <span class="n">CurrentYawMax</span><span class="p">;</span>
+	<span class="n">FRotator</span> <span class="n">CurrentTurretRot</span><span class="p">;</span>
+	<span class="n">FRotator</span> <span class="n">TurretYawRot</span><span class="p">;</span>
+	<span class="n">FRotator</span> <span class="n">TurretPitchRot</span><span class="p">;</span>
+	
+<span class="p">};</span>
+</pre></div>
+<p>So now we want to do the same thing with the base constructor class that was generated for us as we did in the ShipBase.cpp file. We want to turn it into this...
+</p><p>TurretBase.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// Sets default values</span>
+<span class="n">ATurretBase</span><span class="o">::</span><span class="n">ATurretBase</span><span class="p">(</span><span class="k">const</span> <span class="n">FObjectInitializer</span><span class="o">&amp;</span> <span class="n">ObjectInitializer</span><span class="p">)</span> <span class="o">:</span> <span class="n">Super</span><span class="p">(</span><span class="n">ObjectInitializer</span><span class="p">)</span>
+<span class="p">{</span>
+
+	<span class="c1">// Create the static mesh component</span>
+	<span class="n">TurretHullMesh</span> <span class="o">=</span> <span class="n">CreateDefaultSubobject</span><span class="o">&lt;</span><span class="n">UStaticMeshComponent</span><span class="o">&gt;</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;TurretHullMesh&quot;</span><span class="p">));</span>
+	<span class="n">TurretBarrelMesh</span> <span class="o">=</span> <span class="n">CreateDefaultSubobject</span><span class="o">&lt;</span><span class="n">UStaticMeshComponent</span><span class="o">&gt;</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;TurretBarrelMesh&quot;</span><span class="p">));</span>
+	<span class="n">RootComponent</span> <span class="o">=</span> <span class="n">TurretHullMesh</span><span class="p">;</span>
+	<span class="n">TurretBarrelMesh</span><span class="o">-&gt;</span><span class="n">AttachToComponent</span><span class="p">(</span><span class="n">RootComponent</span><span class="p">,</span> <span class="n">FAttachmentTransformRules</span><span class="o">::</span><span class="n">KeepRelativeTransform</span><span class="p">);</span>
+
+	<span class="c1">// Set default variables</span>
+	<span class="n">IsOccupied</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="n">IsFiring</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="n">TurretYawSpeed</span> <span class="o">=</span> <span class="mf">20.f</span><span class="p">;</span>
+	<span class="n">TurretMaxYaw</span> <span class="o">=</span> <span class="mf">180.f</span><span class="p">;</span>
+	<span class="n">TurretMinYaw</span> <span class="o">=</span> <span class="o">-</span><span class="mf">180.f</span><span class="p">;</span>
+	<span class="n">TurretPitchSpeed</span> <span class="o">=</span> <span class="mf">20.f</span><span class="p">;</span>
+	<span class="n">TurretMaxPitch</span> <span class="o">=</span> <span class="mf">45.f</span><span class="p">;</span>
+	<span class="n">TurretMinPitch</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.f</span><span class="p">;</span>
+
+	<span class="n">TurretLocalRot</span> <span class="o">=</span> <span class="n">FRotator</span><span class="p">(</span><span class="mf">0.f</span><span class="p">,</span> <span class="mf">0.f</span><span class="p">,</span> <span class="mf">0.f</span><span class="p">);</span>
+	<span class="n">TurretYawRot</span> <span class="o">=</span> <span class="n">FRotator</span><span class="p">(</span><span class="mf">0.f</span><span class="p">,</span> <span class="mf">0.f</span><span class="p">,</span> <span class="mf">0.f</span><span class="p">);</span>
+	<span class="n">TurretPitchRot</span> <span class="o">=</span> <span class="n">FRotator</span><span class="p">(</span><span class="mf">0.f</span><span class="p">,</span> <span class="mf">0.f</span><span class="p">,</span> <span class="mf">0.f</span><span class="p">);</span>
+
+	<span class="n">CurrentYawMax</span> <span class="o">=</span> <span class="p">(</span><span class="n">TurretHullMesh</span><span class="o">-&gt;</span><span class="n">GetRelativeTransform</span><span class="p">().</span><span class="n">GetRotation</span><span class="p">().</span><span class="n">X</span><span class="p">)</span> <span class="o">+</span> <span class="n">TurretMaxYaw</span><span class="p">;</span>
+	<span class="n">CurrentYawMin</span> <span class="o">=</span> <span class="p">(</span><span class="n">TurretHullMesh</span><span class="o">-&gt;</span><span class="n">GetRelativeTransform</span><span class="p">().</span><span class="n">GetRotation</span><span class="p">().</span><span class="n">X</span><span class="p">)</span> <span class="o">+</span> <span class="n">TurretMinYaw</span><span class="p">;</span>
+
+	<span class="n">IsTargeting</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+
+ 	<span class="c1">// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don&#39;t need it.</span>
+	<span class="n">PrimaryActorTick</span><span class="p">.</span><span class="n">bCanEverTick</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></div>
+<p>Next we want to prepare our Tick event. What we are doing here is simply calling a function every frame that will handle the turrets logic to look at our camera's focal point!
+</p><p>TurretBase.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// Called every frame</span>
+<span class="kt">void</span> <span class="n">ATurretBase</span><span class="o">::</span><span class="n">Tick</span><span class="p">(</span> <span class="kt">float</span> <span class="n">DeltaTime</span> <span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">TurretLookAt</span><span class="p">();</span>
+	<span class="n">Super</span><span class="o">::</span><span class="n">Tick</span><span class="p">(</span> <span class="n">DeltaTime</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<p>With that complete lets actually just get in an empty class so we can compile. We will handle the TurretLookAt logic in just a bit. While we do that, lets get a few more skeleton functions out of the way.
+</p><p>TurretBase.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="n">ATurretBase</span><span class="o">::</span><span class="n">TurretLookAt</span><span class="p">()</span>
+<span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="cm">/* ITurretInterface */</span>
+<span class="kt">void</span> <span class="n">ATurretBase</span><span class="o">::</span><span class="n">PrimaryFireControl</span><span class="p">()</span>
+<span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">ATurretBase</span><span class="o">::</span><span class="n">GetMuzzleSockets</span><span class="p">()</span> 
+<span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">ATurretBase</span><span class="o">::</span><span class="n">SpawnMunitions</span><span class="p">(</span><span class="n">FName</span> <span class="n">_MuzzleSocketName</span><span class="p">)</span> 
+<span class="p">{</span>
+
+<span class="p">}</span>
+</pre></div>
+<p>With that, compile! We should have the base classes started! The next step is to get them extended into Blueprints to begin getting some results.
+</p>
+<h2><span class="mw-headline" id="Extending_The_Base_Classes">Extending The Base Classes</span></h2>
+<p>So now that were done getting the basics of the classes in, let's quickly extend those two classes into blueprints so we can set up the turret and the ship!
+</p><p>Let's do the ship first. It should be really straight forward and simple. Right click in the content browser and click Blueprint Class.
+</p><p>Now when it asks to pick a parent class, you want to go to the very bottom of the window, where it says All Classes, click that and then type in ShipBase (Or whatever you named it)
+</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ExtendingShip.png" class="image"><img alt="ExtendingShip.png" src="https://d26ilriwvtzlb.cloudfront.net/d/df/ExtendingShip.png" width="544" height="526" /></a>
+</p><p>Click Create, then name the blueprint what ever you want. I named it BP_Ship. Do the same thing for the TurretBase.
+</p><p>Once the blueprints are created, there is not much else to do for the BP_Ship. But there is something you need to take care of in the BP_Turret. Open it up, and go to the Viewport tab on the turret, then adjust the barrel mesh so it sits correctly on your turrets Chasis. In the end you should have something like the following two images.
+</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_Ship.png" class="image"><img alt="BP Ship.png" src="https://d26ilriwvtzlb.cloudfront.net/5/56/BP_Ship.png" width="1437" height="838" /></a>
+<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_Turret.png" class="image"><img alt="BP Turret.png" src="https://d26ilriwvtzlb.cloudfront.net/1/19/BP_Turret.png" width="1441" height="816" /></a>
+</p>
+<h2><span class="mw-headline" id="Adding_Turret_Functionality">Adding Turret Functionality</span></h2>
+<p>Now with all the previous work set up and running, now we can focus on adding functionality to our turrets!
+</p>
+<h3><span class="mw-headline" id="Turret_Spawn_Logic">Turret Spawn Logic</span></h3>
+<p>So in this section we are going to get the code in to spawn the turrets onto our ship! This can be done with a simple addition to our ShipBase class file. What we are going to do is create a set of functions in our Ship class that will handle finding the turret sockets, spawning the turrets to those turret sockets, and then have a function to delete the spawned turrets properly so when the ship dies in your game, it will do the proper deletion.
+</p><p>So go back to your IDE and add the code below.
+</p><p>ShipBase.h
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>        <span class="c1">// Spawn Turrets</span>
+	<span class="n">UPROPERTY</span><span class="p">(</span><span class="n">Category</span> <span class="o">=</span> <span class="n">BlueprintSpawn</span><span class="p">,</span> <span class="n">EditDefaultsOnly</span><span class="p">,</span> <span class="n">BlueprintReadOnly</span><span class="p">)</span>
+		<span class="n">TSubclassOf</span><span class="o">&lt;</span><span class="n">ATurretBase</span><span class="o">&gt;</span> <span class="n">TurretBP</span><span class="p">;</span>
+	<span class="n">TArray</span><span class="o">&lt;</span><span class="n">FName</span><span class="o">&gt;</span> <span class="n">TurretArray</span><span class="p">;</span>
+	<span class="n">TArray</span><span class="o">&lt;</span><span class="n">ATurretBase</span><span class="o">*&gt;</span> <span class="n">SpawnedTurretArray</span><span class="p">;</span>
+
+	<span class="kt">void</span> <span class="nf">GetTurretSockets</span><span class="p">();</span>
+	<span class="kt">void</span> <span class="nf">SpawnTurret</span><span class="p">(</span><span class="n">FName</span> <span class="n">_TurretSocketName</span><span class="p">);</span>
+        <span class="kt">void</span> <span class="nf">DestroyTurrets</span><span class="p">();</span>
+</pre></div>
+<p>Now got to ShipBase.cpp and lets fill out those three functions!
+</p><p>ShipBase.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">GetTurretSockets</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// We store all the socket names into our own Turret Array</span>
+	<span class="n">TurretArray</span> <span class="o">=</span> <span class="n">HullMesh</span><span class="o">-&gt;</span><span class="n">GetAllSocketNames</span><span class="p">();</span>
+        <span class="c1">// Then we iterate through that array and call our SpawnTurret() function and pass it our array&#39;s index</span>
+	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">TurretArray</span><span class="p">.</span><span class="n">Num</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">SpawnTurret</span><span class="p">(</span><span class="n">TurretArray</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cm">/** Spawns the turrets onto the sockets of the ship */</span>
+<span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">SpawnTurret</span><span class="p">(</span><span class="n">FName</span> <span class="n">_TurretSocketName</span><span class="p">)</span>
+<span class="p">{</span>
+        <span class="c1">// First we want to make sure these values are all zeroed out</span>
+	<span class="n">FVector</span> <span class="n">SocketLocation</span><span class="p">;</span>
+	<span class="n">FTransform</span> <span class="n">SocketTransform</span><span class="p">;</span>
+	<span class="n">SocketLocation</span> <span class="o">=</span> <span class="n">FVector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+	<span class="n">SocketLocation</span><span class="p">.</span><span class="n">Rotation</span><span class="p">()</span> <span class="o">=</span> <span class="n">FRotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+        <span class="c1">// Make sure the world exists first</span>
+	<span class="n">UWorld</span><span class="o">*</span> <span class="k">const</span> <span class="n">World</span> <span class="o">=</span> <span class="n">GetWorld</span><span class="p">();</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">World</span> <span class="o">&amp;&amp;</span> <span class="n">TurretBP</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span>
+	<span class="p">{</span>
+                <span class="c1">// Set the spawn parameters</span>
+		<span class="n">FActorSpawnParameters</span> <span class="n">SpawnParams</span><span class="p">;</span>
+		<span class="n">SpawnParams</span><span class="p">.</span><span class="n">Owner</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+		
+                <span class="c1">// This is where we instantiate our new Turret! RailGun_T can be whatever you want to name it </span>
+		<span class="n">ATurretBase</span><span class="o">*</span> <span class="n">RailGun_T</span> <span class="o">=</span> <span class="n">GetWorld</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SpawnActor</span><span class="o">&lt;</span><span class="n">ATurretBase</span><span class="o">&gt;</span><span class="p">(</span><span class="n">TurretBP</span><span class="p">,</span> <span class="n">SocketLocation</span><span class="p">,</span> <span class="n">SocketLocation</span><span class="p">.</span><span class="n">Rotation</span><span class="p">());</span>
+                <span class="c1">// Assign our newly spawned turret its rotation</span>
+		<span class="n">RailGun_T</span><span class="o">-&gt;</span><span class="n">TurretLocalRot</span> <span class="o">=</span> <span class="n">SocketLocation</span><span class="p">.</span><span class="n">Rotation</span><span class="p">();</span>
+
+                <span class="c1">// Now we add that newly spawned turret to our array of pointers so we can reference it later</span>
+		<span class="n">SpawnedTurretArray</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">RailGun_T</span><span class="p">);</span>
+
+                <span class="c1">// Now we make sure our turret isn&#39;t null, and then attach it to our socket&#39;s location.</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">RailGun_T</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> 
+		<span class="p">{</span>
+			<span class="n">RailGun_T</span><span class="o">-&gt;</span><span class="n">AttachToComponent</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">RootComponent</span><span class="p">,</span> <span class="n">FAttachmentTransformRules</span><span class="o">::</span><span class="n">KeepRelativeTransform</span><span class="p">,</span> <span class="n">_TurretSocketName</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">DestroyTurrets</span><span class="p">()</span>
+<span class="p">{</span>
+        <span class="c1">// Iterate over the turrets in the array we have them stored</span>
+	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">SpawnedTurretArray</span><span class="p">.</span><span class="n">Num</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">SpawnedTurretArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">DetachFromControllerPendingDestroy</span><span class="p">();</span>
+		<span class="n">SpawnedTurretArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">Destroy</span><span class="p">();</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>Now you just need to add our spawn function to the BeginPlay in ShipBase.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// Called when the game starts or when spawned</span>
+<span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">BeginPlay</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">Super</span><span class="o">::</span><span class="n">BeginPlay</span><span class="p">();</span>
+
+	<span class="n">GetTurretSockets</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+<p>Let us recap on what we did. First we went into the header file and created a few variables and three functions. The variables are important for a few reasons.
+</p>
+<ul><li> TSubclassOf&lt;ATurretBase&gt; TurretBP;
+<ul><li> This creates a pointer that we assign in our BP_Ship for any turret we want! We can create multiple of these pointers for when we have multiple different types of turrets.</li></ul></li>
+<li> TArray&lt;FName&gt; TurretArray;
+<ul><li> We did this to hold onto the sockets we find.</li></ul></li>
+<li> TArray&lt;ATurretBase*&gt; SpawnedTurretArray;
+<ul><li> We created this to hold onto the spawned turrets so we can easily reference them later.</li></ul></li></ul>
+<p>Now for the functions, we have three.
+</p>
+<ol><li> void GetTurretSockets();
+<ul><li> To get the turret sockets on the ship.</li></ul></li>
+<li> void SpawnTurret(FName _TurretSocketName);
+<ul><li> To spawn a single turret, by passing it the socket we want it spawned to.</li></ul></li>
+<li> void DestroyTurrets();
+<ul><li> To delete all the turrets we spawned for proper deletion for when the ship is deleted (during game-play)</li></ul></li></ol>
+<p>Now compile your code! Now if you go into the engine and double click your ship blueprint, in the details pane you should see a category called Blueprint Spawn. Inside that category is a picker, you want to click it and add in your Turret Blueprint.
+</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ShipDetails.png" class="image"><img alt="BP ShipDetails.png" src="https://d26ilriwvtzlb.cloudfront.net/3/3f/BP_ShipDetails.png" width="471" height="58" /></a>
+</p><p>Now set the Default Pawn Class to your ship blueprint. Click Play and you should have a ship that is spawning turrets!
+</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ShipSpawning.png" class="image"><img alt="BP ShipSpawning.png" src="https://d26ilriwvtzlb.cloudfront.net/7/79/BP_ShipSpawning.png" width="636" height="539" /></a>
+</p>
+<h3><span class="mw-headline" id="Turret_Control">Turret Control</span></h3>
+<p>Now for the more complicated step in the logic department. Getting our turrets to look at our camera's focal point. This was the entire reason why your in this tutorial now aren't you?
+</p><p>Now before we go into the code I want to take a moment to explain what were going to try and do.
+</p><p>So what we want is for the turrets to look at wherever our cameras focal point is. So when we look right, the turrets should track our movement and attempt to point to where we are looking. In order to do this, they need to get our forward vector to know where exactly they are going to point. In order to figure out how much they need to rotate to get to our forward vector from the camera, they will need to take their forward vectors and normalize it against the cameras. Then all we do is take that normalized vector and apply it to our local rotation and voila! Our Turrets should now be looking at our camera's focal point!
+</p><p>It sounds pretty simple right? Well now it is! I'll be honest it took me awhile to figure this out on my own and get it working just right. So you remember that TurretLookAt() function we created? Well now it's time to fill that sucker out.
+</p><p>In the TurretBase.cpp file, go to where you have the skeleton of the function. 
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="n">ATurretBase</span><span class="o">::</span><span class="n">TurretLookAt</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="c1">// We want a pointer to hold our player controller.</span>
+	<span class="n">APlayerController</span><span class="o">*</span> <span class="n">PC</span> <span class="o">=</span> <span class="n">Cast</span><span class="o">&lt;</span><span class="n">APlayerController</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Cast</span><span class="o">&lt;</span><span class="n">APawn</span><span class="o">&gt;</span><span class="p">(</span><span class="n">GetAttachParentActor</span><span class="p">())</span><span class="o">-&gt;</span><span class="n">GetController</span><span class="p">());</span>
+	<span class="c1">// Then we make sure our player controller exists.</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">PC</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">// Set the Focal Point Distance</span>
+		<span class="kt">float</span> <span class="n">FocalDistance</span> <span class="o">=</span> <span class="mf">10000.0f</span><span class="p">;</span>
+		<span class="c1">// Get Camera Vector &amp; Rotator</span>
+		<span class="n">FVector</span> <span class="n">CameraLocation</span> <span class="o">=</span> <span class="n">PC</span><span class="o">-&gt;</span><span class="n">PlayerCameraManager</span><span class="o">-&gt;</span><span class="n">GetCameraLocation</span><span class="p">();</span>
+		<span class="n">FRotator</span> <span class="n">CameraRotation</span> <span class="o">=</span> <span class="n">PC</span><span class="o">-&gt;</span><span class="n">PlayerCameraManager</span><span class="o">-&gt;</span><span class="n">GetCameraRotation</span><span class="p">();</span>
+		<span class="c1">// Get Turrets Vector &amp; Rotator</span>
+		<span class="n">FVector</span> <span class="n">TurretLocation</span> <span class="o">=</span> <span class="n">GetActorLocation</span><span class="p">();</span>
+		<span class="n">FRotator</span> <span class="n">TurretRotation</span> <span class="o">=</span> <span class="n">GetActorRotation</span><span class="p">();</span>
+
+		<span class="c1">// Handle Turret Rotation</span>
+		<span class="n">FVector</span> <span class="n">FocalPoint</span> <span class="o">=</span> <span class="n">CameraLocation</span> <span class="o">+</span> <span class="p">(</span><span class="n">CameraRotation</span><span class="p">.</span><span class="n">Vector</span><span class="p">()</span> <span class="o">*</span> <span class="n">FocalDistance</span><span class="p">);</span>
+		<span class="n">FVector</span> <span class="n">TurretToFocal</span> <span class="o">=</span> <span class="n">FocalPoint</span> <span class="o">-</span> <span class="n">TurretLocation</span><span class="p">;</span>
+		<span class="n">FVector</span> <span class="n">TurretToFocalLocal</span> <span class="o">=</span> <span class="n">TurretRotation</span><span class="p">.</span><span class="n">UnrotateVector</span><span class="p">(</span><span class="n">TurretToFocal</span><span class="p">);</span>
+		<span class="n">FRotator</span> <span class="n">TurretFocalLookDirection</span> <span class="o">=</span> <span class="n">TurretToFocalLocal</span><span class="p">.</span><span class="n">Rotation</span><span class="p">();</span>
+		<span class="n">FRotator</span> <span class="n">TurretYaw</span> <span class="o">=</span> <span class="n">FRotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">TurretFocalLookDirection</span><span class="p">.</span><span class="n">Yaw</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+		<span class="n">CurrentTurretRot</span> <span class="o">=</span> <span class="n">GetActorRotation</span><span class="p">();</span>
+
+		<span class="c1">// We check to see if the turret is within it&#39;s movement range, if it is, we add the rotation and do one last addition check.</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">FMath</span><span class="o">::</span><span class="n">IsWithin</span><span class="p">(</span><span class="n">CurrentTurretRot</span><span class="p">.</span><span class="n">Yaw</span><span class="p">,</span> <span class="n">TurretMinYaw</span><span class="p">,</span> <span class="n">TurretMaxYaw</span><span class="p">))</span>
+		<span class="p">{</span>
+			<span class="n">TurretHullMesh</span><span class="o">-&gt;</span><span class="n">AddRelativeRotation</span><span class="p">(</span><span class="n">TurretYaw</span><span class="p">);</span>
+			<span class="c1">// Now we check to see if it&#39;s pretty close to our target, when it is we toggle a boolean to be used later!</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">TurretYaw</span><span class="p">.</span><span class="n">Yaw</span> <span class="o">&gt;</span> <span class="mf">0.f</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="n">IsTargeting</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		<span class="k">else</span> <span class="p">{</span>
+			<span class="n">IsTargeting</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+		<span class="p">}</span>
+
+		<span class="c1">// Now it&#39;s time to do the same for the turret&#39;s barrels pitch!</span>
+		<span class="n">FRotator</span> <span class="n">TurretBarrelPitch</span> <span class="o">=</span> <span class="n">FRotator</span><span class="p">(</span><span class="n">TurretFocalLookDirection</span><span class="p">.</span><span class="n">Pitch</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+		<span class="n">TurretBarrelPitch</span><span class="p">.</span><span class="n">Pitch</span> <span class="o">=</span> <span class="n">FMath</span><span class="o">::</span><span class="n">Clamp</span><span class="p">(</span><span class="n">TurretBarrelPitch</span><span class="p">.</span><span class="n">Pitch</span><span class="p">,</span> <span class="n">TurretMinPitch</span><span class="p">,</span> <span class="n">TurretMaxPitch</span><span class="p">);</span>
+		<span class="n">TurretBarrelMesh</span><span class="o">-&gt;</span><span class="n">SetRelativeRotation</span><span class="p">(</span><span class="n">TurretBarrelPitch</span><span class="p">);</span>
+
+		<span class="c1">// Do the targeting check with the barrels as well!</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">TurretBarrelPitch</span><span class="p">.</span><span class="n">Pitch</span> <span class="o">==</span> <span class="n">TurretFocalLookDirection</span><span class="p">.</span><span class="n">Pitch</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">IsTargeting</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span>
+		<span class="p">{</span>
+			<span class="n">IsTargeting</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>Now with that filled out, we want to go to our Tick() function and add our function call to it!
+</p><p>TurretBase.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// Called every frame</span>
+<span class="kt">void</span> <span class="n">ATurretBase</span><span class="o">::</span><span class="n">Tick</span><span class="p">(</span> <span class="kt">float</span> <span class="n">DeltaTime</span> <span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">TurretLookAt</span><span class="p">();</span>
+	<span class="n">Super</span><span class="o">::</span><span class="n">Tick</span><span class="p">(</span> <span class="n">DeltaTime</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<p>Compile and run the game! Now your turrets should rotate and the barrels should pitch! And that is how you get your turrets to follow your cameras focal point!
+</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_TurretControl.png" class="image"><img alt="BP TurretControl.png" src="https://d26ilriwvtzlb.cloudfront.net/c/c6/BP_TurretControl.png" width="1436" height="595" /></a>
+</p>
+<h3><span class="mw-headline" id="Turret_Firing">Turret Firing</span></h3>
+<p>Now, how about we get those turrets to fire? Everybody likes a good BOOM to their code! Now this section will be a little less informative. It's a challenge out to you to actually get the some of the set up work done! You've done it before, now you should have the tools to get the Munitions ready!
+</p><p>For how I got my projectiles set up, was that I followed the same steps in creating a MunitionsBase Class, and then I got it set up to hold a spherical mesh. Once that was done I made sure I added it to a collision channel for the projectiles.
+</p><p>Once you have the projectile class created, extend it into a blueprint!
+</p><p>Now that we have a munitions object to use, lets go back to our TurretBase.cpp. You remember earlier making a few more skeletons functions that we haven't filled out yet. Those functions were PrimaryFireControl(), GetMuzzleSockets(), and then SpawnMunitions().
+</p><p>It follows the similar path as to spawning the turrets. We want to find the muzzle sockets on the barrel mesh, add it to an array, then spawn the projectiles at the muzzle locations and add an impulse to the projectile.
+</p><p>TurretBase.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cm">/* ITurretInterface */</span>
+<span class="c1">// This acts as a gate for firing any projectiles. So if the turrets cannot see your cameras focal point they wont fire!</span>
+<span class="kt">void</span> <span class="n">ATurretBase</span><span class="o">::</span><span class="n">PrimaryFireControl</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">IsTargeting</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">GetMuzzleSockets</span><span class="p">();</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Same steps as to getting the sockets for the turrets!</span>
+<span class="kt">void</span> <span class="n">ATurretBase</span><span class="o">::</span><span class="n">GetMuzzleSockets</span><span class="p">()</span> 
+<span class="p">{</span>
+	<span class="n">MuzzleArray</span> <span class="o">=</span> <span class="n">TurretBarrelMesh</span><span class="o">-&gt;</span><span class="n">GetAllSocketNames</span><span class="p">();</span>
+	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">MuzzleArray</span><span class="p">.</span><span class="n">Num</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">SpawnMunitions</span><span class="p">(</span><span class="n">MuzzleArray</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Almost the same as spawning the turrets, but this time we check to make sure the projectile blueprint exists</span>
+<span class="kt">void</span> <span class="n">ATurretBase</span><span class="o">::</span><span class="n">SpawnMunitions</span><span class="p">(</span><span class="n">FName</span> <span class="n">_MuzzleSocketName</span><span class="p">)</span> 
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">MunitionsBP</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="c1">// Get the location and the rotation for the new projectile</span>
+		<span class="n">FVector</span> <span class="n">SpawnLocation</span> <span class="o">=</span> <span class="n">TurretBarrelMesh</span><span class="o">-&gt;</span><span class="n">GetSocketLocation</span><span class="p">(</span><span class="n">_MuzzleSocketName</span><span class="p">);</span>
+		<span class="n">FRotator</span> <span class="n">SpawnRotation</span> <span class="o">=</span> <span class="n">TurretBarrelMesh</span><span class="o">-&gt;</span><span class="n">GetSocketRotation</span><span class="p">(</span><span class="n">_MuzzleSocketName</span><span class="p">);</span>
+
+		<span class="c1">// Making sure the world exists, if it does we spawn it!</span>
+		<span class="n">UWorld</span><span class="o">*</span> <span class="k">const</span> <span class="n">World</span> <span class="o">=</span> <span class="n">GetWorld</span><span class="p">();</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">World</span> <span class="o">&amp;&amp;</span> <span class="n">MunitionsBP</span><span class="p">)</span> <span class="p">{</span>
+			<span class="n">AMunitionsBase</span><span class="o">*</span> <span class="n">Projectile</span> <span class="o">=</span> <span class="n">World</span><span class="o">-&gt;</span><span class="n">SpawnActor</span><span class="o">&lt;</span><span class="n">AMunitionsBase</span><span class="o">&gt;</span><span class="p">(</span><span class="n">MunitionsBP</span><span class="p">,</span> <span class="n">SpawnLocation</span><span class="p">,</span> <span class="n">SpawnRotation</span><span class="p">);</span>
+
+			<span class="c1">// We give the projectiles an owner! This can be used later for hit detection and the like!</span>
+			<span class="n">Projectile</span><span class="o">-&gt;</span><span class="n">OwningPlayer</span> <span class="o">=</span> <span class="n">GetController</span><span class="p">();</span>
+			<span class="n">Projectile</span><span class="o">-&gt;</span><span class="n">OwningActor</span> <span class="o">=</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">GetAttachParentActor</span><span class="p">();</span>
+
+			<span class="c1">// This is completely option. I made a muzzle flash for fun. You can remove the below If statement if you want.</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">MuzzleFX</span><span class="p">)</span>
+			<span class="p">{</span>
+				<span class="n">UParticleSystemComponent</span><span class="o">*</span> <span class="n">MuzzleFlash</span> <span class="o">=</span> <span class="n">UGameplayStatics</span><span class="o">::</span><span class="n">SpawnEmitterAtLocation</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="n">MuzzleFX</span><span class="p">,</span> <span class="n">SpawnLocation</span><span class="p">,</span> <span class="n">SpawnRotation</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>Now in order to make sure you can fire your turrets, we need to make sure we have a player input set up in the editor to control that. But one more step needs to be taken to tell the turrets that the player is firing! We can't just simply add the controls to the turrets themselves, we are going to take advantage of that Interface function, PrimaryFireControl()!
+</p><p>Now go to your ShipBase.cpp and add a input component.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">InputComponent</span><span class="o">-&gt;</span><span class="n">BindAction</span><span class="p">(</span><span class="s">&quot;PrimaryFire&quot;</span><span class="p">,</span> <span class="n">IE_Pressed</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">AShipBase</span><span class="o">::</span><span class="n">ShipPrimaryFire</span><span class="p">);</span>
+</pre></div>
+<p>Now we create the function! We are still in ShipBase.cpp. What were going to do here is loop through the SpawnedTurretArray and with the interface, tell them to execute the function PrimaryFireControl(). One purpose of Interfaces is to give us a way to call functions in another class or object when we don't want to hold onto the instantiated class in caller.
+</p><p>ShipBase.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="n">AShipBase</span><span class="o">::</span><span class="n">ShipPrimaryFire</span><span class="p">()</span> <span class="p">{</span>
+	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">SpawnedTurretArray</span><span class="p">.</span><span class="n">Num</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">ITurretInterface</span><span class="o">*</span> <span class="n">TheInterface</span> <span class="o">=</span> <span class="n">Cast</span><span class="o">&lt;</span><span class="n">ITurretInterface</span><span class="o">&gt;</span><span class="p">(</span><span class="n">SpawnedTurretArray</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">TheInterface</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">TheInterface</span><span class="o">-&gt;</span><span class="n">PrimaryFireControl</span><span class="p">();</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:TurretFire.png" class="image"><img alt="TurretFire.png" src="https://d26ilriwvtzlb.cloudfront.net/1/1b/TurretFire.png" width="1397" height="491" /></a>
+</p><p>Now before we continue, there is one last thing we need to do! You need to add a blank C++ class through the editor, you should name these files TurretInterface. Fill these files out like so.
+</p><p>TurretInterface.cpp
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;TurretTutorial.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;TurretInterface.h&quot;</span><span class="cp"></span>
+
+<span class="n">UTurretInterface</span><span class="o">::</span><span class="n">UTurretInterface</span><span class="p">(</span><span class="k">const</span> <span class="n">FObjectInitializer</span><span class="o">&amp;</span> <span class="n">ObjectInitializer</span><span class="p">)</span>
+	<span class="o">:</span> <span class="n">Super</span><span class="p">(</span><span class="n">ObjectInitializer</span><span class="p">)</span>
+<span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="c1">// This is required for compiling, would also let you know if somehow you called</span>
+<span class="c1">// the base event/function rather the override version</span>
+<span class="kt">void</span> <span class="n">ITurretInterface</span><span class="o">::</span><span class="n">PrimaryFireControl</span><span class="p">()</span>
+<span class="p">{</span>
+
+<span class="p">}</span>
+</pre></div>
+<p>TurretInterface.h
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#pragma once</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;TurretInterface.generated.h&quot;</span><span class="cp"></span>
+
+<span class="n">UINTERFACE</span><span class="p">(</span><span class="n">MinimalAPI</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">UTurretInterface</span> <span class="o">:</span> <span class="k">public</span> <span class="n">UInterface</span>
+<span class="p">{</span>
+	<span class="n">GENERATED_UINTERFACE_BODY</span><span class="p">()</span>
+<span class="p">};</span>
+
+<span class="k">class</span> <span class="nc">ITurretInterface</span>
+<span class="p">{</span>
+	<span class="n">GENERATED_IINTERFACE_BODY</span><span class="p">()</span>
+
+<span class="k">public</span><span class="o">:</span>
+	<span class="k">virtual</span> <span class="kt">void</span> <span class="n">PrimaryFireControl</span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></div>
+<p>Now, with this you should be able to compile your project. These two files are primarily to set up the class, to be accessible globally but more importantly, allow the project to compile! Now let me spend just a moment to explain why the interface is useful and how it pertains to our application here. Interfaces in C++ allow you to set up game wide event triggers directly in C++ or the level blueprint. Now I wont spend the time explaining on how to open the C++ Interfaces to blueprints in this tutorial, but I may cover it in my second tutorial when I extend this out to support C++ Networking.
+</p><p>You can set up Interfaces like the one we just did for many things, for example, creating a special event such as a capital ship exploding and then having a multitude of different actors respond to it.
+</p>
+<h2><span class="mw-headline" id="Conclusion">Conclusion</span></h2>
+<p>There you have it! You now have a ship that can spawn turrets that will look to where your camera is pointing and also fire! Your just a couple steps away from creating a ship to ship combat game! This is just one out of a few ways of accomplishing this, and I do not claim this the most efficient but it is the solution I came up with. I'm particularly proud of it and find it a big achievement.
+</p><p>I do hope you found this tutorial helpful! If you have any questions or suggestions, feel free to PM me on the Unreal Engine Forums! It is after all my first tutorial and would love some feedback!
+</p><p>IntVoid
+</p><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User:IntVoid&amp;action=edit&amp;redlink=1" class="new" title="User:IntVoid (page does not exist)">IntVoid</a> (<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=User_talk:IntVoid&amp;action=edit&amp;redlink=1" class="new" title="User talk:IntVoid (page does not exist)">talk</a>)
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20200401004710
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.128 seconds
+Real time usage: 1.413 seconds
+Preprocessor visited node count: 260/1000000
+Preprocessor generated node count: 556/1000000
+Post‐expand include size: 56/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.215      1 -total
+ 41.49%    0.919      1 Template:Rating
+ 37.80%    0.837      2 Template:Note
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:507-0!canonical and timestamp 20200401004709 and revision id 1015
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Camera_Controlled_Turrets&amp;oldid=1015">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=C%2B%2B_Camera_Controlled_Turrets&amp;oldid=1015</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Code" title="Category:Code">Code</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b971c4e90a55eae6"><meta name="worker" content="206"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.128","walltime":"1.413","ppvisitednodes":{"value":260,"limit":1000000},"ppgeneratednodes":{"value":556,"limit":1000000},"postexpandincludesize":{"value":56,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    2.215      1 -total"," 41.49%    0.919      1 Template:Rating"," 37.80%    0.837      2 Template:Note"]},"cachereport":{"timestamp":"20200401004710","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":93});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":159,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

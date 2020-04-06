@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Troubleshooting_Launcher_Problems_RU by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:18:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>Troubleshooting Launcher Problems RU - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Troubleshooting_Launcher_Problems_RU","wgTitle":"Troubleshooting Launcher Problems RU","wgCurRevisionId":67,"wgRevisionId":67,"wgArticleId":33,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Troubleshooting"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Troubleshooting_Launcher_Problems_RU","wgRelevantArticleId":33,"wgRequestId":"0ca6c5cd046c90ac38d577d5","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Troubleshooting_Launcher_Problems_RU rootpage-Troubleshooting_Launcher_Problems_RU skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0e33288c51e7947d3"><meta name="worker" content="188"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Troubleshooting_Launcher_Problems_RU by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:18:00 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Troubleshooting+Launcher+Problems+RU" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="index.html" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="index7659.html?title=Troubleshooting_Launcher_Problems_RU" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="index9352.html?title=Talk:Troubleshooting_Launcher_Problems_RU&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="index7659.html?title=Troubleshooting_Launcher_Problems_RU">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="index3c90.html?title=Troubleshooting_Launcher_Problems_RU&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="index8ef8.html?title=Troubleshooting_Launcher_Problems_RU&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Troubleshooting Launcher Problems RU</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.A3.D1.81.D1.82.D1.80.D0.B0.D0.BD.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC_.D0.BB.D0.B0.D0.BD.D1.87.D0.B5.D1.80.D0.B0_Epic_Games"><span class="tocnumber">1</span> <span class="toctext">Устранение проблем ланчера Epic Games</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#.D0.A0.D0.B5.D0.BA.D0.BE.D0.BC.D0.B5.D0.BD.D0.B4.D1.83.D0.B5.D0.BC.D1.8B.D0.B5_.D1.81.D0.B8.D1.81.D1.82.D0.B5.D0.BC.D0.BD.D1.8B.D0.B5_.D1.82.D1.80.D0.B5.D0.B1.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F"><span class="tocnumber">1.1</span> <span class="toctext">Рекомендуемые системные требования</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#.D0.AF_.D0.BD.D0.B5_.D0.BC.D0.BE.D0.B3.D1.83_.D0.B2.D0.BE.D0.B9.D1.82.D0.B8_.D0.B2_.D0.BB.D0.B0.D0.BD.D1.87.D0.B5.D1.80_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D1.83.D1.8F_.D1.81.D0.B2.D0.BE.D1.8E_.D1.83.D1.87.D1.91.D1.82.D0.BD.D1.83.D1.8E_.D0.B7.D0.B0.D0.BF.D0.B8.D1.81.D1.8C_Epic_Games"><span class="tocnumber">1.2</span> <span class="toctext">Я не могу войти в ланчер используя свою учётную запись Epic Games</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.D0.AF_.D0.BD.D0.B5_.D0.BC.D0.BE.D0.B3.D1.83_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.B8.D1.82.D1.8C_.D0.BB.D0.B0.D0.BD.D1.87.D0.B5.D1.80_.D0.B4.D0.BB.D1.8F_Windows"><span class="tocnumber">1.3</span> <span class="toctext">Я не могу установить ланчер для Windows</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#.D0.9F.D1.80.D0.B8_.D0.BF.D0.BE.D0.BF.D1.8B.D1.82.D0.BA.D0.B5_.D0.B7.D0.B0.D0.BF.D1.83.D1.81.D0.BA.D0.B0_.D0.BB.D0.B0.D0.BD.D1.87.D0.B5.D1.80_.D0.B7.D0.B0.D0.B2.D0.B8.D1.81.D0.B0.D0.B5.D1.82_.D0.BD.D0.B0_.D0.BE.D0.BA.D0.BD.D0.B5_.D1.81_.D0.BD.D0.B0.D0.B4.D0.BF.D0.B8.D1.81.D1.8C.D1.8E_.22Please_Wait.22."><span class="tocnumber">1.4</span> <span class="toctext">При попытке запуска ланчер зависает на окне с надписью "Please Wait".</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#.D0.9B.D0.B0.D0.BD.D1.87.D0.B5.D1.80_.D0.BD.D0.B5_.D0.B7.D0.B0.D0.BF.D1.83.D1.81.D0.BA.D0.B0.D0.B5.D1.82.D1.81.D1.8F_.D0.B8.D0.BB.D0.B8_.D0.BF.D0.B0.D0.B4.D0.B0.D0.B5.D1.82_.D0.BF.D1.80.D0.B8_.D0.B7.D0.B0.D0.BF.D1.83.D1.81.D0.BA.D0.B5"><span class="tocnumber">1.5</span> <span class="toctext">Ланчер не запускается или падает при запуске</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#.D0.9B.D0.B0.D0.BD.D1.87.D0.B5.D1.80_.D0.BD.D0.B5_.D0.BC.D0.BE.D0.B6.D0.B5.D1.82_.D0.B7.D0.B0.D0.B3.D1.80.D1.83.D0.B7.D0.B8.D1.82.D1.8C_.D0.BA.D0.BE.D0.BD.D1.82.D0.B5.D0.BD.D1.82"><span class="tocnumber">1.6</span> <span class="toctext">Ланчер не может загрузить контент</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#.D0.95.D1.81.D0.BB.D0.B8_.D0.BD.D0.B8.D1.87.D0.B5.D0.B3.D0.BE_.D0.BD.D0.B5_.D0.BF.D0.BE.D0.BC.D0.BE.D0.B3.D0.BB.D0.BE_.E2.80.93_.D1.81.D0.B1.D0.BE.D1.80_.D0.BD.D0.B5.D0.BE.D0.B1.D1.85.D0.BE.D0.B4.D0.B8.D0.BC.D1.8B.D1.85_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85"><span class="tocnumber">1.7</span> <span class="toctext">Если ничего не помогло – сбор необходимых данных</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#.D0.A1.D0.BE.D0.B2.D0.B5.D1.82.D1.8B"><span class="tocnumber">1.8</span> <span class="toctext">Советы</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.A3.D1.81.D1.82.D1.80.D0.B0.D0.BD.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC_.D0.BB.D0.B0.D0.BD.D1.87.D0.B5.D1.80.D0.B0_Epic_Games">Устранение проблем ланчера Epic Games</span></h2>
+<p>Ланчер Unreal Engine является единым приложением для загрузки и запуска бинарных версий Unreal Engine 4 (вместо компиляции исходного кода движка с GitHub), загрузки дополнительного контента, просмотра новостей и записей в блоге.
+</p><p>Если у вас возникли проблемы с ланчером, ознакомьтесь с этим руководством – в нём может быть решение имеющейся у вас проблемы. Если вы не нашли подходящего решения, перейдите на страницу <a rel="nofollow" class="external free" href="http://help.epicgames.com/">http://help.epicgames.com/</a> и нажмите кнопку «Email Us», расположенную в разделе «Contact Us». Заполняя форму обратной связи постарайтесь указать как можно больше информации о вашей проблеме.  
+</p>
+<h3><span class="mw-headline" id=".D0.A0.D0.B5.D0.BA.D0.BE.D0.BC.D0.B5.D0.BD.D0.B4.D1.83.D0.B5.D0.BC.D1.8B.D0.B5_.D1.81.D0.B8.D1.81.D1.82.D0.B5.D0.BC.D0.BD.D1.8B.D0.B5_.D1.82.D1.80.D0.B5.D0.B1.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D1.8F">Рекомендуемые системные требования</span></h3>
+<p>ОС: 64-битная версия Windows 7, 8, 8.1, 10; на Mac – OS X 10.9.2 или более поздняя
+</p><p>Свободное место на жёстком диске: Для установки ланчера рекомендуется ~1ГБ свободного места. Для установки проектов, редакторов игр и контента из Магазина потребуется больше свободного места.
+</p><p>Видеокарта: Любая видеокарта, совместимая с DirectX 11 или DirectX 12 
+</p><p>Процессор: Четырёхъядерный процессор Intel или AMD
+</p>
+<h3><span class="mw-headline" id=".D0.AF_.D0.BD.D0.B5_.D0.BC.D0.BE.D0.B3.D1.83_.D0.B2.D0.BE.D0.B9.D1.82.D0.B8_.D0.B2_.D0.BB.D0.B0.D0.BD.D1.87.D0.B5.D1.80_.D0.B8.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D1.83.D1.8F_.D1.81.D0.B2.D0.BE.D1.8E_.D1.83.D1.87.D1.91.D1.82.D0.BD.D1.83.D1.8E_.D0.B7.D0.B0.D0.BF.D0.B8.D1.81.D1.8C_Epic_Games">Я не могу войти в ланчер используя свою учётную запись Epic Games</span></h3>
+<p>Возможно что ваша учётная запись используется на нескольких компьютерах одновременно. Одновременный вход возможен не более чем на 5 компьютерах. Количество доступных входов может быть снижено до 1, если вы войдёте в учётную запись после большого количества попыток.
+</p><p>Обратите внимание, что среди этих 5 одновременных входов также учитывается вход на форум Unreal Engine.
+</p>
+<h3><span class="mw-headline" id=".D0.AF_.D0.BD.D0.B5_.D0.BC.D0.BE.D0.B3.D1.83_.D1.83.D1.81.D1.82.D0.B0.D0.BD.D0.BE.D0.B2.D0.B8.D1.82.D1.8C_.D0.BB.D0.B0.D0.BD.D1.87.D0.B5.D1.80_.D0.B4.D0.BB.D1.8F_Windows">Я не могу установить ланчер для Windows</span></h3>
+<p>Если вы не можете скачать и запустить инсталлятор, попробуйте сделать следующее:
+</p>
+<ul><li> убедитесь, что установщик запущен с привилегиями администратора;</li>
+<li> убедитесь, что у вас есть права на чтение/запись в выбранную папку;</li>
+<li> убедитесь, что у вас установлены все сервис-паки, обновления ОС и самые последние версии драйверов.</li></ul>
+<p>Если ничто из перечисленного не помогло, то вам понадобится получить логи инсталлятора. Для этого:
+</p>
+<ul><li> скопируйте msi-файл в корень диска C;</li>
+<li> нажмите сочетание Win+R и в появишемся окне введите следующую команду:</li>
+<li> msiexec /i C:\EpicGamesLauncherInstaller.msi /L*V C:\EpicGamesInstallerLog.txt (Если имя msi-файла отличается от «EpicGamesLauncherInstaller.msi», исправьте его в этой строке, чтобы имена совпадали)</li></ul>
+<p>Когда вы получите логи, создайте пост на AnswerHub и прикрепите логи к вашему посту.
+</p>
+<h3><span class="mw-headline" id=".D0.9F.D1.80.D0.B8_.D0.BF.D0.BE.D0.BF.D1.8B.D1.82.D0.BA.D0.B5_.D0.B7.D0.B0.D0.BF.D1.83.D1.81.D0.BA.D0.B0_.D0.BB.D0.B0.D0.BD.D1.87.D0.B5.D1.80_.D0.B7.D0.B0.D0.B2.D0.B8.D1.81.D0.B0.D0.B5.D1.82_.D0.BD.D0.B0_.D0.BE.D0.BA.D0.BD.D0.B5_.D1.81_.D0.BD.D0.B0.D0.B4.D0.BF.D0.B8.D1.81.D1.8C.D1.8E_.22Please_Wait.22.">При попытке запуска ланчер зависает на окне с надписью "Please Wait".</span></h3>
+<p>Если эта проблема возникает при попытке входа в вашу учётную запись, выполните следующие шаги:
+</p>
+<ul><li> убедитесь, что вы не используете прокси-сервер (это можно сделать с помощью <a rel="nofollow" class="external text" href="http://amibehindaproxy.com/">этого</a> сайта) и что у вас не заблокирован адрес epicgames.com. Если вы используете прокси-сервер, добавьте разрешение для адреса epicgames.com и его поддоменов (или попросите ваш IT-отдел сделать это). Если ваш IT-отдел предпочитает разрешать конкретные поддомены, то вы найдёте полный перечень в конце этого раздела.</li>
+<li> убедитесь, что у вас открыты все необходимые порты <b>80</b>(http), <b>443</b>(https), и <b>5222</b>;</li>
+<li> попробуйте другой DNS-сервер (например на <a rel="nofollow" class="external text" href="https://www.opendns.com/">OpenDNS</a> или <a rel="nofollow" class="external text" href="https://developers.google.com/speed/public-dns">GoogleDNS</a>);</li>
+<li> добавьте в командную строку параметр «-http=wininet» (только для Windows):</li></ul>
+<dl><dd><ul><li> щёлкните правой кнопкой мыши на ярлыке ланчера и выберите пункт «Свойства»;</li>
+<li> в конце поля «Объект» добавьте «&#160;-http=wininet» без кавычек и убедитесь, что перед дефисом есть пробел. Оно должно выглядеть вот так (см. поле «Target»):</li></ul></dd></dl>
+<p><a href="indexdf8a.html?title=File:Wininet.JPG" class="image"><img alt="Wininet.JPG" src="../d26ilriwvtzlb.cloudfront.net/b/b1/Wininet.JPG" width="377" height="534" /></a>
+</p>
+<dl><dd><ul><li> примените изменения и перезапустите ланчер.</li></ul></dd></dl>
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+Список поддоменов<div class="mw-collapsible-content">
+<p>unrealengine.com<br />
+unrealtournament.com<br />   
+fortnite.com<br />   
+<br />
+account-public-service-prod03.ol.epicgames.com<br />
+catalog-public-service-prod06.ol.epicgames.com<br />
+eulatracking-public-service-prod06.ol.epicgames.com<br />
+entitlement-public-service-prod08.ol.epicgames.com<br />
+orderprocessor-public-service-ecomprod01.ol.epicgames.com<br />
+friends-public-service-prod06.ol.epicgames.com<br />
+persona-public-service-prod06.ol.epicgames.com<br />
+lightswitch-public-service-prod06.ol.epicgames.com<br />
+ut-public-service-prod10.ol.epicgames.com<br />
+launcher-public-service-prod06.ol.epicgames.com<br />
+xmpp-service-prod.ol.epicgames.com<br />
+<a rel="nofollow" class="external free" href="https://download.epicgames.com/">https://download.epicgames.com</a><br />
+<a rel="nofollow" class="external free" href="https://cdn1.epicgames.com/">https://cdn1.epicgames.com</a><br />
+<a rel="nofollow" class="external free" href="http://et2.epicgames.com/">http://et2.epicgames.com</a><br />
+<a rel="nofollow" class="external free" href="https://launcher-website-prod07.ol.epicgames.com/">https://launcher-website-prod07.ol.epicgames.com</a><br />
+</p>
+</div>
+</div>
+<h3><span class="mw-headline" id=".D0.9B.D0.B0.D0.BD.D1.87.D0.B5.D1.80_.D0.BD.D0.B5_.D0.B7.D0.B0.D0.BF.D1.83.D1.81.D0.BA.D0.B0.D0.B5.D1.82.D1.81.D1.8F_.D0.B8.D0.BB.D0.B8_.D0.BF.D0.B0.D0.B4.D0.B0.D0.B5.D1.82_.D0.BF.D1.80.D0.B8_.D0.B7.D0.B0.D0.BF.D1.83.D1.81.D0.BA.D0.B5">Ланчер не запускается или падает при запуске</span></h3>
+<p>Если при запуске ланчера ничего не происходит попробуйте следующее:
+</p>
+<ul><li> убедитесь, что ланчер не был запущен раньше;</li>
+<li> проверьте Диспетчер задач на случай  если ланчер не закрылся после предыдущей сессии;</li>
+<li> убедитесь, что у вас установлена самая последняя версия драйвера для видеокарты;</li>
+<li> если вы используете совместимую с DirectX 11 интегрированную видеокарту или видеокарту ноутбука попробуйте использовать параметр командной строки «-OpenGL»:</li></ul>
+<dl><dd><ul><li> щёлкните правой кнопкой мыши на ярлыке ланчера и выберите пункт «Свойства»;</li>
+<li> в конце поля «Объект» добавьте «&#160;-OpenGL» без кавычек и убедитесь, что перед дефисом есть пробел. Оно должно выглядеть вот так (см. поле «Target»):</li></ul></dd></dl>
+<p><a href="indexd088.html?title=File:OpenGL.JPG" class="image"><img alt="OpenGL.JPG" src="../d26ilriwvtzlb.cloudfront.net/a/ac/OpenGL.JPG" width="363" height="498" /></a>
+</p>
+<dl><dd><ul><li> примените изменения и перезапустите ланчер.</li></ul></dd></dl>
+<h3><span class="mw-headline" id=".D0.9B.D0.B0.D0.BD.D1.87.D0.B5.D1.80_.D0.BD.D0.B5_.D0.BC.D0.BE.D0.B6.D0.B5.D1.82_.D0.B7.D0.B0.D0.B3.D1.80.D1.83.D0.B7.D0.B8.D1.82.D1.8C_.D0.BA.D0.BE.D0.BD.D1.82.D0.B5.D0.BD.D1.82">Ланчер не может загрузить контент</span></h3>
+<p>Если у вас не загружается или не отображается контент, попробуйте следующее:
+</p>
+<ul><li> закройте и перезапустите ланчер и/или ваш компьютер, но прежде чем это делать, подождите несколько минут (это помогает чаще всего!);</li>
+<li> убедитесь, что вы не используете прокси-сервер (это можно сделать с помощью <a rel="nofollow" class="external text" href="http://amibehindaproxy.com/">этого</a> сайта) и что у вас не заблокирован адрес epicgames.com. Если вы используете прокси-сервер, добавьте разрешение для адреса epicgames.com и его поддоменов (или попросите ваш IT-отдел сделать это);</li>
+<li> если вы используете брандмауэр, убедитесь, что в нём добавлены исключения для адреса epicgames.com и его поддоменов (или попросите ваш IT-отдел сделать это);</li>
+<li> попробуйте сменить DNS-сервер (например на <a rel="nofollow" class="external text" href="https://www.opendns.com/">OpenDNS</a> или <a rel="nofollow" class="external text" href="https://developers.google.com/speed/public-dns">GoogleDNS</a>);</li>
+<li> если контент из магазина завис на этапе синхронизации, пожалуйста сообщите нам на форуме Магазина.</li></ul>
+<h3><span class="mw-headline" id=".D0.95.D1.81.D0.BB.D0.B8_.D0.BD.D0.B8.D1.87.D0.B5.D0.B3.D0.BE_.D0.BD.D0.B5_.D0.BF.D0.BE.D0.BC.D0.BE.D0.B3.D0.BB.D0.BE_.E2.80.93_.D1.81.D0.B1.D0.BE.D1.80_.D0.BD.D0.B5.D0.BE.D0.B1.D1.85.D0.BE.D0.B4.D0.B8.D0.BC.D1.8B.D1.85_.D0.B4.D0.B0.D0.BD.D0.BD.D1.8B.D1.85">Если ничего не помогло – сбор необходимых данных</span></h3>
+<p>Если ничего из вышеперечисленного не помогло вашу решить имеющуюсмя проблему или она здесь не описана, пожалуйста попробуйте посмотреть не сообщил кто-нибудь о подобной проблеме на <a rel="nofollow" class="external text" href="https://answers.unrealengine.com/">AnswerHub</a>. Если нет, то создайте новый пост, но не забудьте прикрепить к нему файл DxDiag и журнала отладки ланчера!
+</p>
+<dl><dd><b>Создание файла DxDiag:</b></dd>
+<dd><i>На Windows:</i>
+<ul><li> Нажмите на клавиатуре сочетание Win+R.</li>
+<li> В открывшемся окне введите «dxdiag» и нажмите OK.</li>
+<li> Появится окно программы диагностики DirectX c индикатором выполнения в нижнем левом углу.</li>
+<li> Когда индикатор исчезнет, нажмите кнопку «Сохранить все сведения...».</li>
+<li> Сохраните текстовый файл на рабочий стол или куда-нибудь ещё, где вы его легко найдёте.</li></ul></dd>
+<dd><i>На Mac:</i>
+<ul><li> Щёлкните на меню Apple.</li>
+<li> Выберите пункт “Об этом Mac”.</li>
+<li> Скопируйте информацию включая название ОС и её версию.</li></ul></dd></dl>
+<p>После этого прикрепите DxDiag или укажите информацию о системе вашего Mac в посте на AnswerHub!
+</p>
+<dl><dd><b>Журнал отладки ланчера:</b></dd>
+<dd><i>В самом ланчере:</i>
+<ul><li> В верхнем правом углу ланчера щёлкните на значке шестерёнки.</li>
+<li> В открывшемся меню выберите «Включить ведение журнала отладки», затем «Включить сейчас». Если проблема возникает при запуске или входе, выберите «Включить ведение журнала отладки», затем «Перезапустить».</li>
+<li> Воспроизведите проблему при включённом ведении журнала отладки.</li>
+<li> После успешного воспроизведения проблемы снова откройте меню настроек ланчера (значок шестерёнки) и выберите пункт «Показать журналы приложения запуска»</li>
+<li> Заархивируйте все логи в этой папке в zip-файл и прикрепите его к вашему посту к AnswerHub.</li>
+<li> В ланчере снова откройте меню настроек и выберите пункт «Отключить ведение журнала отладки» или закройте ланчер.</li></ul></dd></dl>
+<dl><dd>Если вы не можете включить сборку отладочных данных в самом ланчере или вы не можете включить ведение журнала отладки, вы можете попробовать сделать это с помощью параметра командной строки:</dd>
+<dd><i>Вне ланчера:</i></dd></dl>
+<p>Щёлкните правой кнопкой мыши на ярлыке ланчера и выберите пункт «Свойства».
+</p>
+<dl><dd><ul><li> В конце поля «Объект» добавьте «&#160;-debuglogging» без кавычек и убедитесь, что перед дефисом есть пробел. Оно должно выглядеть вот так (см. поле «Target»):</li></ul></dd></dl>
+<p><a href="indexc637.html?title=File:DebugLoggingCommand.JPG" class="image"><img alt="DebugLoggingCommand.JPG" src="../d26ilriwvtzlb.cloudfront.net/6/60/DebugLoggingCommand.JPG" width="362" height="497" /></a>
+</p>
+<dl><dd><ul><li> После того как вы получили журнал отладки удалите параметр из поля «Объект» в свойствах ярлыка.</li></ul></dd></dl>
+<dl><dd><i>Где найти файлы журналов отладки:</i></dd>
+<dd>Необходимые файлы находятся в следующей папке:</dd>
+<dd>На Windows: "C:\Users\"Username"\AppData\Local\EpicGamesLauncher\Saved\Logs" </dd>
+<dd>на Mac OS: "~/Library/Logs/Unreal Engine/EpicGamesLauncher/"</dd>
+<dd>Заархивируйте всё содержимое папки и прикрепите его к вашему посту на AnswerHub.</dd></dl>
+<h3><span class="mw-headline" id=".D0.A1.D0.BE.D0.B2.D0.B5.D1.82.D1.8B">Советы</span></h3>
+<p><b>Как создать символьную ссылку</b>
+</p><p><b>Windows:</b>
+</p><p>Если у вас не хватает места на нужном диске, то файловая система NTFS в Windows поддерживает символьные ссылки. Для переадресации папок вы можете воспользоваться командой "mklink /D [ссылка] [папка для переадресации]".
+</p><p>Две самые частые причины проблем с нехваткой места - 30+ ГБ контента примеров и наличие двух копий движка при переходе с версии на версию (например 4.7 занимает 16+ ГБ без учёта папки DerivedDataCache).
+</p><p>В командной строке запущенной с администраторскими привилегиями вводите следующие команды. 
+[ В Windows 8.1, щёлкните правой кнопкой мыши в нижнем левом углу экрана и выберите «Командная строка (администратор)» ]
+</p>
+<ul><li> cd "\Program Files\Epic Games\Launcher"</li>
+<li> explorer . (пробел и точка после команды необходимы — это откроет Проводник в текущей папке)</li>
+<li> Перенесите с помощью проводника папки PatchStaging и VaultCache в новое место, перед этим убедитесь что ланчер не запущен. (Для дальнейших пунктов будем считать что папки были скопированы в корень диска E: )</li>
+<li> mklink /d VaultCache E:\VaultCache</li>
+<li> mklink /d PatchStaging E:\PatchStaging</li></ul>
+<p>Вы должны увидеть примерно такую картину:
+</p>
+<pre>Directory of C:\Program Files\Epic Games\Launcher    
+02.02.2015  19:24    &lt;DIR&gt;          Backup
+11.12.2014  01:19    &lt;DIR&gt;          Engine
+12.12.2015  19:28    &lt;SYMLINKD&gt;     PatchStaging [E:\PatchStaging]
+07.07.2015  02:31    &lt;SYMLINKD&gt;     VaultCache [E:\VaultCache]
+</pre>
+<p>Обратите внимание на D в конце «SYMLINKD».
+</p><p>Команду «mklink» так же можно использовать для переноса отдельных папок движка или папки Unreal Projects, или например папки Android SDK.
+</p><p>Кстати, системная папка «Документы» тоже нестандартная – в её свойствах есть вкладка «Расположение», с помощью которой можно перенести папку на диск, где есть больше места. При этом некоторые системные папки Windows трогать не стоит.
+</p><p><b>MAC:</b>
+</p><p>На Mac папку установки можно перенести на внешний диск используя символическую ссылку (SymLink). Для этого необходимо перенести папку /Users/Shared/UnrealEngine на внешний диск, а затем создать символическую ссылку на новую папку в старой. Для этого вам необходимо выполнить следующие шаги:
+</p>
+<ul><li> Сделайте резервную копию папки UnrealEngine, которая находится в папке /Users/Shared</li>
+<li> Перенесите папку UnrealEngine на диск, на который вы будете устанавливать движок. Это можно сделать введя в терминале следующую команду (без кавычек): «Sudo mv /Users/Shared/UnrealEngine /Destination/Location/» (Примечание: путь к переносимой папке и путь к месту куда она переносится разделены пробелом)</li>
+<li> Введите пароль администратора, когда система его запросит</li>
+<li> Создайте символическую ссылку в старой папке UnrealEngine, чтобы она указывала на новое местоположение папки: "ln -s /Destination/Location/ /Users/Shared/UnrealEngine"</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20200401010242
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.044 seconds
+Real time usage: 0.304 seconds
+Preprocessor visited node count: 55/1000000
+Preprocessor generated node count: 82/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:33-0!canonical and timestamp 20200401010241 and revision id 67
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="index26ae.html?title=Troubleshooting_Launcher_Problems_RU&amp;oldid=67">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Troubleshooting_Launcher_Problems_RU&amp;oldid=67</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="index8e57.html?title=Category:Troubleshooting" title="Category:Troubleshooting">Troubleshooting</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b971c4e90a55eae6"><meta name="worker" content="116"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="index34da.html"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.044","walltime":"0.304","ppvisitednodes":{"value":55,"limit":1000000},"ppgeneratednodes":{"value":82,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20200401010242","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":90});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":130,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

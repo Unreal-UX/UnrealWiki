@@ -1,0 +1,13 @@
+diff --git a/Plugins/UnrealJS/Source/V8/Private/JavascriptContext_Private.cpp b/Plugins/UnrealJS/Source/V8/Private/JavascriptContext_Private.cpp
+index 021090d..2c74053 100644
+--- a/Plugins/UnrealJS/Source/V8/Private/JavascriptContext_Private.cpp
++++ b/Plugins/UnrealJS/Source/V8/Private/JavascriptContext_Private.cpp
+@@ -869,7 +869,7 @@ class FJavascriptContextImplementation : public FJavascriptContext
+ 					if (!FPaths::DirectoryExists(base_path)) return false;
+ 
+ 					auto script_path = base_path / required_module;
+-					if (!script_path.EndsWidth(TEXT(".js")))
++					if (!script_path.EndsWith(TEXT(".js")))
+ 					{
+ 						if (inner(script_path + TEXT(".js"))) return true;
+ 						if (inner(script_path / TEXT("index.js"))) return true;

@@ -1,0 +1,22 @@
+From d1a0606495d8d70314916c25984ac9694edb5b29 Mon Sep 17 00:00:00 2001
+From: Hyeoncheol Cho <crocuis@gmail.com>
+Date: Sun, 22 Nov 2015 05:37:27 +0900
+Subject: [PATCH] fix typo
+
+---
+ .../UnrealJS/Source/V8/Private/JavascriptContext_Private.cpp    | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Plugins/UnrealJS/Source/V8/Private/JavascriptContext_Private.cpp b/Plugins/UnrealJS/Source/V8/Private/JavascriptContext_Private.cpp
+index 021090d..2c74053 100644
+--- a/Plugins/UnrealJS/Source/V8/Private/JavascriptContext_Private.cpp
++++ b/Plugins/UnrealJS/Source/V8/Private/JavascriptContext_Private.cpp
+@@ -869,7 +869,7 @@ class FJavascriptContextImplementation : public FJavascriptContext
+ 					if (!FPaths::DirectoryExists(base_path)) return false;
+ 
+ 					auto script_path = base_path / required_module;
+-					if (!script_path.EndsWidth(TEXT(".js")))
++					if (!script_path.EndsWith(TEXT(".js")))
+ 					{
+ 						if (inner(script_path + TEXT(".js"))) return true;
+ 						if (inner(script_path / TEXT("index.js"))) return true;

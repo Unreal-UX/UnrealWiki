@@ -1,0 +1,22 @@
+From 951400a3277b5a099107f7adebb99c3dfc8ab250 Mon Sep 17 00:00:00 2001
+From: Hyeon-Cheol Cho <crocuis@gmail.com>
+Date: Sun, 27 Jan 2019 17:21:44 +0900
+Subject: [PATCH] Update README.md
+
+---
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/README.md b/README.md
+index 8030b13..6c78f7e 100644
+--- a/README.md
++++ b/README.md
+@@ -8,7 +8,7 @@ Unreal.js is a plug-in which brings V8-powered Javascript into UnrealEngine4.
+ - [Link to the Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/unrealjs) (4.11 ~ 4.21)
+ - [Update notes](https://github.com/ncsoft/Unreal.js/wiki/Update-notes)
+ - [Link to NDC 2017 presentation (KR)](https://www.slideshare.net/crocuis/unrealjs-ue4-75499471)
+-- [Link to NDC 2017 presentatio Video (KR)](http://ndc.vod.nexoncdn.co.kr/NDC2017/videos/NDC2017_0114.mp4)
++- [Link to NDC 2017 presentation Video (KR)](http://ndc.vod.nexoncdn.co.kr/NDC2017/videos/NDC2017_0114.mp4)
+ 
+ ## Installation
+ 

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/facebook/react-native/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/facebook/react-native/commits/master.atom"/>
+  <title>Recent Commits to react-native:master</title>
+  <updated>2020-04-01T02:36:45Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2b062eadc8f2fd03f962614f9af8acd805fed63c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/2b062eadc8f2fd03f962614f9af8acd805fed63c"/>
+    <title>
+        Fix bug in optimized differ
+    </title>
+    <updated>2020-04-01T02:36:45Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/70602?s=30&amp;v=4"/>
+    <author>
+      <name>JoshuaGross</name>
+      <uri>https://github.com/JoshuaGross</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix bug in optimized differ
+
+Summary:
+The differ was still producing correct, but not minimal, instruction sets in some cases due to an optimization that was buggy.
+
+This affected cases where 2+ nodes were inserted at the beginning of a list. It would trigger the old behavior where all nodes after the first would be removed, deleted, then reinserted.
+
+See the test case (which was failing and now passed) and P128190998 (the 3-&amp;gt;4 transition) for samples.
+
+Changelog: [Internal] Fabric differ
+
+Reviewed By: mdvacca
+
+Differential Revision: D20785729
+
+fbshipit-source-id: 2fea6a816753066abb358ed7bb51003140cd5fc4&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/23d0e7cae9cdd1942fc63e37eb61842ba943dcb6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/23d0e7cae9cdd1942fc63e37eb61842ba943dcb6"/>
+    <title>
+        Circle CI Housekeeping: Windows, e2e (#28471)
+    </title>
+    <updated>2020-04-01T00:39:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/165856?s=30&amp;u=62073388365aa7c8c30a626bbe498e0ec86bf949&amp;v=4"/>
+    <author>
+      <name>hramos</name>
+      <uri>https://github.com/hramos</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Circle CI Housekeeping: Windows, e2e (#28471)
+
+Summary:
+Circle CI Housekeeping:
+* Integrate Windows job into `tests` workflow
+* Add parametrized e2e tests command
+* Move js e2e tests out of the disabled test quarantine area
+* Parametrize and split `test_ios` job to reduce total execution time by ~13 minutes
+
+**Before:**
+
+Longest running iOS job at 39 minutes.
+
+| Setup Job Runtime | Job | Job Runtime | Total Runtime |
+| - | - | - | - |
+| 01:24 | test_ios | 38:04 | **39:28** |
+| 01:24 | test_ios_frameworks | 38:02 | 39:26 |
+
+![Screen Shot 2020-03-31 at 12 40 29 PM](https://user-images.githubusercontent.com/165856/78068308-044c3280-734d-11ea-96bf-2e50691a0ef7.png)
+
+**After:**
+
+Longest running iOS job down to 26 minutes.
+
+| Setup Job Runtime | Job | Job Runtime | Total Runtime |
+| - | - | - | - |
+| 01:26 | test_ios_unit | 20:48 | 22:14 |
+| 01:26 | test_ios_unit_frameworks | 22:52 | 24:18 |
+| 01:26 | test_ios_detox | 24:35 | 39:28 |
+| 01:26 | test_ios_detox_frameworks | 24:54 | **26:20** |
+
+![Screen Shot 2020-03-31 at 12 39 22 PM](https://user-images.githubusercontent.com/165856/78068294-fe565180-734c-11ea-96da-8836231d7747.png)
+
+## Changelog
+
+[Internal] [CI] - CI Housekeeping
+Pull Request resolved: https://github.com/facebook/react-native/pull/28471
+
+Test Plan: Circle CI
+
+Reviewed By: cpojer
+
+Differential Revision: D20774521
+
+Pulled By: hramos
+
+fbshipit-source-id: 4a2f5a4083cd76dcb51d5ccaf726cd204fca222e&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4a2232bd7b3d848264c9ddd08405ce7eabf70673</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/4a2232bd7b3d848264c9ddd08405ce7eabf70673"/>
+    <title>
+        Apply buckformat in preparation for updating buildifier
+    </title>
+    <updated>2020-03-31T23:33:44Z</updated>
+    <media:thumbnail height="30" width="30" url="https://1.gravatar.com/avatar/a3708fea188405a6ef7b120c02ca1de8?d=https%3A%2F%2Fgithub.githubassets.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=g&amp;s=30"/>
+    <author>
+      <name></name>
+      <email>chatatap@fb.com</email>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Apply buckformat in preparation for updating buildifier
+
+Summary: Changelog: [Internal]
+
+Reviewed By: zertosh
+
+Differential Revision: D20773287
+
+fbshipit-source-id: 144bb13191312eef246646b99e1dc06304c6d210&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ad86a183052e8b25d599eb395aef55412c02ff7b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/ad86a183052e8b25d599eb395aef55412c02ff7b"/>
+    <title>
+        chore: update lint config in template (#28443)
+    </title>
+    <updated>2020-03-31T20:51:18Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/6936373?s=30&amp;u=4edd14e6636c45d10ac6a3eecb4b3ffa6cc2bf5c&amp;v=4"/>
+    <author>
+      <name>Naturalclar</name>
+      <uri>https://github.com/Naturalclar</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore: update lint config in template (#28443)
+
+Summary:
+Updating the eslint config and metro-preset used in project template.
+
+## Changelog
+
+[General] [Changed] - Upgrade eslint-config and metro-preset in project template
+Pull Request resolved: https://github.com/facebook/react-native/pull/28443
+
+Test Plan:
+- Start new project with `npx react-native init TestLint`
+- upgrade lint and metro-config
+- run lint and start up emulator on iOS and android
+
+Reviewed By: cpojer
+
+Differential Revision: D20771048
+
+Pulled By: hramos
+
+fbshipit-source-id: a6d387b8687cee348681bcb10d22c7e3de291ed7&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ed3054927c30c8823f78026b9c4cb42fbe4f8b00</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/ed3054927c30c8823f78026b9c4cb42fbe4f8b00"/>
+    <title>
+        Plumb through memory allocation profiler feature to Chrome Inspector
+    </title>
+    <updated>2020-03-31T18:02:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1978924?s=30&amp;v=4"/>
+    <author>
+      <name>jbower-fb</name>
+      <uri>https://github.com/jbower-fb</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Plumb through memory allocation profiler feature to Chrome Inspector
+
+Summary: Changelog: Make allocation profiler feature of Chome Inspector work
+
+Reviewed By: dulinriley
+
+Differential Revision: D20383003
+
+fbshipit-source-id: 8a10c310d5a639a6644763adb53f2f0017057587&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8454975d2ccc5e3fe60e37f704ac7bf50cf0978b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/8454975d2ccc5e3fe60e37f704ac7bf50cf0978b"/>
+    <title>
+        Save/restore IP when leaving the interpreter
+    </title>
+    <updated>2020-03-31T18:02:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1978924?s=30&amp;v=4"/>
+    <author>
+      <name>jbower-fb</name>
+      <uri>https://github.com/jbower-fb</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Save/restore IP when leaving the interpreter
+
+Summary:
+This diff implements the instruction pointer save/restore trick Tzvetan came up with; allowing us to observe and modify the IP from outside the interpreter loop with negligible overhead.
+
+From Tzvetan&amp;#39;s internal post on the subject:
+
+&amp;gt; [Today] the interpreter IP is just a local variable in the interpreter function, so there is no way to get to its value from outside the function. It lives in a register and we don&amp;#39;t want to make it a Runtime field since the overhead [of accessing it via memory in the interpeter loop] would kill us.
+
+&amp;gt; However, if you really think about it, it only lives in a register while the interpreter function is running. For the rest of the time, it is spilled by the C++ compiler onto the stack.
+So, precisely when we need it, it is actually stored in memory. The only problem is, we don&amp;#39;t know where! Admittedly, that is an annoying problem, but it feels like it should be solvable.
+
+&amp;gt; What if, instead of relying on the compiler to spill the IP register, we manually spill it ourselves, to a known location? It works. Example: https://godbolt.org/z/ftSDnp
+
+This diff implements this approach across the whole interpreter loop: whenever we call out of the loop we capture/publish the IP and restore it again immediately after the external call returns. This means we can now see the IP outside the interpret loop and even change it. This is effectively &amp;quot;for free&amp;quot; as the compiler now skips spilling/restoring the IP behind the scenes.
+
+The immediate benefit of this is knowing the current IP allows us to have more accurate stack-traces during execution. In future this may enabled tricks like changing the IP before returning to the interpreter loop, allowing things outside the interpreter to affect program flow without adding logic to the interpreter loop.
+
+Reviewed By: tmikov
+
+Differential Revision: D20151091
+
+fbshipit-source-id: 3814382639800208d8985a32ede31ba8f7ff7c80&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/232517a5740f5b82cfe8779b3832e9a7a47a8d3d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/232517a5740f5b82cfe8779b3832e9a7a47a8d3d"/>
+    <title>
+        Implement nativePerformanceNow to improve Profiler API results (#27885)
+    </title>
+    <updated>2020-03-31T17:23:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/13116854?s=30&amp;v=4"/>
+    <author>
+      <name>emilisb</name>
+      <uri>https://github.com/emilisb</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Implement nativePerformanceNow to improve Profiler API results (#27885)
+
+Summary:
+When experimenting with React Profiler API (https://reactjs.org/docs/profiler.html), I noticed that durations are integers without a debugger, but they are doubles with higher precision when debugger is attached. After digging into React Profiler code, I found out that it&amp;#39;s using `performance.now()` to accumulate execution times of individual units of work. Since this method does not exist in React Native, it falls back to Javascript `Date`, leading to imprecise results.
+
+This PR introduces `global.nativePerformanceNow` function which returns precise native time, and a very basic `performance` polyfill with `now` function.
+
+This will greatly improve React Profiler API results, which is essential for profiling and benchmark tools.
+
+Solves https://github.com/facebook/react-native/issues/27274
+
+## Changelog
+
+[General] [Added] - Implement `nativePerformanceNow` and `performance.now()`
+Pull Request resolved: https://github.com/facebook/react-native/pull/27885
+
+Test Plan:
+```
+const initialTime = global.performance.now();
+setTimeout(() =&amp;gt; {
+  const newTime = global.performance.now();
+  console.warn(&amp;#39;duration&amp;#39;, newTime - initialTime);
+}, 1000);
+```
+
+### Android + Hermes
+
+![Screenshot_1580198068](https://user-images.githubusercontent.com/13116854/73245757-af0d6c80-41b5-11ea-8130-dde14ebd41a3.png)
+
+### Android + JSC
+
+![Screenshot_1580199089](https://user-images.githubusercontent.com/13116854/73246157-92256900-41b6-11ea-87a6-ac222383200c.png)
+
+### iOS
+
+![Simulator Screen Shot - iPhone 8 - 2020-01-28 at 10 06 49](https://user-images.githubusercontent.com/13116854/73245871-f136ae00-41b5-11ea-9e31-b1eff5717e62.png)
+
+Reviewed By: ejanzer
+
+Differential Revision: D19888289
+
+Pulled By: rickhanlonii
+
+fbshipit-source-id: ab8152382da9aee9b4b3c76f096e45d40f55da6c&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/367a573ccc7e049e8980470ac14933496eda98ec</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/367a573ccc7e049e8980470ac14933496eda98ec"/>
+    <title>
+        Assign orderIndex_ in ConcreteViewShadowNode constructor instead of V…
+    </title>
+    <updated>2020-03-31T16:50:17Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/1733610?s=30&amp;u=8a36d5bd6426d0f46b0b37d76679e856355cbf5d&amp;v=4"/>
+    <author>
+      <name>sammy-SC</name>
+      <uri>https://github.com/sammy-SC</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Assign orderIndex_ in ConcreteViewShadowNode constructor instead of ViewShadowNode&amp;#39;s constructor
+
+Summary:
+Changelog: [Internal]
+
+`orderIndex_` was only being assigned for `ViewShadowNode`, not for other `ShadowNodes` that are later represented on the screen.
+
+Reviewed By: shergin
+
+Differential Revision: D20746477
+
+fbshipit-source-id: c04c2cfea14b9141d22bc3d9e9bb4c0c59925754&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/214d73b5a28fd09ab06764d636ff145de90c975c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/214d73b5a28fd09ab06764d636ff145de90c975c"/>
+    <title>
+        Buck: Use Android SDK 29 during build (#28455)
+    </title>
+    <updated>2020-03-31T16:31:31Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/165856?s=30&amp;u=62073388365aa7c8c30a626bbe498e0ec86bf949&amp;v=4"/>
+    <author>
+      <name>hramos</name>
+      <uri>https://github.com/hramos</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Buck: Use Android SDK 29 during build (#28455)
+
+Summary:
+Fixes `test_android` and `test_docker` build failures. Thanks to dulmandakh for identifying the fix.
+
+Changelog:
+[Internal] [Android] [Changed] - Use Android SDK 29 to build during CI tests
+Pull Request resolved: https://github.com/facebook/react-native/pull/28455
+
+Test Plan: Circle CI shows `test_android` and `test_docker` passing: https://app.circleci.com/jobs/github/facebook/react-native/142273
+
+Reviewed By: sturmen
+
+Differential Revision: D20766589
+
+Pulled By: hramos
+
+fbshipit-source-id: 8ef8a8ce3a6e7353ae47425accb3bd26cf1608c4&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c3d0c2944200c78fda648c8cf82c0ff92e5d52ff</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/c3d0c2944200c78fda648c8cf82c0ff92e5d52ff"/>
+    <title>
+        mention RNTester app in contributor guide (#28042)
+    </title>
+    <updated>2020-03-31T16:10:58Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/1566403?s=30&amp;u=3df07e2ae72e89a3a3509ba6c2f927115b5f38aa&amp;v=4"/>
+    <author>
+      <name>vonovak</name>
+      <uri>https://github.com/vonovak</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;mention RNTester app in contributor guide (#28042)
+
+Summary:
+motivation is following - the RNTester app is imho the best place to try out any changes that a contributor would make, yet it is not directly mentioned in the contributor guide. This fixes it.
+
+## Changelog
+
+[Internal] - Docs
+Pull Request resolved: https://github.com/facebook/react-native/pull/28042
+
+Test Plan: not necessary
+
+Reviewed By: TheSavior
+
+Differential Revision: D20401260
+
+Pulled By: hramos
+
+fbshipit-source-id: 01c1b7dff56b59909c94b2feb609650f0baba1a9&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c381518a6819f24c2a648ad68f26bd27464b7f10</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/c381518a6819f24c2a648ad68f26bd27464b7f10"/>
+    <title>
+        Set RootNodeKind trait in ModalHostViewShadowNode
+    </title>
+    <updated>2020-03-31T09:59:59Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/1733610?s=30&amp;u=8a36d5bd6426d0f46b0b37d76679e856355cbf5d&amp;v=4"/>
+    <author>
+      <name>sammy-SC</name>
+      <uri>https://github.com/sammy-SC</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Set RootNodeKind trait in ModalHostViewShadowNode
+
+Summary:
+Changelog: [internal]
+
+`ModalHostViewShadowNode` didn&amp;#39;t have `RootNodeKit` trait, therefore `getRelativeLayoutMetrics`  was including nodes in ancestors that it shouldn&amp;#39;t have.
+
+Reviewed By: shergin
+
+Differential Revision: D20735801
+
+fbshipit-source-id: 6b81e3b174c2f82e530abc2bca2da8bebc2270b0&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8d3d8afa5b628e461299b33f1d35551d53ed4776</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/8d3d8afa5b628e461299b33f1d35551d53ed4776"/>
+    <title>
+        Fabric: Using `executeSynchronouslyOnSameThread_CAN_DEADLOCK` in Main…
+    </title>
+    <updated>2020-03-31T02:35:08Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/22032?s=30&amp;v=4"/>
+    <author>
+      <name>shergin</name>
+      <uri>https://github.com/shergin</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fabric: Using `executeSynchronouslyOnSameThread_CAN_DEADLOCK` in MainRunLoopEventBeat
+
+Summary:
+We are replacing inline-ed implementation with practically the same one implemented as the helper method.
+
+Changelog: [Internal] Fabric-specific internal change.
+
+Reviewed By: sammy-SC
+
+Differential Revision: D20551409
+
+fbshipit-source-id: fcc6f497cd240af65fba534051c217fe5746ce82&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/15ea60e3a86fa1c7857f9eacbe5bca70bbdd01bf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/15ea60e3a86fa1c7857f9eacbe5bca70bbdd01bf"/>
+    <title>
+        RuntimeExecutor helpers that modify the way of the callback is being …
+    </title>
+    <updated>2020-03-31T02:35:08Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/22032?s=30&amp;v=4"/>
+    <author>
+      <name>shergin</name>
+      <uri>https://github.com/shergin</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;RuntimeExecutor helpers that modify the way of the callback is being executed.
+
+Summary:
+Here we implement a bunch of helper methods that allow customizing the behavior of a RuntimeExecutor &amp;quot;on-demand&amp;quot; on the caller side. We will use it in the next diff(s).
+
+Changelog: [Internal] Fabric-specific internal change.
+
+Reviewed By: PeteTheHeat
+
+Differential Revision: D20551411
+
+fbshipit-source-id: 51d3cd02b69753110c0e1155347c6e52eb882c7d&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b8664182dae8fc3421d61fc96ba73811045901e0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/b8664182dae8fc3421d61fc96ba73811045901e0"/>
+    <title>
+        Remove allowDisablingImmediateExecutionOfScheduleMountItems feature flag
+    </title>
+    <updated>2020-03-30T23:50:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/70602?s=30&amp;v=4"/>
+    <author>
+      <name>JoshuaGross</name>
+      <uri>https://github.com/JoshuaGross</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Remove allowDisablingImmediateExecutionOfScheduleMountItems feature flag
+
+Summary:
+No longer needed.
+
+Changelog: [Internal]
+
+Reviewed By: mdvacca
+
+Differential Revision: D20747684
+
+fbshipit-source-id: a8077519b7670d72e23267b1c1423556ec97be3f&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f21f922c83630490d5903213c99c8e4d63362c8b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/f21f922c83630490d5903213c99c8e4d63362c8b"/>
+    <title>
+        Update PixelRatio &#39;getFontScale&#39; method description (#28407)
+    </title>
+    <updated>2020-03-30T23:37:18Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/719641?s=30&amp;u=d36716eff385696b5942b8e283d8c6d4cbbf9888&amp;v=4"/>
+    <author>
+      <name>Simek</name>
+      <uri>https://github.com/Simek</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update PixelRatio &amp;#39;getFontScale&amp;#39; method description (#28407)
+
+Summary:
+Refs facebook/react-native-website#1776.
+
+Despite in-code description `PixelRatio.getFontScale()` is working properly on the iOS (it also reflects the user settings).
+
+This PR updates the in-code description to match current behaviour.
+
+I have decided to skip in the code information about additional setting in `Accessibility` menu and in `Control Centre`, but if you think it is important just let me know, I can update this PR.
+
+## Changelog
+
+[Internal] [Fixed] - Fix PixelRatio getFontScale method description
+Pull Request resolved: https://github.com/facebook/react-native/pull/28407
+
+Test Plan: N/A
+
+Differential Revision: D20750260
+
+Pulled By: shergin
+
+fbshipit-source-id: c40ec2fd49cd60e2975351c3a1c453aab0045da4&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/adb2d31b40c08db426db4d8991f7ce451f854340</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/adb2d31b40c08db426db4d8991f7ce451f854340"/>
+    <title>
+        Add `upgrade-support` link on issue creation (#28411)
+    </title>
+    <updated>2020-03-30T22:26:30Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/6207220?s=30&amp;u=a80ccbef73dce02a759208040339a44733b2ea98&amp;v=4"/>
+    <author>
+      <name>lucasbento</name>
+      <uri>https://github.com/lucasbento</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add `upgrade-support` link on issue creation (#28411)
+
+Summary:
+This PR adds a https://github.com/react-native-community/upgrade-support link for the user when creating an issue.
+Changelog:
+[Internal]
+
+Pull Request resolved: https://github.com/facebook/react-native/pull/28411
+
+Reviewed By: cpojer
+
+Differential Revision: D20714274
+
+Pulled By: hramos
+
+fbshipit-source-id: 4ca42224a50e386b95f21f0fb236a917e1b6b982&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/405200e9a930cded47954f374f2a779ec769cd4c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/405200e9a930cded47954f374f2a779ec769cd4c"/>
+    <title>
+        chore: update url of warning message from deprecated imports (#28452)
+    </title>
+    <updated>2020-03-30T22:17:40Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/6936373?s=30&amp;u=4edd14e6636c45d10ac6a3eecb4b3ffa6cc2bf5c&amp;v=4"/>
+    <author>
+      <name>Naturalclar</name>
+      <uri>https://github.com/Naturalclar</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore: update url of warning message from deprecated imports (#28452)
+
+Summary:
+Some of the repository name of Lean Core(https://github.com/facebook/react-native/issues/23313) libraries has been renamed.
+This PR updates the warning message to display the updated url.
+
+## Changelog
+
+[General] [Changed] - Update warning message of deprecated imports
+Pull Request resolved: https://github.com/facebook/react-native/pull/28452
+
+Test Plan: updated URL can be accessed.
+
+Reviewed By: cpojer
+
+Differential Revision: D20745184
+
+Pulled By: TheSavior
+
+fbshipit-source-id: 2c3ed6a000b45022ca6c4862305aa567c4d18b2e&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/21396bb38015e266bab944b3ab1e35db64686ea5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/21396bb38015e266bab944b3ab1e35db64686ea5"/>
+    <title>
+        Enable inspector for Fabric
+    </title>
+    <updated>2020-03-30T21:05:27Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2440089?s=30&amp;u=f5ef04951a8905aa257deb959ccd0207ea6349b3&amp;v=4"/>
+    <author>
+      <name>rickhanlonii</name>
+      <uri>https://github.com/rickhanlonii</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Enable inspector for Fabric
+
+Summary:
+## Overview
+This diff refactors the Inspector, moving logic to look up view data for a touched view inside the renderer as `getInspectorDataForViewAtPoint`. We then implement that same function for Fabric in order to support the inspector in that renderer.
+
+Requires https://github.com/facebook/react/pull/18388
+
+## Motivation
+
+Reason one for this refactor is that, previously, the inspector held all of the logic to look up view data for a given x,y touch coordinate. To do this, it would take the React tag and coordinates, look up the native view tag, measure it, and then ask React internals for the Fiber information of that tag. All of this is deeply coupled to React internals, yet the logic is outside of React core in the Inspector.
+
+Reason two is that, for Fabric, the logic for getting the view data is different than Paper. In Fabric, we pass the x,y coordinates to native directly, which returns an instance handle. That handle can be used to measure the ShadowNode, or retrieve the Fiber information.
+
+By moving the logic into the renderer in React core, we decouple the implementation details of looking up view data for a tapped point and allow ourselves the ability to add and change renderer-specific code for the actual lookup without impacting outsiders like the Inspector.
+
+Changelog: [Internal]
+
+Reviewed By: TheSavior
+
+Differential Revision: D20291710
+
+fbshipit-source-id: a125223f2e44a6483120c41dc6146ad75a0e3e68&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3276563806966c16256181d9e71099f63f26e67f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/3276563806966c16256181d9e71099f63f26e67f"/>
+    <title>
+        Partial React Sync for Inspector
+    </title>
+    <updated>2020-03-30T21:05:26Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2440089?s=30&amp;u=f5ef04951a8905aa257deb959ccd0207ea6349b3&amp;v=4"/>
+    <author>
+      <name>rickhanlonii</name>
+      <uri>https://github.com/rickhanlonii</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Partial React Sync for Inspector
+
+Summary:
+Partial sync for React that includes:
+
+- https://github.com/facebook/react/pull/18388
+- https://github.com/facebook/react/commit/dd7e5e4f5ac2ffac3171ef61daee2cb1edc69635
+
+Created from this branch: https://github.com/facebook/react/compare/master...rickhanlonii:rh-partial-3-24?expand=1
+
+Changelog: [Internal]
+
+Reviewed By: mdvacca
+
+Differential Revision: D20651395
+
+fbshipit-source-id: 67baf7c407f75d9fd01c17f2203a77a38567100e&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6a61557b2481151c13a398c333203e0244c30ea5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/facebook/react-native/commit/6a61557b2481151c13a398c333203e0244c30ea5"/>
+    <title>
+        Early return on tinting CursorDrawable if no color supplied
+    </title>
+    <updated>2020-03-30T20:06:43Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/169858?s=30&amp;v=4"/>
+    <author>
+      <name>sturmen</name>
+      <uri>https://github.com/sturmen</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Early return on tinting CursorDrawable if no color supplied
+
+Summary:
+There&amp;#39;s (potentially) a lot of expensive reflection calls here that, as best I can tell, end up being ignored if the supplied color is null. Better to early return.
+
+Changelog: [General] [Internal] Preclude reflection when setting cursor color if color is null
+
+Reviewed By: JoshuaGross
+
+Differential Revision: D20670594
+
+fbshipit-source-id: 480a988355bbd79008002c4326d4b35035ec2a95&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

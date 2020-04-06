@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Basic_Multiplayer_HUD&oldid=647 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:54:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>Blueprint Basic Multiplayer HUD - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Blueprint_Basic_Multiplayer_HUD","wgTitle":"Blueprint Basic Multiplayer HUD","wgCurRevisionId":647,"wgRevisionId":647,"wgArticleId":323,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials","Blueprint","Community Created Content"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Blueprint_Basic_Multiplayer_HUD","wgRelevantArticleId":323,"wgRequestId":"94de041d4558e59f701eeace","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Blueprint_Basic_Multiplayer_HUD rootpage-Blueprint_Basic_Multiplayer_HUD skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0fabd7d8c0a1277bf"><meta name="worker" content="80"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Basic_Multiplayer_HUD&oldid=647 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:54:24 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Blueprint+Basic+Multiplayer+HUD&amp;returntoquery=oldid%3D647" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Basic_Multiplayer_HUD" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Blueprint_Basic_Multiplayer_HUD&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Basic_Multiplayer_HUD">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Basic_Multiplayer_HUD&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Basic_Multiplayer_HUD&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Blueprint Basic Multiplayer HUD</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Rating&amp;action=edit&amp;redlink=1" class="new" title="Template:Rating (page does not exist)">Template:Rating</a>
+<a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Template:Warning&amp;action=edit&amp;redlink=1" class="new" title="Template:Warning (page does not exist)">Template:Warning</a>
+</p><p><br />
+
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Purpose"><span class="tocnumber">2</span> <span class="toctext">Purpose</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Blueprint_Basic_Multiplayer_HUD"><span class="tocnumber">3</span> <span class="toctext">Blueprint Basic Multiplayer HUD</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Expectations"><span class="tocnumber">3.1</span> <span class="toctext">Expectations</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Setup"><span class="tocnumber">3.2</span> <span class="toctext">Setup</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Adding_The_Blueprints"><span class="tocnumber">3.3</span> <span class="toctext">Adding The Blueprints</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Creating_The_Levels"><span class="tocnumber">3.4</span> <span class="toctext">Creating The Levels</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Project_Settings"><span class="tocnumber">3.5</span> <span class="toctext">Project Settings</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#The_Game_Mode_Blueprint"><span class="tocnumber">3.6</span> <span class="toctext">The Game Mode Blueprint</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Setting_Up_The_Textures.2C_Font_and_Materials"><span class="tocnumber">3.7</span> <span class="toctext">Setting Up The Textures, Font and Materials</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#The_Textures"><span class="tocnumber">3.7.1</span> <span class="toctext">The Textures</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#The_Font"><span class="tocnumber">3.7.2</span> <span class="toctext">The Font</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#The_Materials"><span class="tocnumber">3.7.3</span> <span class="toctext">The Materials</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="#The_Player_Controller_Blueprint"><span class="tocnumber">3.8</span> <span class="toctext">The Player Controller Blueprint</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#The_HUD_Blueprint_Variables_And_Functions"><span class="tocnumber">3.9</span> <span class="toctext">The HUD Blueprint Variables And Functions</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#The_Main_Menu_Level_Blueprint"><span class="tocnumber">3.10</span> <span class="toctext">The Main Menu Level Blueprint</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#The_Lobby_Level_Blueprint"><span class="tocnumber">3.11</span> <span class="toctext">The Lobby Level Blueprint</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#The_HUD_Blueprint_Graph"><span class="tocnumber">3.12</span> <span class="toctext">The HUD Blueprint Graph</span></a>
+<ul>
+<li class="toclevel-3 tocsection-19"><a href="#BuildHostString"><span class="tocnumber">3.12.1</span> <span class="toctext">BuildHostString</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#DeleteStringCharacter"><span class="tocnumber">3.12.2</span> <span class="toctext">DeleteStringCharacter</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#DrawButton"><span class="tocnumber">3.12.3</span> <span class="toctext">DrawButton</span></a>
+<ul>
+<li class="toclevel-4 tocsection-22"><a href="#Draw_The_Button_Texture"><span class="tocnumber">3.12.3.1</span> <span class="toctext">Draw The Button Texture</span></a></li>
+<li class="toclevel-4 tocsection-23"><a href="#Draw_Text_On_Button"><span class="tocnumber">3.12.3.2</span> <span class="toctext">Draw Text On Button</span></a></li>
+<li class="toclevel-4 tocsection-24"><a href="#Add_Hit_Box"><span class="tocnumber">3.12.3.3</span> <span class="toctext">Add Hit Box</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-25"><a href="#Starting_Of_The_Graph_An_Setting_Size_Variables"><span class="tocnumber">3.12.4</span> <span class="toctext">Starting Of The Graph An Setting Size Variables</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="#Drawing_The_Main_Menu"><span class="tocnumber">3.12.5</span> <span class="toctext">Drawing The Main Menu</span></a>
+<ul>
+<li class="toclevel-4 tocsection-27"><a href="#Create_the_background"><span class="tocnumber">3.12.5.1</span> <span class="toctext">Create the background</span></a></li>
+<li class="toclevel-4 tocsection-28"><a href="#Showing_the_IP_that_is_entered"><span class="tocnumber">3.12.5.2</span> <span class="toctext">Showing the IP that is entered</span></a></li>
+<li class="toclevel-4 tocsection-29"><a href="#Drawing_the_Host_Button"><span class="tocnumber">3.12.5.3</span> <span class="toctext">Drawing the Host Button</span></a></li>
+<li class="toclevel-4 tocsection-30"><a href="#Drawing_the_Join_Button"><span class="tocnumber">3.12.5.4</span> <span class="toctext">Drawing the Join Button</span></a></li>
+<li class="toclevel-4 tocsection-31"><a href="#Drawing_the_Quit_Button"><span class="tocnumber">3.12.5.5</span> <span class="toctext">Drawing the Quit Button</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-32"><a href="#Drawing_The_Lobby_Menu"><span class="tocnumber">3.12.6</span> <span class="toctext">Drawing The Lobby Menu</span></a>
+<ul>
+<li class="toclevel-4 tocsection-33"><a href="#Create_the_background_2"><span class="tocnumber">3.12.6.1</span> <span class="toctext">Create the background</span></a></li>
+<li class="toclevel-4 tocsection-34"><a href="#Only_Draw_Start_Button_For_Host"><span class="tocnumber">3.12.6.2</span> <span class="toctext">Only Draw Start Button For Host</span></a></li>
+<li class="toclevel-4 tocsection-35"><a href="#Drawing_the_Start_Button"><span class="tocnumber">3.12.6.3</span> <span class="toctext">Drawing the Start Button</span></a></li>
+<li class="toclevel-4 tocsection-36"><a href="#Drawing_the_Quit_Button_2"><span class="tocnumber">3.12.6.4</span> <span class="toctext">Drawing the Quit Button</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-37"><a href="#Capturing_Player_Input"><span class="tocnumber">3.12.7</span> <span class="toctext">Capturing Player Input</span></a></li>
+<li class="toclevel-3 tocsection-38"><a href="#Handling_The_Clicks"><span class="tocnumber">3.12.8</span> <span class="toctext">Handling The Clicks</span></a>
+<ul>
+<li class="toclevel-4 tocsection-39"><a href="#Event_Receive_Hit_Box_Click"><span class="tocnumber">3.12.8.1</span> <span class="toctext">Event Receive Hit Box Click</span></a></li>
+<li class="toclevel-4 tocsection-40"><a href="#Event_Receive_Hit_Box_Release"><span class="tocnumber">3.12.8.2</span> <span class="toctext">Event Receive Hit Box Release</span></a></li>
+<li class="toclevel-4 tocsection-41"><a href="#Left_Mouse_Button"><span class="tocnumber">3.12.8.3</span> <span class="toctext">Left Mouse Button</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>In this tutorial I will show you how you can make a basic multiplayer HUD for testing and prototyping your game. It will include how to make a basic Main Menu that you can host or join a game by IP address, a "Lobby" to wait for players before starting the game and finally a transition to the actual game level.
+</p>
+<h2><span class="mw-headline" id="Purpose">Purpose</span></h2>
+<p>I am writing this tutorial because I was having a difficult time understanding how to make a basic main menu and getting players all into a level all at the same time. By default if you use the shortcut way, you start up the listen server and then the server may have a couple minutes to get a head start on the other players by the time they get joined up. This is not good for racing or other type game modes where it depends on the players all starting at the same time. I wanted to share a way to make that possible. <i><b>All in blueprints!</b></i>
+</p><p>While it may not be the best solution, It works for quickly prototyping and for working around the current blueprint limitations. I know a lot of changes are coming in this area in the future to make this all easier. But, I hope what you learn today will give you an Idea of what you can do with blueprints with a little creativity. So, lets get started!
+</p>
+<h2><span class="mw-headline" id="Blueprint_Basic_Multiplayer_HUD">Blueprint Basic Multiplayer HUD</span></h2>
+<h3><span class="mw-headline" id="Expectations">Expectations</span></h3>
+<p>I consider this to be an intermediate tutorial. If you are struggling with some of the concepts please review some of the excellent tutorials on blueprints. I really learned a lot from the introduction to blueprint video series. Beginner blueprint tutorials - <a rel="nofollow" class="external free" href="https://www.youtube.com/watch?v=cRhWc2kAhqI&amp;list=PLu7QoDvtZjr0d81niiZahZk0pfO3sJq1U">https://www.youtube.com/watch?v=cRhWc2kAhqI&amp;list=PLu7QoDvtZjr0d81niiZahZk0pfO3sJq1U</a>
+</p><p>This is current with 4.2.1 running the WIN64 editor. <i>Italic text</i>
+</p><p>I am going to start off with a couple of images to give you an idea of where this tutorial will end up.
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:942px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_MainMenuScreenshot.png" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/2/28/BP_ZST_MainMenuScreenshot.png/940px-BP_ZST_MainMenuScreenshot.png" width="940" height="557" class="thumbimage" srcset="https://d26ilriwvtzlb.cloudfront.net/2/28/BP_ZST_MainMenuScreenshot.png 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_MainMenuScreenshot.png" class="internal" title="Enlarge"></a></div>Main Menu Screenshot</div></div></div>
+<div class="thumb tnone"><div class="thumbinner" style="width:942px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_LobbyScreenshot.png" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/b/bc/BP_ZST_LobbyScreenshot.png/940px-BP_ZST_LobbyScreenshot.png" width="940" height="557" class="thumbimage" srcset="https://d26ilriwvtzlb.cloudfront.net/b/bc/BP_ZST_LobbyScreenshot.png 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_LobbyScreenshot.png" class="internal" title="Enlarge"></a></div>Lobby Screenshot</div></div></div>
+<h3><span class="mw-headline" id="Setup">Setup</span></h3>
+<p>I recommend you start with a completely blank blueprint project(no starting assets) on the first run through this tutorial. This will avoid having any extra clutter and allow you to see only the parts that makes this all work.  
+</p><p>That being said there are a couple of things that we need in addition to that:
+</p>
+<ol><li>A menu background image</li>
+<li>A lobby background image</li>
+<li>A button image</li>
+<li>A button image when it is pressed down.</li></ol>
+<p>I made a simple menu background and lobby background in the free image program GIMP 2 and the buttons were taken from the content example blueprint HUD.
+</p>
+<h3><span class="mw-headline" id="Adding_The_Blueprints">Adding The Blueprints</span></h3>
+<p>We will need a few blueprints created:
+</p>
+<ul><li>Create a GameMode class blueprint.
+<ul><li>This defines the classes we use in the HUD.</li></ul></li>
+<li>Create a HUD class blueprint
+<ul><li>This is where most of the HUD logic is contained.</li></ul></li>
+<li>Create a PlayerController class blueprint.
+<ul><li>This is where the control is handed over to the HUD.</li></ul></li>
+<li>Create a Pawn(not DefaultPawn) class blueprint.
+<ul><li>This is a pawn without a movement component. Since there is only need for a mouse in the menu.</li></ul></li>
+<li>Create a second GameMode class blueprint.
+<ul><li>This will be the GameMode blueprint that is switched to when the game actually starts.</li></ul></li></ul>
+<p>TODO: Expand on how to do this.
+</p>
+<h3><span class="mw-headline" id="Creating_The_Levels">Creating The Levels</span></h3>
+<p>We will need 3 levels total for this tutorial.
+</p>
+<ul><li>MainMenu(Where you can choose to host or join a game) - This is an empty level.</li>
+<li>Lobby(Where the host can wait for clients to join) - This is an empty level.</li>
+<li>GameLevel(This is the level that will load when the host presses start) - This level will need player starts etc.
+<ul><li>Click on World Settings and Set the GameMode Override to your second GameMode blueprint, this will allow you to use a different game mode on this map instead of the HUD game mode.</li></ul></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Project_Settings">Project Settings</span></h3>
+<p>Adjust your project settings to use your MainMenu Level to start out in and your HUD GameMode Blueprint that you just created.
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:942px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_ProjectSettings.jpg" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/f/fd/BP_ZST_ProjectSettings.jpg/940px-BP_ZST_ProjectSettings.jpg" width="940" height="569" class="thumbimage" srcset="https://d26ilriwvtzlb.cloudfront.net/f/fd/BP_ZST_ProjectSettings.jpg 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_ProjectSettings.jpg" class="internal" title="Enlarge"></a></div>Project Settings</div></div></div>
+<h3><span class="mw-headline" id="The_Game_Mode_Blueprint">The Game Mode Blueprint</span></h3>
+<p>Open up the HUD GameMode blueprint created earlier and set up the defaults:
+</p>
+<ul><li>Default Pawn Class
+<ul><li>Set this to our HUD Pawn blueprint from the dropdown.</li></ul></li>
+<li>HUD Class
+<ul><li>Set this to our HUD blueprint from the dropdown.</li></ul></li>
+<li>Player Controller Class
+<ul><li>Set this to our HUD Player Controller blueprint from the dropdown.</li></ul></li></ul>
+<div class="thumb tnone"><div class="thumbinner" style="width:942px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_GameModeDefaults.jpg" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/d/d5/BP_ZST_GameModeDefaults.jpg/940px-BP_ZST_GameModeDefaults.jpg" width="940" height="165" class="thumbimage" srcset="https://d3ar1piqh1oeli.cloudfront.net/d/d5/BP_ZST_GameModeDefaults.jpg/1410px-BP_ZST_GameModeDefaults.jpg 1.5x, https://d3ar1piqh1oeli.cloudfront.net/d/d5/BP_ZST_GameModeDefaults.jpg/1880px-BP_ZST_GameModeDefaults.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_GameModeDefaults.jpg" class="internal" title="Enlarge"></a></div>Game Mode Blueprint Defaults</div></div></div>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Setting_Up_The_Textures.2C_Font_and_Materials">Setting Up The Textures, Font and Materials</span></h3>
+<h4><span class="mw-headline" id="The_Textures">The Textures</span></h4>
+<p>We need to Import the two menu backgrounds and the two button textures into our project.
+TODO:More explanation on this process.
+</p>
+<h4><span class="mw-headline" id="The_Font">The Font</span></h4>
+<p>First we need to create a new font:
+</p>
+<ul><li>Click new in the content explorer</li>
+<li>Move the mouse down to Materials &amp; Textures and select "Font"</li>
+<li>Choose a Font for your menu(This will create a new font asset)</li></ul>
+<div class="thumb tnone"><div class="thumbinner" style="width:418px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_CreateFont.jpg" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/5/5e/BP_ZST_CreateFont.jpg" width="416" height="614" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_CreateFont.jpg" class="internal" title="Enlarge"></a></div>Create Font Example</div></div></div>
+<h4><span class="mw-headline" id="The_Materials">The Materials</span></h4>
+<p>To setup the materials we need to right click on each of the menu backgrounds and choose create material.
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:422px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_CreateMaterial.jpg" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/2/23/BP_ZST_CreateMaterial.jpg" width="420" height="573" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_CreateMaterial.jpg" class="internal" title="Enlarge"></a></div>Create Material Example</div></div></div>
+<p>Next, we open up each of those materials and add a connection to "Emissive Color".
+</p><p>This will give the background some lighting.(Otherwise they just show up black)
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:412px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_LobbyMaterial.jpg" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/3/38/BP_ZST_LobbyMaterial.jpg" width="410" height="400" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_LobbyMaterial.jpg" class="internal" title="Enlarge"></a></div>Lobby Material Setup</div></div></div>
+<div class="thumb tnone"><div class="thumbinner" style="width:733px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_MainMenuMaterial.jpg" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/3/3e/BP_ZST_MainMenuMaterial.jpg" width="731" height="396" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_MainMenuMaterial.jpg" class="internal" title="Enlarge"></a></div>Main Menu Material Setup</div></div></div>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="The_Player_Controller_Blueprint">The Player Controller Blueprint</span></h3>
+<p>Open up the Player Controller Blueprint.
+We need to add Event Begin Play here to setup the input to the HUD.
+</p><p>Nodes:
+</p>
+<ul><li>Event Begin Play</li>
+<li>Set Enable Click Events(Box checked)</li>
+<li>Set Show Mouse Cursor(Box checked)</li>
+<li>Enable Input</li>
+<li>Get HUD 
+<ul><li>Get HUD node will connect as the target of the Enable Input node so we can capture some input there.</li>
+<li>Connect a self reference of the Player Controller as well.</li></ul></li></ul>
+<p>TODO: possibly need to explain how to get self reference.
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:942px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_PlayerControllerGraph.jpg" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/0/03/BP_ZST_PlayerControllerGraph.jpg/940px-BP_ZST_PlayerControllerGraph.jpg" width="940" height="285" class="thumbimage" srcset="https://d26ilriwvtzlb.cloudfront.net/0/03/BP_ZST_PlayerControllerGraph.jpg 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_PlayerControllerGraph.jpg" class="internal" title="Enlarge"></a></div>Player Controller Graph</div></div></div>
+<h3><span class="mw-headline" id="The_HUD_Blueprint_Variables_And_Functions">The HUD Blueprint Variables And Functions</span></h3>
+<p>Before we go much further we need to setup some things in the HUD blueprint that are needed elsewhere.
+</p>
+<table class="wikitable">
+<tr>
+<th colspan="6">Variables
+</th></tr>
+<tr>
+<td>TextColor
+</td>
+<td>Linear Color
+</td>
+<td>Color of text on the HUD
+</td>
+<td>Default Value - Set a color and make sure alpha(A) is 1
+</td></tr>
+<tr>
+<td>TextBackgroundColor
+</td>
+<td>Linear Color
+</td>
+<td>Background color behind IP address
+</td>
+<td>Default Value - Set a color and make sure alpha(A) is 1
+</td></tr>
+<tr>
+<td>ButtonSize
+</td>
+<td>Vector2D
+</td>
+<td>Used to store the button size
+</td>
+<td>Default Value - None
+</td></tr>
+<tr>
+<td>ScreenDimensions
+</td>
+<td>Vector2D
+</td>
+<td>Stores the screen x,y size
+</td>
+<td>Default Value - None
+</td></tr>
+<tr>
+<td>ButtonTexture
+</td>
+<td>Texture2D
+</td>
+<td>Reference to the button texture
+</td>
+<td>Default Value - ButtonTexture
+</td></tr>
+<tr>
+<td>ButtonTexturePressed
+</td>
+<td>Texture2D
+</td>
+<td>Reference to the pressed button texture
+</td>
+<td>Default Value - ButtonTexturePressed
+</td></tr>
+<tr>
+<td>MainMenuIsActive
+</td>
+<td>Boolean
+</td>
+<td>True to draw main menu
+</td>
+<td>Default Value - False(No Check)
+</td></tr>
+<tr>
+<td>LobbyIsActive
+</td>
+<td>Boolean
+</td>
+<td>True to draw lobby menu
+</td>
+<td>Default Value - False(No Check)
+</td></tr>
+<tr>
+<td>HostButtonPressed
+</td>
+<td>Boolean
+</td>
+<td>True if we clicked on Host
+</td>
+<td>Default Value - False(No Check)
+</td></tr>
+<tr>
+<td>JoinButtonPressed
+</td>
+<td>Boolean
+</td>
+<td>True if we clicked on Join
+</td>
+<td>Default Value - False(No Check)
+</td></tr>
+<tr>
+<td>QuitButtonPressed
+</td>
+<td>Boolean
+</td>
+<td>True if we clicked on Quit
+</td>
+<td>Default Value - False(No Check)
+</td></tr>
+<tr>
+<td>StartButtonPressed
+</td>
+<td>Boolean
+</td>
+<td>True if we clicked on Start
+</td>
+<td>Default Value - False(No Check)
+</td></tr>
+<tr>
+<td>ipString
+</td>
+<td>String
+</td>
+<td>Stores the IP
+</td>
+<td>Default Value - None
+</td></tr>
+<tr>
+<td>GameLevelName
+</td>
+<td>String
+</td>
+<td>Stores the name of the Game Level
+</td>
+<td>Default Value - Name of the Game Level to load.
+</td></tr>
+<tr>
+<th colspan="6">Functions
+</th></tr>
+<tr>
+<td>DrawButton
+</td>
+<td colspan="3">Function for drawing the button and button text.
+</td></tr>
+<tr>
+<td>BuildHostString
+</td>
+<td colspan="3">Updates ipString variable with user input.
+</td></tr>
+<tr>
+<td>DeleteStringCharacter
+</td>
+<td colspan="3">Deletes the last character from the ipString variable
+</td></tr></table>
+<div class="thumb tnone"><div class="thumbinner" style="width:273px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPTreeList.jpg" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/9/9e/BP_ZST_HUDBPTreeList.jpg" width="271" height="532" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPTreeList.jpg" class="internal" title="Enlarge"></a></div>HUD Blueprint Tree List of Functions and Variables</div></div></div>
+<h3><span class="mw-headline" id="The_Main_Menu_Level_Blueprint">The Main Menu Level Blueprint</span></h3>
+<p>In the MainMenu level blueprint we need to set the HUD variables for the correct HUD to be shown.
+</p><p>Note: Due to a minor bug, if the "Context Sensitive" checkbox is not checked casting won't show
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:942px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_MainMenuLevelBlueprint.jpg" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/6/64/BP_ZST_MainMenuLevelBlueprint.jpg/940px-BP_ZST_MainMenuLevelBlueprint.jpg" width="940" height="177" class="thumbimage" srcset="https://d26ilriwvtzlb.cloudfront.net/6/64/BP_ZST_MainMenuLevelBlueprint.jpg 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_MainMenuLevelBlueprint.jpg" class="internal" title="Enlarge"></a></div>Main Menu Level Blueprint Graph</div></div></div>
+<h3><span class="mw-headline" id="The_Lobby_Level_Blueprint">The Lobby Level Blueprint</span></h3>
+<p>In the Lobby level blueprint we need to set the HUD variables for the correct HUD to be shown.
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:942px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_LobbyLevelBlueprint.png" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/9/97/BP_ZST_LobbyLevelBlueprint.png/940px-BP_ZST_LobbyLevelBlueprint.png" width="940" height="119" class="thumbimage" srcset="https://d26ilriwvtzlb.cloudfront.net/9/97/BP_ZST_LobbyLevelBlueprint.png 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_LobbyLevelBlueprint.png" class="internal" title="Enlarge"></a></div>Lobby Level Blueprint Graph</div></div></div>
+<h3><span class="mw-headline" id="The_HUD_Blueprint_Graph">The HUD Blueprint Graph</span></h3>
+<p>Adding all the images so I can work on organization and explaining them all.
+</p>
+<h4><span class="mw-headline" id="BuildHostString">BuildHostString</span></h4>
+<p>Create a new function called BuildHostString, this will be responsible for adding characters to the ipString Variable.
+</p>
+<ul><li>Add an input for a string value KeyInput.</li>
+<li>Drag a reference to ipString into blueprint graph and select "Get".</li>
+<li>Add an Append node.</li>
+<li>Connect ipString to the A pin.</li>
+<li>Connect our Key Input to the B pin.</li>
+<li>Drag a reference to ipString into blueprint graph and select "Set".</li>
+<li>Connect the return value of Append to set ipString.</li>
+<li>Connect the execute pin from our function call to the set ipstring.</li></ul>
+<div class="thumb tnone"><div class="thumbinner" style="width:627px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPBuildHostString.jpg" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/2/24/BP_ZST_HUDBPBuildHostString.jpg" width="625" height="227" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPBuildHostString.jpg" class="internal" title="Enlarge"></a></div>HUD Blueprint BuildHostString Function</div></div></div>
+<h4><span class="mw-headline" id="DeleteStringCharacter">DeleteStringCharacter</span></h4>
+<p>Create a new function called DeleteStringCharacter, this will be responsible for deleting the last character from the ipString Variable.
+</p>
+<ul><li>Drag the ipString variable onto the graph and select "Get".</li>
+<li>Add a string Len node.(This will get the length of our string)</li>
+<li>Add a Integer - Integer node.</li>
+<li>Put 1 in the bottom pin box.</li>
+<li>Connect the output of Len to the top pin.</li>
+<li>Add a Get Substring node</li>
+<li>Connect ipstring to both Len and Get Substring.</li>
+<li>Drag the ipString variable onto the graph and select "Set".</li>
+<li>Connect the Return Value of Get Substring to the Set ipString.</li>
+<li>Connect the execute pin from our function call to the set ipstring.</li></ul>
+<div class="thumb tnone"><div class="thumbinner" style="width:922px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPDeleteStringCharacter.jpg" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/6/69/BP_ZST_HUDBPDeleteStringCharacter.jpg" width="920" height="229" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPDeleteStringCharacter.jpg" class="internal" title="Enlarge"></a></div>HUD Blueprint DeleteStringCharacter Function</div></div></div>
+<h4><span class="mw-headline" id="DrawButton">DrawButton</span></h4>
+<p>Create a new function called DrawButton, this will be responsible drawing our buttons.
+</p>
+<ul><li>Add an input for ButtonScreenLocation type Vector2D.</li>
+<li>Add an input for ButtonSize type Vector2D.</li>
+<li>Add an input for ButtonText type String.</li>
+<li>Add an input for Texture type Texture.</li>
+<li>Add an input for TextColor type LinearColor.</li></ul>
+<h5><span class="mw-headline" id="Draw_The_Button_Texture">Draw The Button Texture</span></h5>
+<ul><li>Add a Break Vector 2D node.</li>
+<li>Connect The Button Screen Location pin from our function to the In Vec of the Break Vector 2D node.</li>
+<li>Add a Draw Texture Simple node.</li>
+<li>Connect the X and Y pins of the Break Vector 2D node to the Screen X and Screen Y pins of the Draw Texture Simple Node.</li>
+<li>Connect the Execute from our function call to the input execute of the Draw Texture Simple Node.</li></ul>
+<h5><span class="mw-headline" id="Draw_Text_On_Button">Draw Text On Button</span></h5>
+<p>First we need to center the text on the button.
+</p>
+<ul><li>Add a Get Text Size node</li>
+<li>Connect the Text pin to the Button Text pin of our function.</li>
+<li>Add a Vector2D / Float node (Divide)</li>
+<li>Put 2 in the float box of the Vector2D / Float node (Divide) node.</li>
+<li>Connect the the input vector pin of the Vector2D / Float node (Divide) node to the Button Size pin of our function.</li>
+<li>Add a Vector2D + Vector2D node.</li>
+<li>Connect the top input pin of the Vector2D + Vector2D node to the Vector2D / Float node (Divide) node output.</li>
+<li>Connect the bottom input pin of the Vector2D + Vector2D node to the Button Screen Location pin on our function call.</li>
+<li>Add a Make Vector 2D node.</li>
+<li>Connect the Out Width of our Get Text Size node to the X pin.</li>
+<li>Connect the Out Height of our Get Text Size node to the Y pin.</li>
+<li>Add a Vector2D / Float node (Divide)</li>
+<li>Put 2 in the float box of the Vector2D / Float node (Divide) node. </li>
+<li>Connect the Return Value from the Make Vector 2D node to the input vector pin of the Vector2D / Float node (Divide) node.</li>
+<li>Add a Vector2D - Vector2D node.</li>
+<li>Connect the top input pin of the Vector2D - Vector2D node to the output of the Vector2D + Vector2D node.</li>
+<li>Connect the bottom input pin of the Vector2D - Vector2D node to the output of the Vector2D / Float node (Divide) node.</li>
+<li>Add a Break Vector 2D node.</li>
+<li>Connect the input pin of the Break Vector 2D node to the output pin of the Vector2D - Vector2D node.</li></ul>
+<p>This X,Y now we will use to draw our text.
+</p>
+<ul><li>Add a Draw Text Node.</li>
+<li>Connect the X and Y pins of our Break Vector 2D that we just made to the Screen X and Y pins of the Draw Text Node.</li>
+<li>Connect the Text Color pin of the Draw Text Node to the Text Color pin from our function call.</li>
+<li>Connect the Text pin of the Draw Text Node to the Button Text pin from our function call.</li>
+<li>Connect the input execute pin of the Draw Text Node to the output execute pin from our Draw Texture Simple node.</li></ul>
+<p>And that is it for the draw text.
+</p>
+<h5><span class="mw-headline" id="Add_Hit_Box">Add Hit Box</span></h5>
+<p>To finish this function we will add a Hit box to capture the clicks.
+</p>
+<ul><li>Add an Add Hit Box node.</li>
+<li>Connect the Position pin of the Add Hit Box node to the Button Screen Location pin of our function call.</li>
+<li>Connect the Size pin of the Add Hit Box node to the Button Size pin of our function call.</li>
+<li>Connect the Name pin of the Add Hit Box node to the Button Text pin of our function call(This will auto convert from string to name by adding a convert node).</li>
+<li>Connect the input execute pin of the Add Hit Box node to the output execute pin of the Draw Text node.</li></ul>
+<p><br />
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:942px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_DrawButtonFunction.png" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/3/36/BP_ZST_DrawButtonFunction.png/940px-BP_ZST_DrawButtonFunction.png" width="940" height="623" class="thumbimage" srcset="https://d26ilriwvtzlb.cloudfront.net/3/36/BP_ZST_DrawButtonFunction.png 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_DrawButtonFunction.png" class="internal" title="Enlarge"></a></div>HUD Blueprint Draw Button Function</div></div></div>
+<h4><span class="mw-headline" id="Starting_Of_The_Graph_An_Setting_Size_Variables">Starting Of The Graph An Setting Size Variables</span></h4>
+<ul><li>Add node Event Receive Draw HUD.</li>
+<li>Add a Make Vector 2D node.</li>
+<li>Connect Size X and Size Y to Make Vector 2D.</li>
+<li>Drag the ScreenDimensions variable onto the graph and select "Set".</li>
+<li>Connect the Return Value to the Set Screen Dimensions. </li>
+<li>Drag a reference from the ButtonTexture variable and choose "Get"</li>
+<li>Add two nodes:
+<ul><li>Get Size X</li>
+<li>Get Size Y</li></ul></li>
+<li>Add a Make Vector 2D node.</li>
+<li>Connect Return Values from Get Size X and Get Size Y to the Make Vector 2D node.</li>
+<li>Drag the ButtonSize variable onto the graph and select "Set".</li>
+<li>Connect the Return Value Set Button Size.</li>
+<li>Add a Branch node.</li>
+<li>Drag the MainMenuIsActive variable onto the graph and select "Get".</li>
+<li>Connect Main Menu Is Active to the condition pin of the Branch node.</li>
+<li>The true branch will go to the draw main menu portion of the blueprint.</li>
+<li>The false branch will go on to the draw lobby portion of the blueprint.</li></ul>
+<div class="thumb tnone"><div class="thumbinner" style="width:942px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPDrawHUD1.jpg" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/7/73/BP_ZST_HUDBPDrawHUD1.jpg/940px-BP_ZST_HUDBPDrawHUD1.jpg" width="940" height="238" class="thumbimage" srcset="https://d26ilriwvtzlb.cloudfront.net/7/73/BP_ZST_HUDBPDrawHUD1.jpg 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPDrawHUD1.jpg" class="internal" title="Enlarge"></a></div>HUD Blueprint Starting The Graph</div></div></div>
+<h4><span class="mw-headline" id="Drawing_The_Main_Menu">Drawing The Main Menu</span></h4>
+<p>If our branch is true for MainMenuIsActive we want to draw the main menu.
+</p>
+<h5><span class="mw-headline" id="Create_the_background">Create the background</span></h5>
+<ul><li>Drag ScreenDimensions Variable onto the graph and select "Get".</li>
+<li>Add a Break Vector 2D node</li>
+<li>Connect Screen Dimensions to the In Vec.</li>
+<li>Add a Draw Material Simple node</li>
+<li>Connect the X of the Break Vector 2D to the Screen W pin.</li>
+<li>Connect the Y of the Break Vector 2D to the Screen H pin.</li>
+<li>Select the drop down under material and set it to your Main Menu background material.</li></ul>
+<h5><span class="mw-headline" id="Showing_the_IP_that_is_entered">Showing the IP that is entered</span></h5>
+<ul><li>Drag TextBackgroundColor Variable onto the graph and select "Get".</li>
+<li>Add 4 Make Literal Float nodes.</li>
+<li>Add a Draw Rect node.</li>
+<li>Connect the Text Background Color to the Rect Color pin.</li>
+<li>Connect the 4 Literal float nodes to the Screen X,Y,W and H pins.</li>
+<li>Add a Draw Text node</li>
+<li>Drag IpString onto the graph and select "Get"</li>
+<li>Connect the IpString to the Text pin.</li>
+<li>Drag TextColor onto the graph and select "Get"</li>
+<li>Connect the TextColor to the Text Color pin.</li>
+<li>Connect the same Screen X and Y you connected the Screen X and Y to on the Draw Rect node to the Screen X and Y on the Draw Text node.</li>
+<li>Set the Make Literal Float that is connected to Screen X to 400(This can be adjusted later)</li>
+<li>Set the Make Literal Float that is connected to Screen Y to 350(This can be adjusted later)</li>
+<li>Set the Make Literal Float that is connected to Screen W to 400(This can be adjusted later)</li>
+<li>Set the Make Literal Float that is connected to Screen H to 50 (This can be adjusted later)</li></ul>
+<h5><span class="mw-headline" id="Drawing_the_Host_Button">Drawing the Host Button</span></h5>
+<ul><li>Add a Make Vector 2D node</li>
+<li>Set the X to 10 and the Y to 200</li>
+<li>Drag the ButtonTexture variable onto the graph and Select "Get".</li>
+<li>Drag the ButtonTexturePressed variable onto the graph and Select "Get".</li>
+<li>Drag the HostButtonPressed variable onto the graph and Select "Get".</li>
+<li>Add a Select Node</li>
+<li>Connect Button Texture to the Option 0 pin.</li>
+<li>Connect Button Texture Pressed to the Option 1 pin.</li>
+<li>Connect Host Button Pressed to the Index pin.</li>
+<li>Drag the ButtonSize variable onto the graph and Select "Get"</li>
+<li>Drag the TextColor variable onto the graph and Select "Get"</li>
+<li>Add a Draw Button node.</li>
+<li>Connect the Button Size variable to the Button Size pin on the Draw Button node.</li>
+<li>Connect the Text Color variable to the Text Color pin on the Draw Button node.</li>
+<li>Connect the Return Value of the Select node to the Texture pin on the Draw Button node.</li>
+<li>Connect the Return Value of the Make Vector 2D node to the Button Screen Location pin on the Draw Button node.</li>
+<li>Connect the execute pin from the Draw Text Node to the Draw Button Node</li>
+<li>Print "Host" in the Button Text field</li></ul>
+<h5><span class="mw-headline" id="Drawing_the_Join_Button">Drawing the Join Button</span></h5>
+<ul><li>Add a Make Vector 2D node</li>
+<li>Set the X to 10 and the Y to 300</li>
+<li>Drag the ButtonTexture variable onto the graph and Select "Get".</li>
+<li>Drag the ButtonTexturePressed variable onto the graph and Select "Get".</li>
+<li>Drag the JoinButtonPressed variable onto the graph and Select "Get".</li>
+<li>Add a Select Node</li>
+<li>Connect Button Texture to the Option 0 pin.</li>
+<li>Connect Button Texture Pressed to the Option 1 pin.</li>
+<li>Connect Join Button Pressed to the Index pin.</li>
+<li>Drag the ButtonSize variable onto the graph and Select "Get"</li>
+<li>Drag the TextColor variable onto the graph and Select "Get"</li>
+<li>Add a Draw Button node.</li>
+<li>Connect the Button Size variable to the Button Size pin on the Draw Button node.</li>
+<li>Connect the Text Color variable to the Text Color pin on the Draw Button node</li>
+<li>Connect the Return Value of the Select node to the Texture pin on the Draw Button node.</li>
+<li>Connect the Return Value of the Make Vector 2D node to the Button Screen Location pin on the Draw Button node.</li>
+<li>Connect the execute pin from the Draw Button Node to the Draw Button Node</li>
+<li>Print "Join" in the Button Text field</li></ul>
+<h5><span class="mw-headline" id="Drawing_the_Quit_Button">Drawing the Quit Button</span></h5>
+<ul><li>Add a Make Vector 2D node</li>
+<li>Set the X to 10 and the Y to 400</li>
+<li>Drag the ButtonTexture variable onto the graph and Select "Get".</li>
+<li>Drag the ButtonTexturePressed variable onto the graph and Select "Get".</li>
+<li>Drag the QuitButtonPressed variable onto the graph and Select "Get".</li>
+<li>Add a Select Node</li>
+<li>Connect Button Texture to the Option 0 pin.</li>
+<li>Connect Button Texture Pressed to the Option 1 pin.</li>
+<li>Connect Quit Button Pressed to the Index pin.</li>
+<li>Drag the ButtonSize variable onto the graph and Select "Get"</li>
+<li>Drag the TextColor variable onto the graph and Select "Get"</li>
+<li>Add a Draw Button node.</li>
+<li>Connect the Button Size variable to the Button Size pin on the Draw Button node.</li>
+<li>Connect the Text Color variable to the Text Color pin on the Draw Button node</li>
+<li>Connect the Return Value of the Select node to the Texture pin on the Draw Button node.</li>
+<li>Connect the Return Value of the Make Vector 2D node to the Button Screen Location pin on the Draw Button node.</li>
+<li>Connect the execute pin from the Draw Button Node to the Draw Button Node</li>
+<li>Print "Quit" in the Button Text field</li></ul>
+<div class="thumb tnone"><div class="thumbinner" style="width:942px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPDrawMainMenuFull.jpg" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/3/3b/BP_ZST_HUDBPDrawMainMenuFull.jpg/940px-BP_ZST_HUDBPDrawMainMenuFull.jpg" width="940" height="122" class="thumbimage" srcset="https://d3ar1piqh1oeli.cloudfront.net/3/3b/BP_ZST_HUDBPDrawMainMenuFull.jpg/1410px-BP_ZST_HUDBPDrawMainMenuFull.jpg 1.5x, https://d3ar1piqh1oeli.cloudfront.net/3/3b/BP_ZST_HUDBPDrawMainMenuFull.jpg/1880px-BP_ZST_HUDBPDrawMainMenuFull.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPDrawMainMenuFull.jpg" class="internal" title="Enlarge"></a></div>HUD Blueprint Drawing The Main Menu</div></div></div>
+<h4><span class="mw-headline" id="Drawing_The_Lobby_Menu">Drawing The Lobby Menu</span></h4>
+<ul><li>Add a Branch node to the graph</li>
+<li>Drag the LobbyIsActive variable onto the graph and Select "Get"</li>
+<li>Connect the Lobby Is Active to the Condition pin of the Branch node.</li></ul>
+<p>If our branch is true for LobbyIsActive we want to draw the Lobby menu.
+</p>
+<h5><span class="mw-headline" id="Create_the_background_2">Create the background</span></h5>
+<ul><li>Drag ScreenDimensions Variable onto the graph and select "Get".</li>
+<li>Add a Break Vector 2D node</li>
+<li>Connect Screen Dimensions to the In Vec.</li>
+<li>Add a Draw Material Simple node</li>
+<li>Connect the X of the Break Vector 2D to the Screen W pin.</li>
+<li>Connect the Y of the Break Vector 2D to the Screen H pin.</li>
+<li>Select the drop down under material and set it to your Lobby background material.</li>
+<li>Connect the true execute pin from the Lobby Is Active Branch node to the Draw Material Simple execute.</li></ul>
+<h5><span class="mw-headline" id="Only_Draw_Start_Button_For_Host">Only Draw Start Button For Host</span></h5>
+<ul><li>Add a Is Server Node.</li>
+<li>Add a Branch node.</li>
+<li>Connect the Return Value from the Is Server node to the Condition pin of the Branch.</li>
+<li>Connect the Execute pin to the Draw Material Simple Node.</li></ul>
+<h5><span class="mw-headline" id="Drawing_the_Start_Button">Drawing the Start Button</span></h5>
+<ul><li>Add a Make Vector 2D node</li>
+<li>Set the X to 10 and the Y to 300</li>
+<li>Drag the ButtonTexture variable onto the graph and Select "Get".</li>
+<li>Drag the ButtonTexturePressed variable onto the graph and Select "Get".</li>
+<li>Drag the StartButtonPressed variable onto the graph and Select "Get".</li>
+<li>Add a Select Node</li>
+<li>Connect Button Texture to the Option 0 pin.</li>
+<li>Connect Button Texture Pressed to the Option 1 pin.</li>
+<li>Connect Start Button Pressed to the Index pin.</li>
+<li>Drag the ButtonSize variable onto the graph and Select "Get"</li>
+<li>Drag the TextColor variable onto the graph and Select "Get"</li>
+<li>Add a Draw Button node.</li>
+<li>Connect the Button Size variable to the Button Size pin on the Draw Button node.</li>
+<li>Connect the Text Color variable to the Text Color pin on the Draw Button node</li>
+<li>Connect the Return Value of the Select node to the Texture pin on the Draw Button node.</li>
+<li>Connect the Return Value of the Make Vector 2D node to the Button Screen Location pin on the Draw Button node.</li>
+<li>Connect the execute pin from the Is Server Branch True to the Draw Button Node</li>
+<li>Print "Start" in the Button Text field</li></ul>
+<h5><span class="mw-headline" id="Drawing_the_Quit_Button_2">Drawing the Quit Button</span></h5>
+<ul><li>Add a Make Vector 2D node</li>
+<li>Set the X to 10 and the Y to 400</li>
+<li>Drag the ButtonTexture variable onto the graph and Select "Get".</li>
+<li>Drag the ButtonTexturePressed variable onto the graph and Select "Get".</li>
+<li>Drag the QuitButtonPressed variable onto the graph and Select "Get".</li>
+<li>Add a Select Node</li>
+<li>Connect Button Texture to the Option 0 pin.</li>
+<li>Connect Button Texture Pressed to the Option 1 pin.</li>
+<li>Connect Quit Button Pressed to the Index pin.</li>
+<li>Drag the ButtonSize variable onto the graph and Select "Get"</li>
+<li>Drag the TextColor variable onto the graph and Select "Get"</li>
+<li>Add a Draw Button node.</li>
+<li>Connect the Button Size variable to the Button Size pin on the Draw Button node.</li>
+<li>Connect the Text Color variable to the Text Color pin on the Draw Button node</li>
+<li>Connect the Return Value of the Select node to the Texture pin on the Draw Button node.</li>
+<li>Connect the Return Value of the Make Vector 2D node to the Button Screen Location pin on the Draw Button node.</li>
+<li>Print "Quit" in the Button Text field </li>
+<li>Connect the execute pin from the Draw Button Node and the Is Server Branch False to the Draw Button Node</li></ul>
+<div class="thumb tnone"><div class="thumbinner" style="width:942px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPDrawLobbyFull.jpg" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/9/9b/BP_ZST_HUDBPDrawLobbyFull.jpg/940px-BP_ZST_HUDBPDrawLobbyFull.jpg" width="940" height="222" class="thumbimage" srcset="https://d3ar1piqh1oeli.cloudfront.net/9/9b/BP_ZST_HUDBPDrawLobbyFull.jpg/1410px-BP_ZST_HUDBPDrawLobbyFull.jpg 1.5x, https://d3ar1piqh1oeli.cloudfront.net/9/9b/BP_ZST_HUDBPDrawLobbyFull.jpg/1880px-BP_ZST_HUDBPDrawLobbyFull.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPDrawLobbyFull.jpg" class="internal" title="Enlarge"></a></div>HUD Blueprint Drawing The Lobby</div></div></div>
+<h4><span class="mw-headline" id="Capturing_Player_Input">Capturing Player Input</span></h4>
+<p>This part is a little bit of blueprint trickery since we have no real way of handling text input yet. This will change with Unreal Motion Graphics when it is released.
+</p>
+<ul><li>Add a Key Event for each of the keys 1,2,3,4,5,6,7,8,9,0 and ".".</li>
+<li>Add a Build Host String Function for each of those keys.</li>
+<li>Match the Key Input string to each Key Event and connect the Pressed execute pin so you have pairs of Key Events and Build host string.</li>
+<li>Add two more Key events for "Backspace" and "Delete".</li>
+<li>Add a Delete String Character Function.</li>
+<li>Connect the Pressed execute from both Key Events to the Delete String Character Function.</li></ul>
+<p>And that should be all we need for the keyboard input.
+When you press a number or . it should add it to the ipString variable.
+When you press Backspace or Delete it should remove the last character from the ipString variable.
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:421px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_CaptureInputIPFull.jpg" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/5/53/BP_ZST_CaptureInputIPFull.jpg" width="419" height="1358" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_CaptureInputIPFull.jpg" class="internal" title="Enlarge"></a></div>HUD Blueprint Capturing Input</div></div></div>
+<h4><span class="mw-headline" id="Handling_The_Clicks">Handling The Clicks</span></h4>
+<p>This is where we will deal with clicks of the mouse on our menu.
+We are going to need three Events:
+</p>
+<ol><li>Event Receive Hit Box Click</li>
+<li>Event Receive Hit Box Release</li>
+<li>Left Mouse Button</li></ol>
+<h5><span class="mw-headline" id="Event_Receive_Hit_Box_Click">Event Receive Hit Box Click</span></h5>
+<ul><li>Add an Event Receive Hit Box Click node to the graph.</li></ul>
+<p>This is where the auto naming of our button hit boxes is convenient, we can just switch on whatever text we set on the button.
+</p>
+<ul><li>Add a Switch on Name node.</li>
+<li>Connect the Box Name pin from the Event Receive Hit Box Click to the Selection pin of the Switch on Name Node.</li>
+<li>Under the details on the left add our button names as pins. Host, Join, Quit and Start.</li></ul>
+<p>This should give a Switch on Name with 4 execute outputs with the names of our buttons.
+For each execute pin on the Switch on Name node we need to set our buttons as pressed when it gets the click event.
+</p>
+<ul><li>Drag HostButtonPressed variable onto the graph and select "Set".</li>
+<li>Drag JoinButtonPressed variable onto the graph and select "Set".</li>
+<li>Drag QuitButtonPressed variable onto the graph and select "Set".</li>
+<li>Drag StartButtonPressed variable onto the graph and select "Set".</li>
+<li>Connect each execute pin to the corresponding set variable and check the boxes in all four.</li></ul>
+<p>This will tell our HUD that a button was pressed and switch the texture.
+</p>
+<h5><span class="mw-headline" id="Event_Receive_Hit_Box_Release">Event Receive Hit Box Release</span></h5>
+<p>This is where the actual menu work gets done. We need to set up a console command for each button. 
+We need to recreate the switch node from the Event Receive Hit Box Click.
+</p>
+<ul><li>Add a Switch on Name node.</li>
+<li>Connect the Box Name pin from the Event Receive Hit Box Released to the Selection pin of the Switch on Name Node.</li>
+<li>Under the details on the left add our button names as pins. Host, Join, Quit and Start.</li></ul>
+<p>For the Host execute pin the string we want to build is Travel Lobby?Listen and pass that to a Execute Console Command node.
+</p>
+<ul><li>Add a Make Literal String node.</li>
+<li>Enter "Travel "(without the quotes but with the space) into the Value box of the Make Literal String Node.</li></ul>
+<p>This string will be used for both host and join.
+</p>
+<ul><li>Add a Make Literal String node.</li>
+<li>Enter "Lobby?Listen"(without the quotes) into the Value box of the Make Literal String Node.</li></ul>
+<p>Lobby is the name of the map we want to go to and&#160;?listen means we want to start a listen server.
+</p>
+<ul><li>Add an Append string node.</li>
+<li>Connect The Travel Literal String node to the A pin of the Append node.</li>
+<li>Connect the Lobby?Listen Literal String node to the B pin of the Append Node.</li>
+<li>Add an Execute Console Command node.</li>
+<li>Connect the Return Value pin of the Append node to the Command pin of the Execute Console Command Node.</li>
+<li>Connect the Input Execute pin of the Execute Console Command node  to the Host pin of the Switch on Name for the Event Receive Hit Box Release.</li></ul>
+<p>Now for the Join Button.
+</p>
+<ul><li>Drag ipString variable onto the graph and select "Get".</li>
+<li>Add an Append string node.</li>
+<li>Connect the ipString variable to the B pin of the Append node.</li>
+<li>Connect the Travel Literal String Return Value pin to the A pin of the Append Node.</li></ul>
+<p>This should build us the command "Travel " and then our IP the player entered.
+</p>
+<ul><li>Add an Execute Console Command node.</li>
+<li>Connect the Return Value pin of the Append node to the Command pin of the Execute Console Command node.</li>
+<li>Connect the Input Execute pin of the Execute Console Command node to the Join pin of the Switch on Name for the Event Receive Hit Box Release.</li></ul>
+<p>Quit button is easy.
+</p>
+<ul><li>Add an Execute Console Command node.</li>
+<li>Type Exit into the Command Box of the Execute Console Command node.</li>
+<li>Connect the Input Execute pin of the Execute Console Command node to the Quit pin of the Switch on Name for the Event Receive Hit Box Release.</li></ul>
+<p>And Our last button is the Start button, this button will move the host and any connected players out of the lobby and into the Actual Game Level.
+</p>
+<ul><li>Drag LobbyIsActive variable onto the graph and select "Set".</li>
+<li>Drag MainMenuIsActive variable onto the graph and select "Set".</li>
+<li>Make sure both boxes are unchecked.</li></ul>
+<p>We have now started the Game so both menus are not being drawn until we return to one of the menu levels.
+</p>
+<ul><li>Add a Make Literal String node</li>
+<li>Enter "ServerTravel "(No quotes but the space is needed) into the Value box of the Make Literal String node.</li>
+<li>Drag GameLevelName variable onto the graph and select "Get".</li>
+<li>Add an Append string node.</li>
+<li>Connect the ServerTravel Literal String Return Value pin to the A pin of the Append node.</li>
+<li>Connect the Game Level Name pin to the B pin of the Append node.</li>
+<li>Add an Execute Console Command node.</li>
+<li>Connect the Return Value pin of the Append node to the Command pin of the Execute Console Command node.</li>
+<li>Connect the Input Execute pin of the Execute Console Command node to the Start pin of the Switch on Name for the Event Receive Hit Box Release.</li></ul>
+<p>While we are here double check that you added the name of your game level that you want to load when start is pressed to the default value of the GameLevelName variable. 
+</p>
+<h5><span class="mw-headline" id="Left_Mouse_Button">Left Mouse Button</span></h5>
+<p>We want to make sure that no matter where the mouse is when the button is released that we reset all buttons so none of them look stuck down. This we will set with the Left Mouse Button Event from the Released execute pin.
+</p>
+<ul><li>Drag HostButtonPressed variable onto the graph and select "Set".</li>
+<li>Drag JoinButtonPressed variable onto the graph and select "Set".</li>
+<li>Drag QuitButtonPressed variable onto the graph and select "Set".</li>
+<li>Drag StartButtonPressed variable onto the graph and select "Set".</li>
+<li>Connect all four of the Set ButtonPressed nodes to each other then to the Released pin of the Left Mouse Button Node and uncheck all the boxes.</li></ul>
+<p>That should do it for the mouse clicks.
+</p>
+<div class="thumb tnone"><div class="thumbinner" style="width:942px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPHandleClicksFull.jpg" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/9/94/BP_ZST_HUDBPHandleClicksFull.jpg/940px-BP_ZST_HUDBPHandleClicksFull.jpg" width="940" height="351" class="thumbimage" srcset="https://d3ar1piqh1oeli.cloudfront.net/9/94/BP_ZST_HUDBPHandleClicksFull.jpg/1410px-BP_ZST_HUDBPHandleClicksFull.jpg 1.5x, https://d3ar1piqh1oeli.cloudfront.net/9/94/BP_ZST_HUDBPHandleClicksFull.jpg/1880px-BP_ZST_HUDBPHandleClicksFull.jpg 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BP_ZST_HUDBPHandleClicksFull.jpg" class="internal" title="Enlarge"></a></div>HUD Blueprint Handling Clicks</div></div></div>
+<p><a rel="nofollow" class="external text" href="https://wiki.unrealengine.com/User:ZombieSoul">Original Tutorial by ZombieSoul</a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20200401010546
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.236 seconds
+Real time usage: 7.485 seconds
+Preprocessor visited node count: 168/1000000
+Preprocessor generated node count: 218/1000000
+Post‐expand include size: 41/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.210      1 -total
+ 51.13%    1.130      1 Template:Warning
+ 40.59%    0.897      1 Template:Rating
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:323-0!canonical and timestamp 20200401010538 and revision id 647
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Basic_Multiplayer_HUD&amp;oldid=647">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Blueprint_Basic_Multiplayer_HUD&amp;oldid=647</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Blueprint" title="Category:Blueprint">Blueprint</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Community_Created_Content" title="Category:Community Created Content">Community Created Content</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0fabd7d8c0a1277bf"><meta name="worker" content="98"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="https://mediawikiv2-website-prod05.ol.epicgames.net/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.236","walltime":"7.485","ppvisitednodes":{"value":168,"limit":1000000},"ppgeneratednodes":{"value":218,"limit":1000000},"postexpandincludesize":{"value":41,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    2.210      1 -total"," 51.13%    1.130      1 Template:Warning"," 40.59%    0.897      1 Template:Rating"]},"cachereport":{"timestamp":"20200401010546","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":100});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":142,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

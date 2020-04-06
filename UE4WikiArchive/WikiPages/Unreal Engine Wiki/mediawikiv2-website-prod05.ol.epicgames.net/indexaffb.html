@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Asset_Creation_and_Import_Troubleshooting&oldid=807 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:47:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>Asset Creation and Import Troubleshooting - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Asset_Creation_and_Import_Troubleshooting","wgTitle":"Asset Creation and Import Troubleshooting","wgCurRevisionId":807,"wgRevisionId":807,"wgArticleId":403,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials","Epic Created Content","Troubleshooting","Material","Import","FBX","Asset Creation"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Asset_Creation_and_Import_Troubleshooting","wgRelevantArticleId":403,"wgRequestId":"3210e428153e908dbbf3753b","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.page.gallery.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.page.gallery","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3b38.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.page.gallery.styles%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://mediawikiv2-website-prod05.ol.epicgames.net/api.php?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Asset_Creation_and_Import_Troubleshooting rootpage-Asset_Creation_and_Import_Troubleshooting skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0d0405fab30c4bd94"><meta name="worker" content="206"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Asset_Creation_and_Import_Troubleshooting&oldid=807 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:47:30 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Asset+Creation+and+Import+Troubleshooting&amp;returntoquery=oldid%3D807" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="https://mediawikiv2-website-prod05.ol.epicgames.net/" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Asset_Creation_and_Import_Troubleshooting" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Talk:Asset_Creation_and_Import_Troubleshooting&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Asset_Creation_and_Import_Troubleshooting">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Asset_Creation_and_Import_Troubleshooting&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Asset_Creation_and_Import_Troubleshooting&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Asset Creation and Import Troubleshooting</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Documentation_and_Links"><span class="tocnumber">1</span> <span class="toctext"><b>Documentation and Links</b></span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Frequently_Asked_Questions"><span class="tocnumber">2</span> <span class="toctext"><b>Frequently Asked Questions</b></span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#General_Questions"><span class="tocnumber">2.1</span> <span class="toctext"><b>General Questions</b></span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#What_are_Degenerate_Tangents_and_what_does_this_error_message_mean.3F"><span class="tocnumber">2.1.1</span> <span class="toctext">What are Degenerate Tangents and what does this error message mean?</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Why_won.27t_UAssets_show_up_in_the_folder.2C_or_why_can.27t_I_import_UAssets_directly.3F"><span class="tocnumber">2.1.2</span> <span class="toctext">Why won't UAssets show up in the folder, or why can't I import UAssets directly?</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Why_does_my_model_take_so_long_to_import.2C_or_why_does_the_editor_freeze_when_I_import_my_mesh.3F"><span class="tocnumber">2.1.3</span> <span class="toctext">Why does my model take so long to import, or why does the editor freeze when I import my mesh?</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Why_is_my_mesh_see_through.2C_or_why_are_the_faces_on_my_mesh_flipped.3F"><span class="tocnumber">2.1.4</span> <span class="toctext">Why is my mesh see through, or why are the faces on my mesh flipped?</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Is_there_a_poly_count_limitation.3F"><span class="tocnumber">2.1.5</span> <span class="toctext">Is there a poly count limitation?</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Why_is_my_mesh_facing_on_the_wrong_axis.3F"><span class="tocnumber">2.1.6</span> <span class="toctext">Why is my mesh facing on the wrong axis?</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Why_is_my_mesh_so_small.2Flarge_when_I_import.3F"><span class="tocnumber">2.1.7</span> <span class="toctext">Why is my mesh so small/large when I import?</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#How_do_I_check_the_UVs_for_my_mesh.3F"><span class="tocnumber">2.1.8</span> <span class="toctext">How do I check the UVs for my mesh?</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Why_do_I_need_to_UV_my_mesh_for_texture_mapping.3F"><span class="tocnumber">2.1.9</span> <span class="toctext">Why do I need to UV my mesh for texture mapping?</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Why_does_my_FBX_not_apply_all_the_textures_or_shaders_that_were_made_in_my_modeling_program.3F"><span class="tocnumber">2.1.10</span> <span class="toctext">Why does my FBX not apply all the textures or shaders that were made in my modeling program?</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#How_do_I_Import_a_.apx_CLOTH_file_created_with_NVIDIA.27s_tools.3F"><span class="tocnumber">2.1.11</span> <span class="toctext">How do I Import a .apx CLOTH file created with NVIDIA's tools?</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#How_can_I_use_my_Pivot_from_my_modeling_program_instead_of_it_being_offset.3F"><span class="tocnumber">2.1.12</span> <span class="toctext">How can I use my Pivot from my modeling program instead of it being offset?</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Why_can_I_walk_through_my_mesh.2C_or_Why_does_my_collision_look_wrong_when_I_import_my_mesh.3F"><span class="tocnumber">2.1.13</span> <span class="toctext">Why can I walk through my mesh, or Why does my collision look wrong when I import my mesh?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-17"><a href="#Skeletal_Mesh"><span class="tocnumber">2.2</span> <span class="toctext"><b>Skeletal Mesh</b></span></a>
+<ul>
+<li class="toclevel-3 tocsection-18"><a href="#COMING_SOON.21"><span class="tocnumber">2.2.1</span> <span class="toctext">COMING SOON!</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-19"><a href="#Texture_or_Material"><span class="tocnumber">2.3</span> <span class="toctext"><b>Texture or Material</b></span></a>
+<ul>
+<li class="toclevel-3 tocsection-20"><a href="#When_I_import_a_texture_with_an_Alpha.2C_why_doesn.27t_the_Alpha_show.3F"><span class="tocnumber">2.3.1</span> <span class="toctext">When I import a texture with an Alpha, why doesn't the Alpha show?</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#What_does_the_Power_of_2_warning_mean_when_I_import_my_image.3F"><span class="tocnumber">2.3.2</span> <span class="toctext">What does the Power of 2 warning mean when I import my image?</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="#Why_can.27t_I_use_a_texture_resolution_larger_than_8192_in-game.3F"><span class="tocnumber">2.3.3</span> <span class="toctext">Why can't I use a texture resolution larger than 8192 in-game?</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="#Why_does_my_texture.2Fmaterial_look_low_quality.2Fblurry_in_the_game.3F"><span class="tocnumber">2.3.4</span> <span class="toctext">Why does my texture/material look low quality/blurry in the game?</span></a></li>
+<li class="toclevel-3 tocsection-24"><a href="#Why_does_the_editor_freeze.2Ftake_a_long_time_when_I_try_to_open_my_asset.3F"><span class="tocnumber">2.3.5</span> <span class="toctext">Why does the editor freeze/take a long time when I try to open my asset?</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Documentation_and_Links"><b>Documentation and Links</b></span></h2>
+<p><a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/AssetCreation/index.html">https://docs.unrealengine.com/latest/INT/Engine/Content/AssetCreation/index.html</a>
+<a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/BestPractices/">https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/BestPractices/</a>
+<a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/ImportOptions/">https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/ImportOptions/</a>
+<a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/StaticMeshes/">https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/StaticMeshes/</a>
+<a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/Materials/">https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/Materials/</a>
+<a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/">https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/</a>
+<a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/Animations/">https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/Animations/</a>
+<a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/SkeletalMeshes/">https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/SkeletalMeshes/</a>
+<a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Shared/Editor/FbxErrors/">https://docs.unrealengine.com/latest/INT/Shared/Editor/FbxErrors/</a>
+<a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/MorphTargets/">https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/MorphTargets/</a>
+<a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/ContentStandards/">https://docs.unrealengine.com/latest/INT/Engine/Content/ContentStandards/</a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Frequently_Asked_Questions"><b>Frequently Asked Questions</b></span></h2>
+<h3><span class="mw-headline" id="General_Questions"><b>General Questions</b></span></h3>
+<h4><span class="mw-headline" id="What_are_Degenerate_Tangents_and_what_does_this_error_message_mean.3F">What are Degenerate Tangents and what does this error message mean?</span></h4>
+<p>If you've seen the warning message "Object has Degenerate Tangent bases which will results in incorrect shading" you may be wondering what this means exactly. 
+</p><p>As of Unreal Engine version 4.7 and higher, the editor will now use MikkTSpace tangents by default. This can easily be changed in the Import Options window by changing the <b>Normal Generation Method</b> or it can be  changed in the <b>Build Settings</b> from the Static Mesh Editor. 
+</p><p>The main difference between the previous method and MikkTSpace is that you have to make sure that you're static mesh asset has been properly UV mapped. If not, it can produce the error message mentioned above and will not provide accurate lighting results, even though you may not see any issue with the way the mesh is rendered. It it up to your discretion if you are happy with the results or need to use the alternative built-in method of tangent calculation over MikkTSpace.
+</p><p>In the example here the cube's face has been inset causing the UV's to no longer be properly mapped. This is the result of the tangent calculation with each method. 
+</p>
+<ul class="gallery mw-gallery-packed-hover">
+		<li class="gallerybox" style="width: 351.33333333333px"><div style="width: 351.33333333333px">
+			<div class="thumb" style="width: 349.33333333333px;"><div style="margin:0px auto;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:MikkTSpace.png" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/2/2e/MikkTSpace.png/524px-MikkTSpace.png" width="350" height="300" srcset="https://d26ilriwvtzlb.cloudfront.net/2/2e/MikkTSpace.png 1.5x" /></a></div></div>
+			<div class="gallerytextwrapper" style="width: 330px"><div class="gallerytext">
+<p>MikkTSpace
+</p>
+			</div></div>
+		</div></li>
+		<li class="gallerybox" style="width: 349.33333333333px"><div style="width: 349.33333333333px">
+			<div class="thumb" style="width: 347.33333333333px;"><div style="margin:0px auto;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:BuiltIn.png" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/b/b1/BuiltIn.png/521px-BuiltIn.png" width="348" height="300" srcset="https://d26ilriwvtzlb.cloudfront.net/b/b1/BuiltIn.png 1.5x" /></a></div></div>
+			<div class="gallerytextwrapper" style="width: 328px"><div class="gallerytext">
+<p>Built-In
+</p>
+			</div></div>
+		</div></li>
+</ul>
+<h4><span class="mw-headline" id="Why_won.27t_UAssets_show_up_in_the_folder.2C_or_why_can.27t_I_import_UAssets_directly.3F">Why won't UAssets show up in the folder, or why can't I import UAssets directly?</span></h4>
+<p>UAssets are compiled assets created for use with Unreal Engine 4 that are generated from files imported such as Textures, Media/Movies, and FBX/OBJs. This compile happens when the asset is imported for the first time and will now show up in your Content Browser and the subsequent Project Folder under the Content section in Windows/Mac/Linux. 
+</p><p>These UAssets can be moved directly from folder to folder in your OS without the need to use the editor to migrate them, but there are some caveats to this method. 
+</p>
+<ul><li> They require the same folder structure as the original project they were created in otherwise they will lose references. For example, if you have a UAsset of a static or skeletal mesh that has materials assigned to it, the asset will need to be placed in the same folder structure as the original project to show these correctly. So if you have these in Project Folder &gt; Content &gt; Meshes for the original project and your new project you place the UAsset in Project Folder &gt; Content &gt; FBXs the material references will be lost since they will not know where they were referenced to the original mesh. </li></ul>
+<ul><li> The UAsset may not be from a build of the engine that is compatible. For instance, If you have an UAsset from a 4.10 project you've made, this will not be able to be opened with a 4.9 project. Previous version of the engine are not forward compatible which is in line with pretty much any other software out there.</li></ul>
+<ul><li> The UAsset may be serialized so that it can only work with a specific engine that so that the asset cannot ever be loaded in another engine or engine version that it is not assigned to. This type of serialization does not refer to the engine versions available via GitHub or the Epic Games Launcher.</li></ul>
+<h4><span class="mw-headline" id="Why_does_my_model_take_so_long_to_import.2C_or_why_does_the_editor_freeze_when_I_import_my_mesh.3F">Why does my model take so long to import, or why does the editor freeze when I import my mesh?</span></h4>
+<p>There are number of reasons that importing a Static Mesh or Skeletal Mesh into the editor can take a bit of time. Here are some of the things that you can do to help more quickly get your assets into UE4.
+</p><p>Static Meshes: 
+</p><p>1. <b>FBX Triangulation:</b> This routine can be slow and is dependent on the mesh being imported. We use a routine provided by the FBX SDK and it can be slower with meshes that consist of larger polygon counts. 
+</p><p><b>Resolution:</b> You can Triangulate your mesh before you export it from your modeling application.
+</p><p>2. <b>Lots of Meshes in a single FBX:</b> When importing a single FBX that may contain a number of assets that need to be combined into a single mesh on import you will see the processing time go up, sometimes exponentially. This is usually something that is reported as a "Freeze" or "Crash" with UE4, but it's just processing the asset. Largely, this can happen because there needs to be a lot of copying around in memory for this to work, which itself takes a while. Each part will save as a whole and then load another piece that needs to be added and saved. 
+</p><p><b>Resolution:</b> In your modeling application you can combine meshes to be a single asset or bring the mesh into the editor in chunks rather than a single FBX with lots of pieces. Depending on on your asset and needs this may differ slightly for different FBXs. 
+</p><p>3. <b>Build Adjacency Buffers:</b> This is required for PNT triangles to work for Tessellation. If you have a large mesh or do not plan to use tessellation with it just disable it. 
+</p><p>Skeletal Meshes: 
+</p><p>1. <b>Animation Key Frames:</b> This can cause the import process to increase by having a large number of Key Frames setup for your animation, and can largely depend on the number of bones that are being animated. 
+</p><p><br /> 
+2. <b>Morph Targets:</b> The more morph targets you have to be imported with your skeletal mesh the longer the import process will take.
+</p>
+<h4><span class="mw-headline" id="Why_is_my_mesh_see_through.2C_or_why_are_the_faces_on_my_mesh_flipped.3F">Why is my mesh see through, or why are the faces on my mesh flipped?</span></h4>
+<p>You may need to double check in your modeling package that your polygons normals are facing the correct direction. In most modeling programs, like 3Ds Max or Maya, the back-face will render in the viewport, however in a game engine where you don't want to render what is not needed the backface is culled unless specified to. Only the direction of the polygon's normal will render unless it has a two-sided material applied that will render the face. 
+</p><p>You can verify this issue in UE4 by opening the Static/Skeletal Mesh Editors. Once enabled you will see Green lines drawn out from each vertex that shows the direction of the normal. 
+</p>
+<ul class="gallery mw-gallery-packed-hover">
+		<li class="gallerybox" style="width: 468.66666666667px"><div style="width: 468.66666666667px">
+			<div class="thumb" style="width: 466.66666666667px;"><div style="margin:-0.16666666666666px auto;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:StaticMeshNormals.png" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/2/2d/StaticMeshNormals.png/700px-StaticMeshNormals.png" width="467" height="276" srcset="https://d3ar1piqh1oeli.cloudfront.net/2/2d/StaticMeshNormals.png/1051px-StaticMeshNormals.png 1.5x, https://d26ilriwvtzlb.cloudfront.net/2/2d/StaticMeshNormals.png 2x" /></a></div></div>
+			<div class="gallerytextwrapper" style="width: 447px"><div class="gallerytext">
+<p>Static Mesh Editor
+</p>
+			</div></div>
+		</div></li>
+		<li class="gallerybox" style="width: 398.66666666667px"><div style="width: 398.66666666667px">
+			<div class="thumb" style="width: 396.66666666667px;"><div style="margin:-0.16666666666666px auto;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:SkeletalMeshNormals.png" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/1/1d/SkeletalMeshNormals.png/595px-SkeletalMeshNormals.png" width="397" height="276" srcset="https://d3ar1piqh1oeli.cloudfront.net/1/1d/SkeletalMeshNormals.png/894px-SkeletalMeshNormals.png 1.5x, https://d3ar1piqh1oeli.cloudfront.net/1/1d/SkeletalMeshNormals.png/1191px-SkeletalMeshNormals.png 2x" /></a></div></div>
+			<div class="gallerytextwrapper" style="width: 377px"><div class="gallerytext">
+<p>Skeletal Mesh Editor
+</p>
+			</div></div>
+		</div></li>
+</ul>
+<p>If these are Green lines are facing inward you will want to edit this in your modeling program to flip the faces the correct direction. Your modeling program should also have a method of displaying the direction of the normal as well.
+</p>
+<h4><span class="mw-headline" id="Is_there_a_poly_count_limitation.3F">Is there a poly count limitation?</span></h4>
+<p>For Desktop development the only limitation is based on what your hardware is capable of handling. However, on Mobile the scene view is limited to &lt;= 500k triangles. This is needed to hit 30fps on both iPad4 and iPad Air. 
+</p><p>There is also a limit of 65k vertices due to lack of 32 bit index support on mobile hardware.
+</p><p>For more information about Mobile see these documentation pages: 
+</p>
+<ul><li> <a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Platforms/Mobile/Content/index.html">https://docs.unrealengine.com/latest/INT/Platforms/Mobile/Content/index.html</a></li></ul>
+<ul><li> <a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Platforms/Mobile/Performance/index.html">https://docs.unrealengine.com/latest/INT/Platforms/Mobile/Performance/index.html</a></li></ul>
+<ul><li> <a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/ContentStandards/index.html">https://docs.unrealengine.com/latest/INT/Engine/Content/ContentStandards/index.html</a></li></ul>
+<h4><span class="mw-headline" id="Why_is_my_mesh_facing_on_the_wrong_axis.3F">Why is my mesh facing on the wrong axis?</span></h4>
+<p>All models should have their Forward dimension facing in the direction of the X-Axis. 
+</p><p>You can read more about this in the documentation here: <a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/ContentStandards/index.html">https://docs.unrealengine.com/latest/INT/Engine/Content/ContentStandards/index.html</a>
+</p>
+<h4><span class="mw-headline" id="Why_is_my_mesh_so_small.2Flarge_when_I_import.3F">Why is my mesh so small/large when I import?</span></h4>
+<p>When developing content in an external package make sure that you've setup your Scale correctly to correlate with Unreal Engine 4's scale. 
+</p><p>Unreal Engine 4 uses Centimeters. 1 Unreal Unit = 1 Centimeter(cm)
+</p><p>When you export your FBX from 3Ds Max or Maya for example, you will need to also make sure that you've set the FBX to export in the scale of Centimeters otherwise it will default to Inches for it's export. 
+</p><p>This is an example of the 3Ds Max export window with the section for `Units` highlighted. Here you will see that `Automatic` is unchecked and the drop-down is set to Centimeters. 
+</p>
+<div class="center"><div class="floatnone"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:3DsmaxExportSettings.png" class="image"><img alt="3DsmaxExportSettings.png" src="https://d3ar1piqh1oeli.cloudfront.net/2/2e/3DsmaxExportSettings.png/350px-3DsmaxExportSettings.png" width="350" height="386" srcset="https://d3ar1piqh1oeli.cloudfront.net/2/2e/3DsmaxExportSettings.png/525px-3DsmaxExportSettings.png 1.5x, https://d26ilriwvtzlb.cloudfront.net/2/2e/3DsmaxExportSettings.png 2x" /></a></div></div>
+<p>You also have the option to adjust the scale when you import by looking in the <b>Tranform</b> section. 
+</p>
+<div class="center"><div class="floatnone"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ImportUniformScale.png" class="image"><img alt="ImportUniformScale.png" src="https://d3ar1piqh1oeli.cloudfront.net/d/d0/ImportUniformScale.png/350px-ImportUniformScale.png" width="350" height="301" srcset="https://d26ilriwvtzlb.cloudfront.net/d/d0/ImportUniformScale.png 1.5x" /></a></div></div>
+<p>For more information about External Content Creation see the documentation here:
+</p>
+<ul><li> <a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/ContentStandards/index.html">https://docs.unrealengine.com/latest/INT/Engine/Content/ContentStandards/index.html</a></li></ul>
+<h4><span class="mw-headline" id="How_do_I_check_the_UVs_for_my_mesh.3F">How do I check the UVs for my mesh?</span></h4>
+<p>If you need to check the UVs of your mesh in you can do this for your Skeletal Mesh or your Static Mesh. 
+</p><p>To view your UV(s) for your Static Mesh open it in its Static Mesh Editor, then in the toolbar click the UV icon. This will overlay a window with the currently selected UV, which defaults to UV0. You can use the drop-down to select another UV Channel if needed. 
+</p>
+<div class="floatleft"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:StaticMeshUVs.png" class="image" title="Static Mesh Editor UV"><img alt="Static Mesh Editor UV" src="https://d3ar1piqh1oeli.cloudfront.net/6/63/StaticMeshUVs.png/500px-StaticMeshUVs.png" width="500" height="346" srcset="https://d3ar1piqh1oeli.cloudfront.net/6/63/StaticMeshUVs.png/750px-StaticMeshUVs.png 1.5x, https://d3ar1piqh1oeli.cloudfront.net/6/63/StaticMeshUVs.png/1000px-StaticMeshUVs.png 2x" /></a></div>
+<p><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p><p><br />
+</p>
+<ol><li> Enables the UV Channel overlay view</li>
+<li> Allows selection of UV Channel</li></ol>
+<p>To view the UV of your Skeletal Mesh you will need to open it in Persona to view the Skeletal Mesh. Then in the Viewport you will be able to select the drop-down for <b>Show</b> &gt; <b>Advanced</b> &gt; Check the <b>UV check box</b>. Here you will also have the drop-down for UV Channel you would like to be overlaid in the view.
+</p>
+<ul class="gallery mw-gallery-packed-hover">
+		<li class="gallerybox" style="width: 398.66666666667px"><div style="width: 398.66666666667px">
+			<div class="thumb" style="width: 396.66666666667px;"><div style="margin:-0.16666666666666px auto;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:SkelMeshUVs.png" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/c/ca/SkelMeshUVs.png/595px-SkelMeshUVs.png" width="397" height="276" srcset="https://d3ar1piqh1oeli.cloudfront.net/c/ca/SkelMeshUVs.png/894px-SkelMeshUVs.png 1.5x, https://d3ar1piqh1oeli.cloudfront.net/c/ca/SkelMeshUVs.png/1191px-SkelMeshUVs.png 2x" /></a></div></div>
+			<div class="gallerytextwrapper" style="width: 377px"><div class="gallerytext">
+<p>Menu Option for UVs
+</p>
+			</div></div>
+		</div></li>
+		<li class="gallerybox" style="width: 398.66666666667px"><div style="width: 398.66666666667px">
+			<div class="thumb" style="width: 396.66666666667px;"><div style="margin:-0.16666666666666px auto;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:SkelMeshUVs1.png" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/0/01/SkelMeshUVs1.png/595px-SkelMeshUVs1.png" width="397" height="276" srcset="https://d3ar1piqh1oeli.cloudfront.net/0/01/SkelMeshUVs1.png/894px-SkelMeshUVs1.png 1.5x, https://d3ar1piqh1oeli.cloudfront.net/0/01/SkelMeshUVs1.png/1191px-SkelMeshUVs1.png 2x" /></a></div></div>
+			<div class="gallerytextwrapper" style="width: 377px"><div class="gallerytext">
+<p>Skeletal Mesh UVs
+</p>
+			</div></div>
+		</div></li>
+</ul>
+<h4><span class="mw-headline" id="Why_do_I_need_to_UV_my_mesh_for_texture_mapping.3F">Why do I need to UV my mesh for texture mapping?</span></h4>
+<p>If you need to assign a material to your mesh it would be imperative to setup your UV, otherwise you would see stretching or other artifacts because the UV is not laid out properly. 
+</p><p>You can read more about this in the documentation page: <a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/Materials/index.html">https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/Materials/index.html</a>
+</p>
+<h4><span class="mw-headline" id="Why_does_my_FBX_not_apply_all_the_textures_or_shaders_that_were_made_in_my_modeling_program.3F">Why does my FBX not apply all the textures or shaders that were made in my modeling program?</span></h4>
+<p>Unreal Engine 4 cannot import specific materials/textures/shaders that were created in other programs. While the Material Editor in UE4 is a robust system there isn't a universal system in place to communicate the different shader setups from other programs. With the many different modeling packages out there and their own shader setups Unreal can only do basic imports. It is for this reason that it is recommended to use the Material Editor in the engine to create all your materials for your assets.
+</p><p>There are a few types of textures that can be imported automatically to create the material and assign to the mesh, but this is only for simple materials that use Diffuse, Normal, and Opacity(Alpha) textures. These types of textures can be automatically assigned in a generated material.
+</p>
+<h4><span class="mw-headline" id="How_do_I_Import_a_.apx_CLOTH_file_created_with_NVIDIA.27s_tools.3F">How do I Import a .apx CLOTH file created with NVIDIA's tools?</span></h4>
+<p>When you create a Apex Cloth asset with your modeling package using Maya, 3Ds Max, or Nvidias ClothingTool that comes with their SDK you may be wondering how you would import that .apb/.apx file that is created with your Cloth attributes. 
+</p><p>You will not be able to directly import this type of file using the Import option from the Content Browser. Instead it will be assigned to the Skeletal Mesh that houses the material that this file needs to be assigned to. 
+</p><p>1. Start by importing your Skeletal Mesh
+<br />
+2. Now open the Skeletal Mesh in Persona (Skeletal Mesh Editor)
+<br />
+</p>
+3. In the Detail's panel on the left and locate the section named <b>Clothing</b> and click the <b>Add APEX clothing file...</b> <div class="thumb tleft"><div class="thumbinner" style="width:349px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:Clothassignment.png" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/2/2e/Clothassignment.png" width="347" height="77" class="thumbimage" /></a>  <div class="thumbcaption">Add APEX clothing file button</div></div></div>
+<p><br />
+</p><p><br />
+</p><p><br />
+</p><p><br />
+4. Select your .apx file from the selection window.<br />
+</p><p>5. Once imported you can select the <b>Clothing</b> drop-down under each Material Element to choose where it should be assigned.
+</p>
+<div class="floatleft"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:ApxClothAssignment.png" class="image" title="Cloth Assignment to Material Element"><img alt="Cloth Assignment to Material Element" src="https://d3ar1piqh1oeli.cloudfront.net/5/5f/ApxClothAssignment.png/400px-ApxClothAssignment.png" width="400" height="188" srcset="https://d26ilriwvtzlb.cloudfront.net/5/5f/ApxClothAssignment.png 1.5x" /></a></div>
+<h4><span class="mw-headline" id="How_can_I_use_my_Pivot_from_my_modeling_program_instead_of_it_being_offset.3F">How can I use my Pivot from my modeling program instead of it being offset?</span></h4>
+<p>By default, the pivot will use the World Origin (0,0,0) of the FBX, so if the meshes pivot is not centered out to 0,0,0 then the mesh will appear to be offset when you import it into UE4. 
+</p><p>As of 4.12 you can now import your static meshes and have have the pivot use the one from the DCC for the mesh rather than being centered to the FBX's DCC. 
+</p><p>Use the following when you import: 
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:352px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:FBXPivot.png" class="image"><img alt="FBXPivot.png" src="https://d3ar1piqh1oeli.cloudfront.net/f/f4/FBXPivot.png/350px-FBXPivot.png" width="350" height="550" class="thumbimage" srcset="https://d26ilriwvtzlb.cloudfront.net/f/f4/FBXPivot.png 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:FBXPivot.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<p>Simply uncheck the option for <b>Transform Vertex to Absolute</b> so that the Pivot, Transform, and Offset from the FBX will be used for the static mesh.
+</p>
+<h4><span class="mw-headline" id="Why_can_I_walk_through_my_mesh.2C_or_Why_does_my_collision_look_wrong_when_I_import_my_mesh.3F">Why can I walk through my mesh, or Why does my collision look wrong when I import my mesh?</span></h4>
+<p>If you are able to walk through your mesh you likely have no collision setup for your static mesh. This will prevent the player or any objects simulating physics to interact with the mesh. 
+</p><p>For an overview of different methods that Unreal Engine 4 uses with collision along with how-to set these up have a look at this documentation:
+</p>
+<ul><li> <a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Physics/Collision/HowTo/index.html">https://docs.unrealengine.com/latest/INT/Engine/Physics/Collision/HowTo/index.html</a></li></ul>
+<p>If you are having trouble getting collision to be more accurate you will likely need to use the auto-convex method of collision generation with higher accuracy settings, or you will need to create custom collision in your modeling application. 
+</p><p>You can read more about that here in the documentation where it covers adding convex collision and the caveats to using it. 
+</p>
+<ul><li> <a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Physics/Collision/HowTo/AddConvexHulls/index.html">https://docs.unrealengine.com/latest/INT/Engine/Physics/Collision/HowTo/AddConvexHulls/index.html</a></li>
+<li> <a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/StaticMeshes/index.html#collision">https://docs.unrealengine.com/latest/INT/Engine/Content/FBX/StaticMeshes/index.html#collision</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Skeletal_Mesh"><b>Skeletal Mesh</b></span></h3>
+<h4><span class="mw-headline" id="COMING_SOON.21">COMING SOON!</span></h4>
+<h3><span class="mw-headline" id="Texture_or_Material"><b>Texture or Material</b></span></h3>
+<h4><span class="mw-headline" id="When_I_import_a_texture_with_an_Alpha.2C_why_doesn.27t_the_Alpha_show.3F">When I import a texture with an Alpha, why doesn't the Alpha show?</span></h4>
+<p>When importing any textures that have an Alpha, like with PNG, the Alpha is disabled when viewing just the texture asset, but it's visible when viewing in the Texture Editor. When disabling the Alpha the color information is not known for this negative space and is just pulled from the colors of the pixels that are known in that area. 
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:111px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:AlphaImport.png" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/9/91/AlphaImport.png" width="109" height="148" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:AlphaImport.png" class="internal" title="Enlarge"></a></div>Texture Asset</div></div></div>
+<p><br />
+</p><p><br />
+</p><p><br />
+</p><p><br />
+</p><p><br />
+</p><p><br />
+When opening the Texture Editor with this asset you can enable and disable the Alpha to see how this works. 
+</p>
+<ul class="gallery mw-gallery-packed-hover">
+		<li class="gallerybox" style="width: 369.33333333333px"><div style="width: 369.33333333333px">
+			<div class="thumb" style="width: 367.33333333333px;"><div style="margin:0px auto;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:AlphaEnabled.png" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/2/24/AlphaEnabled.png/551px-AlphaEnabled.png" width="368" height="300" srcset="https://d3ar1piqh1oeli.cloudfront.net/2/24/AlphaEnabled.png/826px-AlphaEnabled.png 1.5x, https://d26ilriwvtzlb.cloudfront.net/2/24/AlphaEnabled.png 2x" /></a></div></div>
+			<div class="gallerytextwrapper" style="width: 348px"><div class="gallerytext">
+<p>Alpha Channel Enabled
+</p>
+			</div></div>
+		</div></li>
+		<li class="gallerybox" style="width: 369.33333333333px"><div style="width: 369.33333333333px">
+			<div class="thumb" style="width: 367.33333333333px;"><div style="margin:0px auto;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:AlphaDisabled.png" class="image"><img alt="" src="https://d3ar1piqh1oeli.cloudfront.net/4/47/AlphaDisabled.png/551px-AlphaDisabled.png" width="368" height="300" srcset="https://d3ar1piqh1oeli.cloudfront.net/4/47/AlphaDisabled.png/826px-AlphaDisabled.png 1.5x, https://d26ilriwvtzlb.cloudfront.net/4/47/AlphaDisabled.png 2x" /></a></div></div>
+			<div class="gallerytextwrapper" style="width: 348px"><div class="gallerytext">
+<p>Alpha Channel Disabled
+</p>
+			</div></div>
+		</div></li>
+</ul>
+<h4><span class="mw-headline" id="What_does_the_Power_of_2_warning_mean_when_I_import_my_image.3F">What does the Power of 2 warning mean when I import my image?</span></h4>
+<p>When creating or using a texture in Unreal Engine you will need to make sure that it is a Power of two, meaning that it should be using 16, 32, 64, 128, 256, etc for it's resolutions. ie. 256 x 256 for it's dimensions. 
+</p><p>While you can use a texture without these dimensions you may run into issues, especially depending on the file size of the time. When not using a power of two the texture can never be streamed, which means that it cannot have mipmaps to lower its resolutions dynamically at further distances. This means that it will always render at full quality at the farthest distances and at its full file size too. 
+</p><p>It's always best to use a power of two where possible and take precautions where you cannot.
+</p>
+<h4><span class="mw-headline" id="Why_can.27t_I_use_a_texture_resolution_larger_than_8192_in-game.3F">Why can't I use a texture resolution larger than 8192 in-game?</span></h4>
+<p>Unreal Engine 4 has no problem importing textures that are up to 8192, but you may have noticed if you look at the Texture Editor the in-game resolution is still listed as 4196. Before you can use 8192 you will need to make some edits to your device profiles in order to enable this. 
+</p><p>Follow the documentation here to see how to proceed: <a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Content/Types/Textures/SupportAndSettings/index.html#textureresolution">https://docs.unrealengine.com/latest/INT/Engine/Content/Types/Textures/SupportAndSettings/index.html#textureresolution</a>
+</p>
+<h4><span class="mw-headline" id="Why_does_my_texture.2Fmaterial_look_low_quality.2Fblurry_in_the_game.3F">Why does my texture/material look low quality/blurry in the game?</span></h4>
+<p>If you're seeing a difference between working in the Editor and PIE (Play in Editor) then you will likely want to check to make sure that your Engine Scalability settings are set to EPIC. Sometimes these can be lowered when monitoring performance of your computer to make sure that you keep decent performance while working in the Editor. 
+</p><p>For more information on Engine Scalability you can see the documentation here: <a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Performance/Scalability/ScalabilityReference/">https://docs.unrealengine.com/latest/INT/Engine/Performance/Scalability/ScalabilityReference/</a>
+</p><p>If you find that the scalability is being lowered often you can disable the option for <b>Monitor Editor Performance?</b> to keep the same quality settings. 
+</p>
+<div class="thumb tleft"><div class="thumbinner" style="width:330px;"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:MonitorPerformance.png" class="image"><img alt="" src="https://d26ilriwvtzlb.cloudfront.net/c/c7/MonitorPerformance.png" width="328" height="221" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=File:MonitorPerformance.png" class="internal" title="Enlarge"></a></div>Engine Scalability Monitoring</div></div></div>
+<h4><span class="mw-headline" id="Why_does_the_editor_freeze.2Ftake_a_long_time_when_I_try_to_open_my_asset.3F">Why does the editor freeze/take a long time when I try to open my asset?</span></h4>
+<p>If it's the first time you've opened an asset in the editor it can take a moment to write the Derive Data Cache (DDC) so that it can make it easier for the editor to know what these assets are and open them more quickly in the future. For most assets you may not notice any delay in opening them the first time, but if you have textures with high resolutions in the range of 8192 and high polygon density static meshes it can take a moment or more to write these to the DDC the first time. The time it takes to write to the DDC is dependent on the number of assets being opened and the hardware that is being used. If opening multiple assets it can take more time. 
+</p><p>For more information about the Derive Data Cache you can see the documentation here: <a rel="nofollow" class="external free" href="https://docs.unrealengine.com/latest/INT/Engine/Basics/DerivedDataCache/index.html">https://docs.unrealengine.com/latest/INT/Engine/Basics/DerivedDataCache/index.html</a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20200401010239
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.196 seconds
+Real time usage: 1.995 seconds
+Preprocessor visited node count: 195/1000000
+Preprocessor generated node count: 364/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:403-0!canonical and timestamp 20200401010237 and revision id 807
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Asset_Creation_and_Import_Troubleshooting&amp;oldid=807">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Asset_Creation_and_Import_Troubleshooting&amp;oldid=807</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Epic_Created_Content" title="Category:Epic Created Content">Epic Created Content</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Troubleshooting" title="Category:Troubleshooting">Troubleshooting</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Material" title="Category:Material">Material</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Import&amp;action=edit&amp;redlink=1" class="new" title="Category:Import (page does not exist)">Import</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:FBX&amp;action=edit&amp;redlink=1" class="new" title="Category:FBX (page does not exist)">FBX</a></li><li><a href="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Category:Asset_Creation&amp;action=edit&amp;redlink=1" class="new" title="Category:Asset Creation (page does not exist)">Asset Creation</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0b48461a8a6519d83"><meta name="worker" content="206"><link rel="apple-touch-icon" sizes="180x180" href="https://mediawikiv2-website-prod05.ol.epicgames.net/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://mediawikiv2-website-prod05.ol.epicgames.net/favicon-16x16.png"><link rel="manifest" href="https://mediawikiv2-website-prod05.ol.epicgames.net/manifest.json"><link rel="mask-icon" href="https://mediawikiv2-website-prod05.ol.epicgames.net/safari-pinned-tab.svg" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="https://mediawikiv2-website-prod05.ol.epicgames.net/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="https://static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.196","walltime":"1.995","ppvisitednodes":{"value":195,"limit":1000000},"ppgeneratednodes":{"value":364,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20200401010239","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":94});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":143,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

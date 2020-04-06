@@ -1,0 +1,25 @@
+diff --git a/.gitmodules b/.gitmodules
+index c90e201..8c42cf7 100644
+--- a/.gitmodules
++++ b/.gitmodules
+@@ -1,3 +1,6 @@
+ [submodule "Plugins/UnrealJS"]
+ 	path = Plugins/UnrealJS
+ 	url = https://github.com/ncsoft/Unreal.js-core
++[submodule "Examples/Plugins/UnrealJS"]
++	path = Examples/Plugins/UnrealJS
++	url = https://github.com/ncsoft/Unreal.js-core
+diff --git a/Examples/Plugins/UnrealJS b/Examples/Plugins/UnrealJS
+new file mode 160000
+index 0000000..4ec007e
+--- /dev/null
++++ b/Examples/Plugins/UnrealJS
+@@ -0,0 +1 @@
++Subproject commit 4ec007e8103f278ea2f830d3c26637a30d56ed00
+diff --git a/Plugins/UnrealJS b/Plugins/UnrealJS
+deleted file mode 160000
+index a7e9a02..0000000
+--- a/Plugins/UnrealJS
++++ /dev/null
+@@ -1 +0,0 @@
+-Subproject commit a7e9a026a2a21e32d7f0cdf2868acc0d237514d4

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/aws/aws-cdk/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/aws/aws-cdk/commits/master.atom"/>
+  <title>Recent Commits to aws-cdk:master</title>
+  <updated>2020-04-01T01:38:25Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/877093415588927d175262454b646a4d21f925c7</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/877093415588927d175262454b646a4d21f925c7"/>
+    <title>
+        chore(deps): bump uuid from 7.0.2 to 7.0.3 (#7101)
+    </title>
+    <updated>2020-04-01T01:38:25Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/2141?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot-preview</name>
+      <uri>https://github.com/dependabot-preview</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore(deps): bump uuid from 7.0.2 to 7.0.3 (#7101)
+
+Bumps [uuid](https://github.com/uuidjs/uuid) from 7.0.2 to 7.0.3.
+- [Release notes](https://github.com/uuidjs/uuid/releases)
+- [Changelog](https://github.com/uuidjs/uuid/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/uuidjs/uuid/compare/v7.0.2...v7.0.3)
+
+Signed-off-by: dependabot-preview[bot] &amp;lt;support@dependabot.com&amp;gt;
+
+Co-authored-by: dependabot-preview[bot] &amp;lt;27856297+dependabot-preview[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b70dbd4620eff8419afc3dee06c5a74455fd0f33</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/b70dbd4620eff8419afc3dee06c5a74455fd0f33"/>
+    <title>
+        chore(deps-dev): bump @types/sinon from 7.5.2 to 9.0.0 (#7106)
+    </title>
+    <updated>2020-04-01T00:45:55Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/2141?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot-preview</name>
+      <uri>https://github.com/dependabot-preview</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore(deps-dev): bump @types/sinon from 7.5.2 to 9.0.0 (#7106)
+
+Bumps [@types/sinon](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/sinon) from 7.5.2 to 9.0.0.
+- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)
+- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/sinon)
+
+Signed-off-by: dependabot-preview[bot] &amp;lt;support@dependabot.com&amp;gt;
+
+Co-authored-by: dependabot-preview[bot] &amp;lt;27856297+dependabot-preview[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/86b37be17c1a5d7356ea89e3cbcfc47ad61c94cd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/86b37be17c1a5d7356ea89e3cbcfc47ad61c94cd"/>
+    <title>
+        chore(deps): bump aws-sdk from 2.649.0 to 2.650.0 (#7100)
+    </title>
+    <updated>2020-03-31T20:25:49Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/2141?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot-preview</name>
+      <uri>https://github.com/dependabot-preview</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore(deps): bump aws-sdk from 2.649.0 to 2.650.0 (#7100)
+
+Bumps [aws-sdk](https://github.com/aws/aws-sdk-js) from 2.649.0 to 2.650.0.
+- [Release notes](https://github.com/aws/aws-sdk-js/releases)
+- [Changelog](https://github.com/aws/aws-sdk-js/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/aws/aws-sdk-js/compare/v2.649.0...v2.650.0)
+
+Signed-off-by: dependabot-preview[bot] &amp;lt;support@dependabot.com&amp;gt;
+
+Co-authored-by: dependabot-preview[bot] &amp;lt;27856297+dependabot-preview[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/abc2144a5e1ed3e18c1b6d1631f26ab7e29d1760</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/abc2144a5e1ed3e18c1b6d1631f26ab7e29d1760"/>
+    <title>
+        feat(cognito): import an existing user pool client (#7091)
+    </title>
+    <updated>2020-03-31T17:15:40Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/16217941?s=30&amp;u=ddaccb1b049ca8bae7094c0a47085ba8b86a6cab&amp;v=4"/>
+    <author>
+      <name>nija-at</name>
+      <uri>https://github.com/nija-at</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;feat(cognito): import an existing user pool client (#7091)
+
+Include other clean up around awslint exclusions and CloudFormation
+resource attributes.
+
+BREAKING CHANGE: `UserPoolClient` construct no longer has the property
+`userPoolClientClientSecret`. The functionality to retrieve the client
+secret never existed in CloudFormation, so this property was not
+working in the first place.
+* **cognito:** The `userPoolClientName` property on the `UserPoolClient`
+construct will throw an error if client name was not configured on the
+`UserPoolClient` during initialization. This property was previously
+incorrectly configured and was returning a not-implemented message from
+CloudFormation every time.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/cf8c83126cbcc0e6f14ba59a3ee32e8567bc5ac2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/cf8c83126cbcc0e6f14ba59a3ee32e8567bc5ac2"/>
+    <title>
+        feat(elbv2): health checks for Lambda targets (#7023)
+    </title>
+    <updated>2020-03-31T16:04:04Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/57235867?s=30&amp;v=4"/>
+    <author>
+      <name>flemjame-at-amazon</name>
+      <uri>https://github.com/flemjame-at-amazon</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;feat(elbv2): health checks for Lambda targets (#7023)
+
+* Initial commit without addition of tests
+
+* Add tests
+
+* Need to add port
+
+* Fix test
+
+* Add note to README
+
+Co-authored-by: Rico Huijbers &amp;lt;rix0rrr@gmail.com&amp;gt;
+Co-authored-by: mergify[bot] &amp;lt;37929162+mergify[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2a1daede6eaa335a94aba0a8f20b2ed702af2084</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/2a1daede6eaa335a94aba0a8f20b2ed702af2084"/>
+    <title>
+        Allow `ManagedPolicy` resources to have an initial `PolicyDocument` (…
+    </title>
+    <updated>2020-03-31T15:15:11Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/183833?s=30&amp;u=ab5250ca778753c113ea38ce36d9f78582bfe8e0&amp;v=4"/>
+    <author>
+      <name>michaelmoussa</name>
+      <uri>https://github.com/michaelmoussa</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Allow `ManagedPolicy` resources to have an initial `PolicyDocument` (#6748)
+
+Co-authored-by: mergify[bot] &amp;lt;37929162+mergify[bot]@users.noreply.github.com&amp;gt;
+Co-authored-by: Rico Huijbers &amp;lt;rix0rrr@gmail.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b49881f4a21e02491088961860ea853428f49000</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/b49881f4a21e02491088961860ea853428f49000"/>
+    <title>
+        fix(cloudtrail): include s3KeyPrefix in bucket policy resource (#7053)
+    </title>
+    <updated>2020-03-31T13:39:03Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/3391616?s=30&amp;u=f3ea4bc1fa3a8f68a99ad54e60434eb8658bb4e6&amp;v=4"/>
+    <author>
+      <name>RafalWilinski</name>
+      <uri>https://github.com/RafalWilinski</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix(cloudtrail): include s3KeyPrefix in bucket policy resource (#7053)
+
+Fixes: #6741&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/497f63e1884885c5647f08438199c38a89668e24</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/497f63e1884885c5647f08438199c38a89668e24"/>
+    <title>
+        docs(iam): improve consistency for static import methods (#7048)
+    </title>
+    <updated>2020-03-31T12:48:27Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/48760600?s=30&amp;u=5b209a803a290f88bbdc70b6918233bae07c564f&amp;v=4"/>
+    <author>
+      <name>jeremywitte</name>
+      <uri>https://github.com/jeremywitte</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;docs(iam): improve consistency for static import methods (#7048)
+
+Updates inline documentation for static `from...Arn` and `from...Name` import methods to provide consistent verbiage, parameter specification, and known caveats.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/934d58e966a7ff99dfcff5a479dc75549b248c6f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/934d58e966a7ff99dfcff5a479dc75549b248c6f"/>
+    <title>
+        chore(cli): fix bootstrap v2 by adding a missing &#39;await&#39; (#7087)
+    </title>
+    <updated>2020-03-31T08:39:16Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/524162?s=30&amp;v=4"/>
+    <author>
+      <name>rix0rrr</name>
+      <uri>https://github.com/rix0rrr</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore(cli): fix bootstrap v2 by adding a missing &amp;#39;await&amp;#39; (#7087)
+
+The title says it all.
+
+Q: Why wasn&amp;#39;t this caught in testing/why didn&amp;#39;t you add a test?
+
+A: We had tests on this originally, but we reverted them because
+they made assumptions on the source environment and would fail
+when run in the pipeline. Restoring those is next on the agenda.
+
+https://github.com/aws/aws-cdk/commit/2e9f241833ea20112c134eaa904425a26007e9d6&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bded68336265a4c77804726208d3638fc5cbd260</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/bded68336265a4c77804726208d3638fc5cbd260"/>
+    <title>
+        feat(kinesis): stream encryption with the Kinesis master key (#7057)
+    </title>
+    <updated>2020-03-31T01:37:58Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/32604953?s=30&amp;u=a4a40bf41bd7da258107e8ecd7e91040fea86bb0&amp;v=4"/>
+    <author>
+      <name>shivlaks</name>
+      <uri>https://github.com/shivlaks</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;feat(kinesis): stream encryption with the Kinesis master key (#7057)
+
+feat(kinesis): stream encryption with the Kinesis master key
+
+Adds a `StreamEncryption` option to specify that encryption should be enabled on a Stream with the master key managed by Kinesis.
+
+Closes #751&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/282b0ad14b1f9ba934e63b7cdb7b24b7e2c9d898</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/282b0ad14b1f9ba934e63b7cdb7b24b7e2c9d898"/>
+    <title>
+        chore(deps-dev): bump @types/node from 10.17.17 to 10.17.18 (#7081)
+    </title>
+    <updated>2020-03-31T00:51:19Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/2141?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot-preview</name>
+      <uri>https://github.com/dependabot-preview</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore(deps-dev): bump @types/node from 10.17.17 to 10.17.18 (#7081)
+
+Bumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 10.17.17 to 10.17.18.
+- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)
+- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)
+
+Signed-off-by: dependabot-preview[bot] &amp;lt;support@dependabot.com&amp;gt;
+
+Co-authored-by: dependabot-preview[bot] &amp;lt;27856297+dependabot-preview[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9b37211286e4d9def1a0a3d195c25c75487ba1bf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/9b37211286e4d9def1a0a3d195c25c75487ba1bf"/>
+    <title>
+        chore(deps): bump aws-sdk from 2.648.0 to 2.649.0 (#7078)
+    </title>
+    <updated>2020-03-30T21:40:53Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/2141?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot-preview</name>
+      <uri>https://github.com/dependabot-preview</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore(deps): bump aws-sdk from 2.648.0 to 2.649.0 (#7078)
+
+Bumps [aws-sdk](https://github.com/aws/aws-sdk-js) from 2.648.0 to 2.649.0.
+- [Release notes](https://github.com/aws/aws-sdk-js/releases)
+- [Changelog](https://github.com/aws/aws-sdk-js/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/aws/aws-sdk-js/compare/v2.648.0...v2.649.0)
+
+Signed-off-by: dependabot-preview[bot] &amp;lt;support@dependabot.com&amp;gt;
+
+Co-authored-by: dependabot-preview[bot] &amp;lt;27856297+dependabot-preview[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0809746b6e8305dd975e3c66ff9e679d62b39029</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/0809746b6e8305dd975e3c66ff9e679d62b39029"/>
+    <title>
+        chore(deps): bump @typescript-eslint/eslint-plugin from 2.25.0 to 2.2…
+    </title>
+    <updated>2020-03-30T20:43:25Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/2141?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot-preview</name>
+      <uri>https://github.com/dependabot-preview</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore(deps): bump @typescript-eslint/eslint-plugin from 2.25.0 to 2.26.0 (#7077)
+
+Bumps [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) from 2.25.0 to 2.26.0.
+- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)
+- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/CHANGELOG.md)
+- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v2.26.0/packages/eslint-plugin)
+
+Signed-off-by: dependabot-preview[bot] &amp;lt;support@dependabot.com&amp;gt;
+
+Co-authored-by: dependabot-preview[bot] &amp;lt;27856297+dependabot-preview[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9a552c275ee011fd794b27735503d139f538f70a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/9a552c275ee011fd794b27735503d139f538f70a"/>
+    <title>
+        feat(cfnspec): cloudformation spec v11.6.0 (#6995)
+    </title>
+    <updated>2020-03-30T17:30:23Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/43080478?s=30&amp;u=6738ceffa2deb2f2a7616843c5b7763313ddeed7&amp;v=4"/>
+    <author>
+      <name>aws-cdk-automation</name>
+      <uri>https://github.com/aws-cdk-automation</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;feat(cfnspec): cloudformation spec v11.6.0 (#6995)
+
+* feat: cloudformation spec v11.6.0
+
+* add a patch for ResourceGroups Tags as the spec has ItemType specified instead of PrimitiveType
+
+* add missing awscdk.io to package.json for newly added resources
+
+* patch to resource groups to specify tags as Json type
+
+* add linter exclusions for added AppMesh attributes in the spec update
+
+Co-authored-by: AWS CDK Team &amp;lt;aws-cdk@amazon.com&amp;gt;
+Co-authored-by: Shiv Lakshminarayan &amp;lt;shivlaks@amazon.com&amp;gt;
+Co-authored-by: mergify[bot] &amp;lt;37929162+mergify[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4c7afb827b4005e337dd4635a80a7767bcec7b11</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/4c7afb827b4005e337dd4635a80a7767bcec7b11"/>
+    <title>
+        chore(deps): bump ts-jest from 25.2.1 to 25.3.0 (#7070)
+    </title>
+    <updated>2020-03-30T16:22:56Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/2141?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot-preview</name>
+      <uri>https://github.com/dependabot-preview</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore(deps): bump ts-jest from 25.2.1 to 25.3.0 (#7070)
+
+Bumps [ts-jest](https://github.com/kulshekhar/ts-jest) from 25.2.1 to 25.3.0.
+- [Release notes](https://github.com/kulshekhar/ts-jest/releases)
+- [Changelog](https://github.com/kulshekhar/ts-jest/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/kulshekhar/ts-jest/compare/25.2.1...v25.3.0)
+
+Signed-off-by: dependabot-preview[bot] &amp;lt;support@dependabot.com&amp;gt;
+
+Co-authored-by: dependabot-preview[bot] &amp;lt;27856297+dependabot-preview[bot]@users.noreply.github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3dc3d75b17855d344b45a1dc48eb6b422237bff6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/3dc3d75b17855d344b45a1dc48eb6b422237bff6"/>
+    <title>
+        feat(amplify): source code providers (#6921)
+    </title>
+    <updated>2020-03-30T15:27:03Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/12623249?s=30&amp;u=4b2964da9f79071cdee2fb6fd5c556ab50dbd1dc&amp;v=4"/>
+    <author>
+      <name>jogold</name>
+      <uri>https://github.com/jogold</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;feat(amplify): source code providers (#6921)
+
+feat(amplify): source code providers
+
+Add source code providers classes for GitHub and CodeCommit that implement
+a new `ISourceCodeProvider` interface.
+
+Fixes #6818
+
+BREAKING CHANGE: use the `sourceCodeProvider` prop to connect your app to a source
+code provider. The props `repository`, `accessToken` and `oauthToken` do not exist
+anymore in `AppProps`.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/01ac364ddaac182e2607705a461606bdf6d9f753</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/01ac364ddaac182e2607705a461606bdf6d9f753"/>
+    <title>
+        docs(kinesis): refresh README and add updated snippets (#7038)
+    </title>
+    <updated>2020-03-30T11:36:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/32604953?s=30&amp;u=a4a40bf41bd7da258107e8ecd7e91040fea86bb0&amp;v=4"/>
+    <author>
+      <name>shivlaks</name>
+      <uri>https://github.com/shivlaks</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;docs(kinesis): refresh README and add updated snippets (#7038)
+
+docs(kinesis): refresh README and add updated snippets
+
+Adds some context around Amazon Kinesis and walks through use cases for the Stream construct.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fa50e4a8203a40e15ae045810bcd5d24d9073349</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/fa50e4a8203a40e15ae045810bcd5d24d9073349"/>
+    <title>
+        fix docstring for minVcpu in compute-environmnet according to console…
+    </title>
+    <updated>2020-03-30T09:48:35Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1428812?s=30&amp;v=4"/>
+    <author>
+      <name>iliapolo</name>
+      <uri>https://github.com/iliapolo</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix docstring for minVcpu in compute-environmnet according to console explanation (#7068)
+
+align docstring with actual default value.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d9bbc8e3559b3e89572914a6bab75994c113dc8b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/d9bbc8e3559b3e89572914a6bab75994c113dc8b"/>
+    <title>
+        chore: add key to disable announcing releases in awscdkio when creati…
+    </title>
+    <updated>2020-03-30T08:44:47Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/32604953?s=30&amp;u=a4a40bf41bd7da258107e8ecd7e91040fea86bb0&amp;v=4"/>
+    <author>
+      <name>shivlaks</name>
+      <uri>https://github.com/shivlaks</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore: add key to disable announcing releases in awscdkio when creating missing libraries (#7064)
+
+chore: add key to disable announcing releases in awscdkio when creating missing libraries
+
+Following on from #6800 where we added a pkglint rule verifying that the awscdkio.announce
+key is set to false in `package.json`
+
+This change is to ensure that libraries created from Cfn spec updates in the future are compliant.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/17aab3723f5e4ae8b06dac832774d457909722f8</id>
+    <link type="text/html" rel="alternate" href="https://github.com/aws/aws-cdk/commit/17aab3723f5e4ae8b06dac832774d457909722f8"/>
+    <title>
+        fix(aws-kinesis): test assume order between stacks (#7065)
+    </title>
+    <updated>2020-03-30T05:22:44Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/8578043?s=30&amp;u=8efc90610d8bfc888e1392c3c0f0df54585f9e3c&amp;v=4"/>
+    <author>
+      <name>NetaNir</name>
+      <uri>https://github.com/NetaNir</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix(aws-kinesis): test assume order between stacks (#7065)
+
+Since StackA and StackB do not have a parent child relation, we can&amp;#39;t assume StackB will be prepared between StackA.&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

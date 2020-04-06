@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/home-assistant/frontend/commits/dev</id>
+  <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commits/dev"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/home-assistant/frontend/commits/dev.atom"/>
+  <title>Recent Commits to frontend:dev</title>
+  <updated>2020-04-01T00:32:55Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c351402556c0e267ef404307da8ea3bb7049995e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/c351402556c0e267ef404307da8ea3bb7049995e"/>
+    <title>
+        [ci skip] Translation update
+    </title>
+    <updated>2020-04-01T00:32:55Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/23041403?s=30&amp;u=0023f9827790714afd93ddb08b3326297087a77e&amp;v=4"/>
+    <author>
+      <name>homeassistant</name>
+      <uri>https://github.com/homeassistant</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[ci skip] Translation update&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5f765e8b96e36a9ef4999d620fea3bfd191a5257</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/5f765e8b96e36a9ef4999d620fea3bfd191a5257"/>
+    <title>
+        Add feature map history (#5331)
+    </title>
+    <updated>2020-03-31T21:25:44Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/18525285?s=30&amp;u=6ff55e4e4a047b8407cec8b2116f42ff2ce4d8cf&amp;v=4"/>
+    <author>
+      <name>Hoytron</name>
+      <uri>https://github.com/Hoytron</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add feature map history (#5331)
+
+* add feature: show a geocode history on hui-map-card
+
+* refactor feature to use hass cache via rest api and omit osm request
+
+* prepare for PR
+
+* squash duplicates of allEntities to omit duplicated layers on the map
+
+* refactor to use device_tracker entity
+
+* add asdf&amp;#39;s .tool-versions file to gitignore
+
+* add lokalize and cleanup
+
+* ajust  logic to match backend api
+
+* add changes to fit new backend behaviour
+
+* fix error in history ts
+
+* cleanup history for map card&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6f556f69d6dd4d653b757a6d11f924d4fbe47e96</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/6f556f69d6dd4d653b757a6d11f924d4fbe47e96"/>
+    <title>
+        Weather Entity Row: Row Addition (#4959)
+    </title>
+    <updated>2020-03-31T20:07:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/18730868?s=30&amp;u=e0230db39ced9f3211418b4c375a6900a994568c&amp;v=4"/>
+    <author>
+      <name>zsarnett</name>
+      <uri>https://github.com/zsarnett</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Weather Entity Row: Row Addition (#4959)
+
+* Create file
+
+* Weather Row
+
+* Comments
+
+* Find high and low for hourly
+
+* Add images
+
+* testing
+
+* Weather images in row
+
+* lint
+
+* Updated design
+
+* css changes - dont show high unless it is the high
+
+* Clean
+
+* Sean Suggestion
+
+* Update hui-weather-entity-row.ts
+
+* Reviews
+
+* move tab index
+
+* reviews
+
+* Update src/panels/lovelace/entity-rows/hui-weather-entity-row.ts
+
+Co-Authored-By: Bram Kragten &amp;lt;mail@bramkragten.nl&amp;gt;
+
+* pretty
+
+Co-authored-by: Bram Kragten &amp;lt;mail@bramkragten.nl&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2439827eff410a780a33893970af49eb473ba910</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/2439827eff410a780a33893970af49eb473ba910"/>
+    <title>
+        Revert &quot;Use correct suffix for elevation&quot; (#5382)
+    </title>
+    <updated>2020-03-31T19:25:48Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5662298?s=30&amp;u=e9ad3f49389213944ba24cbbc21e659db5889927&amp;v=4"/>
+    <author>
+      <name>bramkragten</name>
+      <uri>https://github.com/bramkragten</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Revert &amp;quot;Use correct suffix for elevation&amp;quot; (#5382)
+
+This reverts commit b15270dfe28216e01639e8febd6e0840fd5d5fee.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5f467f82e044afcd0bfdbeade666e5a7becd42bb</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/5f467f82e044afcd0bfdbeade666e5a7becd42bb"/>
+    <title>
+        media-row: fix when to show power toggle (#5379)
+    </title>
+    <updated>2020-03-31T17:49:59Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1287159?s=30&amp;u=f7e35c2c25b53b0d3d45945cc93cc38f21cff9a2&amp;v=4"/>
+    <author>
+      <name>iantrich</name>
+      <uri>https://github.com/iantrich</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;media-row: fix when to show power toggle (#5379)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6692fa439ab273aebf6e8da9421c430554cc2a93</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/6692fa439ab273aebf6e8da9421c430554cc2a93"/>
+    <title>
+        hold/double actions for light-card (#5361)
+    </title>
+    <updated>2020-03-31T15:52:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1287159?s=30&amp;u=f7e35c2c25b53b0d3d45945cc93cc38f21cff9a2&amp;v=4"/>
+    <author>
+      <name>iantrich</name>
+      <uri>https://github.com/iantrich</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;hold/double actions for light-card (#5361)
+
+* hold/double actions for light-card
+
+* lint&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0535247bb34152b092ce7b494a80fe04d6e7af52</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/0535247bb34152b092ce7b494a80fe04d6e7af52"/>
+    <title>
+        [ImgBot] Optimize images (#5378)
+    </title>
+    <updated>2020-03-31T14:50:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/in/4706?s=30&amp;v=4"/>
+    <author>
+      <name>imgbot</name>
+      <uri>https://github.com/imgbot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[ImgBot] Optimize images (#5378)
+
+*Total -- 1,745.75kb -&amp;gt; 1,539.81kb (11.8%)
+
+/demo/public/assets/teachingbirds/meteogram.png -- 66.71kb -&amp;gt; 24.48kb (63.31%)
+/demo/public/assets/teachingbirds/background_square.png -- 0.76kb -&amp;gt; 0.37kb (51.98%)
+/demo/public/assets/arsaboo/icons/security_armed_red.png -- 6.38kb -&amp;gt; 3.67kb (42.5%)
+/demo/public/assets/jimpower/background-15.jpg -- 231.78kb -&amp;gt; 159.68kb (31.11%)
+/public/static/images/image-broken.svg -- 0.56kb -&amp;gt; 0.42kb (23.99%)
+/demo/public/assets/arsaboo/icons/security_disarmed.png -- 4.21kb -&amp;gt; 3.25kb (22.7%)
+/demo/public/assets/arsaboo/icons/automation_enabled.png -- 3.96kb -&amp;gt; 3.08kb (22.32%)
+/demo/public/assets/jimpower/cardbackK.png -- 10.56kb -&amp;gt; 8.21kb (22.22%)
+/demo/public/assets/arsaboo/icons/abode_enabled.png -- 3.98kb -&amp;gt; 3.16kb (20.62%)
+/demo/public/assets/arsaboo/icons/ecobee_blank.png -- 2.18kb -&amp;gt; 1.78kb (18.22%)
+/demo/public/assets/arsaboo/floorplans/ecobee_blank.png -- 2.17kb -&amp;gt; 1.78kb (17.87%)
+/demo/public/assets/arsaboo/icons/automation_disabled.png -- 6.89kb -&amp;gt; 5.73kb (16.82%)
+/demo/public/assets/jimpower/home/james_10.jpg -- 73.21kb -&amp;gt; 61.89kb (15.46%)
+/demo/public/assets/arsaboo/icons/camera_patio_streaming.png -- 11.63kb -&amp;gt; 9.88kb (14.98%)
+/demo/public/assets/arsaboo/icons/Harmony.png -- 3.83kb -&amp;gt; 3.25kb (14.95%)
+/demo/public/assets/arsaboo/icons/light_off.png -- 9.53kb -&amp;gt; 8.51kb (10.77%)
+/demo/public/assets/arsaboo/icons/tv_enabled.png -- 5.48kb -&amp;gt; 4.90kb (10.69%)
+/demo/public/assets/jimpower/home/bus_10.jpg -- 36.36kb -&amp;gt; 32.58kb (10.4%)
+/demo/public/assets/kernehed/bella.jpg -- 33.09kb -&amp;gt; 30.29kb (8.44%)
+/demo/public/assets/arsaboo/images/camera.backyard.jpg -- 81.15kb -&amp;gt; 74.80kb (7.82%)
+/demo/public/assets/kernehed/oscar.jpg -- 25.32kb -&amp;gt; 23.34kb (7.81%)
+/demo/public/assets/arsaboo/images/camera.patio.jpg -- 63.13kb -&amp;gt; 58.52kb (7.29%)
+/demo/public/assets/arsaboo/images/camera.porch.jpg -- 76.49kb -&amp;gt; 70.95kb (7.25%)
+/demo/public/assets/arsaboo/icons/light_on.png -- 12.03kb -&amp;gt; 11.19kb (6.97%)
+/demo/public/assets/jimpower/home/tina_4.jpg -- 59.69kb -&amp;gt; 55.92kb (6.31%)
+/gallery/public/images/album_cover.jpg -- 26.11kb -&amp;gt; 24.46kb (6.31%)
+/demo/public/assets/teachingbirds/clothes_drying_square.jpg -- 31.93kb -&amp;gt; 29.98kb (6.11%)
+/demo/public/assets/arsaboo/images/camera.driveway.jpg -- 59.47kb -&amp;gt; 55.84kb (6.1%)
+/demo/public/assets/teachingbirds/laundry_running_square.jpg -- 58.68kb -&amp;gt; 55.61kb (5.22%)
+/demo/public/assets/kernehed/camera.entre.jpg -- 65.84kb -&amp;gt; 62.49kb (5.09%)
+/demo/public/assets/teachingbirds/Stefan_square.jpg -- 11.25kb -&amp;gt; 10.68kb (5.06%)
+/demo/public/assets/teachingbirds/isa_square.jpg -- 18.90kb -&amp;gt; 17.98kb (4.88%)
+/demo/public/assets/jimpower/security/motion_3.jpg -- 87.09kb -&amp;gt; 82.99kb (4.71%)
+/demo/public/assets/teachingbirds/roomba_square.jpg -- 32.23kb -&amp;gt; 30.82kb (4.39%)
+/demo/public/assets/teachingbirds/laundry_clean_2_square.jpg -- 31.87kb -&amp;gt; 30.48kb (4.34%)
+/demo/public/assets/teachingbirds/folded_clothes_square.jpg -- 28.60kb -&amp;gt; 27.41kb (4.16%)
+/demo/public/assets/arsaboo/icons/abode_disabled.png -- 8.74kb -&amp;gt; 8.38kb (4.06%)
+/gallery/public/images/netflix.jpg -- 20.19kb -&amp;gt; 19.39kb (4%)
+/demo/public/assets/teachingbirds/roomba_bw_square.jpg -- 15.97kb -&amp;gt; 15.34kb (3.97%)
+/demo/public/assets/teachingbirds/trash_square.jpg -- 29.50kb -&amp;gt; 28.39kb (3.76%)
+/demo/public/assets/teachingbirds/cleaning_square.jpg -- 38.57kb -&amp;gt; 37.19kb (3.59%)
+/demo/public/assets/teachingbirds/dryer_square.jpg -- 18.78kb -&amp;gt; 18.16kb (3.32%)
+/gallery/public/images/album_cover_2.jpg -- 129.79kb -&amp;gt; 125.62kb (3.21%)
+/demo/public/assets/teachingbirds/House_square.jpg -- 40.59kb -&amp;gt; 39.31kb (3.15%)
+/demo/public/assets/arsaboo/icons/tv_disabled.png -- 10.24kb -&amp;gt; 9.93kb (3.08%)
+/demo/public/assets/teachingbirds/washer_square.jpg -- 20.52kb -&amp;gt; 20.00kb (2.52%)
+/demo/public/assets/teachingbirds/mailbox_square.jpg -- 42.97kb -&amp;gt; 41.98kb (2.3%)
+/demo/public/assets/teachingbirds/trash_bear_bw_square.jpg -- 17.60kb -&amp;gt; 17.35kb (1.46%)
+/demo/public/assets/teachingbirds/guests_square.jpg -- 49.05kb -&amp;gt; 48.38kb (1.38%)
+/demo/public/assets/teachingbirds/mailbox_bw_square.jpg -- 19.44kb -&amp;gt; 19.25kb (0.98%)
+/demo/public/assets/arsaboo/icons/tv_on2.png -- 0.79kb -&amp;gt; 0.78kb (0.25%)
+
+Signed-off-by: ImgBotApp &amp;lt;ImgBotHelp@gmail.com&amp;gt;
+
+Co-authored-by: ImgBotApp &amp;lt;ImgBotHelp@gmail.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a0a4fcaf5f40b88956145b7de624a859bb3fc4e0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/a0a4fcaf5f40b88956145b7de624a859bb3fc4e0"/>
+    <title>
+        Allow custom cards in card picker (#5122)
+    </title>
+    <updated>2020-03-31T14:20:09Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/1299821?s=30&amp;u=a2624d42a6d1a7a65fd752f86b5a518e9e1fae19&amp;v=4"/>
+    <author>
+      <name>thomasloven</name>
+      <uri>https://github.com/thomasloven</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Allow custom cards in card picker (#5122)
+
+* Allow custom cards in card picker
+
+* Lint. &amp;quot;Custom:&amp;quot; prefix to card names
+
+* Address review comments
+
+* Simplifications. Translation fixes.
+
+* Less magic
+
+* Move CUSTOM_TYPE_PREFIX
+
+* Update hui-card-picker.ts
+
+Co-authored-by: Bram Kragten &amp;lt;mail@bramkragten.nl&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/454d81facce1edc62dce10d1271793254fe98a8b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/454d81facce1edc62dce10d1271793254fe98a8b"/>
+    <title>
+        View Editor: Badge Preview (#5335)
+    </title>
+    <updated>2020-03-31T11:30:52Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/18730868?s=30&amp;u=e0230db39ced9f3211418b4c375a6900a994568c&amp;v=4"/>
+    <author>
+      <name>zsarnett</name>
+      <uri>https://github.com/zsarnett</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;View Editor: Badge Preview (#5335)
+
+* Badge Preview
+
+* Move Badge preview
+
+* Clean
+
+* Error card + clean
+
+* remove try catch&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0bfa8260fa085a48b05c4a41d2e64aedc7978243</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/0bfa8260fa085a48b05c4a41d2e64aedc7978243"/>
+    <title>
+        Merge pull request #5372 from dmulcahey/dm/zha-tables-clear-selections
+    </title>
+    <updated>2020-03-31T11:25:50Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5662298?s=30&amp;u=e9ad3f49389213944ba24cbbc21e659db5889927&amp;v=4"/>
+    <author>
+      <name>bramkragten</name>
+      <uri>https://github.com/bramkragten</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #5372 from dmulcahey/dm/zha-tables-clear-selections
+
+Clear selections in ZHA data tables&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f2124f1c95991502fc9e9f27845d3f6bb111d309</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/f2124f1c95991502fc9e9f27845d3f6bb111d309"/>
+    <title>
+        Merge pull request #5373 from zsarnett/entity-card-fix
+    </title>
+    <updated>2020-03-31T11:24:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5662298?s=30&amp;u=e9ad3f49389213944ba24cbbc21e659db5889927&amp;v=4"/>
+    <author>
+      <name>bramkragten</name>
+      <uri>https://github.com/bramkragten</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #5373 from zsarnett/entity-card-fix
+
+Entity Card: Fix Value clipping in editor&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/451bc2370adf7758bf0f885ddd93878b24e6767e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/451bc2370adf7758bf0f885ddd93878b24e6767e"/>
+    <title>
+        [ci skip] Translation update
+    </title>
+    <updated>2020-03-31T00:32:48Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/23041403?s=30&amp;u=0023f9827790714afd93ddb08b3326297087a77e&amp;v=4"/>
+    <author>
+      <name>homeassistant</name>
+      <uri>https://github.com/homeassistant</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[ci skip] Translation update&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0b17642c31b3e38a7b7216ce8a0e54acb00f206f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/0b17642c31b3e38a7b7216ce8a0e54acb00f206f"/>
+    <title>
+        Fix editor value clipping
+    </title>
+    <updated>2020-03-31T00:19:18Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/18730868?s=30&amp;u=e0230db39ced9f3211418b4c375a6900a994568c&amp;v=4"/>
+    <author>
+      <name>zsarnett</name>
+      <uri>https://github.com/zsarnett</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix editor value clipping&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/214dc2557680579614d9fd42940cde3f5b44253e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/214dc2557680579614d9fd42940cde3f5b44253e"/>
+    <title>
+        clear selections
+    </title>
+    <updated>2020-03-31T00:01:04Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1335687?s=30&amp;u=fb084dff12cb4999db489fa469d13893cf64c996&amp;v=4"/>
+    <author>
+      <name>dmulcahey</name>
+      <uri>https://github.com/dmulcahey</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;clear selections&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/158eddfd442b2f502eaacf953d5317b586291660</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/158eddfd442b2f502eaacf953d5317b586291660"/>
+    <title>
+        Entity Card: Card Addition (#4971)
+    </title>
+    <updated>2020-03-30T23:49:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/18730868?s=30&amp;u=e0230db39ced9f3211418b4c375a6900a994568c&amp;v=4"/>
+    <author>
+      <name>zsarnett</name>
+      <uri>https://github.com/zsarnett</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Entity Card: Card Addition (#4971)
+
+* Review to changed Src translations
+
+* Reviews
+
+* side by side theme
+
+* Allow user to specify unit
+
+* Add unit back update for headerfooter and editor
+
+* Clean
+
+* Unavailable for attribute that doesn&amp;#39;t exist
+
+* fix merge
+
+* Fix from rebasing
+
+* reviews
+
+* Localize State
+
+* fix for localize
+
+* css
+
+* reviews
+
+* Break the rules&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5daa6dbd2585e3df43f75336f2147c7bf2e595e2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/5daa6dbd2585e3df43f75336f2147c7bf2e595e2"/>
+    <title>
+        [skip ci] Simplify release pipeline
+    </title>
+    <updated>2020-03-30T20:52:27Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/15338540?s=30&amp;u=319ddda4bfef877056188693c7c6249e06559f5b&amp;v=4"/>
+    <author>
+      <name>pvizeli</name>
+      <uri>https://github.com/pvizeli</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[skip ci] Simplify release pipeline&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/645ef3e61fcd7f95d3c7f973c3c5e59aaf62f008</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/645ef3e61fcd7f95d3c7f973c3c5e59aaf62f008"/>
+    <title>
+        [skip ci] Simplify release pipeline
+    </title>
+    <updated>2020-03-30T20:51:42Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/15338540?s=30&amp;u=319ddda4bfef877056188693c7c6249e06559f5b&amp;v=4"/>
+    <author>
+      <name>pvizeli</name>
+      <uri>https://github.com/pvizeli</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;[skip ci] Simplify release pipeline&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5dcea5171276a10b2f33b054c10b4823cc0e8941</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/5dcea5171276a10b2f33b054c10b4823cc0e8941"/>
+    <title>
+        Fix default path for demo
+    </title>
+    <updated>2020-03-30T19:20:06Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5662298?s=30&amp;u=e9ad3f49389213944ba24cbbc21e659db5889927&amp;v=4"/>
+    <author>
+      <name>bramkragten</name>
+      <uri>https://github.com/bramkragten</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix default path for demo&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6995968d50eea6a4c3f4543cccfcf3b9f8835d8f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/6995968d50eea6a4c3f4543cccfcf3b9f8835d8f"/>
+    <title>
+        Update ha-sidebar.ts
+    </title>
+    <updated>2020-03-30T18:59:12Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5662298?s=30&amp;u=e9ad3f49389213944ba24cbbc21e659db5889927&amp;v=4"/>
+    <author>
+      <name>bramkragten</name>
+      <uri>https://github.com/bramkragten</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update ha-sidebar.ts&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c4cb42f3c28745957a886a1c040590a2137bab0e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/home-assistant/frontend/commit/c4cb42f3c28745957a886a1c040590a2137bab0e"/>
+    <title>
+        Merge branch &#39;master&#39; into dev
+    </title>
+    <updated>2020-03-30T18:57:24Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/5662298?s=30&amp;u=e9ad3f49389213944ba24cbbc21e659db5889927&amp;v=4"/>
+    <author>
+      <name>bramkragten</name>
+      <uri>https://github.com/bramkragten</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into dev&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

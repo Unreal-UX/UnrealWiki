@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Online-Multiplayer by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:03:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>Online-Multiplayer - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Online-Multiplayer","wgTitle":"Online-Multiplayer","wgCurRevisionId":563,"wgRevisionId":563,"wgArticleId":281,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials","Code","Community Created Content"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Online-Multiplayer","wgRelevantArticleId":281,"wgRequestId":"31a4bb7a0a0b0819c464725b","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load9239.css?debug=false&amp;lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Online-Multiplayer rootpage-Online-Multiplayer skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-08a23efcd19f60be7"><meta name="worker" content="116"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Online-Multiplayer by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 01:03:48 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Online-Multiplayer" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="index.html" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="index7367.html?title=Online-Multiplayer" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="indexedc0.html?title=Talk:Online-Multiplayer&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="index7367.html?title=Online-Multiplayer">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="index0128.html?title=Online-Multiplayer&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="indexd14e.html?title=Online-Multiplayer&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Online-Multiplayer</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><a href="index5e77.html?title=Template:Rating&amp;action=edit&amp;redlink=1" class="new" title="Template:Rating (page does not exist)">Template:Rating</a>
+<a href="indexf104.html?title=Template:Review&amp;action=edit&amp;redlink=1" class="new" title="Template:Review (page does not exist)">Template:Review</a>
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Unreal_Engine_and_Online_Multiplayer_with_the_OnlineSubSystem"><span class="tocnumber">1</span> <span class="toctext">Unreal Engine and Online Multiplayer with the OnlineSubSystem</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Intro"><span class="tocnumber">1.1</span> <span class="toctext">Intro</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Part_1_.E2.80.93_Life_Cycle_of_a_Game_Session"><span class="tocnumber">1.2</span> <span class="toctext">Part 1 – Life Cycle of a Game Session</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Creating_a_Session"><span class="tocnumber">1.2.1</span> <span class="toctext">Creating a Session</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Starting_a_Session"><span class="tocnumber">1.2.2</span> <span class="toctext">Starting a Session</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Updating_a_Session.2C_Find_and_Join_a_Session"><span class="tocnumber">1.2.3</span> <span class="toctext">Updating a Session, Find and Join a Session</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#End_a_Session"><span class="tocnumber">1.2.4</span> <span class="toctext">End a Session</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Destroy_a_Session"><span class="tocnumber">1.2.5</span> <span class="toctext">Destroy a Session</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="#Part_2_.E2.80.93_Class_and_interface_overview."><span class="tocnumber">1.3</span> <span class="toctext">Part 2 – Class and interface overview.</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Part_3_.E2.80.93_An_Implementation"><span class="tocnumber">1.4</span> <span class="toctext">Part 3 – An Implementation</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Part_4_.E2.80.93_I_want_the_easy_way_out"><span class="tocnumber">1.5</span> <span class="toctext">Part 4 – I want the easy way out</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Related_Topics"><span class="tocnumber">1.6</span> <span class="toctext">Related Topics</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Unreal_Engine_and_Online_Multiplayer_with_the_OnlineSubSystem">Unreal Engine and Online Multiplayer with the OnlineSubSystem</span></h1>
+<h2><span class="mw-headline" id="Intro">Intro</span></h2>
+<p>Author <a rel="nofollow" class="external text" href="https://madebykrol.wordpress.com/about/">Kristoffer “mbk” Olsson</a>, <a rel="nofollow" class="external text" href="https://madebykrol.wordpress.com/2015/05/21/unreal-engine-and-online-multiplayer/">link to original article</a>.
+</p><p>I have been working on getting Possession up and running for multiplayer testing, so I thought I should cover what I learned while doing that. Basic actor replication and game mechanics is one thing, getting your game to actually run online is by itself a great challenge, and maybe this post will help any one else understanding how Unreal Engine 4 works with online gameplay.
+</p><p>This article is written as a brain dump to recall my research on the online subsystem so it might be flawed. Leave a comment and I will try to edit this article if I’ve made errors to keep it relevant.
+</p><p>Unreal engine provides all the basics needed to host and join a game out of the box but you will eventually need to get your hands dirty with the Online Sub System. During development you can try out replication and see how your game will run in a multiplayer environment from the editor, just add another player when you run a preview of your game and you can start testing your game with multiplayer features. However, once you are out of the editor the simple action of joining a server is no longer as trivial. Inside the editor unreal engine provides you with a <b>Online Sub System</b>, this system is no longer present once you are in a standalone game instance. What you need to do is implement this on your own, or use one of the provided ones, for development purposes the <b>OnlineSubSystemNull</b> is suggested which  only work for LAN gameplay.
+</p><p>he first step from here would be to take a look at how ShooterGame works, especially how it is creating an online session, how to finding and joining a session and once you are finished playing, destroying a session. The second step from that would be to start ripping ShooterGame apart, applying some basic session operations to your game, and testing them with the Null system. When you are ready to ship your game, or want to test out internet gameplay, you can create your own subsystem that enables online multiplayer, which is quite a grand task. Or you have the option to opt in to publish your game on Steam. Then there is not much to it, from the Engines Point of view, you enable the <b>OnlineSubSystemSteam</b>, download and reference the Steamworks SDK. But if your game is not designed to run on a PC or you don’t want to use steam there are other options! UE4 supports Subsystems for; XboxLive, PSN, Google Play, Game Center and more!
+</p><p>Let’s begin by taking a look at how to use the OnlineSubSystem in your game to provide online / LAN multiplayer. The first thing that you need to do is enable the OnlineSubSystem module in your project.  Open your <b>.Build.cs</b> and uncomment the line for the OnlineSubsystemNull module. Mine looks like this: <b>DynamicallyLoadedModuleNames.Add(“OnlineSubsystemNull”);</b> There are two ways to approach getting your game to handle game sessions in the next step. One is more involved and complicated, the other very straight forward and easy. One in c++ and one in blueprint (As of <b>UE 4.9</b>)! Let’s go with the hard, complicated and fun option first!
+</p><p>Again, here is a good time to start brushing over the ShooterGame example. This complete process is covered with elegance in its source code.
+</p><p>Before we dig any deeper in an implementation we need to cover some concepts of how Sessions are handled by the subsystem, this will make it easier to understand how to build it in c++ and the complex code of ShooterGame will seem much more clear and easy to follow.
+</p>
+<h2><span class="mw-headline" id="Part_1_.E2.80.93_Life_Cycle_of_a_Game_Session">Part 1 – Life Cycle of a Game Session</span></h2>
+<p>There are two major Interfaces involved <b>IOnlineSubsystem</b> and <b>IOnlineSession</b> each handles crucial parts of integrating your game with the subsystem. Everything is basically driven by sessions, you notify a service about your servers presence, the service is then queried by clients who wish to find active game sessions. A client then requests to join a given session, and then if all is well, the client is allowed to travel to that server.
+</p>
+<h3><span class="mw-headline" id="Creating_a_Session">Creating a Session</span></h3>
+<p>When hosting a game you first need to create a session for the online sub system.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">IOnlineSubSystem</span><span class="o">*</span> <span class="n">OnlineSub</span> <span class="o">=</span> <span class="n">IOnlineSubsystem</span><span class="o">::</span><span class="n">Get</span><span class="p">();</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">OnlineSub</span><span class="p">)</span> 
+<span class="p">{</span>
+   <span class="n">IOnlineSessionPtr</span> <span class="n">Session</span> 
+       <span class="o">=</span> <span class="n">OnlineSub</span><span class="o">-&gt;</span><span class="n">GetSessionInterface</span><span class="p">();</span> 
+   <span class="k">if</span> <span class="p">(</span><span class="n">Session</span><span class="p">.</span><span class="n">IsValid</span><span class="p">())</span> <span class="p">{</span>
+      <span class="n">Session</span><span class="o">-&gt;</span><span class="n">CreateSession</span><span class="p">(</span><span class="o">*</span><span class="n">UserId</span><span class="p">,</span> <span class="n">SessionName</span><span class="p">,</span> <span class="o">*</span><span class="n">HostSettings</span><span class="p">);</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>This bit of code is the basic foundation for creating a new session in the subsystem. When a session has been created a delegate is fired which you can opt in to handle. This is done by assigning a delegate like so.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">OnCreateSessionDelegateHandle</span> 
+    <span class="o">=</span> <span class="n">Session</span><span class="o">-&gt;</span><span class="n">AddOnCreateSessionCompleteDelegate_Handle</span><span class="p">(</span><span class="n">FOnCreateSessionCompleteDelegate</span><span class="p">)</span>
+</pre></div>
+<p><b>_Handle</b> and no <b>_Handle</b> It’s worth mentioning why there are two different methods here, one that returns a FDelegateHandle and one that does not. The one without the _handle suffix is deprecated and should not be used. When you assign a Delegate you should always keep a reference to the handle so you can operate on your delegates in a proper way through out the session life cycle.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">ClearOnCreateSessionCompleteDelegate_Handle</span><span class="p">(</span><span class="n">OnCreateSessionDelegateHandle</span><span class="p">)</span>
+</pre></div>
+<p><i>§ Pay attention, this is subject to change as the _Handle suffix is added for backwards compatibility while the option to do it without is deprecating.</i>
+</p>
+<h3><span class="mw-headline" id="Starting_a_Session">Starting a Session</span></h3>
+<p>You are able to and in general you should signal the subsystem that a match has started, in case you don’t want to list games in progress or maybe only list games in progress.
+</p><p>This can be done in the following way.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">Session</span><span class="o">-&gt;</span><span class="n">StartSession</span><span class="p">(</span><span class="n">SessionName</span><span class="p">);</span>
+</pre></div>
+<p>This will tell the subsystem that this session and gameplay has started. Take a look at how ShooterGame does this.
+</p><p>And as with all other calls to the subsystem you are able to assign delegates and retrieve the handle for them by methods named by convention e.g:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">OnStartSessionCompleteDelegateHandle</span>
+   <span class="o">=</span> <span class="n">Session</span><span class="o">-&gt;</span><span class="n">AddOnstartSessionCompleteDelegate_Handle</span><span class="p">(</span><span class="n">OnStartSessionDelegate</span><span class="p">);</span>
+</pre></div>
+<p>This is normally done in a overridden void HandleMatchHasStarted() method in your GameSession Class as this is called when the match has started by the currently active game mode.
+</p><p>When the authority has started the session, it should RPC call to a method on all the connected clients so that they also start a online session. In this example the server is doing a RPC to a method called ClientStartOnlineGame
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// tell non-local players to start online game</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">FConstPlayerControllerIterator</span> <span class="n">It</span> 
+   <span class="o">=</span> <span class="n">GetWorld</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetPlayerControllerIterator</span><span class="p">();</span> <span class="n">It</span><span class="p">;</span> <span class="o">++</span><span class="n">It</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="n">AClientPlayerController</span><span class="o">*</span> <span class="n">PC</span> <span class="o">=</span> <span class="n">Cast</span><span class="o">&lt;</span><span class="n">AClientPlayerController</span><span class="o">&gt;</span><span class="p">(</span><span class="o">*</span><span class="n">It</span><span class="p">);</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">PC</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">PC</span><span class="o">-&gt;</span><span class="n">IsLocalPlayerController</span><span class="p">())</span>
+   <span class="p">{</span>
+      <span class="n">PC</span><span class="o">-&gt;</span><span class="n">ClientStartOnlineGame</span><span class="p">();</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Updating_a_Session.2C_Find_and_Join_a_Session">Updating a Session, Find and Join a Session</span></h3>
+<p>The online subsystem provides a way to find ongoing game sessions. This is a pretty powerful feature that allows to you query the subsystem to retrieve a set of hosts that is currently running a session of your game. The Online sub system interfaces declares methods to do this, however its up to the subsystem itself to allow querying.
+</p><p>Once you have a set of sessions you can either create a UI widget that allows players to pick a session and join it. Or you can choose for them by creating a matchmaking system where you put players against each other based on a set of parameters for instance, skill-level
+</p><p>When you wish to query the subsystem for sessions to join to need first to create an instance of FOnlineSessionSearch
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">Search</span> <span class="o">=</span> <span class="n">MakeShareable</span><span class="p">(</span><span class="k">new</span> <span class="n">FOnlineSessionSearch</span><span class="p">());</span>
+ 
+<span class="n">OnFindSessionsCompleteDelegateHandle</span> 
+    <span class="o">=</span> <span class="n">Session</span><span class="o">-&gt;</span><span class="n">AddOnFindSessionCompleteDelegate_Handle</span><span class="p">(</span><span class="n">OnFindSessionsCompleteDelegate</span><span class="p">);</span>
+<span class="n">TSharedRef</span><span class="o">&lt;</span><span class="n">FOnlineSessionSearch</span><span class="o">&gt;</span> <span class="n">SearchRef</span> <span class="o">=</span> <span class="n">Search</span><span class="p">.</span><span class="n">ToSharedRef</span><span class="p">();</span>
+<span class="n">Session</span><span class="o">-&gt;</span><span class="n">FindSessions</span><span class="p">(</span><span class="o">*</span><span class="n">UserId</span><span class="p">,</span> <span class="n">SearchRef</span><span class="p">);</span>
+</pre></div>
+<p>In case we wish to query our subsystem for servers with different options or keywords we can do this by adding queries to our SessionSearch Instance.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">Search</span><span class="o">-&gt;</span><span class="n">QuerySettings</span><span class="p">.</span><span class="n">Set</span><span class="p">(</span><span class="n">SEARCH_KEYWORD</span><span class="p">,</span> <span class="s">&quot;SOME_KEYWORD&quot;</span><span class="p">,</span> <span class="n">EOnlineComparisonOp</span><span class="o">::</span><span class="n">Equals</span><span class="p">);</span>
+</pre></div>
+<p>The last bit of the query is a <b>Enum</b> with a collection of comparison operators for instance you have Greater Than, Lesser Than, Near, Not Equals and a few others.
+</p><p>I will try to cover querying and matchmaking in deeper detail later on, untill then please look at ShooterGame and how it is using querying.
+</p><p>Once you have your results you are able to pick one and join the session.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">SessionToJoin</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">SessionToJoin</span> <span class="o">&lt;</span> <span class="n">Search</span><span class="p">.</span><span class="n">SearchResults</span><span class="p">.</span><span class="n">Num</span><span class="p">())</span>
+<span class="p">{</span>
+   <span class="k">return</span> <span class="n">Session</span><span class="o">-&gt;</span><span class="n">JoinSession</span><span class="p">(</span><span class="o">*</span><span class="n">UserId</span><span class="p">,</span> <span class="n">SessionName</span><span class="p">,</span> <span class="n">Search</span><span class="p">.</span><span class="n">SearchResults</span><span class="p">[</span><span class="n">SessionToJoin</span><span class="p">]);</span>
+<span class="p">}</span>
+<span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</pre></div>
+<p>When the OnJoinSessionCompleteDelegate is fired it passes a EOnJoinSessionCompleteResult::Type Enum as parameter to the delegate, this will either tell you that you have successfully joined the session, or that something went wrong and you should handle it accordingly, the delegate also passes a FName with the SessionName in it. If everything went well, we can then proceed to travel to the server. When we want to travel we need to resolve the URL to the server, this is done by passing a FString to contain the resolved URL along with the SessionName as a FName to GetResolvedConnectString
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FString</span> <span class="n">URL</span><span class="p">;</span>
+<span class="n">IOnlineSessionPtr</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">OnlineSub</span><span class="o">-&gt;</span><span class="n">GetSessionInterface</span><span class="p">();</span>
+ 
+<span class="k">if</span> <span class="p">(</span> <span class="n">Session</span><span class="o">-&gt;</span><span class="n">GetResolvedConnectString</span><span class="p">(</span><span class="n">SessionName</span><span class="p">,</span> <span class="n">URL</span><span class="p">))</span>
+<span class="p">{</span>
+   <span class="n">PlayerController</span><span class="o">-&gt;</span><span class="n">ClientTravel</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span> <span class="n">TRAVEL_Absolute</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<p>This might seem as a bit of magic, but the trick to this resolve is that your Session keeps a state once you have Joined a session, so when you resolve anything with the same session name that you joined with you will resolve the URL to that session.
+</p><p>This means that unless you explicitly decides to leave a session, you are not able to Join and travel to another. This also allows you to easily reconnect to a session if you lose the connection temporarily or your game crashed.
+</p><p>Be mind full of how you keep your references to the session.
+</p>
+<h3><span class="mw-headline" id="End_a_Session">End a Session</span></h3>
+<p>Endning a session is the the operation of notifing the subsystem that the match has ended. Its the opposite of Starting a session in this regard. When the Match has ended, GameMode calls GameSession-&gt;HandleMatchHasEnded();
+This means that in your gamesession subclass you should override void HandleMatchHasEnded().
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">IOnlineSessionPtr</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">OnlineSub</span><span class="o">-&gt;</span><span class="n">GetSessionInterface</span><span class="p">();</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">Session</span><span class="p">.</span><span class="n">IsValid</span><span class="p">())</span> 
+<span class="p">{</span>
+   <span class="n">Session</span><span class="o">-&gt;</span><span class="n">EndSession</span><span class="p">(</span><span class="n">GameSessionName</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<p>This only shows the subsystem call to EndSession, in reality this is very incomplete. You need to tell the connected clients that your gamesession has ended so that they can gracefully handle that your match is ending so they can end their sessions aswell. Again ShooterGame does this with elegance. When the match is ending the server calls the ClientEndOnlineGame() on connected controllers, this is a replicated RPC which in turn will call this methods implementation on each connected clients controller.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// tell the clients to end</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">FConstPlayerControllerIterator</span> <span class="n">It</span> 
+   <span class="o">=</span> <span class="n">GetWorld</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetPlayerControllerIterator</span><span class="p">();</span> <span class="n">It</span><span class="p">;</span> <span class="o">++</span><span class="n">It</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="n">AClientPlayerController</span><span class="o">*</span> <span class="n">PC</span> <span class="o">=</span> <span class="n">Cast</span><span class="o">&lt;</span><span class="n">AClientPlayerController</span><span class="o">&gt;</span><span class="p">(</span><span class="o">*</span><span class="n">It</span><span class="p">);</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">PC</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">PC</span><span class="o">-&gt;</span><span class="n">IsLocalPlayerController</span><span class="p">())</span>
+   <span class="p">{</span>
+      <span class="n">PC</span><span class="o">-&gt;</span><span class="n">ClientEndOnlineGame</span><span class="p">();</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>Each client then calls EndSession to end its session!
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">IOnlineSessionPtr</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">OnlineSub</span><span class="o">-&gt;</span><span class="n">GetSessionInterface</span><span class="p">();</span>
+<span class="k">if</span><span class="p">(</span><span class="n">Session</span><span class="p">.</span><span class="n">IsValid</span><span class="p">())</span>
+<span class="p">{</span>
+   <span class="n">Session</span><span class="o">-&gt;</span><span class="n">EndSession</span><span class="p">(</span><span class="n">PlayerState</span><span class="o">-&gt;</span><span class="n">SessionName</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Destroy_a_Session">Destroy a Session</span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">IOnlineSessionPtr</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">OnlineSub</span><span class="o">-&gt;</span><span class="n">GetSessionInterface</span><span class="p">();</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">Session</span><span class="p">.</span><span class="n">InValid</span><span class="p">())</span>
+<span class="p">{</span>
+   <span class="n">Session</span><span class="o">-&gt;</span><span class="n">DestroySession</span><span class="p">(</span><span class="n">SessionName</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<p>And as with all other other operations a delegate will be fired, where you can clean up after the session has been destroyed.
+</p>
+<h2><span class="mw-headline" id="Part_2_.E2.80.93_Class_and_interface_overview.">Part 2 – Class and interface overview.</span></h2>
+<p><b>GameInstance</b>
+</p><p><b>GameSession</b>
+</p><p><b>IOnlineSession</b>
+</p><p><b>IOnlineSessionSettings</b>
+</p><p><b>IOnlineSubSystem</b>
+</p><p><b>EOnlineAsyncTaskState</b>
+</p><p>The OnlineSubSystem performs some asynchronous task for example searching and each task can be polled for a state. These are the states in which a async task can be in.
+</p><p><b>Done</b>
+</p><p><b>Failed</b>
+</p><p><b>InProgress</b>
+</p><p><b>NotStarted</b>
+</p><p><br />
+<b>FDelegateHandle</b>
+</p><p><b>FOnlineSessionSearch</b>
+</p><p>This class contains your search results, your search query and properties to set Timeout of your search, and the current search state if you need to poll for it.
+</p><p>To query the subsystem for specific fields use the QuerySettings.Set(Field, Value, EOnlineComparisonOp);
+</p><p><b>FOnlineSessionSearchResult</b>
+</p><p>Searching for servers is a asynchronous task which starts to run when you call FindSessions. When this task has finished you and if it was successfull in finding any sessions they will be stored as a TArray of <b>FOnlineSessionSearchResult</b> on your <b>FOnlineSessionSearch</b> reference.
+</p><p>Here is an example of a method that polls for the async task state for the search.
+And while we are at it we take a snapshot of the current search progress.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">EOnlineAsyncTaskState</span><span class="o">::</span><span class="n">Type</span> <span class="n">APossessionGameSession</span><span class="o">::</span><span class="n">GetSearchResultStatus</span><span class="p">(</span>
+    <span class="n">int32</span><span class="o">&amp;</span> <span class="n">SearchResultIdx</span><span class="p">,</span> 
+    <span class="n">int32</span><span class="o">&amp;</span> <span class="n">NumSearchResults</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">SearchResultIdx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">NumSearchResults</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">Search</span><span class="p">.</span><span class="n">IsValid</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">Search</span><span class="o">-&gt;</span><span class="n">SearchState</span> <span class="o">==</span> <span class="n">EOnlineAsyncTaskState</span><span class="o">::</span><span class="n">Done</span><span class="p">)</span>
+        <span class="p">{</span>
+           <span class="n">NumSearchResults</span> <span class="o">=</span> <span class="n">Search</span><span class="o">-&gt;</span><span class="n">SearchResults</span><span class="p">.</span><span class="n">Num</span><span class="p">();</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">Search</span><span class="o">-&gt;</span><span class="n">SearchState</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">EOnlineAsyncTaskState</span><span class="o">::</span><span class="n">NotStarted</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="Part_3_.E2.80.93_An_Implementation">Part 3 – An Implementation</span></h2>
+<p>With this knowledge it will be easier to follow and understand the code for the online part of ShooterGame. Its quite complex but now you have some basic knowledge of the online subsystem to fall back on when doing further research.
+</p><p>When studying the ShooterGame example code you find that working with the subsystem is not a straight procedural line of operations, most things are handled by delegates that has fired when certain events has happened in the subsystem.
+</p><p>Things has to work this way by the nature of networks, they are unreliable and, this means that our program cannot halt the frame and wait for the subsystem to respond over the network. The game have to ask to find sessions, and when the subsystem has some sessions to give to us, react then, do some other operations in the meantime.
+</p><p>In short, when implementing multiplayer in your game you need to think event-driven-programming where you tell the system to do one thing, and eventually the system will tell you when it has finished performing its task so you can react to the outcome.
+</p>
+<h2><span class="mw-headline" id="Part_4_.E2.80.93_I_want_the_easy_way_out">Part 4 – I want the easy way out</span></h2>
+<p>As promised, we will take a look at a “easier” way to integrate the online subsystem into your game.
+In UE &gt;= 4.6 you have access to a set of new Blueprint nodes. CreateSession, FindSession, JoinSession and DestroySession. Take a look at this example on how to integration sessions to your game with blueprints.. It does only provide the basics of the subsystem functionality but you will get up and running in a second with this approach.
+</p><p>&lt;youtube&gt;<a rel="nofollow" class="external free" href="https://youtu.be/4LV7KKtzKs8">https://youtu.be/4LV7KKtzKs8</a>&lt;/youtube&gt;
+</p>
+<h2><span class="mw-headline" id="Related_Topics">Related Topics</span></h2>
+<p><a rel="nofollow" class="external free" href="https://wiki.unrealengine.com/How_To_Use_Sessions_In_C++">https://wiki.unrealengine.com/How_To_Use_Sessions_In_C%2B%2B</a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20200401004830
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.048 seconds
+Real time usage: 0.802 seconds
+Preprocessor visited node count: 187/1000000
+Preprocessor generated node count: 392/1000000
+Post‐expand include size: 40/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.928      1 -total
+ 45.38%    0.875      1 Template:Rating
+ 45.23%    0.872      1 Template:Review
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:281-0!canonical and timestamp 20200401004829 and revision id 563
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="indexef3e.html?title=Online-Multiplayer&amp;oldid=563">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=Online-Multiplayer&amp;oldid=563</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="indexb3b2.html?title=Category:Tutorials&amp;action=edit&amp;redlink=1" class="new" title="Category:Tutorials (page does not exist)">Tutorials</a></li><li><a href="indexdd0a.html?title=Category:Code" title="Category:Code">Code</a></li><li><a href="index1db6.html?title=Category:Community_Created_Content" title="Category:Community Created Content">Community Created Content</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0fabd7d8c0a1277bf"><meta name="worker" content="170"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.048","walltime":"0.802","ppvisitednodes":{"value":187,"limit":1000000},"ppgeneratednodes":{"value":392,"limit":1000000},"postexpandincludesize":{"value":40,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    1.928      1 -total"," 45.38%    0.875      1 Template:Rating"," 45.23%    0.872      1 Template:Review"]},"cachereport":{"timestamp":"20200401004830","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":93});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":141,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

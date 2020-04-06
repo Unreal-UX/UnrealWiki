@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/open-coronavirus/open-coronavirus/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/open-coronavirus/open-coronavirus/commits/master.atom"/>
+  <title>Recent Commits to open-coronavirus:master</title>
+  <updated>2020-03-30T21:25:41Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3fc710146b9729b4ec70ebf20f017adbad8f9c89</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/3fc710146b9729b4ec70ebf20f017adbad8f9c89"/>
+    <title>
+        Merge pull request #33 from rubentnf/master
+    </title>
+    <updated>2020-03-30T21:25:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1303776?s=30&amp;v=4"/>
+    <author>
+      <name>aparraga</name>
+      <uri>https://github.com/aparraga</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #33 from rubentnf/master
+
+Fixed padding bottom of safe area in iOS devices&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d90b7991c4d959000445d00002bc7474de95db4e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/d90b7991c4d959000445d00002bc7474de95db4e"/>
+    <title>
+        Fixed padding bottom of safe area in iOS devices with notch in .foote…
+    </title>
+    <updated>2020-03-30T20:25:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/6740945?s=30&amp;u=66d5d604b7a748b5706ee5a806538e9dadfb4d89&amp;v=4"/>
+    <author>
+      <name>rubentnf</name>
+      <uri>https://github.com/rubentnf</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fixed padding bottom of safe area in iOS devices with notch in .footer-buttons-container class&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3c29b6315f5920a421cbe38f644a88910b20c431</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/3c29b6315f5920a421cbe38f644a88910b20c431"/>
+    <title>
+        Merge pull request #29 from dcarrask/14
+    </title>
+    <updated>2020-03-30T15:44:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1303776?s=30&amp;v=4"/>
+    <author>
+      <name>aparraga</name>
+      <uri>https://github.com/aparraga</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #29 from dcarrask/14
+
+User Initials shown at menu circle&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1aa00d3d0b5299fa0a2e62edb29bb958e516e2ac</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/1aa00d3d0b5299fa0a2e62edb29bb958e516e2ac"/>
+    <title>
+        User Initials shown at menu circle
+    </title>
+    <updated>2020-03-30T15:33:55Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/594532?s=30&amp;v=4"/>
+    <author>
+      <name>dcarrask</name>
+      <uri>https://github.com/dcarrask</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;User Initials shown at menu circle&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ce371538d3ab8bb42de709c2aba977af8be17131</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/ce371538d3ab8bb42de709c2aba977af8be17131"/>
+    <title>
+        Merge pull request #28 from danii-nebot/server-fix-8
+    </title>
+    <updated>2020-03-30T13:47:57Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1303776?s=30&amp;v=4"/>
+    <author>
+      <name>aparraga</name>
+      <uri>https://github.com/aparraga</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #28 from danii-nebot/server-fix-8
+
+Find by Id using Like fix&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c152ce4c422d450dd458ff6604441bfcf3b15b2e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/c152ce4c422d450dd458ff6604441bfcf3b15b2e"/>
+    <title>
+        Fix querys by adding `strictObjectIDCoercion` param, remove like
+    </title>
+    <updated>2020-03-30T12:03:39Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1923818?s=30&amp;v=4"/>
+    <author>
+      <name>danii-nebot</name>
+      <uri>https://github.com/danii-nebot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix querys by adding `strictObjectIDCoercion` param, remove like
+
+https://loopback.io/doc/en/lb3/MongoDB-connector.html#strictobjectidcoercion-flag&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/48a3062ed054dae3958ecb5b3566e0971029629d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/48a3062ed054dae3958ecb5b3566e0971029629d"/>
+    <title>
+        Fix .env typo
+    </title>
+    <updated>2020-03-30T11:45:39Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1923818?s=30&amp;v=4"/>
+    <author>
+      <name>danii-nebot</name>
+      <uri>https://github.com/danii-nebot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix .env typo&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/16ebe99bb29ab0bde7f15030bd92fa1f52d54783</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/16ebe99bb29ab0bde7f15030bd92fa1f52d54783"/>
+    <title>
+        Add mondodb debug logs for dev env
+    </title>
+    <updated>2020-03-30T11:45:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1923818?s=30&amp;v=4"/>
+    <author>
+      <name>danii-nebot</name>
+      <uri>https://github.com/danii-nebot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add mondodb debug logs for dev env&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5a79958c1109645a7ea2852098b5f8f19ba2eacd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/5a79958c1109645a7ea2852098b5f8f19ba2eacd"/>
+    <title>
+        Add server `/dist` folder to .gitignore
+    </title>
+    <updated>2020-03-30T11:44:39Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1923818?s=30&amp;v=4"/>
+    <author>
+      <name>danii-nebot</name>
+      <uri>https://github.com/danii-nebot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add server `/dist` folder to .gitignore&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5cd7c1c0d49d2d24ac714e52bc53eb6f42e9d2d6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/5cd7c1c0d49d2d24ac714e52bc53eb6f42e9d2d6"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-30T11:29:10Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1357955?s=30&amp;u=e7398d82aeab3ebdc2326ac63bf14187a9e4dcd3&amp;v=4"/>
+    <author>
+      <name>eladnts55</name>
+      <uri>https://github.com/eladnts55</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/37bffee097a46415c5dbe33c39e0960babb72f26</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/37bffee097a46415c5dbe33c39e0960babb72f26"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-30T11:28:25Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1357955?s=30&amp;u=e7398d82aeab3ebdc2326ac63bf14187a9e4dcd3&amp;v=4"/>
+    <author>
+      <name>eladnts55</name>
+      <uri>https://github.com/eladnts55</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5fa0f938502659a52232fca6aa002491b2162fb6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/5fa0f938502659a52232fca6aa002491b2162fb6"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-30T11:25:07Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1303776?s=30&amp;v=4"/>
+    <author>
+      <name>aparraga</name>
+      <uri>https://github.com/aparraga</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6d981d7528095eded7f3575eb2f00776f2c0d0d5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/6d981d7528095eded7f3575eb2f00776f2c0d0d5"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-30T10:30:17Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1303776?s=30&amp;v=4"/>
+    <author>
+      <name>aparraga</name>
+      <uri>https://github.com/aparraga</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4e59e25e1d594a65248747aabe7904778afcc9cc</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/4e59e25e1d594a65248747aabe7904778afcc9cc"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-30T10:23:49Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1303776?s=30&amp;v=4"/>
+    <author>
+      <name>aparraga</name>
+      <uri>https://github.com/aparraga</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a0b51c3ed92f3001ef8b66069403f6872663ec00</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/a0b51c3ed92f3001ef8b66069403f6872663ec00"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-30T10:22:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1303776?s=30&amp;v=4"/>
+    <author>
+      <name>aparraga</name>
+      <uri>https://github.com/aparraga</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f5f5ae2360a1c0faa40a8c3210d82d85a4d3376e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/f5f5ae2360a1c0faa40a8c3210d82d85a4d3376e"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-30T10:14:04Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1303776?s=30&amp;v=4"/>
+    <author>
+      <name>aparraga</name>
+      <uri>https://github.com/aparraga</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2488736909a827aa78a40d8781ca22b93054ca1c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/2488736909a827aa78a40d8781ca22b93054ca1c"/>
+    <title>
+        Latest translations
+    </title>
+    <updated>2020-03-29T19:46:58Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1303776?s=30&amp;v=4"/>
+    <author>
+      <name>aparraga</name>
+      <uri>https://github.com/aparraga</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Latest translations&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fe30791dab58a423dc66ce8e457045973dd3a09c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/fe30791dab58a423dc66ce8e457045973dd3a09c"/>
+    <title>
+        Fix 2 screenshots extensions
+    </title>
+    <updated>2020-03-29T17:41:50Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1303776?s=30&amp;v=4"/>
+    <author>
+      <name>aparraga</name>
+      <uri>https://github.com/aparraga</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix 2 screenshots extensions&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e469415e570fff2b8ce91680c79869872ca5a5dc</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/e469415e570fff2b8ce91680c79869872ca5a5dc"/>
+    <title>
+        Changed english version of screenshots
+    </title>
+    <updated>2020-03-29T17:40:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1303776?s=30&amp;v=4"/>
+    <author>
+      <name>aparraga</name>
+      <uri>https://github.com/aparraga</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Changed english version of screenshots&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/36bd307bbd951c333719129b7ec6feaf17b6b0d8</id>
+    <link type="text/html" rel="alternate" href="https://github.com/open-coronavirus/open-coronavirus/commit/36bd307bbd951c333719129b7ec6feaf17b6b0d8"/>
+    <title>
+        Increase the capacitor version to avoid a 4 days ago issue (I love op…
+    </title>
+    <updated>2020-03-29T17:33:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1303776?s=30&amp;v=4"/>
+    <author>
+      <name>aparraga</name>
+      <uri>https://github.com/aparraga</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Increase the capacitor version to avoid a 4 days ago issue (I love open source)&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

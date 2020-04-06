@@ -1,0 +1,16 @@
+From df967c7edc9b47e39bdb3c0fde3a18ae9a349984 Mon Sep 17 00:00:00 2001
+From: Hyeoncheol Cho <crocuis@gmail.com>
+Date: Sun, 10 Feb 2019 02:50:47 +0900
+Subject: [PATCH] update plugin
+
+---
+ Examples/Plugins/UnrealJS | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Examples/Plugins/UnrealJS b/Examples/Plugins/UnrealJS
+index b8325f0..d6886c5 160000
+--- a/Examples/Plugins/UnrealJS
++++ b/Examples/Plugins/UnrealJS
+@@ -1 +1 @@
+-Subproject commit b8325f05c7f23b3d1ca946d09b7f1ad9524a9bc9
++Subproject commit d6886c50dfc4e91544d5c49e3c9f78d0f92f351e

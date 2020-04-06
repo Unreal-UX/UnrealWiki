@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/glb-director/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/glb-director/commits/master.atom"/>
+  <title>Recent Commits to glb-director:master</title>
+  <updated>2020-03-28T03:10:36Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4e386c761ec6b9b88f1160ba998b2401a15b850b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/4e386c761ec6b9b88f1160ba998b2401a15b850b"/>
+    <title>
+        Merge pull request #98 from github/broken-deb-deps
+    </title>
+    <updated>2020-03-28T03:10:36Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #98 from github/broken-deb-deps
+
+Fix broken Debian Stretch kernel dependency in package building.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/aae4f5f4abb0deb4ee3306918605cc282ae8f7a0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/aae4f5f4abb0deb4ee3306918605cc282ae8f7a0"/>
+    <title>
+        Bump KVER to match.
+    </title>
+    <updated>2020-03-26T00:14:45Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump KVER to match.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0e82e1f975b39ba9de82ad5bb905b5e38578f9e5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/0e82e1f975b39ba9de82ad5bb905b5e38578f9e5"/>
+    <title>
+        Fix broken Debian Stretch kernel dependency in package building.
+    </title>
+    <updated>2020-03-26T00:09:26Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix broken Debian Stretch kernel dependency in package building.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4e4460883a26fc625786c237462b665b19121dd0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/4e4460883a26fc625786c237462b665b19121dd0"/>
+    <title>
+        Merge pull request #96 from github/xdp-director
+    </title>
+    <updated>2020-02-28T23:34:23Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #96 from github/xdp-director
+
+XDP version of glb-director&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2f0a7b5ce9f2c710000de84610a51bec1ca00c70</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/2f0a7b5ce9f2c710000de84610a51bec1ca00c70"/>
+    <title>
+        Adjust systemd config for XDP director to allow multiple root paths.
+    </title>
+    <updated>2020-02-27T22:51:40Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Adjust systemd config for XDP director to allow multiple root paths.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f6076fabc86be9905051cde07b84fde02932802c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/f6076fabc86be9905051cde07b84fde02932802c"/>
+    <title>
+        Don&#39;t enable XDP services by default at install since they need config.
+    </title>
+    <updated>2020-02-27T22:47:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Don&amp;#39;t enable XDP services by default at install since they need config.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/da55204ed9481b3b5e5c428e8b93f71d00ad3281</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/da55204ed9481b3b5e5c428e8b93f71d00ad3281"/>
+    <title>
+        Remove accidental dpdk dependency on cli.
+    </title>
+    <updated>2020-02-27T22:46:58Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Remove accidental dpdk dependency on cli.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/397f0da609894860da2a274541b50c52c59abc99</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/397f0da609894860da2a274541b50c52c59abc99"/>
+    <title>
+        Allow multiple xdp-root-path options and bind to them all.
+    </title>
+    <updated>2020-02-27T22:46:35Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Allow multiple xdp-root-path options and bind to them all.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0637f9e35a428a8478c4a86a28450538c256801d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/0637f9e35a428a8478c4a86a28450538c256801d"/>
+    <title>
+        Merge branch &#39;xdp-director&#39; of github.com:github/glb-director into xd…
+    </title>
+    <updated>2020-02-26T02:53:35Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;xdp-director&amp;#39; of github.com:github/glb-director into xdp-director&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/01f23921551d94f54a3709c4a04559eedbf72cc1</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/01f23921551d94f54a3709c4a04559eedbf72cc1"/>
+    <title>
+        Improve comment around hop count.
+    </title>
+    <updated>2020-02-26T02:53:07Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Improve comment around hop count.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/dabbbd3709fa21848335f459c87226d8a404864c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/dabbbd3709fa21848335f459c87226d8a404864c"/>
+    <title>
+        Merge branch &#39;master&#39; into xdp-director
+    </title>
+    <updated>2020-02-26T02:49:59Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into xdp-director&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/613752b4b71a22005d4fcb19e2ab0eabea80b65d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/613752b4b71a22005d4fcb19e2ab0eabea80b65d"/>
+    <title>
+        Merge pull request #95 from github/hashing-pre-xdp
+    </title>
+    <updated>2020-02-26T02:49:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #95 from github/hashing-pre-xdp
+
+Refactor shared hashing components to shared codebase ahead of XDP.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/63397e02e4c4527bea1c27ee53fe1da635a66d19</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/63397e02e4c4527bea1c27ee53fe1da635a66d19"/>
+    <title>
+        Rename DPDK script/cibuild to script/create-packages to match XDP.
+    </title>
+    <updated>2020-02-26T02:49:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Rename DPDK script/cibuild to script/create-packages to match XDP.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a871837edb306301593458c72c85b7036baec32c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/a871837edb306301593458c72c85b7036baec32c"/>
+    <title>
+        Remove unused ROUTE_CONTEXT_ENCAP_SIZE_FIXED_*.
+    </title>
+    <updated>2020-02-26T02:46:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Remove unused ROUTE_CONTEXT_ENCAP_SIZE_FIXED_*.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a83427fbc73288bf91a31012528ec4fb7aed40c9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/a83427fbc73288bf91a31012528ec4fb7aed40c9"/>
+    <title>
+        Update whitespace in src/glb-director/glb_encap.c
+    </title>
+    <updated>2020-02-26T02:45:04Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update whitespace in src/glb-director/glb_encap.c
+
+Co-Authored-By: Ross McFarland &amp;lt;ross@github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/107c8e34beff8e88fa1656cc9d6d80051434955b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/107c8e34beff8e88fa1656cc9d6d80051434955b"/>
+    <title>
+        Merge branch &#39;hashing-pre-xdp&#39; into xdp-director
+    </title>
+    <updated>2020-02-25T03:36:06Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;hashing-pre-xdp&amp;#39; into xdp-director&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5034d5b4d400458a2caf06e22af3962756299ec1</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/5034d5b4d400458a2caf06e22af3962756299ec1"/>
+    <title>
+        Keep the version as it was.
+    </title>
+    <updated>2020-02-25T03:33:08Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Keep the version as it was.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/2e2f8bfa42573c61a73cbb41cc420c6ba20faa77</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/2e2f8bfa42573c61a73cbb41cc420c6ba20faa77"/>
+    <title>
+        Refactor shared hashing components to shared codebase ahead of XDP.
+    </title>
+    <updated>2020-02-25T03:28:01Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Refactor shared hashing components to shared codebase ahead of XDP.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f9c80d20193db75b584ac5053cfdf38940725da6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/f9c80d20193db75b584ac5053cfdf38940725da6"/>
+    <title>
+        Initial XDP director implementation.
+    </title>
+    <updated>2020-02-25T03:00:23Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Initial XDP director implementation.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/74ce4be8faf26a127295abf6dd2abeb6b8aeb50b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/glb-director/commit/74ce4be8faf26a127295abf6dd2abeb6b8aeb50b"/>
+    <title>
+        packaging: Split glb-director-cli out of glb-director.
+    </title>
+    <updated>2020-02-24T04:31:21Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/349190?s=30&amp;v=4"/>
+    <author>
+      <name>theojulienne</name>
+      <uri>https://github.com/theojulienne</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;packaging: Split glb-director-cli out of glb-director.&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

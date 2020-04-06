@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/view_component/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/view_component/commits/master.atom"/>
+  <title>Recent Commits to view_component:master</title>
+  <updated>2020-03-31T21:21:37Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/127c312008781e008835f14d42939780a02b83ef</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/127c312008781e008835f14d42939780a02b83ef"/>
+    <title>
+        Merge pull request #279 from github/v2.2.0
+    </title>
+    <updated>2020-03-31T21:21:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #279 from github/v2.2.0
+
+release v2.2.0&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/04fefb0caaddce76d9703f13a26b4fb1cd325f5b</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/04fefb0caaddce76d9703f13a26b4fb1cd325f5b"/>
+    <title>
+        release v2.2.0
+    </title>
+    <updated>2020-03-31T21:11:12Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;release v2.2.0&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/05c4fe42499e1a77d7024fcfa8f70bc2915f0811</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/05c4fe42499e1a77d7024fcfa8f70bc2915f0811"/>
+    <title>
+        Merge pull request #278 from github/short_identifier
+    </title>
+    <updated>2020-03-31T21:03:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #278 from github/short_identifier
+
+Add support for config.action_view.annotate_template_file_names&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fb3cf49821e838fa1fda73866c1a9b2a1bcce28f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/fb3cf49821e838fa1fda73866c1a9b2a1bcce28f"/>
+    <title>
+        return correct line number regardless of whether annotations are on
+    </title>
+    <updated>2020-03-31T20:24:19Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;return correct line number regardless of whether annotations are on&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bab6ace9b1e547f16ad9a3b7dcb5556cba6d71df</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/bab6ace9b1e547f16ad9a3b7dcb5556cba6d71df"/>
+    <title>
+        Merge branch &#39;master&#39; into short_identifier
+    </title>
+    <updated>2020-03-31T20:14:17Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into short_identifier&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/760b6bcaea6c0c9e123ca711ee548063bd8359f2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/760b6bcaea6c0c9e123ca711ee548063bd8359f2"/>
+    <title>
+        fix matcher
+    </title>
+    <updated>2020-03-31T20:13:53Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix matcher&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5049b2ab5f760f9dd442a59b8668e2cb76c0931f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/5049b2ab5f760f9dd442a59b8668e2cb76c0931f"/>
+    <title>
+        view_component is compatible with annotate_template_file_names
+    </title>
+    <updated>2020-03-31T20:11:15Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;view_component is compatible with annotate_template_file_names&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/468a435675613f60c7575b7003b407e31645e1e2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/468a435675613f60c7575b7003b407e31645e1e2"/>
+    <title>
+        do not include better_html in demo app
+    </title>
+    <updated>2020-03-31T20:10:56Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;do not include better_html in demo app&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/20df295b9b1195407f3f248d3103cd336d2cfe10</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/20df295b9b1195407f3f248d3103cd336d2cfe10"/>
+    <title>
+        remove comment about upstreaming
+    </title>
+    <updated>2020-03-31T20:10:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;remove comment about upstreaming&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bc44eed1dc05503f2dc8381ef30eb9cbdebbe132</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/bc44eed1dc05503f2dc8381ef30eb9cbdebbe132"/>
+    <title>
+        Merge pull request #277 from nashby/initialize-requirement
+    </title>
+    <updated>2020-03-31T19:59:46Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #277 from nashby/initialize-requirement
+
+Remove initializer requirement.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f68a01581b3b4450aec8dc1007f1440c2ed628a5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/f68a01581b3b4450aec8dc1007f1440c2ed628a5"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-31T19:53:16Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/16493862250c4f70c8439961ee008cf453e65bcd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/16493862250c4f70c8439961ee008cf453e65bcd"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2020-03-31T19:51:57Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e312479a9256e79e9d5391404e4baf56f7ac89f0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/e312479a9256e79e9d5391404e4baf56f7ac89f0"/>
+    <title>
+        Get component location using Kernel#caller_locations.
+    </title>
+    <updated>2020-03-31T19:37:21Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/200500?s=30&amp;u=328252b84dc40e5d2f8cfb89de4a3e3c5ee49bb0&amp;v=4"/>
+    <author>
+      <name>nashby</name>
+      <uri>https://github.com/nashby</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Get component location using Kernel#caller_locations.
+
+It removes initializer requirement from the component.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bcd44217aa3f0b503ea9b0e0b9e1568d307dae8d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/bcd44217aa3f0b503ea9b0e0b9e1568d307dae8d"/>
+    <title>
+        CI should fail
+    </title>
+    <updated>2020-03-31T18:22:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;CI should fail&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/600e18789e9cd541f31ba6926e9c27869c90ab99</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/600e18789e9cd541f31ba6926e9c27869c90ab99"/>
+    <title>
+        Merge pull request #276 from github/release-v2.1.0
+    </title>
+    <updated>2020-03-27T17:59:09Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #276 from github/release-v2.1.0
+
+release v2.1.0&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fa896da4ab344f0a155388e8d4b304579a378fbf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/fa896da4ab344f0a155388e8d4b304579a378fbf"/>
+    <title>
+        release v2.1.0
+    </title>
+    <updated>2020-03-27T17:49:10Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;release v2.1.0&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e40707af9221b74ec7b693c9251726d8b89a84b5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/e40707af9221b74ec7b693c9251726d8b89a84b5"/>
+    <title>
+        Merge pull request #274 from github/render-collections
+    </title>
+    <updated>2020-03-27T16:24:43Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #274 from github/render-collections
+
+Render collections&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c32d0660a1bf02510ddd0507bff591ca4e3a915e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/c32d0660a1bf02510ddd0507bff591ca4e3a915e"/>
+    <title>
+        Update CHANGELOG.md
+    </title>
+    <updated>2020-03-27T16:20:29Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/1940294?s=30&amp;u=d4f2aa731fb79823699ccf12919944f869c30264&amp;v=4"/>
+    <author>
+      <name>joelhawksley</name>
+      <uri>https://github.com/joelhawksley</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update CHANGELOG.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b09ca46f296a89a4bfcf5bcea9afe2e93de98f2c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/b09ca46f296a89a4bfcf5bcea9afe2e93de98f2c"/>
+    <title>
+        Didn&#39;t mean to replace these
+    </title>
+    <updated>2020-03-27T15:10:16Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/136521?s=30&amp;v=4"/>
+    <author>
+      <name>tclem</name>
+      <uri>https://github.com/tclem</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Didn&amp;#39;t mean to replace these&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/93b3cdca634d5832b1b96aa784ebfa43aed1f5ce</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/view_component/commit/93b3cdca634d5832b1b96aa784ebfa43aed1f5ce"/>
+    <title>
+        Add some documentation to the readme
+    </title>
+    <updated>2020-03-26T23:16:43Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/136521?s=30&amp;v=4"/>
+    <author>
+      <name>tclem</name>
+      <uri>https://github.com/tclem</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add some documentation to the readme&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

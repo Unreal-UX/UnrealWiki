@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/backup-utils/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/backup-utils/commits/master.atom"/>
+  <title>Recent Commits to backup-utils:master</title>
+  <updated>2020-04-01T01:58:37Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/920b0dd2c205ee3b574bec811b469b40f4cb5040</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/920b0dd2c205ee3b574bec811b469b40f4cb5040"/>
+    <title>
+        Merge pull request #535 from github/juruen/remove-mysql-auditlog
+    </title>
+    <updated>2020-04-01T01:58:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/2633220?s=30&amp;u=2c1faa2a21e4def7a4b0ad268b824ed7a1f35f0d&amp;v=4"/>
+    <author>
+      <name>cainejette</name>
+      <uri>https://github.com/cainejette</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #535 from github/juruen/remove-mysql-auditlog
+
+Remove code to handle  audit logs in MySQL&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c289bfab460f2c83fa01a4074b4c98ba483f00e6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/c289bfab460f2c83fa01a4074b4c98ba483f00e6"/>
+    <title>
+        Merge branch &#39;master&#39; into juruen/remove-mysql-auditlog
+    </title>
+    <updated>2020-04-01T00:30:08Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/2633220?s=30&amp;u=2c1faa2a21e4def7a4b0ad268b824ed7a1f35f0d&amp;v=4"/>
+    <author>
+      <name>cainejette</name>
+      <uri>https://github.com/cainejette</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into juruen/remove-mysql-auditlog&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7599489421a065cf9f2a0d9c0ba621fbb1b36ec5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/7599489421a065cf9f2a0d9c0ba621fbb1b36ec5"/>
+    <title>
+        Merge pull request #595 from github/danrigby/add-skip-pages-flag-to-g…
+    </title>
+    <updated>2020-03-31T21:59:27Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/16140724?s=30&amp;u=cb1bdd65bc4e94f736018a380749547f23287dde&amp;v=4"/>
+    <author>
+      <name>oakeyc</name>
+      <uri>https://github.com/oakeyc</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #595 from github/danrigby/add-skip-pages-flag-to-ghe-backup
+
+Add GHE_BACKUP_SKIP_PAGES and GHE_RESTORE_SKIP_PAGES config settings&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/09313784ab2fb2c149ca36ba63374bf3733562b2</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/09313784ab2fb2c149ca36ba63374bf3733562b2"/>
+    <title>
+        wrong env var
+    </title>
+    <updated>2020-03-31T21:42:45Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/16140724?s=30&amp;u=cb1bdd65bc4e94f736018a380749547f23287dde&amp;v=4"/>
+    <author>
+      <name>oakeyc</name>
+      <uri>https://github.com/oakeyc</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;wrong env var&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8dd54a3c156ee7f83df084e4a62ce5e4823df1d5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/8dd54a3c156ee7f83df084e4a62ce5e4823df1d5"/>
+    <title>
+        Move check for pages in backup to ghe-restore
+    </title>
+    <updated>2020-03-31T20:03:38Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/114417?s=30&amp;u=3d5176dceddebbdf8e97aa25ad040085149ae848&amp;v=4"/>
+    <author>
+      <name>DanRigby</name>
+      <uri>https://github.com/DanRigby</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Move check for pages in backup to ghe-restore&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/0a1c0301b56690a21abaae8eef1058a411fe1bfc</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/0a1c0301b56690a21abaae8eef1058a411fe1bfc"/>
+    <title>
+        Merge branch &#39;danrigby/add-skip-pages-flag-to-ghe-backup&#39; of github.c…
+    </title>
+    <updated>2020-03-31T19:13:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/114417?s=30&amp;u=3d5176dceddebbdf8e97aa25ad040085149ae848&amp;v=4"/>
+    <author>
+      <name>DanRigby</name>
+      <uri>https://github.com/DanRigby</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;danrigby/add-skip-pages-flag-to-ghe-backup&amp;#39; of github.com:github/backup-utils into danrigby/add-skip-pages-flag-to-ghe-backup&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/946287c773b9c24a14835b5dd02df8fb1dc48845</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/946287c773b9c24a14835b5dd02df8fb1dc48845"/>
+    <title>
+        Switch to using a config setting instead of a flag
+    </title>
+    <updated>2020-03-31T19:13:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/114417?s=30&amp;u=3d5176dceddebbdf8e97aa25ad040085149ae848&amp;v=4"/>
+    <author>
+      <name>DanRigby</name>
+      <uri>https://github.com/DanRigby</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Switch to using a config setting instead of a flag&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1969b35cea0417cb245319b6c4e7237c6183ef80</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/1969b35cea0417cb245319b6c4e7237c6183ef80"/>
+    <title>
+        remove extra line
+    </title>
+    <updated>2020-03-31T17:32:32Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/16140724?s=30&amp;u=cb1bdd65bc4e94f736018a380749547f23287dde&amp;v=4"/>
+    <author>
+      <name>oakeyc</name>
+      <uri>https://github.com/oakeyc</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;remove extra line
+
+Co-Authored-By: Caine Jette &amp;lt;cainejette@github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/18c21ecc8ba4b4ebb043c2c6d6b334d365559cc7</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/18c21ecc8ba4b4ebb043c2c6d6b334d365559cc7"/>
+    <title>
+        Merge branch &#39;master&#39; into juruen/remove-mysql-auditlog
+    </title>
+    <updated>2020-03-31T17:31:01Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/11424?s=30&amp;u=f8b04ad3f9e2556931f04120c8897663e1722d5d&amp;v=4"/>
+    <author>
+      <name>juruen</name>
+      <uri>https://github.com/juruen</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into juruen/remove-mysql-auditlog&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/3c87304ad37bb453917c97c5c86d663c3b0006ed</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/3c87304ad37bb453917c97c5c86d663c3b0006ed"/>
+    <title>
+        Fix typo in restore script help
+    </title>
+    <updated>2020-03-31T14:25:34Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/114417?s=30&amp;u=3d5176dceddebbdf8e97aa25ad040085149ae848&amp;v=4"/>
+    <author>
+      <name>DanRigby</name>
+      <uri>https://github.com/DanRigby</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Fix typo in restore script help&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/62325c7932fffafaa738d4b250a985dcffd27787</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/62325c7932fffafaa738d4b250a985dcffd27787"/>
+    <title>
+        add logic for skipping pages when backup does not have it
+    </title>
+    <updated>2020-03-31T00:24:14Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/16140724?s=30&amp;u=cb1bdd65bc4e94f736018a380749547f23287dde&amp;v=4"/>
+    <author>
+      <name>oakeyc</name>
+      <uri>https://github.com/oakeyc</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add logic for skipping pages when backup does not have it&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8b25261204805fac78d18b953db5588099c7db28</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/8b25261204805fac78d18b953db5588099c7db28"/>
+    <title>
+        add parameter to ghe-restore to skip pages restore
+    </title>
+    <updated>2020-03-30T22:07:16Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/16140724?s=30&amp;u=cb1bdd65bc4e94f736018a380749547f23287dde&amp;v=4"/>
+    <author>
+      <name>oakeyc</name>
+      <uri>https://github.com/oakeyc</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;add parameter to ghe-restore to skip pages restore&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/7505e1bf3fa58a66215244cfd33cec9e7006d199</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/7505e1bf3fa58a66215244cfd33cec9e7006d199"/>
+    <title>
+        &quot;WIP - Add --skip-pages flag to ghe-backup
+    </title>
+    <updated>2020-03-30T19:01:55Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/114417?s=30&amp;u=3d5176dceddebbdf8e97aa25ad040085149ae848&amp;v=4"/>
+    <author>
+      <name>DanRigby</name>
+      <uri>https://github.com/DanRigby</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;&amp;quot;WIP - Add --skip-pages flag to ghe-backup
+
+- Causes ghe-backup to skip backup of GitHub Pages generated artifacts&amp;quot;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c6ff3517c528d71e0eda828273eed1b773deb57a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/c6ff3517c528d71e0eda828273eed1b773deb57a"/>
+    <title>
+        Merge pull request #593 from github/rwnfoo-patch-1
+    </title>
+    <updated>2020-03-27T17:02:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/38323656?s=30&amp;u=dcc481f17a49065ad772ca85f4a632a926625eed&amp;v=4"/>
+    <author>
+      <name>rwnfoo</name>
+      <uri>https://github.com/rwnfoo</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #593 from github/rwnfoo-patch-1
+
+Add additional requirements to run in docker&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/408d8c2fb9909f6f27a0d6af06f2a7e3580e2faf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/408d8c2fb9909f6f27a0d6af06f2a7e3580e2faf"/>
+    <title>
+        Add additional requirements to run in docker
+    </title>
+    <updated>2020-03-27T16:30:17Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/38323656?s=30&amp;u=dcc481f17a49065ad772ca85f4a632a926625eed&amp;v=4"/>
+    <author>
+      <name>rwnfoo</name>
+      <uri>https://github.com/rwnfoo</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add additional requirements to run in docker
+
+@droidpl and I were testing this out, and for the second example, @droidpl found that `GHE_EXTRA_SSH_OPTS` is a mandatory variable in the `backup.config` file or we&amp;#39;ll run into SSH issues.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/89d5f01aa75c1c1b24fade255f02aa9853f60974</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/89d5f01aa75c1c1b24fade255f02aa9853f60974"/>
+    <title>
+        Merge remote-tracking branch &#39;origin/master&#39;
+    </title>
+    <updated>2020-03-26T09:11:07Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/11424?s=30&amp;u=f8b04ad3f9e2556931f04120c8897663e1722d5d&amp;v=4"/>
+    <author>
+      <name>juruen</name>
+      <uri>https://github.com/juruen</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge remote-tracking branch &amp;#39;origin/master&amp;#39;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/cf31d2cb35d67abdb2abc289d050cb1e2089bace</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/cf31d2cb35d67abdb2abc289d050cb1e2089bace"/>
+    <title>
+        Merge pull request #591 from github/hao/ghe-backup-mysql
+    </title>
+    <updated>2020-03-19T16:41:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/45571951?s=30&amp;u=b296f13d58e1f5d7ac19de60a3ec923c99dc30a3&amp;v=4"/>
+    <author>
+      <name>jianghao0718</name>
+      <uri>https://github.com/jianghao0718</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #591 from github/hao/ghe-backup-mysql
+
+Separate ghe-backup-mysql out of ghe-backup&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b1e218d0a4339f53a48472d412f8f293787cc78e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/b1e218d0a4339f53a48472d412f8f293787cc78e"/>
+    <title>
+        Not to install coreutils
+    </title>
+    <updated>2020-03-19T15:57:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/45571951?s=30&amp;u=b296f13d58e1f5d7ac19de60a3ec923c99dc30a3&amp;v=4"/>
+    <author>
+      <name>jianghao0718</name>
+      <uri>https://github.com/jianghao0718</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Not to install coreutils
+
+not to install coreutils as it is included in the image
+I saw following 
+```
+Error: coreutils 8.31 is already installed
+2526To upgrade to 8.32, run `brew upgrade coreutils`.
+2527The command &amp;quot;brew install coreutils&amp;quot; failed and exited with 1 during .
+```&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d4c4c4dc807c945207f38c420e45a309e9595045</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/d4c4c4dc807c945207f38c420e45a309e9595045"/>
+    <title>
+        save sentinel file to data dir
+    </title>
+    <updated>2020-03-19T00:58:13Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/45571951?s=30&amp;u=b296f13d58e1f5d7ac19de60a3ec923c99dc30a3&amp;v=4"/>
+    <author>
+      <name>jianghao0718</name>
+      <uri>https://github.com/jianghao0718</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;save sentinel file to data dir&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9c189b8368556d1c40225a03819dd1d552b1d77a</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/backup-utils/commit/9c189b8368556d1c40225a03819dd1d552b1d77a"/>
+    <title>
+        backup to snapshot data dir
+    </title>
+    <updated>2020-03-19T00:55:17Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/45571951?s=30&amp;u=b296f13d58e1f5d7ac19de60a3ec923c99dc30a3&amp;v=4"/>
+    <author>
+      <name>jianghao0718</name>
+      <uri>https://github.com/jianghao0718</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;backup to snapshot data dir&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

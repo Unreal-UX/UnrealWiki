@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=%E4%B8%AD%E6%96%87_Launcher_%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 02:58:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93a8bd5691",applicationID:"145396307"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<title>中文 Launcher 启动器的故障排除 - Epic Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"中文_Launcher_启动器的故障排除","wgTitle":"中文 Launcher 启动器的故障排除","wgCurRevisionId":725,"wgRevisionId":725,"wgArticleId":362,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["故障诊断"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"中文_Launcher_启动器的故障排除","wgRelevantArticleId":362,"wgRequestId":"60f2a121571f365ee69d5ae1","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@071vexb",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="load3fc3.css?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="load2c8d.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<link rel="shortcut icon" href="favicon.html"/>
+<link rel="search" type="application/opensearchdescription+xml" href="opensearch_desc.php" title="Epic Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="api-result251f.xml?action=rsd"/>
+<link rel="license" href="https://www.epicgames.com/tos"/>
+<link rel="alternate" type="application/atom+xml" title="Epic Wiki Atom feed" href="feeda295.xml?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-中文_Launcher_启动器的故障排除 rootpage-中文_Launcher_启动器的故障排除 skin-vector action-view"><!DOCTYPE html><html data-baseurl="https://www.unrealengine.com"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-08a23efcd19f60be7"><meta name="worker" content="188"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesNavigation"></div><script>(function () {
+    var config = {"serverUrl":"https://www.unrealengine.com","locale":"en-US","localeOptions":[{"lang":"en-US","name":"English"},{"lang":"ko","name":"한국어"},{"lang":"ja","name":"日本語"},{"lang":"zh-CN","name":"简体中文"}],"euCookieStrings":{"cookieString":"We use cookies to ensure the best experience on all Epic Games websites. To learn more, please see our {0}.","policyString":"privacy policy","closeString":"Close","policyUrl":"https://www.epicgames.com/privacypolicy"},"_currentVersion":"1.37.2.101.61.0.1","_type":"Epic Games Nav","hideSignIn":true,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","pcDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi?productName=unrealengine","_createdBy":"tony.rossi","_uuid":"a0357fbf-1bd5-4eca-bbbf-48ea56e4ddb1","callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":true,"href":"http://unrealengine.com/register","title":"Download"},"hideCallToAction":false,"hideLocale":true,"accountLinks":{"signOutLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/logout","key":"signout"},"dropdownLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/account/personal?lang=en-US","title":"Personal","key":"personal"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com","title":"Seller","key":"seller"}],"signInLinks":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/id/login","title":"Sign In","key":"signin"}],"_type":"Epic Header Account Links"},"logoLink":{"_type":"Epic Header Action Link","useCustomCallback":true,"href":"http://unrealengine.com/","key":"logo"},"_futureVersion":"none","_created":"2017-08-21T08:59:33.648Z","_activeDate":"2019-05-31T08:22:43.049Z","macDownloadUrl":"https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg?productName=unrealengine","messages":{"search":"Search","default_download":"Get Epic Games","default_username":"Account","_type":"Epic Header Messages","locale":"English","sign_in":"Sign In","sign_out":"Sign Out"},"links":[{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":true,"href":"http://unrealengine.com/blog","title":"News","key":"blog"},{"isBarDivider":false,"_type":"Epic Header Link","useCustomCallback":false,"title":"About","key":"about","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/release-notes/","title":"What's New"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap","target":"_blank"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/faq","title":"FAQ"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Industries","key":"industries","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/games","title":"Games"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/architecture-solution","title":"Architecture"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/automotive-transportation","title":"Automotive & Transportation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/broadcast-live-events","title":"Broadcast & Live Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/film-television","title":"Film & Television"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/training-simulation","title":"Training & Simulation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/industry/more-uses","title":"More Uses"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Learning & Support","key":"learn","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/learn","title":"Get Started"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://docs.unrealengine.com/","title":"Documentation"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/onlinelearning-courses","title":"Online Learning","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events/webinar-series","title":"Webinars"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/support","title":"Support"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://issues.unrealengine.com/","title":"Issues"}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Community","key":"community","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/","title":"Forums"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://answers.unrealengine.com/","title":"AnswerHub"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/megagrants","title":"MegaGrants","key":""},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://communities.unrealengine.com","title":"User Groups"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/events","title":"Events"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/nvidia-edge","title":"Nvidia Edge","key":"programs"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/programs/intel-unreal","title":"Intel + Unreal","key":""}]},{"isBarDivider":false,"_type":"Epic Header Link","collapseTarget":"More","useCustomCallback":false,"title":"Marketplace","key":"marketplace","kids":[{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"http://unrealengine.com/marketplace","title":"Browse"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://publish.unrealengine.com/","title":"Submit Content"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-faq","title":"Marketplace FAQ"},{"_type":"Epic Header Submenu Item","useCustomCallback":true,"href":"http://unrealengine.com/marketplace-guidelines","title":"Marketplace Guidelines"},{"_type":"Epic Header Submenu Item","useCustomCallback":false,"href":"https://forums.unrealengine.com/forumdisplay.php?56-Marketplace","title":"Marketplace Forums"}]}],"hideSearch":false,"_lastModified":"2020-01-30T21:35:59.869Z","_version":{"_comment":"Publish to server UnrealEngine.com (Production)","_createdBy":"tony.rossi"},"_locale":"en_US","useServerUrl":true,"isEu":false};
+
+    if (typeof window._egNavBeforeConfigSet === 'function') {
+        window._egNavBeforeConfigSet();
+        window._egNavBeforeConfigSetRun = true;
+    }
+    window._egNavBeforeConfigSetCalled = true;
+
+    if (typeof window._epicGamesNav === 'undefined') {
+        window._epicGamesNav = config;
+    } else {
+        var missingAssumeFalsey = ['hideLocale', 'hideSearch', 'hideSignIn', 'hideCallToAction'];
+        for (var key in config) {
+            if (typeof key === 'string') {
+                if (!window._epicGamesNav[key] && config[key] !== null && missingAssumeFalsey.indexOf(key) === -1) {
+                    window._epicGamesNav[key] = config[key];
+                }
+            }
+        }
+    }
+
+    window._epicGamesNav.onSearch = function(query) {
+        window.location.href = 'https://www.unrealengine.com' + '/bing-search?keyword=' + query;
+    };
+
+    if (typeof window._egNavAfterConfigSet === 'function') {
+        window._egNavAfterConfigSet();
+        window._egNavAfterConfigSetRun = true;
+    }
+    window._egNavAfterConfigSetCalled = true;
+})();
+window.__locale = '';
+</script><link key="header-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/header.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body>
+<!-- Mirrored from mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=%E4%B8%AD%E6%96%87_Launcher_%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 02:58:36 GMT -->
+</html>		<div class="container">
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+
+				<div id="mw-head">
+					<!-- 					<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=%E4%B8%AD%E6%96%87+Launcher+%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+					 -->
+					<div class="homelink_container">
+                        <a href="index.html" title="UE4 Wiki Home" class="homelink">HOME</a>
+                    </div>
+                    <div class="notice">
+                    	We have temporarily disabled editing while we're working on a new Wiki!
+                    </div>
+					<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="index00d3.html?title=%E4%B8%AD%E6%96%87_Launcher_%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4" title="View the content page [c]" accesskey="c">Page</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="indexb0de.html?title=Talk:%E4%B8%AD%E6%96%87_Launcher_%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="index00d3.html?title=%E4%B8%AD%E6%96%87_Launcher_%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="index4f19.html?title=%E4%B8%AD%E6%96%87_Launcher_%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="index8aeb.html?title=%E4%B8%AD%E6%96%87_Launcher_%E5%90%AF%E5%8A%A8%E5%99%A8%E7%9A%84%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="https://mediawikiv2-website-prod05.ol.epicgames.net/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Epic Wiki" title="Search Epic Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				
+			</div>
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+
+								<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">中文 Launcher 启动器的故障排除</h1>
+												<div id="bodyContent" class="mw-body-content">
+											<div id="siteSub" class="noprint">From Epic Wiki</div>
+										
+															<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F.E9.97.AE.E9.A2.98.E6.95.85.E9.9A.9C.E6.8E.92.E9.99.A4"><span class="tocnumber">1</span> <span class="toctext">启动程序问题故障排除</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#.E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F.E5.BB.BA.E8.AE.AE.E7.9A.84.E8.A7.84.E6.A0.BC"><span class="tocnumber">1.1</span> <span class="toctext">启动程序建议的规格</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#.E6.88.91.E6.97.A0.E6.B3.95.E4.BD.BF.E7.94.A8.E6.88.91.E7.9A.84.E5.B8.90.E6.88.B7.E7.99.BB.E5.BD.95.E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F"><span class="tocnumber">1.2</span> <span class="toctext">我无法使用我的帐户登录启动程序</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.E6.88.91.E6.97.A0.E6.B3.95.E5.AE.89.E8.A3.85_Windows_.E7.89.88.E7.9A.84.E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F"><span class="tocnumber">1.3</span> <span class="toctext">我无法安装 Windows 版的启动程序</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#.E6.88.91.E5.B0.9D.E8.AF.95.E8.BF.90.E8.A1.8C.E6.97.B6.EF.BC.8C.E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F.E5.9C.A8.E2.80.9C.E8.AF.B7.E7.A8.8D.E5.80.99.E2.80.9D.E7.95.8C.E9.9D.A2.E6.8C.82.E8.B5.B7.E3.80.82"><span class="tocnumber">1.4</span> <span class="toctext">我尝试运行时，启动程序在“请稍候”界面挂起。</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#.E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F.E5.8A.A0.E8.BD.BD.E5.A4.B1.E8.B4.A5.E6.88.96.E5.8A.A0.E8.BD.BD.E6.97.B6.E5.B4.A9.E6.BA.83"><span class="tocnumber">1.5</span> <span class="toctext">启动程序加载失败或加载时崩溃</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#.E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F.E6.97.A0.E6.B3.95.E4.B8.8B.E8.BD.BD.E5.86.85.E5.AE.B9"><span class="tocnumber">1.6</span> <span class="toctext">启动程序无法下载内容</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#.E4.B8.8A.E8.BF.B0.E6.96.B9.E6.B3.95.E5.9D.87.E6.97.A0.E6.95.88.E6.9E.9C_-_.E8.8E.B7.E5.8F.96.E8.B0.83.E8.AF.95.E6.97.A5.E5.BF.97"><span class="tocnumber">1.7</span> <span class="toctext">上述方法均无效果 - 获取调试日志</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#.E6.8F.90.E7.A4.BA.E5.92.8C.E6.8A.80.E5.B7.A7"><span class="tocnumber">1.8</span> <span class="toctext">提示和技巧</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F.E9.97.AE.E9.A2.98.E6.95.85.E9.9A.9C.E6.8E.92.E9.99.A4">启动程序问题故障排除</span></h2>
+<p>虚幻引擎启动程序用于下载和启动虚幻引擎 4 的二进制版本（相对于从 GitHub 下载引擎源代码），并用作下载其他内容以及查看新闻和博客帖子的位置。
+</p><p>如果遇到启动程序问题，请阅读故障排除指南，确认是否有适合您问题的现成解决方案。如果没有找到解决方案，请访问 <a rel="nofollow" class="external free" href="http://help.epicgames.com/">http://help.epicgames.com/</a> 并使用“联系我们”部分中的“向我们发送电子邮件”按钮，确保提供尽可能详细的问题信息。  
+</p>
+<h3><span class="mw-headline" id=".E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F.E5.BB.BA.E8.AE.AE.E7.9A.84.E8.A7.84.E6.A0.BC">启动程序建议的规格</span></h3>
+<p>操作系统：x64 位版本的 Windows 7、8、8.1、10 或 Mac OS X 10.9.2 或更高版本。
+</p><p>硬盘空间：建议 1GB 左右，仅用于安装启动程序。如果想要从市场下载并安装游戏、编辑器和项目或内容，则需要更多硬盘空间。
+</p><p>显卡：任何兼容 DX11、DX12 的显卡
+</p><p>处理器：四核英特尔或 AMD 处理器
+</p>
+<h3><span class="mw-headline" id=".E6.88.91.E6.97.A0.E6.B3.95.E4.BD.BF.E7.94.A8.E6.88.91.E7.9A.84.E5.B8.90.E6.88.B7.E7.99.BB.E5.BD.95.E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F">我无法使用我的帐户登录启动程序</span></h3>
+<p>可能是您使用自己的帐户在多台机器上登录。一个帐户的最大有效机器数量为 5。如果在多次尝试登录帐户后，甚至可能会降低至 1 台机器。
+</p><p>请注意，访问虚幻引擎论坛也会计入有效机器数量中。
+</p>
+<h3><span class="mw-headline" id=".E6.88.91.E6.97.A0.E6.B3.95.E5.AE.89.E8.A3.85_Windows_.E7.89.88.E7.9A.84.E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F">我无法安装 Windows 版的启动程序</span></h3>
+<p>如果无法下载并启动安装程序，请尝试以下所列的步骤：
+</p>
+<ul><li> 确保以计算机上的管理员身份运行。</li>
+<li> 确保您具有对所选安装路径的读/写访问权。</li>
+<li> 确保计算机为最新状态，并安装了最新的 Service Pack 和驱动程序。</li></ul>
+<p>如果上述建议均未解决您的问题，需要获取安装程序日志。要获取安装程序日志，请执行以下步骤：
+</p>
+<ul><li> 将 msi 放置在 C 盘根目录下</li>
+<li> 按 Windows 键 + R 并输入：</li>
+<li> msiexec /i C:\EpicGamesLauncherInstaller.msi /L*V C:\EpicGamesInstallerLog.txt（确保使用准确的安装程序 msi 文件名来替换“EpicGamesLauncherInstaller.msi”）</li></ul>
+<p>获得日志后，在 AnswerHub 上报告问题并将日志附加到帖子中。
+</p>
+<h3><span class="mw-headline" id=".E6.88.91.E5.B0.9D.E8.AF.95.E8.BF.90.E8.A1.8C.E6.97.B6.EF.BC.8C.E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F.E5.9C.A8.E2.80.9C.E8.AF.B7.E7.A8.8D.E5.80.99.E2.80.9D.E7.95.8C.E9.9D.A2.E6.8C.82.E8.B5.B7.E3.80.82">我尝试运行时，启动程序在“请稍候”界面挂起。</span></h3>
+<p>如果在登录时收到此通知，请尝试以下所列步骤：
+</p>
+<ul><li> 确保没有使用代理（可以<a rel="nofollow" class="external text" href="http://amibehindaproxy.com/">在此</a>确认是否使用了代理），没有将 epicgames.com 过滤掉。如果使用了代理，添加通配符例外 <b>*.epicgames.com</b>（或请 IT 部门执行此操作）。如果您的 IT 部门更倾向于直接将子域添加到白名单中，本节末尾提供了一个名单。</li>
+<li> 还需要确保端口 <b>80</b>(http)、<b>443</b>(https) 和 <b>5222</b> 未被阻止。</li>
+<li> 尝试切换 DNS 服务器（OpenDNS 或 GoogleDNS）</li></ul>
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+子域列表<div class="mw-collapsible-content">
+<p>unrealengine.com<br />
+unrealtournament.com<br />   
+fortnite.com<br />   
+<br />
+account-public-service-prod03.ol.epicgames.com<br />
+catalog-public-service-prod06.ol.epicgames.com<br />
+eulatracking-public-service-prod06.ol.epicgames.com<br />
+entitlement-public-service-prod08.ol.epicgames.com<br />
+orderprocessor-public-service-ecomprod01.ol.epicgames.com<br />
+friends-public-service-prod06.ol.epicgames.com<br />
+persona-public-service-prod06.ol.epicgames.com<br />
+lightswitch-public-service-prod06.ol.epicgames.com<br />
+ut-public-service-prod10.ol.epicgames.com<br />
+launcher-public-service-prod06.ol.epicgames.com<br />
+xmpp-service-prod.ol.epicgames.com<br />
+<a rel="nofollow" class="external free" href="https://download.epicgames.com/">https://download.epicgames.com</a><br />
+<a rel="nofollow" class="external free" href="https://cdn1.epicgames.com/">https://cdn1.epicgames.com</a><br />
+<a rel="nofollow" class="external free" href="http://et2.epicgames.com/">http://et2.epicgames.com</a><br />
+<a rel="nofollow" class="external free" href="https://launcher-website-prod07.ol.epicgames.com/">https://launcher-website-prod07.ol.epicgames.com</a><br />
+</p>
+</div>
+</div>
+<h3><span class="mw-headline" id=".E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F.E5.8A.A0.E8.BD.BD.E5.A4.B1.E8.B4.A5.E6.88.96.E5.8A.A0.E8.BD.BD.E6.97.B6.E5.B4.A9.E6.BA.83">启动程序加载失败或加载时崩溃</span></h3>
+<p>如果尝试打开或加载启动程序时似乎没有进展，请尝试以下步骤：
+</p>
+<ul><li> 确保之前没有打开启动程序。</li>
+<li> 查看“任务管理器”，核实上次会话后是否没有关闭启动程序进程。</li>
+<li> 确保显卡驱动程序更新到最新版本。</li></ul>
+<h3><span class="mw-headline" id=".E5.90.AF.E5.8A.A8.E7.A8.8B.E5.BA.8F.E6.97.A0.E6.B3.95.E4.B8.8B.E8.BD.BD.E5.86.85.E5.AE.B9">启动程序无法下载内容</span></h3>
+<p>如果下载或查看内容时遇到问题，请尝试以下步骤：
+</p>
+<ul><li> 关闭并重启启动程序和/或计算机，等待几分钟后再重启。（这是最常用的解决方案！）</li>
+<li> 确保没有使用代理（可以<a rel="nofollow" class="external text" href="http://amibehindaproxy.com/">在此</a>确认是否使用了代理），没有将 epicgames.com 及其子域过滤掉。如果使用了代理，为 epicgames.com 及其子域添加例外（或请 IT 部门执行此操作）。</li>
+<li> 如果使用了防火墙，确保为 epicgames.com 及其子域添加例外（或请 IT 部门执行此操作）。</li>
+<li> 尝试切换 DNS 服务器（<a rel="nofollow" class="external text" href="https://www.opendns.com/">OpenDNS</a> 或 <a rel="nofollow" class="external text" href="https://developers.google.com/speed/public-dns">GoogleDNS</a>）</li>
+<li> 如果市场内容在同步时停滞不前，请在市场论坛上告知我们。</li></ul>
+<h3><span class="mw-headline" id=".E4.B8.8A.E8.BF.B0.E6.96.B9.E6.B3.95.E5.9D.87.E6.97.A0.E6.95.88.E6.9E.9C_-_.E8.8E.B7.E5.8F.96.E8.B0.83.E8.AF.95.E6.97.A5.E5.BF.97">上述方法均无效果 - 获取调试日志</span></h3>
+<p>如果上述方法都未能解决您的问题，或者这里没有提及您遇到的问题，请访问 UE4 AnswerHub，确认是否有其他用户已经报告该问题。如果没有，可以发布新帖子，但务必附加 DxDiag 和调试日志！
+</p>
+<dl><dd><b>获取 DxDiag：</b></dd>
+<dd><i>对于 Windows：</i>
+<ul><li>选择“开始”按钮，在搜索字段中输入“cmd”。</li>
+<li>打开命令提示符后，输入“dxdiag”并按 Enter 键。</li>
+<li>此时应打开 directX 诊断工具窗口，并且右下角会显示一个正在变化的进度条。</li>
+<li>完成后单击“保存所有信息”按钮。</li>
+<li>将该文本文件保存到桌面，或者能够轻易访问的位置</li></ul></dd>
+<dd><i>对于 Mac：</i>
+<ul><li>转至并单击苹果菜单</li>
+<li>选择“关于本机”选项</li>
+<li>复制包含操作系统和操作系统版本在内的信息。</li></ul></dd></dl>
+<p>在 AnswerHub 上发布问题时，直接从这里附加 DxDiag 或者包含 Mac 系统信息！
+</p>
+<dl><dd><b>获取调试日志：</b></dd>
+<dd><i>从启动程序内部：</i>
+<ul><li>在启动程序右上角，单击“齿轮”图标。</li>
+<li>选择“启用调试日志记录”，然后选择“立即启用”。如果您的问题是在启动或登录时发生的，请选择“启用调试日志记录”，然后选择“重启”</li>
+<li>在启用调试日志记录的情况下，重现您所遇到的问题。</li>
+<li>在重现问题后，返回到“齿轮”图标，并选择“显示启动程序日志”</li>
+<li>将此文件夹中的所有日志压缩成 zip 文件，并附加到 AnswerHub 报告中。</li>
+<li>返回到启动程序，再次选择“设置”图标，选择“禁用调试日志记录”或关闭启动程序。</li></ul></dd></dl>
+<p>如果无法登录或开启调试日志记录，也可以尝试使用以下命令行获取调试日志。
+</p>
+<dl><dd><i>从启动程序外部：</i>
+<ul><li>右键单击 Epic Games 启动程序桌面快捷方式</li>
+<li>选择“属性”并转至“快捷方式”选项卡</li>
+<li>在目标字段中的文件路径末尾处添加“-debuglogging”</li>
+<li>请勿添加引号，并确保文件路径和短划线之间有空格。应该类似于以下内容：</li></ul></dd></dl>
+<p><a href="indexc637.html?title=File:DebugLoggingCommand.JPG" class="image"><img alt="DebugLoggingCommand.JPG" src="../d26ilriwvtzlb.cloudfront.net/6/60/DebugLoggingCommand.JPG" width="362" height="497" /></a>
+</p>
+<dl><dd><ul><li>在获得调试日志之后，从目标字段移除命令</li></ul></dd></dl>
+<dl><dd><i>查找并压缩日志文件夹：</i></dd>
+<dd>您可以在以下位置找到日志：</dd>
+<dd>WIN：“C:\Users\"Username"\AppData\Local\EpicGamesLauncher\Saved\Logs” </dd>
+<dd>MAC：“~/Library/Logs/Unreal Engine/EpicGamesLauncher/”</dd></dl>
+<p>最好前往该位置并压缩整个日志文件夹，然后将其附加到您在 AnswerHub 上的问题中。
+</p>
+<h3><span class="mw-headline" id=".E6.8F.90.E7.A4.BA.E5.92.8C.E6.8A.80.E5.B7.A7">提示和技巧</span></h3>
+<p><b>如何创建符号链接</b>
+</p><p><b>Windows：</b>
+</p><p>如果遇到磁盘空间问题，Windows NTFS 具有符号链接功能。从重定向目录，使用“mklink /D link target”。
+</p><p>两个常见的问题是当前可用的示例内容达到 30GB+，以及升级版本时复制了引擎（4.7 占用 16GB+，不包含 DerivedDataCache）。
+</p><p>在以管理员权限打开的命令提示符中。 
+[ Windows 8.1，右键单击左下角，单击“命令提示符（管理员）”]
+</p>
+<ul><li> cd "\Program Files\Epic Games\Launcher"</li>
+<li> explorer .（这是一个空格后跟一个据点，将在当前位置打开 Windows 资源管理器）</li>
+<li>（用户 GUI 将 PatchStaging 和 VaultCache 移到新位置，启动程序不应在运行...例如，E: 盘根目录）</li>
+<li> mklink /d VaultCache E:\VaultCache</li>
+<li> mklink /d PatchStaging E:\PatchStaging</li></ul>
+<p>您应看到类似以下输出：
+</p>
+<pre>Directory of C:\Program Files\Epic Games\Launcher    
+02/02/2015  07:24 PM    &lt;DIR&gt;          Backup
+12/11/2014  01:19 AM    &lt;DIR&gt;          Engine
+02/12/2015  07:28 PM    &lt;SYMLINKD&gt;     PatchStaging [E:\PatchStaging]
+01/07/2015  02:31 AM    &lt;SYMLINKD&gt;     VaultCache [E:\VaultCache]
+</pre>
+<p>注意 SYMLINKD 末尾的 D。
+</p><p>您还可以使用“mklink”移动各个引擎目录或虚幻项目目录。或者 Android SDK 安装目录...
+</p><p>这里顺带一句，“Documents”文件夹本身就很特殊，如果右键单击该文件夹并选择“属性”，会显示“位置”选项卡，您可以在该选项卡中重新选择它的位置。就此而言，某些目录在 Windows 中十分特殊，不应随意改动。
+</p><p><b>MAC：</b>
+</p><p>使用符号链接 (SymLink) 可以将 Mac 上的安装位置移动到外部驱动上。这种方法要求将 /Users/Shared/UnrealEngine 文件夹移到外部驱动，并在旧文件夹中创建指向新位置的符号链接。要在 Mac 上设置符号链接，请执行以下步骤：
+</p>
+<ul><li> 备份 /Users/Shared 中的 UnrealEngine 文件夹</li>
+<li> 将 UnrealEngine 文件夹移到将要安装引擎的驱动中。可以使用以下终端命令进行此操作（不带引号）：“Sudo mv /Users/Shared/UnrealEngine /Destination/Location/”（注：要移动的文件夹路径和要移动到的目标位置之间有一个空格）</li>
+<li> 提示时输入管理员密码</li>
+<li> 在原 UnrealEngine 文件夹位置中创建符号链接，并使其指向新的 UnrealEngine 位置：“ln -s /Destination/Location/ /Users/Shared/UnrealEngine”</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20200401014745
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.032 seconds
+Real time usage: 0.051 seconds
+Preprocessor visited node count: 55/1000000
+Preprocessor generated node count: 82/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key wiki_pd05v2:pcache:idhash:362-0!canonical and timestamp 20200401014745 and revision id 725
+ -->
+</div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="index2a3a.html?title=%e4%b8%ad%e6%96%87_Launcher_%e5%90%af%e5%8a%a8%e5%99%a8%e7%9a%84%e6%95%85%e9%9a%9c%e6%8e%92%e9%99%a4&amp;oldid=725">https://mediawikiv2-website-prod05.ol.epicgames.net/index.php?title=中文_Launcher_启动器的故障排除&amp;oldid=725</a>"						</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="indexecb1.html?title=Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="index258f.html?title=Category:%E6%95%85%E9%9A%9C%E8%AF%8A%E6%96%AD&amp;action=edit&amp;redlink=1" class="new" title="Category:故障诊断 (page does not exist)">故障诊断</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+			</div>
+		</div>
+		<div id="eg-footer" role="contentinfo">
+			<!DOCTYPE html><html data-baseurl="https://www.unrealengine.com/"><head><meta charSet="UTF-8"><meta httpEquiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><meta name="host" content="ue-website-node-prod07-i-0e33288c51e7947d3"><meta name="worker" content="152"><link rel="apple-touch-icon" sizes="180x180" href="indexfb0b.html"><link rel="icon" type="image/png" sizes="32x32" href="index4aa2.html"><link rel="icon" type="image/png" sizes="16x16" href="indexca83.html"><link rel="manifest" href="index38c2.html"><link rel="mask-icon" href="indexebf0.html" color="#2a2a2a"><meta name="apple-mobile-web-app-title" content="Unreal Engine"><meta name="application-name" content="Unreal Engine"><meta name="msapplication-TileColor" content="#0aaff1"><meta name="msapplication-TileImage" content="index34da.html"><meta name="theme-color" content="#0aaff1"><title data-react-helmet="true"></title></head><body><div id="epicGamesFooter"></div><script>window._epicGamesFooter = {"serverUrl":"https://www.unrealengine.com","socialLinks":[{"_type":"Epic Footer Social Link","id":"twitter","href":"https://twitter.com/unrealengine"},{"_type":"Epic Footer Social Link","id":"facebook","href":"https://www.facebook.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.twitch.tv/unrealengine","id":"twitch"},{"_type":"Epic Footer Social Link","id":"instagram","href":"http://instagram.com/UnrealEngine"},{"_type":"Epic Footer Social Link","href":"http://www.youtube.com/unrealengine","id":"youtube"},{"_type":"Epic Footer Social Link","href":"https://www.unrealengine.com/rss","id":"rss"}],"_currentVersion":"1.89","copyrights":["© 2004-{YEAR}, Epic Games, Inc. All rights reserved. Unreal and its logo are Epic’s trademarks or registered trademarks in the US and elsewhere."],"newsLetterConfigs":{"enableNewsLetterCMS":true,"titleMsg":"Sign up for Unreal Engine news!","btnTxt":"Subscribe","_type":"Epic Footer News Letter","logo":"https://cdn2.unrealengine.com/Unreal+Engine%2FUE-Logo-988x988-1dee3bc7f6714edf3c21ee71826ebab54ae02077.png","successMsg":"You have successfully subscribed to Unreal Engine Newsletter.","loginRequired":false},"legalTags":[],"_type":"Epic Games Footer","newLineCopyrights":false,"_lastModifiedBy":"tony.rossi","epicPropertyName":"unreal_engine","_createdBy":"tony.rossi","_uuid":"dbad9ee8-9ebd-49e5-a448-e930feda5b65","logos":[{"_type":"Epic Footer Logo","href":"https://www.epicgames.com?lang=en-US","id":"eg","title":"Epic Games"},{"_type":"Epic Footer Logo","id":"ue","href":"https://www.unrealengine.com"}],"callToAction":{"_type":"Epic Header Call To Action","useCustomCallback":false,"title":""},"_futureVersion":"none","_created":"2017-08-21T08:59:33.817Z","messages":{"_type":"Epic Footer Messages","tos":"Terms of Service","privacy":"Privacy Policy"},"links":[{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/features","title":"Features"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/branding","title":"Logo & Branding"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://trello.com/b/TTAVI7Ny/ue4-roadmap","title":"Roadmap"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/education","title":"Education"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/academic-partners-apply","title":"Academic Partners"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/resources","title":"More Resources"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/awards","title":"Awards"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/custom-licensing","title":"Custom License Terms"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://dev.epicgames.com","title":"Online Services"},{"_type":"Epic Footer Link","useCustomCallback":true,"href":"http://unrealengine.com/training-partners","title":"Training Partners"},{"_type":"Epic Footer Link","useCustomCallback":false,"href":"https://www.epicgames.com/site/community-rules","title":"Community Rules"}],"hideDefaultTermsPolicy":false,"_lastModified":"2020-03-20T13:39:17.770Z","_version":{"_comment":"Publish The Common Content Type to server ","_createdBy":"tony.rossi"},"_locale":"en_US","isEu":false,"useServerUrl":true};
+window.__locale = '';
+</script><link key="footer-css" rel="stylesheet" href="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.css"><script src="../static-assets-prod.epicgames.com/unrealengine/static/webpack/footer.epic-unreal-engine.5ace4ab88c6f6357685f.js"></script></body></html>		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.032","walltime":"0.051","ppvisitednodes":{"value":55,"limit":1000000},"ppgeneratednodes":{"value":82,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20200401014745","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":183});});</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93a8bd5691","applicationID":"145396307","transactionName":"MlxXbUBZWkJUAkVQCgsWdFpGUVtfGgBSTQwKVxpPW11D","queueTime":0,"applicationTime":221,"atts":"HhtUGwhDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

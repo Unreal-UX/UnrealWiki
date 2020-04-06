@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/ncsoft/Unreal.js/commits/1769f4643d0da9c06045475e4e601f767f2440c0</id>
+  <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commits/1769f4643d0da9c06045475e4e601f767f2440c0"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/ncsoft/Unreal.js/commits/1769f4643d0da9c06045475e4e601f767f2440c0.atom"/>
+  <title>Recent Commits to Unreal.js:1769f4643d0da9c06045475e4e601f767f2440c0</title>
+  <updated>2016-01-11T04:09:33Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1769f4643d0da9c06045475e4e601f767f2440c0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/1769f4643d0da9c06045475e4e601f767f2440c0"/>
+    <title>
+        fix instantiate
+    </title>
+    <updated>2016-01-11T04:09:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/u/1415901?s=30&amp;v=4"/>
+    <author>
+      <name>crocuis</name>
+      <uri>https://github.com/crocuis</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix instantiate&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/cb28f67803bace41d7626dfed55601aa4f243154</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/cb28f67803bace41d7626dfed55601aa4f243154"/>
+    <title>
+        Merge branch &#39;master&#39; of https://github.com/ncsoft/Unreal.js
+    </title>
+    <updated>2016-01-08T04:21:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; of https://github.com/ncsoft/Unreal.js&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/58ea5a3018f7dd86de7858884c25c37bf249855d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/58ea5a3018f7dd86de7858884c25c37bf249855d"/>
+    <title>
+        bugfix: ctor of non actor JS class had invalid this
+    </title>
+    <updated>2016-01-08T04:21:19Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;bugfix: ctor of non actor JS class had invalid this&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/54b4c6384c804cc8a7a885ba3681aade2803cbe6</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/54b4c6384c804cc8a7a885ba3681aade2803cbe6"/>
+    <title>
+        Exclude DirectoryWatcher for non editor build
+    </title>
+    <updated>2016-01-06T13:34:28Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Exclude DirectoryWatcher for non editor build&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/223d1ebf129332a433f3e6638b6c97acb0827445</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/223d1ebf129332a433f3e6638b6c97acb0827445"/>
+    <title>
+        Exclude directory watcher in Shipping build
+    </title>
+    <updated>2016-01-06T12:53:35Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Exclude directory watcher in Shipping build&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/1d8c8444bff185efee250474c0882a9d1595fb4e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/1d8c8444bff185efee250474c0882a9d1595fb4e"/>
+    <title>
+        Shipping build script
+    </title>
+    <updated>2016-01-06T12:49:32Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Shipping build script&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c6d3127b47492a87167e6b31e7830b771606b059</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/c6d3127b47492a87167e6b31e7830b771606b059"/>
+    <title>
+        Build script
+    </title>
+    <updated>2016-01-06T10:42:26Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Build script&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/91ec9eac1f416e7f220d2f52931a36973604b187</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/91ec9eac1f416e7f220d2f52931a36973604b187"/>
+    <title>
+        Merge branch &#39;master&#39; of https://github.com/ncsoft/Unreal.js
+    </title>
+    <updated>2016-01-06T10:30:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; of https://github.com/ncsoft/Unreal.js&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5c7c4271fff222124896b68863c52b7ef7c23c65</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/5c7c4271fff222124896b68863c52b7ef7c23c65"/>
+    <title>
+        pid
+    </title>
+    <updated>2016-01-06T10:30:00Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;pid&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/61795602f0da54312f46ed333f6ac3d664733dbd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/61795602f0da54312f46ed333f6ac3d664733dbd"/>
+    <title>
+        Update JavascriptContext_Private.cpp
+    </title>
+    <updated>2016-01-06T04:12:58Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update JavascriptContext_Private.cpp&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/56a0c75a90963c8a208c61f60ea2cbdbc4e3dd15</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/56a0c75a90963c8a208c61f60ea2cbdbc4e3dd15"/>
+    <title>
+        VM Virtual function
+    </title>
+    <updated>2016-01-06T02:46:00Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;VM Virtual function&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b35b3ce531b5ddcde508cf4457395cfd147d845e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/b35b3ce531b5ddcde508cf4457395cfd147d845e"/>
+    <title>
+        editor extension path had unnecessary prefix
+    </title>
+    <updated>2015-12-24T04:44:52Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;editor extension path had unnecessary prefix&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b4f4159ee1444540962aca51b036157a94a5470f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/b4f4159ee1444540962aca51b036157a94a5470f"/>
+    <title>
+        arbitrary meta data
+    </title>
+    <updated>2015-12-24T04:43:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;arbitrary meta data&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fdbb34464a7a40fb16d1e8510f54e0487aecfa05</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/fdbb34464a7a40fb16d1e8510f54e0487aecfa05"/>
+    <title>
+        Debugger: graceful shutdown while debugger attached
+    </title>
+    <updated>2015-12-21T02:10:24Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Debugger: graceful shutdown while debugger attached&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/140af225bf134f1bd562f29dc39b8ab5a886faea</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/140af225bf134f1bd562f29dc39b8ab5a886faea"/>
+    <title>
+        hack for debug support : Visual Studio Code
+    </title>
+    <updated>2015-12-20T11:27:22Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;hack for debug support : Visual Studio Code&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/f6bbccc23c300f5e362529a6f4b4690ac6c15869</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/f6bbccc23c300f5e362529a6f4b4690ac6c15869"/>
+    <title>
+        debugger re-enabled
+    </title>
+    <updated>2015-12-19T19:15:15Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;debugger re-enabled&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/5536f912a8db2ae86cf50ddfc3ca8aaafb7cc3cb</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/5536f912a8db2ae86cf50ddfc3ca8aaafb7cc3cb"/>
+    <title>
+        JavascriptLibrary.GetCurrentProcessId
+    </title>
+    <updated>2015-12-19T19:04:50Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;JavascriptLibrary.GetCurrentProcessId&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6ab2755d7c3b9cdab715385792e69bca40d9de38</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/6ab2755d7c3b9cdab715385792e69bca40d9de38"/>
+    <title>
+        GC crash fix while debugger attached
+    </title>
+    <updated>2015-12-19T02:38:08Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;GC crash fix while debugger attached&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/9466f540a80e25311be6080d2414f8fcd443dd65</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/9466f540a80e25311be6080d2414f8fcd443dd65"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2015-12-18T09:49:29Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a0b2fb20eebaba8a3a926f23afa1cded77dcb069</id>
+    <link type="text/html" rel="alternate" href="https://github.com/ncsoft/Unreal.js/commit/a0b2fb20eebaba8a3a926f23afa1cded77dcb069"/>
+    <title>
+        Update README.md
+    </title>
+    <updated>2015-12-18T06:32:41Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/2463571?s=30&amp;u=9e7439df165f057ff16a078aa5646aeead63e986&amp;v=4"/>
+    <author>
+      <name>nakosung</name>
+      <uri>https://github.com/nakosung</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update README.md&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

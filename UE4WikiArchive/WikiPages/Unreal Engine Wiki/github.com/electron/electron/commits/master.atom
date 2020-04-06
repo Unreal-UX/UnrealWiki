@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/electron/electron/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/electron/electron/commits/master.atom"/>
+  <title>Recent Commits to electron:master</title>
+  <updated>2020-04-01T02:33:16Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bac1c7f532d1456af197fb617128af4411489859</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/bac1c7f532d1456af197fb617128af4411489859"/>
+    <title>
+        fix: ensure standard schemes are registered in nw service process (#2…
+    </title>
+    <updated>2020-04-01T02:33:16Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/964386?s=30&amp;v=4"/>
+    <author>
+      <name>deepak1556</name>
+      <uri>https://github.com/deepak1556</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix: ensure standard schemes are registered in nw service process (#22867)
+
+* fix: ensure standard schemes are registered in nw service process
+
+Refs https://github.com/electron/electron/pull/20546
+
+* chore: add test
+
+* chore: apply suggestions from code review
+
+Co-Authored-By: Jeremy Apthorp &amp;lt;jeremya@chromium.org&amp;gt;
+
+Co-authored-by: Jeremy Apthorp &amp;lt;jeremya@chromium.org&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d74ad631e74b1a5bef1003be7964091a37a26ed7</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/d74ad631e74b1a5bef1003be7964091a37a26ed7"/>
+    <title>
+        chore: there is no need to define _init (#22882)
+    </title>
+    <updated>2020-03-31T21:50:03Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/639601?s=30&amp;u=b726a177170e74aa10fc3061f27da82822fa29d3&amp;v=4"/>
+    <author>
+      <name>zcbenz</name>
+      <uri>https://github.com/zcbenz</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore: there is no need to define _init (#22882)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4ba91c938ec3a0ef17b8d8f1b3bc396f738d695f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/4ba91c938ec3a0ef17b8d8f1b3bc396f738d695f"/>
+    <title>
+        fix: screen module should still be creatable if the first create is b…
+    </title>
+    <updated>2020-03-31T21:49:15Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/6634592?s=30&amp;u=5707e83add6db553dabd824b83532618fb546bf2&amp;v=4"/>
+    <author>
+      <name>MarshallOfSound</name>
+      <uri>https://github.com/MarshallOfSound</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix: screen module should still be creatable if the first create is before the ready event (#22895)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/765c08c600ece850702f78b4e92d7fdc529f2aaa</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/765c08c600ece850702f78b4e92d7fdc529f2aaa"/>
+    <title>
+        refactor: ginify Notification (#22821)
+    </title>
+    <updated>2020-03-31T18:42:32Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/172800?s=30&amp;v=4"/>
+    <author>
+      <name>nornagon</name>
+      <uri>https://github.com/nornagon</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;refactor: ginify Notification (#22821)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/629465aac77bd6c78056b101075609fe520edbaf</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/629465aac77bd6c78056b101075609fe520edbaf"/>
+    <title>
+         ci: cleanup extraneous release tests (#22892)
+    </title>
+    <updated>2020-03-31T18:18:43Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/609052?s=30&amp;v=4"/>
+    <author>
+      <name>jkleinsc</name>
+      <uri>https://github.com/jkleinsc</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt; ci: cleanup extraneous release tests (#22892)
+
+* ci: cleanup extraneous release tests
+
+* Temporarily setup nightly ci to run on demand
+
+* Revert &amp;quot;Temporarily setup nightly ci to run on demand&amp;quot;
+
+This reverts commit 21e50d4f57ed0ee7859263c718d884efc571d967.&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/51c2af4df577bd846d9621c56b869b09c4439895</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/51c2af4df577bd846d9621c56b869b09c4439895"/>
+    <title>
+        Bump v10.0.0-nightly.20200331
+    </title>
+    <updated>2020-03-31T15:32:43Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/18403005?s=30&amp;u=f58c8f5d7d14453f9693d1b3231c539dfde1eb8d&amp;v=4"/>
+    <author>
+      <name>electron-bot</name>
+      <uri>https://github.com/electron-bot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump v10.0.0-nightly.20200331&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/33ef0d23a66a6f9dd4b7bece071bfe0363bbf558</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/33ef0d23a66a6f9dd4b7bece071bfe0363bbf558"/>
+    <title>
+        docs: minor grammar &amp; spelling fixes (#22851)
+    </title>
+    <updated>2020-03-31T04:06:25Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/70381?s=30&amp;u=5df89deb457ce229e6601c71bd092113acec8659&amp;v=4"/>
+    <author>
+      <name>ckerr</name>
+      <uri>https://github.com/ckerr</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;docs: minor grammar &amp;amp; spelling fixes (#22851)
+
+* docs: fix minor grammar error &amp;#39;punctuations&amp;#39;
+
+* docs: fix minor grammar error pluralizing Chromium
+
+* docs: fix typo &amp;#39;updateCurrentActiviy&amp;#39;
+
+* docs: use consistent spelling of &amp;#39;behavior&amp;#39;
+
+* docs: use &amp;#39;macOS&amp;#39; instead of &amp;#39;Mac OS&amp;#39; or &amp;#39;OS X&amp;#39;.
+
+* docs: use &amp;#39;GTK&amp;#39; instead of &amp;#39;GTK+&amp;#39;
+
+https://mail.gnome.org/archives/gtk-devel-list/2019-February/msg00000.html
+
+* docs: minor capitalization: use &amp;#39;TCP&amp;#39; not &amp;#39;tcp&amp;#39;
+
+* Update docs/development/build-instructions-linux.md
+
+Co-Authored-By: Mark Lee &amp;lt;malept@users.noreply.github.com&amp;gt;
+
+Co-authored-by: Mark Lee &amp;lt;malept@users.noreply.github.com&amp;gt;
+Co-authored-by: John Kleinschmidt &amp;lt;jkleinsc@github.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/fea3366bc7d702b3cbff46fd5fa2791d2fb5bc99</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/fea3366bc7d702b3cbff46fd5fa2791d2fb5bc99"/>
+    <title>
+        fix: propagate preferred color scheme to the renderer (#22896)
+    </title>
+    <updated>2020-03-30T22:39:50Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/6634592?s=30&amp;u=5707e83add6db553dabd824b83532618fb546bf2&amp;v=4"/>
+    <author>
+      <name>MarshallOfSound</name>
+      <uri>https://github.com/MarshallOfSound</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix: propagate preferred color scheme to the renderer (#22896)
+
+* fix: do not crash if the window is closed syncronously with a nativeTheme change
+
+* fix: propogate preferred color scheme to the renderer and keep it up to date&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/212b47a77b8b56128b44831036b0e3f19821f1a3</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/212b47a77b8b56128b44831036b0e3f19821f1a3"/>
+    <title>
+        docs: enumerate deprecation policy (#22859)
+    </title>
+    <updated>2020-03-30T19:57:14Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/2036040?s=30&amp;u=c413165f1b997a72cbe13beee9356ecc9bf3b444&amp;v=4"/>
+    <author>
+      <name>codebytere</name>
+      <uri>https://github.com/codebytere</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;docs: enumerate deprecation policy (#22859)
+
+* docs: enumerate deprecation policy
+
+* Address @MarshallOfSound feedback&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/e94a573f29f767f16b9713a711d2fff6e880bde4</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/e94a573f29f767f16b9713a711d2fff6e880bde4"/>
+    <title>
+        docs: update Electron 9 release date (#22863)
+    </title>
+    <updated>2020-03-30T19:56:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/2138661?s=30&amp;u=aad56dfb5e578699e72de78574decb4c0116674d&amp;v=4"/>
+    <author>
+      <name>sofianguy</name>
+      <uri>https://github.com/sofianguy</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;docs: update Electron 9 release date (#22863)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/be5511393b3eecce566a1fc644f748ae894814dd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/be5511393b3eecce566a1fc644f748ae894814dd"/>
+    <title>
+        ci: use smaller vms for testing since we are using goma (#22887)
+    </title>
+    <updated>2020-03-30T19:46:42Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/609052?s=30&amp;v=4"/>
+    <author>
+      <name>jkleinsc</name>
+      <uri>https://github.com/jkleinsc</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;ci: use smaller vms for testing since we are using goma (#22887)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/98e5836eb63378dc38c6cd15fd11a24f9ff53f6e</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/98e5836eb63378dc38c6cd15fd11a24f9ff53f6e"/>
+    <title>
+        chore: update PR template to suggest &#39;none&#39; instead of no-notes (#22864)
+    </title>
+    <updated>2020-03-30T17:13:26Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/172800?s=30&amp;v=4"/>
+    <author>
+      <name>nornagon</name>
+      <uri>https://github.com/nornagon</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore: update PR template to suggest &amp;#39;none&amp;#39; instead of no-notes (#22864)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b14608c2c1b015d895814a900f1e8300e121c5c0</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/b14608c2c1b015d895814a900f1e8300e121c5c0"/>
+    <title>
+        fix: dialog fails to show after modal close (#22858)
+    </title>
+    <updated>2020-03-30T16:48:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/2036040?s=30&amp;u=c413165f1b997a72cbe13beee9356ecc9bf3b444&amp;v=4"/>
+    <author>
+      <name>codebytere</name>
+      <uri>https://github.com/codebytere</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix: dialog fails to show after modal close (#22858)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/c085d3bf12f00bb811e7e29fc6eb31599374c54f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/c085d3bf12f00bb811e7e29fc6eb31599374c54f"/>
+    <title>
+        Bump v10.0.0-nightly.20200330
+    </title>
+    <updated>2020-03-30T15:32:20Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/18403005?s=30&amp;u=f58c8f5d7d14453f9693d1b3231c539dfde1eb8d&amp;v=4"/>
+    <author>
+      <name>electron-bot</name>
+      <uri>https://github.com/electron-bot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump v10.0.0-nightly.20200330&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/6ecf729487b3778ab5aadf4728dff4843e7c4022</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/6ecf729487b3778ab5aadf4728dff4843e7c4022"/>
+    <title>
+        feat: default gtk darkTheme option to nativeTheme.shouldUseDarkColors…
+    </title>
+    <updated>2020-03-30T06:02:16Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/6634592?s=30&amp;u=5707e83add6db553dabd824b83532618fb546bf2&amp;v=4"/>
+    <author>
+      <name>MarshallOfSound</name>
+      <uri>https://github.com/MarshallOfSound</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;feat: default gtk darkTheme option to nativeTheme.shouldUseDarkColors for better platform support (#20138)
+
+* feat: default gtk darkTheme option to nativeTheme.shouldUseDarkColors for better platform support
+
+* chore: update syntax for PR feedback
+
+* refactor: only define SetGTKDarkThemeEnabled when needed
+
+Co-authored-by: Cheng Zhao &amp;lt;zcbenz@gmail.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a3e28788ce55dab11fd8d4f2f66e6b8a968e0cf5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/a3e28788ce55dab11fd8d4f2f66e6b8a968e0cf5"/>
+    <title>
+        refactor: ginify Tray (#22822)
+    </title>
+    <updated>2020-03-30T01:32:02Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/172800?s=30&amp;v=4"/>
+    <author>
+      <name>nornagon</name>
+      <uri>https://github.com/nornagon</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;refactor: ginify Tray (#22822)
+
+* refactor: ginify Tray
+
+* lint
+
+* improve argument parsing logic
+
+* remove redundant imports from tray.js
+
+* new Tray produces an instanceof Tray
+
+* make Constructible generic
+
+* lint
+
+* clean up on exit&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/76ae3b7ecbd0eef93b6842319c791cc00cf9ef59</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/76ae3b7ecbd0eef93b6842319c791cc00cf9ef59"/>
+    <title>
+        chore: remove unused classes of views API (#22861)
+    </title>
+    <updated>2020-03-28T06:44:57Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/639601?s=30&amp;u=b726a177170e74aa10fc3061f27da82822fa29d3&amp;v=4"/>
+    <author>
+      <name>zcbenz</name>
+      <uri>https://github.com/zcbenz</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;chore: remove unused classes of views API (#22861)
+
+* chore: remove unused views API classes
+
+* chore: remove LayoutManager code
+
+* chore: no more need to make View inherit from TrackabeObject
+
+* chore: make enable_view_api default to true
+
+* chore: enable_view_api =&amp;gt; enable_views_api&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d5cae424d8bd9ed0d573ee7aab51a065d55e17a5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/d5cae424d8bd9ed0d573ee7aab51a065d55e17a5"/>
+    <title>
+        Bump v10.0.0-nightly.20200327
+    </title>
+    <updated>2020-03-27T15:33:03Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/18403005?s=30&amp;u=f58c8f5d7d14453f9693d1b3231c539dfde1eb8d&amp;v=4"/>
+    <author>
+      <name>electron-bot</name>
+      <uri>https://github.com/electron-bot</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump v10.0.0-nightly.20200327&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/bd5789a12c0226e38183031170c2607570f5db10</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/bd5789a12c0226e38183031170c2607570f5db10"/>
+    <title>
+        fix: missing HandleScope in WebDialogHelper (#22843)
+    </title>
+    <updated>2020-03-27T03:37:28Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/2036040?s=30&amp;u=c413165f1b997a72cbe13beee9356ecc9bf3b444&amp;v=4"/>
+    <author>
+      <name>codebytere</name>
+      <uri>https://github.com/codebytere</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix: missing HandleScope in WebDialogHelper (#22843)&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ac501e8194c2f2dbfddbfe6cee7608274e7aea5c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/electron/electron/commit/ac501e8194c2f2dbfddbfe6cee7608274e7aea5c"/>
+    <title>
+        fix: heap-use-after-free in tray.popUpContextMenu (#22842)
+    </title>
+    <updated>2020-03-27T01:30:21Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/172800?s=30&amp;v=4"/>
+    <author>
+      <name>nornagon</name>
+      <uri>https://github.com/nornagon</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;fix: heap-use-after-free in tray.popUpContextMenu (#22842)&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>

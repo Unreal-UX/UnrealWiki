@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:/github/learning-lab-components/commits/master</id>
+  <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commits/master"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/github/learning-lab-components/commits/master.atom"/>
+  <title>Recent Commits to learning-lab-components:master</title>
+  <updated>2020-03-26T14:25:59Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/333c48ccbd24dd3b01b85edb0b25584af02ccd88</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/333c48ccbd24dd3b01b85edb0b25584af02ccd88"/>
+    <title>
+        Merge pull request #148 from github/dependabot/npm_and_yarn/jest-25.2.1
+    </title>
+    <updated>2020-03-26T14:25:59Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/10660468?s=30&amp;u=b2a4cb6919cf2a48d3a57d88597ae60dbaf81e1a&amp;v=4"/>
+    <author>
+      <name>JasonEtco</name>
+      <uri>https://github.com/JasonEtco</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #148 from github/dependabot/npm_and_yarn/jest-25.2.1
+
+Bump jest from 25.1.0 to 25.2.1&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/b7c28e5cb1c5769516c71bbbb169d363274501a5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/b7c28e5cb1c5769516c71bbbb169d363274501a5"/>
+    <title>
+        Bump jest from 25.1.0 to 25.2.1
+    </title>
+    <updated>2020-03-26T11:18:33Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/2141?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot-preview</name>
+      <uri>https://github.com/dependabot-preview</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump jest from 25.1.0 to 25.2.1
+
+Bumps [jest](https://github.com/facebook/jest) from 25.1.0 to 25.2.1.
+- [Release notes](https://github.com/facebook/jest/releases)
+- [Changelog](https://github.com/facebook/jest/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/facebook/jest/compare/v25.1.0...v25.2.1)
+
+Signed-off-by: dependabot-preview[bot] &amp;lt;support@dependabot.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/73664e4b998e1163142a1759e574b78ad06a7d22</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/73664e4b998e1163142a1759e574b78ad06a7d22"/>
+    <title>
+        Bump to v1.2.0
+    </title>
+    <updated>2020-03-19T17:34:48Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/417751?s=30&amp;v=4"/>
+    <author>
+      <name>JamesMGreene</name>
+      <uri>https://github.com/JamesMGreene</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump to v1.2.0&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/d6b0bff566c5c486aa4e3a96acd8bd26cbfac8d3</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/d6b0bff566c5c486aa4e3a96acd8bd26cbfac8d3"/>
+    <title>
+        Merge pull request #146 from github/fix-release-process-docs
+    </title>
+    <updated>2020-03-19T17:29:48Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/417751?s=30&amp;v=4"/>
+    <author>
+      <name>JamesMGreene</name>
+      <uri>https://github.com/JamesMGreene</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #146 from github/fix-release-process-docs
+
+Update instructions for releasing a new version&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/8281a83798e9fed1bd260df765b98ddf4eceb6b3</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/8281a83798e9fed1bd260df765b98ddf4eceb6b3"/>
+    <title>
+        Update instructions for releasing a new version
+    </title>
+    <updated>2020-03-19T17:27:42Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/417751?s=30&amp;v=4"/>
+    <author>
+      <name>JamesMGreene</name>
+      <uri>https://github.com/JamesMGreene</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Update instructions for releasing a new version&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/17cefa174efc6946d25f7b543db99711451863fd</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/17cefa174efc6946d25f7b543db99711451863fd"/>
+    <title>
+        Merge pull request #115 from github/action_reopenIssue
+    </title>
+    <updated>2020-03-19T17:20:56Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/417751?s=30&amp;v=4"/>
+    <author>
+      <name>JamesMGreene</name>
+      <uri>https://github.com/JamesMGreene</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #115 from github/action_reopenIssue
+
+Create new &amp;#39;reopenIssue&amp;#39; bot action&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/96716f1f6a2aea43f398bdb63c603cc6a3b5996d</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/96716f1f6a2aea43f398bdb63c603cc6a3b5996d"/>
+    <title>
+        Merge branch &#39;master&#39; into action_reopenIssue
+    </title>
+    <updated>2020-03-19T17:18:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/417751?s=30&amp;v=4"/>
+    <author>
+      <name>JamesMGreene</name>
+      <uri>https://github.com/JamesMGreene</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into action_reopenIssue&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/95935be67f661209c5d998b528071947d6d8c743</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/95935be67f661209c5d998b528071947d6d8c743"/>
+    <title>
+        Merge pull request #145 from github/remove-semver-validator
+    </title>
+    <updated>2020-03-19T16:43:55Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/417751?s=30&amp;v=4"/>
+    <author>
+      <name>JamesMGreene</name>
+      <uri>https://github.com/JamesMGreene</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #145 from github/remove-semver-validator
+
+Remove validate-semver-release action from Release Management workflow&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/ce48077ca0c75ccb3eaa302c6e7a9e17717b16d5</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/ce48077ca0c75ccb3eaa302c6e7a9e17717b16d5"/>
+    <title>
+        Remove validate-semver-release action from Release Management workflow
+    </title>
+    <updated>2020-03-19T16:21:37Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/417751?s=30&amp;v=4"/>
+    <author>
+      <name>JamesMGreene</name>
+      <uri>https://github.com/JamesMGreene</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Remove validate-semver-release action from Release Management workflow&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/a4eb56620d9caa133764017ec853d2df8459322f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/a4eb56620d9caa133764017ec853d2df8459322f"/>
+    <title>
+        Bump to v1.1.0
+    </title>
+    <updated>2020-03-19T15:49:40Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/10660468?s=30&amp;u=b2a4cb6919cf2a48d3a57d88597ae60dbaf81e1a&amp;v=4"/>
+    <author>
+      <name>JasonEtco</name>
+      <uri>https://github.com/JasonEtco</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump to v1.1.0&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/137dc53eb249569239353ba927157936f1d35c8f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/137dc53eb249569239353ba927157936f1d35c8f"/>
+    <title>
+        Merge pull request #144 from github/npm-audit-fix
+    </title>
+    <updated>2020-03-19T15:47:06Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/10660468?s=30&amp;u=b2a4cb6919cf2a48d3a57d88597ae60dbaf81e1a&amp;v=4"/>
+    <author>
+      <name>JasonEtco</name>
+      <uri>https://github.com/JasonEtco</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #144 from github/npm-audit-fix
+
+npm audit fix&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/750357ae4810a37ae11779d2633cecb37ecf4b38</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/750357ae4810a37ae11779d2633cecb37ecf4b38"/>
+    <title>
+        Merge pull request #135 from github/enable-pages
+    </title>
+    <updated>2020-03-19T15:45:39Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/10660468?s=30&amp;u=b2a4cb6919cf2a48d3a57d88597ae60dbaf81e1a&amp;v=4"/>
+    <author>
+      <name>JasonEtco</name>
+      <uri>https://github.com/JasonEtco</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #135 from github/enable-pages
+
+add new action to enable GitHub Pages&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/61d5a84cefa07ce51b7a94de991f99e804b6972c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/61d5a84cefa07ce51b7a94de991f99e804b6972c"/>
+    <title>
+        Merge branch &#39;master&#39; into enable-pages
+    </title>
+    <updated>2020-03-19T15:42:28Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/10660468?s=30&amp;u=b2a4cb6919cf2a48d3a57d88597ae60dbaf81e1a&amp;v=4"/>
+    <author>
+      <name>JasonEtco</name>
+      <uri>https://github.com/JasonEtco</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into enable-pages&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/decd4b773c8ebabe392039c4fcfbb45f2d284c0f</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/decd4b773c8ebabe392039c4fcfbb45f2d284c0f"/>
+    <title>
+        npm audit fix
+    </title>
+    <updated>2020-03-19T15:40:05Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/10660468?s=30&amp;u=b2a4cb6919cf2a48d3a57d88597ae60dbaf81e1a&amp;v=4"/>
+    <author>
+      <name>JasonEtco</name>
+      <uri>https://github.com/JasonEtco</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;npm audit fix&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/452025c2461aab1d37da1235304a299e57ccb81c</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/452025c2461aab1d37da1235304a299e57ccb81c"/>
+    <title>
+        Add assertion for the preview header
+    </title>
+    <updated>2020-03-19T15:38:48Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/10660468?s=30&amp;u=b2a4cb6919cf2a48d3a57d88597ae60dbaf81e1a&amp;v=4"/>
+    <author>
+      <name>JasonEtco</name>
+      <uri>https://github.com/JasonEtco</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Add assertion for the preview header&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/51a25b96f1c01384298b11ea18e2369c4c543cc9</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/51a25b96f1c01384298b11ea18e2369c4c543cc9"/>
+    <title>
+        Merge pull request #140 from github/dependabot/npm_and_yarn/acorn-6.4.1
+    </title>
+    <updated>2020-03-19T15:28:00Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/10660468?s=30&amp;u=b2a4cb6919cf2a48d3a57d88597ae60dbaf81e1a&amp;v=4"/>
+    <author>
+      <name>JasonEtco</name>
+      <uri>https://github.com/JasonEtco</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #140 from github/dependabot/npm_and_yarn/acorn-6.4.1
+
+[Security] Bump acorn from 6.4.0 to 6.4.1&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/042334ab9a6b6d067f98c766137ef345f587e404</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/042334ab9a6b6d067f98c766137ef345f587e404"/>
+    <title>
+        Merge branch &#39;master&#39; into dependabot/npm_and_yarn/acorn-6.4.1
+    </title>
+    <updated>2020-03-19T15:25:51Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/10660468?s=30&amp;u=b2a4cb6919cf2a48d3a57d88597ae60dbaf81e1a&amp;v=4"/>
+    <author>
+      <name>JasonEtco</name>
+      <uri>https://github.com/JasonEtco</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into dependabot/npm_and_yarn/acorn-6.4.1&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/4b7f27008ad264dfb697926dda968b64edd8e713</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/4b7f27008ad264dfb697926dda968b64edd8e713"/>
+    <title>
+        Merge branch &#39;master&#39; into action_reopenIssue
+    </title>
+    <updated>2020-03-18T21:14:55Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars1.githubusercontent.com/u/1221423?s=30&amp;u=8e9c7ddb90a829174c76ac78c59db2397fa28fa0&amp;v=4"/>
+    <author>
+      <name>heiskr</name>
+      <uri>https://github.com/heiskr</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge branch &amp;#39;master&amp;#39; into action_reopenIssue&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/400fae849da6552f110f76175e6c6382d0aac8e8</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/400fae849da6552f110f76175e6c6382d0aac8e8"/>
+    <title>
+        Merge pull request #143 from github/dependabot/npm_and_yarn/nock-12.0.3
+    </title>
+    <updated>2020-03-18T20:13:07Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars2.githubusercontent.com/u/6842965?s=30&amp;u=ad2cb2961371d64fa76cf7b9e1ee0f32268fc70e&amp;v=4"/>
+    <author>
+      <name>vanessayuenn</name>
+      <uri>https://github.com/vanessayuenn</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Merge pull request #143 from github/dependabot/npm_and_yarn/nock-12.0.3
+
+Bump nock from 12.0.2 to 12.0.3&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Grit::Commit/65fd32343fce2aebc2c81cd67b4b4c226a99f388</id>
+    <link type="text/html" rel="alternate" href="https://github.com/github/learning-lab-components/commit/65fd32343fce2aebc2c81cd67b4b4c226a99f388"/>
+    <title>
+        Bump nock from 12.0.2 to 12.0.3
+    </title>
+    <updated>2020-03-18T10:31:06Z</updated>
+    <media:thumbnail height="30" width="30" url="https://avatars0.githubusercontent.com/in/2141?s=30&amp;v=4"/>
+    <author>
+      <name>dependabot-preview</name>
+      <uri>https://github.com/dependabot-preview</uri>
+    </author>
+    <content type="html">
+      &lt;pre style=&#39;white-space:pre-wrap;width:81ex&#39;&gt;Bump nock from 12.0.2 to 12.0.3
+
+Bumps [nock](https://github.com/nock/nock) from 12.0.2 to 12.0.3.
+- [Release notes](https://github.com/nock/nock/releases)
+- [Changelog](https://github.com/nock/nock/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/nock/nock/compare/v12.0.2...v12.0.3)
+
+Signed-off-by: dependabot-preview[bot] &amp;lt;support@dependabot.com&amp;gt;&lt;/pre&gt;
+    </content>
+  </entry>
+</feed>
